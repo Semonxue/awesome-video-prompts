@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Awesome Video Prompts</title>
+    <link>https://example.org/</link>
+    <description>Recent content in Home on Awesome Video Prompts</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Jan 2026 13:22:59 +0800</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://example.org/about/</link>
+      <pubDate>Fri, 30 Jan 2026 13:22:59 +0800</pubDate>
+      <guid>https://example.org/about/</guid>
+      <description>&lt;h1 id=&#34;about-this-site&#34;&gt;About This Site&lt;/h1&gt;&#xA;&lt;p&gt;This site is dedicated to collecting and sharing awesome video prompts for AI-powered video generation tools.&lt;/p&gt;&#xA;&lt;h2 id=&#34;contact&#34;&gt;Contact&lt;/h2&gt;&#xA;&lt;p&gt;Feel free to contribute your own prompts!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

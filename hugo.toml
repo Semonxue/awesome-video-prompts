@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Awesome Video Prompts'
+theme = 'ananke'
+
+[params]
+  author = 'Your Name'
+  description = 'A collection of awesome video prompts'
