@@ -1,0 +1,77 @@
+# 基础界面文字
+[search_placeholder]
+other = "搜索提示词..."
+
+[filter_tags]
+other = "按标签筛选"
+
+[no_results]
+other = "未找到结果。"
+
+[hover_to_play]
+other = "鼠标悬停播放预览"
+
+[load_more]
+other = "加载更多"
+
+[tags_title]
+other = "标签"
+
+[categories_title]
+other = "分类"
+
+[prompt_preview]
+other = "预览"
+
+[view_details]
+other = "查看详情"
+
+[share]
+other = "分享"
+
+[copy_prompt]
+other = "复制提示词"
+
+[copied]
+other = "已复制！"
+
+[language_switcher]
+other = "语言"
+
+[english]
+other = "English"
+
+[chinese_simplified]
+other = "简体中文"
+
+# 关于页面
+[about_title]
+other = "关于本站"
+
+[contact_info]
+other = "联系方式"
+
+[contribute_prompts]
+other = "贡献你的提示词"
+
+[footer_copyright]
+other = "开源项目"
+
+[submit_prompt]
+other = "提交提示词"
+
+[about]
+other = "关于"
+
+# 元数据
+[author]
+other = "作者"
+
+[date]
+other = "日期"
+
+[tags]
+other = "标签"
+
+[category]
+other = "分类"

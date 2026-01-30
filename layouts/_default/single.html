@@ -1,0 +1,249 @@
+{{ define "main" }}
+  <article class="prompt-detail">
+    <header class="prompt-header">
+      <h1 class="prompt-title">{{ .Title }}</h1>
+      
+      {{ with .Params.description }}
+      <p class="prompt-subtitle">{{ . }}</p>
+      {{ end }}
+      
+      <div class="prompt-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ T "date" }}: {{ .Date.Format "January 2, 2006" }}
+        </time>
+        
+        {{ with .Params.tags }}
+        <div class="prompt-tags-detail">
+          {{ T "tags" }}:
+          {{ range . }}
+            {{ $tagDisplay := partial "tag-display.html" (dict "tag" . "site" $.Site) }}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag-link">{{ $tagDisplay }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </header>
+
+    {{ with .Params.image }}
+    <div class="prompt-preview-image">
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+      <div class="image-caption">{{ T "prompt_preview" }}</div>
+    </div>
+    {{ end }}
+
+    <div class="prompt-content-wrapper">
+      <div class="prompt-text-section">
+        <h2>{{ T "copy_prompt" }}</h2>
+        <div class="prompt-box">
+          <pre id="prompt-text">{{ .Params.prompt }}</pre>
+          <button class="copy-btn-large" onclick="copyPromptText()">
+            📋 {{ T "copy_prompt" }}
+          </button>
+        </div>
+      </div>
+
+      <div class="prompt-body">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <nav class="prompt-navigation">
+      {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}" class="nav-link prev">
+        ← {{ .Title }}
+      </a>
+      {{ end }}
+      
+      {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}" class="nav-link next">
+        {{ .Title }} →
+      </a>
+      {{ end }}
+    </nav>
+  </article>
+
+  <script>
+    function copyPromptText() {
+      const promptText = document.getElementById('prompt-text').textContent;
+      navigator.clipboard.writeText(promptText).then(() => {
+        const btn = document.querySelector('.copy-btn-large');
+        const originalText = btn.textContent;
+        btn.textContent = '{{ T "copied" }}';
+        setTimeout(() => {
+          btn.textContent = originalText;
+        }, 2000);
+      });
+    }
+  </script>
+{{ end }}
+
+{{ define "head" }}
+<style>
+  .prompt-detail {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .prompt-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .prompt-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+
+  .prompt-subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+
+  .prompt-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  .prompt-tags-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tag-link {
+    padding: 0.25rem 0.75rem;
+    background: #f3f4f6;
+    border-radius: 9999px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.875rem;
+  }
+
+  .tag-link:hover {
+    background: #e5e7eb;
+  }
+
+  .prompt-preview-image {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .prompt-preview-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  }
+
+  .image-caption {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-style: italic;
+  }
+
+  .prompt-content-wrapper {
+    margin-top: 2rem;
+  }
+
+  .prompt-text-section {
+    background: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .prompt-text-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .prompt-box {
+    position: relative;
+  }
+
+  .prompt-box pre {
+    background: #1f2937;
+    color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .copy-btn-large {
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .copy-btn-large:hover {
+    background: #1d4ed8;
+  }
+
+  .prompt-body {
+    line-height: 1.8;
+  }
+
+  .prompt-body h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .prompt-body h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+  }
+
+  .prompt-body ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .prompt-body li {
+    margin-bottom: 0.5rem;
+  }
+
+  .prompt-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    background: #f9fafb;
+    border-radius: 0.5rem;
+    transition: background 0.2s;
+  }
+
+  .nav-link:hover {
+    background: #f3f4f6;
+  }
+
+  .nav-link.next {
+    margin-left: auto;
+  }
+</style>
+{{ end }}

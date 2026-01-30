@@ -1,0 +1,92 @@
+{{ define "main" }}
+  <div class="terms-header">
+    <h1>{{ T "tags_title" }}</h1>
+    <p>{{ len .Data.Terms }} {{ T "tags" }} available</p>
+  </div>
+
+  <div class="terms-grid">
+    {{ range .Data.Terms.ByCount }}
+      {{ $tagName := .Name }}
+      {{ $tagCount := .Count }}
+      {{ $tagDisplay := partial "tag-display.html" (dict "tag" $tagName "site" $.Site) }}
+      {{ $tagData := index $.Site.Data.tags $tagName }}
+      
+      <a href="{{ .Page.RelPermalink }}" class="term-card">
+        <h3 class="term-name">{{ $tagDisplay }}</h3>
+        {{ if $tagData }}
+          <p class="term-description">
+            {{ if eq $.Site.Language.Lang "zh-cn" }}
+              {{ index $tagData "description_zh-cn" | default $tagData.description_en | truncate 100 }}
+            {{ else }}
+              {{ $tagData.description_en | truncate 100 }}
+            {{ end }}
+          </p>
+        {{ end }}
+        <span class="term-count">{{ $tagCount }} {{ if eq $tagCount 1 }}prompt{{ else }}prompts{{ end }}</span>
+      </a>
+    {{ end }}
+  </div>
+{{ end }}
+
+{{ define "head" }}
+<style>
+  .terms-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .terms-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .terms-header p {
+    color: #6b7280;
+  }
+
+  .terms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .term-card {
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: var(--text-color);
+    background: var(--bg-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .term-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  }
+
+  .term-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .term-description {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  .term-count {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #f3f4f6;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+</style>
+{{ end }}

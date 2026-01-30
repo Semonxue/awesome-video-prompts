@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompts | Awesome Video Prompts</title>
+  
+  
+  <meta name="description" content="A collection of awesome video prompts">
+  
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  
+  <style>
+     
+    :root {
+       
+      --bg-primary: #F8F7F4;
+      --bg-surface: #FFFFFF;
+      --bg-muted: #F3F2EF;
+      
+       
+      --accent-primary: #1A1918;
+      --accent-hover: #333231;
+      
+       
+      --text-primary: #1A1918;
+      --text-secondary: #6B6A67;
+      --text-tertiary: #9A9996;
+      
+       
+      --border-subtle: #E8E7E4;
+      
+       
+      --shadow-card: 0 2px 12px rgba(26, 25, 24, 0.04);
+      --shadow-header: 0 2px 8px rgba(0, 0, 0, 0.06);
+      
+       
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 100px;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+     
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-surface);
+      box-shadow: var(--shadow-header);
+    }
+    
+    .header-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 48px;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--accent-primary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .logo-icon svg {
+      width: 20px;
+      height: 20px;
+      color: white;
+    }
+    
+    .site-title-text {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    
+     
+    .language-switcher {
+      display: flex;
+      align-items: center;
+    }
+    
+    .lang-switch {
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      background: var(--bg-muted);
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      font-family: inherit;
+    }
+    
+    .lang-switch:hover {
+      background: var(--border-subtle);
+    }
+    
+     
+    .main-content {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 48px 32px;
+    }
+    
+     
+    .header-full {
+      background: var(--bg-surface);
+      margin: 0 -48px 32px;
+      padding: 0 48px 20px;
+      box-shadow: var(--shadow-header);
+    }
+    
+     
+    .intro-text {
+      text-align: center;
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 1344px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+    }
+    
+     
+    .search-area {
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .search-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+     
+    .search-box-wrapper {
+      position: relative;
+      width: 400px;
+    }
+    
+    .search-input {
+      width: 100%;
+      height: 44px;
+      padding: 0 20px 0 44px;
+      background: var(--bg-muted);
+      border: 1px solid var(--border-subtle);
+      border-radius: 100px;
+      font-size: 14px;
+      font-family: inherit;
+      color: var(--text-primary);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    
+    .search-input::placeholder {
+      color: var(--text-tertiary);
+    }
+    
+    .search-input:focus {
+      border-color: var(--text-secondary);
+    }
+    
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      color: var(--text-tertiary);
+      pointer-events: none;
+    }
+    
+     
+    .model-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    
+    .model-tag {
+      display: flex;
+      align-items: center;
+      height: 36px;
+      padding: 0 16px;
+      background: var(--bg-muted);
+      border: 1px solid var(--border-subtle);
+      border-radius: 100px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .model-tag:hover {
+      background: var(--border-subtle);
+    }
+    
+    .model-tag.active {
+      background: var(--accent-primary);
+      color: var(--bg-surface);
+      border-color: var(--accent-primary);
+    }
+    
+    .model-tag.more {
+      background: transparent;
+      padding: 0 12px;
+    }
+    
+     
+    .content-tag-area {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    
+    .content-tag {
+      display: flex;
+      align-items: center;
+      height: 32px;
+      padding: 0 14px;
+      background: var(--bg-muted);
+      border: 1px solid var(--border-subtle);
+      border-radius: 100px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    
+    .content-tag:hover {
+      background: var(--border-subtle);
+    }
+    
+    .content-tag.active {
+      background: var(--accent-primary);
+      color: var(--bg-surface);
+      border-color: var(--accent-primary);
+    }
+    
+    .content-tag.more {
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-tertiary);
+    }
+    
+     
+    .grid-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    
+    .grid-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    
+    .result-count {
+      font-size: 14px;
+      color: var(--text-tertiary);
+    }
+    
+     
+    .masonry-grid {
+      column-count: 5;
+      column-gap: 16px;
+    }
+    
+    @media (max-width: 1440px) {
+      .masonry-grid {
+        column-count: 4;
+      }
+    }
+    
+    @media (max-width: 1200px) {
+      .masonry-grid {
+        column-count: 3;
+      }
+    }
+    
+    @media (max-width: 900px) {
+      .masonry-grid {
+        column-count: 2;
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .masonry-grid {
+        column-count: 1;
+      }
+      .header-container,
+      .main-content {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .header-full {
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .search-box-wrapper {
+        width: 100%;
+      }
+    }
+    
+     
+    .prompt-card {
+      background: var(--bg-surface);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.2s, box-shadow 0.2s;
+      break-inside: avoid;
+      margin-bottom: 16px;
+    }
+    
+    .prompt-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(26, 25, 24, 0.08);
+    }
+    
+    .prompt-image-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: var(--bg-muted);
+    }
+    
+    .model-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 6px 12px;
+      background: rgba(26, 25, 24, 0.75);
+      backdrop-filter: blur(4px);
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 500;
+      color: white;
+      z-index: 10;
+    }
+    
+    .prompt-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    
+    .prompt-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(26, 25, 24, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    
+    .prompt-card:hover .prompt-overlay {
+      opacity: 1;
+    }
+    
+    .hover-text {
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    
+    .prompt-content {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .prompt-title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    
+    .prompt-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+    
+    .prompt-title a:hover {
+      color: var(--accent-hover);
+    }
+    
+    .prompt-description {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .prompt-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    
+    .prompt-tag {
+      font-size: 12px;
+      padding: 4px 10px;
+      background: var(--bg-muted);
+      border-radius: 100px;
+      color: var(--text-secondary);
+    }
+    
+    .prompt-actions {
+      margin-top: 4px;
+    }
+    
+    .copy-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: var(--bg-muted);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    
+    .copy-btn:hover {
+      background: var(--border-subtle);
+      color: var(--text-primary);
+    }
+    
+     
+    .loading-more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 24px 0;
+      margin-top: 24px;
+    }
+    
+    .loading-spinner {
+      width: 24px;
+      height: 24px;
+      border: 2px solid var(--border-subtle);
+      border-top-color: var(--accent-primary);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .loading-text {
+      font-size: 14px;
+      color: var(--text-tertiary);
+    }
+    
+     
+    .site-footer {
+      background: var(--bg-surface);
+      margin-top: 32px;
+      padding: 32px 48px;
+    }
+    
+    .footer-line {
+      height: 1px;
+      background: var(--border-subtle);
+      margin-bottom: 16px;
+    }
+    
+    .footer-content {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .footer-left {
+      font-size: 13px;
+      color: var(--text-tertiary);
+    }
+    
+    .footer-right {
+      display: flex;
+      gap: 24px;
+    }
+    
+    .footer-link {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    .footer-link:hover {
+      color: var(--text-primary);
+    }
+    
+    @media (max-width: 640px) {
+      .site-footer {
+        padding: 24px 16px;
+      }
+      .footer-content {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+    }
+  </style>
+  
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/" class="logo-group">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+        </div>
+        <span class="site-title-text">Awesome Video Prompts</span>
+      </a>
+      
+      <nav class="header-nav">
+        
+        <div class="language-switcher">
+          
+            
+              <span class="lang-switch">English ▾</span>
+            
+          
+            
+              
+              
+              <a href="/zh-cn" class="lang-switch">简体中文 ▾</a>
+            
+          
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="main-content">
+    
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"></section>
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prompts</span>
+    <h1 class="f3 near-black">
+      <a href="/prompts/001-100/001-20260130/" class="link black dim">
+        Dreamy Forest Path
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h1 id="dreamy-forest-path">Dreamy Forest Path</h1>
+<p>This prompt creates a magical forest scene with ethereal lighting and cinematic quality.</p>
+<h2 id="key-elements">Key Elements</h2>
+<ul>
+<li><strong>Atmosphere</strong>: Dreamy, mystical, fairytale-like</li>
+<li><strong>Lighting</strong>: Soft golden sunlight with god rays</li>
+<li><strong>Setting</strong>: Ancient forest with winding path</li>
+<li><strong>Style</strong>: Cinematic, photorealistic, 8K</li>
+<li><strong>Mood</strong>: Wonder, tranquility, magic</li>
+</ul>
+<h2 id="best-used-for">Best Used For</h2>
+<ul>
+<li>Fantasy video sequences</li>
+<li>Meditation and relaxation content</li>
+<li>Nature documentaries with artistic flair</li>
+<li>Social media backgrounds</li>
+<li>Artistic portfolio pieces</li>
+</ul>
+<h2 id="tips">Tips</h2>
+<p>The &ldquo;dreamy&rdquo; and &ldquo;cinematic&rdquo; tags work together to create that film-like quality. Adjust the lighting descriptors for different times of day.</p>
+    </div>
+    <a href="/prompts/001-100/001-20260130/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prompts</span>
+    <h1 class="f3 near-black">
+      <a href="/prompts/001-100/012-20260130/" class="link black dim">
+        Alpine Lake Reflection
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Serene mountain lake with stunning reflections and crystal waters.</p>
+    </div>
+    <a href="/prompts/001-100/012-20260130/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prompts</span>
+    <h1 class="f3 near-black">
+      <a href="/prompts/001-100/010-20260130/" class="link black dim">
+        Autumn Forest Path
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Beautiful autumn scene with rich warm colors and falling leaves.</p>
+    </div>
+    <a href="/prompts/001-100/010-20260130/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prompts</span>
+    <h1 class="f3 near-black">
+      <a href="/prompts/001-100/005-20260130/" class="link black dim">
+        Cherry Blossom Garden
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Ethereal spring scene with beautiful sakura petals.</p>
+    </div>
+    <a href="/prompts/001-100/005-20260130/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prompts</span>
+    <h1 class="f3 near-black">
+      <a href="/prompts/001-100/019-20260130/" class="link black dim">
+        Coral Reef Underwater
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Stunning underwater world with colorful marine life and corals.</p>
+    </div>
+    <a href="/prompts/001-100/019-20260130/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prompts</span>
+    <h1 class="f3 near-black">
+      <a href="/prompts/001-100/003-20260130/" class="link black dim">
+        Cyberpunk City Night
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Futuristic urban atmosphere with vibrant neon colors.</p>
+    </div>
+    <a href="/prompts/001-100/003-20260130/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prompts</span>
+    <h1 class="f3 near-black">
+      <a href="/prompts/001-100/006-20260130/" class="link black dim">
+        Desert Sand Dunes
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Mesmerizing desert landscape with beautiful light and shadow.</p>
+    </div>
+    <a href="/prompts/001-100/006-20260130/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prompts</span>
+    <h1 class="f3 near-black">
+      <a href="/prompts/001-100/016-20260130/" class="link black dim">
+        Lavender Fields
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Beautiful lavender fields with stunning purple colors and natural beauty.</p>
+    </div>
+    <a href="/prompts/001-100/016-20260130/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prompts</span>
+    <h1 class="f3 near-black">
+      <a href="/prompts/001-100/018-20260130/" class="link black dim">
+        Medieval Castle
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Epic medieval castle scene with atmospheric fog and dramatic lighting.</p>
+    </div>
+    <a href="/prompts/001-100/018-20260130/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prompts</span>
+    <h1 class="f3 near-black">
+      <a href="/prompts/001-100/014-20260130/" class="link black dim">
+        Misty Mountain Valley
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Peaceful valley scene with beautiful morning mist and soft light.</p>
+    </div>
+    <a href="/prompts/001-100/014-20260130/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/prompts/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/prompts/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/prompts/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul></article>
+
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+      <span class="footer-left">&copy; 2026 Awesome Video Prompts. Open source project</span>
+      <div class="footer-right">
+        <a href="https://github.com" class="footer-link">GitHub</a>
+        <a href="#" class="footer-link">Submit Prompt</a>
+        <a href="/about" class="footer-link">About</a>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>

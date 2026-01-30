@@ -1,0 +1,19 @@
+{{/* 
+  标签显示partial - 支持多语言
+  使用方法: {{ partial "tag-display.html" (dict "tag" $tagName "site" .Site) }}
+*/}}
+
+{{ $tag := .tag }}
+{{ $site := .site }}
+{{ $lang := $site.Language.Lang }}
+{{ $tagData := index $site.Data.tags $tag }}
+
+{{ if $tagData }}
+  {{ if eq $lang "zh-cn" }}
+    {{ index $tagData "zh-cn" | default $tagData.en }}
+  {{ else }}
+    {{ $tagData.en }}
+  {{ end }}
+{{ else }}
+  {{ $tag }}
+{{ end }}

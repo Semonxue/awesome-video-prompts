@@ -1,0 +1,195 @@
+# 标签多语言定义
+# 标签slug使用英文，存储在front matter中
+# 显示时根据当前语言选择对应翻译
+
+dreamy:
+  en: dreamy
+  zh-cn: 梦幻
+  description_en: "Dream-like atmosphere with soft focus and ethereal quality"
+  description_zh-cn: "梦幻氛围，带有柔焦和空灵质感"
+
+nature:
+  en: nature
+  zh-cn: 自然
+  description_en: "Natural landscapes, flora, and wildlife"
+  description_zh-cn: "自然景观、植物和野生动物"
+
+cinematic:
+  en: cinematic
+  zh-cn: 电影感
+  description_en: "Movie-like composition, lighting, and color grading"
+  description_zh-cn: "电影般的构图、光影和调色"
+
+portrait:
+  en: portrait
+  zh-cn: 人像
+  description_en: "Character-focused imagery with emphasis on expression"
+  description_zh-cn: "以人物为主，注重表情刻画"
+
+landscape:
+  en: landscape
+  zh-cn: 风景
+  description_en: "Wide scenic views and environmental shots"
+  description_zh-cn: "广阔的风景和环境镜头"
+
+abstract:
+  en: abstract
+  zh-cn: 抽象
+  description_en: "Non-representational forms, colors, and patterns"
+  description_zh-cn: "非具象的形态、色彩和图案"
+
+minimalist:
+  en: minimalist
+  zh-cn: 极简
+  description_en: "Clean, simple compositions with minimal elements"
+  description_zh-cn: "简洁的构图，元素精简"
+
+vintage:
+  en: vintage
+  zh-cn: 复古
+  description_en: "Retro aesthetic with nostalgic qualities"
+  description_zh-cn: "复古美学，带有怀旧质感"
+
+futuristic:
+  en: futuristic
+  zh-cn: 未来感
+  description_en: "Sci-fi inspired, modern technology aesthetics"
+  description_zh-cn: "科幻灵感，现代科技美学"
+
+dark:
+  en: dark
+  zh-cn: 暗调
+  description_en: "Low-key lighting with moody atmosphere"
+  description_zh-cn: "低调光影，氛围沉郁"
+
+bright:
+  en: bright
+  zh-cn: 明亮
+  description_en: "High-key lighting with cheerful, vibrant tones"
+  description_zh-cn: "高调光影，色调明快活泼"
+
+colorful:
+  en: colorful
+  zh-cn: 多彩
+  description_en: "Rich, saturated colors and vibrant palettes"
+  description_zh-cn: "丰富饱和的色彩和鲜艳的调色板"
+
+monochrome:
+  en: monochrome
+  zh-cn: 单色
+  description_en: "Single color family or black and white"
+  description_zh-cn: "单色系或黑白"
+
+urban:
+  en: urban
+  zh-cn: 城市
+  description_en: "Cityscapes, architecture, and street scenes"
+  description_zh-cn: "城市景观、建筑和街景"
+
+fantasy:
+  en: fantasy
+  zh-cn: 奇幻
+  description_en: "Magical, imaginative, otherworldly scenes"
+  description_zh-cn: "魔幻、想象、超现实场景"
+
+realistic:
+  en: realistic
+  zh-cn: 写实
+  description_en: "Photorealistic, true-to-life representation"
+  description_zh-cn: "照片级真实，忠实于现实"
+
+3d:
+  en: 3d
+  zh-cn: 3D
+  description_en: "Three-dimensional rendered imagery"
+  description_zh-cn: "三维渲染图像"
+
+anime:
+  en: anime
+  zh-cn: 动漫
+  description_en: "Japanese animation inspired art style"
+  description_zh-cn: "日式动画风格"
+
+watercolor:
+  en: watercolor
+  zh-cn: 水彩
+  description_en: "Watercolor painting aesthetic with fluid washes"
+  description_zh-cn: "水彩画美学，带有流畅的晕染效果"
+
+oil_painting:
+  en: oil painting
+  zh-cn: 油画
+  description_en: "Oil painting texture and brushwork style"
+  description_zh-cn: "油画质感和笔触风格"
+
+sketch:
+  en: sketch
+  zh-cn: 素描
+  description_en: "Hand-drawn, line art, or pencil sketch look"
+  description_zh-cn: "手绘、线稿或铅笔素描风格"
+
+night:
+  en: night
+  zh-cn: 夜晚
+  description_en: "Nighttime scenes with artificial lighting"
+  description_zh-cn: "夜间场景，人工照明"
+
+sunset:
+  en: sunset
+  zh-cn: 日落
+  description_en: "Golden hour, sunset, twilight atmospheres"
+  description_zh-cn: "黄金时刻、日落、黄昏氛围"
+
+macro:
+  en: macro
+  zh-cn: 微距
+  description_en: "Close-up, detailed views of small subjects"
+  description_zh-cn: "特写，小物体的细致画面"
+
+aerial:
+  en: aerial
+  zh-cn: 航拍
+  description_en: "Bird's eye view, drone photography perspective"
+  description_zh-cn: "鸟瞰视角，无人机摄影角度"
+
+underwater:
+  en: underwater
+  zh-cn: 水下
+  description_en: "Submerged scenes, aquatic environments"
+  description_zh-cn: "水下场景，水生环境"
+
+motion_blur:
+  en: motion blur
+  zh-cn: 动态模糊
+  description_en: "Sense of movement through motion blur effect"
+  description_zh-cn: "通过动态模糊效果表现运动感"
+
+bokeh:
+  en: bokeh
+  zh-cn: 散景
+  description_en: "Aesthetic blur in out-of-focus areas"
+  description_zh-cn: "焦外区域的艺术化模糊效果"
+
+silhouette:
+  en: silhouette
+  zh-cn: 剪影
+  description_en: "Dark shapes against bright backgrounds"
+  description_zh-cn: "明亮背景下的深色轮廓"
+
+double_exposure:
+  en: double exposure
+  zh-cn: 双重曝光
+  description_en: "Overlay of multiple images for artistic effect"
+  description_zh-cn: "多张图像叠加的艺术效果"
+
+low_poly:
+  en: low poly
+  zh-cn: 低多边形
+  description_en: "Low polygon 3D geometric style"
+  description_zh-cn: "低多边形3D几何风格"
+
+pixel_art:
+  en: pixel art
+  zh-cn: 像素艺术
+  description_en: "Retro pixelated digital art style"
+  description_zh-cn: "复古像素化数字艺术风格"

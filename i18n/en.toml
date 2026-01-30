@@ -1,0 +1,77 @@
+# 基础界面文字
+[search_placeholder]
+other = "Search prompts..."
+
+[filter_tags]
+other = "Filter by tags"
+
+[no_results]
+other = "No results found."
+
+[hover_to_play]
+other = "Hover to play preview"
+
+[load_more]
+other = "Load more"
+
+[tags_title]
+other = "Tags"
+
+[categories_title]
+other = "Categories"
+
+[prompt_preview]
+other = "Preview"
+
+[view_details]
+other = "View details"
+
+[share]
+other = "Share"
+
+[copy_prompt]
+other = "Copy prompt"
+
+[copied]
+other = "Copied!"
+
+[language_switcher]
+other = "Language"
+
+[english]
+other = "English"
+
+[chinese_simplified]
+other = "简体中文"
+
+# 关于页面
+[about_title]
+other = "About This Site"
+
+[contact_info]
+other = "Contact Information"
+
+[contribute_prompts]
+other = "Contribute Your Prompts"
+
+[footer_copyright]
+other = "Open source project"
+
+[submit_prompt]
+other = "Submit Prompt"
+
+[about]
+other = "About"
+
+# 元数据
+[author]
+other = "Author"
+
+[date]
+other = "Date"
+
+[tags]
+other = "Tags"
+
+[category]
+other = "Category"

@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <div class="taxonomy-header">
+    <h1>{{ T "tags_title" }}: {{ partial "tag-display.html" (dict "tag" .Data.Term "site" .Site) }}</h1>
+    <p>{{ len .Pages }} {{ if eq (len .Pages) 1 }}prompt{{ else }}prompts{{ end }} found</p>
+  </div>
+
+  <!-- 标签描述 -->
+  {{ $tagData := index .Site.Data.tags .Data.Term }}
+  {{ if $tagData }}
+    <div class="tag-description">
+      {{ if eq .Site.Language.Lang "zh-cn" }}
+        {{ index $tagData "description_zh-cn" | default $tagData.description_en }}
+      {{ else }}
+        {{ $tagData.description_en }}
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <!-- 返回所有标签 -->
+  <div class="back-link">
+    <a href="{{ "/tags" | relLangURL }}">← {{ T "tags_title" }}</a>
+  </div>
+
+  <!-- 瀑布流列表 -->
+  <div class="masonry-grid">
+    {{ range .Pages }}
+      {{ partial "prompt-card.html" . }}
+    {{ end }}
+  </div>
+{{ end }}

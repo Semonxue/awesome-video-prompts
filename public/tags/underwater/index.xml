@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Underwater on Awesome Video Prompts</title>
+    <link>http://localhost:1313/tags/underwater/</link>
+    <description>Recent content in Underwater on Awesome Video Prompts</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/tags/underwater/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coral Reef Underwater</title>
+      <link>http://localhost:1313/prompts/001-100/019-20260130/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/prompts/001-100/019-20260130/</guid>
+      <description>&lt;p&gt;Stunning underwater world with colorful marine life and corals.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

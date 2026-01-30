@@ -1,0 +1,57 @@
+{{/* 
+  提示词卡片partial - 显示单个提示词预览
+  使用方法: {{ partial "prompt-card.html" . }}
+*/}}
+
+<article class="prompt-card" data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}">
+  {{ with .Params.image }}
+  <div class="prompt-image-wrapper">
+    <img src="{{ . }}" alt="{{ $.Title }}" class="prompt-image" loading="lazy">
+    {{ with $.Params.model }}
+    <span class="model-badge">{{ . }}</span>
+    {{ end }}
+    <div class="prompt-overlay">
+      <span class="hover-text">{{ T "hover_to_play" }}</span>
+    </div>
+  </div>
+  {{ end }}
+  
+  <div class="prompt-content">
+    <h3 class="prompt-title">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h3>
+    
+    {{ with .Params.description }}
+    <p class="prompt-description">{{ . }}</p>
+    {{ end }}
+    
+    {{ with .Params.tags }}
+    <div class="prompt-tags">
+      {{ range . }}
+        {{ $tagDisplay := partial "tag-display.html" (dict "tag" . "site" $.Site) }}
+        <span class="prompt-tag">{{ $tagDisplay }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+    
+    <div class="prompt-actions">
+      <button class="copy-btn" onclick='copyPrompt("{{ .Params.prompt | htmlEscape }}")' title="{{ T "copy_prompt" }}">
+        📋 {{ T "copy_prompt" }}
+      </button>
+    </div>
+  </div>
+</article>
+
+<script>
+function copyPrompt(promptText) {
+  navigator.clipboard.writeText(promptText).then(() => {
+    // 显示复制成功提示
+    const btn = event.target;
+    const originalText = btn.textContent;
+    btn.textContent = '{{ T "copied" }}';
+    setTimeout(() => {
+      btn.textContent = originalText;
+    }, 2000);
+  });
+}
+</script>
