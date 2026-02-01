@@ -1113,6 +1113,64 @@
               "children": [
                 {
                   "type": "frame",
+                  "id": "Hms1O",
+                  "name": "githubIcon",
+                  "width": 36,
+                  "height": 36,
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 0,
+                    "fill": "#F3F2EF"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BL6rl",
+                      "name": "ghInner",
+                      "width": 20,
+                      "height": 20,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1769959321056.png",
+                        "mode": "fill"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "albFu",
+                  "name": "twitterIcon",
+                  "width": 36,
+                  "height": 36,
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 0,
+                    "fill": "#F3F2EF"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "j6sqD",
+                      "name": "xInner",
+                      "width": 20,
+                      "height": 20,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1769959328060.png",
+                        "mode": "fill"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
                   "id": "cHOey",
                   "name": "langSwitch",
                   "fill": "#F3F2EF",

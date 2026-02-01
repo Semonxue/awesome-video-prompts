@@ -4,7 +4,7 @@ theme = 'ananke'
 
 # 项目版本
 [params]
-  version = '0.1.0'
+  version = '0.1.1'
   author = 'Semon'
   description = 'A collection of awesome video prompts'
 

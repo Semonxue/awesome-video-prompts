@@ -21,118 +21,162 @@
 
 {{ define "scripts" }}
 <script>
-  // 筛选状态
-  let currentSearch = '';
-  let currentModel = 'all';
-  let currentContentTag = 'all';
+  // 状态管理
+  const state = {
+    search: '',
+    model: 'all',
+    tag: 'all'
+  };
 
-  // 统一的筛选函数
-  function applyFilters() {
-    const cards = document.querySelectorAll('.prompt-card');
+  // DOM 元素引用
+  const dom = {
+    get searchInputs() { return document.querySelectorAll('.search-input'); },
+    get modelBtns() { return document.querySelectorAll('.model-tag'); },
+    get tagBtns() { return document.querySelectorAll('.content-tag'); },
+    get grid() { return document.getElementById('prompts-grid'); },
+    get cards() { return document.querySelectorAll('.prompt-card'); },
+    get countDisplay() { return document.querySelector('.result-count'); },
+    get headerDefault() { return document.querySelector('.header-default'); },
+    get headerCompact() { return document.querySelector('.header-compact'); },
+    get mainContent() { return document.querySelector('.main-content'); }
+  };
+
+  // 初始化
+  function init() {
+    bindEvents();
+    // 初始执行一次滚动检查
+    updateHeaderState();
+  }
+
+  // 绑定事件
+  function bindEvents() {
+    // 搜索输入
+    dom.searchInputs.forEach(input => {
+      input.addEventListener('input', (e) => {
+        state.search = e.target.value.toLowerCase().trim();
+        // 同步所有搜索框
+        dom.searchInputs.forEach(fi => {
+            if (fi !== e.target) fi.value = e.target.value;
+        });
+        filterPrompts();
+      });
+    });
+
+    // 模型筛选
+    dom.modelBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const model = btn.dataset.model;
+        updateActiveState(dom.modelBtns, model, 'data-model');
+        state.model = model.toLowerCase();
+        filterPrompts();
+      });
+    });
+
+    // 标签筛选
+    dom.tagBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        // 阻止默认链接跳转（如果是a标签）
+        e.preventDefault();
+        const tag = btn.dataset.tag;
+        updateActiveState(dom.tagBtns, tag, 'data-tag');
+        state.tag = tag.toLowerCase();
+        filterPrompts();
+      });
+    });
+
+    // 滚动监听
+    window.addEventListener('scroll', updateHeaderState);
+  }
+
+  // 更新按钮激活状态
+  function updateActiveState(elements, value, dataAttr) {
+    elements.forEach(el => {
+      if (el.getAttribute(dataAttr) === value) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    });
+  }
+
+  // 核心筛选逻辑
+  function filterPrompts() {
     let visibleCount = 0;
-    
-    cards.forEach(card => {
-      const title = card.querySelector('.prompt-title').textContent.toLowerCase();
-      const description = card.querySelector('.prompt-description')?.textContent.toLowerCase() || '';
+
+    dom.cards.forEach(card => {
+      // 获取卡片数据
+      const cardTitle = (card.querySelector('.prompt-title')?.textContent || '').toLowerCase();
+      const cardDesc = (card.querySelector('.prompt-description')?.textContent || '').toLowerCase();
       const cardModel = (card.dataset.model || '').toLowerCase();
-      const cardTags = (card.dataset.tags || '').toLowerCase().split(',').map(t => t.trim());
-      
-      // 搜索匹配
-      const searchMatch = !currentSearch || 
-                         title.includes(currentSearch) || 
-                         description.includes(currentSearch) ||
-                         cardTags.some(tag => tag.includes(currentSearch));
-      
-      // 模型匹配
-      const modelMatch = currentModel === 'all' || cardModel === currentModel;
-      
-      // 内容标签匹配
-      const tagMatch = currentContentTag === 'all' || 
-                      cardTags.some(tag => tag === currentContentTag);
-      
-      // 显示符合所有条件的卡片
-      const shouldShow = searchMatch && modelMatch && tagMatch;
-      card.style.display = shouldShow ? 'block' : 'none';
-      if (shouldShow) visibleCount++;
+      const cardTags = (card.dataset.tags || '').toLowerCase().split(',').filter(t => t);
+
+      // 1. 搜索匹配 (标题 or 描述 or tags包含关键字)
+      const matchesSearch = !state.search || 
+                            cardTitle.includes(state.search) || 
+                            cardDesc.includes(state.search) || 
+                            cardTags.some(t => t.includes(state.search));
+
+      // 2. 模型匹配
+      const matchesModel = state.model === 'all' || cardModel === state.model;
+
+      // 3. 标签匹配
+      const matchesTag = state.tag === 'all' || cardTags.includes(state.tag);
+
+      // 综合判定
+      const isVisible = matchesSearch && matchesModel && matchesTag;
+
+      // DOM 操作
+      if (isVisible) {
+        card.style.display = '';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
     });
-    
-    // 更新结果计数
-    const resultCount = document.querySelector('.result-count');
-    if (resultCount) {
-      resultCount.textContent = `${visibleCount} prompts found`;
+
+    // 更新计数
+    if (dom.countDisplay) {
+      dom.countDisplay.textContent = `${visibleCount} prompts found`;
     }
   }
 
-  // 搜索功能
-  const searchInput = document.getElementById('search-input');
-  searchInput.addEventListener('input', function(e) {
-    currentSearch = e.target.value.toLowerCase().trim();
-    applyFilters();
-  });
+  // Header 滚动切换逻辑
+  let isCompact = false;
+  function updateHeaderState() {
+    if (!dom.mainContent) return;
 
-  // 内容标签切换
-  document.querySelectorAll('.content-tag').forEach(tag => {
-    tag.addEventListener('click', function() {
-      if (this.classList.contains('more')) return; // 忽略 +12 按钮
-      
-      document.querySelectorAll('.content-tag').forEach(t => t.classList.remove('active'));
-      this.classList.add('active');
-      
-      const tagText = this.textContent.trim().toLowerCase();
-      currentContentTag = tagText === 'all' ? 'all' : tagText.split('/')[0]; // 处理 "Nature/自然" 格式
-      applyFilters();
-    });
-  });
+    const rect = dom.mainContent.getBoundingClientRect();
+    const shouldBeCompact = rect.top < 50;
 
-  // 模型标签切换
-  document.querySelectorAll('.model-tag').forEach(tag => {
-    tag.addEventListener('click', function() {
-      if (this.classList.contains('more')) return; // 忽略 +2 按钮
-      
-      document.querySelectorAll('.model-tag').forEach(t => t.classList.remove('active'));
-      this.classList.add('active');
-      
-      const modelText = this.textContent.trim().toLowerCase();
-      currentModel = modelText === 'all' ? 'all' : modelText;
-      applyFilters();
-    });
-  });
-
-  // Header滚动切换功能
-  const headerDefault = document.querySelector('.header-default');
-  const headerCompact = document.querySelector('.header-compact');
-  const searchInputCompact = document.getElementById('search-input-compact');
-  const searchInputDefault = document.getElementById('search-input');
-
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    // 滚动超过100px时切换到紧凑版
-    if (currentScroll > 100) {
-      headerDefault.style.display = 'none';
-      headerCompact.style.display = 'block';
-      // 同步搜索框内容
-      if (searchInputDefault && searchInputCompact) {
-        searchInputCompact.value = searchInputDefault.value;
-      }
-    } else {
-      headerDefault.style.display = 'block';
-      headerCompact.style.display = 'none';
-      // 同步搜索框内容
-      if (searchInputDefault && searchInputCompact) {
-        searchInputDefault.value = searchInputCompact.value;
-      }
+    if (shouldBeCompact && !isCompact) {
+      // 切换到 Compact
+      isCompact = true;
+      toggleHeaders(dom.headerDefault, dom.headerCompact);
+    } else if (!shouldBeCompact && isCompact) {
+      // 切换到 Default
+      isCompact = false;
+      toggleHeaders(dom.headerCompact, dom.headerDefault);
     }
-  });
-  
-  // 同步两个搜索框的输入
-  if (searchInputDefault && searchInputCompact) {
-    searchInputDefault.addEventListener('input', function(e) {
-      searchInputCompact.value = e.target.value;
-    });
-    searchInputCompact.addEventListener('input', function(e) {
-      searchInputDefault.value = e.target.value;
+  }
+
+  function toggleHeaders(hideEl, showEl) {
+    if (!hideEl || !showEl) return;
+    
+    hideEl.style.display = 'none';
+    hideEl.style.opacity = '0';
+    
+    showEl.style.display = 'block';
+    showEl.style.opacity = '0';
+    
+    // 使用 requestAnimationFrame 确保过渡效果
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        showEl.style.opacity = '1';
+      });
     });
   }
+
+  // 启动
+  document.addEventListener('DOMContentLoaded', init);
 </script>
 {{ end }}
