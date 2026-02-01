@@ -119,38 +119,39 @@
       align-items: center;
     }
     
-    .lang-switch {
-      display: flex;
-      align-items: center;
-      padding: 8px 16px;
-      background: var(--bg-muted);
-      border-radius: 100px;
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--text-secondary);
-      text-decoration: none;
+    .lang-dropdown {
+      font-size: 13px;
+      color: var(--text-primary);
+      background: var(--bg-surface);
+      border: 1.5px solid var(--accent-primary);
+      border-radius: var(--radius-sm);
+      padding: 6px 12px;
       cursor: pointer;
-      border: none;
       font-family: inherit;
+      transition: all 0.2s;
+      font-weight: 500;
     }
     
-    .lang-switch:hover {
-      background: var(--border-subtle);
+    .lang-dropdown:hover {
+      background-color: var(--bg-muted);
+    }
+    
+     
+    .header-default {
+      transition: opacity 0.3s ease;
+    }
+    
+    .search-section {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 48px 20px;
     }
     
      
     .main-content {
       max-width: 1440px;
-      margin: 0 auto;
+      margin: 32px auto;
       padding: 0 48px 32px;
-    }
-    
-     
-    .header-full {
-      background: var(--bg-surface);
-      margin: 0 -48px 32px;
-      padding: 0 48px 20px;
-      box-shadow: var(--shadow-header);
     }
     
      
@@ -172,6 +173,15 @@
     }
     
     .search-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+     
+    .search-model-container {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -230,17 +240,17 @@
       align-items: center;
       height: 36px;
       padding: 0 16px;
-      background: var(--bg-muted);
-      border: 1px solid var(--border-subtle);
-      border-radius: 100px;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--accent-primary);
+      border-radius: 8px;
       font-size: 13px;
-      color: var(--text-secondary);
+      color: var(--accent-primary);
       cursor: pointer;
       transition: all 0.2s;
     }
     
     .model-tag:hover {
-      background: var(--border-subtle);
+      background: var(--bg-muted);
     }
     
     .model-tag.active {
@@ -251,6 +261,8 @@
     
     .model-tag.more {
       background: transparent;
+      border: 1px solid var(--text-tertiary);
+      color: var(--text-secondary);
       padding: 0 12px;
     }
     
@@ -385,12 +397,12 @@
       top: 12px;
       left: 12px;
       padding: 6px 12px;
-      background: rgba(26, 25, 24, 0.75);
-      backdrop-filter: blur(4px);
-      border-radius: 100px;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--accent-primary);
+      border-radius: 8px;
       font-size: 12px;
       font-weight: 500;
-      color: white;
+      color: var(--accent-primary);
       z-index: 10;
     }
     
@@ -449,7 +461,7 @@
       color: var(--text-secondary);
       line-height: 1.5;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
@@ -469,27 +481,11 @@
     }
     
     .prompt-actions {
-      margin-top: 4px;
+      display: none;
     }
     
     .copy-btn {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 8px 14px;
-      background: var(--bg-muted);
-      border: 1px solid var(--border-subtle);
-      border-radius: 8px;
-      font-size: 13px;
-      color: var(--text-secondary);
-      cursor: pointer;
-      transition: all 0.2s;
-      font-family: inherit;
-    }
-    
-    .copy-btn:hover {
-      background: var(--border-subtle);
-      color: var(--text-primary);
+      display: none;
     }
     
      
@@ -572,38 +568,208 @@
         text-align: center;
       }
     }
+
+     
+    .header-compact {
+      transition: opacity 0.3s ease;
+    }
+    
+    .compact-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 16px 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .compact-row-1 {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    
+    .compact-row-2 {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .compact-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .compact-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--accent-primary);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .compact-logo-icon svg {
+      width: 16px;
+      height: 16px;
+      color: white;
+    }
+    
+    .header-compact .search-model-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+    }
+    
+    .header-compact .search-box-wrapper {
+      width: 280px;
+    }
+    
+    .header-compact .search-input {
+      height: 40px;
+      font-size: 13px;
+    }
+    
+    .header-compact .model-tag {
+      height: 32px;
+      padding: 0 12px;
+      font-size: 12px;
+    }
+    
+    .header-compact .content-tag {
+      height: 28px;
+      padding: 0 12px;
+      font-size: 12px;
+    }
   </style>
   
   
 </head>
 <body>
   <header class="site-header">
-    <div class="header-container">
-      <a href="/" class="logo-group">
-        <div class="logo-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-        </div>
-        <span class="site-title-text">Awesome Video Prompts</span>
-      </a>
-      
-      <nav class="header-nav">
+    
+    <div class="header-default">
+      <div class="header-container">
+        <a href="/" class="logo-group">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </div>
+          <span class="site-title-text">Awesome Video Prompts</span>
+        </a>
         
-        <div class="language-switcher">
-          
-            
-              <span class="lang-switch">English ▾</span>
-            
-          
+        <nav class="header-nav">
+          <div class="language-switcher">
             
               
+                <button class="lang-dropdown">English ▾</button>
               
-              <a href="/zh-cn" class="lang-switch">简体中文 ▾</a>
             
+              
+            
+          </div>
+        </nav>
+      </div>
+      
+      
+      <div class="search-section">
+        <p class="intro-text">A collection of awesome video prompts</p>
+        
+        <div class="search-area">
+          <div class="search-row">
+            <div class="search-box-wrapper">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+              <input type="text" class="search-input" placeholder="Search prompts..." id="search-input">
+            </div>
+            
+            <div class="model-tags">
+              <span class="model-tag active">All</span>
+              <span class="model-tag">Sora</span>
+              <span class="model-tag">Runway</span>
+              <span class="model-tag">Pika</span>
+              <span class="model-tag">Kling</span>
+              <span class="model-tag more">+2</span>
+            </div>
+          </div>
           
+          <div class="content-tag-area">
+            <button class="content-tag active">All</button>
+            <button class="content-tag">Nature/自然</button>
+            <button class="content-tag">Cinematic</button>
+            <button class="content-tag">Portrait</button>
+            <button class="content-tag">Futuristic</button>
+            <button class="content-tag">Abstract</button>
+            <button class="content-tag">Sci-Fi</button>
+            <button class="content-tag">Fantasy</button>
+            <span class="content-tag more">+12</span>
+          </div>
         </div>
-      </nav>
+      </div>
+    </div>
+    
+    
+    <div class="header-compact" style="display: none;">
+      <div class="compact-container">
+        <div class="compact-row-1">
+          <div class="compact-logo">
+            <div class="compact-logo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="search-model-container">
+            <div class="search-box-wrapper">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+              <input type="text" class="search-input" placeholder="Search prompts..." id="search-input-compact">
+            </div>
+            
+            <div class="model-tags">
+              <span class="model-tag active">All</span>
+              <span class="model-tag">Sora</span>
+              <span class="model-tag">Runway</span>
+              <span class="model-tag">Pika</span>
+              <span class="model-tag">Kling</span>
+              <span class="model-tag more">+2</span>
+            </div>
+          </div>
+          
+          <div class="compact-language-switcher">
+            
+              
+                <button class="lang-dropdown">English ▾</button>
+              
+            
+              
+            
+          </div>
+        </div>
+        
+        <div class="compact-row-2">
+          <div class="content-tag-area">
+            <button class="content-tag active">All</button>
+            <button class="content-tag">Nature/自然</button>
+            <button class="content-tag">Cinematic</button>
+            <button class="content-tag">Portrait</button>
+            <button class="content-tag">Futuristic</button>
+            <button class="content-tag">Abstract</button>
+            <button class="content-tag">Sci-Fi</button>
+            <button class="content-tag">Fantasy</button>
+            <span class="content-tag more">+12</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   
@@ -646,7 +812,9 @@
     
       
 
-<article class="prompt-card" data-tags="dreamy,nature,cinematic,forest,sunset">
+<article class="prompt-card" 
+         data-tags="dreamy,nature,cinematic,forest,sunset"
+         data-model="Sora">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=800" alt="Dreamy Forest Path" class="prompt-image" loading="lazy">
@@ -771,7 +939,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,lake,mountains,reflection,alpine">
+<article class="prompt-card" 
+         data-tags="nature,lake,mountains,reflection,alpine"
+         data-model="Kling">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=700&amp;fit=crop" alt="Alpine Lake Reflection" class="prompt-image" loading="lazy">
@@ -890,7 +1060,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,autumn,forest,fall,colors">
+<article class="prompt-card" 
+         data-tags="nature,autumn,forest,fall,colors"
+         data-model="Runway">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&amp;h=800&amp;fit=crop" alt="Autumn Forest Path" class="prompt-image" loading="lazy">
@@ -1009,7 +1181,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,cherry blossom,spring,japanese,garden">
+<article class="prompt-card" 
+         data-tags="nature,cherry blossom,spring,japanese,garden"
+         data-model="Sora">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&amp;h=1000&amp;fit=crop" alt="Cherry Blossom Garden" class="prompt-image" loading="lazy">
@@ -1128,7 +1302,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,underwater,coral,ocean,marine">
+<article class="prompt-card" 
+         data-tags="nature,underwater,coral,ocean,marine"
+         data-model="Pika">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=800&amp;h=600&amp;fit=crop" alt="Coral Reef Underwater" class="prompt-image" loading="lazy">
@@ -1249,7 +1425,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,desert,sand dunes,sunset,landscape">
+<article class="prompt-card" 
+         data-tags="nature,desert,sand dunes,sunset,landscape"
+         data-model="Runway">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&amp;h=600&amp;fit=crop" alt="Desert Sand Dunes" class="prompt-image" loading="lazy">
@@ -1372,7 +1550,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,lavender,flowers,fields,purple">
+<article class="prompt-card" 
+         data-tags="nature,lavender,flowers,fields,purple"
+         data-model="Kling">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=800&amp;h=600&amp;fit=crop" alt="Lavender Fields" class="prompt-image" loading="lazy">
@@ -1491,7 +1671,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,mountains,mist,valley,morning">
+<article class="prompt-card" 
+         data-tags="nature,mountains,mist,valley,morning"
+         data-model="Runway">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&amp;h=600&amp;fit=crop" alt="Misty Mountain Valley" class="prompt-image" loading="lazy">
@@ -1610,7 +1792,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,aurora,northern lights,night,arctic">
+<article class="prompt-card" 
+         data-tags="nature,aurora,northern lights,night,arctic"
+         data-model="Pika">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&amp;h=1000&amp;fit=crop" alt="Northern Lights Dance" class="prompt-image" loading="lazy">
@@ -1731,7 +1915,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,ocean,sunrise,peaceful,waves">
+<article class="prompt-card" 
+         data-tags="nature,ocean,sunrise,peaceful,waves"
+         data-model="Kling">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=800&amp;h=600&amp;fit=crop" alt="Ocean Waves at Dawn" class="prompt-image" loading="lazy">
@@ -1850,7 +2036,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,waterfall,rainforest,tropical,water">
+<article class="prompt-card" 
+         data-tags="nature,waterfall,rainforest,tropical,water"
+         data-model="Kling">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&amp;h=1200&amp;fit=crop" alt="Rainforest Waterfall" class="prompt-image" loading="lazy">
@@ -1969,7 +2157,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,stars,milky way,night,desert">
+<article class="prompt-card" 
+         data-tags="nature,stars,milky way,night,desert"
+         data-model="Sora">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=800&amp;h=600&amp;fit=crop" alt="Starry Night Desert" class="prompt-image" loading="lazy">
@@ -2090,7 +2280,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,storm,ocean,dramatic,waves">
+<article class="prompt-card" 
+         data-tags="nature,storm,ocean,dramatic,waves"
+         data-model="Pika">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&amp;h=500&amp;fit=crop" alt="Stormy Sea Horizon" class="prompt-image" loading="lazy">
@@ -2209,7 +2401,9 @@ function copyPrompt(promptText) {
     
       
 
-<article class="prompt-card" data-tags="nature,sunset,mountains,landscape,golden hour">
+<article class="prompt-card" 
+         data-tags="nature,sunset,mountains,landscape,golden hour"
+         data-model="Runway">
   
   <div class="prompt-image-wrapper">
     <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop" alt="Sunset Over Mountains" class="prompt-image" loading="lazy">

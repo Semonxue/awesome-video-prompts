@@ -119,38 +119,39 @@
       align-items: center;
     }
     
-    .lang-switch {
-      display: flex;
-      align-items: center;
-      padding: 8px 16px;
-      background: var(--bg-muted);
-      border-radius: 100px;
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--text-secondary);
-      text-decoration: none;
+    .lang-dropdown {
+      font-size: 13px;
+      color: var(--text-primary);
+      background: var(--bg-surface);
+      border: 1.5px solid var(--accent-primary);
+      border-radius: var(--radius-sm);
+      padding: 6px 12px;
       cursor: pointer;
-      border: none;
       font-family: inherit;
+      transition: all 0.2s;
+      font-weight: 500;
     }
     
-    .lang-switch:hover {
-      background: var(--border-subtle);
+    .lang-dropdown:hover {
+      background-color: var(--bg-muted);
+    }
+    
+    /* ===== 默认版Header ===== */
+    .header-default {
+      transition: opacity 0.3s ease;
+    }
+    
+    .search-section {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 48px 20px;
     }
     
     /* ===== 主内容区 ===== */
     .main-content {
       max-width: 1440px;
-      margin: 0 auto;
+      margin: 32px auto;
       padding: 0 48px 32px;
-    }
-    
-    /* ===== 头部完整区域 ===== */
-    .header-full {
-      background: var(--bg-surface);
-      margin: 0 -48px 32px;
-      padding: 0 48px 20px;
-      box-shadow: var(--shadow-header);
     }
     
     /* 简介文字 */
@@ -172,6 +173,15 @@
     }
     
     .search-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    /* 搜索框+模型标签容器 */
+    .search-model-container {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -218,7 +228,7 @@
       pointer-events: none;
     }
     
-    /* 模型标签 */
+    /* 模型标签 - 小圆角方形设计 */
     .model-tags {
       display: flex;
       gap: 8px;
@@ -230,17 +240,17 @@
       align-items: center;
       height: 36px;
       padding: 0 16px;
-      background: var(--bg-muted);
-      border: 1px solid var(--border-subtle);
-      border-radius: 100px;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--accent-primary);
+      border-radius: 8px;
       font-size: 13px;
-      color: var(--text-secondary);
+      color: var(--accent-primary);
       cursor: pointer;
       transition: all 0.2s;
     }
     
     .model-tag:hover {
-      background: var(--border-subtle);
+      background: var(--bg-muted);
     }
     
     .model-tag.active {
@@ -251,6 +261,8 @@
     
     .model-tag.more {
       background: transparent;
+      border: 1px solid var(--text-tertiary);
+      color: var(--text-secondary);
       padding: 0 12px;
     }
     
@@ -385,12 +397,12 @@
       top: 12px;
       left: 12px;
       padding: 6px 12px;
-      background: rgba(26, 25, 24, 0.75);
-      backdrop-filter: blur(4px);
-      border-radius: 100px;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--accent-primary);
+      border-radius: 8px;
       font-size: 12px;
       font-weight: 500;
-      color: white;
+      color: var(--accent-primary);
       z-index: 10;
     }
     
@@ -449,7 +461,7 @@
       color: var(--text-secondary);
       line-height: 1.5;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
@@ -469,27 +481,11 @@
     }
     
     .prompt-actions {
-      margin-top: 4px;
+      display: none;
     }
     
     .copy-btn {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 8px 14px;
-      background: var(--bg-muted);
-      border: 1px solid var(--border-subtle);
-      border-radius: 8px;
-      font-size: 13px;
-      color: var(--text-secondary);
-      cursor: pointer;
-      transition: all 0.2s;
-      font-family: inherit;
-    }
-    
-    .copy-btn:hover {
-      background: var(--border-subtle);
-      color: var(--text-primary);
+      display: none;
     }
     
     /* ===== 加载更多 ===== */
@@ -572,38 +568,204 @@
         text-align: center;
       }
     }
+
+    /* ===== Compact版Header ===== */
+    .header-compact {
+      transition: opacity 0.3s ease;
+    }
+    
+    .compact-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 16px 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .compact-row-1 {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    
+    .compact-row-2 {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .compact-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .compact-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--accent-primary);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .compact-logo-icon svg {
+      width: 16px;
+      height: 16px;
+      color: white;
+    }
+    
+    .header-compact .search-model-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+    }
+    
+    .header-compact .search-box-wrapper {
+      width: 280px;
+    }
+    
+    .header-compact .search-input {
+      height: 40px;
+      font-size: 13px;
+    }
+    
+    .header-compact .model-tag {
+      height: 32px;
+      padding: 0 12px;
+      font-size: 12px;
+    }
+    
+    .header-compact .content-tag {
+      height: 28px;
+      padding: 0 12px;
+      font-size: 12px;
+    }
   </style>
   
   {{ block "head" . }}{{ end }}
 </head>
 <body>
   <header class="site-header">
-    <div class="header-container">
-      <a href="{{ .Site.Home.RelPermalink }}" class="logo-group">
-        <div class="logo-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-        </div>
-        <span class="site-title-text">{{ .Site.Title }}</span>
-      </a>
-      
-      <nav class="header-nav">
-        <!-- 语言切换 -->
-        <div class="language-switcher">
-          {{ range .Site.Languages }}
-            {{ if ne .Lang $.Site.Language.Lang }}
-              {{ $langURL := printf "/%s" .Lang }}
-              {{ if eq .Lang "en" }}
-                {{ $langURL = "/" }}
+    <!-- 默认版Header -->
+    <div class="header-default">
+      <div class="header-container">
+        <a href="{{ .Site.Home.RelPermalink }}" class="logo-group">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </div>
+          <span class="site-title-text">{{ .Site.Title }}</span>
+        </a>
+        
+        <nav class="header-nav">
+          <div class="language-switcher">
+            {{ range .Site.Languages }}
+              {{ if eq .Lang $.Site.Language.Lang }}
+                <button class="lang-dropdown">{{ .LanguageName }} ▾</button>
               {{ end }}
-              <a href="{{ $langURL }}" class="lang-switch">{{ .LanguageName }} ▾</a>
-            {{ else }}
-              <span class="lang-switch">{{ .LanguageName }} ▾</span>
             {{ end }}
-          {{ end }}
+          </div>
+        </nav>
+      </div>
+      
+      <!-- 完整搜索区域 -->
+      <div class="search-section">
+        <p class="intro-text">{{ .Site.Params.description }}</p>
+        
+        <div class="search-area">
+          <div class="search-row">
+            <div class="search-box-wrapper">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+              <input type="text" class="search-input" placeholder="{{ T "search_placeholder" }}" id="search-input">
+            </div>
+            
+            <div class="model-tags">
+              <span class="model-tag active">All</span>
+              <span class="model-tag">Sora</span>
+              <span class="model-tag">Runway</span>
+              <span class="model-tag">Pika</span>
+              <span class="model-tag">Kling</span>
+              <span class="model-tag more">+2</span>
+            </div>
+          </div>
+          
+          <div class="content-tag-area">
+            <button class="content-tag active">All</button>
+            <button class="content-tag">Nature/自然</button>
+            <button class="content-tag">Cinematic</button>
+            <button class="content-tag">Portrait</button>
+            <button class="content-tag">Futuristic</button>
+            <button class="content-tag">Abstract</button>
+            <button class="content-tag">Sci-Fi</button>
+            <button class="content-tag">Fantasy</button>
+            <span class="content-tag more">+12</span>
+          </div>
         </div>
-      </nav>
+      </div>
+    </div>
+    
+    <!-- Compact版Header -->
+    <div class="header-compact" style="display: none;">
+      <div class="compact-container">
+        <div class="compact-row-1">
+          <div class="compact-logo">
+            <div class="compact-logo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="search-model-container">
+            <div class="search-box-wrapper">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+              <input type="text" class="search-input" placeholder="{{ T "search_placeholder" }}" id="search-input-compact">
+            </div>
+            
+            <div class="model-tags">
+              <span class="model-tag active">All</span>
+              <span class="model-tag">Sora</span>
+              <span class="model-tag">Runway</span>
+              <span class="model-tag">Pika</span>
+              <span class="model-tag">Kling</span>
+              <span class="model-tag more">+2</span>
+            </div>
+          </div>
+          
+          <div class="compact-language-switcher">
+            {{ range .Site.Languages }}
+              {{ if eq .Lang $.Site.Language.Lang }}
+                <button class="lang-dropdown">{{ .LanguageName }} ▾</button>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+        
+        <div class="compact-row-2">
+          <div class="content-tag-area">
+            <button class="content-tag active">All</button>
+            <button class="content-tag">Nature/自然</button>
+            <button class="content-tag">Cinematic</button>
+            <button class="content-tag">Portrait</button>
+            <button class="content-tag">Futuristic</button>
+            <button class="content-tag">Abstract</button>
+            <button class="content-tag">Sci-Fi</button>
+            <button class="content-tag">Fantasy</button>
+            <span class="content-tag more">+12</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   

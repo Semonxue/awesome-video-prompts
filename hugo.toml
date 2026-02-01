@@ -2,6 +2,12 @@ baseURL = 'https://example.org/'
 title = 'Awesome Video Prompts'
 theme = 'ananke'
 
+# 项目版本
+[params]
+  version = '0.1.0'
+  author = 'Semon'
+  description = 'A collection of awesome video prompts'
+
 # 多语言配置
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
@@ -18,6 +24,4 @@ defaultContentLanguageInSubdir = false
     languageName = '简体中文'
     contentDir = 'content'
 
-[params]
-  author = 'Your Name'
-  description = 'A collection of awesome video prompts'
+# 多语言配置

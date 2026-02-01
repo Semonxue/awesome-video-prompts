@@ -3,7 +3,9 @@
   使用方法: {{ partial "prompt-card.html" . }}
 */}}
 
-<article class="prompt-card" data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}">
+<article class="prompt-card" 
+         data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}"
+         data-model="{{ with .Params.model }}{{ . }}{{ end }}">
   {{ with .Params.image }}
   <div class="prompt-image-wrapper">
     <img src="{{ . }}" alt="{{ $.Title }}" class="prompt-image" loading="lazy">
