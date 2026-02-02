@@ -1,0 +1,46 @@
+{{/* 
+  Tag List Partial 
+  Arguments: context (.)
+*/}}
+<div class="content-tag-area">
+  <button class="content-tag active" data-tag="all">{{ T "all" | default "All" }}</button>
+  
+  {{ $allTags := .Site.Taxonomies.tags.ByCount }}
+  {{ $visibleTags := first 16 $allTags }}
+  {{ $hiddenTags := after 16 $allTags }}
+  
+  {{ range $visibleTags }}
+    {{ $tagName := .Name }}
+    {{ $count := .Count }}
+    {{ $tagData := index $.Site.Data.tags $tagName }}
+    
+    {{ if $tagData }}
+      {{ $displayName := index $tagData "en" | default ($tagName | title) }}
+      <button class="content-tag" data-tag="{{ $tagName }}">
+        {{ $displayName }} <span class="tag-count">{{ $count }}</span>
+      </button>
+    {{ end }}
+  {{ end }}
+
+  {{ if $hiddenTags }}
+    <div class="hidden-tags-container" style="display: none;">
+      {{ range $hiddenTags }}
+        {{ $tagName := .Name }}
+        {{ $count := .Count }}
+        {{ $tagData := index $.Site.Data.tags $tagName }}
+        
+        {{ if $tagData }}
+          {{ $displayName := index $tagData "en" | default ($tagName | title) }}
+          <button class="content-tag" data-tag="{{ $tagName }}">
+            {{ $displayName }} <span class="tag-count">{{ $count }}</span>
+          </button>
+        {{ end }}
+      {{ end }}
+    </div>
+    
+    <button class="content-tag more tags-expand-btn">
+      <span class="btn-text">{{ T "show_more" }}</span>
+      <span class="count-badge" style="margin-left: 4px; opacity: 0.6;">+{{ len $hiddenTags }}</span>
+    </button>
+  {{ end }}
+</div>

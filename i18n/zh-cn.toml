@@ -75,3 +75,11 @@ other = "标签"
 
 [category]
 other = "分类"
+[loading]
+other = "加载中..."
+
+[show_more]
+other = "显示更多"
+
+[show_less]
+other = "收起"

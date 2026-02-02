@@ -1,0 +1,31 @@
+{{/* 
+  Model List Partial 
+  Arguments: context (.)
+*/}}
+<div class="model-tags">
+  <button class="model-tag active" data-model="all">{{ T "all" | default "All" }}</button>
+  
+  {{/* 1. Collect all models and their counts using GroupByParam on pages */}}
+  {{ $modelGroups := .Site.RegularPages.GroupByParam "model" }}
+  
+  {{/* 2. Create a list of dicts: {key, count, name, weight} */}}
+  {{ $models := slice }}
+  {{ range $modelGroups }}
+    {{ $key := .Key }}
+    {{ $count := len .Pages }}
+    {{/* Only process if defined in models.yaml data file */}}
+    {{ with index $.Site.Data.models $key }}
+      {{ $models = $models | append (dict "key" $key "count" $count "name" .name) }}
+    {{ end }}
+  {{ end }}
+
+  {{/* 3. Sort by count descending */}}
+  {{ $sortedModels := sort $models "count" "desc" }}
+
+  {{/* 4. Render */}}
+  {{ range $sortedModels }}
+    <button class="model-tag" data-model="{{ .key }}">
+      {{ .name }} <span class="tag-count">{{ .count }}</span>
+    </button>
+  {{ end }}
+</div>

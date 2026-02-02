@@ -17,11 +17,21 @@ defaultContentLanguageInSubdir = false
     title = 'Awesome Video Prompts'
     weight = 1
     languageName = 'English'
-    contentDir = 'content'
+    contentDir = 'content/en'
   [languages.zh-cn]
     title = '精彩视频提示词'
     weight = 2
     languageName = '简体中文'
-    contentDir = 'content'
+    contentDir = 'content/zh-cn'
+
+[module]
+  [[module.mounts]]
+    source = 'content'
+    target = 'content/en'
+    lang = 'en'
+  [[module.mounts]]
+    source = 'content'
+    target = 'content/zh-cn'
+    lang = 'zh-cn'
 
 # 多语言配置

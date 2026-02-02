@@ -92,6 +92,30 @@
 
     // 滚动监听
     window.addEventListener('scroll', updateHeaderState);
+
+    // Expand/Collapse Tags Logic
+    const expandBtns = document.querySelectorAll('.tags-expand-btn');
+    expandBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const container = btn.parentElement;
+        if (!container) return;
+        
+        const hiddenArea = container.querySelector('.hidden-tags-container');
+        if (!hiddenArea) return;
+        
+        const btnText = btn.querySelector('.btn-text');
+        const isHidden = hiddenArea.style.display === 'none';
+        
+        if (isHidden) {
+          hiddenArea.style.display = 'contents'; // Use contents to blend with flex container or block
+          btnText.textContent = '{{ T "show_less" }}';
+        } else {
+          hiddenArea.style.display = 'none';
+          btnText.textContent = '{{ T "show_more" }}';
+        }
+      });
+    });
   }
 
   // 更新按钮激活状态

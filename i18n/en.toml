@@ -75,3 +75,11 @@ other = "Tags"
 
 [category]
 other = "Category"
+[loading]
+other = "Loading..."
+
+[show_more]
+other = "Show more"
+
+[show_less]
+other = "Show less"

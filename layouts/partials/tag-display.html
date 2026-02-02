@@ -9,11 +9,7 @@
 {{ $tagData := index $site.Data.tags $tag }}
 
 {{ if $tagData }}
-  {{ if eq $lang "zh-cn" }}
-    {{ index $tagData "zh-cn" | default $tagData.en }}
-  {{ else }}
-    {{ $tagData.en }}
-  {{ end }}
+  {{ index $tagData "en" | default $tag }}
 {{ else }}
   {{ $tag }}
 {{ end }}

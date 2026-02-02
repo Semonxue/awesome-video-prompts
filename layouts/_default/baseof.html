@@ -159,6 +159,39 @@
     .lang-dropdown:hover {
       background-color: var(--bg-muted);
     }
+
+    .lang-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 4px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-header);
+      padding: 4px;
+      z-index: 100;
+      min-width: 120px;
+    }
+
+    .lang-menu.show {
+      display: block;
+    }
+
+    .lang-item {
+      display: block;
+      padding: 8px 12px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 13px;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    .lang-item:hover {
+      background-color: var(--bg-muted);
+    }
     
     /* ===== 默认版Header ===== */
     .header-default {
@@ -330,6 +363,14 @@
       color: var(--text-tertiary);
     }
     
+    .tag-count {
+      display: none; /* Currently hidden as requested */
+      font-size: 11px;
+      opacity: 0.7;
+      margin-left: 4px;
+      font-weight: 500;
+    }
+  
     /* ===== 网格头部 ===== */
     .grid-header {
       display: flex;
@@ -734,12 +775,25 @@
               <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path>
             </svg>
           </a>
-          <div class="language-switcher">
-            {{ range .Site.Languages }}
-              {{ if eq .Lang $.Site.Language.Lang }}
-                <button class="lang-dropdown">{{ .LanguageName }} ▾</button>
+          <div class="language-switcher" style="position: relative;">
+            <button class="lang-dropdown" onclick="event.stopPropagation(); this.nextElementSibling.classList.toggle('show')">
+              {{ .Site.Language.LanguageName }} ▾
+            </button>
+            <div class="lang-menu">
+              {{ $page := . }}
+              {{ range .Site.Sites }}
+                {{ if ne .Language.Lang $.Site.Language.Lang }}
+                  {{ $link := .Home.RelPermalink }}
+                  {{ $targetLang := .Language.Lang }}
+                  {{ range $page.Translations }}
+                     {{ if eq .Language.Lang $targetLang }}
+                        {{ $link = .RelPermalink }}
+                     {{ end }}
+                  {{ end }}
+                  <a href="{{ $link }}" class="lang-item">{{ .Language.LanguageName }}</a>
+                {{ end }}
               {{ end }}
-            {{ end }}
+            </div>
           </div>
         </nav>
       </div>
@@ -758,31 +812,10 @@
               <input type="text" class="search-input" placeholder="{{ T "search_placeholder" }}" id="search-input">
             </div>
             
-            <div class="model-tags">
-              <button class="model-tag active" data-model="all">All</button>
-              {{ range $key, $val := .Site.Data.models }}
-              <button class="model-tag" data-model="{{ $key }}">{{ $val.name }}</button>
-              {{ end }}
-            </div>
+            {{ partial "header-model-list.html" . }}
           </div>
           
-          <div class="content-tag-area">
-            <button class="content-tag active" data-tag="all">All</button>
-            {{ $tags := .Site.Taxonomies.tags.ByCount }}
-            {{ range $tags }}
-              {{ $tagName := .Name }}
-              {{ $tagData := index $.Site.Data.tags $tagName }}
-              {{ if $tagData }}
-                {{ $displayName := $tagName | title }}
-                {{ if eq $.Site.Language.Lang "zh-cn" }}
-                  {{ $displayName = index $tagData "zh-cn" | default $displayName }}
-                {{ else }}
-                  {{ $displayName = index $tagData "en" | default $displayName }}
-                {{ end }}
-                <button class="content-tag" data-tag="{{ $tagName }}">{{ $displayName }}</button>
-              {{ end }}
-            {{ end }}
-          </div>
+          {{ partial "header-tag-list.html" . }}
         </div>
       </div>
     </div>
@@ -808,41 +841,33 @@
               <input type="text" class="search-input" placeholder="{{ T "search_placeholder" }}" id="search-input-compact">
             </div>
             
-            <div class="model-tags">
-              <button class="model-tag active" data-model="all">All</button>
-              {{ range $key, $val := .Site.Data.models }}
-              <button class="model-tag" data-model="{{ $key }}">{{ $val.name }}</button>
-              {{ end }}
-            </div>
+            {{ partial "header-model-list.html" . }}
           </div>
           
-          <div class="compact-language-switcher">
-            {{ range .Site.Languages }}
-              {{ if eq .Lang $.Site.Language.Lang }}
-                <button class="lang-dropdown">{{ .LanguageName }} ▾</button>
+          <div class="compact-language-switcher" style="position: relative;">
+            <button class="lang-dropdown" onclick="event.stopPropagation(); this.nextElementSibling.classList.toggle('show')">
+              {{ .Site.Language.LanguageName }} ▾
+            </button>
+            <div class="lang-menu">
+              {{ $page := . }}
+              {{ range .Site.Sites }}
+                {{ if ne .Language.Lang $.Site.Language.Lang }}
+                  {{ $link := .Home.RelPermalink }}
+                  {{ $targetLang := .Language.Lang }}
+                  {{ range $page.Translations }}
+                     {{ if eq .Language.Lang $targetLang }}
+                        {{ $link = .RelPermalink }}
+                     {{ end }}
+                  {{ end }}
+                  <a href="{{ $link }}" class="lang-item">{{ .Language.LanguageName }}</a>
+                {{ end }}
               {{ end }}
-            {{ end }}
+            </div>
           </div>
         </div>
         
         <div class="compact-row-2">
-          <div class="content-tag-area">
-            <button class="content-tag active" data-tag="all">All</button>
-            {{ $tags := .Site.Taxonomies.tags.ByCount }}
-            {{ range $tags }}
-              {{ $tagName := .Name }}
-              {{ $tagData := index $.Site.Data.tags $tagName }}
-              {{ if $tagData }}
-                {{ $displayName := $tagName | title }}
-                {{ if eq $.Site.Language.Lang "zh-cn" }}
-                  {{ $displayName = index $tagData "zh-cn" | default $displayName }}
-                {{ else }}
-                  {{ $displayName = index $tagData "en" | default $displayName }}
-                {{ end }}
-                <button class="content-tag" data-tag="{{ $tagName }}">{{ $displayName }}</button>
-              {{ end }}
-            {{ end }}
-          </div>
+          {{ partial "header-tag-list.html" . }}
         </div>
       </div>
     </div>
@@ -866,44 +891,82 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // Close language menus when clicking outside
+      document.addEventListener('click', () => {
+        document.querySelectorAll('.lang-menu.show').forEach(menu => {
+          menu.classList.remove('show');
+        });
+      });
+
       // Video hover functionality
       const wrappers = document.querySelectorAll('.prompt-image-wrapper');
       
       wrappers.forEach(wrapper => {
         const video = wrapper.querySelector('video.prompt-hover-video');
+        const loader = wrapper.querySelector('.video-loader');
         if (!video) return;
         
         let playPromise;
+        let fadeOutTimeout;
         
         wrapper.addEventListener('mouseenter', () => {
-          video.style.display = 'block';
-          video.currentTime = 0;
-          video.volume = 0.1; // 10% volume
+          clearTimeout(fadeOutTimeout);
           
-          // Try to play with sound first (might be blocked by browser policy)
+          if (loader) loader.style.display = 'flex';
+          video.style.display = 'block';
+          // Ensure opacity starts at 0 if we are just starting, but if we are interrupting a fade out, it might be mid-way.
+          // Since we want to ensure no black flash, keeping it 0 is safe.
+          if (video.style.display === 'none') {
+             video.style.opacity = '0';
+          }
+          
+          video.currentTime = 0;
+          video.volume = 0.2; // 20% volume
+          
+          // Try to play with sound first
           video.muted = false; 
           
+          const onPlaying = () => {
+            if (loader) loader.style.display = 'none';
+            video.style.opacity = '1';
+            video.removeEventListener('playing', onPlaying);
+          };
+          video.addEventListener('playing', onPlaying);
+
           playPromise = video.play();
           if (playPromise !== undefined) {
             playPromise.catch(error => {
-              // If unmuted autoplay fails, try muted
-              console.log("Unmuted autoplay prevented, falling back to muted:", error);
               video.muted = true;
-              video.play().catch(e => console.log("Muted autoplay also failed:", e));
+              video.play().catch(e => {
+                  console.log("Autoplay failed:", e);
+                  if (loader) loader.style.display = 'none';
+                  video.style.display = 'none'; // Give up
+              });
             });
           }
         });
         
         wrapper.addEventListener('mouseleave', () => {
+          // Immediately hide loader if visible
+          if (loader) loader.style.display = 'none';
+          
+          // Start fade out
+          video.style.opacity = '0';
+          
           if (playPromise !== undefined) {
             playPromise.then(() => {
-              video.pause();
-              video.style.display = 'none';
+              // Wait for transition to finish before hiding/pausing
+              fadeOutTimeout = setTimeout(() => {
+                video.pause();
+                video.style.display = 'none';
+              }, 300);
             }).catch(() => {
               video.style.display = 'none';
             });
           } else {
-            video.style.display = 'none';
+             fadeOutTimeout = setTimeout(() => {
+                video.style.display = 'none';
+             }, 300);
           }
         });
       });
