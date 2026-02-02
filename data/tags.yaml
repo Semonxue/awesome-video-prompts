@@ -289,3 +289,45 @@ multi-shot:
   zh-cn: 多镜头
   description_en: "Multiple camera angles and shots"
   description_zh-cn: "多角度和多镜头"
+
+snow:
+  en: snow
+  zh-cn: 雪景
+  description_en: "Snow-covered landscapes and winter scenes"
+  description_zh-cn: "雪覆盖的景观和冬季场景"
+
+ice:
+  en: ice
+  zh-cn: 冰川
+  description_en: "Ice formations, glaciers, and frozen landscapes"
+  description_zh-cn: "冰层、冰川和冰冻景观"
+
+thunder:
+  en: thunder
+  zh-cn: 雷暴
+  description_en: "Thunderstorms and stormy weather"
+  description_zh-cn: "雷暴和暴风雨天气"
+
+lightning:
+  en: lightning
+  zh-cn: 闪电
+  description_en: "Lightning strikes and electrical phenomena"
+  description_zh-cn: "闪电和电气现象"
+
+desert:
+  en: desert
+  zh-cn: 沙漠
+  description_en: "Desert landscapes, sand dunes, and arid environments"
+  description_zh-cn: "沙漠景观、沙丘和干旱环境"
+
+documentary:
+  en: documentary
+  zh-cn: 纪录片
+  description_en: "Documentary-style cinematography and realistic storytelling"
+  description_zh-cn: "纪录片风格的电影摄影和真实叙事"
+
+cyberpunk:
+  en: cyberpunk
+  zh-cn: 赛博朋克
+  description_en: "Futuristic, high-tech low-life dystopian aesthetics"
+  description_zh-cn: "未来主义、高科技低生活反乌托邦美学"
