@@ -53,7 +53,7 @@
     {{ if .Params.author }}
     <div class="prompt-meta">
       <div class="prompt-author">
-        <span class="author-label">By</span>
+        <span class="author-label">{{ T "by_author" | default "By" }}</span>
         <a href="{{ or .Params.source_url .Params.source }}" target="_blank" rel="noopener noreferrer" class="author-name">{{ .Params.author }}</a>
       </div>
       <div class="prompt-date">{{ .Date.Format "2006-01-02" }}</div>

@@ -83,3 +83,21 @@ other = "显示更多"
 
 [show_less]
 other = "收起"
+
+[popular_prompts]
+other = "热门提示词"
+
+[prompts_found]
+other = "{{ .Count }} 个提示词"
+
+[by_author]
+other = "作者"
+
+[all]
+other = "全部"
+
+[collected_count]
+other = "已收录 {{ .Count }} 个精彩提示词"
+
+[site_description]
+other = "精彩视频提示词合集。"

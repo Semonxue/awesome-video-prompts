@@ -1,8 +1,8 @@
 {{ define "main" }}
   <!-- 网格头部 -->
   <div class="grid-header">
-    <h2 class="grid-title">Popular Prompts</h2>
-    <span class="result-count">{{ len (where .Site.RegularPages "Params.tags" "!=" nil) }} prompts found</span>
+    <h2 class="grid-title">{{ T "popular_prompts" }}</h2>
+    <span class="result-count" data-format="{{ T "prompts_found" (dict "Count" "COUNT_PLACEHOLDER") }}">{{ T "prompts_found" (dict "Count" (len (where .Site.RegularPages "Params.tags" "!=" nil))) }}</span>
   </div>
 
   <!-- 瀑布流提示词列表 -->
@@ -166,7 +166,12 @@
 
     // 更新计数
     if (dom.countDisplay) {
-      dom.countDisplay.textContent = `${visibleCount} prompts found`;
+      const format = dom.countDisplay.dataset.format;
+      if (format) {
+        dom.countDisplay.textContent = format.replace('COUNT_PLACEHOLDER', visibleCount);
+      } else {
+        dom.countDisplay.textContent = `${visibleCount} prompts found`;
+      }
     }
   }
 

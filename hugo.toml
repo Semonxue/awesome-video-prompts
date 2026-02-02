@@ -6,7 +6,6 @@ theme = 'ananke'
 [params]
   version = '0.2.1'
   author = 'Semon'
-  description = 'A collection of awesome video prompts'
 
 # 多语言配置
 defaultContentLanguage = 'en'
@@ -18,11 +17,16 @@ defaultContentLanguageInSubdir = false
     weight = 1
     languageName = 'English'
     contentDir = 'content/en'
+    [languages.en.params]
+      description = 'A collection of awesome video prompts'
+
   [languages.zh-cn]
     title = '精彩视频提示词'
     weight = 2
     languageName = '简体中文'
     contentDir = 'content/zh-cn'
+    [languages.zh-cn.params]
+      description = '精彩视频提示词合集'
 
 [module]
   [[module.mounts]]

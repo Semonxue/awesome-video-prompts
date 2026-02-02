@@ -83,3 +83,21 @@ other = "Show more"
 
 [show_less]
 other = "Show less"
+
+[popular_prompts]
+other = "Popular Prompts"
+
+[prompts_found]
+other = "{{ .Count }} prompts found"
+
+[by_author]
+other = "By"
+
+[all]
+other = "All"
+
+[collected_count]
+other = "Collected {{ .Count }} prompts"
+
+[site_description]
+other = "A collection of awesome video prompts."

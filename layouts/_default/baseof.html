@@ -800,7 +800,7 @@
       
       <!-- 完整搜索区域 -->
       <div class="search-section">
-        <p class="intro-text">{{ .Site.Params.description }}</p>
+        <p class="intro-text">{{ T "site_description" }} · {{ T "collected_count" (dict "Count" (len (where .Site.RegularPages "Params.tags" "!=" nil))) }}</p>
         
         <div class="search-area">
           <div class="search-row">
