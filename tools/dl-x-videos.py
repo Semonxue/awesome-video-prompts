@@ -143,9 +143,9 @@ def process_download(metadata: dict, url: str) -> dict:
 
     normalized = normalize_url(url)
     
-    # 构造 yt-dlp 下载命令
-    # 强制 mp4 格式以便后续处理
-    output_template = os.path.join(output_dir, "video.%(ext)s")
+    # 构造 yt-dlp 下载命令，使用 --output 模板自动处理多个视频
+    # %(autonumber)s 会为多个视频自动编号 (1, 2, 3...)
+    output_template = os.path.join(output_dir, "video_%(autonumber)s.%(ext)s")
     cmd = [
         "/Users/semonxue/miniconda3/bin/yt-dlp",
         "--no-warnings",
@@ -154,36 +154,51 @@ def process_download(metadata: dict, url: str) -> dict:
         "-o", output_template,
         "--write-thumbnail",
         "--convert-thumbnails", "jpg",
+        "--autonumber-start", "1",
         normalized
     ]
 
     # 使用 stderr 输出日志，以免污染 stdout 的 JSON 输出
-    print(f"Downloading video and thumbnail to {output_dir}...", file=sys.stderr)
+    print(f"Downloading video(s) and thumbnail(s) to {output_dir}...", file=sys.stderr)
     try:
         subprocess.run(cmd, check=True)
     except subprocess.CalledProcessError as e:
         metadata["download_error"] = str(e)
         return metadata
 
-    # 查找下载的文件
-    video_path = None
-    thumbnail_path = None
+    # 查找所有下载的视频和缩略图
+    video_paths = []
+    thumbnail_paths = []
 
-    for f in os.listdir(output_dir):
+    for f in sorted(os.listdir(output_dir)):
         full_path = os.path.join(output_dir, f)
-        if f.startswith("video."):
-            if f.endswith(".mp4"):
-                video_path = full_path
-            elif f.endswith(".jpg"):
-                thumbnail_path = full_path
+        if f.startswith("video_") and f.endswith(".mp4"):
+            video_paths.append(full_path)
+        elif f.startswith("video_") and f.endswith(".jpg"):
+            thumbnail_paths.append(full_path)
 
-    if video_path:
-        metadata["local_video_path"] = os.path.abspath(video_path)
+    # 存储所有视频和预览路径
+    metadata["local_videos"] = []
+    
+    for idx, video_path in enumerate(video_paths, 1):
+        video_info = {
+            "index": idx,
+            "path": os.path.abspath(video_path)
+        }
         
-        # 生成预览版本 (480p)
-        # 进一步降低分辨率和质量以控制在 500k 以内
-        preview_path = os.path.join(output_dir, "preview_480p.mp4")
-        if shutil.which("ffmpeg"):
+        # 为每个视频生成对应的缩略图
+        if idx <= len(thumbnail_paths):
+            video_info["thumbnail"] = os.path.abspath(thumbnail_paths[idx-1])
+        
+        metadata["local_videos"].append(video_info)
+    
+    # 为每个视频生成预览
+    if shutil.which("ffmpeg"):
+        for video_info in metadata.get("local_videos", []):
+            video_path = video_info["path"]
+            idx = video_info["index"]
+            preview_path = os.path.join(output_dir, f"preview_{idx}_480p.mp4")
+            
             print(f"Generating preview video {preview_path}...", file=sys.stderr)
             ffmpeg_cmd = [
                 "ffmpeg", "-y",
@@ -194,22 +209,28 @@ def process_download(metadata: dict, url: str) -> dict:
                 "-c:a", "aac",
                 "-ac", "1",            # 单声道
                 "-b:a", "24k",         # 更低音质
-                "-crf", "42",          # 极高压缩率 (由 35 调整为 42)
+                "-crf", "42",          # 极高压缩率
                 "-preset", "veryfast",
                 "-fs", "480k",         # 严格限制在 500k 以内
                 preview_path
             ]
             try:
                 subprocess.run(ffmpeg_cmd, check=True, capture_output=True)
-                metadata["local_preview_path"] = os.path.abspath(preview_path)
+                video_info["preview"] = os.path.abspath(preview_path)
             except subprocess.CalledProcessError as e:
-                print(f"Preview generation failed: {e}", file=sys.stderr)
-                metadata["preview_error"] = str(e)
-        else:
-            print("ffmpeg not found, skipping preview generation.", file=sys.stderr)
-
-    if thumbnail_path:
-        metadata["local_thumbnail_path"] = os.path.abspath(thumbnail_path)
+                print(f"Preview generation failed for video {idx}: {e}", file=sys.stderr)
+                video_info["preview_error"] = str(e)
+    else:
+        print("ffmpeg not found, skipping preview generation.", file=sys.stderr)
+    
+    # 兼容旧版本字段
+    if metadata.get("local_videos"):
+        first_video = metadata["local_videos"][0]
+        metadata["local_video_path"] = first_video["path"]
+        if "preview" in first_video:
+            metadata["local_preview_path"] = first_video["preview"]
+        if "thumbnail" in first_video:
+            metadata["local_thumbnail_path"] = first_video["thumbnail"]
 
     # 保存 JSON 到文件夹
     json_path = os.path.join(output_dir, "info.json")

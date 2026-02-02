@@ -283,3 +283,9 @@ tunnel:
   zh-cn: 隧道
   description_en: "Tunnels and underground passages"
   description_zh-cn: "隧道和地下通道"
+
+multi-shot:
+  en: multi-shot
+  zh-cn: 多镜头
+  description_en: "Multiple camera angles and shots"
+  description_zh-cn: "多角度和多镜头"
