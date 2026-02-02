@@ -7,7 +7,7 @@
 
   <!-- 瀑布流提示词列表 -->
   <div class="masonry-grid" id="prompts-grid">
-    {{ range where .Site.RegularPages "Params.tags" "!=" nil }}
+    {{ range sort (where .Site.RegularPages "Params.tags" "!=" nil) ".File.BaseFileName" "desc" }}
       {{ partial "prompt-card.html" . }}
     {{ end }}
   </div>
