@@ -26,7 +26,7 @@
 
     {{ with .Params.image }}
     <div class="prompt-preview-image">
-      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+      <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
       <div class="image-caption">{{ T "prompt_preview" }}</div>
     </div>
     {{ end }}
