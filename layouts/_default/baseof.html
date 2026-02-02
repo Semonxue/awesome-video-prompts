@@ -563,6 +563,10 @@
       display: flex;
       gap: 4px;
       align-items: center;
+      max-width: 65%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .author-label {
@@ -580,6 +584,7 @@
     .prompt-date {
       color: var(--border-strong);
       font-size: 10px;
+      text-wrap: nowrap;
     }
     
     .prompt-actions {

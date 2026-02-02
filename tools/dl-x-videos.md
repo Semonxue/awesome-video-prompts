@@ -34,7 +34,7 @@
   - video: /prompts/<YYYY-MM>/<Slug>/video.mp4
   - date: 转换时间格式。
   - description: 分析 text 中内容，提取完整的提示词。不要有遗漏、截取或提炼。
-  - model: 自动匹配，并优先使用 data/models.yaml 中的模型关键词。
+  - model: 自动匹配，提取视频模型，并优先使用 data/models.yaml 中的模型关键词。
   - tags: 自动匹配，tags选择最匹配的，不要超过5个，tags不要包含model,优先选择 data/tags.yaml中的标签。
   - author： 原始帖子作者
   - source_url: 原始帖子链接 (注意：不要使用 url 字段，因为它是 Hugo 保留字段)。
