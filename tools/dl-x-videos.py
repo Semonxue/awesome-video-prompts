@@ -24,6 +24,8 @@ import sys
 import argparse
 import os
 import shutil
+import requests
+from bs4 import BeautifulSoup
 
 
 def normalize_url(url: str) -> str:
@@ -32,6 +34,39 @@ def normalize_url(url: str) -> str:
     if "x.com" in url:
         return url.replace("x.com", "twitter.com", 1)
     return url
+
+
+def get_fixupx_text(url: str) -> str:
+    """尝试从 fixupx.com 获取完整的帖子文本"""
+    # 将 x.com/twitter.com 替换为 fixupx.com
+    fixup_url = url
+    if "x.com" in fixup_url:
+        fixup_url = fixup_url.replace("x.com", "fixupx.com")
+    elif "twitter.com" in fixup_url:
+        fixup_url = fixup_url.replace("twitter.com", "fixupx.com")
+    else:
+        return None
+
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)"
+        }
+        
+        # 短超时，避免阻塞太久
+        response = requests.get(fixup_url, headers=headers, timeout=10)
+        if response.status_code != 200:
+            return None
+            
+        soup = BeautifulSoup(response.text, "html.parser")
+        meta_desc = soup.find("meta", property="og:description")
+        
+        if meta_desc and meta_desc.get("content"):
+            return meta_desc["content"]
+            
+        return None
+    except Exception:
+        # 失败时不影响主流程
+        return None
 
 
 def extract_tweet_info(url: str) -> dict:
@@ -71,6 +106,14 @@ def extract_tweet_info(url: str) -> dict:
             "thumbnail": data.get("thumbnail"),
             "videos": []
         }
+
+        # 尝试补全可能被截断的文本
+        # yt-dlp 有时获取的 description 是不完整的，通过 fixupx 可以获取完整内容
+        full_text = get_fixupx_text(url)
+        if full_text and len(full_text) > len(extracted["text"]):
+            # fixupx有时会在末尾保留截断指示或乱码，但通常包含更多内容
+            # 这里简单做一个替换
+            extracted["text"] = full_text
 
         # 筛选视频格式流 (过滤掉纯音频或无效格式)
         for f in data.get("formats", []):

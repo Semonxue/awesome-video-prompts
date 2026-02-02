@@ -488,6 +488,12 @@
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      cursor: pointer;
+      transition: color 0.2s, opacity 0.5s ease-in-out;
+    }
+    
+    .prompt-description:hover {
+      color: var(--text-primary);
     }
     
     .prompt-tags {
@@ -898,6 +904,31 @@
             });
           } else {
             video.style.display = 'none';
+          }
+        });
+      });
+
+      // Copy Prompt functionality
+      const descriptions = document.querySelectorAll('.prompt-description');
+      descriptions.forEach(desc => {
+        desc.addEventListener('click', async () => {
+          const text = desc.textContent;
+          try {
+            await navigator.clipboard.writeText(text);
+            
+            // Initial flash state
+            desc.style.transition = 'none';
+            desc.style.opacity = '0.5';
+            
+            // Trigger reflow
+            void desc.offsetWidth;
+
+            // Transition back to 100% over 0.5s
+            desc.style.transition = 'color 0.2s, opacity 0.5s ease-in-out';
+            desc.style.opacity = '1';
+
+          } catch (err) {
+            console.error('Failed to copy text: ', err);
           }
         });
       });

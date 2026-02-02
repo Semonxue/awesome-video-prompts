@@ -1,9 +1,21 @@
-KlingO1:
+klingo1:
   name: Kling O1
   slug: klingo1
-Kling26:
+kling26:
   name: Kling 2.6
-  slug: kling 2.6
-Hailuo:
-  name: HailuoAI
-  slug: HailuoAI
+  slug: kling26
+hailuo:
+  name: Hailuo
+  slug: hailuo
+veo31:
+  name: Veo 3.1
+  slug: veo31
+grok:
+  name: Grok
+  slug: grok
+ray314:
+  name: Ray 3.14
+  slug: ray314
+lumalabs:
+  name: Luma Labs
+  slug: lumalabs

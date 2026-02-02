@@ -46,6 +46,12 @@
     bindEvents();
     // 初始执行一次滚动检查
     updateHeaderState();
+    
+    // 隐藏加载动画 (因为目前是一次性加载所有内容)
+    const loadingMore = document.getElementById('loading-more');
+    if (loadingMore) {
+        loadingMore.style.display = 'none';
+    }
   }
 
   // 绑定事件

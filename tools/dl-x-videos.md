@@ -33,7 +33,7 @@
   - image: /prompts/<YYYY-MM>/<Slug>/cover.jpg
   - video: /prompts/<YYYY-MM>/<Slug>/video.mp4
   - date: 转换时间格式。
-  - description: 从 text 中总结。
+  - description: 分析 text 中内容，提取完整的提示词。不要有遗漏、截取或提炼。
   - model: 自动匹配，并优先使用 data/models.yaml 中的模型关键词。
   - tags: 自动匹配，tags选择最匹配的，不要超过5个，tags不要包含model,优先选择 data/tags.yaml中的标签。
   - author： 原始帖子作者

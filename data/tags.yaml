@@ -211,3 +211,75 @@ military:
   zh-cn: 军事
   description_en: "Military themes, soldiers, and tactical operations"
   description_zh-cn: "军事主题、士兵和战术行动"
+
+tracking:
+  en: tracking
+  zh-cn: 跟踪
+  description_en: "Following or tracking movement in shots"
+  description_zh-cn: "镜头跟随或跟踪运动"
+
+car:
+  en: car
+  zh-cn: 汽车
+  description_en: "Automobiles and vehicle-focused scenes"
+  description_zh-cn: "汽车和以车辆为主的场景"
+
+mountain:
+  en: mountain
+  zh-cn: 山
+  description_en: "Mountain landscapes and high-altitude scenes"
+  description_zh-cn: "山地景观和高海拔场景"
+
+pov:
+  en: pov
+  zh-cn: POV
+  description_en: "Point of view shots from character's perspective"
+  description_zh-cn: "从人物视角的镜头"
+
+honeybee:
+  en: honeybee
+  zh-cn: 蜜蜂
+  description_en: "Honeybees and bee-related imagery"
+  description_zh-cn: "蜜蜂和与蜜蜂相关的图像"
+
+rally:
+  en: rally
+  zh-cn: 拉力赛
+  description_en: "Rally racing and motorsport events"
+  description_zh-cn: "拉力赛和赛车运动"
+
+driver:
+  en: driver
+  zh-cn: 司机
+  description_en: "Drivers and piloting scenes"
+  description_zh-cn: "司机和驾驶场景"
+
+racing:
+  en: racing
+  zh-cn: 赛车
+  description_en: "Racing and high-speed action"
+  description_zh-cn: "赛车和高速度动作"
+
+transitions:
+  en: transitions
+  zh-cn: 转场
+  description_en: "Scene transitions and camera movements"
+  description_zh-cn: "场景转场和镜头移动"
+
+alley:
+  en: alley
+  zh-cn: 小巷
+  description_en: "Narrow streets and alleyways"
+  description_zh-cn: "狭窄街道和小巷"
+
+hallway:
+  en: hallway
+  zh-cn: 走廊
+  description_en: "Indoor corridors and passageways"
+  description_zh-cn: "室内走廊和通道"
+
+tunnel:
+  en: tunnel
+  zh-cn: 隧道
+  description_en: "Tunnels and underground passages"
+  description_zh-cn: "隧道和地下通道"
