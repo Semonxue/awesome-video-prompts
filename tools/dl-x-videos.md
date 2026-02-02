@@ -29,11 +29,11 @@
 ### 生成 Markdown 内容 (Content Generation)
 
 - 创建文件：content/prompts/<YYYY-MM>/<Slug>.md
-- 关键 Front Matter 字段：
+- 关键 Front Matter 字段(务必不要写错)：
   - image: /prompts/<YYYY-MM>/<Slug>/cover.jpg
   - video: /prompts/<YYYY-MM>/<Slug>/video.mp4
   - date: 转换时间格式。
-  - description: 分析 text 中内容，提取完整的提示词。不要有遗漏、截取或提炼。
+  - description: 分析 text 中内容，提取完整的提示词。不要有遗漏、截取或提炼，如果text中内容部完整，看下上下文是否有线索。
   - model: 自动匹配，提取视频模型，并优先使用 data/models.yaml 中的模型关键词。
   - tags: 自动匹配，tags选择最匹配的，不要超过5个，tags不要包含model,优先选择 data/tags.yaml中的标签。
   - author： 原始帖子作者

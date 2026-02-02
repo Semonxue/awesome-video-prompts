@@ -31,6 +31,23 @@
     </div>
     {{ end }}
 
+    {{ with .Params.cover }}
+    <div class="prompt-preview-image">
+      <img src="{{ (printf "%s%s" $.Site.BaseURL (strings.TrimPrefix "/" .)) | safeURL }}" alt="{{ $.Title }}" loading="lazy">
+      <div class="image-caption">{{ T "prompt_preview" }}</div>
+    </div>
+    {{ end }}
+
+    {{ with .Params.video }}
+    <div class="prompt-video-wrapper">
+      <video controls preload="metadata" style="max-width: 100%; height: auto;">
+        <source src="{{ (printf "%s%s" $.Site.BaseURL (strings.TrimPrefix "/" .)) | safeURL }}" type="video/mp4">
+        {{ T "video_not_supported" | default "Your browser does not support the video tag." }}
+      </video>
+      <div class="video-caption">{{ T "prompt_video" | default "Generated Video" }}</div>
+    </div>
+    {{ end }}
+
     <div class="prompt-content-wrapper">
       <div class="prompt-text-section">
         <h2>{{ T "copy_prompt" }}</h2>
