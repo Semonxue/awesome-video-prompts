@@ -34,6 +34,7 @@
       
       /* 边框 */
       --border-subtle: #E8E7E4;
+      --border-strong: #D4D4D4;
       
       /* 阴影 */
       --shadow-card: 0 2px 12px rgba(26, 25, 24, 0.04);
@@ -419,11 +420,11 @@
       position: absolute;
       top: 12px;
       left: 12px;
-      padding: 6px 12px;
-      background: var(--bg-surface);
-      border: 1.5px solid var(--accent-primary);
+      padding: 4px 6px ;
+      background-color:  rgba(255, 255, 255, 0.8);
+      border: none;
       border-radius: 8px;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 500;
       color: var(--accent-primary);
       z-index: 10;
@@ -458,14 +459,14 @@
     }
     
     .prompt-content {
-      padding: 16px;
+      padding: 12px 16px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
     
     .prompt-title {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 600;
       line-height: 1.4;
     }
@@ -480,7 +481,7 @@
     }
     
     .prompt-description {
-      font-size: 14px;
+      font-size: 12px;
       color: var(--text-secondary);
       line-height: 1.5;
       display: -webkit-box;
@@ -496,11 +497,42 @@
     }
     
     .prompt-tag {
-      font-size: 12px;
+      font-size: 10px;
       padding: 4px 10px;
       background: var(--bg-muted);
       border-radius: 100px;
       color: var(--text-secondary);
+    }
+
+    .prompt-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: auto; /* Push to bottom if container has height */
+    }
+
+    .prompt-author {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .author-label {
+      color: var(--text-secondary);
+      font-size: 10px;
+    }
+
+    .author-name {
+      color: var(--accent-primary);
+      font-size: 10px;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    .prompt-date {
+      color: var(--border-strong);
+      font-size: 10px;
     }
     
     .prompt-actions {
@@ -825,6 +857,52 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Video hover functionality
+      const wrappers = document.querySelectorAll('.prompt-image-wrapper');
+      
+      wrappers.forEach(wrapper => {
+        const video = wrapper.querySelector('video.prompt-hover-video');
+        if (!video) return;
+        
+        let playPromise;
+        
+        wrapper.addEventListener('mouseenter', () => {
+          video.style.display = 'block';
+          video.currentTime = 0;
+          video.volume = 0.1; // 10% volume
+          
+          // Try to play with sound first (might be blocked by browser policy)
+          video.muted = false; 
+          
+          playPromise = video.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(error => {
+              // If unmuted autoplay fails, try muted
+              console.log("Unmuted autoplay prevented, falling back to muted:", error);
+              video.muted = true;
+              video.play().catch(e => console.log("Muted autoplay also failed:", e));
+            });
+          }
+        });
+        
+        wrapper.addEventListener('mouseleave', () => {
+          if (playPromise !== undefined) {
+            playPromise.then(() => {
+              video.pause();
+              video.style.display = 'none';
+            }).catch(() => {
+              video.style.display = 'none';
+            });
+          } else {
+            video.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 
   {{ block "scripts" . }}{{ end }}
 </body>

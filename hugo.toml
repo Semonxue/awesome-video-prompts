@@ -1,10 +1,10 @@
-baseURL = 'https://semonxue.github.io/awesome-video-prompts/'
+baseURL = 'https://semonxue.github.io/'
 title = 'Awesome Video Prompts'
 theme = 'ananke'
 
 # 项目版本
 [params]
-  version = '0.1.1'
+  version = '0.2.1'
   author = 'Semon'
   description = 'A collection of awesome video prompts'
 

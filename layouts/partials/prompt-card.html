@@ -9,8 +9,19 @@
   {{ with .Params.image }}
   <div class="prompt-image-wrapper">
     <img src="{{ . }}" alt="{{ $.Title }}" class="prompt-image" loading="lazy">
+    
+    {{/* Video Auto-play on hover */}}
+    {{ with $.Params.video }}
+      <video class="prompt-hover-video" src="{{ . }}" loop playsinline style="display: none; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 5;"></video>
+    {{ end }}
+
     {{ with $.Params.model }}
-    <span class="model-badge">{{ . }}</span>
+      {{ $modelDisplay := . }}
+      {{ $modelData := index $.Site.Data.models . }}
+      {{ if $modelData }}
+        {{ $modelDisplay = $modelData.name }}
+      {{ end }}
+    <span class="model-badge">{{ $modelDisplay }}</span>
     {{ end }}
     <div class="prompt-overlay">
       <span class="hover-text">{{ T "hover_to_play" }}</span>
@@ -33,6 +44,16 @@
         {{ $tagDisplay := partial "tag-display.html" (dict "tag" . "site" $.Site) }}
         <span class="prompt-tag">{{ $tagDisplay }}</span>
       {{ end }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.author }}
+    <div class="prompt-meta">
+      <div class="prompt-author">
+        <span class="author-label">By</span>
+        <a href="{{ .Params.source }}" target="_blank" rel="noopener noreferrer" class="author-name">{{ .Params.author }}</a>
+      </div>
+      <div class="prompt-date">{{ .Date.Format "2006-01-02" }}</div>
     </div>
     {{ end }}
     

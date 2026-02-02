@@ -664,6 +664,36 @@
                               "fontFamily": "Outfit",
                               "fontSize": 12,
                               "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "uy8tA",
+                              "name": "m1_authGroup",
+                              "width": "fill_container",
+                              "gap": 4,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "MY9QB",
+                                  "name": "m1_by",
+                                  "fill": "#6B6A67",
+                                  "content": "By",
+                                  "fontFamily": "Outfit",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "jGtTG",
+                                  "name": "m1_authName",
+                                  "fill": "#1A1918",
+                                  "content": "Linus Ekenstam",
+                                  "fontFamily": "Outfit",
+                                  "fontSize": 10,
+                                  "fontWeight": "500"
+                                }
+                              ]
                             }
                           ]
                         }
@@ -1856,11 +1886,11 @@
                               "x": 12,
                               "y": 12,
                               "name": "badge1",
-                              "fill": "#FFFFFF",
+                              "fill": "#ffffffcc",
                               "cornerRadius": 8,
                               "stroke": {
                                 "thickness": 1.5,
-                                "fill": "#1a191899"
+                                "fill": "$border-subtle"
                               },
                               "padding": [
                                 6,
@@ -1874,7 +1904,7 @@
                                   "fill": "#1A1918",
                                   "content": "Sora",
                                   "fontFamily": "Inter",
-                                  "fontSize": 12,
+                                  "fontSize": 10,
                                   "fontWeight": "500"
                                 }
                               ]
@@ -1887,7 +1917,7 @@
                           "name": "card1Content",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": 12,
+                          "gap": 10,
                           "padding": 16,
                           "children": [
                             {
@@ -1899,7 +1929,7 @@
                               "width": "fill_container",
                               "content": "Majestic Mountain Sunrise",
                               "fontFamily": "Inter",
-                              "fontSize": 16,
+                              "fontSize": 14,
                               "fontWeight": "600"
                             },
                             {
@@ -1912,7 +1942,7 @@
                               "content": "A breathtaking view of snow-capped mountains during golden hour with dramatic clouds",
                               "lineHeight": 1.5,
                               "fontFamily": "Inter",
-                              "fontSize": 14,
+                              "fontSize": 12,
                               "fontWeight": "normal"
                             },
                             {
@@ -1940,7 +1970,7 @@
                                       "fill": "#6B6A67",
                                       "content": "Nature",
                                       "fontFamily": "Inter",
-                                      "fontSize": 12,
+                                      "fontSize": 10,
                                       "fontWeight": "normal"
                                     }
                                   ]
@@ -1963,10 +1993,60 @@
                                       "fill": "#6B6A67",
                                       "content": "Landscape",
                                       "fontFamily": "Inter",
-                                      "fontSize": 12,
+                                      "fontSize": 10,
                                       "fontWeight": "normal"
                                     }
                                   ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "iCeRu",
+                              "name": "p1_authGroup",
+                              "width": "fill_container",
+                              "gap": 4,
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "F4fVy",
+                                  "name": "p1_authLeft",
+                                  "gap": 4,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "W96Me",
+                                      "name": "p1_by",
+                                      "fill": "#6B6A67",
+                                      "content": "By",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "normal"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "Qlxiw",
+                                      "name": "p1_authName",
+                                      "fill": "#1A1918",
+                                      "content": "Linus Ekenstam",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "QQ8Kd",
+                                  "name": "p1_date",
+                                  "fill": "$border-strong",
+                                  "content": "2026-01-30",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -2025,11 +2105,11 @@
                               "x": 12,
                               "y": 12,
                               "name": "badge2",
-                              "fill": "#FFFFFF",
+                              "fill": "#ffffffcc",
                               "cornerRadius": 8,
                               "stroke": {
                                 "thickness": 1.5,
-                                "fill": "#1A1918"
+                                "fill": "$border-subtle"
                               },
                               "padding": [
                                 6,
@@ -2043,7 +2123,7 @@
                                   "fill": "#1A1918",
                                   "content": "Runway",
                                   "fontFamily": "Inter",
-                                  "fontSize": 12,
+                                  "fontSize": 10,
                                   "fontWeight": "500"
                                 }
                               ]
@@ -2056,7 +2136,7 @@
                           "name": "card2Content",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": 12,
+                          "gap": 10,
                           "padding": 16,
                           "children": [
                             {
@@ -2068,7 +2148,7 @@
                               "width": "fill_container",
                               "content": "Neon City Dreams",
                               "fontFamily": "Inter",
-                              "fontSize": 16,
+                              "fontSize": 14,
                               "fontWeight": "600"
                             },
                             {
@@ -2081,7 +2161,7 @@
                               "content": "Futuristic cityscape with vibrant neon lights and cyberpunk atmosphere",
                               "lineHeight": 1.5,
                               "fontFamily": "Inter",
-                              "fontSize": 14,
+                              "fontSize": 12,
                               "fontWeight": "normal"
                             },
                             {
@@ -2109,7 +2189,7 @@
                                       "fill": "#6B6A67",
                                       "content": "Cyberpunk",
                                       "fontFamily": "Inter",
-                                      "fontSize": 12,
+                                      "fontSize": 10,
                                       "fontWeight": "normal"
                                     }
                                   ]
@@ -2132,10 +2212,56 @@
                                       "fill": "#6B6A67",
                                       "content": "Urban",
                                       "fontFamily": "Inter",
-                                      "fontSize": 12,
+                                      "fontSize": 10,
                                       "fontWeight": "normal"
                                     }
                                   ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "VuI8D",
+                              "name": "c2_auth",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "0G7PF",
+                                  "name": "c2_left",
+                                  "gap": 4,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "HAqYx",
+                                      "fill": "#6B6A67",
+                                      "content": "By",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "normal"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "ly35P",
+                                      "fill": "#1A1918",
+                                      "content": "Linus Ekenstam",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "DQP1v",
+                                  "fill": "$border-strong",
+                                  "content": "2026-01-30",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -2198,7 +2324,7 @@
                               "cornerRadius": 8,
                               "stroke": {
                                 "thickness": 1.5,
-                                "fill": "#1A1918"
+                                "fill": "$border-subtle"
                               },
                               "padding": [
                                 6,
@@ -2212,7 +2338,7 @@
                                   "fill": "#1A1918",
                                   "content": "Pika",
                                   "fontFamily": "Inter",
-                                  "fontSize": 12,
+                                  "fontSize": 10,
                                   "fontWeight": "500"
                                 }
                               ]
@@ -2225,7 +2351,7 @@
                           "name": "card3Content",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": 12,
+                          "gap": 10,
                           "padding": 16,
                           "children": [
                             {
@@ -2237,7 +2363,7 @@
                               "width": "fill_container",
                               "content": "Cherry Blossom Garden",
                               "fontFamily": "Inter",
-                              "fontSize": 16,
+                              "fontSize": 14,
                               "fontWeight": "600"
                             },
                             {
@@ -2250,7 +2376,7 @@
                               "content": "Beautiful pink cherry blossoms in full bloom during spring season",
                               "lineHeight": 1.5,
                               "fontFamily": "Inter",
-                              "fontSize": 14,
+                              "fontSize": 12,
                               "fontWeight": "normal"
                             },
                             {
@@ -2278,7 +2404,7 @@
                                       "fill": "#6B6A67",
                                       "content": "Spring",
                                       "fontFamily": "Inter",
-                                      "fontSize": 12,
+                                      "fontSize": 10,
                                       "fontWeight": "normal"
                                     }
                                   ]
@@ -2301,10 +2427,56 @@
                                       "fill": "#6B6A67",
                                       "content": "Nature",
                                       "fontFamily": "Inter",
-                                      "fontSize": 12,
+                                      "fontSize": 10,
                                       "fontWeight": "normal"
                                     }
                                   ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "7VQ0A",
+                              "name": "c3_auth",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "GE1aL",
+                                  "name": "c3_left",
+                                  "gap": 4,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "4nsiu",
+                                      "fill": "#6B6A67",
+                                      "content": "By",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "normal"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "kjlYL",
+                                      "fill": "#1A1918",
+                                      "content": "Linus Ekenstam",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "ZXrKo",
+                                  "fill": "$border-strong",
+                                  "content": "2026-01-30",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -2367,7 +2539,7 @@
                               "cornerRadius": 8,
                               "stroke": {
                                 "thickness": 1.5,
-                                "fill": "#1A1918"
+                                "fill": "$border-subtle"
                               },
                               "padding": [
                                 6,
@@ -2381,7 +2553,7 @@
                                   "fill": "#1A1918",
                                   "content": "Kling",
                                   "fontFamily": "Inter",
-                                  "fontSize": 12,
+                                  "fontSize": 10,
                                   "fontWeight": "500"
                                 }
                               ]
@@ -2394,7 +2566,7 @@
                           "name": "card4Content",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": 12,
+                          "gap": 10,
                           "padding": 16,
                           "children": [
                             {
@@ -2406,7 +2578,7 @@
                               "width": "fill_container",
                               "content": "Underwater Paradise",
                               "fontFamily": "Inter",
-                              "fontSize": 16,
+                              "fontSize": 14,
                               "fontWeight": "600"
                             },
                             {
@@ -2419,7 +2591,7 @@
                               "content": "Vibrant coral reef teeming with colorful tropical fish and marine life",
                               "lineHeight": 1.5,
                               "fontFamily": "Inter",
-                              "fontSize": 14,
+                              "fontSize": 12,
                               "fontWeight": "normal"
                             },
                             {
@@ -2447,7 +2619,7 @@
                                       "fill": "#6B6A67",
                                       "content": "Ocean",
                                       "fontFamily": "Inter",
-                                      "fontSize": 12,
+                                      "fontSize": 10,
                                       "fontWeight": "normal"
                                     }
                                   ]
@@ -2470,10 +2642,56 @@
                                       "fill": "#6B6A67",
                                       "content": "Wildlife",
                                       "fontFamily": "Inter",
-                                      "fontSize": 12,
+                                      "fontSize": 10,
                                       "fontWeight": "normal"
                                     }
                                   ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "OLRwN",
+                              "name": "c4_auth",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "o3oRt",
+                                  "name": "c4_left",
+                                  "gap": 4,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "6lOYq",
+                                      "fill": "#6B6A67",
+                                      "content": "By",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "normal"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "3R9l3",
+                                      "fill": "#1A1918",
+                                      "content": "Linus Ekenstam",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "E3IvB",
+                                  "fill": "$border-strong",
+                                  "content": "2026-01-30",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -2536,7 +2754,7 @@
                               "cornerRadius": 8,
                               "stroke": {
                                 "thickness": 1.5,
-                                "fill": "#1A1918"
+                                "fill": "$border-subtle"
                               },
                               "padding": [
                                 6,
@@ -2550,7 +2768,7 @@
                                   "fill": "#1A1918",
                                   "content": "Sora",
                                   "fontFamily": "Inter",
-                                  "fontSize": 12,
+                                  "fontSize": 10,
                                   "fontWeight": "500"
                                 }
                               ]
@@ -2563,7 +2781,7 @@
                           "name": "card5Content",
                           "width": "fill_container",
                           "layout": "vertical",
-                          "gap": 12,
+                          "gap": 10,
                           "padding": 16,
                           "children": [
                             {
@@ -2575,7 +2793,7 @@
                               "width": "fill_container",
                               "content": "Arctic Lights",
                               "fontFamily": "Inter",
-                              "fontSize": 16,
+                              "fontSize": 14,
                               "fontWeight": "600"
                             },
                             {
@@ -2588,7 +2806,7 @@
                               "content": "Spectacular northern lights dancing across the arctic night sky",
                               "lineHeight": 1.5,
                               "fontFamily": "Inter",
-                              "fontSize": 14,
+                              "fontSize": 12,
                               "fontWeight": "normal"
                             },
                             {
@@ -2616,7 +2834,7 @@
                                       "fill": "#6B6A67",
                                       "content": "Aurora",
                                       "fontFamily": "Inter",
-                                      "fontSize": 12,
+                                      "fontSize": 10,
                                       "fontWeight": "normal"
                                     }
                                   ]
@@ -2639,10 +2857,56 @@
                                       "fill": "#6B6A67",
                                       "content": "Night",
                                       "fontFamily": "Inter",
-                                      "fontSize": 12,
+                                      "fontSize": 10,
                                       "fontWeight": "normal"
                                     }
                                   ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "nG7OJ",
+                              "name": "c5_auth",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Bu3DR",
+                                  "name": "c5_left",
+                                  "gap": 4,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "pUVAL",
+                                      "fill": "#6B6A67",
+                                      "content": "By",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "normal"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "aAo38",
+                                      "fill": "#1A1918",
+                                      "content": "Linus Ekenstam",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 10,
+                                      "fontWeight": "500"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "XwEwf",
+                                  "fill": "$border-strong",
+                                  "content": "2026-01-30",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }

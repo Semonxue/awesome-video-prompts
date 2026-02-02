@@ -193,3 +193,21 @@ pixel_art:
   zh-cn: 像素艺术
   description_en: "Retro pixelated digital art style"
   description_zh-cn: "复古像素化数字艺术风格"
+
+fpv:
+  en: fpv
+  zh-cn: 第一人称视角
+  description_en: "First-person view, immersive perspective"
+  description_zh-cn: "第一人称视角，沉浸式视角"
+
+forest:
+  en: forest
+  zh-cn: 森林
+  description_en: "Wooded areas, trees, and forest environments"
+  description_zh-cn: "林地、树木和森林环境"
+
+military:
+  en: military
+  zh-cn: 军事
+  description_en: "Military themes, soldiers, and tactical operations"
+  description_zh-cn: "军事主题、士兵和战术行动"
