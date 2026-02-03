@@ -7,9 +7,7 @@
 
   <!-- 瀑布流提示词列表 -->
   <div class="masonry-grid" id="prompts-grid">
-    {{ range sort (where .Site.RegularPages "Params.tags" "!=" nil) ".File.BaseFileName" "desc" }}
-      {{ partial "prompt-card.html" . }}
-    {{ end }}
+    <!-- 卡片将通过 JavaScript 动态渲染 -->
   </div>
 
   <!-- 加载更多 -->
@@ -17,16 +15,39 @@
     <div class="loading-spinner"></div>
     <span class="loading-text">Loading more prompts...</span>
   </div>
+
+  <!-- 所有卡片数据的模板存储 -->
+  <script type="application/json" id="prompts-data">
+    [{{ $pages := sort (where .Site.RegularPages "Params.tags" "!=" nil) ".File.BaseFileName" "desc" }}{{ range $index, $page := $pages }}{{ if $index }},{{ end }}{
+      "title": {{ $page.Title | jsonify | safeJS }},
+      "description": {{ $page.Params.description | default "" | jsonify | safeJS }},
+      "image": {{ $page.Params.image | default "" | jsonify | safeJS }},
+      "video": {{ $page.Params.video | default "" | jsonify | safeJS }},
+      "model": {{ $page.Params.model | default "" | jsonify | safeJS }},
+      "tags": {{ $page.Params.tags | default (slice) | jsonify | safeJS }},
+      "permalink": {{ $page.Permalink | jsonify | safeJS }}
+    }{{ end }}]
+  </script>
 {{ end }}
 
 {{ define "scripts" }}
 <script>
-  // 状态管理
+  // 全局数据和状态管理
+  let allPrompts = []; // 所有提示词数据
+  let filteredPrompts = []; // 过滤后的提示词
+  let renderedCount = 0; // 已渲染数量
+  let loadObserver = null;
+  const LOAD_BATCH_SIZE = 10; // 每次加载数量
+
   const state = {
     search: '',
     model: 'all',
-    tag: 'all'
+    tag: 'all',
+    isLoading: false
   };
+
+  const siteBasePath = {{ (urls.Parse .Site.BaseURL).Path | default "/" | jsonify | safeJS }};
+  const runtimeBaseURL = window.location.origin + siteBasePath;
 
   // DOM 元素引用
   const dom = {
@@ -34,24 +55,235 @@
     get modelBtns() { return document.querySelectorAll('.model-tag'); },
     get tagBtns() { return document.querySelectorAll('.content-tag'); },
     get grid() { return document.getElementById('prompts-grid'); },
-    get cards() { return document.querySelectorAll('.prompt-card'); },
     get countDisplay() { return document.querySelector('.result-count'); },
     get headerDefault() { return document.querySelector('.header-default'); },
     get headerCompact() { return document.querySelector('.header-compact'); },
-    get mainContent() { return document.querySelector('.main-content'); }
+    get mainContent() { return document.querySelector('.main-content'); },
+    get loadingMore() { return document.getElementById('loading-more'); }
   };
 
   // 初始化
   function init() {
+    loadPromptsData();
     bindEvents();
-    // 初始执行一次滚动检查
     updateHeaderState();
     
-    // 隐藏加载动画 (因为目前是一次性加载所有内容)
-    const loadingMore = document.getElementById('loading-more');
-    if (loadingMore) {
-        loadingMore.style.display = 'none';
+    // 初始渲染第一批
+    applyFiltersAndRender(true);
+    setupLazyLoadObserver();
+  }
+
+  // 加载提示词数据
+  function loadPromptsData() {
+    const dataScript = document.getElementById('prompts-data');
+    if (dataScript) {
+      try {
+        allPrompts = JSON.parse(dataScript.textContent);
+        filteredPrompts = [...allPrompts];
+        console.log('Loaded prompts:', allPrompts.length);
+      } catch (e) {
+        console.error('Failed to parse prompts data:', e);
+        allPrompts = [];
+        filteredPrompts = [];
+      }
     }
+  }
+
+  function resolveAssetUrl(url) {
+    if (!url) return '';
+    if (/^https?:\/\//i.test(url)) return url;
+    const base = runtimeBaseURL || '/';
+    return base.replace(/\/$/, '') + '/' + url.replace(/^\//, '');
+  }
+
+  // 创建卡片 HTML
+  function createCardHTML(prompt) {
+    const modelDisplay = prompt.model || '';
+    const imageUrl = resolveAssetUrl(prompt.image);
+    const videoUrl = resolveAssetUrl(prompt.video);
+    const tagsHTML = (prompt.tags || []).map(tag => 
+      `<span class="prompt-tag">${tag}</span>`
+    ).join('');
+    
+    const imageHTML = imageUrl ? `
+      <div class="prompt-image-wrapper">
+        <img src="${imageUrl}" alt="${prompt.title}" class="prompt-image" loading="lazy">
+        ${videoUrl ? `
+          <div class="video-loader" style="display: none; position: absolute; inset: 0; align-items: center; justify-content: center; z-index: 4; background: rgba(0,0,0,0.1);">
+            <span style="color: white; font-weight: 500; background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 4px; font-size: 12px;">{{ T "loading" | default "Loading..." }}</span>
+          </div>
+          <video class="prompt-hover-video" src="${videoUrl}" loop playsinline style="display: none; opacity: 0; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 5; transition: opacity 0.3s;"></video>
+        ` : ''}
+        ${modelDisplay ? `<span class="model-badge">${modelDisplay}</span>` : ''}
+        <div class="prompt-overlay">
+          <span class="hover-text">{{ T "hover_to_play" }}</span>
+        </div>
+      </div>
+    ` : '';
+
+    const descriptionHTML = prompt.description ? 
+      `<p class="prompt-description">${prompt.description}</p>` : '';
+
+    return `
+      <article class="prompt-card" 
+               data-tags="${(prompt.tags || []).join(',')}"
+               data-model="${prompt.model || ''}">
+        ${imageHTML}
+        <div class="prompt-content">
+          <h3 class="prompt-title">${prompt.title}</h3>
+          ${descriptionHTML}
+          ${tagsHTML ? `<div class="prompt-tags">${tagsHTML}</div>` : ''}
+        </div>
+      </article>
+    `;
+  }
+
+  // 渲染卡片批次
+  function renderBatch(startIndex, count) {
+    console.log('renderBatch: startIndex =', startIndex, 'count =', count, 'total =', filteredPrompts.length);
+    
+    if (startIndex >= filteredPrompts.length) {
+      return;
+    }
+
+    const endIndex = Math.min(startIndex + count, filteredPrompts.length);
+    const batch = filteredPrompts.slice(startIndex, endIndex);
+    
+    const fragment = document.createElement('div');
+    fragment.innerHTML = batch.map(createCardHTML).join('');
+    
+    dom.grid.append(...fragment.children);
+    renderedCount = endIndex;
+
+    // 为新渲染的卡片绑定视频悬停事件
+    attachVideoHoverEvents();
+
+    console.log('renderBatch done: renderedCount =', renderedCount);
+    
+    // 更新 observer 状态
+    refreshObserver();
+  }
+
+  // 应用筛选并渲染
+  function applyFiltersAndRender(isInitial = false) {
+    // 应用筛选逻辑
+    filteredPrompts = allPrompts.filter(prompt => {
+      const title = (prompt.title || '').toLowerCase();
+      const description = (prompt.description || '').toLowerCase();
+      const model = (prompt.model || '').toLowerCase();
+      const tags = (prompt.tags || []).map(t => t.toLowerCase());
+
+      // 搜索匹配
+      const matchesSearch = !state.search || 
+                           title.includes(state.search) || 
+                           description.includes(state.search) || 
+                           tags.some(t => t.includes(state.search));
+
+      // 模型匹配
+      const matchesModel = state.model === 'all' || model === state.model;
+
+      // 标签匹配
+      const matchesTag = state.tag === 'all' || tags.includes(state.tag);
+
+      return matchesSearch && matchesModel && matchesTag;
+    });
+
+    // 清空现有内容
+    dom.grid.innerHTML = '';
+    renderedCount = 0;
+
+    // 更新计数
+    updateCount(filteredPrompts.length);
+    
+    console.log('applyFiltersAndRender: total =', filteredPrompts.length, 'batchSize =', LOAD_BATCH_SIZE);
+
+    // 渲染第一批
+    renderBatch(0, LOAD_BATCH_SIZE);
+  }
+
+  // 加载更多
+  function loadMore() {
+    if (state.isLoading || renderedCount >= filteredPrompts.length) {
+      console.log('loadMore skipped: isLoading =', state.isLoading, 'renderedCount =', renderedCount);
+      return;
+    }
+
+    console.log('loadMore: loading from', renderedCount);
+    state.isLoading = true;
+
+    // 模拟轻微延迟，让用户感知到加载过程
+    setTimeout(() => {
+      renderBatch(renderedCount, LOAD_BATCH_SIZE);
+      state.isLoading = false;
+    }, 150);
+  }
+
+  // 更新计数显示
+  function updateCount(count) {
+    if (dom.countDisplay) {
+      const format = dom.countDisplay.dataset.format;
+      if (format) {
+        dom.countDisplay.textContent = format.replace('COUNT_PLACEHOLDER', count);
+      } else {
+        dom.countDisplay.textContent = `${count} prompts found`;
+      }
+    }
+  }
+
+  // 显示加载指示器
+  function showLoadingIndicator() {
+    if (dom.loadingMore) {
+      dom.loadingMore.style.display = 'flex';
+    }
+  }
+
+  // 隐藏加载指示器
+  function hideLoadingIndicator() {
+    if (dom.loadingMore) {
+      dom.loadingMore.style.display = 'none';
+    }
+  }
+
+  // 为卡片附加视频悬停事件
+  function attachVideoHoverEvents() {
+    const cards = dom.grid.querySelectorAll('.prompt-card');
+    cards.forEach(card => {
+      const video = card.querySelector('.prompt-hover-video');
+      const loader = card.querySelector('.video-loader');
+      
+      if (!video) return;
+      if (video.dataset.eventAttached) return; // 避免重复绑定
+      
+      video.dataset.eventAttached = 'true';
+      
+      card.addEventListener('mouseenter', () => {
+        if (video.readyState < 2) {
+          if (loader) loader.style.display = 'flex';
+          video.load();
+          video.addEventListener('canplay', () => {
+            if (loader) loader.style.display = 'none';
+            video.style.display = 'block';
+            video.style.opacity = '1';
+            video.play().catch(err => console.log('Autoplay prevented:', err));
+          }, { once: true });
+        } else {
+          video.style.display = 'block';
+          video.style.opacity = '1';
+          video.play().catch(err => console.log('Autoplay prevented:', err));
+        }
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+        video.style.opacity = '0';
+        setTimeout(() => {
+          if (video.style.opacity === '0') {
+            video.style.display = 'none';
+          }
+        }, 300);
+      });
+    });
   }
 
   // 绑定事件
@@ -64,7 +296,7 @@
         dom.searchInputs.forEach(fi => {
             if (fi !== e.target) fi.value = e.target.value;
         });
-        filterPrompts();
+        applyFiltersAndRender();
       });
     });
 
@@ -74,23 +306,22 @@
         const model = btn.dataset.model;
         updateActiveState(dom.modelBtns, model, 'data-model');
         state.model = model.toLowerCase();
-        filterPrompts();
+        applyFiltersAndRender();
       });
     });
 
     // 标签筛选
     dom.tagBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
-        // 阻止默认链接跳转（如果是a标签）
         e.preventDefault();
         const tag = btn.dataset.tag;
         updateActiveState(dom.tagBtns, tag, 'data-tag');
         state.tag = tag.toLowerCase();
-        filterPrompts();
+        applyFiltersAndRender();
       });
     });
 
-    // 滚动监听
+    // 滚动监听 - 仅处理 header
     window.addEventListener('scroll', updateHeaderState);
 
     // Expand/Collapse Tags Logic
@@ -108,7 +339,7 @@
         const isHidden = hiddenArea.style.display === 'none';
         
         if (isHidden) {
-          hiddenArea.style.display = 'contents'; // Use contents to blend with flex container or block
+          hiddenArea.style.display = 'contents';
           btnText.textContent = '{{ T "show_less" }}';
         } else {
           hiddenArea.style.display = 'none';
@@ -116,6 +347,47 @@
         }
       });
     });
+  }
+
+  // 使用 IntersectionObserver 触发加载更多
+  function setupLazyLoadObserver() {
+    if (!dom.loadingMore || !('IntersectionObserver' in window)) {
+      console.log('Observer setup failed: loadingMore=', !!dom.loadingMore);
+      return;
+    }
+
+    if (loadObserver) {
+      loadObserver.disconnect();
+    }
+
+    loadObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        console.log('Observer triggered:', entry.isIntersecting, 'renderedCount:', renderedCount, 'total:', filteredPrompts.length);
+        if (entry.isIntersecting && !state.isLoading) {
+          loadMore();
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '200px 0px', // 距离底部200px时触发
+      threshold: 0
+    });
+
+    console.log('Observer created');
+    refreshObserver();
+  }
+
+  function refreshObserver() {
+    if (!loadObserver || !dom.loadingMore) return;
+    loadObserver.unobserve(dom.loadingMore);
+    if (renderedCount < filteredPrompts.length) {
+      console.log('Observer observing, renderedCount:', renderedCount, 'total:', filteredPrompts.length);
+      dom.loadingMore.style.display = 'flex'; // 确保可见才能被观察
+      loadObserver.observe(dom.loadingMore);
+    } else {
+      console.log('All loaded, hiding indicator');
+      dom.loadingMore.style.display = 'none';
+    }
   }
 
   // 更新按钮激活状态
@@ -129,52 +401,6 @@
     });
   }
 
-  // 核心筛选逻辑
-  function filterPrompts() {
-    let visibleCount = 0;
-
-    dom.cards.forEach(card => {
-      // 获取卡片数据
-      const cardTitle = (card.querySelector('.prompt-title')?.textContent || '').toLowerCase();
-      const cardDesc = (card.querySelector('.prompt-description')?.textContent || '').toLowerCase();
-      const cardModel = (card.dataset.model || '').toLowerCase();
-      const cardTags = (card.dataset.tags || '').toLowerCase().split(',').filter(t => t);
-
-      // 1. 搜索匹配 (标题 or 描述 or tags包含关键字)
-      const matchesSearch = !state.search || 
-                            cardTitle.includes(state.search) || 
-                            cardDesc.includes(state.search) || 
-                            cardTags.some(t => t.includes(state.search));
-
-      // 2. 模型匹配
-      const matchesModel = state.model === 'all' || cardModel === state.model;
-
-      // 3. 标签匹配
-      const matchesTag = state.tag === 'all' || cardTags.includes(state.tag);
-
-      // 综合判定
-      const isVisible = matchesSearch && matchesModel && matchesTag;
-
-      // DOM 操作
-      if (isVisible) {
-        card.style.display = '';
-        visibleCount++;
-      } else {
-        card.style.display = 'none';
-      }
-    });
-
-    // 更新计数
-    if (dom.countDisplay) {
-      const format = dom.countDisplay.dataset.format;
-      if (format) {
-        dom.countDisplay.textContent = format.replace('COUNT_PLACEHOLDER', visibleCount);
-      } else {
-        dom.countDisplay.textContent = `${visibleCount} prompts found`;
-      }
-    }
-  }
-
   // Header 滚动切换逻辑
   let isCompact = false;
   function updateHeaderState() {
@@ -184,11 +410,9 @@
     const shouldBeCompact = rect.top < 50;
 
     if (shouldBeCompact && !isCompact) {
-      // 切换到 Compact
       isCompact = true;
       toggleHeaders(dom.headerDefault, dom.headerCompact);
     } else if (!shouldBeCompact && isCompact) {
-      // 切换到 Default
       isCompact = false;
       toggleHeaders(dom.headerCompact, dom.headerDefault);
     }
@@ -203,7 +427,6 @@
     showEl.style.display = 'block';
     showEl.style.opacity = '0';
     
-    // 使用 requestAnimationFrame 确保过渡效果
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         showEl.style.opacity = '1';
