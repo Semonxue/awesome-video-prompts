@@ -13,9 +13,15 @@ veo31:
 veo3:
   name: Veo 3
   slug: veo3
+ltxpro:
+  name: LTX Pro
+  slug: ltxpro
 grok:
   name: Grok
   slug: grok
+nanobanana:
+  name: Nano Banana Pro
+  slug: nanobanana
 ray314:
   name: Ray 3.14
   slug: ray314
