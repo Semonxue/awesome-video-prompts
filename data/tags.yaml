@@ -331,3 +331,8 @@ cyberpunk:
   zh-cn: 赛博朋克
   description_en: "Futuristic, high-tech low-life dystopian aesthetics"
   description_zh-cn: "未来主义、高科技低生活反乌托邦美学"
+animal:
+  en: animal
+  zh-cn: 动物
+  description_en: "Animals and creature imagery"
+  description_zh-cn: "动物和生物图像"

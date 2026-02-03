@@ -76,6 +76,8 @@ def extract_tweet_info(url: str) -> dict:
     cmd = [
         # 使用绝对路径指定 yt-dlp，避免环境差异问题
         "/Users/semonxue/miniconda3/bin/yt-dlp",
+        "--no-warnings",
+        "--playlist-items", "1",
         "--dump-json",      # 获取元数据 JSON
         "--skip-download",  # 不下载实际视频文件
         normalized

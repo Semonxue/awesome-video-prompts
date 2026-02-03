@@ -10,6 +10,9 @@ hailuo:
 veo31:
   name: Veo 3.1
   slug: veo31
+veo3:
+  name: Veo 3
+  slug: veo3
 grok:
   name: Grok
   slug: grok
