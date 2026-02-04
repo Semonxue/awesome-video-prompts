@@ -25,6 +25,9 @@
       "video": {{ $page.Params.video | default "" | jsonify | safeJS }},
       "model": {{ $page.Params.model | default "" | jsonify | safeJS }},
       "tags": {{ $page.Params.tags | default (slice) | jsonify | safeJS }},
+      "author": {{ $page.Params.author | default "" | jsonify | safeJS }},
+      "date": {{ $page.Date.Format "2006-01-02" | jsonify | safeJS }},
+      "sourceUrl": {{ $page.Params.source_url | default "" | jsonify | safeJS }},
       "permalink": {{ $page.Permalink | jsonify | safeJS }}
     }{{ end }}]
   </script>
@@ -123,6 +126,21 @@
 
     const descriptionHTML = prompt.description ? 
       `<p class="prompt-description">${prompt.description}</p>` : '';
+    
+    // 作者和日期信息
+    const authorHTML = prompt.author ? 
+      `<span class="prompt-meta-text" style="color: #6B6A67;">By</span>
+       <span class="prompt-meta-text" style="color: #1A1918; font-weight: 500;">${prompt.sourceUrl ? `<a href="${prompt.sourceUrl}" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">${prompt.author}</a>` : prompt.author}</span>` : '';
+    
+    const dateHTML = prompt.date ? 
+      `<span class="prompt-meta-text" style="color: #6B6A67;">${prompt.date}</span>` : '';
+    
+    const metaHTML = (authorHTML || dateHTML) ? `
+      <div class="prompt-meta" style="display: flex; align-items: center; justify-content: space-between; gap: 4px; font-size: 10px; margin-top: 4px;">
+        <div style="display: flex; align-items: center; gap: 4px;">${authorHTML}</div>
+        <div>${dateHTML}</div>
+      </div>
+    ` : '';
 
     return `
       <article class="prompt-card" 
@@ -133,6 +151,7 @@
           <h3 class="prompt-title">${prompt.title}</h3>
           ${descriptionHTML}
           ${tagsHTML ? `<div class="prompt-tags">${tagsHTML}</div>` : ''}
+          ${metaHTML}
         </div>
       </article>
     `;
