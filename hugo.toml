@@ -1,4 +1,4 @@
-baseURL = 'https://semonxue.github.io/awesome-video-prompts/'
+baseURL = 'https://awesome-video-prompts.pages.dev/'
 relativeURLs = true
 canonifyURLs = false
 title = 'Awesome Video Prompts'
