@@ -346,3 +346,13 @@ star_wars:
   zh-cn: 星球大战
   description_en: "Star Wars universe and related themes"
   description_zh-cn: "星球大战宇宙及相关主题"
+samurai:
+  en: samurai
+  zh-cn: 武士
+  description_en: "Samurai warriors and Japanese feudal culture"
+  description_zh-cn: "武士战士和日本封建文化"
+cherry_blossom:
+  en: cherry_blossom
+  zh-cn: 樱花
+  description_en: "Cherry blossom trees and spring scenery"
+  description_zh-cn: "樱花树和春季风景"
