@@ -4,6 +4,9 @@ klingo1:
 kling26:
   name: Kling 2.6
   slug: kling26
+kling3:
+  name: Kling 3.0
+  slug: kling3
 hailuo:
   name: Hailuo
   slug: hailuo

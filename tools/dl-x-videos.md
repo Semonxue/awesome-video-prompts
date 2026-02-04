@@ -37,7 +37,7 @@
   - title: 从 text 中提取简短标题，确保语义完整且吸引人,3-7个单词。
   - description: 分析 text 中内容，提取完整的提示词。不要有遗漏、截取或提炼，如果text中内容部完整，看下上下文是否有线索。多行内容必须使用 YAML 多行语法 `description: |` 后换行缩进书写，避免使用转义字符 \n。
   - model: 自动匹配，提取视频模型，并优先使用 data/models.yaml 中的模型关键词。
-  - tags: 自动匹配，tags选择最匹配的，不要超过5个，tags不要包含model,优先选择 data/tags.yaml中的标签。
+  - tags: 自动匹配，tags选择最匹配的，，不要超过5个，tags不要包含model,优先选择 data/tags.yaml中的标签，如典型必要不增加新的标签。
   - author： 原始帖子作者
   - source_url: 原始帖子链接 (注意：不要使用 url 字段，因为它是 Hugo 保留字段)。
   - 如果新增标签或模型，在data中models和tags加更新
