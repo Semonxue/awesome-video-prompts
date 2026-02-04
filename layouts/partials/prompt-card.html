@@ -8,14 +8,18 @@
          data-model="{{ with .Params.model }}{{ . }}{{ end }}">
   {{ with .Params.image }}
   <div class="prompt-image-wrapper">
-    <img src="{{ (printf "%s%s" $.Site.BaseURL (strings.TrimPrefix "/" .)) | safeURL }}" alt="{{ $.Title }}" class="prompt-image" loading="lazy">
+    {{ $img := . }}
+    {{ $imgURL := cond (or (hasPrefix $img "http://") (hasPrefix $img "https://")) $img ((strings.TrimPrefix "/" $img) | relURL) }}
+    <img src="{{ $imgURL | safeURL }}" alt="{{ $.Title }}" class="prompt-image" loading="lazy">
     
     {{/* Video Auto-play on hover */}}
     {{ with $.Params.video }}
+      {{ $video := . }}
+      {{ $videoURL := cond (or (hasPrefix $video "http://") (hasPrefix $video "https://")) $video ((strings.TrimPrefix "/" $video) | relURL) }}
       <div class="video-loader" style="display: none; position: absolute; inset: 0; align-items: center; justify-content: center; z-index: 4; background: rgba(0,0,0,0.1);">
         <span style="color: white; font-weight: 500; background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 4px; font-size: 12px;">{{ T "loading" | default "Loading..." }}</span>
       </div>
-      <video class="prompt-hover-video" src="{{ (printf "%s%s" $.Site.BaseURL (strings.TrimPrefix "/" .)) | safeURL }}" loop playsinline style="display: none; opacity: 0; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 5; transition: opacity 0.3s;"></video>
+      <video class="prompt-hover-video" src="{{ $videoURL | safeURL }}" loop playsinline style="display: none; opacity: 0; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 5; transition: opacity 0.3s;"></video>
     {{ end }}
 
     {{ with $.Params.model }}

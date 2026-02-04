@@ -21,14 +21,14 @@
     [{{ $pages := sort (where .Site.RegularPages "Params.tags" "!=" nil) ".File.BaseFileName" "desc" }}{{ range $index, $page := $pages }}{{ if $index }},{{ end }}{
       "title": {{ $page.Title | jsonify | safeJS }},
       "description": {{ $page.Params.description | default "" | jsonify | safeJS }},
-      "image": {{ $page.Params.image | default "" | jsonify | safeJS }},
-      "video": {{ $page.Params.video | default "" | jsonify | safeJS }},
+      "image": {{ with $page.Params.image }}{{ $img := . }}{{ if or (hasPrefix $img "http://") (hasPrefix $img "https://") }}{{ $img | jsonify | safeJS }}{{ else }}{{ (strings.TrimPrefix "/" $img) | relURL | jsonify | safeJS }}{{ end }}{{ else }}""{{ end }},
+      "video": {{ with $page.Params.video }}{{ $video := . }}{{ if or (hasPrefix $video "http://") (hasPrefix $video "https://") }}{{ $video | jsonify | safeJS }}{{ else }}{{ (strings.TrimPrefix "/" $video) | relURL | jsonify | safeJS }}{{ end }}{{ else }}""{{ end }},
       "model": {{ $page.Params.model | default "" | jsonify | safeJS }},
       "tags": {{ $page.Params.tags | default (slice) | jsonify | safeJS }},
       "author": {{ $page.Params.author | default "" | jsonify | safeJS }},
       "date": {{ $page.Date.Format "2006-01-02" | jsonify | safeJS }},
       "sourceUrl": {{ $page.Params.source_url | default "" | jsonify | safeJS }},
-      "permalink": {{ $page.Permalink | jsonify | safeJS }}
+      "permalink": {{ $page.RelPermalink | jsonify | safeJS }}
     }{{ end }}]
   </script>
 {{ end }}
@@ -49,8 +49,6 @@
     isLoading: false
   };
 
-  const siteBasePath = {{ (urls.Parse .Site.BaseURL).Path | default "/" | jsonify | safeJS }};
-  const runtimeBaseURL = window.location.origin + siteBasePath;
 
   // DOM 元素引用
   const dom = {
@@ -95,8 +93,7 @@
   function resolveAssetUrl(url) {
     if (!url) return '';
     if (/^https?:\/\//i.test(url)) return url;
-    const base = runtimeBaseURL || '/';
-    return base.replace(/\/$/, '') + '/' + url.replace(/^\//, '');
+    return url;
   }
 
   // 创建卡片 HTML

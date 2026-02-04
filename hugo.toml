@@ -1,4 +1,6 @@
 baseURL = 'https://semonxue.github.io/awesome-video-prompts/'
+relativeURLs = true
+canonifyURLs = false
 title = 'Awesome Video Prompts'
 theme = 'ananke'
 
