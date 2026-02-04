@@ -336,3 +336,13 @@ animal:
   zh-cn: 动物
   description_en: "Animals and creature imagery"
   description_zh-cn: "动物和生物图像"
+space:
+  en: space
+  zh-cn: 太空
+  description_en: "Space, cosmos, and astronomical scenes"
+  description_zh-cn: "太空、宇宙和天文场景"
+star_wars:
+  en: star_wars
+  zh-cn: 星球大战
+  description_en: "Star Wars universe and related themes"
+  description_zh-cn: "星球大战宇宙及相关主题"
