@@ -22,10 +22,20 @@
   {{/* 3. Sort by count descending */}}
   {{ $sortedModels := sort $models "count" "desc" }}
 
-  {{/* 4. Render */}}
-  {{ range $sortedModels }}
-    <button class="model-tag" data-model="{{ .key }}">
-      {{ .name }} <span class="tag-count">{{ .count }}</span>
+  {{/* 4. Collapse if too many */}}
+  {{ $maxVisible := 5 }}
+  {{ $shouldCollapse := gt (len $sortedModels) $maxVisible }}
+
+  {{/* 5. Render */}}
+  {{ range $index, $model := $sortedModels }}
+    <button class="model-tag{{ if and $shouldCollapse (ge $index $maxVisible) }} is-hidden{{ end }}" data-model="{{ $model.key }}">
+      {{ $model.name }} <span class="tag-count">{{ $model.count }}</span>
+    </button>
+  {{ end }}
+
+  {{ if $shouldCollapse }}
+    <button class="model-tag more model-more-toggle" type="button" data-more-text="{{ T "show_more" }}" data-less-text="{{ T "show_less" }}" aria-expanded="false">
+      {{ T "show_more" }}
     </button>
   {{ end }}
 </div>

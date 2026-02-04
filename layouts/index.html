@@ -53,7 +53,8 @@
   // DOM 元素引用
   const dom = {
     get searchInputs() { return document.querySelectorAll('.search-input'); },
-    get modelBtns() { return document.querySelectorAll('.model-tag'); },
+    get modelBtns() { return document.querySelectorAll('.model-tag[data-model]'); },
+    get modelMoreToggles() { return document.querySelectorAll('.model-more-toggle'); },
     get tagBtns() { return document.querySelectorAll('.content-tag'); },
     get grid() { return document.getElementById('prompts-grid'); },
     get countDisplay() { return document.querySelector('.result-count'); },
@@ -323,6 +324,18 @@
         updateActiveState(dom.modelBtns, model, 'data-model');
         state.model = model.toLowerCase();
         applyFiltersAndRender();
+      });
+    });
+
+    // 模型展开/收起
+    dom.modelMoreToggles.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const container = btn.closest('.model-tags');
+        if (!container) return;
+        const expanded = container.classList.toggle('expanded');
+        btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        btn.textContent = expanded ? btn.dataset.lessText : btn.dataset.moreText;
       });
     });
 
