@@ -1,4 +1,27 @@
 {{ define "main" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "image": [
+    "{{ .Params.image | absURL }}"
+  ],
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": [{
+      "@type": "Person",
+      "name": "{{ .Params.author | default .Site.Params.author }}"
+  }],
+  "video": {
+    "@type": "VideoObject",
+    "name": "{{ .Title }}",
+    "description": "{{ .Params.description | default .Title }}",
+    "thumbnailUrl": "{{ .Params.image | absURL }}",
+    "uploadDate": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"{{ with .Params.video }},
+    "contentUrl": "{{ . | absURL }}"{{ end }}
+  }
+}
+</script>
   <article class="prompt-detail">
     <header class="prompt-header">
       <h1 class="prompt-title">{{ .Title }}</h1>

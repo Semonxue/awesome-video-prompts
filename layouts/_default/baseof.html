@@ -5,8 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   
-  {{ with .Site.Params.description }}
-  <meta name="description" content="{{ . }}">
+  {{- $desc := .Description | default .Params.description | default .Site.Params.description -}}
+  <meta name="description" content="{{ $desc | plainify | truncate 160 }}">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="{{ .Title | default .Site.Title }}">
+  <meta property="og:description" content="{{ $desc | plainify | truncate 160 }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ with .Params.image }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  {{ end }}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+  <meta name="twitter:description" content="{{ $desc | plainify | truncate 160 }}">
+  {{ with .Params.image }}
+  <meta name="twitter:image" content="{{ . | absURL }}">
   {{ end }}
   
   <!-- Google Fonts - Outfit -->

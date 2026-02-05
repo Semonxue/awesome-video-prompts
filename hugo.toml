@@ -4,9 +4,16 @@ canonifyURLs = false
 title = 'Awesome Video Prompts'
 theme = 'ananke'
 
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = 'daily'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
 # 项目版本
 [params]
-  version = '0.2.1'
+  version = '0.3.0'
   author = 'Semon'
 
 # 多语言配置
