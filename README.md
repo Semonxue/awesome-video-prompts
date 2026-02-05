@@ -19,7 +19,7 @@
 
 ## 🎬 使用方式
 
-访问网站：[awesome-video-prompts.pages.dev](https://awesome-video-prompts.pages.dev/)
+访问网站：[AwesomeVideoPrompts.com/](https://awesomevideoprompts.com/)
 
 **主要功能：**
 
