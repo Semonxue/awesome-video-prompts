@@ -356,3 +356,18 @@ cherry_blossom:
   zh-cn: 樱花
   description_en: "Cherry blossom trees and spring scenery"
   description_zh-cn: "樱花树和春季风景"
+sci-fi:
+  en: sci-fi
+  zh-cn: 科幻
+  description_en: "Science fiction themes and futuristic concepts"
+  description_zh-cn: "科幻主题和未来概念"
+alien:
+  en: alien
+  zh-cn: 外星人
+  description_en: "Extraterrestrial beings and alien life forms"
+  description_zh-cn: "外星生物和外星生命形式"
+comparison:
+  en: comparison
+  zh-cn: 对比
+  description_en: "Side-by-side comparisons of different models or styles"
+  description_zh-cn: "不同模型或风格的并排对比"
