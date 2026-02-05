@@ -35,6 +35,9 @@ other = "分享"
 [copy_prompt]
 other = "复制提示词"
 
+[click_to_copy]
+other = "点击复制"
+
 [copied]
 other = "已复制！"
 

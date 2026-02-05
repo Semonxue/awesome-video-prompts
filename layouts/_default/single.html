@@ -81,7 +81,7 @@
       <div class="prompt-text-section">
         <h2>{{ T "copy_prompt" }}</h2>
         <div class="prompt-box">
-          <pre id="prompt-text">{{ .Params.prompt }}</pre>
+          <pre id="prompt-text" onclick="copyPromptText()" style="cursor: pointer;" title="{{ T "copy_prompt" }}">{{ or .Params.prompt .Params.description }}</pre>
           <button class="copy-btn-large" onclick="copyPromptText()">
             📋 {{ T "copy_prompt" }}
           </button>
@@ -113,11 +113,22 @@
       const promptText = document.getElementById('prompt-text').textContent;
       navigator.clipboard.writeText(promptText).then(() => {
         const btn = document.querySelector('.copy-btn-large');
-        const originalText = btn.textContent;
-        btn.textContent = '{{ T "copied" }}';
-        setTimeout(() => {
-          btn.textContent = originalText;
-        }, 2000);
+        if (btn) {
+          const originalText = btn.textContent;
+          btn.textContent = '{{ T "copied" }}';
+          setTimeout(() => {
+            btn.textContent = originalText;
+          }, 2000);
+        }
+
+        // Visual feedback for the text area
+        const pre = document.getElementById('prompt-text');
+        if (pre) {
+          pre.style.opacity = '0.5';
+          setTimeout(() => {
+            pre.style.opacity = '1';
+          }, 200);
+        }
       });
     }
   </script>

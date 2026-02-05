@@ -35,6 +35,9 @@ other = "Share"
 [copy_prompt]
 other = "Copy prompt"
 
+[click_to_copy]
+other = "Click to copy"
+
 [copied]
 other = "Copied!"
 

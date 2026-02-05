@@ -376,7 +376,7 @@
     ` : '';
 
     const descriptionHTML = prompt.description ? 
-      `<p class="prompt-description">${prompt.description}</p>` : '';
+      `<p class="prompt-description" data-hint="{{ T "click_to_copy" | default "Click to copy" }}"><span class="prompt-description-text">${prompt.description}</span></p>` : '';
     
     const authorHTML = prompt.author ? 
       `<span class="prompt-meta-text" style="color: #6B6A67;">By</span>

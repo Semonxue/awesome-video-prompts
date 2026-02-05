@@ -52,7 +52,7 @@
     </h3>
     
     {{ with .Params.description }}
-    <p class="prompt-description">{{ . }}</p>
+    <p class="prompt-description" onclick="copyPromptText(this)" data-hint="{{ T "click_to_copy" | default "Click to copy" }}" title="{{ T "copy_prompt" }}" style="cursor: pointer;"><span class="prompt-description-text">{{ . }}</span></p>
     {{ end }}
     
     {{ with .Params.tags }}
@@ -75,7 +75,7 @@
     {{ end }}
     
     <div class="prompt-actions">
-      <button class="copy-btn" onclick='copyPrompt("{{ .Params.prompt | htmlEscape }}")' title="{{ T "copy_prompt" }}">
+      <button class="copy-btn" onclick="copyPromptText(this)" title="{{ T "copy_prompt" }}">
         📋 {{ T "copy_prompt" }}
       </button>
     </div>
@@ -83,15 +83,29 @@
 </article>
 
 <script>
-function copyPrompt(promptText) {
-  navigator.clipboard.writeText(promptText).then(() => {
+function copyPromptText(element) {
+  const card = element.closest('.prompt-card');
+  const desc = card.querySelector('.prompt-description');
+  const text = desc ? desc.innerText : "";
+
+  if (!text) return;
+
+  navigator.clipboard.writeText(text).then(() => {
     // 显示复制成功提示
-    const btn = event.target;
-    const originalText = btn.textContent;
-    btn.textContent = '{{ T "copied" }}';
-    setTimeout(() => {
-      btn.textContent = originalText;
-    }, 2000);
+    if (element.tagName === 'BUTTON') {
+      const originalText = element.textContent;
+      element.textContent = '{{ T "copied" }}';
+      setTimeout(() => {
+        element.textContent = originalText;
+      }, 2000);
+    } else {
+      // 文本点击反馈
+      const originalOpacity = element.style.opacity;
+      element.style.opacity = '0.5';
+      setTimeout(() => {
+        element.style.opacity = originalOpacity || '1';
+      }, 200);
+    }
   });
 }
 </script>
