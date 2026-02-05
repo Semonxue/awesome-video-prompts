@@ -13,7 +13,7 @@ enableRobotsTXT = true
 
 # 项目版本
 [params]
-  version = '0.3.0'
+  version = '0.4.0'
   author = 'Semon'
 
 # 多语言配置

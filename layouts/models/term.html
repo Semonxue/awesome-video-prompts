@@ -295,6 +295,12 @@
   let loadObserver = null;
   const LOAD_BATCH_SIZE = 10;
 
+  // Model name mapping
+  const modelsData = {
+    {{ range $key, $value := .Site.Data.models }}"{{ $key }}": "{{ $value.name }}",
+    {{ end }}
+  };
+
   const state = {
     search: '',
     tag: 'all',
@@ -335,7 +341,18 @@
   }
 
   function createCardHTML(prompt) {
-    const modelDisplay = prompt.model || '';
+    let modelKeys = [];
+    if (Array.isArray(prompt.model)) {
+        modelKeys = prompt.model;
+    } else if (prompt.model) {
+        modelKeys = [prompt.model];
+    }
+
+    const modelBadgesHTML = modelKeys.map(key => {
+        const name = modelsData[key] || modelsData[key.toLowerCase()] || key;
+        return `<span class="model-badge">${name}</span>`;
+    }).join('');
+
     const imageUrl = resolveAssetUrl(prompt.image);
     const videoUrl = resolveAssetUrl(prompt.video);
     const tagsHTML = (prompt.tags || []).map(tag => 
@@ -351,7 +368,7 @@
           </div>
           <video class="prompt-hover-video" src="${videoUrl}" loop playsinline muted style="display: none; opacity: 0; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 5; transition: opacity 0.3s;"></video>
         ` : ''}
-        ${modelDisplay ? `<span class="model-badge">${modelDisplay}</span>` : ''}
+        ${modelBadgesHTML}
         <div class="prompt-overlay">
           <span class="hover-text">{{ T "hover_to_play" }}</span>
         </div>
