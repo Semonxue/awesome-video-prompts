@@ -27,8 +27,8 @@ tags = []
 
 # [选填] 模型
 # 规范: 对应 data/models.yaml 中的 Key。
-# 示例: "Kling", "Runway", "Sora", "Hailuo"
-model = ""
+# 示例: "kling26", "veo31", "sora", "hailuo"
+models = ""
 
 # [选填] 封面图
 # 规范: 视频效果预览图或第一帧。

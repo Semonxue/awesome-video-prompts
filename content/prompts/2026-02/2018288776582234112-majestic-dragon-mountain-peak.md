@@ -5,7 +5,7 @@ date: 2026-02-02
 title: "Majestic Dragon Mountain Peak Fantasy"
 description: |
   Wide shot of majestic dragon perched on mountain peak, wings partially spread, scales glowing with ethereal light, mystical particles swirling, epic fantasy cinematography, 720p quality, dramatic composition
-model: grok
+models: grok
 tags: [fantasy, nature, mountain]
 author: "Dheepan Ratnam"
 source_url: "https://x.com/Dheepanratnam/status/2018291767930503197"

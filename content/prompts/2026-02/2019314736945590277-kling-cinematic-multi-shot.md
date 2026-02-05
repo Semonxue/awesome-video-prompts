@@ -21,7 +21,7 @@ description: |
   Shot 8: Medium-wide lifestyle shot. Two young Asian women walk across a city crosswalk, bathed in warm afternoon "golden hour" light. They are laughing and talking, creating a sharp emotional contrast to the previous shots of distress.
 
   Shot 9: Final tight close-up. The blonde woman stares directly into the lens, her expression shifting from confusion to absolute shock. She slowly brings her hand up, her fingers trembling, to cover her mouth as her eyes well up with fear.
-model: kling3
+models: kling3
 tags: [cinematic, multi-shot, urban, manhattan, street]
 author: Higgsfield AI 🧩
 source_url: https://x.com/higgsfield_ai/status/2019314800409600470

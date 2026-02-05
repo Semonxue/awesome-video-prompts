@@ -20,7 +20,7 @@ description: |
   Pure solid white background, soft studio lighting, and subtle realistic shadows beneath each floating layer.
   Ultra-sharp focus, DSLR macro photography look.
   Clean, minimalist infographic text labels with thin pointer lines for each layer. Premium, professional, photorealistic food infographic style.
-model: kling26
+models: kling26
 tags: [realistic, minimalist, abstract]
 author: Zara
 source_url: https://x.com/ZaraIrahh/status/2018545826990272776

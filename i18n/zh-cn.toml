@@ -1,4 +1,7 @@
 # 基础界面文字
+[home]
+other = "首页"
+
 [search_placeholder]
 other = "搜索提示词..."
 
@@ -101,3 +104,8 @@ other = "已收录 {{ .Count }} 个精彩提示词"
 
 [site_description]
 other = "精彩视频提示词合集。"
+[model_description_placeholder]
+other = "探索该模型最精彩的视频生成提示词。复制并使用它们来创作令人惊叹的视频。"
+
+[explore]
+other = "探索"

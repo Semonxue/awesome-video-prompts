@@ -1,4 +1,7 @@
 # 基础界面文字
+[home]
+other = "Home"
+
 [search_placeholder]
 other = "Search prompts..."
 
@@ -101,3 +104,9 @@ other = "Collected {{ .Count }} prompts"
 
 [site_description]
 other = "A collection of awesome video prompts."
+
+[model_description_placeholder]
+other = "Discover the best video generation prompts for this model. Copy and use them to create amazing videos."
+
+[explore]
+other = "Explore"

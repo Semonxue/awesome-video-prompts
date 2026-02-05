@@ -5,7 +5,7 @@ date: "2026-02-04"
 title: "POV Sports Car Drifting Mountain Turn"
 description: |
   POV from inside a sport car drifting through a sharp mountain turn at night. Camera leans hard with the motion. Tires screech loudly, engine revs climbing aggressively, gravel hitting the undercarriage, wind roaring past open windows. High-speed cinematic
-model: kling26
+models: kling26
 tags:
   - night
   - car

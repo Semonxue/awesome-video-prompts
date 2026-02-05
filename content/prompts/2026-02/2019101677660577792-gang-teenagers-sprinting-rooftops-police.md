@@ -7,7 +7,7 @@ description: |
   FPV shot
 
   A gang of teenagers sprinting across rooftops, chased by undercover police . One jumps between buildings and barely catches a balcony rail. Rooftop maze at golden hour, antennas and clotheslines in the wind. FPV cam leaping across gaps, body rig tracking mid-air movement, shaky realism combined with vertigo-inducing perspectives.
-model: "kling26"
+models: "kling26"
 tags: ["urban", "action", "fpv", "cinematic", "motion_blur"]
 author: "Pierrick Chevallier | IA"
 source_url: "https://x.com/CharaspowerAI/status/2019101742378676476"

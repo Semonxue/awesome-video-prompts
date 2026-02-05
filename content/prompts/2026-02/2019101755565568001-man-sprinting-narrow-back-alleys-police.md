@@ -7,7 +7,7 @@ description: |
   TRACKING SHOT
 
   A man in a leather jacket sprinting through narrow back alleys, police sirens in the distance. Leaps a fence and crashes through a metal gate into a parking garage. Mediterranean city neighborhood at dusk, laundry flapping, dogs barking. Shoulder-level tracking shot with handheld instability, whip pan on corner turns, dynamic realism with concrete urgency.
-model: "kling26"
+models: "kling26"
 tags: ["urban", "action", "cinematic", "motion_blur", "alley"]
 author: "Pierrick Chevallier | IA"
 source_url: "https://x.com/CharaspowerAI/status/2019101815103733928"

@@ -39,7 +39,7 @@ description: |
    "mood": "Mythic, serene, and transcendent — a place that feels sacred, ancient, and beyond time",
    "style": "Ultra-cinematic fantasy sci-fi realism with monumental scale, rich atmosphere, and immersive depth"
   }
-model: veo31
+models: veo31
 tags: [fantasy, sci-fi, cinematic, nature, dreamy]
 author: "Heather Cooper"
 source_url: "https://x.com/HBCoop_/status/2018761532440518986"

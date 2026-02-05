@@ -60,7 +60,7 @@ description: |
   2-4s: Orbital waterfall pan + announcer begins speaking
   4-6s: Dolly-in close-up water detail + ticker glow pulses
   6-8s: 360-degree reflective pool rotation + headline subtly pulses + audio ambience continues naturally
-model: grok
+models: grok
 tags: [nature, cinematic, realistic, landscape, dreamy]
 author: darthjav
 source_url: https://x.com/darthjav/status/2018784534754721967

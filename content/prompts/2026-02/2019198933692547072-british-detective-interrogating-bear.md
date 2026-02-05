@@ -15,7 +15,7 @@ description: |
   Shot 3 (4s): Extreme closeup of the Britsh detective with a disappointed expression. 
 
   Shot 4 (4s): Extreme closeup of the bears T-shirt that says I love honey and then cut back to the detectives face looking disappointed and shaking his head. Off camera you can hear the bear say "I'm sorry, I won't do it again"
-model: kling3
+models: kling3
 tags: [cinematic, realistic, fantasy, animal]
 author: Travis Davids
 source_url: https://x.com/MrDavids1/status/2019199473092645045

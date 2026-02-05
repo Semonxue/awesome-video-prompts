@@ -5,7 +5,7 @@ date: "2026-02-04"
 title: "Ronin in Sakura Garden Confidence"
 description: |
    A ronin standing in the middle of the Sakura garden. He is putting his hand on the sword handle, opens his eyes, and looks forward, radiating confidence and strength. Sakura petels falls down while the camera slowly arcs around him
-model: kling26
+models: kling26
 tags:
   - samurai
   - cherry_blossom

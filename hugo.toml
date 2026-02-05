@@ -20,6 +20,11 @@ enableRobotsTXT = true
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  model = "models"
+
 [languages]
   [languages.en]
     title = 'Awesome Video Prompts'

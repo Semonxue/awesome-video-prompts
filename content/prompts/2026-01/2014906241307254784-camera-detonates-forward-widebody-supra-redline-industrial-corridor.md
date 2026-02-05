@@ -7,7 +7,7 @@ description: |
   Prompt Studio: Speed in @Kling_ai 2.6, image to video, with native audio
 
   The camera detonates forward through a widebody Supra at redline through an industrial corridor. Pipes and ducts streak along walls. Violent swerving through gaps, suspension working overtime. Debris flies everywhere. Trees blur into green-brown streaks, only gaps visible. Violent shudder from each gear change. Racing livery vivid against motion blur, sponsor logos streaking.
-model: kling26
+models: kling26
 tags: ["fpv", "racing", "car", "motion_blur", "urban"]
 author: "Alexandra Aisling"
 source_url: "https://x.com/AllaAisling/status/2015105061773566183"

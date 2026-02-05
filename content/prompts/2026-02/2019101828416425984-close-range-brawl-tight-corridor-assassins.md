@@ -7,7 +7,7 @@ description: |
   Orbit Cam
 
   A close-range brawl in a tight corridor between two elite assassins. The camera circles the fight, weaving through punches and slams. Industrial hallway with exposed pipes, flickering bulbs, steam leaks. Continuous 360° orbit cam inside tight space, handheld shake with punctuated impact vibration, brutal intimacy and flowing geometry.
-model: "kling26"
+models: "kling26"
 tags:
   - action
   - cinematic

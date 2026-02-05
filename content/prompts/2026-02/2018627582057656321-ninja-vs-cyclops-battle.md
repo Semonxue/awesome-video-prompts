@@ -204,7 +204,7 @@ description: |
     - No retreat.
     - No stopping.
     - No other people.
-model: hailuo
+models: hailuo
 tags: [fantasy, cinematic, anime, motion_blur, desert]
 author: Muse｜AI音楽＆AI動画
 source_url: https://x.com/projectmuse_ai/status/2018627644204765544

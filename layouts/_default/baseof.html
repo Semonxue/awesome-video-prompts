@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}{{ end }}</title>
   
   {{- $desc := .Description | default .Params.description | default .Site.Params.description -}}
   <meta name="description" content="{{ $desc | plainify | truncate 160 }}">
@@ -415,6 +415,21 @@
     .result-count {
       font-size: 14px;
       color: var(--text-tertiary);
+    }
+    
+    /* Explore Model Link */
+    .explore-model-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    .explore-model-link:hover {
+      color: var(--accent-primary);
     }
     
     /* ===== 瀑布流布局 ===== */
@@ -847,6 +862,7 @@
       </div>
       
       <!-- 完整搜索区域 -->
+      {{ block "header_search" . }}
       <div class="search-section">
         <p class="intro-text">{{ T "site_description" }} · {{ T "collected_count" (dict "Count" (len (where .Site.RegularPages "Params.tags" "!=" nil))) }}</p>
         
@@ -866,9 +882,11 @@
           {{ partial "header-tag-list.html" . }}
         </div>
       </div>
+      {{ end }}
     </div>
     
     <!-- Compact版Header -->
+    {{ block "header_compact" . }}
     <div class="header-compact" style="display: none;">
       <div class="compact-container">
         <div class="compact-row-1">
@@ -919,6 +937,7 @@
         </div>
       </div>
     </div>
+    {{ end }}
   </header>
   
   <main class="main-content">

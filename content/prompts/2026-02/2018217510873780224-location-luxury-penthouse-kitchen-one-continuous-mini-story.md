@@ -12,7 +12,7 @@ description: |
   CUT TO: Insert close-up of espresso pouring from the teal machine into a small cup, crema forming, same golden reflections on the metal.
   CUT TO: Medium shot as she carries the plate and cup to the window-side counter; skyline stays in the same direction, sunlight consistent.
   CUT TO: Tight close-up as she smiles and adjusts a lemon slice garnish; end on the tart’s glossy surface with the skyline bokeh behind it.
-model: viduq3
+models: viduq3
 tags: [cinematic, realistic, urban,multi-shot]
 author: "Umesh"
 source_url: "https://x.com/umesh_ai/status/2018218225369301079"

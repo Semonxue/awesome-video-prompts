@@ -6,7 +6,7 @@
   <button class="model-tag active" data-model="all">{{ T "all" | default "All" }}</button>
   
   {{/* 1. Collect all models and their counts using GroupByParam on pages */}}
-  {{ $modelGroups := .Site.RegularPages.GroupByParam "model" }}
+  {{ $modelGroups := .Site.RegularPages.GroupByParam "models" }}
   
   {{/* 2. Create a list of dicts: {key, count, name, weight} */}}
   {{ $models := slice }}

@@ -1,42 +1,84 @@
 klingo1:
   name: Kling O1
   slug: klingo1
+  url: https://klingai.com/
+  description: >-
+    Kuaishou's all-around video generation model. Accurately understands natural language intent, supports multimodal input, and generates high-quality videos with complex motion and physical laws. Approximate launch: June 2024.
 kling26:
   name: Kling 2.6
   slug: kling26
+  url: https://klingai.com/
+  description: >-
+    An upgraded version of Kuaishou Kling. Significantly optimized in motion amplitude, image clarity, and generation speed, especially suitable for generating intense action scenes. Approximate launch: January 2026.
 kling3:
   name: Kling 3.0
   slug: kling3
+  url: https://klingai.com/
+  description: >-
+    The new flagship model of Kuaishou Kling. Features cinema-grade image quality and stronger semantic understanding capabilities, supporting longer continuous video generation. Approximate launch: January 2026.
 hailuo:
-  name: Hailuo
+  name: Hailuo (MiniMax)
   slug: hailuo
+  url: https://hailuoai.video/
+  description: >-
+    MiniMax's Hailuo AI video model (Hailuo 2.3). Its advantages lie in extremely fast generation speed and excellent semantic understanding, capable of generating smooth videos that conform to physical logic, supporting image-to-video. Approximate launch: September 2024.
 veo31:
   name: Veo 3.1
   slug: veo31
+  url: https://deepmind.google/technologies/veo/
+  description: >-
+    Google DeepMind's latest video generation model. The biggest breakthrough is native "video + audio" generation, supporting more precise prompt control, character consistency maintenance, and cinema-grade 4K resolution output. Approximate launch: January 2026.
 veo3:
   name: Veo 3
   slug: veo3
+  url: https://deepmind.google/technologies/veo/
+  description: >-
+    Google DeepMind's high-performance video model. Focuses on high-fidelity visual effects and physics simulation, supporting precise control of visual style through image and style references. Approximate launch: November 2025.
 sora:
   name: Sora
   slug: sora
+  url: https://openai.com/sora
+  description: >-
+    OpenAI's disruptive text-to-video model. Capable of generating videos up to 60 seconds long containing highly detailed backgrounds, complex camera movements, and multiple characters, with strong physical world simulation capabilities. Announced February 2024.
 ltxpro:
   name: LTX Pro
   slug: ltxpro
+  url: https://www.lightricks.com/ltxv
+  description: >-
+    LTX Video Professional Edition launched by Lightricks. Focuses on real-time performance and high efficiency, specifically optimized for commercial video production workflows, supporting precise camera control. Approximate launch: Late 2025.
 grok:
   name: Grok
   slug: grok
+  url: https://x.ai/
+  description: >-
+    Multimodal large model launched by xAI. Integrates strong language understanding and visual generation capabilities, generating high-quality short videos directly via prompts on the X platform, with unique stylized performance. Approximate launch: Late 2024.
 ray314:
-  name: Ray 3.14
+  name: Ray 3.14 (Luma)
   slug: ray314
+  url: https://luma.ai/dream-machine
+  description: >-
+    Luma AI's next-generation video model (Dream Machine). Known for extremely fast generation speed, supports Keyframes control and high dynamic action generation, suitable for rapid creative iteration. Approximate launch: February 2026.
 lumalabs:
   name: Luma Labs
   slug: lumalabs
+  url: https://lumalabs.ai/dream-machine
+  description: >-
+    Luma AI Dream Machine. A high-quality video generator, excelling at handling complex object motion and deformation, generating dream-like smooth videos. Launched June 2024.
 gen45:
   name: Gen 4.5
   slug: gen45
+  url: https://runwayml.com/
+  description: >-
+    Runway's new generation video generation model. Built on Gen-3 Alpha, providing finer Director Mode control, with a qualitative leap in lighting consistency and temporal coherence. Approximate launch: December 2025.
 viduq3:
   name: Vidu Q3
   slug: viduq3
+  url: https://www.vidu.studio/
+  description: >-
+    Upgraded Vidu model released by Shengshu Technology. Not only supports long video generation but also has unique advantages in multi-shot consistency and understanding of Chinese elements, supporting "one-click film creation". Approximate launch: January 2026.
 SEEEDANCE1.5:
   name: SEEEDANCE 1.5
   slug: SEEEDANCE1.5
+  url: https://seaweed.video/
+  description: >-
+    Video model produced by ByteDance (likely referring to Seaweed/PixelDance). Excels at handling extremely complex long shots and multi-subject interactions, maintaining high coherence in videos over 10 seconds long. Approximate launch: Late 2024.

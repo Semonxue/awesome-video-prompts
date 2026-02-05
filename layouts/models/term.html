@@ -1,29 +1,274 @@
-{{ define "main" }}
-  <!-- 网格头部 -->
-  <div class="grid-header">
-    <div style="display: flex; align-items: center; gap: 16px;">
-      <h2 class="grid-title">{{ T "popular_prompts" }}</h2>
-      <a href="#" id="explore-model-link" class="explore-model-link" style="display: none; font-size: 13px; color: var(--text-secondary); text-decoration: none; transition: color 0.2s;">
-        <span id="explore-model-text"></span> →
-      </a>
+{{/* 
+  Model Aggregation Page Template
+  SEO-optimized with model name in title
+  Reuses homepage header, disables compact header transition
+*/}}
+
+{{/* Override page title for SEO */}}
+{{ define "title" }}
+  {{- $modelData := index .Site.Data.models .Data.Term -}}
+  {{- $modelName := $modelData.name | default (.Data.Term | title) -}}
+  {{ $modelName }} Video Prompts | {{ .Site.Title }}
+{{ end }}
+
+{{/* Model-specific hero section after the standard header search */}}
+{{ define "header_search" }}
+{{ $modelData := index .Site.Data.models .Data.Term }}
+{{ $modelName := $modelData.name | default (.Data.Term | title) }}
+{{ $modelSlug := .Data.Term }}
+{{ $modelUrl := $modelData.url }}
+{{ $modelDescription := $modelData.description }}
+
+<!-- Model Hero Section -->
+<div class="search-section model-hero-section">
+  <!-- Breadcrumb -->
+  <div class="model-breadcrumb">
+    <a href="{{ .Site.Home.RelPermalink }}" class="breadcrumb-link">{{ T "home" | default "Home" }}</a>
+    <span class="breadcrumb-separator">›</span>
+    <span class="breadcrumb-current">models: {{ $modelName }}</span>
+  </div>
+  
+  <div class="model-hero-container">
+    <!-- LEFT: Model Info -->
+    <div class="model-hero-info">
+      <div class="model-hero-title-row">
+        <h1 class="model-hero-title">{{ $modelName }}</h1>
+        {{ if $modelUrl }}
+        <a href="{{ $modelUrl }}" target="_blank" class="model-official-link" aria-label="Official Website">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+        {{ end }}
+      </div>
+      {{ if $modelDescription }}
+      <p class="model-hero-description">{{ $modelDescription }}</p>
+      {{ end }}
     </div>
-    <span class="result-count" data-format="{{ T "prompts_found" (dict "Count" "COUNT_PLACEHOLDER") }}">{{ T "prompts_found" (dict "Count" (len (where .Site.RegularPages "Params.tags" "!=" nil))) }}</span>
+
+    <!-- RIGHT: Search + Tags -->
+    <div class="model-hero-filters">
+      <!-- Search Box -->
+      <div class="search-box-wrapper">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input type="text" class="search-input" placeholder="{{ T "search_placeholder" }}" id="search-input">
+      </div>
+      
+      <!-- Tag List (only tags with results for this model) -->
+      <div class="model-hero-tags">
+        <div class="content-tag-area">
+          <button class="content-tag active" data-tag="all">{{ T "all" | default "All" }}</button>
+          
+          {{/* Collect tags from current model's pages */}}
+          {{ $tagCounts := dict }}
+          {{ range .Data.Pages }}
+            {{ range .Params.tags }}
+              {{ $count := index $tagCounts . | default 0 }}
+              {{ $tagCounts = merge $tagCounts (dict . (add $count 1)) }}
+            {{ end }}
+          {{ end }}
+          
+          {{/* Sort by count and display */}}
+          {{ $sortedTags := slice }}
+          {{ range $tag, $count := $tagCounts }}
+            {{ $sortedTags = $sortedTags | append (dict "name" $tag "count" $count) }}
+          {{ end }}
+          {{ $sortedTags = sort $sortedTags "count" "desc" }}
+          
+          {{ $visibleTags := first 16 $sortedTags }}
+          {{ $hiddenTags := after 16 $sortedTags }}
+          
+          {{ range $visibleTags }}
+            {{ $tagData := index $.Site.Data.tags .name }}
+            {{ if $tagData }}
+              {{ $displayName := index $tagData "en" | default (.name | title) }}
+              <button class="content-tag" data-tag="{{ .name }}">
+                {{ $displayName }} <span class="tag-count">{{ .count }}</span>
+              </button>
+            {{ end }}
+          {{ end }}
+
+          {{ if $hiddenTags }}
+            <div class="hidden-tags-container" style="display: none;">
+              {{ range $hiddenTags }}
+                {{ $tagData := index $.Site.Data.tags .name }}
+                {{ if $tagData }}
+                  {{ $displayName := index $tagData "en" | default (.name | title) }}
+                  <button class="content-tag" data-tag="{{ .name }}">
+                    {{ $displayName }} <span class="tag-count">{{ .count }}</span>
+                  </button>
+                {{ end }}
+              {{ end }}
+            </div>
+            
+            <button class="content-tag more tags-expand-btn">
+              <span class="btn-text">{{ T "show_more" }}</span>
+              <span class="count-badge" style="margin-left: 4px; opacity: 0.6;">+{{ len $hiddenTags }}</span>
+            </button>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Model page: remove sticky header */
+  .model-page .site-header {
+    position: relative;
+  }
+  
+  /* Model Breadcrumb */
+  .model-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    margin-bottom: 24px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .breadcrumb-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .breadcrumb-link:hover {
+    color: var(--accent-primary);
+  }
+  
+  .breadcrumb-separator {
+    color: var(--text-tertiary);
+  }
+  
+  .breadcrumb-current {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+  
+  /* Model Hero Section Styles */
+  .model-hero-section {
+    padding: 24px 48px 20px;
+  }
+  
+  .model-hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .model-hero-info {
+    flex: 0 0 auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .model-hero-title-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .model-hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .model-hero-description {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  .model-official-link {
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+  
+  .model-official-link:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+  }
+  
+  .model-hero-filters {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+  }
+  
+  .model-hero-tags {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Disable compact header on model page */
+  .model-page .header-compact {
+    display: none !important;
+  }
+  
+  .model-page .header-default {
+    display: block !important;
+    opacity: 1 !important;
+  }
+</style>
+{{ end }}
+
+{{/* Empty compact header - disable transition */}}
+{{ define "header_compact" }}
+<!-- Compact header disabled on model page -->
+{{ end }}
+
+{{ define "main" }}
+  {{ $modelData := index .Site.Data.models .Data.Term }}
+  {{ $modelName := $modelData.name | default (.Data.Term | title) }}
+
+  <!-- Grid Header -->
+  <div class="grid-header">
+    <h2 class="grid-title">{{ $modelName }} video prompts</h2>
+    <span class="result-count" data-format="{{ T "prompts_found" (dict "Count" "COUNT_PLACEHOLDER") }}">{{ T "prompts_found" (dict "Count" (len .Data.Pages)) }}</span>
   </div>
 
-  <!-- 瀑布流提示词列表 -->
+  <!-- Masonry Grid -->
   <div class="masonry-grid" id="prompts-grid">
-    <!-- 卡片将通过 JavaScript 动态渲染 -->
+    <!-- Rendered by JS -->
   </div>
 
-  <!-- 加载更多 -->
+  <!-- Loading More -->
   <div class="loading-more" id="loading-more">
     <div class="loading-spinner"></div>
     <span class="loading-text">Loading more prompts...</span>
   </div>
 
-  <!-- 所有卡片数据的模板存储 -->
+  <!-- Prompts Data (filtered for this model) -->
   <script type="application/json" id="prompts-data">
-    [{{ $pages := sort (where .Site.RegularPages "Params.tags" "!=" nil) ".File.BaseFileName" "desc" }}{{ range $index, $page := $pages }}{{ if $index }},{{ end }}{
+    [{{ $pages := sort .Data.Pages ".File.BaseFileName" "desc" }}{{ range $index, $page := $pages }}{{ if $index }},{{ end }}{
       "title": {{ $page.Title | jsonify | safeJS }},
       "description": {{ $page.Params.description | default "" | jsonify | safeJS }},
       "image": {{ with $page.Params.image }}{{ $img := . }}{{ if or (hasPrefix $img "http://") (hasPrefix $img "https://") }}{{ $img | jsonify | safeJS }}{{ else }}{{ (strings.TrimPrefix "/" $img) | relURL | jsonify | safeJS }}{{ end }}{{ else }}""{{ end }},
@@ -40,64 +285,45 @@
 
 {{ define "scripts" }}
 <script>
-  // 全局数据和状态管理
-  let allPrompts = []; // 所有提示词数据
-  let filteredPrompts = []; // 过滤后的提示词
-  let renderedCount = 0; // 已渲染数量
+  // Add model-page class to body for CSS targeting
+  document.body.classList.add('model-page');
+
+  // Global Vars
+  let allPrompts = [];
+  let filteredPrompts = [];
+  let renderedCount = 0;
   let loadObserver = null;
-  const LOAD_BATCH_SIZE = 10; // 每次加载数量
+  const LOAD_BATCH_SIZE = 10;
 
   const state = {
     search: '',
-    model: 'all',
     tag: 'all',
     isLoading: false
   };
 
-  // Model name mapping for explore link
-  const modelsData = {
-    {{ range $key, $value := .Site.Data.models }}"{{ $key }}": "{{ $value.name }}",
-    {{ end }}
-  };
-
-
-  // DOM 元素引用
   const dom = {
     get searchInputs() { return document.querySelectorAll('.search-input'); },
-    get modelBtns() { return document.querySelectorAll('.model-tag[data-model]'); },
-    get modelMoreToggles() { return document.querySelectorAll('.model-more-toggle'); },
     get tagBtns() { return document.querySelectorAll('.content-tag'); },
     get grid() { return document.getElementById('prompts-grid'); },
     get countDisplay() { return document.querySelector('.result-count'); },
-    get headerDefault() { return document.querySelector('.header-default'); },
-    get headerCompact() { return document.querySelector('.header-compact'); },
-    get mainContent() { return document.querySelector('.main-content'); },
     get loadingMore() { return document.getElementById('loading-more'); }
   };
 
-  // 初始化
   function init() {
     loadPromptsData();
     bindEvents();
-    updateHeaderState();
-    
-    // 初始渲染第一批
     applyFiltersAndRender(true);
     setupLazyLoadObserver();
   }
 
-  // 加载提示词数据
   function loadPromptsData() {
     const dataScript = document.getElementById('prompts-data');
     if (dataScript) {
       try {
         allPrompts = JSON.parse(dataScript.textContent);
         filteredPrompts = [...allPrompts];
-        console.log('Loaded prompts:', allPrompts.length);
       } catch (e) {
         console.error('Failed to parse prompts data:', e);
-        allPrompts = [];
-        filteredPrompts = [];
       }
     }
   }
@@ -108,7 +334,6 @@
     return url;
   }
 
-  // 创建卡片 HTML
   function createCardHTML(prompt) {
     const modelDisplay = prompt.model || '';
     const imageUrl = resolveAssetUrl(prompt.image);
@@ -136,7 +361,6 @@
     const descriptionHTML = prompt.description ? 
       `<p class="prompt-description">${prompt.description}</p>` : '';
     
-    // 作者和日期信息
     const authorHTML = prompt.author ? 
       `<span class="prompt-meta-text" style="color: #6B6A67;">By</span>
        <span class="prompt-meta-text" style="color: #1A1918; font-weight: 500;">${prompt.sourceUrl ? `<a href="${prompt.sourceUrl}" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">${prompt.author}</a>` : prompt.author}</span>` : '';
@@ -166,87 +390,49 @@
     `;
   }
 
-  // 渲染卡片批次
   function renderBatch(startIndex, count) {
-    console.log('renderBatch: startIndex =', startIndex, 'count =', count, 'total =', filteredPrompts.length);
-    
-    if (startIndex >= filteredPrompts.length) {
-      return;
-    }
-
+    if (startIndex >= filteredPrompts.length) return;
     const endIndex = Math.min(startIndex + count, filteredPrompts.length);
     const batch = filteredPrompts.slice(startIndex, endIndex);
-    
     const fragment = document.createElement('div');
     fragment.innerHTML = batch.map(createCardHTML).join('');
-    
     dom.grid.append(...fragment.children);
     renderedCount = endIndex;
-
-    // 为新渲染的卡片绑定视频悬停事件
     attachVideoHoverEvents();
-
-    console.log('renderBatch done: renderedCount =', renderedCount);
-    
-    // 更新 observer 状态
     refreshObserver();
   }
 
-  // 应用筛选并渲染
   function applyFiltersAndRender(isInitial = false) {
-    // 应用筛选逻辑
     filteredPrompts = allPrompts.filter(prompt => {
       const title = (prompt.title || '').toLowerCase();
       const description = (prompt.description || '').toLowerCase();
-      const model = (prompt.model || '').toLowerCase();
       const tags = (prompt.tags || []).map(t => t.toLowerCase());
 
-      // 搜索匹配
       const matchesSearch = !state.search || 
                            title.includes(state.search) || 
                            description.includes(state.search) || 
                            tags.some(t => t.includes(state.search));
-
-      // 模型匹配
-      const matchesModel = state.model === 'all' || model === state.model;
-
-      // 标签匹配
+      
       const matchesTag = state.tag === 'all' || tags.includes(state.tag);
 
-      return matchesSearch && matchesModel && matchesTag;
+      return matchesSearch && matchesTag;
     });
 
-    // 清空现有内容
     dom.grid.innerHTML = '';
     renderedCount = 0;
-
-    // 更新计数
     updateCount(filteredPrompts.length);
-    
-    console.log('applyFiltersAndRender: total =', filteredPrompts.length, 'batchSize =', LOAD_BATCH_SIZE);
-
-    // 渲染第一批
     renderBatch(0, LOAD_BATCH_SIZE);
   }
 
-  // 加载更多
   function loadMore() {
-    if (state.isLoading || renderedCount >= filteredPrompts.length) {
-      console.log('loadMore skipped: isLoading =', state.isLoading, 'renderedCount =', renderedCount);
-      return;
-    }
-
-    console.log('loadMore: loading from', renderedCount);
+    if (state.isLoading || renderedCount >= filteredPrompts.length) return;
     state.isLoading = true;
-
-    // 模拟轻微延迟，让用户感知到加载过程
     setTimeout(() => {
       renderBatch(renderedCount, LOAD_BATCH_SIZE);
       state.isLoading = false;
     }, 150);
   }
 
-  // 更新计数显示
   function updateCount(count) {
     if (dom.countDisplay) {
       const format = dom.countDisplay.dataset.format;
@@ -258,30 +444,13 @@
     }
   }
 
-  // 显示加载指示器
-  function showLoadingIndicator() {
-    if (dom.loadingMore) {
-      dom.loadingMore.style.display = 'flex';
-    }
-  }
-
-  // 隐藏加载指示器
-  function hideLoadingIndicator() {
-    if (dom.loadingMore) {
-      dom.loadingMore.style.display = 'none';
-    }
-  }
-
-  // 为卡片附加视频悬停事件
   function attachVideoHoverEvents() {
     const cards = dom.grid.querySelectorAll('.prompt-card');
     cards.forEach(card => {
       const video = card.querySelector('.prompt-hover-video');
       const loader = card.querySelector('.video-loader');
-      
       if (!video) return;
-      if (video.dataset.eventAttached) return; // 避免重复绑定
-      
+      if (video.dataset.eventAttached) return;
       video.dataset.eventAttached = 'true';
       
       card.addEventListener('mouseenter', () => {
@@ -292,66 +461,31 @@
             if (loader) loader.style.display = 'none';
             video.style.display = 'block';
             video.style.opacity = '1';
-            video.play().catch(err => console.log('Autoplay prevented:', err));
+            video.play().catch(e => console.log(e));
           }, { once: true });
         } else {
           video.style.display = 'block';
           video.style.opacity = '1';
-          video.play().catch(err => console.log('Autoplay prevented:', err));
+          video.play().catch(e => console.log(e));
         }
       });
-      
       card.addEventListener('mouseleave', () => {
         video.pause();
         video.currentTime = 0;
         video.style.opacity = '0';
-        setTimeout(() => {
-          if (video.style.opacity === '0') {
-            video.style.display = 'none';
-          }
-        }, 300);
+        setTimeout(() => { if (video.style.opacity === '0') video.style.display = 'none'; }, 300);
       });
     });
   }
 
-  // 绑定事件
   function bindEvents() {
-    // 搜索输入
     dom.searchInputs.forEach(input => {
       input.addEventListener('input', (e) => {
         state.search = e.target.value.toLowerCase().trim();
-        // 同步所有搜索框
-        dom.searchInputs.forEach(fi => {
-            if (fi !== e.target) fi.value = e.target.value;
-        });
         applyFiltersAndRender();
       });
     });
 
-    // 模型筛选
-    dom.modelBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const model = btn.dataset.model;
-        updateActiveState(dom.modelBtns, model, 'data-model');
-        state.model = model.toLowerCase();
-        applyFiltersAndRender();
-        updateExploreLink(model);
-      });
-    });
-
-    // 模型展开/收起
-    dom.modelMoreToggles.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const container = btn.closest('.model-tags');
-        if (!container) return;
-        const expanded = container.classList.toggle('expanded');
-        btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-        btn.textContent = expanded ? btn.dataset.lessText : btn.dataset.moreText;
-      });
-    });
-
-    // 标签筛选
     dom.tagBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -361,21 +495,15 @@
         applyFiltersAndRender();
       });
     });
-
-    // 滚动监听 - 仅处理 header
-    window.addEventListener('scroll', updateHeaderState);
-
-    // Expand/Collapse Tags Logic
+    
     const expandBtns = document.querySelectorAll('.tags-expand-btn');
     expandBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
         const container = btn.parentElement;
         if (!container) return;
-        
         const hiddenArea = container.querySelector('.hidden-tags-container');
         if (!hiddenArea) return;
-        
         const btnText = btn.querySelector('.btn-text');
         const isHidden = hiddenArea.style.display === 'none';
         
@@ -390,31 +518,14 @@
     });
   }
 
-  // 使用 IntersectionObserver 触发加载更多
   function setupLazyLoadObserver() {
-    if (!dom.loadingMore || !('IntersectionObserver' in window)) {
-      console.log('Observer setup failed: loadingMore=', !!dom.loadingMore);
-      return;
-    }
-
-    if (loadObserver) {
-      loadObserver.disconnect();
-    }
-
+    if (!dom.loadingMore || !('IntersectionObserver' in window)) return;
+    if (loadObserver) loadObserver.disconnect();
     loadObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        console.log('Observer triggered:', entry.isIntersecting, 'renderedCount:', renderedCount, 'total:', filteredPrompts.length);
-        if (entry.isIntersecting && !state.isLoading) {
-          loadMore();
-        }
+        if (entry.isIntersecting && !state.isLoading) loadMore();
       });
-    }, {
-      root: null,
-      rootMargin: '200px 0px', // 距离底部200px时触发
-      threshold: 0
-    });
-
-    console.log('Observer created');
+    }, { root: null, rootMargin: '200px 0px', threshold: 0 });
     refreshObserver();
   }
 
@@ -422,16 +533,13 @@
     if (!loadObserver || !dom.loadingMore) return;
     loadObserver.unobserve(dom.loadingMore);
     if (renderedCount < filteredPrompts.length) {
-      console.log('Observer observing, renderedCount:', renderedCount, 'total:', filteredPrompts.length);
-      dom.loadingMore.style.display = 'flex'; // 确保可见才能被观察
+      dom.loadingMore.style.display = 'flex';
       loadObserver.observe(dom.loadingMore);
     } else {
-      console.log('All loaded, hiding indicator');
       dom.loadingMore.style.display = 'none';
     }
   }
 
-  // 更新按钮激活状态
   function updateActiveState(elements, value, dataAttr) {
     elements.forEach(el => {
       if (el.getAttribute(dataAttr) === value) {
@@ -442,56 +550,6 @@
     });
   }
 
-  // 更新 Explore 链接显示
-  function updateExploreLink(modelKey) {
-    const link = document.getElementById('explore-model-link');
-    const text = document.getElementById('explore-model-text');
-    if (!link || !text) return;
-    
-    if (modelKey && modelKey !== 'all') {
-      const modelName = modelsData[modelKey] || modelKey;
-      text.textContent = '{{ T "explore" | default "Explore" }} ' + modelName;
-      link.href = '{{ relURL "models/" }}' + modelKey + '/';
-      link.style.display = 'inline-flex';
-    } else {
-      link.style.display = 'none';
-    }
-  }
-
-  // Header 滚动切换逻辑
-  let isCompact = false;
-  function updateHeaderState() {
-    if (!dom.mainContent) return;
-
-    const rect = dom.mainContent.getBoundingClientRect();
-    const shouldBeCompact = rect.top < 50;
-
-    if (shouldBeCompact && !isCompact) {
-      isCompact = true;
-      toggleHeaders(dom.headerDefault, dom.headerCompact);
-    } else if (!shouldBeCompact && isCompact) {
-      isCompact = false;
-      toggleHeaders(dom.headerCompact, dom.headerDefault);
-    }
-  }
-
-  function toggleHeaders(hideEl, showEl) {
-    if (!hideEl || !showEl) return;
-    
-    hideEl.style.display = 'none';
-    hideEl.style.opacity = '0';
-    
-    showEl.style.display = 'block';
-    showEl.style.opacity = '0';
-    
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        showEl.style.opacity = '1';
-      });
-    });
-  }
-
-  // 启动
   document.addEventListener('DOMContentLoaded', init);
 </script>
 {{ end }}

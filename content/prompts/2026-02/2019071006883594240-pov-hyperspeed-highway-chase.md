@@ -5,7 +5,7 @@ date: "2026-02-04"
 title: "POV Hyperspeed Highway Chase"
 description: |
   POV hyperspeed shot (Action)The camera races down a narrow highway, weaving through oncoming traffic at breakneck speed. Neon signs flash by as the protagonist’s hands grip the wheel, narrowly avoiding a crashing truck and diving into a dark tunnel.
-model: kling26
+models: kling26
 tags:
   - night
   - car

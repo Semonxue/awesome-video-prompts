@@ -8,7 +8,7 @@ description: |
   2️⃣カット2   歩き出すのをサイドアングル
   3️⃣ カット3   顔のクローズアップ
   4️⃣俯瞰ショット
-model: kling3
+models: kling3
 tags: [multi-shot, cinematic, ai]
 author: おのふみ| 3D×動画生成AI
 source_url: https://x.com/onofumi_AI/status/2019171780502647054
