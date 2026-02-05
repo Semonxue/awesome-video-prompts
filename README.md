@@ -59,7 +59,7 @@ image: "/prompts/2026-01/xxx/cover.jpg"
 video: "/prompts/2026-01/xxx/video.mp4"
 date: "2026-01-23"
 description: "完整的提示词内容..."
-model: "kling26"          # 使用的AI模型
+models: "kling26"         # 使用的AI模型 (也可以使用 model: "kling26")
 tags: ["mountain", "aerial", "fpv"]  # 标签
 author: "作者名"
 source_url: "原始来源链接"

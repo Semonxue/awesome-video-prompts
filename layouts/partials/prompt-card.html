@@ -5,7 +5,7 @@
 
 <article class="prompt-card" 
          data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}"
-         data-model="{{ with .Params.models }}{{ . }}{{ end }}">
+         data-model="{{ with (or .Params.models .Params.model) }}{{ . }}{{ end }}">
   {{ with .Params.image }}
   <div class="prompt-image-wrapper">
     {{ $img := . }}
@@ -22,7 +22,7 @@
       <video class="prompt-hover-video" src="{{ $videoURL | safeURL }}" loop playsinline muted style="display: none; opacity: 0; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 5; transition: opacity 0.3s;"></video>
     {{ end }}
 
-    {{ with $.Params.models }}
+    {{ with (or $.Params.models $.Params.model) }}
       {{ $modelDisplay := . }}
       {{ $modelData := index $.Site.Data.models . }}
       {{ if $modelData }}

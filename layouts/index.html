@@ -28,7 +28,7 @@
       "description": {{ $page.Params.description | default "" | jsonify | safeJS }},
       "image": {{ with $page.Params.image }}{{ $img := . }}{{ if or (hasPrefix $img "http://") (hasPrefix $img "https://") }}{{ $img | jsonify | safeJS }}{{ else }}{{ (strings.TrimPrefix "/" $img) | relURL | jsonify | safeJS }}{{ end }}{{ else }}""{{ end }},
       "video": {{ with $page.Params.video }}{{ $video := . }}{{ if or (hasPrefix $video "http://") (hasPrefix $video "https://") }}{{ $video | jsonify | safeJS }}{{ else }}{{ (strings.TrimPrefix "/" $video) | relURL | jsonify | safeJS }}{{ end }}{{ else }}""{{ end }},
-      "model": {{ $page.Params.models | default "" | jsonify | safeJS }},
+      "model": {{ or $page.Params.models $page.Params.model | default "" | jsonify | safeJS }},
       "tags": {{ $page.Params.tags | default (slice) | jsonify | safeJS }},
       "author": {{ $page.Params.author | default "" | jsonify | safeJS }},
       "date": {{ $page.Date.Format "2006-01-02" | jsonify | safeJS }},

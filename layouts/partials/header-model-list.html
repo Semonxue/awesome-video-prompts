@@ -5,14 +5,11 @@
 <div class="model-tags">
   <button class="model-tag active" data-model="all">{{ T "all" | default "All" }}</button>
   
-  {{/* 1. Collect all models and their counts using GroupByParam on pages */}}
-  {{ $modelGroups := .Site.RegularPages.GroupByParam "models" }}
-  
-  {{/* 2. Create a list of dicts: {key, count, name, weight} */}}
+  {{/* 1. Collect all models and their counts using Site.Taxonomies.models */}}
   {{ $models := slice }}
-  {{ range $modelGroups }}
-    {{ $key := .Key }}
-    {{ $count := len .Pages }}
+  
+  {{ range $key, $taxonomy := .Site.Taxonomies.models }}
+    {{ $count := $taxonomy.Count }}
     {{/* Only process if defined in models.yaml data file */}}
     {{ with index $.Site.Data.models $key }}
       {{ $models = $models | append (dict "key" $key "count" $count "name" .name) }}
