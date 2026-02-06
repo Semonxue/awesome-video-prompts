@@ -1,0 +1,12 @@
+---
+image: /prompts/2026-02/2019537396690481162-crane-up-dolly-in-fighters-clash/cover.jpg
+video: /prompts/2026-02/2019537396690481162-crane-up-dolly-in-fighters-clash/video.mp4
+date: 2026-02-05
+title: Crane Up Dolly In Fighters Clash
+description: |
+  In the center of a ruined stone courtyard, two fighters clash in brutal close combat. The camera performs a full 360-degree orbit shot around them at chest height, rotating smoothly as punches, kicks, and grapples unfold. Dust rises from the ground with every impact, broken pillars pass through the background as the camera circles, maintaining constant distance. Metallic impacts and heavy breathing fill the air, the continuous orbit emphasizing intensity and physicality
+models: kling26
+tags: ["martial_arts", "action"]
+author: MayorkingAI
+source_url: https://x.com/MayorKingAI/status/2019537451744907377
+---
