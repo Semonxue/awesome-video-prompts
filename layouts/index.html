@@ -75,15 +75,48 @@
     get loadingMore() { return document.getElementById('loading-more'); }
   };
 
+  const masonry = {
+    gap: 16,
+    layoutScheduled: false,
+    resizeTimeout: null
+  };
+
   // 初始化
   function init() {
     loadPromptsData();
     bindEvents();
     updateHeaderState();
+    bindMasonryResize();
     
     // 初始渲染第一批
     applyFiltersAndRender(true);
     setupLazyLoadObserver();
+  }
+
+  function extractSortId(prompt) {
+    const sourceMatch = (prompt.sourceUrl || '').match(/status\/(\d+)/);
+    if (sourceMatch) return sourceMatch[1];
+    const permalinkMatch = (prompt.permalink || '').match(/\/(\d+)-/);
+    if (permalinkMatch) return permalinkMatch[1];
+    return '';
+  }
+
+  function normalizePrompts(prompts) {
+    const seen = new Set();
+    const normalized = [];
+    prompts.forEach(prompt => {
+      const sortId = extractSortId(prompt);
+      const key = prompt.permalink || `${prompt.title || ''}-${sortId}`;
+      if (seen.has(key)) return;
+      seen.add(key);
+      normalized.push({ ...prompt, sortId });
+    });
+
+    normalized.sort((a, b) =>
+      (b.sortId || '').localeCompare(a.sortId || '', 'en', { numeric: true })
+    );
+
+    return normalized;
   }
 
   // 加载提示词数据
@@ -91,7 +124,8 @@
     const dataScript = document.getElementById('prompts-data');
     if (dataScript) {
       try {
-        allPrompts = JSON.parse(dataScript.textContent);
+        const rawPrompts = JSON.parse(dataScript.textContent);
+        allPrompts = normalizePrompts(rawPrompts);
         filteredPrompts = [...allPrompts];
         console.log('Loaded prompts:', allPrompts.length);
       } catch (e) {
@@ -177,6 +211,67 @@
     `;
   }
 
+  function getMasonryColumns() {
+    const width = window.innerWidth;
+    if (width <= 640) return 1;
+    if (width <= 900) return 2;
+    if (width <= 1200) return 4;
+    return 5;
+  }
+
+  function scheduleMasonryLayout() {
+    if (masonry.layoutScheduled) return;
+    masonry.layoutScheduled = true;
+    requestAnimationFrame(() => {
+      masonry.layoutScheduled = false;
+      layoutMasonry();
+    });
+  }
+
+  function watchMasonryImages(cards) {
+    cards.forEach(card => {
+      card.querySelectorAll('img').forEach(img => {
+        if (img.complete) return;
+        img.addEventListener('load', scheduleMasonryLayout, { once: true });
+        img.addEventListener('error', scheduleMasonryLayout, { once: true });
+      });
+    });
+  }
+
+  function layoutMasonry() {
+    if (!dom.grid) return;
+    const cards = Array.from(dom.grid.querySelectorAll('.prompt-card'));
+    if (!cards.length) {
+      dom.grid.style.height = '0px';
+      return;
+    }
+
+    const columns = getMasonryColumns();
+    const gap = masonry.gap;
+    const gridWidth = dom.grid.clientWidth;
+    const cardWidth = Math.floor((gridWidth - gap * (columns - 1)) / columns);
+    const heights = Array(columns).fill(0);
+
+    cards.forEach(card => {
+      card.style.width = `${cardWidth}px`;
+      const minHeight = Math.min(...heights);
+      const columnIndex = heights.indexOf(minHeight);
+      const left = (cardWidth + gap) * columnIndex;
+      const top = heights[columnIndex];
+      card.style.transform = `translate(${left}px, ${top}px)`;
+      heights[columnIndex] = top + card.offsetHeight + gap;
+    });
+
+    dom.grid.style.height = `${Math.max(...heights)}px`;
+  }
+
+  function bindMasonryResize() {
+    window.addEventListener('resize', () => {
+      if (masonry.resizeTimeout) clearTimeout(masonry.resizeTimeout);
+      masonry.resizeTimeout = setTimeout(scheduleMasonryLayout, 150);
+    });
+  }
+
   // 渲染卡片批次
   function renderBatch(startIndex, count) {
     console.log('renderBatch: startIndex =', startIndex, 'count =', count, 'total =', filteredPrompts.length);
@@ -190,12 +285,14 @@
     
     const fragment = document.createElement('div');
     fragment.innerHTML = batch.map(createCardHTML).join('');
-    
-    dom.grid.append(...fragment.children);
+    const newCards = Array.from(fragment.children);
+    dom.grid.append(...newCards);
     renderedCount = endIndex;
 
     // 为新渲染的卡片绑定视频悬停事件
     attachVideoHoverEvents();
+    watchMasonryImages(newCards);
+    scheduleMasonryLayout();
 
     console.log('renderBatch done: renderedCount =', renderedCount);
     

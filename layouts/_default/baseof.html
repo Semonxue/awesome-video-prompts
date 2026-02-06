@@ -434,31 +434,31 @@
     
     /* ===== 瀑布流布局 ===== */
     .masonry-grid {
-      column-count: 5;
-      column-gap: 16px;
+      position: relative;
+      width: 100%;
     }
     
     @media (max-width: 1440px) {
       .masonry-grid {
-        column-count: 5;
+        width: 100%;
       }
     }
     
     @media (max-width: 1200px) {
       .masonry-grid {
-        column-count: 4;
+        width: 100%;
       }
     }
     
     @media (max-width: 900px) {
       .masonry-grid {
-        column-count: 2;
+        width: 100%;
       }
     }
     
     @media (max-width: 640px) {
       .masonry-grid {
-        column-count: 1;
+        width: 100%;
       }
       .header-container,
       .main-content {
@@ -482,9 +482,8 @@
       border-radius: 12px;
       overflow: hidden;
       box-shadow: var(--shadow-card);
-      transition: transform 0.2s, box-shadow 0.2s;
-      break-inside: avoid;
-      margin-bottom: 16px;
+      transition: box-shadow 0.15s;
+      position: absolute;
     }
     
     .prompt-card:hover {
