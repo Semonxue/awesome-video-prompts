@@ -15,7 +15,7 @@ description: |
   Shot 5:
   Close-up of the soldier firing through smoke and flames, yelling, "We hold the line!"
 models: kling3
-tags: ["military"，multi-shot", "action"]
+tags: ["military", "multi-shot", "action"]
 author: The Hustle Mash
 source_url: https://x.com/thehustlemash/status/2019720657769255186
 ---
