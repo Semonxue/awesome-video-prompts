@@ -7,6 +7,10 @@
   
   {{- $desc := .Description | default .Params.description | default .Site.Params.description -}}
   <meta name="description" content="{{ $desc | plainify | truncate 160 }}">
+  
+  {{- with .Site.Params.keywords -}}
+  <meta name="keywords" content="{{ . }}">
+  {{- end -}}
 
   <!-- Canonical -->
   <link rel="canonical" href="{{ .Permalink }}">
