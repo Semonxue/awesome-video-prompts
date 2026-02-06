@@ -14,7 +14,7 @@
 
 - ✅ **134 条精选提示词**
 - 📹 涵盖多种场景：自然风光、动作镜头、FPV飞行、动漫风格等
-- 🤖 支持 14 个主流AI视频模型：Kling O1、Kling 2.6、Kling 3.0、Hailuo (MiniMax)、Veo 3.1、Veo 3、Sora、LTX Pro、Grok、Ray 3.14 (Luma)、Luma Labs、Gen 4.5、Vidu Q3、SEEEDANCE 1.5
+- 🤖 支持 14 个主流AI视频模型：Kling O1、Kling 2.6、Kling 3.0、Hailuo (MiniMax)、Veo 3.1、Veo 3、Sora、LTX Pro、Grok、Ray 3.14 (Luma)、Luma Labs、Gen 4.5、Vidu Q3、SeeDance 1.5 Pro
 - 🏷️ 63 个标签分类系统，方便检索
 
 ## 🎬 使用方式

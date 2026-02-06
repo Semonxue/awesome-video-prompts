@@ -5,15 +5,19 @@
 <div class="model-tags">
   <button class="model-tag active" data-model="all">{{ T "all" | default "All" }}</button>
   
-  {{/* 1. Collect all models and their counts using Site.Taxonomies.models */}}
+  {{/* 1. Collect all models from data and merge in taxonomy counts */}}
   {{ $models := slice }}
-  
-  {{ range $key, $taxonomy := .Site.Taxonomies.models }}
-    {{ $count := $taxonomy.Count }}
-    {{/* Only process if defined in models.yaml data file */}}
-    {{ with index $.Site.Data.models $key }}
-      {{ $models = $models | append (dict "key" $key "count" $count "name" .name) }}
+
+  {{ range $key, $model := .Site.Data.models }}
+    {{ $taxonomy := index $.Site.Taxonomies.models $key }}
+    {{ if not $taxonomy }}
+      {{ $taxonomy = index $.Site.Taxonomies.models (lower $key) }}
     {{ end }}
+    {{ $count := 0 }}
+    {{ if $taxonomy }}
+      {{ $count = $taxonomy.Count }}
+    {{ end }}
+    {{ $models = $models | append (dict "key" $key "count" $count "name" $model.name) }}
   {{ end }}
 
   {{/* 3. Sort by count descending */}}

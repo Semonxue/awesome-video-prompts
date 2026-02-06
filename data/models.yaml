@@ -76,9 +76,9 @@ viduq3:
   url: https://www.vidu.studio/
   description: >-
     Upgraded Vidu model released by Shengshu Technology. Not only supports long video generation but also has unique advantages in multi-shot consistency and understanding of Chinese elements, supporting "one-click film creation". Approximate launch: January 2026.
-SEEEDANCE1.5:
-  name: SEEEDANCE 1.5
-  slug: SEEEDANCE1.5
-  url: https://seaweed.video/
+seedance1.5pro:
+  name: SeeDance 1.5 Pro
+  slug: seedance1.5pro
+  url: https://seed.bytedance.com/en/seedance1_5_pro
   description: >-
-    Video model produced by ByteDance (likely referring to Seaweed/PixelDance). Excels at handling extremely complex long shots and multi-subject interactions, maintaining high coherence in videos over 10 seconds long. Approximate launch: Late 2024.
+    ByteDance Seed's joint audio-video model. Follows complex instructions, generates native audio with spatial sound and lip-sync alignment, and delivers film-grade cinematography with cohesive storytelling. Approximate launch: 2026.
