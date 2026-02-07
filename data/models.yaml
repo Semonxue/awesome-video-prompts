@@ -82,3 +82,9 @@ seedance1.5pro:
   url: https://seed.bytedance.com/en/seedance1_5_pro
   description: >-
     ByteDance Seed's joint audio-video model. Follows complex instructions, generates native audio with spatial sound and lip-sync alignment, and delivers film-grade cinematography with cohesive storytelling. Approximate launch: 2026.
+seedance2:
+  name: SeeDance 2.0
+  slug: seedance2
+  url: https://seed.bytedance.com/
+  description: >-
+    ByteDance Seed's advanced text-to-video model. Supports complex scene generation with detailed prompts, high-quality visuals, and cinematic effects. Approximate launch: 2026.
