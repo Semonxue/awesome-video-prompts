@@ -17,7 +17,7 @@ kling3:
   description: >-
     The new flagship model of Kuaishou Kling. Features cinema-grade image quality and stronger semantic understanding capabilities, supporting longer continuous video generation. Approximate launch: January 2026.
 hailuo:
-  name: Hailuo (MiniMax)
+  name: Hailuo
   slug: hailuo
   url: https://hailuoai.video/
   description: >-

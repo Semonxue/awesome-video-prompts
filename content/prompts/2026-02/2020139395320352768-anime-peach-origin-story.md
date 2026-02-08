@@ -12,9 +12,7 @@ description: |
   [cut]
   Inside a warm wooden house, the peach splits open on the table with soft golden light spilling out
   [cut]
-  old woman and her husband kneel in disbelief as a baby boy rests inside the cracked peach, softly glowing
-
-models:
+  old woman and her husband kneel in disbelief as a baby boy rests inside the cracked peach, softly gmodels:
   - wan26
 tags:
   - anime
