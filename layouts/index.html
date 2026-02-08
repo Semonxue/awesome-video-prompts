@@ -199,7 +199,7 @@
     return `
       <article class="prompt-card" 
                data-tags="${(prompt.tags || []).join(',')}"
-               data-model="${prompt.model || ''}">
+               data-model="${modelKeys.join(',')}">
         ${imageHTML}
         <div class="prompt-content">
           <h3 class="prompt-title">${prompt.title}</h3>
@@ -306,7 +306,8 @@
     filteredPrompts = allPrompts.filter(prompt => {
       const title = (prompt.title || '').toLowerCase();
       const description = (prompt.description || '').toLowerCase();
-      const model = (prompt.model || '').toLowerCase();
+      const modelKeys = Array.isArray(prompt.model) ? prompt.model : (prompt.model ? [prompt.model] : []);
+      const models = modelKeys.map(key => String(key).toLowerCase());
       const tags = (prompt.tags || []).map(t => t.toLowerCase());
 
       // 搜索匹配
@@ -316,7 +317,7 @@
                            tags.some(t => t.includes(state.search));
 
       // 模型匹配
-      const matchesModel = state.model === 'all' || model === state.model;
+      const matchesModel = state.model === 'all' || models.includes(state.model);
 
       // 标签匹配
       const matchesTag = state.tag === 'all' || tags.includes(state.tag);
