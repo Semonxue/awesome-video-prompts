@@ -407,3 +407,15 @@ drama:
   zh-cn: 戏剧
   description_en: "Dramatic and theatrical content"
   description_zh-cn: "戏剧和戏剧性内容"
+
+action:
+  en: action
+  zh-cn: 动作
+  description_en: "Intense action scenes, stunts, and dynamic movement"
+  description_zh-cn: "激烈的动作场景、特技和动态运动"
+
+drone:
+  en: drone
+  zh-cn: 无人机
+  description_en: "Drone camera shots and aerial perspectives"
+  description_zh-cn: "无人机拍摄和航拍视角"
