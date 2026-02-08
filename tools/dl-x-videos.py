@@ -207,13 +207,11 @@ def process_download(metadata: dict, url: str) -> dict:
                 "-i", video_path,
                 "-vf", "scale=-2:480", # 降低到 480p
                 "-r", "12",            # 进一步降低帧率到 12fps
+                "-an",                 # 不保留音频
                 "-c:v", "libx264",
-                "-c:a", "aac",
-                "-ac", "1",            # 单声道
-                "-b:a", "24k",         # 更低音质
-                "-crf", "42",          # 极高压缩率
+                "-crf", "34",          # 提高画质
                 "-preset", "veryfast",
-                "-fs", "480k",         # 严格限制在 500k 以内
+                "-fs", "1024k",        # 放宽体积上限以提升清晰度
                 preview_path
             ]
             try:
