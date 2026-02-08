@@ -88,3 +88,15 @@ seedance2:
   url: https://seed.bytedance.com/
   description: >-
     ByteDance Seed's advanced text-to-video model. Supports complex scene generation with detailed prompts, high-quality visuals, and cinematic effects. Approximate launch: 2026.
+dreamina:
+  name: Dreamina AI
+  slug: dreamina
+  url: https://dreamina.ai/
+  description: >-
+    Dreamina AI's video generation model, known for fast generation, creative and meme-style outputs, supporting FPV and dynamic scenes. Approximate launch: 2026.
+wan26:
+  name: Wan 2.6
+  slug: wan26
+  url: https://manganow.ai/
+  description: >-
+    Wan 2.6 text-to-video model by MangaNow, supporting anime-style video generation with detailed prompts and cinematic effects. Approximate launch: 2026.
