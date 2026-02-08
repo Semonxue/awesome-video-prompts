@@ -982,6 +982,8 @@
     <div class="footer-content">
       <span class="footer-left">&copy; {{ now.Year }} {{ .Site.Title }}. {{ T "footer_copyright" }}</span>
       <div class="footer-right">
+        <a href="{{ "/tags" | relLangURL }}" class="footer-link">{{ T "tags_title" | default "Tags" }}</a>
+        <a href="{{ "/models" | relLangURL }}" class="footer-link">{{ T "models_title" | default "Models" }}</a>
         <a href="https://github.com" class="footer-link">GitHub</a>
         <a href="#" class="footer-link">{{ T "submit_prompt" }}</a>
         <a href="/about" class="footer-link">{{ T "about" }}</a>

@@ -32,61 +32,65 @@
 <style>
   .terms-header {
     text-align: center;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-subtle);
   }
 
   .terms-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
   }
 
   .terms-header p {
-    color: #6b7280;
+    color: var(--text-secondary);
+    font-size: 14px;
   }
 
   .terms-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+    gap: 24px;
   }
 
   .term-card {
-    padding: 1.5rem;
-    border: 1px solid var(--border-color);
-    border-radius: 0.75rem;
+    padding: 24px;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
     text-decoration: none;
-    color: var(--text-color);
-    background: var(--bg-color);
-    transition: transform 0.2s, box-shadow 0.2s;
+    color: var(--text-primary);
+    background: var(--bg-surface);
+    box-shadow: var(--shadow-card);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
   }
 
   .term-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border-color: var(--accent-primary);
+    box-shadow: var(--shadow-card);
   }
 
   .term-name {
-    font-size: 1.25rem;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
   }
 
   .term-description {
-    color: #6b7280;
-    font-size: 0.875rem;
-    margin-bottom: 1rem;
-    line-height: 1.5;
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-bottom: 12px;
+    line-height: 1.6;
   }
 
   .term-count {
     display: inline-block;
-    padding: 0.25rem 0.75rem;
-    background: #f3f4f6;
+    padding: 4px 12px;
+    background: var(--bg-muted);
     border-radius: 9999px;
-    font-size: 0.875rem;
-    color: #6b7280;
+    font-size: 12px;
+    color: var(--text-secondary);
   }
 </style>
 {{ end }}
