@@ -371,3 +371,39 @@ comparison:
   zh-cn: 对比
   description_en: "Side-by-side comparisons of different models or styles"
   description_zh-cn: "不同模型或风格的并排对比"
+
+humor:
+  en: humor
+  zh-cn: 幽默
+  description_en: "Humorous and comedic content"
+  description_zh-cn: "幽默和喜剧内容"
+
+martial_arts:
+  en: martial arts
+  zh-cn: 武术
+  description_en: "Martial arts and combat scenes"
+  description_zh-cn: "武术和战斗场景"
+
+horror:
+  en: horror
+  zh-cn: 恐怖
+  description_en: "Horror and scary themes"
+  description_zh-cn: "恐怖和可怕主题"
+
+dance:
+  en: dance
+  zh-cn: 舞蹈
+  description_en: "Dance and choreography"
+  description_zh-cn: "舞蹈和编排"
+
+sports:
+  en: sports
+  zh-cn: 体育
+  description_en: "Sports and athletic activities"
+  description_zh-cn: "体育和竞技活动"
+
+drama:
+  en: drama
+  zh-cn: 戏剧
+  description_en: "Dramatic and theatrical content"
+  description_zh-cn: "戏剧和戏剧性内容"
