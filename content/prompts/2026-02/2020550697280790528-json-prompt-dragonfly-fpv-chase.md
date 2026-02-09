@@ -4,8 +4,6 @@ video: /prompts/2026-02/2020550697280790528-json-prompt-dragonfly-fpv-chase/vide
 date: "2026-02-08"
 title: "JSON Prompt Dragonfly FPV Chase"
 description: |
-  🚨PromptShare🚨
-  Very Cool JSON Prompt with Kling 2.6. Made in @LeonardoAi
 
   {
     "shot": {
