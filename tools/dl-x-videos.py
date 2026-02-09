@@ -75,7 +75,7 @@ def extract_tweet_info(url: str) -> dict:
     # 构造 yt-dlp 系统调用命令
     cmd = [
         # 使用绝对路径指定 yt-dlp，避免环境差异问题
-        "/Users/semonxue/miniconda3/bin/yt-dlp",
+        "/opt/homebrew/bin/yt-dlp",
         "--no-warnings",
         "--playlist-items", "1",
         "--dump-json",      # 获取元数据 JSON
@@ -111,11 +111,11 @@ def extract_tweet_info(url: str) -> dict:
 
         # 尝试补全可能被截断的文本
         # yt-dlp 有时获取的 description 是不完整的，通过 fixupx 可以获取完整内容
-        full_text = get_fixupx_text(url)
-        if full_text and len(full_text) > len(extracted["text"]):
-            # fixupx有时会在末尾保留截断指示或乱码，但通常包含更多内容
-            # 这里简单做一个替换
-            extracted["text"] = full_text
+        # full_text = get_fixupx_text(url)
+        # if full_text and len(full_text) > len(extracted["text"]):
+        #     # fixupx有时会在末尾保留截断指示或乱码，但通常包含更多内容
+        #     # 这里简单做一个替换
+        #     extracted["text"] = full_text
 
         # 筛选视频格式流 (过滤掉纯音频或无效格式)
         for f in data.get("formats", []):
@@ -149,7 +149,7 @@ def process_download(metadata: dict, url: str) -> dict:
     # %(autonumber)s 会为多个视频自动编号 (1, 2, 3...)
     output_template = os.path.join(output_dir, "video_%(autonumber)s.%(ext)s")
     cmd = [
-        "/Users/semonxue/miniconda3/bin/yt-dlp",
+        "/opt/homebrew/bin/yt-dlp",
         "--no-warnings",
         "-f", "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best",
         "--merge-output-format", "mp4",
