@@ -100,6 +100,12 @@ hedra:
   url: https://hedra.com/
   description: >-
     AI video generation model by Hedra Labs, supporting audio-driven timing, full-body motion, and camera control in a single model. Approximate launch: 2026.
+unknown:
+  name: Unknown Model
+  slug: unknown
+  url: https://example.com/
+  description: >-
+    Unknown or unspecified video generation model.
 wan26:
   name: Wan 2.6
   slug: wan26
