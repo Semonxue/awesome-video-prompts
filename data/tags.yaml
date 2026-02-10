@@ -419,3 +419,57 @@ drone:
   zh-cn: 无人机
   description_en: "Drone camera shots and aerial perspectives"
   description_zh-cn: "无人机拍摄和航拍视角"
+
+surreal:
+  en: surreal
+  zh-cn: 超现实
+  description_en: "Surreal, dream-like scenes with impossible or fantastical elements"
+  description_zh-cn: "超现实、梦幻般的场景，具有不可能或奇幻元素"
+
+cozy:
+  en: cozy
+  zh-cn: 温馨
+  description_en: "Warm, comfortable, inviting atmosphere"
+  description_zh-cn: "温暖、舒适、令人愉悦的氛围"
+
+morning:
+  en: morning
+  zh-cn: 早晨
+  description_en: "Morning time, sunrise, early day scenes"
+  description_zh-cn: "早晨时间、日出、早间场景"
+
+war:
+  en: war
+  zh-cn: 战争
+  description_en: "War scenes, battles, and military themes"
+  description_zh-cn: "战争场景、战斗和军事主题"
+
+battlefield:
+  en: battlefield
+  zh-cn: 战场
+  description_en: "Battlefield environments and combat zones"
+  description_zh-cn: "战场环境和战斗区域"
+
+warrior:
+  en: warrior
+  zh-cn: 武士
+  description_en: "Warrior characters and combat scenes"
+  description_zh-cn: "武士人物和战斗场景"
+
+dystopian:
+  en: dystopian
+  zh-cn: 反乌托邦
+  description_en: "Dystopian futures and bleak societies"
+  description_zh-cn: "反乌托邦未来和凄凉社会"
+
+article:
+  en: article
+  zh-cn: 文章
+  description_en: "Articles and written content"
+  description_zh-cn: "文章和书面内容"
+
+hover:
+  en: hover
+  zh-cn: 悬停
+  description_en: "Hover effects and floating scenes"
+  description_zh-cn: "悬停效果和浮动场景"
