@@ -13,6 +13,7 @@ Thumbs.db
 .vscode/
 .idea/
 memory-bank
+tools/*
 
 # Temporary files
 *.log
