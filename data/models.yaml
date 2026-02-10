@@ -94,6 +94,12 @@ dreamina:
   url: https://dreamina.ai/
   description: >-
     Dreamina AI's video generation model, known for fast generation, creative and meme-style outputs, supporting FPV and dynamic scenes. Approximate launch: 2026.
+hedra:
+  name: Hedra Omnia
+  slug: hedra
+  url: https://hedra.com/
+  description: >-
+    AI video generation model by Hedra Labs, supporting audio-driven timing, full-body motion, and camera control in a single model. Approximate launch: 2026.
 wan26:
   name: Wan 2.6
   slug: wan26
