@@ -27,7 +27,7 @@ defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.en]
-    title = 'Awesome Video Prompts - Seedance2.0,Kling3, Vidu, Sora & More AI Video Prompts'
+    title = 'Awesome Video Prompts - Seedance2.0, Kling3, Grok & More AI Video Prompts'
     weight = 1
     languageName = 'English'
     contentDir = 'content/en'
