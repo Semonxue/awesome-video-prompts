@@ -149,7 +149,7 @@ def process_download(metadata: dict, url: str) -> dict:
     # %(autonumber)s 会为多个视频自动编号 (1, 2, 3...)
     output_template = os.path.join(output_dir, "video_%(autonumber)s.%(ext)s")
     cmd = [
-        "/Users/semonxue/miniconda3/bin/yt-dlp",
+        "yt-dlp",
         "--no-warnings",
         "-f", "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best",
         "--merge-output-format", "mp4",
