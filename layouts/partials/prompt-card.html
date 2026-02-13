@@ -48,7 +48,9 @@
   
   <div class="prompt-content">
     <h3 class="prompt-title">
-      {{ .Title }}
+      <a href="{{ .RelPermalink }}" style="color: inherit; text-decoration: none;">
+        {{ .Title }}
+      </a>
     </h3>
     
     {{ with .Params.description }}

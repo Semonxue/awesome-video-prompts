@@ -3,7 +3,7 @@
   Arguments: context (.)
 */}}
 <div class="model-tags">
-  <button class="model-tag active" data-model="all">{{ T "all" | default "All" }}</button>
+  <a href="{{ site.Home.RelPermalink }}" class="model-tag active" data-model="all" style="text-decoration: none;">{{ T "all" | default "All" }}</a>
   
   {{/* 1. Collect all models from data and merge in taxonomy counts */}}
   {{ $models := slice }}
@@ -29,9 +29,9 @@
 
   {{/* 5. Render */}}
   {{ range $index, $model := $sortedModels }}
-    <button class="model-tag{{ if and $shouldCollapse (ge $index $maxVisible) }} is-hidden{{ end }}" data-model="{{ $model.key }}">
+    <a href="{{ "/models/" | relLangURL }}{{ $model.key | urlize }}/" class="model-tag{{ if and $shouldCollapse (ge $index $maxVisible) }} is-hidden{{ end }}" data-model="{{ $model.key }}" style="text-decoration: none;">
       {{ $model.name }} <span class="tag-count">{{ $model.count }}</span>
-    </button>
+    </a>
   {{ end }}
 
   {{ if $shouldCollapse }}

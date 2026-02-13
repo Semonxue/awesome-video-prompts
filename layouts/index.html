@@ -454,7 +454,12 @@
 
     // 模型筛选
     dom.modelBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
+        // Prevent navigation if it's a link to maintain SPA feel
+        if (btn.tagName === 'A') {
+          e.preventDefault();
+        }
+        
         const model = btn.dataset.model;
         updateActiveState(dom.modelBtns, model, 'data-model');
         state.model = model.toLowerCase();
@@ -478,7 +483,11 @@
     // 标签筛选
     dom.tagBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
-        e.preventDefault();
+        // Prevent navigation if it's a link to maintain SPA feel
+        if (btn.tagName === 'A') {
+          e.preventDefault();
+        }
+
         const tag = btn.dataset.tag;
         updateActiveState(dom.tagBtns, tag, 'data-tag');
         state.tag = tag.toLowerCase();

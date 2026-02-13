@@ -30,7 +30,9 @@
     <!-- LEFT: Model Info -->
     <div class="model-hero-info">
       <h1 class="model-hero-title">{{ $modelName }}</h1>
-      <p class="model-hero-description">{{ T "model_description_placeholder" }}</p>
+      <p class="model-hero-description">
+        {{ $modelData.description | default (printf "%s video generation prompts and examples." $modelName) }}
+      </p>
       <!-- Official Website Link -->
       <a href="#" target="_blank" class="model-official-link" aria-label="Official Website">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

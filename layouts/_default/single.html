@@ -92,6 +92,19 @@
         {{ .Content }}
       </div>
     </div>
+    
+    {{/* Related Prompts Section */}}
+    {{ $related := .Site.RegularPages.Related . | first 3 }}
+    {{ with $related }}
+    <section class="related-prompts-section" style="margin: 40px 0; border-top: 1px solid #eee; padding-top: 30px;">
+      <h3 style="margin-bottom: 20px; font-size: 1.5rem;">{{ T "related_prompts" | default "You Might Also Like" }}</h3>
+      <div class="prompts-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
+        {{ range . }}
+          {{ partial "prompt-card.html" . }}
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
 
     <nav class="prompt-navigation">
       {{ with .PrevInSection }}
