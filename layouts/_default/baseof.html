@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}{{ end }}</title>
   
-  {{- $desc := .Description | default .Params.description | default .Site.Params.description -}}
+  {{- $desc := .Description | default .Params.description | default (T "meta_description") -}}
   <meta name="description" content="{{ $desc | plainify | truncate 160 }}">
   
-  {{- with .Site.Params.keywords -}}
-  <meta name="keywords" content="{{ . }}">
-  {{- end -}}
+  <meta name="keywords" content="{{ .Params.keywords | default (T "meta_keywords") }}">
 
   <!-- Canonical -->
   <link rel="canonical" href="{{ .Permalink }}">
@@ -83,6 +81,15 @@
       -webkit-font-smoothing: antialiased;
     }
     
+    /* ===== 辅助样式 ===== */
+    .text-decoration-none {
+      text-decoration: none;
+      color: inherit;
+    }
+    .text-decoration-none:hover {
+      text-decoration: underline;
+    }
+
     /* ===== 头部样式 ===== */
     .site-header {
       position: sticky;
@@ -898,7 +905,7 @@
       <!-- 完整搜索区域 -->
       {{ block "header_search" . }}
       <div class="search-section">
-        <p class="intro-text">{{ T "site_description" }} · {{ T "collected_count" (dict "Count" (len (where .Site.RegularPages "Params.tags" "!=" nil))) }}</p>
+        <p class="intro-text">{{ T "site_intro" (dict "Url" .Site.Params.github_repo) | safeHTML }} · {{ T "collected_count" (dict "Count" (len (where .Site.RegularPages "Params.tags" "!=" nil))) }}</p>
         
         <div class="search-area">
           <div class="search-row">
@@ -1078,6 +1085,15 @@
       document.addEventListener('click', async (event) => {
         const desc = event.target.closest('.prompt-description');
         if (!desc) return;
+
+        // Prevent double handling if element has inline onclick (static cards)
+        if (desc.hasAttribute('onclick')) return;
+
+        // Track Matomo event
+        const promptName = desc.getAttribute('data-prompt-name');
+        if (typeof _paq !== 'undefined' && promptName) {
+          _paq.push(['trackEvent', 'prompts', 'copy', promptName]);
+        }
 
         const text = desc.textContent;
         try {

@@ -1,6 +1,8 @@
 # Awesome Video Prompts
 
-> 精选AI视频生成提示词库 - 为视频创作者提供灵感与参考
+> An open-source collection of awesome video prompts.
+> 
+> 开源的精彩视频提示词合集 - 为视频创作者提供灵感与参考
 
 ## 📖 项目概况
 
