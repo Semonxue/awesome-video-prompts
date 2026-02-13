@@ -278,7 +278,8 @@
       "author": {{ $page.Params.author | default "" | jsonify | safeJS }},
       "date": {{ $page.Date.Format "2006-01-02" | jsonify | safeJS }},
       "sourceUrl": {{ $page.Params.source_url | default "" | jsonify | safeJS }},
-      "permalink": {{ $page.RelPermalink | jsonify | safeJS }}
+      "permalink": {{ $page.RelPermalink | jsonify | safeJS }},
+      "filename": {{ $page.File.ContentBaseName | jsonify | safeJS }}
     }{{ end }}]
   </script>
 {{ end }}
@@ -410,7 +411,7 @@
     ` : '';
 
     const descriptionHTML = prompt.description ? 
-      `<p class="prompt-description" data-hint="{{ T "click_to_copy" | default "Click to copy" }}"><span class="prompt-description-text">${prompt.description}</span></p>` : '';
+      `<p class="prompt-description" data-prompt-name="${prompt.filename}" data-hint="{{ T "click_to_copy" | default "Click to copy" }}"><span class="prompt-description-text">${prompt.description}</span></p>` : '';
     
     const authorHTML = prompt.author ? 
       `<span class="prompt-meta-text" style="color: #6B6A67;">By</span>
@@ -429,7 +430,8 @@
     return `
       <article class="prompt-card" 
                data-tags="${(prompt.tags || []).join(',')}"
-               data-model="${prompt.model || ''}">
+               data-model="${prompt.model || ''}"
+               data-prompt-name="${prompt.filename || ''}">
         ${imageHTML}
         <div class="prompt-content">
           <h3 class="prompt-title">${prompt.title}</h3>

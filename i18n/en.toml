@@ -105,11 +105,17 @@ other = "All"
 [collected_count]
 other = "Collected {{ .Count }} prompts"
 
-[site_description]
-other = "A collection of awesome video prompts."
+[site_intro]
+other = "An <a href='{{ .Url }}' target='_blank' class='text-decoration-none'>open-source</a> collection of awesome video prompts."
 
 [model_description_placeholder]
 other = "Discover the best video generation prompts for this model. Copy and use them to create amazing videos."
 
 [explore]
 other = "Explore"
+
+[meta_description]
+other = "Discover curated AI video generation prompts for Kling3, Vidu Q3, Sora, Veo3, and other top AI video models. Get inspired with professional prompts for cinematic, realistic, and creative video content."
+
+[meta_keywords]
+other = "AI video prompts, Seedance2.0 prompts, Kling3 prompts, video generation, AI video, text to video, video AI"

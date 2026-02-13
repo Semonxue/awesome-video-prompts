@@ -105,10 +105,17 @@ other = "全部"
 [collected_count]
 other = "已收录 {{ .Count }} 个精彩提示词"
 
-[site_description]
-other = "精彩视频提示词合集。"
+[site_intro]
+other = "<a href='{{ .Url }}' target='_blank' class='text-decoration-none'>开源</a>的精彩视频提示词合集。"
+
 [model_description_placeholder]
 other = "探索该模型最精彩的视频生成提示词。复制并使用它们来创作令人惊叹的视频。"
 
 [explore]
 other = "探索"
+
+[meta_description]
+other = "精选AI视频生成提示词库，收录Seedance2.0、Kling3、Grok等热门AI视频模型的专业提示词。涵盖电影级、写实、创意等多种风格，助你创作精彩视频内容。"
+
+[meta_keywords]
+other = "AI视频提示词, Kling3提示词, Vidu提示词, Sora提示词, 视频生成, AI视频, 文生视频, 视频AI, 可灵3"
