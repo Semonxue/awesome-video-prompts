@@ -5,7 +5,8 @@
 
 <article class="prompt-card" 
          data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}"
-         data-model="{{ with (or .Params.models .Params.model) }}{{ . }}{{ end }}">
+         data-model="{{ with (or .Params.models .Params.model) }}{{ . }}{{ end }}"
+         data-prompt-name="{{ .File.ContentBaseName }}">
   {{ with .Params.image }}
   <div class="prompt-image-wrapper">
     {{ $img := . }}
@@ -54,7 +55,7 @@
     </h3>
     
     {{ with .Params.description }}
-    <p class="prompt-description" onclick="copyPromptText(this)" data-prompt-name="{{ $.File.ContentBaseName }}" data-hint="{{ T "click_to_copy" | default "Click to copy" }}" title="{{ T "copy_prompt" }}" style="cursor: pointer;"><span class="prompt-description-text">{{ . }}</span></p>
+    <p class="prompt-description" onclick="copyPromptText(this)" data-hint="{{ T "click_to_copy" | default "Click to copy" }}" title="{{ T "copy_prompt" }}" style="cursor: pointer;"><span class="prompt-description-text">{{ . }}</span></p>
     {{ end }}
     
     {{ with .Params.tags }}
@@ -77,7 +78,7 @@
     {{ end }}
     
     <div class="prompt-actions">
-      <button class="copy-btn" onclick="copyPromptText(this)" data-prompt-name="{{ .File.ContentBaseName }}" title="{{ T "copy_prompt" }}">
+      <button class="copy-btn" onclick="copyPromptText(this)" title="{{ T "copy_prompt" }}">
         📋 {{ T "copy_prompt" }}
       </button>
     </div>
@@ -92,8 +93,9 @@ function copyPromptText(element) {
 
   if (!text) return;
 
-  // Track copy event
-  const promptName = element.getAttribute('data-prompt-name');
+  // Track Matomo copy event
+  const card = element.closest('.prompt-card');
+  const promptName = card ? card.getAttribute('data-prompt-name') : '';
   if (typeof _paq !== 'undefined' && promptName) {
     _paq.push(['trackEvent', 'prompts', 'copy', promptName]);
   }

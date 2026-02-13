@@ -430,7 +430,8 @@
     return `
       <article class="prompt-card" 
                data-tags="${(prompt.tags || []).join(',')}"
-               data-model="${prompt.model || ''}">
+               data-model="${prompt.model || ''}"
+               data-prompt-name="${prompt.filename || ''}">
         ${imageHTML}
         <div class="prompt-content">
           <h3 class="prompt-title">${prompt.title}</h3>

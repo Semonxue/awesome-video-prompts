@@ -1089,8 +1089,9 @@
         // Prevent double handling if element has inline onclick (static cards)
         if (desc.hasAttribute('onclick')) return;
 
-        // Track Matomo event
-        const promptName = desc.getAttribute('data-prompt-name');
+        // Track Matomo copy event
+        const card = desc.closest('.prompt-card');
+        const promptName = card ? card.getAttribute('data-prompt-name') : '';
         if (typeof _paq !== 'undefined' && promptName) {
           _paq.push(['trackEvent', 'prompts', 'copy', promptName]);
         }
