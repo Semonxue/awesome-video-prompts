@@ -94,7 +94,6 @@ function copyPromptText(element) {
   if (!text) return;
 
   // Track Matomo copy event
-  const card = element.closest('.prompt-card');
   const promptName = card ? card.getAttribute('data-prompt-name') : '';
   if (typeof _paq !== 'undefined' && promptName) {
     _paq.push(['trackEvent', 'prompts', 'copy', promptName]);
