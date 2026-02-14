@@ -1,0 +1,20 @@
+[all]
+other = "すべて"
+
+[collected_count]
+other = "{{ .Count }} 個の素晴らしいプロンプトを収集しました"
+
+[site_intro]
+other = "<a href='{{ .Url }}' target='_blank' class='text-decoration-none'>オープンソース</a>の素晴らしい動画プロンプト集。"
+
+[model_description_placeholder]
+other = "このモデルに最適な動画生成プロンプトを見つけてください。それらをコピーして使用し、素晴らしい動画を作成しましょう。"
+
+[explore]
+other = "探索する"
+
+[meta_description]
+other = "Kling3、Vidu Q3、Sora、Veo3などのトップAIビデオモデル向けの厳選された動画生成プロンプトを見つけましょう。映画のような、リアルな、クリエイティブなビデオコンテンツのためのプロ仕様のプロンプトでインスピレーションを得てください。"
+
+[meta_keywords]
+other = "AIビデオプロンプト, Seedance2.0プロンプト, Kling3プロンプト, 動画生成, AIビデオ, テキストから動画へ, ビデオAI"

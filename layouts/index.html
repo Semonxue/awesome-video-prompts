@@ -38,7 +38,8 @@
       "author": {{ $page.Params.author | default "" | jsonify | safeJS }},
       "date": {{ $page.Date.Format "2006-01-02" | jsonify | safeJS }},
       "sourceUrl": {{ $page.Params.source_url | default "" | jsonify | safeJS }},
-      "permalink": {{ $page.RelPermalink | jsonify | safeJS }}
+      "permalink": {{ $page.RelPermalink | jsonify | safeJS }},
+      "filename": {{ $page.File.ContentBaseName | jsonify | safeJS }}
     }{{ end }}]
   </script>
 {{ end }}
@@ -214,7 +215,8 @@
     return `
       <article class="prompt-card" 
                data-tags="${(prompt.tags || []).join(',')}"
-               data-model="${modelKeys.join(',')}">
+               data-model="${modelKeys.join(',')}"
+               data-prompt-name="${prompt.filename || ''}">
         ${imageHTML}
         <div class="prompt-content">
           <h3 class="prompt-title">${prompt.title}</h3>
@@ -454,7 +456,12 @@
 
     // 模型筛选
     dom.modelBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
+        // Prevent navigation if it's a link to maintain SPA feel
+        if (btn.tagName === 'A') {
+          e.preventDefault();
+        }
+        
         const model = btn.dataset.model;
         updateActiveState(dom.modelBtns, model, 'data-model');
         state.model = model.toLowerCase();
@@ -478,7 +485,11 @@
     // 标签筛选
     dom.tagBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
-        e.preventDefault();
+        // Prevent navigation if it's a link to maintain SPA feel
+        if (btn.tagName === 'A') {
+          e.preventDefault();
+        }
+
         const tag = btn.dataset.tag;
         updateActiveState(dom.tagBtns, tag, 'data-tag');
         state.tag = tag.toLowerCase();

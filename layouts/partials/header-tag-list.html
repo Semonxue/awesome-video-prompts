@@ -3,7 +3,7 @@
   Arguments: context (.)
 */}}
 <div class="content-tag-area">
-  <button class="content-tag active" data-tag="all">{{ T "all" | default "All" }}</button>
+  <a href="{{ site.Home.RelPermalink }}" class="content-tag active" data-tag="all">{{ T "all" | default "All" }}</a>
   
   {{ $allTags := .Site.Taxonomies.tags.ByCount }}
   {{ $visibleTags := first 16 $allTags }}
@@ -16,9 +16,9 @@
     
     {{ if $tagData }}
       {{ $displayName := index $tagData "en" | default ($tagName | title) }}
-      <button class="content-tag" data-tag="{{ $tagName }}">
+      <a href="{{ "/tags/" | relLangURL }}{{ $tagName | urlize }}/" class="content-tag" data-tag="{{ $tagName }}">
         {{ $displayName }} <span class="tag-count">{{ $count }}</span>
-      </button>
+      </a>
     {{ end }}
   {{ end }}
 
@@ -31,9 +31,9 @@
         
         {{ if $tagData }}
           {{ $displayName := index $tagData "en" | default ($tagName | title) }}
-          <button class="content-tag" data-tag="{{ $tagName }}">
+          <a href="{{ "/tags/" | relLangURL }}{{ $tagName | urlize }}/" class="content-tag" data-tag="{{ $tagName }}">
             {{ $displayName }} <span class="tag-count">{{ $count }}</span>
-          </button>
+          </a>
         {{ end }}
       {{ end }}
     </div>

@@ -15,6 +15,7 @@ enableRobotsTXT = true
 [params]
   version = '0.4.0'
   author = 'Semon'
+  github_repo = "https://github.com/Semonxue/awesome-video-prompts"
 
 # 多语言配置
 defaultContentLanguage = 'en'
@@ -31,18 +32,18 @@ defaultContentLanguageInSubdir = false
     weight = 1
     languageName = 'English'
     contentDir = 'content/en'
-    [languages.en.params]
-      description = 'Discover curated AI video generation prompts for Kling3, Vidu Q3, Sora, Veo3, and other top AI video models. Get inspired with professional prompts for cinematic, realistic, and creative video content.'
-      keywords = 'AI video prompts, Seedance2.0 prompts,Kling3 prompts, video generation, AI video, text to video, video AI'
 
   [languages.zh-cn]
-    title = '精彩视频提示词 - 收录Seedance2.0、Kling3、Grok等AI视频模型提示词'
+    title = '精彩视频提示词 - Seedance2.0、Kling3、Grok等热门AI视频模型的专业提示词'
     weight = 2
     languageName = '简体中文'
     contentDir = 'content/zh-cn'
-    [languages.zh-cn.params]
-      description = '精选AI视频生成提示词库，收录Seedance2.0、Kling3、Grok等热门AI视频模型的专业提示词。涵盖电影级、写实、创意等多种风格，助你创作精彩视频内容。'
-      keywords = 'AI视频提示词, Kling3提示词, Vidu提示词, Sora提示词, 视频生成, AI视频, 文生视频, 视频AI, 可灵3'
+
+  [languages.ja]
+    title = '素晴らしい動画プロンプト - Seedance2.0、Kling3、Grok など AI動画プロンプト'
+    weight = 3
+    languageName = '日本語'
+    contentDir = 'content/ja'
 
 [module]
   [[module.mounts]]
@@ -53,5 +54,9 @@ defaultContentLanguageInSubdir = false
     source = 'content'
     target = 'content/zh-cn'
     lang = 'zh-cn'
+  [[module.mounts]]
+    source = 'content'
+    target = 'content/ja'
+    lang = 'ja'
 
 # 多语言配置

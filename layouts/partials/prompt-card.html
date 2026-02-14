@@ -5,7 +5,8 @@
 
 <article class="prompt-card" 
          data-tags="{{ with .Params.tags }}{{ delimit . "," }}{{ end }}"
-         data-model="{{ with (or .Params.models .Params.model) }}{{ . }}{{ end }}">
+         data-model="{{ with (or .Params.models .Params.model) }}{{ . }}{{ end }}"
+         data-prompt-name="{{ .File.ContentBaseName }}">
   {{ with .Params.image }}
   <div class="prompt-image-wrapper">
     {{ $img := . }}
@@ -48,7 +49,9 @@
   
   <div class="prompt-content">
     <h3 class="prompt-title">
-      {{ .Title }}
+      <a href="{{ .RelPermalink }}" style="color: inherit; text-decoration: none;">
+        {{ .Title }}
+      </a>
     </h3>
     
     {{ with .Params.description }}
@@ -89,6 +92,12 @@ function copyPromptText(element) {
   const text = desc ? desc.innerText : "";
 
   if (!text) return;
+
+  // Track Matomo copy event
+  const promptName = card ? card.getAttribute('data-prompt-name') : '';
+  if (typeof _paq !== 'undefined' && promptName) {
+    _paq.push(['trackEvent', 'prompts', 'copy', promptName]);
+  }
 
   navigator.clipboard.writeText(text).then(() => {
     // 显示复制成功提示
