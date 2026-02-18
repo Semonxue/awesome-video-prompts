@@ -19,7 +19,7 @@ enableRobotsTXT = true
 
 # 多语言配置
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 
 [taxonomies]
   tag = "tags"
