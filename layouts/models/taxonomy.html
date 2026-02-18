@@ -8,7 +8,8 @@
 {{ define "title" }}
   {{- $modelData := index .Site.Data.models .Data.Term -}}
   {{- $modelName := $modelData.name | default (.Data.Term | title) -}}
-  {{ $modelName }} Video Prompts | {{ .Site.Title }}
+  {{- $company := $modelData.company | default (.Data.Term | title) -}}
+  {{ T "model_seo_title" (dict "Model" $modelName "Company" $company) }}
 {{ end }}
 
 {{/* Model-specific hero section after the standard header search */}}

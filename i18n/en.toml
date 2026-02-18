@@ -119,3 +119,9 @@ other = "Discover curated AI video generation prompts for Kling3, Vidu Q3, Sora,
 
 [meta_keywords]
 other = "AI video prompts, Seedance2.0 prompts, Kling3 prompts, video generation, AI video, text to video, video AI"
+
+[model_seo_title]
+other = "{{ .Model }} Prompts: Cases, Top Examples, Prompt Templates, Free Open-Source HowTo | {{ .Company }}"
+
+[model_seo_description]
+other = "Explore high-quality {{ .Model }} prompts from {{ .Company }}, including practical cases, top examples, prompt templates, and free open-source howto guides to create better videos faster."

@@ -18,3 +18,9 @@ other = "Kling3、Vidu Q3、Sora、Veo3などのトップAIビデオモデル向
 
 [meta_keywords]
 other = "AIビデオプロンプト, Seedance2.0プロンプト, Kling3プロンプト, 動画生成, AIビデオ, テキストから動画へ, ビデオAI"
+
+[model_seo_title]
+other = "{{ .Model }} プロンプト集：事例・トップ例・テンプレート・無料オープンソース HowTo | {{ .Company }}"
+
+[model_seo_description]
+other = "{{ .Company }} の {{ .Model }} 向け高品質プロンプトを探索。実践事例、トップ例、プロンプトテンプレート、無料オープンソースの howto ガイドを網羅し、動画制作をすばやく改善できます。"

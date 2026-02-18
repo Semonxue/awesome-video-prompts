@@ -5,7 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}{{ end }}</title>
   
+  {{- $isModelTerm := and (eq .Kind "term") (eq .Data.Plural "models") -}}
   {{- $desc := .Description | default .Params.description | default (T "meta_description") -}}
+  {{- $socialTitle := .Title | default .Site.Title -}}
+  {{- if $isModelTerm -}}
+    {{- $modelData := index .Site.Data.models .Data.Term -}}
+    {{- $modelName := .Data.Term | title -}}
+    {{- $company := .Data.Term | title -}}
+    {{- with $modelData -}}
+      {{- $modelName = .name | default $modelName -}}
+      {{- $company = .company | default $company -}}
+    {{- end -}}
+    {{- $socialTitle = T "model_seo_title" (dict "Model" $modelName "Company" $company) -}}
+    {{- $desc = T "model_seo_description" (dict "Model" $modelName "Company" $company) -}}
+  {{- end -}}
   <meta name="description" content="{{ $desc | plainify | truncate 160 }}">
   
   <meta name="keywords" content="{{ .Params.keywords | default (T "meta_keywords") }}">
@@ -14,7 +27,7 @@
   <link rel="canonical" href="{{ .Permalink }}">
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="{{ .Title | default .Site.Title }}">
+  <meta property="og:title" content="{{ $socialTitle }}">
   <meta property="og:description" content="{{ $desc | plainify | truncate 160 }}">
   <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
@@ -24,7 +37,7 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+  <meta name="twitter:title" content="{{ $socialTitle }}">
   <meta name="twitter:description" content="{{ $desc | plainify | truncate 160 }}">
   {{ with .Params.image }}
   <meta name="twitter:image" content="{{ . | absURL }}">

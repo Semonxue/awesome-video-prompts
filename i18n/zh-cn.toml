@@ -119,3 +119,9 @@ other = "精选AI视频生成提示词库，收录Seedance2.0、Kling3、Grok等
 
 [meta_keywords]
 other = "AI视频提示词, Kling3提示词, Vidu提示词, Sora提示词, 视频生成, AI视频, 文生视频, 视频AI, 可灵3"
+
+[model_seo_title]
+other = "{{ .Model }} 提示词大全：案例、顶级示例、提示词模板、免费开源 HowTo | {{ .Company }}"
+
+[model_seo_description]
+other = "探索 {{ .Model }}（{{ .Company }}）的高质量视频提示词，涵盖实战案例、顶级示例、提示词模板与免费开源 howto 指南，快速上手并提升创作效率。"
