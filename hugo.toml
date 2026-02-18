@@ -1,5 +1,5 @@
 baseURL = 'https://awesomevideoprompts.com/'
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = false
 title = 'Awesome Video Prompts'
 theme = 'ananke'
