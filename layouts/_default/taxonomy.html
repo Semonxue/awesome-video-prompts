@@ -38,6 +38,21 @@
   </div>
 
   <style>
+    /* Tag page: remove sticky header */
+    .tag-page .site-header {
+      position: relative;
+    }
+    
+    /* Disable compact header on tag page */
+    .tag-page .header-compact {
+      display: none !important;
+    }
+    
+    .tag-page .header-default {
+      display: block !important;
+      opacity: 1 !important;
+    }
+
     .model-breadcrumb {
       display: flex;
       align-items: center;
@@ -133,7 +148,6 @@
       justify-content: flex-end;
     }
 
-
     @media (max-width: 900px) {
       .tag-hero-container {
         flex-direction: column;
@@ -142,6 +156,20 @@
 
       .tag-hero-actions {
         justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .tag-hero-section {
+        padding: 0 16px 16px;
+      }
+      
+      .tag-hero-title {
+        font-size: 22px;
+      }
+      
+      .tag-hero-description {
+        font-size: 13px;
       }
     }
   </style>
@@ -165,6 +193,9 @@
 {{ define "scripts" }}
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+    // Add tag-page class to body for CSS targeting
+    document.body.classList.add('tag-page');
+
     const grid = document.getElementById('prompts-grid');
     if (!grid) return;
 

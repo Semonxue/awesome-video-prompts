@@ -122,6 +122,9 @@
   </article>
 
   <script>
+    // Add prompt-detail-page class to body for CSS targeting
+    document.body.classList.add('prompt-detail-page');
+
     function copyMainPromptText() {
       if (typeof _paq !== 'undefined') {
         _paq.push(['trackEvent', 'prompts', 'copy', '{{ .File.ContentBaseName }}']);
@@ -152,6 +155,21 @@
 
 {{ define "head" }}
 <style>
+  /* Prompt detail page: remove sticky header */
+  .prompt-detail-page .site-header {
+    position: relative;
+  }
+  
+  /* Disable compact header on prompt detail page */
+  .prompt-detail-page .header-compact {
+    display: none !important;
+  }
+  
+  .prompt-detail-page .header-default {
+    display: block !important;
+    opacity: 1 !important;
+  }
+
   .prompt-detail {
     max-width: 800px;
     margin: 0 auto;

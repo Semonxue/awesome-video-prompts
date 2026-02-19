@@ -238,6 +238,60 @@
     display: block !important;
     opacity: 1 !important;
   }
+  
+  /* === 移动端样式 === */
+  @media (max-width: 640px) {
+    .model-hero-section {
+      padding: 0 16px 16px;
+    }
+    
+    .model-breadcrumb {
+      font-size: 12px;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    .model-hero-container {
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .model-hero-info {
+      max-width: 100%;
+    }
+    
+    .model-hero-title {
+      font-size: 22px;
+    }
+    
+    .model-hero-description {
+      font-size: 13px;
+    }
+    
+    .model-hero-filters {
+      align-items: stretch;
+      width: 100%;
+    }
+    
+    .model-hero-tags {
+      justify-content: flex-start;
+    }
+    
+    .model-hero-tags .content-tag-area {
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    
+    .model-hero-tags .content-tag {
+      height: 28px;
+      font-size: 11px;
+    }
+    
+    .model-hero-tags .tags-expand-btn {
+      display: none;
+    }
+  }
 </style>
 {{ end }}
 

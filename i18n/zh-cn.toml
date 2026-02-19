@@ -125,3 +125,16 @@ other = "{{ .Model }} 提示词大全：案例、顶级示例、提示词模板�
 
 [model_seo_description]
 other = "探索 {{ .Model }}（{{ .Company }}）的高质量视频提示词，涵盖实战案例、顶级示例、提示词模板与免费开源 howto 指南，快速上手并提升创作效率。"
+
+# 移动端筛选器
+[all_models]
+other = "全部模型"
+
+[all_tags]
+other = "全部标签"
+
+[search_models]
+other = "搜索模型..."
+
+[search_tags]
+other = "搜索标签..."

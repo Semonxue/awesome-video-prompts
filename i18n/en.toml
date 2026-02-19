@@ -125,3 +125,16 @@ other = "{{ .Model }} Prompts: Cases, Top Examples, Prompt Templates, Free Open-
 
 [model_seo_description]
 other = "Explore high-quality {{ .Model }} prompts from {{ .Company }}, including practical cases, top examples, prompt templates, and free open-source howto guides to create better videos faster."
+
+# Mobile filters
+[all_models]
+other = "All Models"
+
+[all_tags]
+other = "All Tags"
+
+[search_models]
+other = "Search models..."
+
+[search_tags]
+other = "Search tags..."
