@@ -6,8 +6,8 @@
   <a href="{{ site.Home.RelPermalink }}" class="content-tag active" data-tag="all">{{ T "all" | default "All" }}</a>
   
   {{ $allTags := .Site.Taxonomies.tags.ByCount }}
-  {{ $visibleTags := first 16 $allTags }}
-  {{ $hiddenTags := after 16 $allTags }}
+  {{ $visibleTags := first 10 $allTags }}
+  {{ $hiddenTags := after 10 $allTags }}
   
   {{ range $visibleTags }}
     {{ $tagName := .Name }}
