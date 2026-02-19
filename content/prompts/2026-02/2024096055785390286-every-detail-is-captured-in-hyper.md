@@ -1,0 +1,12 @@
+---
+image: /prompts/2026-02/2024096055785390286-every-detail-is-captured-in-hyper/cover.jpg
+video: /prompts/2026-02/2024096055785390286-every-detail-is-captured-in-hyper/video.mp4
+date: 2026-02-18T00:00:00+00:00
+title: "Hyper-Realistic Red Velvet Cake Ascent"
+description: |
+  Prompt 1: The Ascent Begins (0–15s) Scene 1 – Base POV Introduction (0–3s) Ultra-realistic 3D first-person POV at base of 100-meter Red Velvet cake. Both hands gripping massive stainless steel serving spoon vertically like a warrior’s weapon. Extreme low-angle, cake rising into clouds, hypnotic alternating red sponge and white frosting layers. Ground covered in red velvet crumbs and white frosting puddles. Sound: Dramatic orchestral hit, echoing heartbeat, subtle rising wind. Camera Action: Slow upward pan from feet in red crumb “snow” to hands on spoon, preparing for ascent. Scene 2 – Eye-Level Surface Close-Up (3–6s) Immediate cake surface at eye level: deep crimson sponge visible in cross-section, thick white frosting layers, velvety fine crumb texture. Frosting dripping slowly, frozen mid-flow, pools forming at base. Sound: Wet squelch of frosting, soft crunch of crumbs under feet. Camera Action: Slow zoom toward cake wall, emphasizing texture and scale. Scene 3 – Towering Spiral of Red and White (6–10s) Extreme low-angle view, looking straight up at endless alternating red sponge and white frosting layers. Red color almost glowing; frosting bright, ivory-white. Frosting drips frozen mid-flow, vertical streams emphasizing hypnotic stripes. Sound: Intensifying dramatic strings, wind gusts, faint echoing “whoosh” with each layer. Camera Action: Vertical tracking shot upward, hand and spoon leading view, hinting at impossible height. Scene 4 – Summit Tease (10–15s) Peak obscured in clouds, bright red fondant roses and giant maraschino cherry barely visible. Frosting and red crumbs creating chaotic abstract patterns below. Sound: Loud cinematic choir swell, rising tension. Camera Action: POV tip of spoon pointing toward summit, camera slightly tilts as if craning neck further. Music Recommendation: Epic, fast-paced orchestral or hybrid electronic score (like Hans Zimmer-style dramatic tension). @openart_ai #OpenArtKlingChallenge #OpenArtKlingChallenge
+models: [kling3]
+tags: [cinematic,abstract,text,realistic,3d]
+author: "Sharon Riley (@Just_sharon7)"
+source_url: "https://x.com/Just_sharon7/status/2024096055785390286"
+---

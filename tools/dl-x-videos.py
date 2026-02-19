@@ -80,6 +80,7 @@ def extract_tweet_info(url: str) -> dict:
         "--playlist-items", "1",
         "--dump-json",      # 获取元数据 JSON
         "--skip-download",  # 不下载实际视频文件
+        "--cookies-from-browser", "chrome",  # 从 Chrome 浏览器获取 cookies，处理登录状态   
         normalized
     ]
 
