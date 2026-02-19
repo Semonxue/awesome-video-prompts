@@ -587,7 +587,7 @@
     if (modelKey && modelKey !== 'all') {
       const modelName = modelsData[modelKey] || modelKey;
       text.textContent = '{{ T "explore" | default "Explore" }} ' + modelName;
-      link.href = '{{ relURL "models/" }}' + modelKey + '/';
+      link.href = '{{ "models/" | relLangURL }}' + modelKey + '/';
       link.style.display = 'inline-flex';
     } else {
       link.style.display = 'none';

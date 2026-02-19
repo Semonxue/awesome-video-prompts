@@ -1,3 +1,108 @@
+# 基础界面文字
+[home]
+other = "ホーム"
+
+[search_placeholder]
+other = "プロンプトを検索..."
+
+[filter_tags]
+other = "タグでフィルター"
+
+[no_results]
+other = "結果が見つかりません。"
+
+[hover_to_play]
+other = "ホバーでプレビュー再生"
+
+[load_more]
+other = "もっと読み込む"
+
+[tags_title]
+other = "タグ"
+
+[categories_title]
+other = "カテゴリ"
+
+[prompt_preview]
+other = "プレビュー"
+
+[view_details]
+other = "詳細を見る"
+
+[share]
+other = "共有"
+
+[copy_prompt]
+other = "プロンプトをコピー"
+
+[click_to_copy]
+other = "クリックでコピー"
+
+[copied]
+other = "コピーしました！"
+
+[language_switcher]
+other = "言語"
+
+[english]
+other = "English"
+
+[chinese_simplified]
+other = "简体中文"
+
+[japanese]
+other = "日本語"
+
+# 关于页面
+[about_title]
+other = "このサイトについて"
+
+[contact_info]
+other = "連絡先"
+
+[contribute_prompts]
+other = "プロンプトを投稿"
+
+[footer_copyright]
+other = "オープンソースプロジェクト"
+
+[submit_prompt]
+other = "プロンプトを投稿"
+
+[about]
+other = "について"
+
+# 元数据
+[author]
+other = "作者"
+
+[date]
+other = "日付"
+
+[tags]
+other = "タグ"
+
+[category]
+other = "カテゴリ"
+
+[loading]
+other = "読み込み中..."
+
+[show_more]
+other = "もっと表示"
+
+[show_less]
+other = "閉じる"
+
+[popular_prompts]
+other = "人気のプロンプト"
+
+[prompts_found]
+other = "{{ .Count }} 件のプロンプト"
+
+[by_author]
+other = "作者"
+
 [all]
 other = "すべて"
 
@@ -24,3 +129,26 @@ other = "{{ .Model }} プロンプト集：事例・トップ例・テンプレ�
 
 [model_seo_description]
 other = "{{ .Company }} の {{ .Model }} 向け高品質プロンプトを探索。実践事例、トップ例、プロンプトテンプレート、無料オープンソースの howto ガイドを網羅し、動画制作をすばやく改善できます。"
+
+# 移动端筛选器
+[all_models]
+other = "すべてのモデル"
+
+[all_tags]
+other = "すべてのタグ"
+
+[search_models]
+other = "モデルを検索..."
+
+[search_tags]
+other = "タグを検索..."
+
+# 视频相关
+[video_not_supported]
+other = "お使いのブラウザはビデオタグに対応していません。"
+
+[prompt_video]
+other = "生成されたビデオ"
+
+[related_prompts]
+other = "関連プロンプト"

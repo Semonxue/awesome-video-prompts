@@ -50,6 +50,9 @@ other = "English"
 [chinese_simplified]
 other = "简体中文"
 
+[japanese]
+other = "日本語"
+
 # 关于页面
 [about_title]
 other = "About This Site"
