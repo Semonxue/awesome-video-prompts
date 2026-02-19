@@ -5,6 +5,7 @@
 - 使用 tools/dl-x-videos.py + x帖子地址 下载视频及元数据，存储在 temp/<TWEET_ID>/ 目录。
 - temp/<TWEET_ID>/ 目录包含：info.json, video.mp4 (原画), preview_480p.mp4 (预览), video.jpg。
 - 检查在prompts中是否已经存在了<TWEET_ID>对应的资源，已经存在的话则提示用户
+- 如果下载出错，重试2次
 
 ### 解析元数据 (Analyze Metadata)
 
@@ -34,7 +35,7 @@
   - image: /prompts/<YYYY-MM>/<Slug>/cover.jpg
   - video: /prompts/<YYYY-MM>/<Slug>/video.mp4
   - date: 转换时间格式。
-  - title: 从 text 中提取简短标题，确保语义完整且吸引人,3-7个单词，波包含模型名，英文。
+  - title: 从 text 中提取简短标题，确保语义完整且吸引人,3-7个单词，不包含模型名，英文。
   - description: 分析 text 中内容，提取完整的提示词。不要有遗漏、截取或提炼，如果text中内容部完整，看下上下文是否有线索。多行内容必须使用 YAML 多行语法 `description: |` 后换行缩进书写，避免使用转义字符 \n。
   - models: 自动匹配，提取1个视频模型，并优先使用 data/models.yaml 中的模型关键词。
   - tags: 自动匹配，tags选择最匹配的，，不要超过5个，tags不要包含model,优先选择 data/tags.yaml中的标签，如典型必要不增加新的标签,使用 [xxx,bbb,xxx...] 的数组形式。
