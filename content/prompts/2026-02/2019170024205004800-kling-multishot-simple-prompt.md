@@ -9,7 +9,7 @@ description: |
   3️⃣ カット3   顔のクローズアップ
   4️⃣俯瞰ショット
 models: kling3
-tags: [multi-shot, cinematic, ai]
+tags: [multi-shot, portrait, walking, close-up, aerial]
 author: おのふみ| 3D×動画生成AI
 source_url: https://x.com/onofumi_AI/status/2019171780502647054
 ---

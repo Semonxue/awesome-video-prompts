@@ -10,7 +10,7 @@ description: |
   They open a glider, and the camera swoops under them to reveal a vast fantasy world of clouds and floating rocks below. 
   Studio Ghibli art style, vibrant colors, sunlight lens flares, high speed motion, 60fps.
 models: kling3
-tags: [anime, cinematic, fpv, drone, motion_blur]
+tags: [anime, fpv, drone]
 author: prompt.soru
 source_url: https://x.com/prompt_soru/status/2019631582026559793
 ---

@@ -19,7 +19,7 @@ description: |
   Motion: physically accurate speed, stable camera, subtle rotation
   Quality: 8K detail, sharp focus, volumetric lighting, realistic plasma physics
 models: seedance1.5pro
-tags: [sci-fi, cinematic, realistic, night, urban]
+tags: [asteroid, sci-fi, space, destruction, urban]
 author: Hari's AI Studio
 source_url: https://x.com/hari_aiedit/status/2017542342308225153
 ---

@@ -32,7 +32,7 @@ description: |
   Hero product shot, box centered, glowing text stabilized, rain continues, cyberpunk city alive in background.
   Ultra high-end VFX, AAA cinematic quality, realistic lighting, volumetric rain, professional title animation, no characters, no dialogue.
 models: veo31
-tags: ["cinematic", "cyberpunk", "night", "neon", "city", "sci-fi"]
+tags: [cyberpunk, rain, neon, night, urban]
 author: "Pierrick Chevallier | IA"
 source_url: "https://x.com/CharaspowerAI/status/2017655651204534370"
 ---

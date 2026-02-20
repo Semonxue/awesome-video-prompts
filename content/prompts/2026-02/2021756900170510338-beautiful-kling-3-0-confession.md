@@ -18,7 +18,7 @@ description: |
   Dialogue: (Breathless, sincere) "I love the new Kling 3.0 model. It's... beautiful."
   SFX: The fluorescent buzz cuts out to dead silence on the word `beautiful.`
 models: [kling3]
-tags: [cyberpunk, futuristic, cinematic, drama]
+tags: [cyberpunk, romance, neon]
 author: "Marco"
 source_url: https://x.com/ai_artworkgen/status/2021758451550966044
 ---

@@ -20,7 +20,7 @@ description: |
   画面：视野突然开阔，展现出令人窒息的巨型城市全景。飞行器冲破了 一层巨大的低空云雾，云雾因气流而翻滚涌动（Volumetric Clouds & Turbulence）。巨大的镜头光晕（Lens Flare）横跨画面。
   【技术参数】：8k超高清，电影级调色（青橙色调 Teal & Orange），极高的动态范围（HDR），复杂的粒子特效渲染。
 models: seedance2
-tags: [sci-fi, cyberpunk, action, cinematic, futuristic]
+tags: [sci-fi, cyberpunk, vehicle]
 author: johnAGI168
 source_url: https://x.com/johnAGI168/status/2020414452147933437
 ---

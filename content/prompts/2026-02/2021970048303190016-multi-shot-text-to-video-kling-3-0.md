@@ -19,7 +19,7 @@ description: |
   Extreme close-up, B raises one eyebrow. Unshaken.
   B: "No. The part that should scare you is what happens next."
 models: kling3
-tags: [cinematic, dark, drama, action]
+tags: [action, dark, multi-shot]
 author: "Pierrick Chevallier | IA"
 source_url: "https://x.com/CharaspowerAI/status/2021970081782079794"
 ---

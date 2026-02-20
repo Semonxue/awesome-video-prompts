@@ -6,7 +6,7 @@ title: Medieval Knight with Smartphone
 description: |
   Generate a video: A medieval knight in full armor looking at a modern smartphone, confused face illuminated by screen glow, candlelit castle interior, cinematic lighting
 models: seedance2
-tags: [fantasy, cinematic, night, portrait]
+tags: [fantasy, knight, night]
 author: Tomatech
 source_url: https://x.com/tomatechie/status/2022491231130157397
 ---

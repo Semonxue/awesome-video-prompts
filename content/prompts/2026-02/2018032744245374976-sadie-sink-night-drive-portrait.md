@@ -47,7 +47,7 @@ description: |
     }
   }
 models: kling26
-tags: [portrait, cinematic, realistic, night, urban]
+tags: [portrait, night, car, urban, realistic]
 author: Iris
 source_url: https://x.com/xIrissy/status/2018032963339047108
 ---

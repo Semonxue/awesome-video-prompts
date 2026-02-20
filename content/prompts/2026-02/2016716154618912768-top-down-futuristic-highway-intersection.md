@@ -11,7 +11,7 @@ description: |
           The Metal Circle Head -> A circular wall or ring-road encompassing the city center.
           The Brushed Steel Texture -> Silver skyscrapers and brutalist architecture.
 models: kling26
-tags: ["futuristic", "urban", "cinematic", "abstract", "realistic"]
+tags: [highway, intersection, futuristic, urban, aerial]
 author: "Gadgetify"
 source_url: "https://x.com/Gdgtify/status/2017984535582146742"
 ---

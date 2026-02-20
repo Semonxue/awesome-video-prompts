@@ -18,7 +18,7 @@ description: |
 
     Shot 4 (3 seconds): Wide romantic shot. Full moon bright above them. Waves moving behind. He pulls her close suddenly. A short silence. Then they kiss passionately under the moonlight. Wind and waves surround them. Camera slowly circles and holds on the kiss as the ocean sound continues. Soft romantic ending frame.
 models: kling3
-tags: [romantic, beach, night, cinematic]
+tags: [romance, beach, night]
 author: ANKIT PATEL 🇮🇳 | AI
 source_url: https://x.com/Ankit_patel211/status/2023296537766576527
 ---

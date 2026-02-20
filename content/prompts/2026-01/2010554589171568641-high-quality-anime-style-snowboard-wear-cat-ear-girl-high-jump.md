@@ -7,7 +7,7 @@ description: |
   ネガティブプロンプト:
   スローモーション、静止した、ゆっくりした動き、低速、歪んだ顔、動きのない背景、低解像度、不自然な体。
 models: grok
-tags: [fantasy, nature, cinematic]
+tags: [anime, girl, snowboarding, snow, jump]
 author: "すーさん＠AIアニメ＆絵本クリエーター"
 source_url: "https://x.com/su_nagomi/status/2010555637252685996"
 ---

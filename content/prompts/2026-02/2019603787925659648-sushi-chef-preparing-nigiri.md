@@ -9,7 +9,7 @@ description: |
   SHOT 3 — ASSEMBLY (5-8 seconds): Three-quarter overhead angle. Chef's hands place the tuna slice onto rice with deliberate gentleness. Fingers mold it slightly. A single wasabi dot applied with a tiny paddle.
   SHOT 4 — PRESENTATION (8-10 seconds): Slow dolly-in on black ceramic plate. The nigiri sits perfect, minimalist. Soft bokeh background of traditional restaurant lanterns.}
 models: grok
-tags: [macro, cinematic,multi-shot, food]
+tags: [food, sushi, macro]
 author: Gadgetify
 source_url: https://x.com/Gdgtify/status/2019860647803253155
 ---

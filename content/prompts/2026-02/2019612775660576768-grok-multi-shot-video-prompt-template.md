@@ -38,7 +38,7 @@ description: |
     Output:   A list of [N] Video Prompts, total duration matching Input B.
   </instruction>
 models: grok
-tags: [cinematic]
+tags: [multi-shot, template]
 author: Gadgetify
 source_url: https://x.com/Gdgtify/status/2020594735367311743
 ---

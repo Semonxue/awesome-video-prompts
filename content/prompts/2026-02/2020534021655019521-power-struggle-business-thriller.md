@@ -26,7 +26,7 @@ description: |
 
   Technical Details: Cold daylight, brutalist architecture, high contrast, highly detailed skin textures, realistic lip-sync, slow building tension.
 models: grok
-tags: [drama, thriller, cinematic, dark, urban]
+tags: [drama, business, dark]
 author: Marco "Shikoba"
 source_url: https://x.com/shikoba_86/status/2020535125616783814
 ---

@@ -9,7 +9,7 @@ description: |
    神抓镜头，轻微头发飘动，背景光从冷蓝转粉紫；4-5秒：群舞中景，动 作爆发，脚步声开始进来，全员整齐划一甩发转身，动作行云流水；6-7秒：手部特写，手 势带动衣料声和饰品轻响，戒指在灯光下闪烁；8-9秒：双人侧面，动作更复杂，脚步 更密，镜头跟动作切，两人的手部配合精准卡点；10秒：排阵近景定格0.5秒，最后一声脚 步/砸点收尾。全局：霓虹高饱和冷暖对比，浅景深突出动作，禁止文字logo水印。
 
 models: seedance2
-tags: [cinematic, action, urban, bright, colorful]
+tags: [k-pop, dance, neon]
 author: 松果先森
 source_url: https://x.com/songguoxiansen/status/2021837242767905051
 ---

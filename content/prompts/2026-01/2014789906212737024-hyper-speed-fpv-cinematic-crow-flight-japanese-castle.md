@@ -8,7 +8,7 @@ description: |
 
   Prompt: A hyper speed FPV cinematic shot following a black crow flying at extreme velocity through a feudal Japanese castle complex at dawn. The camera locks tightly behind the crow, weaving between wooden gates, stone walls, and hanging war banners, narrowly avoiding spears, lanterns, and pagoda rooftops. The flight dives through castle corridors, bursts into open courtyards, skims over armored samurai training below, and rockets upward along towering keeps. Rapid directional changes, near-misses, sharp vertical dives, and aggressive accelerations create intense momentum. Epic lighting with mist, sun rays, and drifting embers. Sound design dominated by violent wind rush, wing flaps, wooden creaks, distant drums. Music builds into a powerful epic Japanese orchestral score with taiko drums and rising strings
 models: kling26
-tags: ["fpv", "cinematic", "fantasy", "military", "tracking"]
+tags: [fpv, castle, japan, military, aerial]
 author: "MayorkingAI"
 source_url: "https://x.com/MayorKingAI/status/2014789967105696150"
 ---

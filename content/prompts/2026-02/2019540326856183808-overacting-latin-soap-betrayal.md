@@ -36,7 +36,7 @@ description: |
   @Deep
    Villain Spanish Male Voice shouts, "¡Jajaja! ¡Fui yo, Alejandro! ¡Y me robé... la abuela!")
 models: kling3
-tags: [cinematic, urban, fantasy]
+tags: [drama, betrayal, soap, indoor, acting]
 author: ρŁ𝐀𝔰Ｍʘ
 source_url: https://x.com/plasm0/status/2019541446496243945
 ---

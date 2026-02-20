@@ -6,7 +6,7 @@ date: "2026-02-02"
 description: |
   Luxury aesthetics, bold fashion statements, high-contrast lighting, iconic posing, confidence-driven visuals.
 models: "viduq3"
-tags: ["portrait", "cinematic"]
+tags: [portrait, luxury, diamond, fashion, bright]
 author: "AIrina (Virtual Media Net)"
 source_url: "https://x.com/airina_xyz/status/2018299991337357313"
 ---

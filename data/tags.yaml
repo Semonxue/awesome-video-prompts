@@ -990,3 +990,87 @@ apocalypse:
   description_en: "Apocalyptic and end-of-world themes"
   description_zh-cn: "末世和世界末日主题"
 
+cathedral:
+  en: cathedral
+  zh-cn: 大教堂
+  description_en: "Cathedrals and grand religious architecture"
+  description_zh-cn: "大教堂和宏伟的宗教建筑"
+
+cosmic:
+  en: cosmic
+  zh-cn: 宇宙
+  description_en: "Cosmic and space-related imagery"
+  description_zh-cn: "宇宙和太空相关图像"
+
+mecha:
+  en: mecha
+  zh-cn: 机甲
+  description_en: "Mecha robots and mechanical warriors"
+  description_zh-cn: "机甲机器人和机械战士"
+
+football:
+  en: football
+  zh-cn: 美式足球
+  description_en: "American football and NFL sports"
+  description_zh-cn: "美式足球和NFL运动"
+
+queen:
+  en: queen
+  zh-cn: 女王
+  description_en: "Queens and royal female characters"
+  description_zh-cn: "女王和皇室女性角色"
+
+medieval:
+  en: medieval
+  zh-cn: 中世纪
+  description_en: "Medieval period and historical settings"
+  description_zh-cn: "中世纪时期和历史背景"
+
+timelapse:
+  en: timelapse
+  zh-cn: 延时摄影
+  description_en: "Timelapse and time-accelerated footage"
+  description_zh-cn: "延时摄影和时间加速镜头"
+
+neon:
+  en: neon
+  zh-cn: 霓虹
+  description_en: "Neon lights and glowing effects"
+  description_zh-cn: "霓虹灯和发光效果"
+
+speeder:
+  en: speeder
+  zh-cn: 飞车
+  description_en: "High-speed vehicles and hovercrafts"
+  description_zh-cn: "高速车辆和悬浮载具"
+
+cliff:
+  en: cliff
+  zh-cn: 悬崖
+  description_en: "Cliffs and steep rock formations"
+  description_zh-cn: "悬崖和陡峭岩石"
+
+waterfall:
+  en: waterfall
+  zh-cn: 瀑布
+  description_en: "Waterfalls and cascading water"
+  description_zh-cn: "瀑布和倾泻的水流"
+
+stadium:
+  en: stadium
+  zh-cn: 体育场
+  description_en: "Stadiums and sports arenas"
+  description_zh-cn: "体育场和竞技场"
+
+dawn:
+  en: dawn
+  zh-cn: 黎明
+  description_en: "Dawn and early morning light"
+  description_zh-cn: "黎明和清晨光线"
+
+city:
+  en: city
+  zh-cn: 城市
+  description_en: "Cityscapes and urban environments"
+  description_zh-cn: "城市景观和城市环境"
+

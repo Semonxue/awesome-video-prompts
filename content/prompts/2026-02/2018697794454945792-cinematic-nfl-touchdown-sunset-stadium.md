@@ -12,7 +12,7 @@ description: |
   the receiver standing in the end zone, breathing heavy, ball held tight, glowing stadium floodlights, warm golden-hour tones, dramatic depth of field, confetti and crowd energy behind him — a clear winning moment, victorious and iconic.
   Ultra-realistic sports cinematography, smooth camera motion, realistic physics, emotional atmosphere, high-end broadcast quality, legendary game-winning touchdown ending.
 models: grok
-tags: [realistic, cinematic, urban, motion_blur, sunset]
+tags: [sports, football, stadium, sunset, tracking]
 author: K
 source_url: https://x.com/ChillaiKalan__/status/2018697844014862768
 ---

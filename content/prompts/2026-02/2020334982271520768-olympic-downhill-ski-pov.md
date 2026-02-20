@@ -42,7 +42,7 @@ description: |
   Snow dust hangs in the air as motion slows.
   End on controlled stillness.
 models: kling3
-tags: [sports, cinematic]
+tags: [sports, skiing, pov, snow, multi-shot]
 author: Guillermo Castellanos
 source_url: https://x.com/guicastellanos1/status/2020335545919078797
 ---

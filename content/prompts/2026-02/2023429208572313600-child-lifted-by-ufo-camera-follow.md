@@ -6,7 +6,7 @@ title: "Child Lifted by UFO with Camera Follow"
 description: |
   The child lifts off of the ground as if the UFO is pulling him in, camera movement follows
 models: kling3
-tags: ["sci-fi", "alien", "action", "cinematic", "tracking"]
+tags: [sci-fi, alien, ufo]
 author: "K"
 source_url: "https://x.com/ChillaiKalan__/status/2023429249043136680"
 ---

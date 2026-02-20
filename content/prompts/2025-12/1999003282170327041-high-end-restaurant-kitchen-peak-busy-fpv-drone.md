@@ -19,7 +19,7 @@ description: |
   カメラスタイル: 手元寄りのクローズショットを多用した高速FPV、ジグザグの動き、マイクロティルト、熱によるわずかな揺れ、障害物を避けながらの高速機動。
   照明: 温かくドラマチックなキッチンライトと金属の反射。
 models: kling26
-tags: [cinematic, fpv, realistic]
+tags: [fpv, kitchen, chef, food, indoor]
 author: "ICO"
 source_url: "https://x.com/ICO_AIvideo/status/1999006968103776374"
 ---

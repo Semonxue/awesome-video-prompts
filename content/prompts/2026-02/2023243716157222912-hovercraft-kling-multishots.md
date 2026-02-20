@@ -10,7 +10,7 @@ description: |
     SHOT3 Wide shot from ground level as the hovercraft blasts past camera, transitioning from water to muddy ground without slowing. Spray and debris fly everywhere. The craft banks into a turn. Gone in seconds.
     SHOT4 The hovercraft exits the swamp into open water, still at full speed. The pilot throttles back slightly, the craft settles lower onto its air cushion. Successful run through difficult terrain. Victory. "Made it through!"
 models: kling3
-tags: [aerial, racing, nature, cinematic]
+tags: [aerial, racing, nature]
 author: Alexandra Aisling
 source_url: https://x.com/AllaAisling/status/2023417836975145219
 ---

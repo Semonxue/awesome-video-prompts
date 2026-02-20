@@ -6,7 +6,7 @@ title: POV Mech Battle in Smoke-Filled Streets
 description: |
   POV shot from the cockpit of a human-piloted mech. The camera trembles with every stomp as it runs through smoke-filled streets. Ahead, a multi-limbed alien creature rises from a collapsed stadium. The camera jerks as missiles fire, flash-frames obscure vision, and HUD elements flicker erratically during impact. cockpit cam, HUD distortion, immersive sensory chaos
 models: veo31
-tags: [pov, sci-fi, cinematic, futuristic]
+tags: [pov, sci-fi, mecha, battle, alien]
 author: Pierrick Chevallier | IA
 source_url: https://x.com/CharaspowerAI/status/2019372958506963341
 ---

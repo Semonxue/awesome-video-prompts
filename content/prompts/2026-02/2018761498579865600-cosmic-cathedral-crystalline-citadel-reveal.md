@@ -40,7 +40,7 @@ description: |
    "style": "Ultra-cinematic fantasy sci-fi realism with monumental scale, rich atmosphere, and immersive depth"
   }
 models: veo31
-tags: [fantasy, sci-fi, cinematic, nature, dreamy]
+tags: [fantasy, sci-fi, cathedral, cosmic, dreamy]
 author: "Heather Cooper"
 source_url: "https://x.com/HBCoop_/status/2018761532440518986"
 ---

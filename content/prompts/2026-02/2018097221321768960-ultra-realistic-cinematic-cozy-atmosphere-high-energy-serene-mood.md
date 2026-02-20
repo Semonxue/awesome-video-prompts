@@ -16,7 +16,7 @@ description: |
   Action: Natural, subtle movements from the group. The guitarist shows deep focus and a gentle smile, inviting the audience into the cozy circle.
   Audio: Melodic, finger-picked acoustic guitar layered with the crackle of fire and the subtle whisper of the arctic wind.
 models: grok
-tags: [cinematic, nature, realistic]
+tags: [cozy, morning, nature, bright, realistic]
 author: "ΛRMIN | AI"
 source_url: "https://x.com/Arminn_Ai/status/2018097292734054471"
 ---

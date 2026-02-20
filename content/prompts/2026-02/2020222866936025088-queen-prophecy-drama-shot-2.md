@@ -27,7 +27,7 @@ description: |
 
   Dialogue: [Character A, whispered, trembling voice]: "Then let it burn."
 models: kling3
-tags: [cinematic, drama]
+tags: [drama, queen, medieval, dark, multi-shot]
 author: Marco
 source_url: https://x.com/ai_artworkgen/status/2020234861508784275
 ---

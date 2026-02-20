@@ -38,7 +38,7 @@ description: |
   @Kling_ai
   #Kling3 #KlingAI
 models: kling3
-tags: [dance, cinematic, urban]
+tags: [dance, hip-hop, urban, night, multi-shot]
 author: Zeto
 source_url: https://x.com/ZetoGroovin/status/2020142519741522403
 ---

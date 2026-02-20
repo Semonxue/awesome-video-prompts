@@ -11,7 +11,7 @@ description: |
   Light steam rising from mugs, faint sizzling from the toaster, soft ambient birdsong outside. Cinematic realism, playful and warm. No subtitles.
   #DreaminaCPP
 models: dreamina
-tags: [cinematic, realistic, urban, bright, comedy]
+tags: [kitchen, morning, warm]
 author: Alexandra Aisling
 source_url: https://x.com/AllaAisling/status/2020597251421380821
 ---

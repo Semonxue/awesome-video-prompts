@@ -61,7 +61,7 @@ description: |
   4-6s: Dolly-in close-up water detail + ticker glow pulses
   6-8s: 360-degree reflective pool rotation + headline subtly pulses + audio ambience continues naturally
 models: grok
-tags: [nature, cinematic, realistic, landscape, dreamy]
+tags: [nature, stream, waterfall, forest, aerial]
 author: darthjav
 source_url: https://x.com/darthjav/status/2018784534754721967
 ---

@@ -205,7 +205,7 @@ description: |
     - No stopping.
     - No other people.
 models: hailuo
-tags: [fantasy, cinematic, anime, motion_blur, desert]
+tags: [fantasy, ninja, battle]
 author: Muse｜AI音楽＆AI動画
 source_url: https://x.com/projectmuse_ai/status/2018627644204765544
 ---

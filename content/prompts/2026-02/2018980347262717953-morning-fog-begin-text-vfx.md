@@ -6,7 +6,7 @@ title: "Morning Fog Forming BEGIN Text VFX"
 description: |
   Diving into morning fog rolling through a valley. The camera moves slowly through thick mist as sunlight breaks through. Vapor thins and reshapes naturally into "BEGIN" before dissolving into open air. Poetic, restrained, timeless.
 models: gen45
-tags: [nature, landscape, cinematic, dreamy, transitions]
+tags: [nature, landscape, fog, text-vfx, dreamy]
 author: "Pierrick Chevallier | IA"
 source_url: "https://x.com/CharaspowerAI/status/2018980362827804839"
 ---

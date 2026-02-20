@@ -14,7 +14,7 @@ description: |
 
   This is next level
 models: seedance2
-tags: [action, fantasy, cinematic]
+tags: [action, fantasy, mecha, battle, sword]
 author: Dheepan Ratnam
 source_url: https://x.com/Dheepanratnam/status/2021412464202502433
 ---
