@@ -4,7 +4,7 @@ date: 2026-02-18T00:00:00Z
 image: /prompts/2026-02/2023548616661757953-new-york-sound-visualization/cover.jpg
 video: /prompts/2026-02/2023548616661757953-new-york-sound-visualization/video.mp4
 models: [grok]
-tags: [urban, surreal, cinematic]
+tags: [urban, surreal, visualization, audio, art]
 author: Gadgetify
 source_url: https://x.com/Gdgtify/status/2024213078485979383
 description: |

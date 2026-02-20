@@ -10,7 +10,7 @@ description: |
 
   #ItalianBrainrot #DreaminaAI
 models: [dreamina]
-tags: [fpv, action, urban, bright, cute]
+tags: [fpv, action, urban, humor, bright]
 author: ANKIT PATEL 🇮🇳 | AI
 source_url: https://x.com/Ankit_patel211/status/2020829756728680642
 ---

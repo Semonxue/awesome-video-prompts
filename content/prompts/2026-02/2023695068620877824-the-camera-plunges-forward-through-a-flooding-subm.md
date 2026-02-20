@@ -8,12 +8,7 @@ image: /prompts/2026-02/2023695068620877824-the-camera-plunges-forward-through-a
 video: /prompts/2026-02/2023695068620877824-the-camera-plunges-forward-through-a-flooding-subm/video.mp4
 models:
   - kling3
-tags:
-  - cinematic
-  - action
-  - war
-  - underwater
-  - tracking
+tags: [submarine, underwater, war, action, tracking]
 author: LudovicCreator
 author_url: https://twitter.com/LudovicCreator
 source_url: https://x.com/LudovicCreator/status/2023695236371771583

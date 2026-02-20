@@ -13,7 +13,7 @@ description: |
   [Shot 5] After silence falls, the samurai kneels before a shrine under a maple tree, sword laid before him, crimson leaves drifting around his bowed form; static symmetrical shot, soft golden dusk light, central composition, emotional stillness and honor.
 
 models: kling3
-tags: [action, samurai, cinematic, fantasy, drama,multi-shot]
+tags: [action, samurai, drama, multi-shot, forest]
 author: LudovicCreator
 source_url: https://x.com/LudovicCreator/status/2020607361300197825
 ---

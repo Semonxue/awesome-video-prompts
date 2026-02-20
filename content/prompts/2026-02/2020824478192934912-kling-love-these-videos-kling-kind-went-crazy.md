@@ -35,7 +35,7 @@ description: |
     Output:   ONE image, 1:1 Aspect Ratio, "360 Camera" aesthetic, high texture and sharp focus.
   </instruction>
 models: kling3
-tags: [aerial, urban, fantasy, cinematic]
+tags: [aerial, urban, drone, fantasy, "360"]
 author: Gadgetify
 source_url: https://x.com/Gdgtify/status/2021764694542102880
 ---

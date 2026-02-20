@@ -10,11 +10,7 @@ image: /prompts/2026-02/2024016937823703042-motion-prompt-slow-cinematic-side-tr
 video: /prompts/2026-02/2024016937823703042-motion-prompt-slow-cinematic-side-tracking-shot-ca/video.mp4
 models:
   - kling3
-tags:
-  - cinematic
-  - tracking
-  - car
-  - urban
+tags: [car, tracking, urban, portrait, slow-motion]
 author: Oogie
 author_url: https://twitter.com/oggii_0
 source_url: https://x.com/oggii_0/status/2024016996384600338

@@ -8,5 +8,5 @@ description: |
 author: "FinanceYF5"
 source_url: "https://x.com/FinanceYF5/status/2023720369547624639"
 models: ["kling3"]
-tags: ["cinematic", "desert", "war", "realistic", "battlefield"]
+tags: [war, desert, military, battlefield, multi-shot]
 ---

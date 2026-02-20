@@ -9,12 +9,7 @@ image: /prompts/2026-02/2023676144252579879-massive-black-ram-trxstyle-truck-rea
 video: /prompts/2026-02/2023676144252579879-massive-black-ram-trxstyle-truck-realistically-lau/video.mp4
 models:
   - kling3
-tags:
-  - car
-  - action
-  - cinematic
-  - snow
-  - dramatic
+tags: [truck, snow, action, jump, dramatic]
 author: Oogie
 source_url: https://x.com/oggii_0/status/2023676144252579879
 ---

@@ -42,7 +42,7 @@ description: |
     }
     }
 models: grok
-tags: ["floating", "city", "jellyfish", "sunset", "dreamy"]
+tags: [surreal, jellyfish, city, sunset, dreamy]
 author: Mr Das
 source_url: https://x.com/MrDasOnX/status/2023783596306428364
 ---

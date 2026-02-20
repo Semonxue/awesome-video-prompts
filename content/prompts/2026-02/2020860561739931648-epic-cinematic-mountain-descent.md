@@ -6,7 +6,7 @@ title: Epic Cinematic Mountain Descent
 description: |
   Nano Banana Pro + Kling Ai on @SocialSight   Prompt: Epic cinematic mountain descent: exterior camera dives toward the driver through the side window as the car plunges downhill on a rain-slick mountain road, engine screaming. The shot whip-pans to the rear as the car initiates a https://t.co/6ABSUtWbPk
 models: kling3
-tags: [cinematic, mountain, car, action]
+tags: [action, car, mountain, chase, rain]
 author: Oogie
 source_url: https://x.com/oggii_0/status/2020860684222005534
 ---

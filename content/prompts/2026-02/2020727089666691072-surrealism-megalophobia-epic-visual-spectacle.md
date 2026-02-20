@@ -22,10 +22,7 @@ description: |
     结尾：镜头快速拉远，发现我们的整个世界（城市/麦田）其实只是巨人桌子上的一个**玻璃微缩景观球**。巨人正凑近脸在观察我们。
 models:
   - seedance2
-tags:
-  - surreal
-  - fantasy
-  - cinematic
+tags: [surreal, fantasy, multi-shot, sci-fi, mind-bending]
 author: John
 source_url: https://x.com/johnAGI168/status/2020727853281628276
 ---

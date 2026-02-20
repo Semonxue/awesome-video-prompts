@@ -8,12 +8,7 @@ image: /prompts/2026-02/2023801852379406336-a-cinematic-and-chaotic-tracking-sho
 video: /prompts/2026-02/2023801852379406336-a-cinematic-and-chaotic-tracking-shot-with-handhel/video.mp4
 models:
   - seedance2
-tags:
-  - action
-  - cinematic
-  - tracking
-  - car
-  - urban
+tags: [mummy, chase, temple, action, tracking]
 author: Travis Davids
 author_url: https://twitter.com/MrDavids1
 source_url: https://x.com/MrDavids1/status/2023803487515979909

@@ -4,7 +4,7 @@ date: 2026-02-19T00:00:00Z
 image: /prompts/2026-02/2024467774500720640-cat-fashion-transformation/cover.jpg
 video: /prompts/2026-02/2024467774500720640-cat-fashion-transformation/video.mp4
 models: [seedance2]
-tags: [animal, humor, cinematic]
+tags: [cat, fashion, transformation, humor, dance]
 author: Sakib
 source_url: https://x.com/zsakib_/status/2024468395047960777
 description: |

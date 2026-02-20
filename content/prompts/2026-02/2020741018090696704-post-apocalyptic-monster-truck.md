@@ -16,7 +16,7 @@ description: |
 
     Cinematic style: Mad Max post-apocalyptic aesthetic, brutal winter atmosphere, cold blue-grey color palette with warm yellow headlights, high contrast, dramatic shadows, industrial decay, survival vibes. Camera: dynamic angles, intense action, 4K quality.
 models: kling3
-tags: [post-apocalyptic, action, cinematic]
+tags: [dystopian, action, car, multi-shot, snow]
 author: Oogie
 source_url: https://x.com/oggii_0/status/2020741071110811709
 ---

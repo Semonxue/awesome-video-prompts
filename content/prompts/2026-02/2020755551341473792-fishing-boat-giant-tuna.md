@@ -6,7 +6,7 @@ title: Fishing Boat with Giant Tuna
 description: |
   Fishing through the boat, fish looks like a tuna whale and the man looks like Tom hanks.
 models: [seedance2]
-tags: [realistic, nature, adventure, cinematic]
+tags: [realistic, nature, adventure, portrait, ocean]
 author: Jimmy Apples 🍎/acc
 source_url: https://x.com/apples_jimmy/status/2020755613333299549
 ---

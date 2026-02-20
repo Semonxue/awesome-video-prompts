@@ -12,7 +12,7 @@ description: |
 
   Made in @ImagineArt_X
 models: veo31
-tags: [nature, underwater, cinematic, realistic, documentary]
+tags: [nature, underwater, pov, documentary, fish]
 author: LudovicCreator
 source_url: https://x.com/LudovicCreator/status/2020792354702024981
 ---

@@ -6,7 +6,7 @@ title: "Text VFX in a Supercell Cloud Wall"
 description: |
   Text VFX with Veo 3.1 inside Krea AI. Living letters. Cinematic motion. Pure impact. 🔥 PROMPT Diving into a supercell cloud wall at sunset The camera penetrates rotating cloud layers as wind shear twists vapor into dense spirals. Charged mist compresses naturally, revealing &#34;POWER&#34; before the storm seals itself shut. Colossal, atmospheric, dominant.
 models: [Veo31]
-tags: [cinematic,sunset,rally]
+tags: [vfx, text, storm, sunset, particles]
 author: "Pierrick Chevallier | IA (@CharaspowerAI)"
 source_url: "https://x.com/CharaspowerAI/status/2024084000466149745"
 ---

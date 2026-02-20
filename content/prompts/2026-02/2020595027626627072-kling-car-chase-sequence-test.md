@@ -35,7 +35,7 @@ description: |
   SFX: Heavy collision impact, metal grinding, shower of sparks, SUV horn stuck briefly, Charger engine echoing into the garage.
   Duration: 3s
 models: kling3
-tags: [action, chase, cinematic, urban, dark，multi-shot]
+tags: [action, chase, urban, dark, multi-shot, night]
 author: MayorkingAI
 source_url: https://x.com/MayorKingAI/status/2020595097889616085
 ---

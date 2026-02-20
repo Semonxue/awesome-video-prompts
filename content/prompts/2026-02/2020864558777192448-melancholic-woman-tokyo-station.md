@@ -20,7 +20,7 @@ description: |
 
   Quoting MangaNow – Turn any data into manga with AI (@manganow_ai)
 models: wan26
-tags: [anime, city, cinematic, dreamy]
+tags: [anime, urban, portrait, drama, lo-fi]
 author: AIrina (Virtual Media Net)
 source_url: https://x.com/airina_xyz/status/2020864706366374371
 ---

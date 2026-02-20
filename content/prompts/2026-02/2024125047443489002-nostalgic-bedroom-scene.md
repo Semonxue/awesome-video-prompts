@@ -9,7 +9,7 @@ description: |
   A lit candle in a glass jar sits beside the television, casting warm golden light. Cozy bedroom interior with muted green walls, wooden bed frame, pillows, bookshelf with books and small decorative objects, vase with white flowers.
   Strong contrast between cool TV light and warm candlelight, cinematic lighting, soft depth of field, highly detailed, photorealistic, dramatic yet intimate atmosphere, film still, 8k high resolution.
 models: [grok]
-tags: [cinematic, night, portrait, vintage, realistic]
+tags: [portrait, night, vintage, cozy, nostalgia]
 author: "𝐋.𝐘.𝐍 (@lyn_beatz)"
 source_url: "https://x.com/lyn_beatz/status/2024125047443489002"
 ---

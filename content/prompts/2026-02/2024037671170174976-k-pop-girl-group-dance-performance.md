@@ -17,7 +17,7 @@ description: |
     一定要强节奏卡点，然后柔和氛围灯，冷色调光影
     结尾要循环转场，适合抖音反复观看
 models: seedance2
-tags: ["dance", "girl", "group", "k-pop"]
+tags: [dance, k-pop, girl-group, mirror, portrait]
 author: Adam也叫吉米
 source_url: https://x.com/Adam38363368936/status/2024038068714385622
 ---

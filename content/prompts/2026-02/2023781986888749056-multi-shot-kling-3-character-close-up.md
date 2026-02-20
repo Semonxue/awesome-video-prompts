@@ -27,7 +27,7 @@ description: |
     B:“I don’t need it anymore.”
 
 models: kling3
-tags: [cinematic, character, close-up, action]
+tags: [dialogue, portrait, drama, multi-shot, tension]
 author: Pierrick Chevallier | IA
 source_url: https://x.com/CharaspowerAI/status/2023782014004953139
 ---

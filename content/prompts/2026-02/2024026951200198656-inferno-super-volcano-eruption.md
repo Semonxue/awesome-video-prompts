@@ -22,7 +22,7 @@ description: |
 
     音效设计：湖水鸟鸣→地底低频轰鸣→地裂爆裂声→火山爆发雷鸣→碎屑流呼啸→火山弹撞击爆炸→直升机引擎挣扎→弦乐从低沉推至极致高潮→戛然而止归于死寂
 models: seedance2
-tags: ["volcano", "eruption", "disaster", "cinematic"]
+tags: [volcano, disaster, eruption, multi-shot, epic]
 author: justai
 source_url: https://x.com/my189/status/2024027602340770183
 ---

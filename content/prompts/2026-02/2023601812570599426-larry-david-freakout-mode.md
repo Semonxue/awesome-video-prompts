@@ -6,7 +6,7 @@ title: "Larry David Freakout Mode"
 description: |
   Larry David in full Curb Your Enthusiasm freakout mode, wild-eyed and gesturing frantically in a cluttered home office, yelling at his laptop screen that’s displaying a hyper-realistic AI-generated video of himself using Seedance 2.0 to make illegal...
 models: seedance2
-tags: ["cinematic", "realistic"]
+tags: [comedy, portrait, humor, drama, meta]
 author: "Rob Hoffman (No longer redacted)"
 source_url: "https://x.com/robh279/status/2023601890970452461"
 ---

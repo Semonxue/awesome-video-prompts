@@ -6,7 +6,7 @@ title: Buildings Folding Inward in Spirals
 description: |
   Buildings begin folding inward in spirals as gravity collapses in a central square, pulling cars and structures into a floating orb of distorted
 models: kling3
-tags: ["cinematic", "futuristic", "urban", "dark"]
+tags: [surreal, city, gravity, mind-bending, destruction]
 author: Pierrick Chevallier | IA
 source_url: https://x.com/CharaspowerAI/status/2023691412588380201
 ---
