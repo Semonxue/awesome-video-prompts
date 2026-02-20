@@ -12,111 +12,8 @@
   {{ T "model_seo_title" (dict "Model" $modelName "Company" $company) }}
 {{ end }}
 
-{{/* Model-specific hero section after the standard header search */}}
-{{ define "header_search" }}
-{{ $modelData := index .Site.Data.models .Data.Term }}
-{{ $modelName := $modelData.name | default (.Data.Term | title) }}
-{{ $modelSlug := .Data.Term }}
-{{ $modelUrl := $modelData.url }}
-{{ $modelDescription := $modelData.description }}
-
-<!-- Model Hero Section -->
-<div class="search-section model-hero-section">
-  <!-- Breadcrumb -->
-  <div class="model-breadcrumb">
-    <a href="{{ .Site.Home.RelPermalink }}" class="breadcrumb-link">{{ T "home" | default "Home" }}</a>
-    <span class="breadcrumb-separator">›</span>
-    <span class="breadcrumb-current">models: {{ $modelName }}</span>
-  </div>
-  
-  <div class="model-hero-container">
-    <!-- LEFT: Model Info -->
-    <div class="model-hero-info">
-      <div class="model-hero-title-row">
-        <h1 class="model-hero-title">{{ $modelName }}</h1>
-        {{ if $modelUrl }}
-        <a href="{{ $modelUrl }}" target="_blank" class="model-official-link" aria-label="Official Website">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-        </a>
-        {{ end }}
-      </div>
-      {{ if $modelDescription }}
-      <p class="model-hero-description">{{ $modelDescription }}</p>
-      {{ end }}
-    </div>
-
-    <!-- RIGHT: Search + Tags -->
-    <div class="model-hero-filters">
-      <!-- Search Box -->
-      <div class="search-box-wrapper">
-        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8"></circle>
-          <path d="m21 21-4.35-4.35"></path>
-        </svg>
-        <input type="text" class="search-input" placeholder="{{ T "search_placeholder" }}" id="search-input">
-      </div>
-      
-      <!-- Tag List (only tags with results for this model) -->
-      <div class="model-hero-tags">
-        <div class="content-tag-area">
-          <button class="content-tag active" data-tag="all">{{ T "all" | default "All" }}</button>
-          
-          {{/* Collect tags from current model's pages */}}
-          {{ $tagCounts := dict }}
-          {{ range .Data.Pages }}
-            {{ range .Params.tags }}
-              {{ $count := index $tagCounts . | default 0 }}
-              {{ $tagCounts = merge $tagCounts (dict . (add $count 1)) }}
-            {{ end }}
-          {{ end }}
-          
-          {{/* Sort by count and display */}}
-          {{ $sortedTags := slice }}
-          {{ range $tag, $count := $tagCounts }}
-            {{ $sortedTags = $sortedTags | append (dict "name" $tag "count" $count) }}
-          {{ end }}
-          {{ $sortedTags = sort $sortedTags "count" "desc" }}
-          
-          {{ $visibleTags := first 16 $sortedTags }}
-          {{ $hiddenTags := after 16 $sortedTags }}
-          
-          {{ range $visibleTags }}
-            {{ $tagData := index $.Site.Data.tags .name }}
-            {{ if $tagData }}
-              {{ $displayName := index $tagData "en" | default (.name | title) }}
-              <button class="content-tag" data-tag="{{ .name }}">
-                {{ $displayName }} <span class="tag-count">{{ .count }}</span>
-              </button>
-            {{ end }}
-          {{ end }}
-
-          {{ if $hiddenTags }}
-            <div class="hidden-tags-container" style="display: none;">
-              {{ range $hiddenTags }}
-                {{ $tagData := index $.Site.Data.tags .name }}
-                {{ if $tagData }}
-                  {{ $displayName := index $tagData "en" | default (.name | title) }}
-                  <button class="content-tag" data-tag="{{ .name }}">
-                    {{ $displayName }} <span class="tag-count">{{ .count }}</span>
-                  </button>
-                {{ end }}
-              {{ end }}
-            </div>
-            
-            <button class="content-tag more tags-expand-btn">
-              <span class="btn-text">{{ T "show_more" }}</span>
-              <span class="count-badge" style="margin-left: 4px; opacity: 0.6;">+{{ len $hiddenTags }}</span>
-            </button>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+{{/* CSS in head for proper loading */}}
+{{ define "head" }}
 <style>
   /* Model page: remove sticky header */
   .model-page .site-header {
@@ -293,6 +190,112 @@
     }
   }
 </style>
+{{ end }}
+
+{{/* Model-specific hero section after the standard header search */}}
+{{ define "header_search" }}
+{{ $modelData := index .Site.Data.models .Data.Term }}
+{{ $modelName := $modelData.name | default (.Data.Term | title) }}
+{{ $modelSlug := .Data.Term }}
+{{ $modelUrl := $modelData.url }}
+{{ $modelDescription := $modelData.description }}
+
+<!-- Model Hero Section -->
+<div class="search-section model-hero-section">
+  <!-- Breadcrumb -->
+  <div class="model-breadcrumb">
+    <a href="{{ .Site.Home.RelPermalink }}" class="breadcrumb-link">{{ T "home" | default "Home" }}</a>
+    <span class="breadcrumb-separator">›</span>
+    <span class="breadcrumb-current">models: {{ $modelName }}</span>
+  </div>
+  
+  <div class="model-hero-container">
+    <!-- LEFT: Model Info -->
+    <div class="model-hero-info">
+      <div class="model-hero-title-row">
+        <h1 class="model-hero-title">{{ $modelName }}</h1>
+        {{ if $modelUrl }}
+        <a href="{{ $modelUrl }}" target="_blank" class="model-official-link" aria-label="Official Website">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+        {{ end }}
+      </div>
+      {{ if $modelDescription }}
+      <p class="model-hero-description">{{ $modelDescription }}</p>
+      {{ end }}
+    </div>
+
+    <!-- RIGHT: Search + Tags -->
+    <div class="model-hero-filters">
+      <!-- Search Box -->
+      <div class="search-box-wrapper">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input type="text" class="search-input" placeholder="{{ T "search_placeholder" }}" id="search-input">
+      </div>
+      
+      <!-- Tag List (only tags with results for this model) -->
+      <div class="model-hero-tags">
+        <div class="content-tag-area">
+          <button class="content-tag active" data-tag="all">{{ T "all" | default "All" }}</button>
+          
+          {{/* Collect tags from current model's pages */}}
+          {{ $tagCounts := dict }}
+          {{ range .Data.Pages }}
+            {{ range .Params.tags }}
+              {{ $count := index $tagCounts . | default 0 }}
+              {{ $tagCounts = merge $tagCounts (dict . (add $count 1)) }}
+            {{ end }}
+          {{ end }}
+          
+          {{/* Sort by count and display */}}
+          {{ $sortedTags := slice }}
+          {{ range $tag, $count := $tagCounts }}
+            {{ $sortedTags = $sortedTags | append (dict "name" $tag "count" $count) }}
+          {{ end }}
+          {{ $sortedTags = sort $sortedTags "count" "desc" }}
+          
+          {{ $visibleTags := first 16 $sortedTags }}
+          {{ $hiddenTags := after 16 $sortedTags }}
+          
+          {{ range $visibleTags }}
+            {{ $tagData := index $.Site.Data.tags .name }}
+            {{ if $tagData }}
+              {{ $displayName := index $tagData "en" | default (.name | title) }}
+              <button class="content-tag" data-tag="{{ .name }}">
+                {{ $displayName }} <span class="tag-count">{{ .count }}</span>
+              </button>
+            {{ end }}
+          {{ end }}
+
+          {{ if $hiddenTags }}
+            <div class="hidden-tags-container" style="display: none;">
+              {{ range $hiddenTags }}
+                {{ $tagData := index $.Site.Data.tags .name }}
+                {{ if $tagData }}
+                  {{ $displayName := index $tagData "en" | default (.name | title) }}
+                  <button class="content-tag" data-tag="{{ .name }}">
+                    {{ $displayName }} <span class="tag-count">{{ .count }}</span>
+                  </button>
+                {{ end }}
+              {{ end }}
+            </div>
+            
+            <button class="content-tag more tags-expand-btn">
+              <span class="btn-text">{{ T "show_more" }}</span>
+              <span class="count-badge" style="margin-left: 4px; opacity: 0.6;">+{{ len $hiddenTags }}</span>
+            </button>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {{ end }}
 
 {{/* Empty compact header - disable transition */}}

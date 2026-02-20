@@ -1,3 +1,143 @@
+{{/* CSS in head for proper loading */}}
+{{ define "head" }}
+<style>
+  /* Tag page: remove sticky header */
+  .tag-page .site-header {
+    position: relative;
+  }
+  
+  /* Disable compact header on tag page */
+  .tag-page .header-compact {
+    display: none !important;
+  }
+  
+  .tag-page .header-default {
+    display: block !important;
+    opacity: 1 !important;
+  }
+
+  .model-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    margin-bottom: 16px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .breadcrumb-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .breadcrumb-link:hover {
+    color: var(--accent-primary);
+  }
+
+  .breadcrumb-separator {
+    color: var(--text-tertiary);
+  }
+
+  .breadcrumb-current {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  .tag-hero-section {
+    padding: 16px 48px 12px;
+  }
+
+  .tag-hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .tag-hero-info {
+    flex: 0 0 auto;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tag-hero-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .tag-hero-description {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .tag-hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--text-tertiary);
+  }
+
+  .tag-hero-count {
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+
+  .tag-hero-back {
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+  }
+
+  .tag-hero-back:hover {
+    color: var(--accent-primary);
+  }
+
+  .tag-hero-actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 900px) {
+    .tag-hero-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .tag-hero-actions {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .tag-hero-section {
+      padding: 0 16px 16px;
+    }
+    
+    .tag-hero-title {
+      font-size: 22px;
+    }
+    
+    .tag-hero-description {
+      font-size: 13px;
+    }
+  }
+</style>
+{{ end }}
+
 {{ define "header_search" }}
   {{ $tagDisplay := partial "tag-display.html" (dict "tag" .Data.Term "site" .Site) }}
   {{ $tagData := index .Site.Data.tags .Data.Term }}
@@ -36,143 +176,6 @@
       </div>
     </div>
   </div>
-
-  <style>
-    /* Tag page: remove sticky header */
-    .tag-page .site-header {
-      position: relative;
-    }
-    
-    /* Disable compact header on tag page */
-    .tag-page .header-compact {
-      display: none !important;
-    }
-    
-    .tag-page .header-default {
-      display: block !important;
-      opacity: 1 !important;
-    }
-
-    .model-breadcrumb {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      margin-bottom: 16px;
-      max-width: 1440px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .breadcrumb-link {
-      color: var(--text-secondary);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .breadcrumb-link:hover {
-      color: var(--accent-primary);
-    }
-
-    .breadcrumb-separator {
-      color: var(--text-tertiary);
-    }
-
-    .breadcrumb-current {
-      color: var(--text-primary);
-      font-weight: 500;
-    }
-
-    .tag-hero-section {
-      padding: 16px 48px 12px;
-    }
-
-    .tag-hero-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 48px;
-      max-width: 1440px;
-      margin: 0 auto;
-    }
-
-    .tag-hero-info {
-      flex: 0 0 auto;
-      max-width: 520px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .tag-hero-title {
-      font-size: 28px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin: 0;
-      line-height: 1.2;
-    }
-
-    .tag-hero-description {
-      font-size: 14px;
-      color: var(--text-secondary);
-      line-height: 1.5;
-      margin: 0;
-    }
-
-    .tag-hero-meta {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 13px;
-      color: var(--text-tertiary);
-    }
-
-    .tag-hero-count {
-      font-weight: 500;
-      color: var(--text-secondary);
-    }
-
-    .tag-hero-back {
-      text-decoration: none;
-      color: var(--text-secondary);
-      transition: color 0.2s;
-    }
-
-    .tag-hero-back:hover {
-      color: var(--accent-primary);
-    }
-
-    .tag-hero-actions {
-      flex: 1;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    @media (max-width: 900px) {
-      .tag-hero-container {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .tag-hero-actions {
-        justify-content: flex-start;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .tag-hero-section {
-        padding: 0 16px 16px;
-      }
-      
-      .tag-hero-title {
-        font-size: 22px;
-      }
-      
-      .tag-hero-description {
-        font-size: 13px;
-      }
-    }
-  </style>
 {{ end }}
 
 {{ define "main" }}
