@@ -84,6 +84,7 @@ other = "Tags"
 
 [category]
 other = "Category"
+
 [loading]
 other = "Loading..."
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - {{ T "page_not_found" | default "Page Not Found" }} | {{ .Site.Title }}</title>
+  <meta name="description" content="{{ T "page_not_found_desc" | default "Sorry, the page you are looking for does not exist." }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #F8F7F4;
+      color: #1A1918;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      text-align: center;
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 120px;
+      margin: 0;
+      line-height: 1;
+      color: #1A1918;
+    }
+    h2 {
+      font-size: 24px;
+      margin: 16px 0;
+      font-weight: 500;
+    }
+    p {
+      color: #6B6A67;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+    a {
+      display: inline-block;
+      padding: 12px 32px;
+      background: #1A1918;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    a:hover {
+      background: #333231;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>404</h1>
+    <h2>{{ T "page_not_found" | default "Page Not Found" }}</h2>
+    <p>{{ T "page_not_found_desc" | default "Sorry, the page you are looking for does not exist." }}</p>
+    <a href="{{ .Site.Home.RelPermalink }}">{{ T "go_home" | default "Go Home" }}</a>
+  </div>
+</body>
+</html>
