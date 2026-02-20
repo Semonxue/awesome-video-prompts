@@ -1,12 +1,12 @@
 ---
-title: "Kling 3.0 Massive Truck Snow Jump"
+title: "Massive black RAM TRX–style truck realistically launches upw"
 date: 2026-02-17T00:00:00+08:00
 description: |
     Massive black RAM TRX–style truck realistically launches upward behind a man (as if there is an invisible ramp hidden just outside the camera frame) and aggressively lands with a powerful explosion of snow.
     The truck’s suspension compresses heavily as it hits the ground, drives forward a few meters, and stops just inches from the man’s back. The vehicle maintains true-to-life proportions with no distortion.
     The man remains completely still. The shot ends with the truck standing on the ground directly behind him.
-image: /prompts/2026-02/2023676144252579879-kling3-truck-snow-jump/cover.jpg
-video: /prompts/2026-02/2023676144252579879-kling3-truck-snow-jump/video.mp4
+image: /prompts/2026-02/2023676144252579879-massive-black-ram-trxstyle-truck-realistically-lau/cover.jpg
+video: /prompts/2026-02/2023676144252579879-massive-black-ram-trxstyle-truck-realistically-lau/video.mp4
 models:
   - kling3
 tags:

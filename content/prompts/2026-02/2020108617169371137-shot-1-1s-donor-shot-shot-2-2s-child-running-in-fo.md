@@ -1,8 +1,9 @@
 ---
-image: /prompts/2026-02/2020108617169371137-kling-multi-shot-forest-adventure/cover.jpg
-video: /prompts/2026-02/2020108617169371137-kling-multi-shot-forest-adventure/video.mp4
+image: /prompts/2026-02/2020108617169371137-shot-1-1s-donor-shot-shot-2-2s-child-running-in-fo/cover.jpg
+video: /prompts/2026-02/2020108617169371137-shot-1-1s-donor-shot-shot-2-2s-child-running-in-fo/video.mp4
 date: "2026-02-07"
-title: "Kling Multi-Shot Forest Adventure"
+title: "Shot 1 (1s): donor shot
+  Shot 2 (2s): Child running in fogg"
 description: |
   Shot 1 (1s): donor shot
   Shot 2 (2s): Child running in foggy forest
