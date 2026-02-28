@@ -1074,3 +1074,15 @@ city:
   description_en: "Cityscapes and urban environments"
   description_zh-cn: "城市景观和城市环境"
 
+image-to-video:
+  en: image-to-video
+  zh-cn: 图生视频
+  description_en: "Converting static images to animated videos"
+  description_zh-cn: "将静态图像转换为动画视频"
+
+nano-banana-pro:
+  en: nano-banana-pro
+  zh-cn: Nano Banana Pro
+  description_en: "Nano Banana Pro image generation model"
+  description_zh-cn: "Nano Banana Pro图像生成模型"
+
