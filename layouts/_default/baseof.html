@@ -23,6 +23,15 @@
   
   <meta name="keywords" content="{{ .Params.keywords | default (T "meta_keywords") }}">
 
+  {{- /* SEO: Crawler indexing controls to prevent thin content */ -}}
+  {{- if or .IsHome .IsPage -}}
+    <meta name="robots" content="index, follow, max-image-preview:large">
+  {{- else if and (or (eq .Kind "taxonomy") (eq .Kind "term")) (lt (len .Pages) 3) -}}
+    <meta name="robots" content="noindex, follow">
+  {{- else -}}
+    <meta name="robots" content="index, follow, max-image-preview:large">
+  {{- end -}}
+
   <!-- Canonical -->
   <link rel="canonical" href="{{ .Permalink }}">
 

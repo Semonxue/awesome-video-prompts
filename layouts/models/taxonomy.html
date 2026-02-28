@@ -194,6 +194,27 @@
   <div class="masonry-grid" id="prompts-grid">
     <!-- Rendered by JS -->
   </div>
+  
+  <noscript>
+    <style>
+      #prompts-grid-noscript {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+        gap: 16px !important;
+      }
+      #prompts-grid-noscript .prompt-card {
+        position: relative !important;
+        transform: none !important;
+        width: 100% !important;
+      }
+    </style>
+    <div class="masonry-grid" id="prompts-grid-noscript">
+      {{ $pages := sort .Data.Pages ".File.BaseFileName" "desc" }}
+      {{ range first 50 $pages }}
+        {{ partial "prompt-card.html" . }}
+      {{ end }}
+    </div>
+  </noscript>
 
   <!-- Loading More -->
   <div class="loading-more" id="loading-more">
@@ -369,7 +390,7 @@
                data-prompt-name="${prompt.filename || ''}">
         ${imageHTML}
         <div class="prompt-content">
-          <h3 class="prompt-title">${prompt.title}</h3>
+          <h3 class="prompt-title"><a href="${prompt.permalink}" style="color: inherit; text-decoration: none;">${prompt.title}</a></h3>
           ${descriptionHTML}
           ${tagsHTML ? `<div class="prompt-tags">${tagsHTML}</div>` : ''}
           ${metaHTML}
