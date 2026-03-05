@@ -14,10 +14,10 @@
 
 ### 当前收录
 
-- ✅ **134 条精选提示词**
+- ✅ **612 条精选提示词**
 - 📹 涵盖多种场景：自然风光、动作镜头、FPV飞行、动漫风格等
-- 🤖 支持 14 个主流AI视频模型：Kling O1、Kling 2.6、Kling 3.0、Hailuo (MiniMax)、Veo 3.1、Veo 3、Sora、LTX Pro、Grok、Ray 3.14 (Luma)、Luma Labs、Gen 4.5、Vidu Q3、SeeDance 1.5 Pro
-- 🏷️ 63 个标签分类系统，方便检索
+- 🤖 支持 19 个主流AI视频模型：Seedance 2.0、Kling 3.0、Grok、Kling 2.6、Veo 3、Veo 3.1、Hailuo (MiniMax)、Hedra Omnia、Sora、Gen 4.5、Vidu Q3、Ray 3.14 (Luma)、Unknown Model、Dreamina AI、Seedance 1.5 Pro、Wan 2.6、LTX Pro、Kling O1、Luma Labs
+- 🏷️ 180 个标签分类系统，方便检索
 
 ## 🎬 使用方式
 
@@ -38,11 +38,12 @@
 content/prompts/           # 提示词内容目录
 ├── 2025-12/              # 按月份组织
 ├── 2026-01/
-└── 2026-02/
+├── 2026-02/
+└── 2026-03/
     └── [id]-[slug].md    # 每个提示词一个Markdown文件
 
 static/prompts/           # 素材文件目录
-└── 2026-01/
+└── 2026-03/
     └── [id]-[slug]/      # 每个提示词对应一个文件夹
         ├── cover.jpg     # 封面图片
         └── video.mp4     # 视频文件
