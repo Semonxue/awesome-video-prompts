@@ -498,6 +498,12 @@ adventure:
   description_en: "Adventure and exploration themes"
   description_zh-cn: "冒险和探索主题"
 
+romantic:
+  en: romantic
+  zh-cn: 浪漫
+  description_en: "Romantic and love-themed content"
+  description_zh-cn: "浪漫和爱情主题内容"
+
 vlog:
   en: vlog
   zh-cn: 视频日志
