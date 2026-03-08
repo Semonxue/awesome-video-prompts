@@ -131,3 +131,9 @@ wan26:
   url: https://manganow.ai/
   description: >-
     Wan 2.6 text-to-video model by MangaNow, supporting anime-style video generation with detailed prompts and cinematic effects. Approximate launch: 2026.
+openclaw:
+  name: OpenClaw
+  company: Unknown
+  slug: openclaw
+  url: ""
+  description: ""
