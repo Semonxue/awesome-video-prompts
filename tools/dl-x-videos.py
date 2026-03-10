@@ -80,7 +80,6 @@ def extract_tweet_info(url: str) -> dict:
         "--playlist-items", "1",
         "--dump-json",      # 获取元数据 JSON
         "--skip-download",  # 不下载实际视频文件
-        "--cookies-from-browser", "chrome",  # 从 Chrome 浏览器获取 cookies，处理登录状态   
         normalized
     ]
 
@@ -90,7 +89,7 @@ def extract_tweet_info(url: str) -> dict:
             capture_output=True,
             text=True,
             check=True,
-            timeout=30
+            timeout=60
         )
 
         # 解析 yt-dlp 返回的 JSON 数据
@@ -164,7 +163,7 @@ def process_download(metadata: dict, url: str) -> dict:
     # 使用 stderr 输出日志，以免污染 stdout 的 JSON 输出
     print(f"Downloading video(s) and thumbnail(s) to {output_dir}...", file=sys.stderr)
     try:
-        subprocess.run(cmd, check=True)
+        subprocess.run(cmd, check=True, timeout=300)
     except subprocess.CalledProcessError as e:
         metadata["download_error"] = str(e)
         return metadata
