@@ -1,0 +1,72 @@
+{{ define "main" }}
+  <main class="main-content">
+    <article class="page-content">
+      <header class="page-header">
+        <h1 class="page-title">{{ .Title }}</h1>
+      </header>
+      <div class="page-body">
+        {{ .Content }}
+      </div>
+    </article>
+  </main>
+{{ end }}
+
+{{ define "head" }}
+<style>
+  .page-content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 24px;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .page-body h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    color: var(--text-primary);
+  }
+
+  .page-body h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 1.75rem 0 0.75rem;
+    color: var(--text-primary);
+  }
+
+  .page-body p {
+    margin-bottom: 1rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+  }
+
+  .page-body ul, .page-body ol {
+    margin: 0.75rem 0 1.25rem 1.5rem;
+    color: var(--text-secondary);
+  }
+
+  .page-body li {
+    margin-bottom: 0.4rem;
+    line-height: 1.7;
+  }
+
+  .page-body a {
+    color: var(--accent-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .page-body a:hover {
+    color: var(--accent-hover);
+  }
+</style>
+{{ end }}

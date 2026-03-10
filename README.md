@@ -1,4 +1,14 @@
-# Awesome Video Prompts
+ # Awesome Video Prompts
+
+<div align="center">
+
+![Prompt Count](https://img.shields.io/badge/dynamic/json?label=Prompts&query=$.prompt_count&url=https%3A%2F%2Fawesomevideoprompts.com%2Fapi%2Fstats.json)
+![Models](https://img.shields.io/badge/19-Models-blue)
+![Tags](https://img.shields.io/badge/180%2B-Tags-green)
+
+**🎬 677 条精选提示词** | **19 个主流模型** | **180+ 个标签分类**
+
+</div>
 
 > An open-source collection of awesome video prompts.
 > 
@@ -12,12 +22,24 @@
 - **提升创作效率**：参考已验证有效的提示词结构和描述方式
 - **掌握技巧**：了解不同AI视频模型的提示词特点
 
-### 当前收录
+### 支持的 AI 视频模型
 
-- ✅ **612 条精选提示词**
-- 📹 涵盖多种场景：自然风光、动作镜头、FPV飞行、动漫风格等
-- 🤖 支持 19 个主流AI视频模型：Seedance 2.0、Kling 3.0、Grok、Kling 2.6、Veo 3、Veo 3.1、Hailuo (MiniMax)、Hedra Omnia、Sora、Gen 4.5、Vidu Q3、Ray 3.14 (Luma)、Unknown Model、Dreamina AI、Seedance 1.5 Pro、Wan 2.6、LTX Pro、Kling O1、Luma Labs
-- 🏷️ 180 个标签分类系统，方便检索
+| 模型 | 提示词数量 |
+|------|-----------|
+| Seedance 2.0 | 203 |
+| Kling 3.0 | 145 |
+| Kling 2.6 | 53 |
+| Grok | 40 |
+| Veo 3.1 | 31 |
+| Hailuo (MiniMax) | 15 |
+| Vidu Q3 | 10 |
+| Gen 4.5 | 9 |
+| Ray 3.14 (Luma) | 7 |
+| 其他 | ... |
+
+### 热门标签 (Top 20)
+
+`cinematic` · `action` · `fantasy` · `realistic` · `urban` · `portrait` · `nature` · `multi-shot` · `dark` · `bright` · `drama` · `futuristic` · `tracking` · `night` · `fpv` · `anime` · `aerial` · `slow-motion` · `pov` · ...
 
 ## 🎬 使用方式
 

@@ -48,15 +48,26 @@ defaultContentLanguageInSubdir = true
 [module]
   [[module.mounts]]
     source = 'content'
-    target = 'content/en'
+    target = 'content'
     lang = 'en'
-  [[module.mounts]]
-    source = 'content'
-    target = 'content/zh-cn'
-    lang = 'zh-cn'
-  [[module.mounts]]
-    source = 'content'
-    target = 'content/ja'
-    lang = 'ja'
 
-# 多语言配置
+  # For zh-cn, mount zh-cn specific pages
+  [[module.mounts]]
+    source = 'content/zh-cn'
+    target = 'content'
+    lang = 'zh-cn'
+  # Mount shared prompts from root 'content/prompts'
+  [[module.mounts]]
+    source = 'content/prompts'
+    target = 'content/prompts'
+    lang = 'zh-cn'
+
+  # For ja, mount ja specific pages
+  [[module.mounts]]
+    source = 'content/ja'
+    target = 'content'
+    lang = 'ja'
+  [[module.mounts]]
+    source = 'content/prompts'
+    target = 'content/prompts'
+    lang = 'ja'

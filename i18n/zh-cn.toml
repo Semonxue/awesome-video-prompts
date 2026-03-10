@@ -142,3 +142,13 @@ other = "搜索模型..."
 
 [search_tags]
 other = "搜索标签..."
+
+# 关于页面统计
+[about_stats_label]
+other = "精选 AI 视频提示词"
+
+[about_models_title]
+other = "AI 模型"
+
+[about_tags_title]
+other = "热门标签"

@@ -143,6 +143,16 @@ other = "モデルを検索..."
 [search_tags]
 other = "タグを検索..."
 
+# Aboutページ統計
+[about_stats_label]
+other = "厳選 AI 動画プロンプト"
+
+[about_models_title]
+other = "AIモデル"
+
+[about_tags_title]
+other = "人気タグ"
+
 # 视频相关
 [video_not_supported]
 other = "お使いのブラウザはビデオタグに対応していません。"

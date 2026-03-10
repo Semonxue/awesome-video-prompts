@@ -142,3 +142,13 @@ other = "Search models..."
 
 [search_tags]
 other = "Search tags..."
+
+# About page stats
+[about_stats_label]
+other = "Curated AI Video Prompts"
+
+[about_models_title]
+other = "AI Models"
+
+[about_tags_title]
+other = "Popular Tags"
