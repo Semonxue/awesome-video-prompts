@@ -473,9 +473,12 @@
       `<span class="prompt-tag">${tag}</span>`
     ).join('');
     
+    // 截断标题为 60 字符
+    const truncatedTitle = prompt.title.length > 60 ? prompt.title.substring(0, 60) + '...' : prompt.title;
+    
     const imageHTML = imageUrl ? `
       <div class="prompt-image-wrapper">
-        <img src="${imageUrl}" alt="${prompt.title}" class="prompt-image" loading="lazy">
+        <img src="${imageUrl}" alt="${truncatedTitle}" class="prompt-image" loading="lazy">
         ${videoUrl ? `
           <div class="video-loader" style="display: none; position: absolute; inset: 0; align-items: center; justify-content: center; z-index: 4; background: rgba(0,0,0,0.1);">
             <span style="color: white; font-weight: 500; background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 4px; font-size: 12px;">{{ T "loading" | default "Loading..." }}</span>
@@ -513,7 +516,7 @@
                data-prompt-name="${prompt.filename || ''}">
         ${imageHTML}
         <div class="prompt-content">
-          <h3 class="prompt-title"><a href="${prompt.permalink}" style="color: inherit; text-decoration: none;">${prompt.title}</a></h3>
+          <h3 class="prompt-title"><a href="${prompt.permalink}" style="color: inherit; text-decoration: none;">${truncatedTitle}</a></h3>
           ${descriptionHTML}
           ${tagsHTML ? `<div class="prompt-tags">${tagsHTML}</div>` : ''}
           ${metaHTML}

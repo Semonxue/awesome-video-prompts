@@ -117,13 +117,6 @@ hedra:
   url: https://hedra.com/
   description: >-
     AI video generation model by Hedra Labs, supporting audio-driven timing, full-body motion, and camera control in a single model. Approximate launch: 2026.
-unknown:
-  name: Unknown Model
-  company: Unknown
-  slug: unknown
-  url: https://example.com/
-  description: >-
-    Unknown or unspecified video generation model.
 wan26:
   name: Wan 2.6
   company: MangaNow
@@ -131,9 +124,3 @@ wan26:
   url: https://manganow.ai/
   description: >-
     Wan 2.6 text-to-video model by MangaNow, supporting anime-style video generation with detailed prompts and cinematic effects. Approximate launch: 2026.
-openclaw:
-  name: OpenClaw
-  company: Unknown
-  slug: openclaw
-  url: ""
-  description: ""
