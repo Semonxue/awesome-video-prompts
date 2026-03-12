@@ -8,7 +8,7 @@ description: |
   Style: survival intensity | dust chaos | harsh sound | visceral realism
   Camera: POV sprint → sand on lens → brief reveal → collapse
 models:
-  - kling
+  - kling3
 tags:
   - pov
   - sprint
