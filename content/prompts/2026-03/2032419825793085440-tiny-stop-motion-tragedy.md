@@ -1,0 +1,18 @@
+---
+title: "Tiny Stop-Motion Tragedy"
+date: 2026-03-13T00:00:00+08:00
+image: /prompts/2026-03/2032419825793085440-tiny-stop-motion-tragedy/cover.jpg
+video: /prompts/2026-03/2032419825793085440-tiny-stop-motion-tragedy/video.mp4
+description: |
+    "Stop-motion clay animation, handcrafted tactile materials, real fabric, warm afternoon park lighting. Wide shot: a clay figure with a matchbox head and a clay figure with a lit candle head sit together on a real tiny park bench, mid-conversation — candle flame flickering gently, matchbox drawer slightly open, easy and close. [cut] A distant rumble. Both heads turn. [cut] Close-up — a clay figure with a fire extinguisher head rolls in on a real tiny motorcycle, pressure gauge redlined, nozzle tilted back, one hand loose on the handlebar. He stops. Says nothing. [cut] Close-up of the candle head — the flame doubles in size instantly. The wax drips straight down. [cut] Wide shot — the candle stands up. Smooths her skirt. Gets on the back of the motorcycle without looking back. The motorcycle pulls away. [cut] Close-up of the matchbox head — alone on the bench. The little drawer slides open. Then slowly, all the matches fall out one by one onto the ground."
+models:
+  - seedance2
+tags:
+  - stop-motion
+  - tutorial
+  - narrative
+author: "Cyber AI Creator 🎨"
+source_url: "https://x.com/noman23761/status/2032419893665247484"
+---
+
+How to Create a Tiny Stop-Motion Tragedy with Seedance 2.0? Prompt Included! We've been experimenting with Seedance 2.0 for short narrative prompts, and it's surprisingly good at generating mini cinematic stories when you structure the prompt like a sequence of shots.
