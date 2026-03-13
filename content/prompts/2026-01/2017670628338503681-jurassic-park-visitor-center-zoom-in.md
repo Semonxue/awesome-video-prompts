@@ -20,7 +20,7 @@ description: |
   Lighting remains consistent with the original image: cinematic, dramatic, moody jungle atmosphere.
   Ultra-realistic motion, no scene cuts, no object morphing, no text changes, no new elements added.
   High-quality cinematic animation, realistic physics, stable camera, film-grade depth and lighting.
-models: veo31
+models: veo3
 tags: [dinosaur, jurassic, animal, fantasy, nature]
 author: Sia 😊
 source_url: https://twitter.com/going0to1/status/2017670726946533835

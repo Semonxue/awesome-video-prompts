@@ -8,7 +8,7 @@ description: |
     400 mm telephoto + IR realism, high-ISO night glow, monochrome forest palette.  
     audio: soft branch creak + distant cicada chorus
     negative: no torchlight, no humans
-models: veo31
+models: veo3
 tags: ["animal", "leopard", "forest", "night", "moonlight", "mist"]
 author: "LudovicCreator"
 source_url: "https://x.com/LudovicCreator/status/2025193925623828503"

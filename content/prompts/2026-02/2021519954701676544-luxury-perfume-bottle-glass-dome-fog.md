@@ -57,7 +57,7 @@ description: |
   No transitions
   No sound effects unless subtle ambient atmosphere is supported
 models:
-  - veo31
+  - veo3
 tags:
   - luxury
   - cinematic

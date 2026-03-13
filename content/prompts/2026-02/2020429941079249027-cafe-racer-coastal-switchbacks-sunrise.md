@@ -12,7 +12,7 @@ description: |
     VFX: heat shimmer off engine, drifting exhaust fog.  
   audio: inline-four roar → wind rush
   negative: no other vehicles, no text
-models: veo31
+models: veo3
 tags: [racing, car, sunrise, cinematic, action]
 author: LudovicCreator
 source_url: https://x.com/LudovicCreator/status/2020429941079249027

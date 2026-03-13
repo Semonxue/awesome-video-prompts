@@ -5,7 +5,7 @@ date: 2026-02-14
 title: Phoenix Reborn in Flames
 description: |
   Push-in through flames toward a phoenix reborn in an abandoned factory. Ash floats like snow, while molten steel veins pulse under its wings.rebirth industry, fireflight
-models: veo31
+models: veo3
 tags: [fantasy, cinematic, dark]
 author: LudovicCreator
 source_url: https://x.com/LudovicCreator/status/2022604284391571632

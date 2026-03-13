@@ -6,7 +6,7 @@ title: "Forward Tracking Shot Accelerating"
 description: |
   Forward tracking shot accelerating up a long incline. Engine strain implied through vibration; horizon rises quickly. Camera maintains centerline.
 models:
-  - veo31
+  - veo3
 tags:
   - cinematic
   - realistic

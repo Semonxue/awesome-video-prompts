@@ -37,7 +37,7 @@ description: |
         "mix_level": "engine-forward with sharp high-frequency detail"
     },
     }
-models: veo31
+models: veo3
 tags: [cinematic, realistic, motion_blur, fpv]
 author: Pierrick Chevallier | IA
 source_url: https://x.com/CharaspowerAI/status/2029157430618116201

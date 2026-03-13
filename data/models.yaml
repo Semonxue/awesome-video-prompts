@@ -26,20 +26,13 @@ hailuo:
   url: https://hailuoai.video/
   description: >-
     MiniMax's Hailuo AI video model (Hailuo 2.3). Its advantages lie in extremely fast generation speed and excellent semantic understanding, capable of generating smooth videos that conform to physical logic, supporting image-to-video. Approximate launch: September 2024.
-veo31:
-  name: Veo 3.1
-  company: Google DeepMind
-  slug: veo31
-  url: https://deepmind.google/technologies/veo/
-  description: >-
-    Google DeepMind's latest video generation model. The biggest breakthrough is native "video + audio" generation, supporting more precise prompt control, character consistency maintenance, and cinema-grade 4K resolution output. Approximate launch: January 2026.
 veo3:
   name: Veo 3
   company: Google DeepMind
   slug: veo3
   url: https://deepmind.google/technologies/veo/
   description: >-
-    Google DeepMind's high-performance video model. Focuses on high-fidelity visual effects and physics simulation, supporting precise control of visual style through image and style references. Approximate launch: November 2025.
+    Google DeepMind's Veo 3 video generation model (including 3.0 and 3.1). The biggest breakthrough is native "video + audio" generation, supporting more precise prompt control, character consistency maintenance, and cinema-grade 4K resolution output. Approximate launch: November 2025.
 sora:
   name: Sora
   company: OpenAI
@@ -47,6 +40,13 @@ sora:
   url: https://openai.com/sora
   description: >-
     OpenAI's disruptive text-to-video model. Capable of generating videos up to 60 seconds long containing highly detailed backgrounds, complex camera movements, and multiple characters, with strong physical world simulation capabilities. Announced February 2024.
+sora2:
+  name: Sora 2
+  company: OpenAI
+  slug: sora2
+  url: https://openai.com/sora
+  description: >-
+    OpenAI's Sora 2 video generation model. Features significant improvements in video quality, physics simulation, and prompt adherence compared to the original Sora. Supports longer duration, higher resolution, and more complex scene generation. Approximate launch: 2025.
 ltxpro:
   name: LTX Pro
   company: Lightricks

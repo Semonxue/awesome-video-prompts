@@ -16,7 +16,7 @@ description: |
     女性のセリフは、「今日のファッションは【ファッションの特徴を追加】がポイントです！」と優しい口調で話しながら服を触っている。最後に笑顔になる。
 
     BGM：Vlog風のファッションの雰囲気に合った音が心地よく流れている。
-models: ["veo31"]
+models: ["veo3"]
 tags: ["cinematic", "fashion", "dynamic"]
 author: "空想写真家"
 source_url: "https://x.com/KusoPhoto/status/2025797771131756652"

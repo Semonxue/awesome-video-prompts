@@ -7,6 +7,6 @@ date: 2026-02-20
 author: "MarioTan"
 author_username: "TanShilong"
 source_url: "https://x.com/TanShilong/status/2024846627916439975"
-models: ["veo31"]
+models: ["veo3"]
 tags: ["anime", "girl", "dance", "cute", "dynamic", "room"]
 ---

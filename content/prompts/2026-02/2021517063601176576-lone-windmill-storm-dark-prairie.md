@@ -11,7 +11,7 @@ description: |
   negative: no humans, no vehicles
 
 models:
-  - veo31
+  - veo3
 tags:
   - dark
   - landscape

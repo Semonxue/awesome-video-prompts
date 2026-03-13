@@ -8,7 +8,7 @@ description: |
     400 mm telephoto realism, 1/3200 s freeze, pastel blue-hour sky.  
     audio: wing whoosh + snow powder
     negative: no photographers, no feeders
-models: ["veo31"]
+models: ["veo3"]
 tags: ["nature", "animal", "snow", "aerial", "cinematic"]
 author: "LudovicCreator"
 source_url: "https://x.com/LudovicCreator/status/2030576785599963450"

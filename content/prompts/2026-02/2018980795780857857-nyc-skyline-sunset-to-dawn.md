@@ -17,7 +17,7 @@ description: |
   Location: New York City, filmed from a rooftop, observation deck, or elevated riverfront overlooking Manhattan.
   Time: Sunset through early morning.
   Environment: Clear skies transitioning from warm sunset hues to cool twilight, then into calm, pastel dawn light as the city wakes.
-models: veo31
+models: veo3
 tags: [urban, city, sunset, dawn, timelapse]
 author: "Zara"
 source_url: "https://x.com/ZaraIrahh/status/2018980850650800543"

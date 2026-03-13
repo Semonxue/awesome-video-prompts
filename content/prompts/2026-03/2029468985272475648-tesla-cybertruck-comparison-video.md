@@ -57,7 +57,7 @@ description: |
     - 负面：无文字、无人物、无摄像机反射、无灰尘或划痕、避免有机纹理、无笨拙运动、无背景干扰
 
     /duration 8秒
-models: ["veo31"]
+models: ["veo3"]
 tags: ["car", "futuristic", "comparison"]
 author: "John"
 source_url: "https://x.com/johnAGI168/status/2029469272565563678"

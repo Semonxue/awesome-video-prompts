@@ -7,7 +7,7 @@ description: |
   Hyperspeed FPV shot, Diving into a collapsing coastal cliff
   The camera races along fractured rock as the cliff gives way. Stone, dust, and sea spray converge mid-fall, carving "FALL" into the collapsing mass before impact.
   Heavy, inevitable, cinematic.
-models: veo31
+models: veo3
 tags: [fpv, aerial, action, destruction, cinematic]
 author: Pierrick Chevallier | IA
 source_url: https://x.com/CharaspowerAI/status/2021909678305804512

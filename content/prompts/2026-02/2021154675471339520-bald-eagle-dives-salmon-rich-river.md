@@ -8,7 +8,7 @@ description: |
   500 mm telephoto realism, 1/3200 s freeze, backlit spray.  
 audio: wind rush + faint river ripple
 negative: no boats, no humans
-models: veo31
+models: veo3
 tags: [animal, aerial, cinematic, nature, realistic]
 author: LudovicCreator
 source_url: https://x.com/LudovicCreator/status/2021154724553110007

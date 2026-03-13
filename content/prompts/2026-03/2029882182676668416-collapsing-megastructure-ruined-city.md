@@ -8,7 +8,7 @@ description: |
 
     VFX: Structural destruction sim, sparks, dust cloud bloom
     Tone: Civilization’s final breath
-models: ["veo31"]
+models: ["veo3"]
 tags: ["futuristic", "dark", "cinematic"]
 author: "Pierrick Chevallier | IA"
 source_url: "https://x.com/CharaspowerAI/status/2029882220836507713"
