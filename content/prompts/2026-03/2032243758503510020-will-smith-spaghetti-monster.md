@@ -9,6 +9,7 @@ tags:
   - action
   - comedy
   - 80s-movie
+author: "im_shahid7"
 source_url: https://x.com/im_shahid7/status/2032243884173246541
 image: /prompts/2026-03/2032243758503510020-will-smith-spaghetti-monster/cover.jpg
 video: /prompts/2026-03/2032243758503510020-will-smith-spaghetti-monster/video.mp4
