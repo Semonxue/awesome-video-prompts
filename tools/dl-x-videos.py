@@ -24,53 +24,100 @@ import sys
 import argparse
 import os
 import shutil
-import requests
-from bs4 import BeautifulSoup
+import re
+
+
+def extract_tweet_id(url: str) -> str:
+    """从 URL 中提取 tweet ID"""
+    match = re.search(r'/status/(\d+)', url)
+    if match:
+        return match.group(1)
+    return None
 
 
 def normalize_url(url: str) -> str:
-    # yt-dlp 对 'x.com' 的域名支持可能不如 'twitter.com' 稳定，
-    # 将域名替换为旧版 'twitter.com' 以提高解析成功率
+    """标准化 URL，将 x.com 转换为 twitter.com"""
     if "x.com" in url:
         return url.replace("x.com", "twitter.com", 1)
     return url
 
 
-def get_fixupx_text(url: str) -> str:
-    """尝试从 fixupx.com 获取完整的帖子文本"""
-    # 将 x.com/twitter.com 替换为 fixupx.com
-    fixup_url = url
-    if "x.com" in fixup_url:
-        fixup_url = fixup_url.replace("x.com", "fixupx.com")
-    elif "twitter.com" in fixup_url:
-        fixup_url = fixup_url.replace("twitter.com", "fixupx.com")
-    else:
-        return None
-
-    try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)"
-        }
-        
-        # 短超时，避免阻塞太久
-        response = requests.get(fixup_url, headers=headers, timeout=10)
-        if response.status_code != 200:
-            return None
-            
-        soup = BeautifulSoup(response.text, "html.parser")
-        meta_desc = soup.find("meta", property="og:description")
-        
-        if meta_desc and meta_desc.get("content"):
-            return meta_desc["content"]
-            
-        return None
-    except Exception:
-        # 失败时不影响主流程
-        return None
-
-
 def extract_tweet_info(url: str) -> dict:
-    normalized = normalize_url(url)
+    """提取 tweet 信息，优先使用 twitter CLI，失败时 fallback 到 yt-dlp"""
+    
+    tweet_id = extract_tweet_id(url)
+    
+    # 优先使用 twitter CLI 获取完整帖子信息
+    if tweet_id:
+        try:
+            cmd = [
+                "twitter", "tweet", tweet_id,
+                "--json", "--full-text","-n 1"
+            ]
+            result = subprocess.run(
+                cmd,
+                capture_output=True,
+                text=True,
+                check=True,
+                timeout=30
+            )
+            
+            data = json.loads(result.stdout.strip())
+            
+            # 检查返回结构
+            if data.get("ok") and data.get("data") and len(data["data"]) > 0:
+                tweet = data["data"][0]
+                author = tweet.get("author", {})
+                media = tweet.get("media", [])
+                
+                # 提取视频信息
+                videos = []
+                for m in media:
+                    if m.get("type") == "video" and m.get("url"):
+                        videos.append({
+                            "resolution": f"{m.get('width', '?')}x{m.get('height', '?')}",
+                            "url": m.get("url"),
+                            "format_id": "twitter"
+                        })
+                
+                # 提取缩略图（从媒体中获取）
+                thumbnail = None
+                if media and media[0].get("url"):
+                    # 视频缩略图通常可以从 twitter 获取，这里先留空
+                    # 后续可以通过 yt-dlp 或其他方式获取
+                    pass
+                
+                extracted = {
+                    "success": True,
+                    "url": url,
+                    "post_id": tweet.get("id"),
+                    "text": tweet.get("text", ""),
+                    "author_name": author.get("name", ""),
+                    "author_username": author.get("screenName", ""),
+                    "author_url": f"https://twitter.com/{author.get('screenName', '')}",
+                    "post_date": tweet.get("createdAt", ""),
+                    "thumbnail": thumbnail,
+                    "videos": videos,
+                    "source": "twitter-cli"
+                }
+                
+                return extracted
+                
+        except Exception as e:
+            # twitter CLI 失败，记录错误但继续使用 yt-dlp
+            print(f"twitter CLI failed: {e}, falling back to yt-dlp", file=sys.stderr)
+    
+    # Fallback: 使用 yt-dlp 获取信息
+    return extract_tweet_info_yt_dlp(url)
+
+
+def extract_tweet_info_yt_dlp(url: str) -> dict:
+    """使用 yt-dlp 提取 tweet 信息（fallback 方案）"""
+    # yt-dlp 对 'x.com' 的域名支持可能不如 'twitter.com' 稳定，
+    # 将域名替换为旧版 'twitter.com' 以提高解析成功率
+    normalized = url
+    if "x.com" in url:
+        normalized = url.replace("x.com", "twitter.com", 1)
 
     # 构造 yt-dlp 系统调用命令
     cmd = [
@@ -106,16 +153,9 @@ def extract_tweet_info(url: str) -> dict:
             "author_url": data.get("uploader_url", ""),
             "post_date": data.get("upload_date", ""),
             "thumbnail": data.get("thumbnail"),
-            "videos": []
+            "videos": [],
+            "source": "yt-dlp"
         }
-
-        # 尝试补全可能被截断的文本
-        # yt-dlp 有时获取的 description 是不完整的，通过 fixupx 可以获取完整内容
-        # full_text = get_fixupx_text(url)
-        # if full_text and len(full_text) > len(extracted["text"]):
-        #     # fixupx有时会在末尾保留截断指示或乱码，但通常包含更多内容
-        #     # 这里简单做一个替换
-        #     extracted["text"] = full_text
 
         # 筛选视频格式流 (过滤掉纯音频或无效格式)
         for f in data.get("formats", []):
