@@ -1,0 +1,12 @@
+---
+image: /prompts/2026-03/2033935265048498492-rainforest-hovercraft/cover.jpg
+video: /prompts/2026-03/2033935265048498492-rainforest-hovercraft/video.mp4
+date: 2026-03-17
+title: Rainforest Hovercraft
+description: |
+    Epic establishing drone shot, dense primordial rainforest canopy stretching endlessly, a small research hovercraft slicing along a misty flooded river channel. Camera plunges violently downward, tracking tight behind the craft as massive vines snap and ancient trees groan. The riverbed suddenly fractures, earth splits open in glowing emerald fissures, huge sections of jungle floor collapsing into black water. The hovercraft weaves desperately between falling giant kapok trees and torrents of mud. Final chaotic burst: the craft clears the collapsing tree line and skims out over a massive circular sinkhole revealing a sprawling lost city submerged in crystal-clear turquoise depths, golden pyramid peaks and bioluminescent ruins shimmering just below the surface.
+models: kling3
+tags: [rainforest, hovercraft, lost-city, drone]
+author: Mr Das
+source_url: https://twitter.com/MrDasOnX/status/2033935265048498492
+---
