@@ -1,0 +1,427 @@
+{{ define "main" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ .Title }}",
+  "description": "{{ .Params.description | default .Title | plainify | truncate 200 }}",
+  "thumbnailUrl": "{{ .Params.image | absURL }}",
+  "uploadDate": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"{{ with .Params.video }},
+  "contentUrl": "{{ . | absURL }}"{{ end }},
+  "author": { "@type": "Person", "name": "{{ .Params.author | default .Site.Params.author }}" }
+}
+</script>
+
+<div class="pd-wrap">
+
+  {{/* ── Video ── */}}
+  {{ with .Params.video }}
+  <div class="pd-video-wrap">
+    {{ $video := . }}
+    {{ $videoURL := cond (or (hasPrefix $video "http://") (hasPrefix $video "https://")) $video ((strings.TrimPrefix "/" $video) | relURL) }}
+    <video controls preload="metadata" playsinline
+           {{ with $.Params.image }}
+           {{ $img := . }}
+           {{ $imgURL := cond (or (hasPrefix $img "http://") (hasPrefix $img "https://")) $img ((strings.TrimPrefix "/" $img) | relURL) }}
+           poster="{{ $imgURL | safeURL }}"
+           {{ end }}>
+      <source src="{{ $videoURL | safeURL }}" type="video/mp4">
+    </video>
+  </div>
+  {{ end }}
+
+  {{/* ── Title ── */}}
+  <h1 class="pd-title">{{ .Title }}</h1>
+
+  {{/* ── Meta card ── */}}
+  <div class="pd-meta">
+
+    <div class="pd-meta-item">
+      <span class="pd-meta-label">{{ T "date" }}</span>
+      <time datetime="{{ .Date.Format "2006-01-02" }}" class="pd-meta-value">{{ .Date.Format "Jan 2, 2006" }}</time>
+    </div>
+
+    {{ with .Params.tags }}
+    <div class="pd-meta-item">
+      <span class="pd-meta-label">{{ T "tags" }}</span>
+      <div class="pd-chips">
+        {{ range . }}
+          {{ $tagDisplay := partial "tag-display.html" (dict "tag" . "site" $.Site) }}
+          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="pd-chip">{{ $tagDisplay }}</a>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ with .Params.models }}
+    <div class="pd-meta-item">
+      <span class="pd-meta-label">{{ T "models" | default "Model" }}</span>
+      <div class="pd-chips">
+        {{ if reflect.IsSlice . }}
+          {{ range . }}
+            {{ $mk := printf "%v" . }}
+            {{ $md := index $.Site.Data.models $mk }}
+            {{ $mname := . }}
+            {{ if $md }}{{ $mname = $md.name | default . }}{{ end }}
+            <a href="{{ "/models/" | relLangURL }}{{ $mk | urlize }}" class="pd-chip pd-chip--accent">{{ $mname }}</a>
+          {{ end }}
+        {{ else }}
+          {{ $mk := printf "%v" . }}
+          {{ $md := index $.Site.Data.models $mk }}
+          {{ $mname := . }}
+          {{ if $md }}{{ $mname = $md.name | default . }}{{ end }}
+          <a href="{{ "/models/" | relLangURL }}{{ $mk | urlize }}" class="pd-chip pd-chip--accent">{{ $mname }}</a>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ if .Params.author }}
+    <div class="pd-meta-item">
+      <span class="pd-meta-label">{{ T "source" | default "Source" }}</span>
+      <div class="pd-meta-value">
+        {{ with .Params.source_url }}
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="pd-author-link">
+          {{ $.Params.author }}
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+        {{ else }}
+          <span class="pd-author-link">{{ $.Params.author }}</span>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+
+  {{/* ── Prompt text ── */}}
+  {{ $promptText := or .Params.prompt .Params.description }}
+  {{ with $promptText }}
+  <section class="pd-prompt-section">
+    <div class="pd-section-header">
+      <h2 class="pd-section-title">{{ T "copy_prompt" }}</h2>
+      <button class="pd-copy-btn" id="copyBtn" onclick="pdCopy()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        {{ T "copy_prompt" }}
+      </button>
+    </div>
+    <pre id="pd-prompt-text" class="pd-prompt-pre" onclick="pdCopy()" title="{{ T "copy_prompt" }}">{{ . }}</pre>
+  </section>
+  {{ end }}
+
+  {{/* ── Markdown body (if any) ── */}}
+  {{ with .Content }}
+  <div class="pd-body">{{ . }}</div>
+  {{ end }}
+
+  {{/* ── Related prompts (max 6) ── */}}
+  {{ $related := .Site.RegularPages.Related . | first 6 }}
+  {{ with $related }}
+  <section class="pd-related">
+    <h2 class="pd-related-title">{{ T "related_prompts" | default "You Might Also Like" }}</h2>
+    <div class="pd-related-grid">
+      {{ range . }}
+        {{ partial "prompt-card.html" . }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ── Prev / Next ── */}}
+  {{ if or .PrevInSection .NextInSection }}
+  <nav class="pd-nav">
+    {{ with .PrevInSection }}
+    <a href="{{ .RelPermalink }}" class="pd-nav-btn pd-nav-btn--prev">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      <span>{{ .Title }}</span>
+    </a>
+    {{ else }}<span></span>{{ end }}
+    {{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}" class="pd-nav-btn pd-nav-btn--next">
+      <span>{{ .Title }}</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </a>
+    {{ end }}
+  </nav>
+  {{ end }}
+
+</div>
+
+<script>
+function pdCopy() {
+  var text = document.getElementById('pd-prompt-text').textContent;
+  var btn  = document.getElementById('copyBtn');
+  if (typeof _paq !== 'undefined') {
+    _paq.push(['trackEvent', 'prompts', 'copy', '{{ .File.ContentBaseName }}']);
+  }
+  navigator.clipboard.writeText(text).then(function() {
+    if (!btn) return;
+    var orig = btn.innerHTML;
+    btn.innerHTML = '&#10003; {{ T "copied" }}';
+    btn.classList.add('pd-copy-btn--ok');
+    setTimeout(function() { btn.innerHTML = orig; btn.classList.remove('pd-copy-btn--ok'); }, 2000);
+  });
+}
+</script>
+{{ end }}
+
+{{ define "head" }}
+<style>
+/* ─────────────────────────────────
+   Prompt Detail  (pd-*)
+───────────────────────────────── */
+.pd-wrap {
+  max-width: 780px;
+  margin: 48px auto 80px;
+  padding: 0 24px;
+}
+
+/* Video */
+.pd-video-wrap {
+  width: 100%;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  margin-bottom: 28px;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pd-video-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Title */
+.pd-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin: 0 0 20px;
+}
+
+/* Meta card */
+.pd-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  margin-bottom: 28px;
+}
+.pd-meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.pd-meta-label {
+  flex-shrink: 0;
+  width: 56px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-top: 4px;
+}
+.pd-meta-value {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.pd-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.pd-chip {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  background: var(--bg-muted);
+  border: 1px solid var(--border-subtle);
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.pd-chip:hover {
+  background: var(--border-subtle);
+  color: var(--text-primary);
+}
+.pd-chip--accent {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: #fff;
+}
+.pd-chip--accent:hover {
+  opacity: 0.85;
+  color: #fff;
+}
+.pd-author-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+.pd-author-link:hover {
+  color: var(--accent-primary);
+  text-decoration: underline;
+}
+
+/* Prompt section */
+.pd-prompt-section { margin-bottom: 28px; }
+.pd-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.pd-section-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+.pd-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.pd-copy-btn:hover { background: var(--bg-muted); color: var(--text-primary); }
+.pd-copy-btn--ok { background: #e8f5e9 !important; border-color: #a5d6a7 !important; color: #2e7d32 !important; }
+.pd-prompt-pre {
+  background: var(--bg-muted);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.7;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.pd-prompt-pre:hover { background: var(--border-subtle); }
+
+/* Markdown body */
+.pd-body { margin-bottom: 28px; font-size: 15px; line-height: 1.75; color: var(--text-secondary); }
+.pd-body h2 { font-size: 1.25rem; font-weight: 600; margin: 1.5rem 0 .6rem; color: var(--text-primary); }
+.pd-body h3 { font-size: 1.1rem; font-weight: 600; margin: 1.25rem 0 .5rem; color: var(--text-primary); }
+.pd-body p  { margin: 0 0 .9rem; }
+.pd-body ul, .pd-body ol { padding-left: 1.4rem; margin: 0 0 .9rem; }
+.pd-body li { margin-bottom: .3rem; }
+.pd-body a  { color: var(--accent-primary); text-underline-offset: 3px; }
+
+/* Related */
+.pd-related { margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--border-subtle); }
+.pd-related-title { font-size: 1rem; font-weight: 600; color: var(--text-primary); margin: 0 0 16px; }
+.pd-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.pd-related-grid .prompt-card {
+  position: relative !important;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.pd-related-grid .prompt-image-wrapper {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.pd-related-grid .prompt-image-wrapper img,
+.pd-related-grid .prompt-image-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Hide verbose content in related cards — keep only thumbnail + title */
+.pd-related-grid .prompt-description,
+.pd-related-grid .prompt-tags,
+.pd-related-grid .prompt-meta,
+.pd-related-grid .prompt-actions {
+  display: none;
+}
+.pd-related-grid .prompt-content {
+  padding: 8px 10px 10px;
+}
+.pd-related-grid .prompt-title {
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Prev/Next */
+.pd-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+}
+.pd-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 46%;
+  padding: 10px 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.pd-nav-btn span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pd-nav-btn:hover { background: var(--bg-muted); color: var(--text-primary); }
+.pd-nav-btn--next { margin-left: auto; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pd-related-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+}
+@media (max-width: 640px) {
+  .pd-wrap { margin-top: 24px; padding: 0 16px; }
+  .pd-title { font-size: 1.25rem; }
+  .pd-video-wrap { border-radius: 8px; }
+  .pd-related-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .pd-nav { flex-direction: column; }
+  .pd-nav-btn { max-width: 100%; }
+  .pd-nav-btn--next { margin-left: 0; }
+}
+</style>
+{{ end }}

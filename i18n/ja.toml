@@ -162,3 +162,9 @@ other = "生成されたビデオ"
 
 [related_prompts]
 other = "関連プロンプト"
+[models]
+other = "モデル"
+
+[source]
+other = "ソース"
+

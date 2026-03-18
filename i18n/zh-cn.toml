@@ -152,3 +152,10 @@ other = "AI 模型"
 
 [about_tags_title]
 other = "热门标签"
+
+[models]
+other = "模型"
+
+[source]
+other = "来源"
+

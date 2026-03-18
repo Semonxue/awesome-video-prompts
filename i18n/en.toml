@@ -152,3 +152,10 @@ other = "AI Models"
 
 [about_tags_title]
 other = "Popular Tags"
+
+[models]
+other = "Models"
+
+[source]
+other = "Source"
+
