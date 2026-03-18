@@ -1,0 +1,12 @@
+---
+image: /prompts/2026-03/2033921840540778606-seedance-2-chinese-opera-singer/cover.jpg
+video: /prompts/2026-03/2033921840540778606-seedance-2-chinese-opera-singer/video.mp4
+date: 2026-03-17
+title: "Chinese Opera Singer Performance"
+description: |
+  A slender young woman adorned in a flowing Tang dynasty costume featuring intricate gold-threaded carp patterns and kingfisher feather ornaments, with flowing tassel hairpins gracing her hair and an elegant cinnabar dot marking her forehead. She stands gracefully before an ornate red corridor with carved beams, surrounded by hundreds of glowing palace lanterns, golden silk screens embroidered with the character "Spring", and tinkling brass bells hanging from eaves. Red silk curtains cascade like waterfalls while golden dust particles float in the light. As the ancient chime music begins, the maiden opens her lips to sing in a professional singer-level performance, moving with elegant steps and flowing sleeves. Her performance includes various gestures: hands pressed together in greeting, playful winks and heart signs, spins that scatter gold foil across the floor, all while her eyes shimmer with starlight. The song features special effects: 1. "Green Dragon Appears, White Tiger Holds": Four divine beast illusions emerge from the clouds with dragon chants and tiger roars. 2. "Fortune Gathers from Eight Directions": Purple energy rushes from all directions, forming a spinning golden vortex in her palms. 3. "Fortune Comes, Fortune Falls from the Star River": The Milky Way descends as countless fortune characters, each stroke glittering with pearl luster. 4. "Youth Has No Sorrow, Laugh at Wind and Clouds": The maiden's feet touch the ground as red plum blossoms bloom, petals transforming into rising phoenixes. 5. "Reach Stars and Fight for the Cup": Star clusters from the nine heavens fall into the wine cup, bursting into brilliant light columns reaching the sky. The overall Dunhuang flying deity camera work captures the maiden's graceful spins, with her hair ornaments suspended in mid-air, golden foil and petals forming spiral star trails in slow motion. The final frame shows the maiden with her back to the camera raising her sleeves, as the entire starry sky and gold foil transform into four three-dimensional seal characters "招财进宝" (Attracting Wealth and Treasures), followed by coin-shaped snowflakes gently falling.
+models: seedance2
+tags: [portrait, eastern, cinematic, dance, fantasy]
+author: "John"
+source_url: "https://twitter.com/johnAGI168/status/2033921840540778606"
+---
