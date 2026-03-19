@@ -1,8 +1,8 @@
 ---
-title: Seedance2 Ice Dragon Rider
+title: Ice Dragon Rider
 date: 2026-03-18
-image: /prompts/2026-03/2034347881646133745-seedance-ice-dragon-rider/cover.jpg
-video: /prompts/2026-03/2034347881646133745-seedance-ice-dragon-rider/video.mp4
+image: /prompts/2026-03/2034347881646133745-ice-dragon-rider/cover.jpg
+video: /prompts/2026-03/2034347881646133745-ice-dragon-rider/video.mp4
 models:
   - seedance2
 description: |
