@@ -1,0 +1,28 @@
+---
+title: Seedance War Disaster Film
+date: 2026-03-20T20:17:55Z
+image: /prompts/2026-03/seedance-war-disaster-film/cover.jpg
+video: /prompts/2026-03/seedance-war-disaster-film/video.mp4
+description: |
+    战争灾难电影感，一镜到底，清晨灰蓝色天光下，一名年轻传令员冲出被炮火撕开的地下掩体，镜头紧贴其身后高速跟随，穿过泥泞战壕、燃烧的补给车、炸裂的木桥和四散奔逃的人群。远处不断有炮弹落下，泥土、木屑、火焰和烟柱在镜头两侧连续爆开，士兵和担架队从前景横穿而过，极具临场感。主角翻越一段坍塌沙袋墙，滑下满是积水的斜坡，穿过一片布满铁丝网和弹坑的开阔地，爆炸冲击波在身后掀起巨大尘浪。最后他冲上一座半毁钟楼废墟，将一枚发光信号筒插入高处装置，镜头随之迅速拉起，俯瞰整片燃烧战场与远处仍在推进的军阵，电影级写实战争规模感，强节奏，无剪辑。
+
+models:
+  - seedance2
+tags:
+  - cinematic
+  - war
+  - action
+  - battlefield
+  - military
+  - disaster
+author: Dheepan Ratnam
+source_url: https://twitter.com/Dheepanratnam/status/2035088467722740028
+---
+
+Full post text:
+
+Seedance 2.0 can do cinema
+
+Prompt 👇
+
+战争灾难电影感，一镜到底，清晨灰蓝色天光下，一名年轻传令员冲出被炮火撕开的地下掩体，镜头紧贴其身后高速跟随，穿过泥泞战壕、燃烧的补给车、炸裂的木桥和四散奔逃的人群。远处不断有炮弹落下，泥土、木屑、火焰和烟柱在镜头两侧连续爆开，士兵和担架队从前景横穿而过，极具临场感。主角翻越一段坍塌沙袋墙，滑下满是积水的斜坡，穿过一片布满铁丝网和弹坑的开阔地，爆炸冲击波在身后掀起巨大尘浪。最后他冲上一座半毁钟楼废墟，将一枚发光信号筒插入高处装置，镜头随之迅速拉起，俯瞰整片燃烧战场与远处仍在推进的军阵，电影级写实战争规模感，强节奏，无剪辑。
