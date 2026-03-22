@@ -1,5 +1,5 @@
 ---
-title: "Veo 3.1 Astronaut Alien Forest"
+title: "Astronaut Alien Forest"
 image: /prompts/2026-03/2035287829450817912-veo-astronaut-alien-forest/cover.jpg
 video: /prompts/2026-03/2035287829450817912-veo-astronaut-alien-forest/video.mp4
 date: 2026-03-21

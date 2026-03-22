@@ -1,5 +1,5 @@
 ---
-title: Seedance War Disaster Film
+title: "War Disaster Film"
 date: 2026-03-20T20:17:55Z
 image: /prompts/2026-03/seedance-war-disaster-film/cover.jpg
 video: /prompts/2026-03/seedance-war-disaster-film/video.mp4

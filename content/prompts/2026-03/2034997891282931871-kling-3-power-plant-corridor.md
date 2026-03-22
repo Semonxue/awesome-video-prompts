@@ -1,5 +1,5 @@
 ---
-title: Kling 3 Power Plant Cooling Corridor
+title: "Power Plant Cooling Corridor"
 date: 2026-03-20T14:18:00Z
 image: /prompts/2026-03/kling-3-power-plant-corridor/cover.jpg
 video: /prompts/2026-03/kling-3-power-plant-corridor/video.mp4

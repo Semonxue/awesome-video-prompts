@@ -2,7 +2,7 @@
 image: /prompts/2026-03/2034118019253760311-seedance-western-world/cover.jpg
 video: /prompts/2026-03/2034118019253760311-seedance-western-world/video.mp4
 date: 2026-03-18
-title: Seedance 2.0 Western World
+title: "Western World Escape"
 description: |
     00:00–00:02（2s）【开场钩子 - 逃离追杀】 景别：高空俯拍转低角度推近 场景：西部世界地下控制层，白色走廊，墙面密布蓝色全息数据流，灯管频闪 服装： 女主【
     图片1

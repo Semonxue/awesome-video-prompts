@@ -2,7 +2,7 @@
 image: /prompts/2026-03/2029418505679060994-seedance-vlog-performance-review/cover.jpg
 video: /prompts/2026-03/2029418505679060994-seedance-vlog-performance-review/video.mp4
 date: 2026-03-05
-title: "Seedance Vlog Performance Review"
+title: "Vlog Performance Review"
 description: |
     【核心约定】
     大师级画质，极致细节，8k超高清，电影级光效，高度细节化的纹理，锐利的边缘，无噪点，专业色彩分级。同一位亚洲女孩，完美身材，保持面部特征一致，人物面部特征参考@【@图1】。

@@ -1,5 +1,5 @@
 ---
-title: Kling 3 Multi-Shot Volcanic Rover
+title: "Volcanic Rover Escape"
 date: 2026-03-21T15:30:09Z
 image: /prompts/2026-03/kling-3-multi-shot-volcanic/cover.jpg
 video: /prompts/2026-03/kling-3-multi-shot-volcanic/video.mp4

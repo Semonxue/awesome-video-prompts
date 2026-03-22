@@ -1,5 +1,5 @@
 ---
-title: "Cinematic Lighting Tutorial - Seedance 2.0"
+title: "Cinematic Lighting Tutorial"
 image: /prompts/2026-03/2035411720353583249-cinematic-lighting-seedance/cover.jpg
 video: /prompts/2026-03/2035411720353583249-cinematic-lighting-seedance/video.mp4
 date: 2026-03-21

@@ -1,5 +1,5 @@
 ---
-title: "Music Performance Seedance"
+title: "Music Performance"
 date: 2026-03-14
 image: "/prompts/2026-03/2032928759486046208-music-performance-seedance/cover.jpg"
 video: "/prompts/2026-03/2032928759486046208-music-performance-seedance/video.mp4"

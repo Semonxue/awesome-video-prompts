@@ -2,7 +2,7 @@
 image: /prompts/2026-03/2029715718409965570-seedance-smooth-action-video/cover.jpg
 video: /prompts/2026-03/2029715718409965570-seedance-smooth-action-video/video.mp4
 date: 2026-03-06
-title: "Seedance Smooth Action Video"
+title: "Smooth Action Dance"
 description: |
     [主体]：参考所上传照片中的女性，换上K-pop舞台风格服装。人物面部参考@【@图1】上身米白色镂空针织短款长袖罩衫，内搭肤色抹胸，高腰复古蓝色牛仔短裤配豹纹毛绒边缘，深色皮质腰带挂棕色爱心毛绒挂件。气质温婉中带着力量感，五官精致清晰，面部稳定不变形，同一角色一致性。
 

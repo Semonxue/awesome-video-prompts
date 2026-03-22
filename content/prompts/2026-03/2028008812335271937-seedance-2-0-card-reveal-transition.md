@@ -2,7 +2,7 @@
 image: /prompts/2026-03/2028008812335271937-seedance-2-0-card-reveal-transition/cover.jpg
 video: /prompts/2026-03/2028008812335271937-seedance-2-0-card-reveal-transition/video.mp4
 date: 2026-03-01
-title: Seedance Card Reveal Transition Video
+title: "Card Reveal Transition"
 description: |
     为首帧锁定初始形象，比例 16:9，总时长 10s。画面以 Diagonal Low-angle Medium Close-up（对角线低仰角近景） 开场。
 
