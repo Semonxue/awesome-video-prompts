@@ -2,7 +2,7 @@
 image: /prompts/2026-02/2027726562133741574-seedance-2-0-face-changing-performance/cover.jpg
 video: /prompts/2026-02/2027726562133741574-seedance-2-0-face-changing-performance/video.mp4
 date: 2026-02-28
-title: Seedance Face Changing Performance
+title: "Chinese Opera Face Changing Performance"
 description: |
     第1段提示词：
     16:9横屏，中国戏曲舞台风格，红金暖色调聚光照明。京剧演员身着黑金绣花戏服立于舞台中央，背对镜头站立 ，身姿挺拔。镜头快速推向演员背影，音乐骤停瞬间，演员猛然转身面向观众——红色关公脸谱，怒目圆睁，威严 正气。演员挥动右手折扇遮挡面部，扇落瞬间变脸为白色曹操脸谱，眉眼阴鸷，狡诈多疑。再挥袖变金色猴王脸 谱，嬉笑顽皮。三次变脸配合身体旋转动作，袍袖翻飞，身法矫健。舞台背景虚化，金红绣幕隐约可见。 音效：京剧锣鼓点「锵锵锵」急促敲击，每次变脸时配合响亮的「咚」重音，演员脚步踏地声。

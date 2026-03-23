@@ -2,7 +2,7 @@
 image: /prompts/2026-02/2027732612467593217-seedance-2-0-knife-shield-vs-cat-meme-fight/cover.jpg
 video: /prompts/2026-02/2027732612467593217-seedance-2-0-knife-shield-vs-cat-meme-fight/video.mp4
 date: 2026-02-28
-title: Seedance Knife Shield vs Cat Meme Fight
+title: "Wuxia Battle: Knife vs Shield"
 description: |
     镜头1：开场即激战·武器对撞 雾山五行正统国漫画风，锐利硬边水墨线条，高对比红黑色调。
     开场无铺垫，两名侠客持武器正面硬撼，刀剑/长兵激烈碰撞，火花与墨色气浪同时爆发。

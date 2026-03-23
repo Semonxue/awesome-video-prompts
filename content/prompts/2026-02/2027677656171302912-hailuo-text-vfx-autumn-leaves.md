@@ -2,7 +2,7 @@
 image: /prompts/2026-02/2027677656171302912-hailuo-text-vfx-autumn-leaves/cover.jpg
 video: /prompts/2026-02/2027677656171302912-hailuo-text-vfx-autumn-leaves/video.mp4
 date: 2026-02-28
-title: Hailuo Autumn Leaves Text VFX
+title: "Autumn Leaves Text VFX"
 description: |
     Diving into autumn leaves spiraling in a forest clearing
     The camera spins through falling leaves caught in a sudden gust. Their motion synchronizes into "TURN" before scattering across the forest floor.

@@ -2,7 +2,7 @@
 image: /prompts/2026-02/2027770239514251265-seedance-2-0-chinese-comic-fight-video/cover.jpg
 video: /prompts/2026-02/2027770239514251265-seedance-2-0-chinese-comic-fight-video/video.mp4
 date: 2026-02-28
-title: Seedance Chinese Comic Fight Video
+title: "Wuxia Sword vs Umbrella Duel"
 description: |
     15秒的电影级CG短片，场景是覆雪的破败演武场，细雪纷飞。 
     【@图1】手持双剑，面容清冷。 

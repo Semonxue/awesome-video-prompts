@@ -2,7 +2,7 @@
 image: "prompts/2026-02/2025780528969125888-nano-banana-pro-image-to-google-veo-3-1-video/cover.jpg"
 video: "prompts/2026-02/2025780528969125888-nano-banana-pro-image-to-google-veo-3-1-video/video.mp4"
 date: 2026-02-23
-title: "Nano Banana Pro Image to Google Veo 3.1 Video"
+title: "Fashion Vlog Portrait Video"
 description: |
     【プロンプト】
     正面を向いた動画風のショットを作成。カメラは顔の高さで固定、被写体の真正面に配置。被写体は姿勢と構図から座っていることが示されている。

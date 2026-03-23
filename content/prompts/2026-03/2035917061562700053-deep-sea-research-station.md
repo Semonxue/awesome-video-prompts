@@ -1,6 +1,7 @@
 ---
 title: "Deep Sea Research Station Horror"
 date: 2026-03-23
+author: vadooai
 models: ["seedance2"]
 tags: ["horror", "cinematic", "underwater"]
 description: |
