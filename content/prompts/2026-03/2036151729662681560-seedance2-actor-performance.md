@@ -1,5 +1,5 @@
 ---
-title: "Seedance 2.0 Actor Performance"
+title: "Emotional Monologue"
 date: 2026-03-23T18:42:56Z
 image: /prompts/2026-03/2036151729662681560-seedance2-actor-performance/cover.jpg
 video: /prompts/2026-03/2036151729662681560-seedance2-actor-performance/video.mp4

@@ -1,5 +1,5 @@
 ---
-title: "Historical Fantasy Battle"
+title: "Epic Desert Warfare"
 date: 2026-03-23T22:07:05Z
 image: /prompts/2026-03/2036203106170552593-historical-fantasy-battle/cover.jpg
 video: /prompts/2026-03/2036203106170552593-historical-fantasy-battle/video.mp4

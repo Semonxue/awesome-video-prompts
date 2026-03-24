@@ -1,5 +1,5 @@
 ---
-title: "Full Payment No Installments"
+title: "Car to Bicycle Twist"
 date: 2026-03-24T05:02:32Z
 image: /prompts/2026-03/2036307653501079712-full-payment-no-installments/cover.jpg
 video: /prompts/2026-03/2036307653501079712-full-payment-no-installments/video.mp4
