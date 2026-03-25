@@ -1,5 +1,5 @@
 ---
-title: "Nescafé Coffee Commercial Cinematic Scene"
+title: "Floating Coffee Bean Ad"
 date: 2026-03-24T12:31:10Z
 image: /prompts/2026-03/2036420557974155679-nescafe-coffee-commercial/cover.jpg
 video: /prompts/2026-03/2036420557974155679-nescafe-coffee-commercial/video.mp4

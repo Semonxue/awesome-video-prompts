@@ -1,5 +1,5 @@
 ---
-title: "Seedance 2.0 Martial Arts Dojo Battle"
+title: "Martial Arts Duel"
 date: 2026-03-24T14:19:50Z
 image: /prompts/2026-03/2036447905406505335-seedance-martial-arts-dojo/cover.jpg
 video: /prompts/2026-03/2036447905406505335-seedance-martial-arts-dojo/video.mp4

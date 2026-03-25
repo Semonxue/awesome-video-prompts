@@ -1,5 +1,5 @@
 ---
-title: "Cinematic Cyberpunk Mecha City Destruction"
+title: "Cyberpunk City Destruction"
 date: 2026-03-24T10:44:45Z
 image: /prompts/2026-03/2036393776319701205-easemate-cyberpunk-mecha/cover.jpg
 video: /prompts/2026-03/2036393776319701205-easemate-cyberpunk-mecha/video.mp4

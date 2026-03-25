@@ -2,7 +2,7 @@
 image: /prompts/2026-03/2036471835097964991-seedance-zootopia-donut/video_00001.jpg
 video: /prompts/2026-03/2036471835097964991-seedance-zootopia-donut/video_00001.mp4
 date: "2026-03-24"
-title: "Seedance 2.0 Zootopia Donut Comedy Short"
+title: "Police Chase Donut"
 description: |
     15-second comedic animated short in the world and visual tone of Zootopia. High-quality stylized 3D animation, expressive facial acting, clean readable slapstick, bright police-station interior, polished reflective floor, warm indoor daylight. Visual comedy only, little or no dialogue.
 
