@@ -1,5 +1,5 @@
 ---
-title: "Seedance Ocean Assembly"
+title: "Ocean Assembly"
 date: 2026-03-12T00:00:00+08:00
 image: /prompts/2026-03/2032210478529978368-seedance-ocean-assembly/cover.jpg
 video: /prompts/2026-03/2032210478529978368-seedance-ocean-assembly/video.mp4
