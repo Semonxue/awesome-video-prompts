@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/2036471835097964991-seedance-zootopia-donut/video_00001.jpg
-video: /prompts/2026-03/2036471835097964991-seedance-zootopia-donut/video_00001.mp4
+image: /prompts/2026-03/2036471835097964991-seedance-zootopia-donut/cover.jpg
+video: /prompts/2026-03/2036471835097964991-seedance-zootopia-donut/video.mp4
 date: "2026-03-24"
 title: "Police Chase Donut"
 description: |
