@@ -7,13 +7,12 @@ video: /prompts/2026-03/2037151187670372736-funny-cat-classroom-prank/video.mp4
 author: Adam也叫吉米
 source_url: https://x.com/Adam38363368936/status/2037151187670372736
 models:
-  - seedance
+  - seedance2
 tags:
   - comedy
   - classroom
   - funny
   - cat
-  - seedance
 description: |
   场景在一间教室，@【@图1】和@【@图2】正在座位上聊天。@【@图1】面对@【@图2】用童声说：我家亲戚今年挣了好多东西，我大伯挣了个屁，我三叔挣了个毛，我小舅挣了个锤子，我堂哥挣了个妹，我大姑挣了个球，我小姨最厉害，她挣了个鬼！@【@图2】听完表情瞬间恐怖。视频要求场景真实，气氛轻松搞笑。
 ---
