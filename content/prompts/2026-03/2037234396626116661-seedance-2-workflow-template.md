@@ -2,7 +2,7 @@
 image: /prompts/2026-03/2037234396626116661/cover.jpg
 video: /prompts/2026-03/2037234396626116661/video.mp4
 date: 2026-03-26
-title: Seedance 2 Cinematic Workflow Template
+title: Cinematic Workflow Template
 description: |
   [CINEMATIC SETUP]
   [Film stock / lens / aperture / camera behavior]. [Color grade]. [Lighting source]. [Atmosphere]. [Audio: sound FX only / no music]. Face stable, no deformation.

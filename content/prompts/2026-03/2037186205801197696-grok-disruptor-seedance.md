@@ -2,7 +2,7 @@
 image: /prompts/2026-03/2037186205801197696/cover.jpg
 video: /prompts/2026-03/2037186205801197696/video.mp4
 date: 2026-03-26
-title: 降维打击 (The Disruptor)
+title: The Disruptor
 description: |  
   视频主题：《降维打击》(The Disruptor)
   时长： 15秒
