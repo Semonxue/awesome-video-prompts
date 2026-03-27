@@ -1,7 +1,7 @@
 任务：将下载的 X 视频转换为 Hugo 提示词内容（优化版）
 
 ### 输入上下文：
-
+- 先使用x帖子地址判断是否已经重复存在（一定要全字段匹配）
 - 使用 tools/dl-x-videos.py + x帖子地址 下载视频及元数据，存储在 temp/<TWEET_ID>/ 目录。
 - temp/<TWEET_ID>/ 目录包含：info.json, video.mp4 (原画), preview_480p.mp4 (预览), video.jpg。
 - 检查在prompts中是否已经存在了<TWEET_ID>对应的资源，已经存在的话则提示用户
