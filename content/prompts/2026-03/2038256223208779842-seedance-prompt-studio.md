@@ -1,0 +1,19 @@
+---
+title: Seedance 2.0 - Prompt Studio
+date: 2026-03-29T14:05:27+00:00
+image: /prompts/2026-03/2038256223208779842-seedance-prompt-studio/cover.jpg
+video: /prompts/2026-03/2038256223208779842-seedance-prompt-studio/video.mp4
+description: |
+  CHARACTER REFERENCE Imagen1= warrior's face. Imagen2 = red robotic armor reference. IMAX 70mm film texture, Panavision 35mm lens, f4, handheld sway. Live-action sci-fi, 4K, shallow DOF bokeh, cold teal-blue tone, red energy sword as only warm light. Dense industrial fog. Hard cuts. SFX only, no music. Face stable, no deformation. 0-1s: CU face. Imagen1 without helmet, calm, cold blue sidelight. Camera pushes in. Red modular mechanical Imagen2Element-type full helmet (no visor) assembles around face, pieces locking precisely. Mechanical hum. 1-3s: CU hand. Right palm up, fingers spread. Red energy particles spiral inward, condensing into a sword hilt, circuit textures forming. Energy hum. 3-4s: Side CU. Hand grips hilt — red blade erupts upward, particles solidifying into translucent blade. Fully armored warrior in Imagen2Element-type red suit turns forward. Explosive hum. 4-5s: Behind MS. Warrior with sword at edge of industrial platform. Six black chitinous creatures appear in fog, red eyes glowing in pairs. Camera pulls back revealing encirclement. Shrieks. 5-6s: Low angle. Warrior combat stance. Six red eye-pairs in fog. Crane frames and cables above. Boots stamp ground. Sword hum rises. 6-7s: First creature charges. Warrior meets it — horizontal slash through midsection, creature flung 3m into railing, bending it. Red arc trail lingers. Camera side-tracks full sequence. Shell tear + metal impact sounds. 7-8s: Second creature from left — backhand slash severs forelimb, red sparks trailing. Third attacks from right — warrior spin-kicks it into the fourth, both tumble off frame. Camera orbits rapidly. Severed limb + kick impact + collision sounds. 8-9s: CU Imagen2helmet faceplate splattered with black fluid. Heavy filtered breathing. Red sword light on metallic surfaces. 9-10s: Fifth creature ambushes from behind. Warrior reverse-grips sword, thrusts backward through creature's chest, red light exits its back. Spins and flings impaled creature into the sixth. Both vanish into fog. Camera tracks fling trajectory. Piercing + screech + distant collision sounds. 10-11s: Overhead FS. Battlefield — six creatures down, missing limbs, pierced. Black fluid on metal floor, bent railings. Warrior center, sword dripping red droplets. Silence. Creaking echo, droplets hissing. 11-12s: Low CU. Red armored boots stepping through black fluid, blue-red reflections. Heavy footsteps. Metal floor begins violently trembling. Warrior stops. Camera rises to helmet. Deep tremor — massive footsteps approaching like earthquakes. 12-13s: Front MS. Warrior raises head. Two enormous red lights ignite in fog — ten times wider than creatures' eyes. Massive black silhouette emerges, head reaching crane frames, 10x warrior's size. Sword hum rises. Camera ascends revealing Boss scale. Seismic thuds, cables rattling, structures groaning. 13-14s: ECU helmet faceplate — black fluid and moisture on metallic plates. Boss reflected: massive chitinous body, four arms, pulsing dark red chest core, curved horns, burning red eyes. Camera pushes into intricate patterns. Boss steps shake platform. 14-15s: ECU helmet optical sensors. Warrior speaks one word, low, filtered through helmet speaker: "ADELANTE". Spatial reverb, metallic tone. Instantly lunges into a charge. Camera rushes forward. Frame ends in sprint motion blur. "Adelante" with reverb, sword hum erupts to max, boots pounding, Boss roar colliding with charge.
+models:
+  - seedance2
+tags:
+  - seedance
+  - prompt
+  - demo
+author: pabloprompt
+source_url: https://twitter.com/pabloprompt/status/2038256223208779842
+full_text: "Seedance 2.0 is 🔥\n\nPrompt 👇🏼 https://t.co/Pb5bzlNsc4"
+---
+
+**Seedance 2.0 - Prompt Studio Demo**
