@@ -4,9 +4,9 @@
 
 ![Prompt Count](https://img.shields.io/badge/dynamic/json?label=Prompts&query=$.prompt_count&url=https%3A%2F%2Fawesomevideoprompts.com%2Fapi%2Fstats.json)
 ![Models](https://img.shields.io/badge/19-Models-blue)
-![Tags](https://img.shields.io/badge/180%2B-Tags-green)
+![Tags](https://img.shields.io/badge/200%2B-Tags-green)
 
-**🎬 677 条精选提示词** | **19 个主流模型** | **180+ 个标签分类**
+**🎬 1096 条精选提示词** | **20+ 个主流模型** | **200+ 个标签分类**
 
 </div>
 
@@ -26,11 +26,11 @@
 
 | 模型 | 提示词数量 |
 |------|-----------|
-| Seedance 2.0 | 203 |
-| Kling 3.0 | 145 |
-| Kling 2.6 | 53 |
-| Grok | 40 |
-| Veo 3.1 | 31 |
+| Seedance 2.0 | 327 |
+| Kling 3.0 | 177 |
+| Kling 2.6 | 41 |
+| Grok | 33 |
+| Veo 3.1 | 26 |
 | Hailuo (MiniMax) | 15 |
 | Vidu Q3 | 10 |
 | Gen 4.5 | 9 |
