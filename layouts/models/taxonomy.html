@@ -360,7 +360,7 @@
           <div class="video-loader" style="display: none; position: absolute; inset: 0; align-items: center; justify-content: center; z-index: 4; background: rgba(0,0,0,0.1);">
             <span style="color: white; font-weight: 500; background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 4px; font-size: 12px;">{{ T "loading" | default "Loading..." }}</span>
           </div>
-          <video class="prompt-hover-video" src="${videoUrl}" loop playsinline muted style="display: none; opacity: 0; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 5; transition: opacity 0.3s;"></video>
+          <video class="prompt-hover-video" data-src="${videoUrl}" loop playsinline muted style="display: none; opacity: 0; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 5; transition: opacity 0.3s;"></video>
         ` : ''}
         ${modelBadgesHTML}
         <div class="prompt-overlay">
@@ -530,6 +530,10 @@
       video.dataset.eventAttached = 'true';
       
       card.addEventListener('mouseenter', () => {
+        if (!video.src && video.dataset.src) {
+          video.src = video.dataset.src;
+        }
+
         if (video.readyState < 2) {
           if (loader) loader.style.display = 'flex';
           video.load();

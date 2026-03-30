@@ -1518,6 +1518,11 @@
         wrapper.addEventListener('mouseenter', () => {
           clearTimeout(fadeOutTimeout);
           
+          if (!video.src && video.dataset.src) {
+            video.src = video.dataset.src;
+            video.load();
+          }
+
           if (loader) loader.style.display = 'flex';
           video.style.display = 'block';
           // Ensure opacity starts at 0 if we are just starting, but if we are interrupting a fade out, it might be mid-way.
