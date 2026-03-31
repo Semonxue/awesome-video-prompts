@@ -4,19 +4,15 @@ video: /prompts/2026-03/2038884607064498360-lamborghini-brand-commercial/video.m
 date: 2026-03-31
 title: "Lamborghini Brand Commercial"
 description: |
-  Cinematic Lamborghini brand creative advertisement with hyper-realistic first-person high-speed chase camera, extremely strong visual impact, smooth continuous camera movement, overall high-end, cold, and highly aggressive temperament. Create a simple but extremely aggressive first-person high-speed shuttle advertisement.
-
-  0-3s: In a dark and deep black metallic texture space, a completely black bull with extremely clear muscle lines, restrained metallic cold light on the skin surface suddenly rushes out at high speed. The camera follows closely from the first-person perspective at the bull's head side, almost brushing against the horns, forehead bone line, neck muscles and shoulder back ups and downs at high speed.
-
-  3-5s: The camera suddenly presses forward and accelerates, pushing extremely close to the bull's eye and horn root close-up. The transition uses the horn arc, eye reflection and bone structure for seamless scene change, instantly connecting to the Lamborghini front lights, wedge-shaped nose and sharp fold line close-up.
-
-  5-8s: After entering the Lamborghini front and headlight world, the camera continues with first-person high-speed shuttle, passing along the sharp light group, low-profile front hood cover, extremely cutting front face fold surface, air intake and wedge-shaped profile. The overall color uses Lamborghini's iconic bright yellow or matte black main body, paired with black shadows, cold white metallic highlights and a small amount of orange thermal energy reflection, restrained, high-end, dangerous.
-
-  8-11s: The camera continues to accelerate, passing along the sharp curved surface of the car side, diving toward the wheel hub and tires at high speed, high-speed ground-level shuttle. Wheel hub rotation, brake calipers, carbon fiber side skirts, air channels, door cut lines, rear aerodynamic structure flash in succession.
-
-  11-13s: The camera once again quickly pushes forward, the entire Lamborghini body is completely established in the speed, wedge-shaped low-profile proportion, sharp light group, exaggerated air intake structure, car side carved curved surface, wide wheel group and extremely aggressive posture all clearly shaped.
-
-  13-15s: The camera ends at a low-angle hero shot from the front side of the car head, a complete Lamborghini supercar stable forward or just定格, the body extremely low, wide, sharp, like a blade cutting through space.
+    电影级兰博基尼品牌创意广告，超写实，第一人称高速追随镜头，极强视觉冲击，丝滑连续运镜，整体气质高级、冷酷、极具侵略性。打造一支简约但攻击性极强的第一人称高速穿梭广告。不要低质赛博变形，不要直接把整头公牛生硬变成车，而是通过局部特写、反光、结构线条与视觉转场，把公牛的原始力量与爆发感自然转译成兰博基尼的机械雕塑感、空气动力学和极限速度。全程无背景音乐，仅保留高质量拟音与空间音效。整体时长15秒内，每3秒必须有明显视觉升级，避免单镜头平淡拖沓。
+    【0-3s】黑暗与深黑金属质感空间中，一头通体深黑、肌肉线条极其清晰、皮肤表面带有克制金属冷光的狂暴公牛突然高速冲出。镜头以第一人称紧贴公牛头部侧前方高速追随，几乎擦着牛角、额头骨线、颈部肌肉和肩背起伏前冲。开场必须有极强贴脸压迫感，不要平拍，不要普通奔跑镜头，要像速度和力量直接顶到镜头前，风压扑面，画面极简，只保留少量冷白高光、黑色阴影、空气压迫感与速度残影。
+    【3-5s】镜头突然前压加速，极近距离推进到公牛眼部与牛角根部特写，眼神中带有冰冷攻击性，反光里出现一道锋利的冷白光刃、橙色能量余辉与金属切面高光。利用牛角弧线、眼部反光和骨骼结构做无缝转场，瞬间衔接到兰博基尼前灯、楔形车鼻与锋利折线的局部特写。这个转场必须丝滑、极快、高级，像兰博基尼本来就潜伏在公牛的力量结构里。
+    【5-8s】进入兰博基尼车头与前灯世界后，镜头继续第一人称高速前冲，贴着车头侧前方掠过锐利灯组、低趴前舱盖、切削感极强的前脸折面、进气口与楔形轮廓。镜头沿着车身肩线高速滑行，延续刚才贴着公牛肌肉与骨线前冲的惯性，让生物的爆发结构自然过渡成机械曲面与刀锋折线。整体色彩以兰博基尼标志性的亮黄或哑黑主车身为主，搭配黑色阴影、冷白金属高光与少量橙色热能反光，克制、高级、危险。
+    【8-11s】镜头继续加速，掠过车侧锋利曲面，俯冲冲向轮毂与轮胎，高速贴地穿梭。轮毂旋转、刹车卡钳、碳纤维侧裙、空气通道、车门切线、尾部空气动力学结构依次闪现。运镜要像被一股不可控的暴力速度拖拽着向前，连续俯冲、绕侧、贴地前压、从车身折面和缝隙边缘擦过，维持极强第一视角爽感。镜头语言强调机械兽性的压迫感，不要温和，不要优雅游走，要像一台暴怒的超级跑车在撕开空气。
+    【11-13s】镜头再一次快速前冲，整个兰博基尼车身在速度中被完整建立，楔形低趴比例、锐利灯组、夸张进气结构、车侧雕刻曲面、宽大轮组与极具攻击性的姿态全部清晰成型。镜头可短暂沿车顶或车侧高速掠行，再拉到车头侧前方，完成最后一次动势积累。要让整辆车像一头真正完成机械觉醒的公牛，力量感和品牌识别同时拉满。
+    【13-15s】镜头收于低机位车头侧前方英雄镜头，一辆完整的兰博基尼超级跑车稳定前冲或刚刚定格，车身极低、极宽、极锋利，像刀锋一样切开空间。车漆反光冷酷克制，背景只保留少量赛道热浪、空气流线、轮胎残影和速度余波。结尾必须短、狠、有压迫感，像在宣告：原始野性，最终被锻造成兰博基尼的速度机器。
+    音效设计：开场使用低频能量脉冲、公牛沉重踏地、鼻息、皮肤掠风、贴脸风切与空气压缩声；推进到眼部与牛角时加入一记极细锐、极克制的空气收束与金属光刃转场音；进入兰博基尼局部后强化金属掠风、车漆表面气流滑过、轮毂旋转、碳纤维震颤、刹车系统轻鸣、灯组唤醒与空间whoosh；结尾突出轮胎压地、车体稳定落位、空气被切开的余震和低频收束感。全程不要背景音乐。
+    特殊控制：锁定品牌气质为兰博基尼式冷酷、锋利、侵略性、机械兽性和极限速度美学；镜头必须连续丝滑；每段都要有明确视觉升级；动作合理，转场自然，无卡顿无跳变；不要低质赛博朋克，不要廉价机甲变形感，不要普通跑车宣传片质感，必须像顶级超跑品牌的高端创意广告。
 models: seedance2
 tags: [advertisement, car, racing, luxury, action]
 author: "John"
