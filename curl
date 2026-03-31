@@ -1,0 +1,7 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0Warning: Failed to open the file temp/2038821176714428755/video.mp4: No such 
+Warning: file or directory
+  0 49.6M    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+curl: (56) Failure writing output to destination, passed 1360 returned 4294967295
+Warning: Got more output options than URLs
