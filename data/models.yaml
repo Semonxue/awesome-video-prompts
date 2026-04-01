@@ -124,3 +124,10 @@ wan26:
   url: https://manganow.ai/
   description: >-
     Wan 2.6 text-to-video model by MangaNow, supporting anime-style video generation with detailed prompts and cinematic effects. Approximate launch: 2026.
+pixverse:
+  name: PixVerse
+  company: PixVerse
+  slug: pixverse
+  url: https://pixverse.ai/
+  description: >-
+    PixVerse AI video generation model, supporting cinematic shots, action sequences, and creative content generation. Approximate launch: 2024.
