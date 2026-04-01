@@ -6,7 +6,8 @@
 {{ $tag := .tag }}
 {{ $site := .site }}
 {{ $lang := $site.Language.Lang }}
-{{ $tagData := index $site.Data.tags $tag }}
+{{ $tagStr := string $tag }}
+{{ $tagData := index $site.Data.tags $tagStr }}
 
 {{ if $tagData }}
   {{ index $tagData "en" | default $tag }}

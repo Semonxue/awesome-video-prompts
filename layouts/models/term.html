@@ -248,8 +248,9 @@
           {{ $tagCounts := dict }}
           {{ range .Data.Pages }}
             {{ range .Params.tags }}
-              {{ $count := index $tagCounts . | default 0 }}
-              {{ $tagCounts = merge $tagCounts (dict . (add $count 1)) }}
+              {{ $tagKey := string . }}
+              {{ $count := index $tagCounts $tagKey | default 0 }}
+              {{ $tagCounts = merge $tagCounts (dict $tagKey (add $count 1)) }}
             {{ end }}
           {{ end }}
           
