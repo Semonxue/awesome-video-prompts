@@ -25,7 +25,7 @@
 - 迁移封面图：cp temp/<TWEET_ID>/video.jpg static/prompts/<YYYY-MM>/<Slug>/cover.jpg
 - 迁移视频 (仅预览版)：
 - cp temp/<TWEET_ID>/preview_480p.mp4 static/prompts/<YYYY-MM>/<Slug>/video.mp4
-- 把封面图尺寸宽度压缩到600px，保持比例
+- 把封面图尺寸宽度压缩到600px，保持比例，视频压缩到480p，体积控制在1M之内
 (注：优先使用生成的 480p/preview 版本以节省带宽，若无预览版则使用原版)
 
 ### 生成 Markdown 内容 (Content Generation)
