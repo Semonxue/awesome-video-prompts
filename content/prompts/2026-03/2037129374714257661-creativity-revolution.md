@@ -1,7 +1,6 @@
 ---
 title: "Creativity Revolution"
 date: 2026-03-26T19:27:45+08:00
-draft: true
 image: /prompts/2026-03/2037129374714257661-creativity-revolution/cover.jpg
 video: /prompts/2026-03/2037129374714257661-creativity-revolution/video.mp4
 author: Latte

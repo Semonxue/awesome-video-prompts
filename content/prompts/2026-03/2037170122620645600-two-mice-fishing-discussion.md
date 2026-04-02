@@ -1,7 +1,6 @@
 ---
 title: "Two Mice Fishing Discussion"
 date: 2026-03-26T22:09:40+08:00
-draft: true
 image: /prompts/2026-03/2037170122620645600-two-mice-fishing-discussion/cover.jpg
 video: /prompts/2026-03/2037170122620645600-two-mice-fishing-discussion/video.mp4
 author: Runway

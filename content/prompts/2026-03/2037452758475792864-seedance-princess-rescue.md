@@ -1,7 +1,6 @@
 ---
 title: "You Can't Always Save the Princess"
 date: 2026-03-27T16:52:46+08:00
-draft: true
 models:
   - seedance
 tags:

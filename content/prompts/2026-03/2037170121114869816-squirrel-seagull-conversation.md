@@ -1,7 +1,6 @@
 ---
 title: "Squirrel and Seagull Conversation"
 date: 2026-03-26T22:09:40+08:00
-draft: true
 image: /prompts/2026-03/2037170121114869816-squirrel-seagull-conversation/cover.jpg
 video: /prompts/2026-03/2037170121114869816-squirrel-seagull-conversation/video.mp4
 author: Runway

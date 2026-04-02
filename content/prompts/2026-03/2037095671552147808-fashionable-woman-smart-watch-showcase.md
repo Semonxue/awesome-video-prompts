@@ -1,7 +1,6 @@
 ---
 title: "Fashionable Woman Smart Watch Showcase"
 date: 2026-03-26T17:13:50+08:00
-draft: true
 image: /prompts/2026-03/2037095671552147808-fashionable-woman-smart-watch-showcase/cover.jpg
 video: /prompts/2026-03/2037095671552147808-fashionable-woman-smart-watch-showcase/video.mp4
 author: Adam也叫吉米

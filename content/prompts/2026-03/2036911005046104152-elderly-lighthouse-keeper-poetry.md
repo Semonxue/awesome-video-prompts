@@ -1,7 +1,6 @@
 ---
 title: "Elderly Lighthouse Keeper Poetry"
 date: 2026-03-26T05:00:02+08:00
-draft: true
 image: /prompts/2026-03/2036911005046104152-elderly-lighthouse-keeper-poetry/cover.jpg
 video: /prompts/2026-03/2036911005046104152-elderly-lighthouse-keeper-poetry/video.mp4
 author: Toshi

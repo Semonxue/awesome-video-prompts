@@ -1,7 +1,6 @@
 ---
 title: "Cyber Warrior vs Villain"
 date: 2026-03-26T20:07:14+08:00
-draft: true
 image: /prompts/2026-03/2037139311938646257-cyber-warrior-vs-villain/cover.jpg
 video: /prompts/2026-03/2037139311938646257-cyber-warrior-vs-villain/video.mp4
 author: John

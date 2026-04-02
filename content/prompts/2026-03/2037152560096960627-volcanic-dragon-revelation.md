@@ -1,7 +1,6 @@
 ---
 title: "Volcanic Dragon Revelation"
 date: 2026-03-26T20:59:53+08:00
-draft: true
 image: /prompts/2026-03/2037152560096960627-volcanic-dragon-revelation/cover.jpg
 video: /prompts/2026-03/2037152560096960627-volcanic-dragon-revelation/video.mp4
 author: Mr Das

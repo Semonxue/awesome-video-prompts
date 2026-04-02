@@ -1,7 +1,6 @@
 ---
 title: "Ultra-Luxury Jewelry Commercial"
 date: 2026-03-26T17:30:04+08:00
-draft: true
 image: /prompts/2026-03/2037099759740031401-luxury-jewelry-commercial/cover.jpg
 video: /prompts/2026-03/2037099759740031401-luxury-jewelry-commercial/video.mp4
 author: LudovicCreator

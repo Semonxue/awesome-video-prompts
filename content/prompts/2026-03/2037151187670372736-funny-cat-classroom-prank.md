@@ -1,7 +1,6 @@
 ---
 title: "Funny Cat Classroom Prank"
 date: 2026-03-26T20:54:26+08:00
-draft: true
 image: /prompts/2026-03/2037151187670372736-funny-cat-classroom-prank/cover.jpg
 video: /prompts/2026-03/2037151187670372736-funny-cat-classroom-prank/video.mp4
 author: Adam也叫吉米
