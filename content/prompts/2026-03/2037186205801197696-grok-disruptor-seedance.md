@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/2037186205801197696/cover.jpg
-video: /prompts/2026-03/2037186205801197696/video.mp4
+image: /prompts/2026-03/2037186205801197696-grok-disruptor-seedance/cover.jpg
+video: /prompts/2026-03/2037186205801197696-grok-disruptor-seedance/video.mp4
 date: 2026-03-26
 title: The Disruptor
 description: |  

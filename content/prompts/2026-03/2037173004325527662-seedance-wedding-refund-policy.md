@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/2037173004325527662/cover.jpg
-video: /prompts/2026-03/2037173004325527662/video.mp4
+image: /prompts/2026-03/2037173004325527662-seedance-wedding-refund-policy/cover.jpg
+video: /prompts/2026-03/2037173004325527662-seedance-wedding-refund-policy/video.mp4
 date: 2026-03-26
 title: Wedding Refund Policy
 description: |

@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/2037129955054661939/cover.jpg
-video: /prompts/2026-03/2037129955054661939/video.mp4
+image: /prompts/2026-03/2037129955054661939-hailuo-earthquake-city-collapse/cover.jpg
+video: /prompts/2026-03/2037129955054661939-hailuo-earthquake-city-collapse/video.mp4
 date: 2026-03-26
 title: Earthquake City Collapse
 description: |  

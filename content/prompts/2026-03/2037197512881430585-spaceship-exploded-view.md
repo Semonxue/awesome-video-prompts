@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/2037197512881430585/cover.jpg
-video: /prompts/2026-03/2037197512881430585/video.mp4
+image: /prompts/2026-03/2037197512881430585-spaceship-exploded-view/cover.jpg
+video: /prompts/2026-03/2037197512881430585-spaceship-exploded-view/video.mp4
 date: 2026-03-26
 title: Exploded View Spaceship
 description: |

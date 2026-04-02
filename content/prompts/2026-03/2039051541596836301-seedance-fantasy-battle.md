@@ -1,8 +1,8 @@
 ---
 title: "Fantasy Battle Scene"
 date: 2026-03-31T18:45:45+08:00
-image: /prompts/2026-03/2039051541596836301/cover.jpg
-video: /prompts/2026-03/2039051541596836301/video.mp4
+image: /prompts/2026-03/2039051541596836301-seedance-fantasy-battle/cover.jpg
+video: /prompts/2026-03/2039051541596836301-seedance-fantasy-battle/video.mp4
 description: |
     A young heroic medieval warrior stands alone in the burning streets of a ruined cathedral city as a colossal giant emerges through smoke, fire, and collapsing gothic towers. He has a determined expression and a noble, fearless presence, wearing realistic medieval clothing with practical leather and steel armor, battle-worn fabric, sturdy boots, and carrying a longsword infused with subtle magical energy, faint glowing runes, and a restrained radiant aura. The environment is filled with shattered stone, drifting embers, broken stained glass, sparks, dust, and falling debris. The giant towers over the city with overwhelming scale and terrifying presence.
 

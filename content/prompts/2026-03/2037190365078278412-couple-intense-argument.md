@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/2037190365078278412/cover.jpg
-video: /prompts/2026-03/2037190365078278412/video.mp4
+image: /prompts/2026-03/2037190365078278412-couple-intense-argument/cover.jpg
+video: /prompts/2026-03/2037190365078278412-couple-intense-argument/video.mp4
 date: 2026-03-26
 title: Couple Intense Argument Scene
 description: |  

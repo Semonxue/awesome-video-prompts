@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/2037234396626116661/cover.jpg
-video: /prompts/2026-03/2037234396626116661/video.mp4
+image: /prompts/2026-03/2037234396626116661-seedance-2-workflow-template/cover.jpg
+video: /prompts/2026-03/2037234396626116661-seedance-2-workflow-template/video.mp4
 date: 2026-03-26
 title: Cinematic Workflow Template
 description: |

@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/2035018897091432532/cover.jpg
-video: /prompts/2026-03/2035018897091432532/video.mp4
+image: /prompts/2026-03/2035018897091432532-medieval-battle-multi-shot/cover.jpg
+video: /prompts/2026-03/2035018897091432532-medieval-battle-multi-shot/video.mp4
 date: 2026-03-20
 title: Medieval Battle Multi-Shot
 description: |

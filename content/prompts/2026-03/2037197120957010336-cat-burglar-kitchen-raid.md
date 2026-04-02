@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/2037197120957010336/cover.jpg
-video: /prompts/2026-03/2037197120957010336/video.mp4
+image: /prompts/2026-03/2037197120957010336-cat-burglar-kitchen-raid/cover.jpg
+video: /prompts/2026-03/2037197120957010336-cat-burglar-kitchen-raid/video.mp4
 date: 2026-03-26
 title: The Great Fish Heist - Cat Burglar Kitchen Raid
 description: |

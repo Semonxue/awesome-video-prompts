@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/2037277896323092559/cover.jpg
-video: /prompts/2026-03/2037277896323092559/video.mp4
+image: /prompts/2026-03/2037277896323092559-grandma-skateboard-pixar/cover.jpg
+video: /prompts/2026-03/2037277896323092559-grandma-skateboard-pixar/video.mp4
 date: 2026-03-26
 title: Grandma Skateboard Pixar Animation
 description: |
