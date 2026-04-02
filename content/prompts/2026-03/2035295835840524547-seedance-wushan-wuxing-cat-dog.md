@@ -1,7 +1,7 @@
 ---
 title: "雾山五行猫狗大决战"
-image: "/prompts/2026-03/seedance-wushan-wuxing-cat-dog/cover.jpg"
-video: "/prompts/2026-03/seedance-wushan-wuxing-cat-dog/video.mp4"
+image: "/prompts/2026-03/2035295835840524547-seedance-wushan-wuxing-cat-dog/cover.jpg"
+video: "/prompts/2026-03/2035295835840524547-seedance-wushan-wuxing-cat-dog/video.mp4"
 date: "2026-03-21"
 description: |
     雾山五行正统国漫画风，锐利硬边水墨线条，高对比红黑与青金主色调，电影级光影，国风奇幻战斗美学，强打击感，强能量碰撞感，16:9，时长15秒，画面流畅丝滑，动作连贯清晰，动态张力拉满，整体质感高级，特效炸裂但画面不乱。

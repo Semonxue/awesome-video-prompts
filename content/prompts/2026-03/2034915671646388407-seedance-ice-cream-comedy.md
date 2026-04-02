@@ -19,8 +19,8 @@ description: |
   0:07-0:09: Reaction cut into The Fake Victory. Medium close-up, 50mm. The cone lands in the waiting hand and the face bursts into victory, then the vendor peels the stretchy scoop away in one smooth move, leaving the cone bare for a beat. SFX: victory chime cut short, peel wobble, laughter pop, offended inhale.
   0:09-0:11: Insert cut into The Public Humiliation. Insert shot of a ceramic cat staring from a shelf. Smash cut to a medium shot, 35mm, as the figure sags into noodle posture, then puffs both cheeks and folds both arms while onlookers bounce with silent laughter. SFX: tiny huff, crowd laughter swell, cart bell tinkle.
   0:11-0:15: Whip pan transition into The Real Win. Medium close-up, 50mm. The vendor kneels and places the cone gently into the waiting hand with no trick this time. One still beat. The figure looks down, eyes sparkle, then the camera pulls back to a wide shot, 35mm, as the figure leans in for the first taste and the courtyard breaks into applause. SFX: soft handoff, held-breath pause, bright chime bloom, applause burst, warm music lift.
-image: /prompts/2026-03/seedance-ice-cream-comedy/cover.jpg
-video: /prompts/2026-03/seedance-ice-cream-comedy/video.mp4
+image: /prompts/2026-03/2034915671646388407-seedance-ice-cream-comedy/cover.jpg
+video: /prompts/2026-03/2034915671646388407-seedance-ice-cream-comedy/video.mp4
 models:
   - seedance2
 tags:

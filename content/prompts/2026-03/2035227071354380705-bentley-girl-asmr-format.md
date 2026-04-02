@@ -1,7 +1,7 @@
 ---
 title: "Bentley Girl ASMR Format"
-image: "/prompts/2026-03/bentley-girl-asmr-format/cover.jpg"
-video: "/prompts/2026-03/bentley-girl-asmr-format/video.mp4"
+image: "/prompts/2026-03/2035227071354380705-bentley-girl-asmr-format/cover.jpg"
+video: "/prompts/2026-03/2035227071354380705-bentley-girl-asmr-format/video.mp4"
 date: "2026-03-21"
 description: |  
   FORMAT: 15s / 68 BPM / 6 CUTS / cinematic realism, luxury creator-style car ASMR

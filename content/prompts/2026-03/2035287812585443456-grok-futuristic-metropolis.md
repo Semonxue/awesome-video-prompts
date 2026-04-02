@@ -1,8 +1,8 @@
 ---
 title: Grok Futuristic Metropolis
 date: 2026-03-21T09:30:02Z
-image: /prompts/2026-03/grok-futuristic-metropolis/cover.jpg
-video: /prompts/2026-03/grok-futuristic-metropolis/video.mp4
+image: /prompts/2026-03/2035287812585443456-grok-futuristic-metropolis/cover.jpg
+video: /prompts/2026-03/2035287812585443456-grok-futuristic-metropolis/video.mp4
 description: |
     A futuristic metropolis built on top of enormous moving clouds, with buildings anchored by massive cables descending into the sky below. The sun rises through the cloud ocean, lighting the floating city.Surreal architecture, epic sci-fi atmosphere
 models:

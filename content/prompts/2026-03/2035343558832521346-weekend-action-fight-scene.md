@@ -14,8 +14,8 @@ description: |
   与Boss
   图片2
   对峙完毕。 boss挣脱城墙的固定后抬腿朝主角踩过来，【15-23秒】两轮高速近身激战： **第一轮（15-19秒）**： - 女侠跃起踏Boss膝盖，借力翻身跃上Boss手臂中段 - 多重曝光叠加残影效果 - 双脚精准踏上Boss手臂关节点，冲击力震碎Boss石肤，石粉飞溅 - 银色能量纹沿Boss皮肤裂缝蔓延发光 - Boss张口低吼，骨臂反向上挑震开女侠 - 特写跟拍环绕，镜头以对决中心为轴微旋 - 腐骨碎裂声+异兽怒吼+银光嗡鸣 **第二轮（19-23秒）**： - 女侠落地后瞬间反击，闪身绕Boss侧面 - 连续重拳轰击Boss躯干，每击都震碎石肤 - Boss反击挥臂，女侠腾空翻越 - 多重曝光叠加双方动作轨迹 - 镜头紧贴主角移动，特写环绕 【23-30秒】终极大招+终结： - 女侠蓄势爆发，银色能量环绕全身 - 残影冲刺突进Boss，速度极快 - 连续三次重击轰穿Boss防御（慢动作+正常速度交替） - 最终一击正面轰穿Boss胸口，能量爆炸 - Boss重重坠地，废墟大范围爆裂 - 尘浪冲天，地面裂开巨大裂缝 - 镜头拉高俯拍全景，画面震撼，高潮拉满 全程动作自然连贯，战斗清晰，镜头酷炫不混乱，ACT游戏CG级爽感、压迫感与终结爆发
-image: /prompts/2026-03/weekend-action-fight-scene/cover.jpg
-video: /prompts/2026-03/weekend-action-fight-scene/video.mp4
+image: /prompts/2026-03/2035343558832521346-weekend-action-fight-scene/cover.jpg
+video: /prompts/2026-03/2035343558832521346-weekend-action-fight-scene/video.mp4
 models:
   - seedance2
 tags:

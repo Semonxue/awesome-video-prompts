@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/continuous-ocean-flight/cover.jpg
-video: /prompts/2026-03/continuous-ocean-flight/video.mp4
+image: /prompts/2026-03/2036614536958980237-continuous-ocean-flight/cover.jpg
+video: /prompts/2026-03/2036614536958980237-continuous-ocean-flight/video.mp4
 date: "2026-03-25"
 title: "Continuous Ocean Flight"
 description: |

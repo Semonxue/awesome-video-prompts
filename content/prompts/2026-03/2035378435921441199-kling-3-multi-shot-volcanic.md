@@ -1,8 +1,8 @@
 ---
 title: "Volcanic Rover Escape"
 date: 2026-03-21T15:30:09Z
-image: /prompts/2026-03/kling-3-multi-shot-volcanic/cover.jpg
-video: /prompts/2026-03/kling-3-multi-shot-volcanic/video.mp4
+image: /prompts/2026-03/2035378435921441199-kling-3-multi-shot-volcanic/cover.jpg
+video: /prompts/2026-03/2035378435921441199-kling-3-multi-shot-volcanic/video.mp4
 description: |
     SHOT1
     Wide cinematic aerial shot sweeping across a violent volcanic landscape.

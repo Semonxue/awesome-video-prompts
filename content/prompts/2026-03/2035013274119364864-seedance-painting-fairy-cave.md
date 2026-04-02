@@ -21,8 +21,8 @@ description: |
   
   要求：
   重点突出"挥笔泼彩、改写岩洞、仙境绞杀、收画离场"四段主线。画面要兼具绝美与危险，前半段梦幻创世，后半段致命反杀，结尾高级收束。整体必须有顶级国风动漫奇幻CG大片感。
-image: /prompts/2026-03/seedance-painting-fairy-cave/cover.jpg
-video: /prompts/2026-03/seedance-painting-fairy-cave/video.mp4
+image: /prompts/2026-03/2035013274119364864-seedance-painting-fairy-cave/cover.jpg
+video: /prompts/2026-03/2035013274119364864-seedance-painting-fairy-cave/video.mp4
 models:
   - seedance2
 tags:

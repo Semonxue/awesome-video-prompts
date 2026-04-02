@@ -1,8 +1,8 @@
 ---
 title: "Power Plant Cooling Corridor"
 date: 2026-03-20T14:18:00Z
-image: /prompts/2026-03/kling-3-power-plant-corridor/cover.jpg
-video: /prompts/2026-03/kling-3-power-plant-corridor/video.mp4
+image: /prompts/2026-03/2034997891282931871-kling-3-power-plant-corridor/cover.jpg
+video: /prompts/2026-03/2034997891282931871-kling-3-power-plant-corridor/video.mp4
 description: |
     Single hypercar traveling left-to-right throughout. All cameras positioned on the south pipe manifold row facing north or at the far end facing west. Car never reverses screen direction.
     Shot 1. Exhaust-height static from the corridor floor at the entrance, camera facing east. Hypercar enters frame from the left at full throttle traveling left-to-right, pipe arrays flanking the corridor on both sides rising four stories, overhead pipe runs forming a fixed broken ceiling of industrial steel stretching ahead. Heat shimmer distorting the air ahead of the car, exhaust note resonating through the hollow pipe infrastructure in deep harmonic frequencies. Shot on 70mm, deep shadow with single hard industrial overhead light, desaturated to steel grey and rust orange, grain heavy in the shadow regions between pipe arrays.

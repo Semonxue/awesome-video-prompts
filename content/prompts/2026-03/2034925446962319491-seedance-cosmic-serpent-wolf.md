@@ -13,8 +13,8 @@ description: |
   Sweeping cinematic crane shot gliding across the dunes before diving low to track the wolf sprinting across the sand.
   
   Photorealistic fur, cosmic volumetric lighting, ray-traced moon reflections on sand, cinematic depth-of-field, 8K resolution.
-image: /prompts/2026-03/seedance-cosmic-serpent-wolf/cover.jpg
-video: /prompts/2026-03/seedance-cosmic-serpent-wolf/video.mp4
+image: /prompts/2026-03/2034925446962319491-seedance-cosmic-serpent-wolf/cover.jpg
+video: /prompts/2026-03/2034925446962319491-seedance-cosmic-serpent-wolf/video.mp4
 models:
   - seedance2
 tags:

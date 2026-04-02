@@ -1,7 +1,7 @@
 ---
 title: "Nutella Breakfast Commercial"
-image: "/prompts/2026-03/nutella-breakfast-ad/cover.jpg"
-video: "/prompts/2026-03/nutella-breakfast-ad/video.mp4"
+image: "/prompts/2026-03/2037085170432696593-nutella-breakfast-commercial/cover.jpg"
+video: "/prompts/2026-03/2037085170432696593-nutella-breakfast-commercial/video.mp4"
 date: 2026-03-26T08:32:06Z
 description: |
   10-second cinematic commercial, photorealistic, 16:9, luxury food advertisement style.

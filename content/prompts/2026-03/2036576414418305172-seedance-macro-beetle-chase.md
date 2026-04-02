@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-03/seedance-macro-beetle-chase/cover.jpg
-video: /prompts/2026-03/seedance-macro-beetle-chase/video.mp4
+image: /prompts/2026-03/2036576414418305172-seedance-macro-beetle-chase/cover.jpg
+video: /prompts/2026-03/2036576414418305172-seedance-macro-beetle-chase/video.mp4
 date: "2026-03-24"
 title: "Macro Beetle Chase"
 description: |
