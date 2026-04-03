@@ -4,6 +4,10 @@ canonifyURLs = false
 title = 'Awesome Video Prompts'
 theme = 'ananke'
 
+buildFuture = true
+buildExpired = true
+buildDrafts = false
+
 enableRobotsTXT = true
 
 [sitemap]
