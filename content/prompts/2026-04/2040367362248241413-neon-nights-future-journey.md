@@ -1,0 +1,25 @@
+---
+title: Neon Nights Future Journey
+date: '2026-04-04'
+image: /prompts/2026-04/2040367362248241413-neon-nights-future-journey/cover.jpg
+video: /prompts/2026-04/2040367362248241413-neon-nights-future-journey/video.mp4
+description: A cinematic 4K video of a lone traveler walking through a futuristic
+  neon city at night, rain falling softly, reflections glowing on wet streets, cyberpunk
+  atmosphere, slow motion shots, dramatic lighting, camera pans and close-ups, realistic
+  human motion, emotional background music auto-generated, ambient city sounds, ultra
+  detailed, film grain, depth of field, cinematic storytelling.
+models:
+- seedance2
+tags:
+- cyberpunk
+- rain
+- traveler
+- night
+- neon
+- atmosphere
+author: saniaspeaks_
+source_url: https://x.com/saniaspeaks_/status/2040367362248241413
+draft: false
+---
+
+A cinematic 4K video of a lone traveler walking through a futuristic neon city at night, rain falling softly, reflections glowing on wet streets, cyberpunk atmosphere, slow motion shots, dramatic lighting, camera pans and close-ups, realistic human motion, emotional background music auto-generated, ambient city sounds, ultra detailed, film grain, depth of field, cinematic storytelling.
