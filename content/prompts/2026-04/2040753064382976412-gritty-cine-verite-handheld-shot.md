@@ -12,7 +12,7 @@ tags:
 - cinematic
 author: John
 source_url: https://twitter.com/john87445528/status/2040753064382976412
-draft: true
+draft: false
 ---
 
 STYLE: Gritty Cine Verité, 35mm handheld, natural shake. Continuous tracking shot. No cuts. All real-time. LIGHTING: Bright, high-altitude sun, pure blue sky....

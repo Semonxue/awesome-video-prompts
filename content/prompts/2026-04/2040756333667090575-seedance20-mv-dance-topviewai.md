@@ -58,7 +58,7 @@ tags:
 - dance
 author: Zeto
 source_url: https://x.com/ZetoGroovin/status/2040756333667090575
-draft: true
+draft: false
 ---
 
 Use refs exactly:

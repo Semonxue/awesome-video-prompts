@@ -38,7 +38,7 @@ tags:
 - summer
 author: John
 source_url: https://twitter.com/johnAGI168/status/2040628800422322359
-draft: true
+draft: false
 ---
 
 【风格】千禧复古泳池派对（Y2K Pool Party），MiniDV摄像机质感（Camcorder Footage），过曝暖黄，胶片颗粒（Film Grain），VHS干扰线，快节奏卡点

@@ -21,7 +21,7 @@ tags:
 - war
 author: MiraMusic
 source_url: https://twitter.com/MiraMusic_AI/status/2040595365096034700
-draft: true
+draft: false
 ---
 
 Original Japanese-Style Dark Fantasy Action Short Film:
