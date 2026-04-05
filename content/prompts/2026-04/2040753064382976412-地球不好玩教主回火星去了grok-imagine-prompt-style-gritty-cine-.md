@@ -2,11 +2,10 @@
 image: /prompts/2026-04/2040753064382976412-地球不好玩教主回火星去了grok-imagine-prompt-style-gritty-cine-/cover.jpg
 video: /prompts/2026-04/2040753064382976412-地球不好玩教主回火星去了grok-imagine-prompt-style-gritty-cine-/video.mp4
 date: '2026-04-05 11:27:00+00:00'
-title: "Gritty Cine Verite Handheld Shot"
-description: |
-  地球不好玩，教主回火星去了@Grok Imagine prompt:
-  
-  STYLE: Gritty Cine Verité, 35mm handheld, natural shake. Continuous tracking shot. No cuts. All real-time. LIGHTING: Bright, high-altitude sun, pure blue sky.... https://t.co/lHsidYNYAF
+title: Gritty Cine Verite Handheld Shot
+description: 'STYLE: Gritty Cine Verité, 35mm handheld, natural shake. Continuous
+  tracking shot. No cuts. All real-time. LIGHTING: Bright, high-altitude sun, pure
+  blue sky....'
 models:
 - grok
 tags:
@@ -16,7 +15,4 @@ source_url: https://twitter.com/john87445528/status/2040753064382976412
 draft: true
 ---
 
-
-地球不好玩，教主回火星去了@Grok Imagine prompt:
-
-STYLE: Gritty Cine Verité, 35mm handheld, natural shake. Continuous tracking shot. No cuts. All real-time. LIGHTING: Bright, high-altitude sun, pure blue sky.... https://t.co/lHsidYNYAF
+STYLE: Gritty Cine Verité, 35mm handheld, natural shake. Continuous tracking shot. No cuts. All real-time. LIGHTING: Bright, high-altitude sun, pure blue sky....
