@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2040819445288120820-capcut-seedance20ではじめてアニメを作ってみました-最後のカットでベンチに同一人物が/cover.jpg
-video: /prompts/2026-04/2040819445288120820-capcut-seedance20ではじめてアニメを作ってみました-最後のカットでベンチに同一人物が/video.mp4
+image: /prompts/2026-04/2040819445288120820-capcut-seedance20-first-anime-bench/cover.jpg
+video: /prompts/2026-04/2040819445288120820-capcut-seedance20-first-anime-bench/video.mp4
 date: '2026-04-05 15:50:47+00:00'
 title: Reluctant Hero Anime Transformation
 description: |-

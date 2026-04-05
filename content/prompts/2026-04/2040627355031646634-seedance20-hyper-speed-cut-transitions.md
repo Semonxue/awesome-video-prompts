@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2040627355031646634-seedance20超高速カット切り替えメトリックモンタージュリターンズ-seedance20を使え/cover.jpg
-video: /prompts/2026-04/2040627355031646634-seedance20超高速カット切り替えメトリックモンタージュリターンズ-seedance20を使え/video.mp4
+image: /prompts/2026-04/2040627355031646634-seedance20-hyper-speed-cut-transitions/cover.jpg
+video: /prompts/2026-04/2040627355031646634-seedance20-hyper-speed-cut-transitions/video.mp4
 date: '2026-04-05 03:07:29+00:00'
 title: "Hyper Speed Cut Transitions"
 description: |

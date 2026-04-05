@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2040595365096034700-和風戦闘シーン-25次元-seedance20-prompt-original-japanese-s/cover.jpg
-video: /prompts/2026-04/2040595365096034700-和風戦闘シーン-25次元-seedance20-prompt-original-japanese-s/video.mp4
+image: /prompts/2026-04/2040595365096034700-japanese-warrior-duel-dark-fantasy/cover.jpg
+video: /prompts/2026-04/2040595365096034700-japanese-warrior-duel-dark-fantasy/video.mp4
 date: '2026-04-05 01:00:22+00:00'
 title: Japanese Warrior Duel Dark Fantasy
 description: |-

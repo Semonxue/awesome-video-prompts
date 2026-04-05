@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2040753064382976412-地球不好玩教主回火星去了grok-imagine-prompt-style-gritty-cine-/cover.jpg
-video: /prompts/2026-04/2040753064382976412-地球不好玩教主回火星去了grok-imagine-prompt-style-gritty-cine-/video.mp4
+image: /prompts/2026-04/2040753064382976412-gritty-cine-verite-handheld-shot/cover.jpg
+video: /prompts/2026-04/2040753064382976412-gritty-cine-verite-handheld-shot/video.mp4
 date: '2026-04-05 11:27:00+00:00'
 title: Gritty Cine Verite Handheld Shot
 description: 'STYLE: Gritty Cine Verité, 35mm handheld, natural shake. Continuous

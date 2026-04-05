@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2040628800422322359-seedance-20可以复刻目前所有热门的短视频-seedance-20-prompt-风格千禧复/cover.jpg
-video: /prompts/2026-04/2040628800422322359-seedance-20可以复刻目前所有热门的短视频-seedance-20-prompt-风格千禧复/video.mp4
+image: /prompts/2026-04/2040628800422322359-seedance-20-y2k-pool-party-vibes/cover.jpg
+video: /prompts/2026-04/2040628800422322359-seedance-20-y2k-pool-party-vibes/video.mp4
 date: '2026-04-05 03:13:13+00:00'
 title: Y2k Pool Party Vibes
 description: |-

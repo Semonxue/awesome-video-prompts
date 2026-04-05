@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2040823701822906519-2045年人類はaiと脳を直結した-だがフォードは気づいてしまう-自分の記憶が何者かに書き換えられて/cover.jpg
-video: /prompts/2026-04/2040823701822906519-2045年人類はaiと脳を直結した-だがフォードは気づいてしまう-自分の記憶が何者かに書き換えられて/video.mp4
+image: /prompts/2026-04/2040823701822906519-2045-ai-brain-override-movie-trailer/cover.jpg
+video: /prompts/2026-04/2040823701822906519-2045-ai-brain-override-movie-trailer/video.mp4
 date: '2026-04-05 16:07:41+00:00'
 title: 2045年 人類はAiと脳を直結した フォードは気づいてしまう 自分の記憶が 何者かに書き換えられていることに 逃げ場のない
 description: |
