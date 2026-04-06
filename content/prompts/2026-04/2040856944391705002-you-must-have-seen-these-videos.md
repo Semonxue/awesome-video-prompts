@@ -19,11 +19,6 @@ description: |-
 models:
 - pixverse
 tags: ["animal","comedy","transformation","humor","fun"]
-- animal
-- comedy
-- humor
-- fun
-- transformation
 author: Future AI 🧩
 source_url: https://twitter.com/FutureVibesAi/status/2040856944391705002
 draft: false

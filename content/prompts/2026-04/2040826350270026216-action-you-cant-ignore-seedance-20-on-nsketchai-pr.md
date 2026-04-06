@@ -20,12 +20,7 @@ description: |-
   Style: ultra-realistic, cinematic lighting, volumetric fog, Unreal Engine style, high contrast, dramatic shadows, slow motion, epic scale, 4K, film grain, teal-orange + neon green color grading
 models:
 - seedance2
-tags: ["action","warrior","transformation","apocalyptic","cinematic"]
-- action
-- cinematic
-- transformation
-- warrior
-- epic
+tags: ["action","warrior","transformation","apocalypse","epic"]
 author: Synthia
 source_url: https://x.com/AIwithSynthia/status/2040826350270026216
 draft: false

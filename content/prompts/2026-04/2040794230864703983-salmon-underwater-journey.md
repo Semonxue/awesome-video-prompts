@@ -6,12 +6,7 @@ video: /prompts/2026-04/2040794230864703983-salmon-underwater-journey/video.mp4
 date: '2026-04-05 14:10:35+00:00'
 models:
 - seedance2
-tags: ["underwater","food","ocean","cinematic","transformation"]
-- underwater
-- food
-- ocean
-- cinematic
-- transformation
+tags: ["underwater","food","ocean","cinematic","dreamlike"]
 author: Latte
 source_url: https://x.com/0xbisc/status/2040794230864703983
 description: |-

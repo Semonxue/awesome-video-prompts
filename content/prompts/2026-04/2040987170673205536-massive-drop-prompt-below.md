@@ -14,12 +14,7 @@ description: |-
     quality: single shot from the middle of the crowd, warm gallery lighting, gold frames and marble doing all the visual work
 models:
 - seedance2
-tags: ["cinematic","music","urban","intense","spectacular"]
-- cinematic
-- music
-- urban
-- intense
-- spectacular
+tags: ["music","urban","intense","art","neon"]
 author: Alex Patrascu
 source_url: https://twitter.com/maxescu/status/2040987170673205536
 draft: false

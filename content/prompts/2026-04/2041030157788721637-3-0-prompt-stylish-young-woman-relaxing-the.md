@@ -1,6 +1,6 @@
 ---
 
-title: "Vintage Car Golden Hour"
+title: "Vintage Car Sunset Portrait"
 date: '2026-04-06 00:00:00+00:00'
 image: /prompts/2026-04/2041030157788721637-3-0-prompt-stylish-young-woman-relaxing-the/cover.jpg
 video: /prompts/2026-04/2041030157788721637-3-0-prompt-stylish-young-woman-relaxing-the/video.mp4
@@ -10,12 +10,7 @@ description: |-
   Camera starts with a medium side shot, slowly pushing in with a smooth cinematic dolly movement toward her relaxed expression. Shallow depth of field, filmic color grading, warm tones, natural light, dreamy mood, ultra realistic, 4K cinematic film style.
 models:
 - kling3
-tags: ["vintage","summer","travel","car","cinematic"]
-- cinematic
-- summer
-- vintage
-- car
-- travel
+tags: ["vintage","portrait","car","sunset","cinematic"]
 author: Johnn
 source_url: https://twitter.com/john_my07/status/2041030157788721637
 draft: false

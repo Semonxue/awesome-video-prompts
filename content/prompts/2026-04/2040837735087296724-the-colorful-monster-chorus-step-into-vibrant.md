@@ -8,11 +8,7 @@ description: |-
   Step into a vibrant world where fuzzy, neon-colored monsters unite in a high-energy operatic performance! Watch as these furry friends belt out their hearts amidst a forest of giant mushrooms, their expressive faces and joyful movements bringing this magical landscape to life... (with sound)
 models:
 - grok
-tags: ["fantasy","music","landscape","fun","vibrant"]
-- landscape
-- forest
-- music
-- fantasy
+tags: ["fantasy","music","fun","colorful","adventure"]
 author: aran leigh
 source_url: https://twitter.com/aran_leigh/status/2040837735087296724
 draft: false

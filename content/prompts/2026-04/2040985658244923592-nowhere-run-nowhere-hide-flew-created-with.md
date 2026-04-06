@@ -42,10 +42,7 @@ description: |-
   CUT TO BLACK.
 models:
 - kling3
-tags: ["action","rooftop","rain","night","chase"]
-- war
-- night
-- action
+tags: ["action","rain","night","chase","urban"]
 author: ShaHid WaNii
 source_url: https://twitter.com/meng_dagg695/status/2040985658244923592
 draft: false

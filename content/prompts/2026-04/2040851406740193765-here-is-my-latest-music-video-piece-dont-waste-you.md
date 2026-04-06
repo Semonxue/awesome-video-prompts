@@ -24,12 +24,7 @@ description: 'Very wide establishing shot of the futuristic city skyline in full
   around it.'
 models:
 - kling3
-tags: ["cinematic","sci-fi","urban","future","hover"]
-- cinematic
-- sci-fi
-- urban
-- futuristic
-- hover
+tags: ["sci-fi","city","futuristic","cinematic","urban"]
 author: Captain HaHaa
 source_url: https://x.com/CaptainHaHaa/status/2040851406740193765
 draft: false

@@ -10,8 +10,7 @@ description: A van speeding through an industrial complex, tires screeching, dri
   sparks flying into frame, gritty industrial atmosphere.
 models:
 - grok
-tags: ["tracking","vehicle","action","industrial","urban"]
-- cinematic
+tags: ["tracking","car","action","urban","industrial"]
 author: Pierrick Chevallier | IA
 source_url: https://twitter.com/CharaspowerAI/status/2041070924439380277
 draft: false

@@ -11,12 +11,7 @@ description: |-
   She fights with mechanical precision: stomping monsters, pivoting off debris, sliding under destroyed vehicles, blocking attacks with sparks flying, spinning to throw creatures into burning wreckage, dashing through smoke to grab and strike beasts, and sliding into a half-kneeling landing pose, visor glowing, flames and debris illuminating the sleek blue armor, fully activated and combat-ready. The entire sequence maintains continuity of damage, dust, fire, smoke, and monster positions, delivering one continuous 30-second cinematic combat spectacle.
 models:
 - grok
-tags: ["action","combat","sci-fi","warrior","mechanical"]
-- action
-- combat
-- scifi
-- warrior
-- mechanical
+tags: ["action","combat","sci-fi","warrior","hero"]
 author: Sharon Riley
 source_url: https://x.com/Just_sharon7/status/2040838362869932476
 draft: false

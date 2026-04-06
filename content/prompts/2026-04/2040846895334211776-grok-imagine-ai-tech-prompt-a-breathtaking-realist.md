@@ -12,7 +12,7 @@ description: A breathtaking realistic 15-second cinematic video in 8K. In a vast
   hair gently blowing in the soft wind, delicate ethereal features, fair skin, and
   striking light eyes. She is wearing an elegant white robe with subtle pink floral
   embroidery and holds a large lush bouquet of vibrant pink peonies in her arms. The
-  dragon’s movement is slow, graceful, and affectionate. The woman smiles softly,
+  dragon's movement is slow, graceful, and affectionate. The woman smiles softly,
   her hair and robe flowing naturally in the breeze. Subtle sparkling snow particles
   drift through the air. Smooth cinematic camera movement starts with a wide establishing
   shot, slowly pans around them in a gentle arc, then subtly zooms in for an emotional
@@ -21,12 +21,7 @@ description: A breathtaking realistic 15-second cinematic video in 8K. In a vast
   masterpiece, best quality, slow-motion elegance throughout the 15-second duration.
 models:
 - grok
-tags: ["fantasy","snow","mountain","romantic","epic"]
-- fantasy
-- snow
-- mountain
-- romantic
-- cinematic
+tags: ["fantasy","snow","romance","epic","slow-motion"]
 author: Thoughts Creator
 source_url: https://x.com/ThoughCreator/status/2040846895334211776
 draft: false

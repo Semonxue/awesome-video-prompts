@@ -8,12 +8,7 @@ description: High-speed chase through neon city , camera racing between building
   with laser fire passing.A cyber soldier jumps into frame
 models:
 - seedance2
-tags: ["chase","high-speed","neon","cyberpunk","action"]
-- chase
-- high-speed
-- neon
-- cyberpunk
-- action
+tags: ["chase","neon","cyberpunk","action","city"]
 author: Malzahran
 source_url: https://twitter.com/Malzahran2/status/2040922120373313933
 draft: false

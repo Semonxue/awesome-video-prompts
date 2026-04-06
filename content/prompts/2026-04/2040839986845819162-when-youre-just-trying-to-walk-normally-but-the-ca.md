@@ -49,11 +49,6 @@ description: |-
 models:
 - seedance2
 tags: ["fashion","cinematic","urban","street","slow-motion"]
-- cinematic
-- fashion
-- urban
-- slow-motion
-- street
 author: Shami
 source_url: https://x.com/ShamiWeb3/status/2040839986845819162
 draft: false

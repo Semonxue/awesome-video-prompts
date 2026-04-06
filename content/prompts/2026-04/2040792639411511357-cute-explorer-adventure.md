@@ -6,12 +6,7 @@ video: /prompts/2026-04/2040792639411511357-cute-explorer-adventure/video.mp4
 date: '2026-04-05 14:04:15+00:00'
 models:
 - seedance2
-tags: ["adventure","fantasy","fun","action","witch"]
-- adventure
-- fantasy
-- multi-shot
-- cinematic
-- fun
+tags: ["adventure","fantasy","fun","action","treasure"]
 author: Amira Zairi
 source_url: https://x.com/azed_ai/status/2040792639411511357
 description: 'D Cute Adventure Story A stylized 3D animated fantasy adventure with

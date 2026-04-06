@@ -9,12 +9,7 @@ description: create a multi clip Veo 3.1 LITE video of a big chubby rabbit with 
   everything. final scene with a pink punk hairdo.
 models:
 - veo3
-tags: ["animal","transformation","fun","multi-shot","humor"]
-- animal
-- transformation
-- multi-shot
-- cinematic
-- fun
+tags: ["animal","transformation","fun","comedy","humor"]
 author: fabian
 source_url: https://twitter.com/fabianstelzer/status/2040837256416559404
 draft: false

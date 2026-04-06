@@ -13,11 +13,11 @@ description: |-
   Accident: She bumps into a flower pot—time slows—the pot tips over the edge.
   Falling shot: The flower pot drops rapidly toward a small white rabbit in ragged beggar clothes standing below, unaware.
   Reaction: The bear lady gasps and shouts in panic, reaching out helplessly.
-  Action trigger: The orange cat’s eyes sharpen—instant movement—he pivots and sprints.
+  Action trigger: The orange cat's eyes sharpen—instant movement—he pivots and sprints.
   Parkour sequence: He steps onto a wooden cart, kicks off a wall, then rebounds between vertical surfaces in a fluid, multi-step aerial path.
   Mid-air precision: Body twisting, robe flowing, he extends one arm and catches the falling flower pot mid-air, perfectly timed.
   Descent: Using momentum, he flips and lands lightly on the ground, maintaining balance effortlessly.
-  Gentle beat: With his free hand, he casually pats the little white rabbit’s head, reassuring and calm.
+  Gentle beat: With his free hand, he casually pats the little white rabbit's head, reassuring and calm.
   Reaction shot: The black bear lady clutches her chest in relief, then smiles gratefully.
   Crowd response: The raccoon villagers break into delighted applause, earlier suspicion replaced with admiration.
   Final shot: The orange cat adjusts his bamboo hat slightly, standing composed as ripples move through the rice paddies, a subtle confident aura as he looks forward.
@@ -25,12 +25,7 @@ description: |-
   Highly detailed physical choreography, grounded multi-step parkour, precise timing, cloth simulation on robe, environmental interaction (walls, cart, ground), soft motion blur, cinematic camera flow (tracking, tilt, orbit), light comedic tone blended with elegant martial arts action.
 models:
 - seedance2
-tags: ["cat","martial-arts","action","comedy","cinematic"]
-- cat
-- comedy
-- martial-arts
-- action
-- cinematic
+tags: ["cat","martial-arts","action","comedy","animal"]
 author: The Anxious Mind
 source_url: https://twitter.com/drjoetw/status/2041021693062185085
 draft: false

@@ -15,12 +15,7 @@ description: |-
   Cinematic lighting, soft natural daylight, realistic color grading, 4K, shallow depth of field, motion blur, emotional tone, urban realism
 models:
 - kling3
-tags: ["urban","cinematic","street","emotional","realistic"]
-- urban
-- cinematic
-- street
-- emotional
-- realistic
+tags: ["urban","cinematic","portrait","emotional","realistic"]
 author: 𝗦𝗮𝗻𝗶𝗮
 source_url: https://twitter.com/saniaspeaks_/status/2040991383008199123
 draft: false

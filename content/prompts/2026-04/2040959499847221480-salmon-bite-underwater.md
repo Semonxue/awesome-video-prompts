@@ -1,17 +1,12 @@
 ---
 
-title: "Salmon Bite Underwater"
+title: "Salmon Underwater Journey"
 date: '2026-04-06 01:07:18+00:00'
 image: /prompts/2026-04/2040959499847221480-salmon-bite-underwater/cover.jpg
 video: /prompts/2026-04/2040959499847221480-salmon-bite-underwater/video.mp4
 models:
 - seedance2
 tags: ["underwater","food","cinematic","fish","slow-motion"]
-- underwater
-- food
-- cinematic
-- fish
-- slow-motion
 author: Shami
 source_url: https://twitter.com/i/status/2040959499847221480
 description: |-

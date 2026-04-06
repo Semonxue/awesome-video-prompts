@@ -49,12 +49,7 @@ description: |-
   }
 models:
 - seedance2
-tags: ["anime","action","sci-fi","japan","transformation"]
-- anime
-- action
-- sci-fi
-- transformation
-- japan
+tags: ["anime","action","sci-fi","transformation","hero"]
 author: eijo
 source_url: https://x.com/eijo_AIart/status/2040819445288120820
 draft: false

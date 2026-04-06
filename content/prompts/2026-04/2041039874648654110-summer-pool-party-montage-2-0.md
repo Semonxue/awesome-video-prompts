@@ -1,6 +1,6 @@
 ---
 
-title: "Summer Pool Party Montage"
+title: "Summer Pool Party Vibes"
 date: '2026-04-06 00:00:00+00:00'
 image: /prompts/2026-04/2041039874648654110-summer-pool-party-montage-2-0/cover.jpg
 video: /prompts/2026-04/2041039874648654110-summer-pool-party-montage-2-0/video.mp4
@@ -19,14 +19,6 @@ description: 【风格】夏日泳池派对（Summer Pool Party Montage），快
 models:
 - seedance2
 tags: ["summer","water","underwater","fashion","multi-shot"]
-- summer
-- pool
-- water
-- underwater
-- dance
-- fashion
-- fun
-- multi-shot
 author: John
 source_url: https://twitter.com/johnAGI168/status/2041039874648654110
 draft: false

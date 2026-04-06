@@ -6,12 +6,7 @@ image: /prompts/2026-04/2040956518787616936-golden-nunchaku-arc-trails/cover.jpg
 video: /prompts/2026-04/2040956518787616936-golden-nunchaku-arc-trails/video.mp4
 models:
 - seedance2
-tags: ["martial-arts","slow-motion","vfx","cinematic","action"]
-- martial-arts
-- slow-motion
-- vfx
-- cinematic
-- action
+tags: ["martial-arts","action","vfx","slow-motion","cinematic"]
 author: ShadeLurk
 source_url: https://twitter.com/i/status/2040956518787616936
 description: A glowing golden nunchaku spins rapidly in both hands, carving bright

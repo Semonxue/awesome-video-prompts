@@ -1,5 +1,5 @@
 ---
-title: "Artisan Shoe Workshop"
+title: "Artisan Shoe Repair"
 date: '2026-04-06 00:00:00+00:00'
 image: /prompts/2026-04/2041056393936199825-let-s-mend-the-shoes-3-0-prompt-highly/cover.jpg
 video: /prompts/2026-04/2041056393936199825-let-s-mend-the-shoes-3-0-prompt-highly/video.mp4
@@ -10,11 +10,6 @@ description: |-
 models:
 - kling3
 tags: ["cinematic","anime","macro","cozy","art"]
-- cinematic
-- anime
-- realistic
-- war
-- cat
 author: Sharon Riley
 source_url: https://twitter.com/Just_sharon7/status/2041056393936199825
 draft: false

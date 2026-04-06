@@ -25,11 +25,6 @@ description: |-
 models:
 - seedance2
 tags: ["urban","japan","neon","night","cinematic"]
-- urban
-- japan
-- neon
-- night
-- cinematic
 author: John
 source_url: https://x.com/johnAGI168/status/2040797935718318289
 full_text: |

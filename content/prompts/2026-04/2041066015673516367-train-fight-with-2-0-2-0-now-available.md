@@ -13,11 +13,6 @@ description: Dramatic low-angle tracking shot speeding along rain-slicked train 
 models:
 - seedance2
 tags: ["action","train","combat","adventure","sci-fi"]
-- cinematic
-- action
-- sci-fi
-- war
-- combat
 author: Aimi Kōda
 source_url: https://twitter.com/aimikoda/status/2041066015673516367
 draft: false

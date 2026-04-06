@@ -16,11 +16,6 @@ description: |-
 models:
 - grok
 tags: ["cinematic","realistic","story","emotional","slow-motion"]
-- cinematic
-- realistic
-- template
-- story
-- emotional
 author: Dogan Ural
 source_url: https://x.com/doganuraldesign/status/2040808806712529033
 full_text: 'PROMPT TEMPLATE: Cinematic close up shot of [SUBJECT], naturalistic film

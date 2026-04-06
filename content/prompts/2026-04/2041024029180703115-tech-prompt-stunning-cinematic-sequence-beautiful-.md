@@ -1,6 +1,6 @@
 ---
 
-title: "Female Cyborg Cyberpunk Sequence"
+title: "Female Cyborg Cyberpunk Battle"
 date: '2026-04-06 00:00:00+00:00'
 image: /prompts/2026-04/2041024029180703115-tech-prompt-stunning-cinematic-sequence-beautiful-/cover.jpg
 video: /prompts/2026-04/2041024029180703115-tech-prompt-stunning-cinematic-sequence-beautiful-/video.mp4
@@ -21,12 +21,7 @@ description: |-
   Highly detailed, photorealistic yet stylized digital art, cinematic lighting, dramatic atmosphere, sharp focus, intricate mechanical details, reflective metallic surfaces, volumetric lighting, 8k resolution, epic sci-fi aesthetic.
 models:
 - grok
-tags: ["cyberpunk","sci-fi","action","cinematic","neon"]
-- cyberpunk
-- sci-fi
-- action
-- cinematic
-- neon
+tags: ["cyberpunk","sci-fi","action","neon","cinematic"]
 author: Thoughts Creator
 source_url: https://twitter.com/ThoughCreator/status/2041024029180703115
 draft: false

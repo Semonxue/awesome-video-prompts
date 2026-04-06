@@ -24,12 +24,7 @@ description: |-
   SHOT 8: Hard cut. Ultra-wide, 14mm / Rider walks away from camera along dragon's spine toward the head, dragon lifts chin to sky, fire by mouth both silhouetted against amber sunset / SFX: low brass swell
 models:
 - kling3
-tags: ["fashion","fantasy","epic","cinematic","adventure"]
-- fantasy
-- fashion
-- cinematic
-- epic
-- dramatic
+tags: ["fashion","fantasy","epic","adventure","portrait"]
 author: Zara
 source_url: https://twitter.com/ZaraIrahh/status/2040994644767691069
 draft: false
