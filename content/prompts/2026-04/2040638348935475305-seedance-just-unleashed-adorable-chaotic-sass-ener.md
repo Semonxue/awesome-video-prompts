@@ -3,9 +3,7 @@ image: /prompts/2026-04/2040638348935475305-seedance-just-unleashed-adorable-cha
 video: /prompts/2026-04/2040638348935475305-seedance-just-unleashed-adorable-chaotic-sass-ener/video.mp4
 date: '2026-04-05 03:51:10+00:00'
 title: Just Unleashed Adorable Chaotic Sass Energy
-description: |
-  Seedance just unleashed adorable chaotic sass energy 💜😏
-  Prompt:
+description: |-
   Create a 4-second ultra-cute vertical animated character video.
   A tiny fluffy purple puppy-like creature with soft fur, a round face, big glossy expressive eyes, a small black nose, short floppy ears, and adorable baby proportions. The style is polished soft 3D animation, very cute, smooth fur, pastel purple background, soft studio lighting.
   The character walks forward slowly with natural body bounce and soft paw movement, first looking slightly away with an innocent expression. Then it turns its head and upper body toward the camera, gives a surprised but cheeky look, and raises one hand to show one middle finger clearly. It then turns forward again for a brief beat as if continuing to walk, then quickly looks back at the camera with a more mischievous expression and raises both hands, showing two middle fingers clearly at the same time. End on the double gesture for a brief moment so it is readable.
@@ -13,7 +11,6 @@ description: |
   No text on screen. No captions. No overlays.
   Visual style: ultra-cute polished 3D character animation, soft pastel lighting, clean background, meme-ready, adorable but sassy.
   No realism, no horror, no ugly face, no distorted eyes, no extra fingers, no extra limbs, no blurry motion, no low-detail fur, no dark background, no aggressive tone, no human body proportions.
-
 models:
 - seedance2
 tags:
@@ -23,12 +20,8 @@ tags:
 - horror
 author: Shami
 source_url: https://twitter.com/ShamiWeb3/status/2040638348935475305
-draft: true
+draft: false
 ---
-
-Seedance just unleashed adorable chaotic sass energy 💜😏
-
-Prompt:
 
 Create a 4-second ultra-cute vertical animated character video.
 A tiny fluffy purple puppy-like creature with soft fur, a round face, big glossy expressive eyes, a small black nose, short floppy ears, and adorable baby proportions. The style is polished soft 3D animation, very cute, smooth fur, pastel purple background, soft studio lighting.

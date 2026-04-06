@@ -1,23 +1,58 @@
 ---
-title: "The adrenaline rush Made with Prompt"
-date: 2026-04-06T06:43:02+00:00
-draft: true
-image: "/prompts/2026-04/2041043988321534291-the-adrenaline-rush-made-with-prompt/cover.jpg"
-video: "/prompts/2026-04/2041043988321534291-the-adrenaline-rush-made-with-prompt/video.mp4"
-description: |
-  FORMAT: 15s / 180 BPM / ONE CONTINUOUS SHOT / 360 POV downhill stair run, viral energy, max chaos SUBJECTS: First-person cyclist, handlebars and front wheel flashing low in frame during drops and hard turns. Vendors, laundry, scooters, dogs, chickens, cars, and pedestrians erupt around the rider as sudden obstacles. ENVIRONMENT: Dense Brazilian hillside streets, painted concrete stairs, tight landings, tiled corners, hanging wires, murals, awnings, puddles, hot late afternoon light, deep alley shadows, city sprawling below. MOOD: Adrenaline, max chaos, and nonstop street speed with violent spatial intensity in every direction. COLOR LOGIC: Hyperreal Pop Look CAMERA DETAILS: 360 action-cam POV, horizon-stable but brutal, nonstop forward drive, minimal roll, heavy stair vibration, sharp side and rear parallax, full-sphere chaos, no release. TIMELINE: 0:00-0:03: POV freefalls down a steep stairwell. The front wheel punches over the first steps, bars jackhammer below frame, the whole sphere shuddering with every hit while a child lunges in from the left to yank a rolling soccer ball out of the rider's line and walls, rails, balconies, and faces whip past on both sides. Violent forward descent with brutal stair vibration. SFX: (city hum, distant funk beat, tire chatter, breath, rapid stair hits, frame rattle). Hard sun above, deep shadow pockets below. 0:03-0:05: POV slashes left across a tiny landing, skips a broken crate, and drops again as laundry cracks across the front hemisphere, shoulder missing painted concrete by inches while side-wrap onlookers recoil. Hard lateral shake, immediate snap back into the stair run. SFX: (cloth slap, skid, crowd shout, chain buzz, stair chatter). 0:05-0:08: POV hammers the next staircase as a stray dog cuts center frame and startled chickens burst upward from the side steps, wings flaring across the sphere. The rider flicks the bars, rear wheel skates loose, then needles between a fruit cart and handrail with almost no clearance while the sphere jitters from every stair impact. Fast vibrating continuous-shot chaos. SFX: (tire chirp, crate clack, wings flapping, squawks, paw skitter, stair thuds, bass from window, metal rattle). 0:08-0:10: POV blasts out of one stair run, skips across a short asphalt gap between two stair sections without slowing, slams the opposite curb, and drops straight into the next descending steps. Only once the rider is fully back on the stairs do horns burst behind while passing cars rip through the side wrap. Full-speed crossing with strong lateral parallax and zero release. SFX: (engine idle, tire buzz, chain rattle, curb thump, car horns behind). 0:10-0:13: POV keeps attacking the next stair section immediately after the asphalt gap, machine-gunning through two tight landings and another steep stepped lane, every hit punching a fresh jolt through the sphere as stacked homes, wires, and alley mouths curl around the viewer and the overlook rushes closer. Forward lunge with impact drive and nonstop shake. SFX: (air rush, heavy thump, stair chatter, horn echo fading, chain lash, wind buffeting). 0:13-0:15: POV rips through the final stepped approach to the overlook and throws the rear wheel into a savage sideways skid, dust and gravel spraying across the lower frame while stair-lined drops fall away to both sides and the skyline blooms around the entire sphere in one fast violent sweep. The bike stays hot through the slide as the city fills every direction. SFX: (rear tire screech, gravel spray, freewheel spin, city roar, music drop)
-
-models: [kling3]
-tags: [action]
-author: "Al-Shamus"
-source_url: "https://twitter.com/im_shahid7/status/2041043988321534291"
+title: The adrenaline rush Made with Prompt
+date: '2026-04-06 06:43:02+00:00'
+image: /prompts/2026-04/2041043988321534291-the-adrenaline-rush-made-with-prompt/cover.jpg
+video: /prompts/2026-04/2041043988321534291-the-adrenaline-rush-made-with-prompt/video.mp4
+description: 'FORMAT: 15s / 180 BPM / ONE CONTINUOUS SHOT / 360 POV downhill stair
+  run, viral energy, max chaos SUBJECTS: First-person cyclist, handlebars and front
+  wheel flashing low in frame during drops and hard turns. Vendors, laundry, scooters,
+  dogs, chickens, cars, and pedestrians erupt around the rider as sudden obstacles.
+  ENVIRONMENT: Dense Brazilian hillside streets, painted concrete stairs, tight landings,
+  tiled corners, hanging wires, murals, awnings, puddles, hot late afternoon light,
+  deep alley shadows, city sprawling below. MOOD: Adrenaline, max chaos, and nonstop
+  street speed with violent spatial intensity in every direction. COLOR LOGIC: Hyperreal
+  Pop Look CAMERA DETAILS: 360 action-cam POV, horizon-stable but brutal, nonstop
+  forward drive, minimal roll, heavy stair vibration, sharp side and rear parallax,
+  full-sphere chaos, no release. TIMELINE: 0:00-0:03: POV freefalls down a steep stairwell.
+  The front wheel punches over the first steps, bars jackhammer below frame, the whole
+  sphere shuddering with every hit while a child lunges in from the left to yank a
+  rolling soccer ball out of the rider''s line and walls, rails, balconies, and faces
+  whip past on both sides. Violent forward descent with brutal stair vibration. SFX:
+  (city hum, distant funk beat, tire chatter, breath, rapid stair hits, frame rattle).
+  Hard sun above, deep shadow pockets below. 0:03-0:05: POV slashes left across a
+  tiny landing, skips a broken crate, and drops again as laundry cracks across the
+  front hemisphere, shoulder missing painted concrete by inches while side-wrap onlookers
+  recoil. Hard lateral shake, immediate snap back into the stair run. SFX: (cloth
+  slap, skid, crowd shout, chain buzz, stair chatter). 0:05-0:08: POV hammers the
+  next staircase as a stray dog cuts center frame and startled chickens burst upward
+  from the side steps, wings flaring across the sphere. The rider flicks the bars,
+  rear wheel skates loose, then needles between a fruit cart and handrail with almost
+  no clearance while the sphere jitters from every stair impact. Fast vibrating continuous-shot
+  chaos. SFX: (tire chirp, crate clack, wings flapping, squawks, paw skitter, stair
+  thuds, bass from window, metal rattle). 0:08-0:10: POV blasts out of one stair run,
+  skips across a short asphalt gap between two stair sections without slowing, slams
+  the opposite curb, and drops straight into the next descending steps. Only once
+  the rider is fully back on the stairs do horns burst behind while passing cars rip
+  through the side wrap. Full-speed crossing with strong lateral parallax and zero
+  release. SFX: (engine idle, tire buzz, chain rattle, curb thump, car horns behind).
+  0:10-0:13: POV keeps attacking the next stair section immediately after the asphalt
+  gap, machine-gunning through two tight landings and another steep stepped lane,
+  every hit punching a fresh jolt through the sphere as stacked homes, wires, and
+  alley mouths curl around the viewer and the overlook rushes closer. Forward lunge
+  with impact drive and nonstop shake. SFX: (air rush, heavy thump, stair chatter,
+  horn echo fading, chain lash, wind buffeting). 0:13-0:15: POV rips through the final
+  stepped approach to the overlook and throws the rear wheel into a savage sideways
+  skid, dust and gravel spraying across the lower frame while stair-lined drops fall
+  away to both sides and the skyline blooms around the entire sphere in one fast violent
+  sweep. The bike stays hot through the slide as the city fills every direction. SFX:
+  (rear tire screech, gravel spray, freewheel spin, city roar, music drop)'
+models:
+- kling3
+tags:
+- action
+author: Al-Shamus
+source_url: https://twitter.com/im_shahid7/status/2041043988321534291
+draft: false
 ---
-
-Full Text:
-
-The adrenaline rush!..
-Made with Kling on @yapper_so 
-
-Prompt:
 
 FORMAT: 15s / 180 BPM / ONE CONTINUOUS SHOT / 360 POV downhill stair run, viral energy, max chaos SUBJECTS: First-person cyclist, handlebars and front wheel flashing low in frame during drops and hard turns. Vendors, laundry, scooters, dogs, chickens, cars, and pedestrians erupt around the rider as sudden obstacles. ENVIRONMENT: Dense Brazilian hillside streets, painted concrete stairs, tight landings, tiled corners, hanging wires, murals, awnings, puddles, hot late afternoon light, deep alley shadows, city sprawling below. MOOD: Adrenaline, max chaos, and nonstop street speed with violent spatial intensity in every direction. COLOR LOGIC: Hyperreal Pop Look CAMERA DETAILS: 360 action-cam POV, horizon-stable but brutal, nonstop forward drive, minimal roll, heavy stair vibration, sharp side and rear parallax, full-sphere chaos, no release. TIMELINE: 0:00-0:03: POV freefalls down a steep stairwell. The front wheel punches over the first steps, bars jackhammer below frame, the whole sphere shuddering with every hit while a child lunges in from the left to yank a rolling soccer ball out of the rider's line and walls, rails, balconies, and faces whip past on both sides. Violent forward descent with brutal stair vibration. SFX: (city hum, distant funk beat, tire chatter, breath, rapid stair hits, frame rattle). Hard sun above, deep shadow pockets below. 0:03-0:05: POV slashes left across a tiny landing, skips a broken crate, and drops again as laundry cracks across the front hemisphere, shoulder missing painted concrete by inches while side-wrap onlookers recoil. Hard lateral shake, immediate snap back into the stair run. SFX: (cloth slap, skid, crowd shout, chain buzz, stair chatter). 0:05-0:08: POV hammers the next staircase as a stray dog cuts center frame and startled chickens burst upward from the side steps, wings flaring across the sphere. The rider flicks the bars, rear wheel skates loose, then needles between a fruit cart and handrail with almost no clearance while the sphere jitters from every stair impact. Fast vibrating continuous-shot chaos. SFX: (tire chirp, crate clack, wings flapping, squawks, paw skitter, stair thuds, bass from window, metal rattle). 0:08-0:10: POV blasts out of one stair run, skips across a short asphalt gap between two stair sections without slowing, slams the opposite curb, and drops straight into the next descending steps. Only once the rider is fully back on the stairs do horns burst behind while passing cars rip through the side wrap. Full-speed crossing with strong lateral parallax and zero release. SFX: (engine idle, tire buzz, chain rattle, curb thump, car horns behind). 0:10-0:13: POV keeps attacking the next stair section immediately after the asphalt gap, machine-gunning through two tight landings and another steep stepped lane, every hit punching a fresh jolt through the sphere as stacked homes, wires, and alley mouths curl around the viewer and the overlook rushes closer. Forward lunge with impact drive and nonstop shake. SFX: (air rush, heavy thump, stair chatter, horn echo fading, chain lash, wind buffeting). 0:13-0:15: POV rips through the final stepped approach to the overlook and throws the rear wheel into a savage sideways skid, dust and gravel spraying across the lower frame while stair-lined drops fall away to both sides and the skyline blooms around the entire sphere in one fast violent sweep. The bike stays hot through the slide as the city fills every direction. SFX: (rear tire screech, gravel spray, freewheel spin, city roar, music drop)

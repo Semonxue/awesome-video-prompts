@@ -1,21 +1,32 @@
 ---
-title: "Need prompt inspiration Grab this"
-date: 2026-04-05T18:02:57+00:00
-draft: true
-image: "/prompts/2026-04/2040852708383429073-need-prompt-inspiration-grab-this/cover.jpg"
-video: "/prompts/2026-04/2040852708383429073-need-prompt-inspiration-grab-this/video.mp4"
-description: |
-  Need a Seedance 2.0 prompt or inspiration? Grab this one below! 🫶
-  Need Seedance 2.0 worldwide, or US Access? Grab that on imgnAI! 🤗 https://t.co/Ec7lg9qwbC
-
-models: [seedance2]
-tags: [cinematic]
-author: "imgnAI"
-source_url: "https://twitter.com/imgn_ai/status/2040852708383429073"
+title: Need prompt inspiration Grab this
+date: '2026-04-05 18:02:57+00:00'
+image: /prompts/2026-04/2040852708383429073-need-prompt-inspiration-grab-this/cover.jpg
+video: /prompts/2026-04/2040852708383429073-need-prompt-inspiration-grab-this/video.mp4
+description: "The camera zooms in to a coffee cart at a busy baseball game. At the\
+  \ cart are three cats - one black, one ginger, and another calico. \n\nThe three\
+  \ work together in unison to make a hot chocolate. One pours chocolate powder into\
+  \ a cup, then begins adding hot water from a kettle. Another melts a small piece\
+  \ of chocolate down in a frying pan. The last cat toasts marshmallows on a stick\
+  \ with a small blow torch. \n\nOnce the hot water is added to the hot chocolate,\
+  \ the cat toasting the marshmallows takes two off the stick and adds them to the\
+  \ hot chocolate. Then, the cat cooking the chocolate piece in the frying pan drizzles\
+  \ the melted chocolate from the pan on to the marshmallows. \n\nFinally, the first\
+  \ cat adds a small cinnamon stick in the side, and holds it towards the viewer with\
+  \ a smile."
+models:
+- seedance2
+tags:
+- cinematic
+author: imgnAI
+source_url: https://twitter.com/imgn_ai/status/2040852708383429073
+draft: false
 ---
 
-Full Text:
+The camera zooms in to a coffee cart at a busy baseball game. At the cart are three cats - one black, one ginger, and another calico. 
 
-Need a Seedance 2.0 prompt or inspiration? Grab this one below! 🫶
+The three work together in unison to make a hot chocolate. One pours chocolate powder into a cup, then begins adding hot water from a kettle. Another melts a small piece of chocolate down in a frying pan. The last cat toasts marshmallows on a stick with a small blow torch. 
 
-Need Seedance 2.0 worldwide, or US Access? Grab that on imgnAI! 🤗 https://t.co/Ec7lg9qwbC
+Once the hot water is added to the hot chocolate, the cat toasting the marshmallows takes two off the stick and adds them to the hot chocolate. Then, the cat cooking the chocolate piece in the frying pan drizzles the melted chocolate from the pan on to the marshmallows. 
+
+Finally, the first cat adds a small cinnamon stick in the side, and holds it towards the viewer with a smile.
