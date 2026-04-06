@@ -1,5 +1,6 @@
 ---
-title: You must have seen these videos
+
+title: "Lion Barbershop Makeover"
 date: '2026-04-05 18:19:47+00:00'
 image: /prompts/2026-04/2040856944391705002-you-must-have-seen-these-videos/cover.jpg
 video: /prompts/2026-04/2040856944391705002-you-must-have-seen-these-videos/video.mp4
@@ -18,11 +19,16 @@ description: |-
 models:
 - pixverse
 tags:
-- action
+- animal
+- comedy
+- humor
+- fun
+- transformation
 author: Future AI 🧩
 source_url: https://twitter.com/FutureVibesAi/status/2040856944391705002
 draft: false
 ---
+
 
 Theme: Humorous barbershop transformation - a lion getting a stylish pompadour haircut from a cat barber
 Visuals: Modern barbershop setting with dark slatted walls, neon 'SIFUYIK' sign, square overhead lighting. A large lion with a full mane sits in a barber chair wearing a pinstriped cape. A tabby cat barber in a black t-shirt with 'SIFUYIK' uses red clippers and a hairdryer on the lion's head. The lion's mane is dramatically shortened and styled into a tall, dramatic pompadour with a side part. Clumps of fur fall during the haircut.

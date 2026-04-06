@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040638348935475305-seedance-just-unleashed-adorable-chaotic-sass-ener/cover.jpg
 video: /prompts/2026-04/2040638348935475305-seedance-just-unleashed-adorable-chaotic-sass-ener/video.mp4
 date: '2026-04-05 03:51:10+00:00'
-title: Just Unleashed Adorable Chaotic Sass Energy
+title: "Adorable Chaotic Cute Creature"
 description: |-
   Create a 4-second ultra-cute vertical animated character video.
   A tiny fluffy purple puppy-like creature with soft fur, a round face, big glossy expressive eyes, a small black nose, short floppy ears, and adorable baby proportions. The style is polished soft 3D animation, very cute, smooth fur, pastel purple background, soft studio lighting.
@@ -14,14 +15,16 @@ description: |-
 models:
 - seedance2
 tags:
-- 3d
-- war
-- dance
-- horror
+- cat
+- fun
+- comedy
+- art
+- cinematic
 author: Shami
 source_url: https://twitter.com/ShamiWeb3/status/2040638348935475305
 draft: false
 ---
+
 
 Create a 4-second ultra-cute vertical animated character video.
 A tiny fluffy purple puppy-like creature with soft fur, a round face, big glossy expressive eyes, a small black nose, short floppy ears, and adorable baby proportions. The style is polished soft 3D animation, very cute, smooth fur, pastel purple background, soft studio lighting.

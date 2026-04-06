@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040327899606306840-memory-shards-reconstruction/cover.jpg
 video: /prompts/2026-04/2040327899606306840-memory-shards-reconstruction/video.mp4
 date: '2026-04-04 07:17:33+00:00'
-title: Seedance2 記憶の破片 の再構築 Memory Shards Reconstruction
+title: "Memory Shards Reconstruction"
 description: |-
   {
     "effect_id": "ethereal_02",
@@ -20,14 +21,15 @@ models:
 - seedance2
 tags:
 - cinematic
-- action
-- realistic
-- war
-- dance
+- art
+- particles
+- slow-motion
+- visual
 author: テックトークナビゲーター@AIコンテンツクリエイター
 source_url: https://twitter.com/TechTalkNAVI/status/2040327899606306840
 draft: false
 ---
+
 
 {
   "effect_id": "ethereal_02",

@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040760857215340709-seedance-beverage-commercial/cover.jpg
 video: /prompts/2026-04/2040760857215340709-seedance-beverage-commercial/video.mp4
 date: '2026-04-05 11:57:58+00:00'
-title: Seedance2 0でAi 第２弾 麦茶が今は話題ですからね こいつぁ腰抜かすぜぃ 前回の動画はRenoiseでTextのみで生成した動画
+title: "Japanese Barley Tea Commercial"
 description: |-
   15秒の日本の飲料水のCM、BGMはなし。日本の夏のような環境音。蝉や風の音。
   Shot1（３秒）:日本の暑い夏。土管がある空き地。土管の上には麦わら帽子を被った日本の小学生とキャップを被った少年。麦わら帽子の少年は汗だくの状態で画像の麦茶を飲んでいる。効果音は喉ごしの気持ち良い音。
@@ -13,11 +14,16 @@ description: |-
 models:
 - seedance2
 tags:
-- dance
+- japan
+- summer
+- product
+- cooking
+- outdoor
 author: AI様の下僕
 source_url: https://twitter.com/aigeboku/status/2040760857215340709
 draft: false
 ---
+
 
 15秒の日本の飲料水のCM、BGMはなし。日本の夏のような環境音。蝉や風の音。
 Shot1（３秒）:日本の暑い夏。土管がある空き地。土管の上には麦わら帽子を被った日本の小学生とキャップを被った少年。麦わら帽子の少年は汗だくの状態で画像の麦茶を飲んでいる。効果音は喉ごしの気持ち良い音。

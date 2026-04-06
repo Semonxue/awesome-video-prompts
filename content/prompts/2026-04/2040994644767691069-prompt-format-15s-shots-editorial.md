@@ -1,5 +1,6 @@
 ---
-title: Prompt FORMAT 15s shots editorial
+
+title: "Fashion Dragon Editorial"
 date: '2026-04-06 03:26:57+00:00'
 image: /prompts/2026-04/2040994644767691069-prompt-format-15s-shots-editorial/cover.jpg
 video: /prompts/2026-04/2040994644767691069-prompt-format-15s-shots-editorial/video.mp4
@@ -24,11 +25,16 @@ description: |-
 models:
 - kling3
 tags:
+- fantasy
+- fashion
 - cinematic
+- epic
+- dramatic
 author: Zara
 source_url: https://twitter.com/ZaraIrahh/status/2040994644767691069
 draft: false
 ---
+
 
 FORMAT: 15s / 8 shots / editorial contact sheet
 SUBJECT: Young woman with long blue-white gradient hair, dark leather armor with scale-textured panels, mounted on or posed beside a colossal dragon.

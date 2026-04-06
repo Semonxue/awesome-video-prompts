@@ -1,5 +1,6 @@
 ---
-title: Need prompt inspiration Grab this
+
+title: "Three Cats Making Hot Chocolate"
 date: '2026-04-05 18:02:57+00:00'
 image: /prompts/2026-04/2040852708383429073-need-prompt-inspiration-grab-this/cover.jpg
 video: /prompts/2026-04/2040852708383429073-need-prompt-inspiration-grab-this/video.mp4
@@ -17,11 +18,16 @@ description: "The camera zooms in to a coffee cart at a busy baseball game. At t
 models:
 - seedance2
 tags:
-- cinematic
+- cat
+- cooking
+- product
+- comedy
+- fun
 author: imgnAI
 source_url: https://twitter.com/imgn_ai/status/2040852708383429073
 draft: false
 ---
+
 
 The camera zooms in to a coffee cart at a busy baseball game. At the cart are three cats - one black, one ginger, and another calico. 
 

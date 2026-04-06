@@ -1,5 +1,6 @@
 ---
-title: Massive drop prompt below
+
+title: "Gallery Rave Bass Drop"
 date: '2026-04-06 02:57:15+00:00'
 image: /prompts/2026-04/2040987170673205536-massive-drop-prompt-below/cover.jpg
 video: /prompts/2026-04/2040987170673205536-massive-drop-prompt-below/video.mp4
@@ -15,10 +16,15 @@ models:
 - seedance2
 tags:
 - cinematic
+- music
+- urban
+- intense
+- spectacular
 author: Alex Patrascu
 source_url: https://twitter.com/maxescu/status/2040987170673205536
 draft: false
 ---
+
 
 aesthetic: phone held up in the middle of a packed crowd inside a museum gallery
   audio: bass booming off marble, every sound doubled by the echo

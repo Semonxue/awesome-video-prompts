@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2039538309790404797-wingsuit-canyon-parkour/cover.jpg
 video: /prompts/2026-04/2039538309790404797-wingsuit-canyon-parkour/video.mp4
 date: 2026-04-02
-title: Seedance 2.0 × Parkour - Wingsuit Canyon
+title: "Wingsuit Canyon Parkour POV"
 description: |
   A hyper-realistic, 8K resolution, adrenaline-fueled single-take POV action sequence. The camera is chest-mounted on a man wearing camouflage joggers and worn-out black-and-white sneakers. He stands on the dizzying edge of a rusted skyscraper, 1000 feet above a crystalline turquoise ocean. No clouds, no haze—just a sheer, terrifying vertical drop into the deep blue.
   [The Initial Freefall]
@@ -18,7 +19,13 @@ description: |
   The camera remains in a low, fetal position on the final bar, shaking from the adrenaline. No dialogue. The audio is a visceral layer of the aggressive 'Hyuo' wind, his intense, ragged, and rapid gasping for air, and a loud, thumping heartbeat that resonates as if inside his chest. The harsh midday sun glints off the ocean waves far below, creating a blinding, beautiful, yet lethal glare. Cinematic materials, fluid 120fps motion, hyper-detailed rust and skin textures.
 
 models: seedance2
-tags: ["wingsuit", "parkour", "pov", "canyon", "action", "extreme-sports", "single-take"]
+tags:
+- pov
+- action
+- adventure
+- urban
+- flight
 author: "genel_ai"
 source_url: "https://x.com/genel_ai/status/2039538309790404797"
 ---
+

@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040569543769145504-get-the-prompt-for-seedance-20-shot-camera_motion-/cover.jpg
 video: /prompts/2026-04/2040569543769145504-get-the-prompt-for-seedance-20-shot-camera_motion-/video.mp4
 date: '2026-04-04 23:17:45+00:00'
-title: Get The Prompt For Shot Camera_Motion
+title: "Katana Warrior Flash Combat"
 description: |-
   SHOT:
   camera_motion: tracking shot
@@ -12,14 +13,16 @@ description: |-
 models:
 - seedance2
 tags:
-- cinematic
 - action
 - martial-arts
-- dance
+- sword
+- intense
+- tracking
 author: Volodymyr Cherner
 source_url: https://twitter.com/vladimircherner/status/2040569543769145504
 draft: false
 ---
+
 
 SHOT:
 camera_motion: tracking shot

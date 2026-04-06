@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040453547398185421-we-have-released-seedance-20-httpstcokpmnrndaf0-du/cover.jpg
 video: /prompts/2026-04/2040453547398185421-we-have-released-seedance-20-httpstcokpmnrndaf0-du/video.mp4
 date: '2026-04-04 15:36:50+00:00'
-title: Have Released Due The 2500
+title: "Porsche Transformer Robot"
 description: |-
   [Technical Specs]
   Generate a 10-second, 16:9, 720p cinematic video. Smooth continuous camera motion with no cuts. The overall pacing is fast and tightly compressed, with rapid escalation from start to finish. Audio evolves quickly from a high-performance engine idle into intricate mechanical shifting and clicks, culminating in a soft electronic chime and the distinct sound of a "mwah" blowing kiss.
@@ -42,15 +43,16 @@ description: |-
 models:
 - seedance2
 tags:
-- cinematic
+- transformation
+- robot
+- sci-fi
 - action
-- war
-- dance
-- night
+- cinematic
 author: underwood
 source_url: https://twitter.com/underwoodxie96/status/2040453547398185421
 draft: false
 ---
+
 
 [Technical Specs]
 Generate a 10-second, 16:9, 720p cinematic video. Smooth continuous camera motion with no cuts. The overall pacing is fast and tightly compressed, with rapid escalation from start to finish. Audio evolves quickly from a high-performance engine idle into intricate mechanical shifting and clicks, culminating in a soft electronic chime and the distinct sound of a "mwah" blowing kiss.

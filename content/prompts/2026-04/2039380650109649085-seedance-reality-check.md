@@ -1,5 +1,6 @@
 ---
-title: "Reality Check"
+
+title: "VR Bear Fight Reality"
 date: 2026-04-01T16:33:31Z
 image: /prompts/2026-04/2039380650109649085-seedance-reality-check/cover.jpg
 video: /prompts/2026-04/2039380650109649085-seedance-reality-check/video.mp4
@@ -17,9 +18,11 @@ description: |
 models:
   - seedance2
 tags:
-  - cinematic
-  - realistic
-  - demonstration
+- cinematic
+- realistic
+- action
+- thriller
+- suspense
 author: Aimi Kōda
 source_url: https://twitter.com/aimikoda/status/2039380650109649085
 full_text: |
@@ -27,3 +30,4 @@ full_text: |
 
   Seedance 2.0 - Prompt below ⬇️ https://t.co/vgabUJ7Vhs
 ---
+

@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2039650893163847832-quantum-reality-fracture/cover.jpg
 video: /prompts/2026-04/2039650893163847832-quantum-reality-fracture/video.mp4
 date: 2026-04-02
-title: Quantum Reality Fracture - Seedance 2.0
+title: "Quantum Reality Fracture"
 description: |
   Quantum Reality Fracture on City Street (Interdimensional Rift VFX)
   Cinematic 15-second high-budget sci-fi horror sequence on a rain-slicked downtown city street at blue hour, towering skyscrapers and frozen traffic, epic scale
@@ -19,7 +20,13 @@ description: |
   Global style: Ultra high-budget Hollywood VFX blockbuster level, photorealistic, massive-scale portal and quantum effects, complex particle simulation with millions of elements, volumetric god rays, gravitational distortion, realistic destruction physics, IMAX cinematic quality, dramatic high-contrast lighting, flawless motion coherence, no text or deformities.
 
 models: seedance2
-tags: ["sci-fi", "horror", "quantum", "rift", "vfx", "action", "city", "rain", "supernatural"]
+tags:
+- sci-fi
+- horror
+- vfx
+- action
+- city
 author: "Dheepanratnam"
 source_url: "https://x.com/Dheepanratnam/status/2039650893163847832"
 ---
+

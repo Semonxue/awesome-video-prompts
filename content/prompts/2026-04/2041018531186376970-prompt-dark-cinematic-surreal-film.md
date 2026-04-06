@@ -1,5 +1,6 @@
 ---
-title: Prompt dark cinematic surreal film
+
+title: "Dark Surreal Dystopia"
 date: '2026-04-06 05:01:52+00:00'
 image: /prompts/2026-04/2041018531186376970-prompt-dark-cinematic-surreal-film/cover.jpg
 video: /prompts/2026-04/2041018531186376970-prompt-dark-cinematic-surreal-film/video.mp4
@@ -21,12 +22,15 @@ models:
 - seedance2
 tags:
 - cinematic
-- futuristic
-- slow-motion
+- dark
+- surreal
+- dystopian
+- thriller
 author: Smiling Khan
 source_url: https://twitter.com/AIwithkhan/status/2041018531186376970
 draft: false
 ---
+
 
 A dark, cinematic surreal film set in a post-war dystopian city, muted tones, cold color grading, shallow depth of field, soft film grain, dramatic lighting.
 A cracked empty street near a foggy shoreline. A woman in a long grey coat walks slowly toward the camera. Beside her floats a giant fragmented human face made of broken buildings and concrete, subtly shifting as if alive. Dust particles drift in the air.

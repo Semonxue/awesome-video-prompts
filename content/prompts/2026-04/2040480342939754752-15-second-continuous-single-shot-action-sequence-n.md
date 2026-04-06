@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040480342939754752-15-second-continuous-single-shot-action-sequence-n/cover.jpg
 video: /prompts/2026-04/2040480342939754752-15-second-continuous-single-shot-action-sequence-n/video.mp4
 date: '2026-04-04 17:23:18+00:00'
-title: Second Continuous Single Shot Action Sequence
+title: "Zero Gravity Katana Combat"
 description: |-
   15-second continuous single-shot action sequence.
   No cuts. No scene transitions.
@@ -31,10 +32,13 @@ tags:
 - action
 - sci-fi
 - anime
+- space
+- gravity
 author: OscarAI
 source_url: https://twitter.com/Artedeingenio/status/2040480342939754752
 draft: false
 ---
+
 
 15-second continuous single-shot action sequence.
 No cuts. No scene transitions.
