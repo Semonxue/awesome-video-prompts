@@ -1,5 +1,6 @@
 ---
-title: Big heart behind that cat attitude 😼❤️
+
+title: "Heroic Cat Parkour Rescue"
 date: '2026-04-06 00:00:00+00:00'
 image: /prompts/2026-04/2041021693062185085-big-heart-behind-that-cat-attitude/cover.jpg
 video: /prompts/2026-04/2041021693062185085-big-heart-behind-that-cat-attitude/video.mp4
@@ -25,15 +26,16 @@ description: |-
 models:
 - seedance2
 tags:
-- cinematic
+- cat
+- comedy
+- martial-arts
 - action
-- war
-- dance
-- aerial
+- cinematic
 author: The Anxious Mind
 source_url: https://twitter.com/drjoetw/status/2041021693062185085
 draft: false
 ---
+
 
 Cinematic action-comedy with classical martial arts flair, stylized animal kingdom rural village, surrounded by reflective rice paddies, soft morning mist, warm sunlight diffused through clouds, dynamic camera, highly choreographed physical action, grounded yet fluid movement, practical stunt-inspired choreography, subtle humor.
 Wide shot: A chubby orange cat wearing a bamboo hat and gray Taoist robe walks calmly along a narrow path between rice fields, water reflecting the sky and distant wooden houses.

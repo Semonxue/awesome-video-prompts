@@ -1,5 +1,6 @@
 ---
-title: "Surprising Results"
+
+title: "Cyberpunk Fighter Launch"
 date: 2026-04-01T09:09:23Z
 image: /prompts/2026-04/2039268881168998844-kling-surprising-results/cover.jpg
 video: /prompts/2026-04/2039268881168998844-kling-surprising-results/video.mp4
@@ -9,9 +10,11 @@ description: |
 models:
   - kling3
 tags:
-  - surprising
-  - demonstration
-  - showcase
+- cyberpunk
+- combat
+- sci-fi
+- action
+- kling
 author: OscarAI
 source_url: https://twitter.com/Artedeingenio/status/2039268881168998844
 full_text: |
@@ -19,3 +22,4 @@ full_text: |
 
   You can check the prompt in the post below 👇 https://t.co/WV9IYkkFqx
 ---
+

@@ -1,5 +1,6 @@
 ---
-title: "Barbershop Transformation"
+
+title: "Stylized Barbershop Transformation"
 date: 2026-04-01T15:59:38Z
 image: /prompts/2026-04/2039372124079669655-barbershop-transformation/cover.jpg
 video: /prompts/2026-04/2039372124079669655-barbershop-transformation/video.mp4
@@ -36,11 +37,11 @@ description: |
 models:
   - seedance2
 tags:
-  - transformation
-  - 3d
-  - animation
-  - humor
-  - cinematic
+- transformation
+- comedy
+- humor
+- cinematic
+- animation
 author: Shami
 source_url: https://twitter.com/ShamiWeb3/status/2039372124079669655
 full_text: |
@@ -105,3 +106,4 @@ full_text: |
     ],
   }
 ---
+
