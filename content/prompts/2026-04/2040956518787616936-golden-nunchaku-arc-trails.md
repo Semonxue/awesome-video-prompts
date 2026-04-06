@@ -6,7 +6,7 @@ image: /prompts/2026-04/2040956518787616936-golden-nunchaku-arc-trails/cover.jpg
 video: /prompts/2026-04/2040956518787616936-golden-nunchaku-arc-trails/video.mp4
 models:
 - seedance2
-tags:
+tags: ["martial-arts","slow-motion","vfx","cinematic","action"]
 - martial-arts
 - slow-motion
 - vfx

@@ -6,7 +6,7 @@ image: /prompts/2026-04/2040959499847221480-salmon-bite-underwater/cover.jpg
 video: /prompts/2026-04/2040959499847221480-salmon-bite-underwater/video.mp4
 models:
 - seedance2
-tags:
+tags: ["underwater","food","cinematic","fish","slow-motion"]
 - underwater
 - food
 - cinematic

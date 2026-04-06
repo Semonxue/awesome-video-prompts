@@ -1,6 +1,6 @@
 ---
 
-title: "Chubby Rabbit Haircut Transformation"
+title: "Bunny Haircut Fun"
 date: '2026-04-05 17:01:33+00:00'
 image: /prompts/2026-04/2040837256416559404-really-liking-lite-too-prompt-for/cover.jpg
 video: /prompts/2026-04/2040837256416559404-really-liking-lite-too-prompt-for/video.mp4
@@ -9,7 +9,7 @@ description: create a multi clip Veo 3.1 LITE video of a big chubby rabbit with 
   everything. final scene with a pink punk hairdo.
 models:
 - veo3
-tags:
+tags: ["animal","transformation","fun","multi-shot","humor"]
 - animal
 - transformation
 - multi-shot

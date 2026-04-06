@@ -1,6 +1,6 @@
 ---
 
-title: "Urban Train Station Portrait"
+title: "Urban Train Portrait"
 date: '2026-04-06 03:14:00+00:00'
 image: /prompts/2026-04/2040991383008199123-nano-banana-pro-omni-image-prompt/cover.jpg
 video: /prompts/2026-04/2040991383008199123-nano-banana-pro-omni-image-prompt/video.mp4
@@ -15,7 +15,7 @@ description: |-
   Cinematic lighting, soft natural daylight, realistic color grading, 4K, shallow depth of field, motion blur, emotional tone, urban realism
 models:
 - kling3
-tags:
+tags: ["urban","cinematic","street","emotional","realistic"]
 - urban
 - cinematic
 - street

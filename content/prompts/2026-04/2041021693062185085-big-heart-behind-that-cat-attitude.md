@@ -25,7 +25,7 @@ description: |-
   Highly detailed physical choreography, grounded multi-step parkour, precise timing, cloth simulation on robe, environmental interaction (walls, cart, ground), soft motion blur, cinematic camera flow (tracking, tilt, orbit), light comedic tone blended with elegant martial arts action.
 models:
 - seedance2
-tags:
+tags: ["cat","martial-arts","action","comedy","cinematic"]
 - cat
 - comedy
 - martial-arts

@@ -11,7 +11,7 @@ description: These are the opening and closing frames of a tavern martial arts f
   feel.
 models:
 - kling3
-tags:
+tags: ["martial-arts","cinematic","story","action","combat"]
 - martial-arts
 - cinematic
 - story

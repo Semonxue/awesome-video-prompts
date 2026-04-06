@@ -10,7 +10,7 @@ description: |-
   Camera starts with a medium side shot, slowly pushing in with a smooth cinematic dolly movement toward her relaxed expression. Shallow depth of field, filmic color grading, warm tones, natural light, dreamy mood, ultra realistic, 4K cinematic film style.
 models:
 - kling3
-tags:
+tags: ["vintage","summer","travel","car","cinematic"]
 - cinematic
 - summer
 - vintage

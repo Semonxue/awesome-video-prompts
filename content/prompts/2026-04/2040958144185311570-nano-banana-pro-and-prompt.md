@@ -14,7 +14,7 @@ description: A cinematic medium shot of a young Central Asian woman walking slow
   natural color grading, emotional and peaceful mood
 models:
 - kling3
-tags:
+tags: ["cinematic","emotional","nature","slow-motion","realistic"]
 - cinematic
 - emotional
 - nature

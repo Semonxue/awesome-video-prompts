@@ -1,5 +1,5 @@
 ---
-title: Let's mend the shoes 3.0 Prompt highly
+title: "Artisan Shoe Workshop"
 date: '2026-04-06 00:00:00+00:00'
 image: /prompts/2026-04/2041056393936199825-let-s-mend-the-shoes-3-0-prompt-highly/cover.jpg
 video: /prompts/2026-04/2041056393936199825-let-s-mend-the-shoes-3-0-prompt-highly/video.mp4
@@ -9,7 +9,7 @@ description: |-
   Warm golden and teal color grading, dramatic yet gentle lighting, emotional and contemplative mood. Smooth fluid camera movements, depth of field, rule of thirds composition. High-end cinematic quality, no text, vertical 9:16 format, trending satisfying repair video style. Masterpiece, best quality, ultra-detailed.
 models:
 - kling3
-tags:
+tags: ["cinematic","anime","macro","cozy","art"]
 - cinematic
 - anime
 - realistic

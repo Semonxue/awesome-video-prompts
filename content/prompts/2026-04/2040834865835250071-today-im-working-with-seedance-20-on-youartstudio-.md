@@ -33,7 +33,7 @@ description: |-
   The Finale: She looks directly at the camera, playfully catches a glowing "Like" (Heart) icon from the air, gives a sharp wink, and throws the icon straight into the camera lens. The icon covers the lens, turning the screen instantly to black — creating a definitive ending or a seamless loop back to the start.
 models:
 - seedance2
-tags:
+tags: ["cyberpunk","technology","urban","action","cinematic"]
 - action
 - cyberpunk
 - technology

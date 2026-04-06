@@ -1,6 +1,6 @@
 ---
 
-title: "Adrenaline Stair Descent POV"
+title: "Downhill Stair POV"
 date: '2026-04-06 06:43:02+00:00'
 image: /prompts/2026-04/2041043988321534291-the-adrenaline-rush-made-with-prompt/cover.jpg
 video: /prompts/2026-04/2041043988321534291-the-adrenaline-rush-made-with-prompt/video.mp4
@@ -49,7 +49,7 @@ description: 'FORMAT: 15s / 180 BPM / ONE CONTINUOUS SHOT / 360 POV downhill sta
   (rear tire screech, gravel spray, freewheel spin, city roar, music drop)'
 models:
 - kling3
-tags:
+tags: ["action","pov","urban","intense","street"]
 - action
 - pov
 - urban

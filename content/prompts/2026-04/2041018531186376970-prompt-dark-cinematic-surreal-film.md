@@ -20,7 +20,7 @@ description: |-
   cinematic, dystopian, surreal realism, slow motion, dramatic lighting, volumetric fog, depth of field, 35mm film look, desaturated tones, symbolic storytelling, melancholic mood, smooth camera movement
 models:
 - seedance2
-tags:
+tags: ["cinematic","dark","surreal","thriller","epic"]
 - cinematic
 - dark
 - surreal

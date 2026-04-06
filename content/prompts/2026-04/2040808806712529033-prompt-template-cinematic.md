@@ -15,7 +15,7 @@ description: |-
   → Or write your own subject and be creative!
 models:
 - grok
-tags:
+tags: ["cinematic","realistic","story","emotional","slow-motion"]
 - cinematic
 - realistic
 - template

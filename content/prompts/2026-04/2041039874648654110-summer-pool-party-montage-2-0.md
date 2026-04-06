@@ -18,7 +18,7 @@ description: 【风格】夏日泳池派对（Summer Pool Party Montage），快
   Shot） 全景：蓝白沙滩球飞过画面中心，前景女子挥臂抛球，泳池边人群欢呼，浮床点缀水面。
 models:
 - seedance2
-tags:
+tags: ["summer","water","underwater","fashion","multi-shot"]
 - summer
 - pool
 - water

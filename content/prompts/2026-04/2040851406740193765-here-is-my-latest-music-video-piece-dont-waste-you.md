@@ -24,7 +24,7 @@ description: 'Very wide establishing shot of the futuristic city skyline in full
   around it.'
 models:
 - kling3
-tags:
+tags: ["cinematic","sci-fi","urban","future","hover"]
 - cinematic
 - sci-fi
 - urban

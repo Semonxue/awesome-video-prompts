@@ -18,7 +18,7 @@ description: |-
   End Shot: The lion strikes a confident superhero pose with one paw raised, wearing sunglasses, looking at the camera with a smug expression. The cat barber stands beside him with a satisfied nod. The lion's stylish pompadour haircut is prominently displayed
 models:
 - pixverse
-tags:
+tags: ["animal","comedy","transformation","humor","fun"]
 - animal
 - comedy
 - humor

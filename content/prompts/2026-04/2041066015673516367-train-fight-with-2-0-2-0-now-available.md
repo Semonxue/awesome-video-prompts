@@ -1,5 +1,5 @@
 ---
-title: Train Fight with 2.0 2.0 now available
+title: "Train Top Combat"
 date: '2026-04-06 00:00:00+00:00'
 image: /prompts/2026-04/2041066015673516367-train-fight-with-2-0-2-0-now-available/cover.jpg
 video: /prompts/2026-04/2041066015673516367-train-fight-with-2-0-2-0-now-available/video.mp4
@@ -12,7 +12,7 @@ description: Dramatic low-angle tracking shot speeding along rain-slicked train 
   grade, cinematic speed and motion blur, sci-fi action film aesthetic.
 models:
 - seedance2
-tags:
+tags: ["action","train","combat","adventure","sci-fi"]
 - cinematic
 - action
 - sci-fi

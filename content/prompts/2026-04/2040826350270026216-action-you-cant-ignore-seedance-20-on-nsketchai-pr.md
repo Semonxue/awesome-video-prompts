@@ -3,7 +3,7 @@
 image: /prompts/2026-04/2040826350270026216-action-you-cant-ignore-seedance-20-on-nsketchai-pr/cover.jpg
 video: /prompts/2026-04/2040826350270026216-action-you-cant-ignore-seedance-20-on-nsketchai-pr/video.mp4
 date: '2026-04-05 16:18:13+00:00'
-title: "Warrior Demon Transformation"
+title: "Demon Warrior Transformation"
 description: |-
   A dark, post-apocalyptic city covered in smoke, debris, and burning ruins, cinematic wide aerial shot, dramatic cloudy sky with fire embers floating in the air, destroyed buildings on both sides, abandoned cars, cracked roads glowing faintly with heat
   A powerful female warrior descends rapidly from the sky, long hair flowing in slow motion, camera follows her from above as she slams into the ground, creating a shockwave of dust and debris, cinematic impact, particles flying, ground cracking beneath her
@@ -20,7 +20,7 @@ description: |-
   Style: ultra-realistic, cinematic lighting, volumetric fog, Unreal Engine style, high contrast, dramatic shadows, slow motion, epic scale, 4K, film grain, teal-orange + neon green color grading
 models:
 - seedance2
-tags:
+tags: ["action","warrior","transformation","apocalyptic","cinematic"]
 - action
 - cinematic
 - transformation

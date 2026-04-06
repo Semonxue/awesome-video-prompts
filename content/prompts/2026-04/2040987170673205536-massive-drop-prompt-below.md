@@ -14,7 +14,7 @@ description: |-
     quality: single shot from the middle of the crowd, warm gallery lighting, gold frames and marble doing all the visual work
 models:
 - seedance2
-tags:
+tags: ["cinematic","music","urban","intense","spectacular"]
 - cinematic
 - music
 - urban

@@ -3,7 +3,7 @@
 image: /prompts/2026-04/2040846895334211776-grok-imagine-ai-tech-prompt-a-breathtaking-realist/cover.jpg
 video: /prompts/2026-04/2040846895334211776-grok-imagine-ai-tech-prompt-a-breathtaking-realist/video.mp4
 date: '2026-04-05 17:39:51+00:00'
-title: "Ice Dragon Nuzzles Woman"
+title: "Ice Dragon Snow Romance"
 description: A breathtaking realistic 15-second cinematic video in 8K. In a vast,
   pristine snowy landscape with snow-covered mountains under a clear bright blue sky,
   a massive majestic white ice dragon with intricate crystalline scales, sharp spikes,
@@ -21,7 +21,7 @@ description: A breathtaking realistic 15-second cinematic video in 8K. In a vast
   masterpiece, best quality, slow-motion elegance throughout the 15-second duration.
 models:
 - grok
-tags:
+tags: ["fantasy","snow","mountain","romantic","epic"]
 - fantasy
 - snow
 - mountain

@@ -16,7 +16,7 @@ description: A girl (element) scrolling with both hands on a giant mobile phone 
   MUSIC. ONLY AMBIENT SOUNDS.
 models:
 - seedance2
-tags:
+tags: ["adventure","fantasy","dragon","action","cinematic"]
 - cinematic
 - adventure
 - fantasy

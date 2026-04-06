@@ -1,6 +1,6 @@
 ---
 
-title: "Stealthy Cat Firecracker Prank"
+title: "Cat Firecracker Prank"
 date: '2026-04-06 00:00:00+00:00'
 image: /prompts/2026-04/2041032238293540876-stealthy-cat-sleeping-chicken-and-one-explosive/cover.jpg
 video: /prompts/2026-04/2041032238293540876-stealthy-cat-sleeping-chicken-and-one-explosive/video.mp4
@@ -10,7 +10,7 @@ description: |-
   Style: cinematic comedy, Mission Impossible parody, ultra-detailed, volumetric lighting, dust particles, feather physics, squash-and-stretch animation, dynamic motion, 120 BPM orchestral slapstick score, high detail, 4K, film-quality rendering.
 models:
 - seedance2
-tags:
+tags: ["cat","comedy","fun","action","animal"]
 - cat
 - comedy
 - fun

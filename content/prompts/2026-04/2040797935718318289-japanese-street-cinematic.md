@@ -24,7 +24,7 @@ description: |-
   [0:14-0:15] 镜头快速平移扫过街边密集发光商铺与路人。 涩谷十字路口夜景，巨型屏幕与庞大过马路人潮交织。
 models:
 - seedance2
-tags:
+tags: ["urban","japan","neon","night","cinematic"]
 - urban
 - japan
 - neon

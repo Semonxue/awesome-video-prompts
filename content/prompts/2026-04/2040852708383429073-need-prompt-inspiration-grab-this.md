@@ -1,6 +1,6 @@
 ---
 
-title: "Three Cats Making Hot Chocolate"
+title: "Three Cats Hot Chocolate"
 date: '2026-04-05 18:02:57+00:00'
 image: /prompts/2026-04/2040852708383429073-need-prompt-inspiration-grab-this/cover.jpg
 video: /prompts/2026-04/2040852708383429073-need-prompt-inspiration-grab-this/video.mp4
@@ -17,7 +17,7 @@ description: "The camera zooms in to a coffee cart at a busy baseball game. At t
   \ a smile."
 models:
 - seedance2
-tags:
+tags: ["cat","cooking","product","comedy","fun"]
 - cat
 - cooking
 - product

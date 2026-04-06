@@ -3,7 +3,7 @@
 image: /prompts/2026-04/2040839986845819162-when-youre-just-trying-to-walk-normally-but-the-ca/cover.jpg
 video: /prompts/2026-04/2040839986845819162-when-youre-just-trying-to-walk-normally-but-the-ca/video.mp4
 date: '2026-04-05 17:12:24+00:00'
-title: "Stylish Fashion Walk"
+title: "Fashion Street Tracking"
 description: |-
   {
   "type": "cinematic_hyper_realistic_video",
@@ -48,7 +48,7 @@ description: |-
   }
 models:
 - seedance2
-tags:
+tags: ["fashion","cinematic","urban","street","slow-motion"]
 - cinematic
 - fashion
 - urban

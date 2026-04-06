@@ -8,7 +8,7 @@ description: Hero deflects bullets with a samosa, then 100 people dance in a neo
   palace.
 models:
 - seedance2
-tags:
+tags: ["action","humor","comedy","dance","cinematic"]
 - action
 - humor
 - dance

@@ -21,7 +21,7 @@ description: |-
   Highly detailed, photorealistic yet stylized digital art, cinematic lighting, dramatic atmosphere, sharp focus, intricate mechanical details, reflective metallic surfaces, volumetric lighting, 8k resolution, epic sci-fi aesthetic.
 models:
 - grok
-tags:
+tags: ["cyberpunk","sci-fi","action","cinematic","neon"]
 - cyberpunk
 - sci-fi
 - action

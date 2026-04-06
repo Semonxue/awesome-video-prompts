@@ -3,7 +3,7 @@
 image: /prompts/2026-04/2040810610183536961-seedance-20-handles-high-speed-action-better-than-/cover.jpg
 video: /prompts/2026-04/2040810610183536961-seedance-20-handles-high-speed-action-better-than-/video.mp4
 date: '2026-04-05 15:15:40+00:00'
-title: "High-Speed Sci-Fi Action"
+title: "High-Speed Mutant Chase"
 description: "[Base Setup & Environment]\nLive-action, 10s cinematic continuous oner,\
   \ high-FPS, hyper-real dark American wasteland sci-fi horror. Protagonist (Ref 1):\
   \ Radiation-mutated extreme speed/strength. Acceleration leaves heavy motion blur\
@@ -28,7 +28,7 @@ description: "[Base Setup & Environment]\nLive-action, 10s cinematic continuous 
   \ bright palette, flashy VFX, rigid camera, lack of speed/blur, weak kills."
 models:
 - seedance2
-tags:
+tags: ["action","sci-fi","apocalyptic","high-speed","cinematic"]
 - action
 - sci-fi
 - apocalyptic

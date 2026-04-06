@@ -3,7 +3,7 @@
 image: /prompts/2026-04/2040819445288120820-capcut-seedance20-first-anime-bench/cover.jpg
 video: /prompts/2026-04/2040819445288120820-capcut-seedance20-first-anime-bench/video.mp4
 date: '2026-04-05 15:50:47+00:00'
-title: "Anime Hero Transformation"
+title: "Anime Hero Battle"
 description: |-
   {
   "model": "seedance-2.0",
@@ -49,7 +49,7 @@ description: |-
   }
 models:
 - seedance2
-tags:
+tags: ["anime","action","sci-fi","japan","transformation"]
 - anime
 - action
 - sci-fi
