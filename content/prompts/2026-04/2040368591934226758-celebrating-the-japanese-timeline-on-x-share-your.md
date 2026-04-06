@@ -1,0 +1,34 @@
+---
+image: /prompts/2026-04/2040368591934226758-celebrating-the-japanese-timeline-on-x-share-your/cover.jpg
+video: /prompts/2026-04/2040368591934226758-celebrating-the-japanese-timeline-on-x-share-your/video.mp4
+date: '2026-04-04 09:59:15+00:00'
+title: Celebrating The Japanese Timeline Share Your
+description: |
+  Celebrating the Japanese timeline on 𝕏
+  Share your Samurai below 👇
+  @grok imagine prompt share
+  A cinematic photograph of a lone ronin in a desolate, rain-soaked environment, blending traditional and futuristic elements.
+  Long prompt
+  A solitary ronin in tattered black hakama stands in pouring neon rain, half his body dissolving into swirling stardust and bioluminescent particles, cybernetic katana glowing ultraviolet and magenta, entire scene selective black & white except violent neon blade and cherry-red blood drips, cinematic rim light, ethereal volumetric god rays, surreal dream logic, ultra-detailed, Midjourney aesthetic, dramatic low angle
+
+models:
+- grok
+tags:
+- cinematic
+- futuristic
+- drama
+- rain
+author: Carolina Delgado
+source_url: https://twitter.com/Artedeingenio/status/2040368591934226758
+draft: true
+---
+
+Celebrating the Japanese timeline on 𝕏
+
+Share your Samurai below 👇
+
+@grok imagine prompt share
+A cinematic photograph of a lone ronin in a desolate, rain-soaked environment, blending traditional and futuristic elements.
+
+Long prompt
+A solitary ronin in tattered black hakama stands in pouring neon rain, half his body dissolving into swirling stardust and bioluminescent particles, cybernetic katana glowing ultraviolet and magenta, entire scene selective black & white except violent neon blade and cherry-red blood drips, cinematic rim light, ethereal volumetric god rays, surreal dream logic, ultra-detailed, Midjourney aesthetic, dramatic low angle
