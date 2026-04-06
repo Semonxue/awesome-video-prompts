@@ -20,10 +20,13 @@ models:
 - seedance2
 tags:
 - summer
+- pool
 - water
 - underwater
 - dance
+- fashion
 - fun
+- multi-shot
 author: John
 source_url: https://twitter.com/johnAGI168/status/2041039874648654110
 draft: false
