@@ -1,5 +1,6 @@
 ---
-title: Fortnite Live Action Raider Battle
+
+title: "Fortnite Live Action Battle"
 date: '2026-04-01'
 image: /prompts/2026-04/2039276148568264875-fortnite-live-action-battle/cover.jpg
 video: /prompts/2026-04/2039276148568264875-fortnite-live-action-battle/video.mp4
@@ -9,8 +10,8 @@ tags:
 - action
 - gaming
 - combat
-- multi-shot
 - cinematic
+- multi-shot
 author: aimikoda
 source_url: https://x.com/aimikoda/status/2039276148568264875
 description: |-
@@ -40,6 +41,7 @@ image_path: /prompts/2026-04/2039276148568264875-fortnite-live-action-battle/cov
 video_path: /prompts/2026-04/2039276148568264875-fortnite-live-action-battle/video.mp4
 draft: false
 ---
+
 
 FORMAT: 15s / 146 BPM / 6 CUTS / 3rd person, pop-up builds, vertical combat
 

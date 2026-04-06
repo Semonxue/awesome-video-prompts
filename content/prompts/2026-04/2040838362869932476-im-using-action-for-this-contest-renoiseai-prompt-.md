@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040838362869932476-im-using-action-for-this-contest-renoiseai-prompt-/cover.jpg
 video: /prompts/2026-04/2040838362869932476-im-using-action-for-this-contest-renoiseai-prompt-/video.mp4
 date: '2026-04-05 17:05:57+00:00'
-title: Using Action For This Contest Prompt
+title: "Armor Hero vs Monsters"
 description: |-
   Ultra-realistic cinematic ruined city street at night, extremely detailed textures: cracked asphalt, rusted metal, broken concrete debris, shattered glass, scorch marks, smoke drifting through destroyed vehicles, sparks from exposed cables, burning wreckage glowing in the background, neon reflections shimmering through dust and firelight, realistic depth of field, foreground blur, no magic effects, no subtitles, only mechanical impacts and physical destruction.
   A normal adult Western woman hero with exact realistic human proportions sprints at full speed through the ruined street while a pack of grey-black hunting beasts with rough skin, steel claws, muscular bodies, and glowing eyes chase her aggressively in coordinated attack waves from multiple directions.
@@ -11,15 +12,16 @@ description: |-
 models:
 - grok
 tags:
-- cinematic
 - action
-- realistic
-- war
 - combat
+- scifi
+- warrior
+- mechanical
 author: Sharon Riley
 source_url: https://x.com/Just_sharon7/status/2040838362869932476
 draft: false
 ---
+
 
 Ultra-realistic cinematic ruined city street at night, extremely detailed textures: cracked asphalt, rusted metal, broken concrete debris, shattered glass, scorch marks, smoke drifting through destroyed vehicles, sparks from exposed cables, burning wreckage glowing in the background, neon reflections shimmering through dust and firelight, realistic depth of field, foreground blur, no magic effects, no subtitles, only mechanical impacts and physical destruction.
 A normal adult Western woman hero with exact realistic human proportions sprints at full speed through the ruined street while a pack of grey-black hunting beasts with rough skin, steel claws, muscular bodies, and glowing eyes chase her aggressively in coordinated attack waves from multiple directions.

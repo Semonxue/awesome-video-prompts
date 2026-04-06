@@ -1,16 +1,17 @@
 ---
-title: Salmon Underwater Journey
+
+title: "Salmon Underwater Dream"
 image: /prompts/2026-04/2040794230864703983-salmon-underwater-journey/cover.jpg
 video: /prompts/2026-04/2040794230864703983-salmon-underwater-journey/video.mp4
 date: '2026-04-05 14:10:35+00:00'
 models:
 - seedance2
 tags:
-- culinary
 - underwater
-- multi-shot
-- cinematic
 - food
+- ocean
+- cinematic
+- transformation
 author: Latte
 source_url: https://x.com/0xbisc/status/2040794230864703983
 description: |-
@@ -51,6 +52,7 @@ description: |-
   SFX: Soft cutting sound, chewing sound. Ambient sound fades out during transition. Restaurant sound resumes after returning. Underwater environment features gentle water flow sounds.
 draft: false
 ---
+
 
 FORMAT: 15s, cinematic pacing, continuous camera movement with focus transitions, natural transition into inner world through eye reflection, overall smooth and cohesive flow
 

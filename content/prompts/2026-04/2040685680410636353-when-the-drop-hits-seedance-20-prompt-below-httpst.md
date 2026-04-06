@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040685680410636353-when-the-drop-hits-seedance-20-prompt-below-httpst/cover.jpg
 video: /prompts/2026-04/2040685680410636353-when-the-drop-hits-seedance-20-prompt-below-httpst/video.mp4
 date: '2026-04-05 06:59:14+00:00'
-title: When The Drop Hits Prompt Below
+title: "Construction Site Rave"
 description: |-
   aesthetic: phone held up in the middle of a packed crowd on a construction site at night
     audio: bass shaking loose rebar, industrial echo, crowd energy, work lights buzzing
@@ -14,11 +15,16 @@ description: |-
 models:
 - seedance2
 tags:
+- cinematic
+- industrial
 - dance
+- night
+- music
 author: Alex Patrascu
 source_url: https://twitter.com/maxescu/status/2040685680410636353
 draft: false
 ---
+
 
 aesthetic: phone held up in the middle of a packed crowd on a construction site at night
   audio: bass shaking loose rebar, industrial echo, crowd energy, work lights buzzing

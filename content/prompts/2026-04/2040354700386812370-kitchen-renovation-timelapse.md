@@ -1,5 +1,6 @@
 ---
-title: Kitchen Renovation Timelapse
+
+title: "Kitchen Renovation Timelapse"
 date: '2026-04-04'
 image: /prompts/2026-04/2040354700386812370-kitchen-renovation-timelapse/cover.jpg
 video: /prompts/2026-04/2040354700386812370-kitchen-renovation-timelapse/video.mp4
@@ -53,15 +54,15 @@ models:
 - veo3
 tags:
 - timelapse
-- kitchen
-- renovation
 - interior
-- realistic
 - transformation
+- realistic
+- cozy
 author: MrDasOnX
 source_url: https://x.com/MrDasOnX/status/2040354700386812370
 draft: false
 ---
+
 
 Ultra-realistic cinematic timelapse, natural daylight progression from cool morning light to warm golden evening, adaptive static camera fixed in one elevated corner of the kitchen showing the full space with subtle focal adjustments for depth and parallax as the area transforms. Realistic movements of workers, tools, and materials. Interior kitchen renovation transformation.
 

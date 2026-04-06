@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2039308016558784836-seedance-reality-check/cover.jpg
 video: /prompts/2026-04/2039308016558784836-seedance-reality-check/video.mp4
 date: '2026-04-01'
-title: Seedance Reality Check
+title: "Rocket Surf Stunt"
 description: "ROCKET SURF. \nSTYLE: Gritty Cine Verité,  35mm handheld, natural shake.\
   \ Continuous tracking shot. No cuts. All real-time. \n\nLIGHTING: Bright, high-altitude\
   \ sun, pure blue sky. \n\nAUDIO:  Rocket engine roar, wind, fiberglass creak.  \n\
@@ -18,13 +19,15 @@ models:
 - seedance2
 tags:
 - action
-- dramatic
+- flight
 - realistic
 - cinematic
+- humor
 author: maxescu
 source_url: https://x.com/maxescu/status/2039308016558784836
 draft: false
 ---
+
 
 ROCKET SURF. 
 STYLE: Gritty Cine Verité,  35mm handheld, natural shake. Continuous tracking shot. No cuts. All real-time. 

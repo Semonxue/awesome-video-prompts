@@ -1,5 +1,6 @@
 ---
-title: Wall Street Rally Speech
+
+title: "Wall Street Rally Speech"
 date: '2026-04-01'
 image: /prompts/2026-04/2039277115690877430-wall-street-rally-speech/cover.jpg
 video: /prompts/2026-04/2039277115690877430-wall-street-rally-speech/video.mp4
@@ -7,10 +8,10 @@ models:
 - seedance2
 tags:
 - drama
-- action
 - cinematic
 - historical
 - epic
+- rally
 author: johnAGI168
 source_url: https://x.com/johnAGI168/status/2039277115690877430
 description: |-
@@ -23,6 +24,7 @@ image_path: /prompts/2026-04/2039277115690877430-wall-street-rally-speech/cover.
 video_path: /prompts/2026-04/2039277115690877430-wall-street-rally-speech/video.mp4
 draft: false
 ---
+
 
 好莱坞电影级商业大片质感，手持摄影，镜头带轻微晃动感，快节奏蒙太奇剪辑，画面充满能量与压迫感，不出现任何字幕。
 1990年代美国曼哈顿豪华证券公司开放式办公大厅，数百名穿西装的年轻男性经纪人密密麻麻站满整个空间，美国国旗悬挂四周，彩带在空中飘落，整个大厅陷入一种宗教仪式般的集体狂热。

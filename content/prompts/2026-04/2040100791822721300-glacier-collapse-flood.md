@@ -1,5 +1,6 @@
 ---
-title: Glacier Collapse Megaflood
+
+title: "Glacier Collapse Megaflood"
 date: '2026-04-04'
 image: /prompts/2026-04/2040100791822721300-glacier-collapse-flood/cover.jpg
 video: /prompts/2026-04/2040100791822721300-glacier-collapse-flood/video.mp4
@@ -17,14 +18,15 @@ models:
 - seedance2
 tags:
 - glacier
-- ice
 - tsunami
-- destruction
 - cinematic
+- ice
+- destruction
 author: LudovicCreator
 source_url: https://x.com/LudovicCreator/status/2040100791822721300
 draft: false
 ---
+
 
 A giant glacier wall collapses into a fjord beside a coastal city.
 

@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040808806712529033-prompt-template-cinematic/cover.jpg
 video: /prompts/2026-04/2040808806712529033-prompt-template-cinematic/video.mp4
 date: '2026-04-05 15:08:28+00:00'
-title: Cinematic Close-Up Template
+title: "Cinematic Close-Up Template"
 description: |-
   PROMPT TEMPLATE:
   Cinematic close up shot of [SUBJECT], naturalistic film lighting, soft diffusion, restrained earthy color grading with warm highlights and cool shadows, layered depth composition with foreground interest and vast backgrounds, realistic material surfaces and micro-detail textures, subtle film grain, balanced cinematic contrast, moody atmospheric perspective and haze.
@@ -16,9 +17,10 @@ models:
 - grok
 tags:
 - cinematic
-- close-up
-- template
 - realistic
+- template
+- story
+- emotional
 author: Dogan Ural
 source_url: https://x.com/doganuraldesign/status/2040808806712529033
 full_text: 'PROMPT TEMPLATE: Cinematic close up shot of [SUBJECT], naturalistic film
@@ -30,6 +32,7 @@ full_text: 'PROMPT TEMPLATE: Cinematic close up shot of [SUBJECT], naturalistic 
   '
 draft: false
 ---
+
 
 PROMPT TEMPLATE:
 Cinematic close up shot of [SUBJECT], naturalistic film lighting, soft diffusion, restrained earthy color grading with warm highlights and cool shadows, layered depth composition with foreground interest and vast backgrounds, realistic material surfaces and micro-detail textures, subtle film grain, balanced cinematic contrast, moody atmospheric perspective and haze.

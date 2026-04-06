@@ -1,5 +1,6 @@
 ---
-title: Intense Seedance 2.0 Scene
+
+title: "POV Neon City Parkour"
 description: |-
   SUBJECTS:
 
@@ -36,12 +37,16 @@ video: /prompts/2026-04/2040041166822060477-intense-seedance-scene/video.mp4
 models:
 - seedance2
 tags:
-- cinematic
+- pov
+- neon
+- urban
 - action
+- cinematic
 author: Latte
 source_url: https://x.com/0xbisc/status/2040041166822060477
 draft: false
 ---
+
 
 SUBJECTS:
 

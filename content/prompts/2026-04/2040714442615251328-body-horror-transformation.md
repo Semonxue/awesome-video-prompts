@@ -1,16 +1,17 @@
 ---
-title: Body Horror Transformation
+
+title: "Body Horror Hospital Infection"
 image: /prompts/2026-04/2040714442615251328-body-horror-transformation/cover.jpg
 video: /prompts/2026-04/2040714442615251328-body-horror-transformation/video.mp4
 date: '2026-04-05 08:53:32+00:00'
 models:
 - seedance2
 tags:
-- body-horror
+- horror
 - transformation
-- vfx
-- scary
 - multi-shot
+- vfx
+- dark
 author: Dheepan Ratnam
 source_url: https://x.com/Dheepanratnam/status/2040714442615251328
 description: "Abandoned Hospital Dream Infection \n(8 shots, ~15s) – \nOrganic-Tech\
@@ -35,6 +36,7 @@ description: "Abandoned Hospital Dream Infection \n(8 shots, ~15s) – \nOrganic
   \ and fluid interactions, eerie green-purple lighting, shallow depth of field."
 draft: false
 ---
+
 
 Abandoned Hospital Dream Infection 
 (8 shots, ~15s) – 

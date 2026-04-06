@@ -1,5 +1,6 @@
 ---
-title: Luxury Lipstick Forging
+
+title: "Luxury Lipstick Forging"
 date: '2026-04-05 11:28:30+00:00'
 image: /prompts/2026-04/2040753443040809168-luxury-lipstick-forging/cover.jpg
 video: /prompts/2026-04/2040753443040809168-luxury-lipstick-forging/video.mp4
@@ -49,15 +50,11 @@ description: |-
 models:
 - veo3
 tags:
-- commercial
-- luxury
+- fashion
 - macro
-- metal
-- forging
-- beauty
-- branding
+- product
+- luxury
 - cinematic
-- photorealistic
 author: Mr Das
 source_url: https://twitter.com/MrDasOnX/status/2040753443040809168
 full_text: |
@@ -100,6 +97,7 @@ full_text: |
   }
 draft: false
 ---
+
 
 {
   "description": "8-second photorealistic cinematic video of a Dior lipstick being forged from molten gold, where branding elements are physically formed, engraved, and embossed as part of the manufacturing process.",

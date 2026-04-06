@@ -1,16 +1,17 @@
 ---
-title: Chinese Style Windbell Transformation
+
+title: "Chinese Windbell Makeover"
 image: /prompts/2026-04/2040711127420875176-chinese-style-transformation/cover.jpg
 video: /prompts/2026-04/2040711127420875176-chinese-style-transformation/video.mp4
 date: '2026-04-05 08:40:22+00:00'
 models:
 - kling3
 tags:
-- chinese-style
 - transformation
-- portrait
+- eastern
 - cinematic
-- beauty
+- nature
+- slow-motion
 author: 李岳
 source_url: https://x.com/liyue_ai/status/2040711127420875176
 description: |-
@@ -42,6 +43,7 @@ description: |-
   素颜睡衣昏暗房 → 冷白皮林间美人的强烈反差，发丝发光+桃花眼甜笑+翠绿风铃叶片，画面清新又有故事。
 draft: false
 ---
+
 
 暗调清冷转明媚治愈，古风氛围感+卡点变装，电影质感慢镜头，极致反差视觉冲击
 

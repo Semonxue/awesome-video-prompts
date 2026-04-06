@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040756333667090575-seedance20-mv-dance-topviewai/cover.jpg
 video: /prompts/2026-04/2040756333667090575-seedance20-mv-dance-topviewai/video.mp4
 date: '2026-04-05 11:40:00+00:00'
-title: Seedance2 0でMvダンス Aiダンス動画がここまできた Topviewさん Seedance2 0復活です
+title: "K-pop Dance Duo"
 description: |-
   Use refs exactly:
   Ref 1 female dancer
@@ -55,11 +56,16 @@ description: |-
 models:
 - seedance2
 tags:
+- k-pop
 - dance
+- music
+- duo
+- cinematic
 author: Zeto
 source_url: https://x.com/ZetoGroovin/status/2040756333667090575
 draft: false
 ---
+
 
 Use refs exactly:
 Ref 1 female dancer

@@ -1,5 +1,6 @@
 ---
-title: Seedance2.0 跑车商业摄影分镜
+
+title: "LaFerrari Car Commercial"
 date: '2026-04-03'
 image: /prompts/2026-04/2039932977287979053-seedance2-car-commercial/cover.jpg
 video: /prompts/2026-04/2039932977287979053-seedance2-car-commercial/video.mp4
@@ -35,14 +36,15 @@ models:
 - seedance2
 tags:
 - car
+- supercar
+- product
+- cinematic
 - commercial
-- cinematography
-- camera-movement
-- shot-list
 author: Adam38363368936
 source_url: https://x.com/Adam38363368936/status/2039932977287979053
 draft: false
 ---
+
 
 跑车商业摄影分镜
 

@@ -1,5 +1,6 @@
 ---
-title: Stickman Fight Seedance 2.0
+
+title: "Stickman Fight Animation"
 description: |-
   FORMAT: 15s / 182 BPM / 7 CUTS / minimalist 2D stick fight animation, pure white background, snap-fast readability
 
@@ -23,12 +24,15 @@ models:
 - seedance2
 tags:
 - action
-- animation
 - combat
+- martial-arts
+- animation
+- minimalist
 author: Aimi Kōda
 source_url: https://x.com/aimikoda/status/2040009409586135356
 draft: false
 ---
+
 
 FORMAT: 15s / 182 BPM / 7 CUTS / minimalist 2D stick fight animation, pure white background, snap-fast readability
 

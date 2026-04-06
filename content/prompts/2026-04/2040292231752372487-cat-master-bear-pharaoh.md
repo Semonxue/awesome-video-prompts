@@ -1,5 +1,6 @@
 ---
-title: Cat Master Bear Pharaoh
+
+title: "Cat Pharaoh Adventure"
 date: '2026-04-04'
 image: /prompts/2026-04/2040292231752372487-cat-master-bear-pharaoh/cover.jpg
 video: /prompts/2026-04/2040292231752372487-cat-master-bear-pharaoh/video.mp4
@@ -38,15 +39,16 @@ description: |-
 models:
 - seedance2
 tags:
-- cats
-- pyramid
-- mummy
-- dark-comedy
+- cat
+- comedy
+- adventure
+- historical
 - cinematic
 author: drjoetw
 source_url: https://x.com/drjoetw/status/2040292231752372487
 draft: false
 ---
+
 
 Cinematic dark comedy adventure shot on Arri Alexa 35 with handheld jitter, exaggerated reaction shots, and punchy fast-cut editing, featuring moody torch lighting, dusty particle VFX, and a claustrophobic ancient pyramid atmosphere.
 

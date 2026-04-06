@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040628800422322359-seedance-20-y2k-pool-party-vibes/cover.jpg
 video: /prompts/2026-04/2040628800422322359-seedance-20-y2k-pool-party-vibes/video.mp4
 date: '2026-04-05 03:13:13+00:00'
-title: Y2k Pool Party Vibes
+title: "Y2K Pool Party Vibes"
 description: |-
   【风格】千禧复古泳池派对（Y2K Pool Party），MiniDV摄像机质感（Camcorder Footage），过曝暖黄，胶片颗粒（Film Grain），VHS干扰线，快节奏卡点
   【时长】15秒
@@ -31,15 +32,16 @@ description: |-
 models:
 - seedance2
 tags:
+- summer
+- water
 - vintage
 - dance
 - fpv
-- water
-- summer
 author: John
 source_url: https://twitter.com/johnAGI168/status/2040628800422322359
 draft: false
 ---
+
 
 【风格】千禧复古泳池派对（Y2K Pool Party），MiniDV摄像机质感（Camcorder Footage），过曝暖黄，胶片颗粒（Film Grain），VHS干扰线，快节奏卡点
 【时长】15秒

@@ -1,5 +1,6 @@
 ---
-title: Crystal Symmetry To Flowing Chaos
+
+title: "Crystal Symmetry to Chaos"
 description: |-
   {
   "title": "Abstract Crystal Transformation Sequence",
@@ -27,15 +28,16 @@ video: /prompts/2026-04/2039954754361864684-crystal-symmetry-chaos/video.mp4
 models:
 - kling3
 tags:
-- abstract
-- surreal
 - cinematic
-- space
+- surreal
 - mind-bending
+- visual
+- cosmic
 author: Shami
 source_url: https://x.com/ShamiWeb3/status/2039954754361864684
 draft: false
 ---
+
 
 {
 "title": "Abstract Crystal Transformation Sequence",

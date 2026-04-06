@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040797935718318289-japanese-street-cinematic/cover.jpg
 video: /prompts/2026-04/2040797935718318289-japanese-street-cinematic/video.mp4
 date: '2026-04-05 14:25:18+00:00'
-title: Japanese Urban Street Cinematic
+title: "Tokyo Street Cinematic"
 description: |-
   总体风格：日系城市街拍，快节奏碎片化剪辑。冷暖光影交织，夜景带有轻度赛博朋克霓虹氛围，画面具电影感。
   BGM与音效：节奏紧凑明快的日系流行摇滚，鼓点清晰，人声充满情绪张力，画面切换与音乐节拍严格卡点。
@@ -25,10 +26,10 @@ models:
 - seedance2
 tags:
 - urban
-- eastern
-- cyberpunk
+- japan
+- neon
+- night
 - cinematic
-- multi-shot
 author: John
 source_url: https://x.com/johnAGI168/status/2040797935718318289
 full_text: |
@@ -54,6 +55,7 @@ full_text: |
   [0:14-0:15] 镜头快速平移扫过街边密集发光商铺与路人。 涩谷十字路口夜景，巨型屏幕与庞大过马路人潮交织。
 draft: false
 ---
+
 
 总体风格：日系城市街拍，快节奏碎片化剪辑。冷暖光影交织，夜景带有轻度赛博朋克霓虹氛围，画面具电影感。
 BGM与音效：节奏紧凑明快的日系流行摇滚，鼓点清晰，人声充满情绪张力，画面切换与音乐节拍严格卡点。

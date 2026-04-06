@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2039928267323658399-tokyo-building-accordion/cover.jpg
 video: /prompts/2026-04/2039928267323658399-tokyo-building-accordion/video.mp4
 date: '2026-04-03'
-title: Tokyo Building Accordion - Seedance 2
+title: "Tokyo Building Accordion"
 description: |-
   {
   "location": "Nishi-Shinjuku Skyscraper District (near Tokyo Metropolitan Government Building)",
@@ -17,11 +18,11 @@ description: |-
 models:
 - seedance2
 tags:
-- vfx
 - tokyo
+- urban
+- surreal
+- vfx
 - architecture
-- non-rigid-deformation
-- sunset
 author: テックトークナビゲーター
 source_url: https://x.com/TechTalkNAVI/status/2039928267323658399
 full_text: |
@@ -47,6 +48,7 @@ full_text: |
   @capcutapp_jp
 draft: false
 ---
+
 
 {
 "location": "Nishi-Shinjuku Skyscraper District (near Tokyo Metropolitan Government Building)",

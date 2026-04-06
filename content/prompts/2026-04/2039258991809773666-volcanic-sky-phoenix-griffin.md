@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2039258991809773666-volcanic-sky-phoenix-griffin/cover.jpg
 video: /prompts/2026-04/2039258991809773666-volcanic-sky-phoenix-griffin/video.mp4
 date: '2026-04-03'
-title: Phoenix vs Griffin Volcanic Sky Battle
+title: "Phoenix Griffin Volcanic Battle"
 description: |-
   A surreal volcanic sky realm where islands of black rock float above rivers of molten lava flowing through the air like suspended waterfalls. The sky burns with deep crimson clouds illuminated by lightning storms.
 
@@ -25,15 +26,15 @@ models:
 - seedance2
 tags:
 - fantasy
-- battle
-- action
 - fire
-- cinematic
 - epic
+- cinematic
+- battle
 author: LudovicCreator
 source_url: https://x.com/LudovicCreator/status/2039258991809773666
 draft: false
 ---
+
 
 A surreal volcanic sky realm where islands of black rock float above rivers of molten lava flowing through the air like suspended waterfalls. The sky burns with deep crimson clouds illuminated by lightning storms.
 

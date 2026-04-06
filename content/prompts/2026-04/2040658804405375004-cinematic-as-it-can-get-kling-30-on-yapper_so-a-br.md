@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040658804405375004-cinematic-as-it-can-get-kling-30-on-yapper_so-a-br/cover.jpg
 video: /prompts/2026-04/2040658804405375004-cinematic-as-it-can-get-kling-30-on-yapper_so-a-br/video.mp4
 date: '2026-04-05 05:12:27+00:00'
-title: Cinematic Can Get
+title: "Cinematic Ski Snow Explosion"
 description: |-
   A bright snowy ski slope under a clear blue sky. A girl in a sleek black ski suit stands confidently facing the camera, holding ski poles, wearing reflective goggles. The scene is calm, crisp, and still.
   In the background, a skier (guy) appears at the top of the slope, rapidly skiing downhill toward her. The camera subtly pushes in on the girl while keeping depth of field—background slightly blurred.
@@ -19,13 +20,15 @@ models:
 - kling3
 tags:
 - cinematic
-- war
-- slow-motion
 - snow
+- slow-motion
+- action
+- snowboarding
 author: Smiling Khan
 source_url: https://twitter.com/AIwithkhan/status/2040658804405375004
 draft: false
 ---
+
 
 A bright snowy ski slope under a clear blue sky. A girl in a sleek black ski suit stands confidently facing the camera, holding ski poles, wearing reflective goggles. The scene is calm, crisp, and still.
 In the background, a skier (guy) appears at the top of the slope, rapidly skiing downhill toward her. The camera subtly pushes in on the girl while keeping depth of field—background slightly blurred.

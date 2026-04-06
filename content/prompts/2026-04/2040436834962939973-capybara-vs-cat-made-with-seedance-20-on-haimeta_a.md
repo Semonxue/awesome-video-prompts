@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040436834962939973-capybara-vs-cat-made-with-seedance-20-on-haimeta_a/cover.jpg
 video: /prompts/2026-04/2040436834962939973-capybara-vs-cat-made-with-seedance-20-on-haimeta_a/video.mp4
 date: '2026-04-04 14:30:25+00:00'
-title: Capybara Cat Made With Prompt
+title: "Giant Kaiju Battle"
 description: 'In an industrial park on the outskirts of a Japanese prefecture, [CHARACTER
   1] and [CHARACTER 2] both stand 50 meters tall. Wide establishing shot: both facing
   off, smoke rising, buildings tiny beneath them. Cut to ground level: their footsteps
@@ -18,11 +19,15 @@ description: 'In an industrial park on the outskirts of a Japanese prefecture, [
 models:
 - seedance2
 tags:
-- dance
-- cat
+- cinematic
+- action
+- vfx
+- combat
+- kaiju
 author: TechieSA
 source_url: https://twitter.com/TechieBySA/status/2040436834962939973
 draft: false
 ---
+
 
 In an industrial park on the outskirts of a Japanese prefecture, [CHARACTER 1] and [CHARACTER 2] both stand 50 meters tall. Wide establishing shot: both facing off, smoke rising, buildings tiny beneath them. Cut to ground level: their footsteps shaking the earth as they clash — trading heavy blows, blocking, dodging, neither giving ground. Close up on the collision, debris exploding outward. Both trade strikes, both block. Cut to low angle: a warehouse collapses behind them as they shove back and forth, evenly matched. Cut to mid shot: [CHARACTER 1] shifts — faster, wilder, hits landing clean, pushing the other onto the defensive. Cut to ground level looking up: [CHARACTER 1] towers overhead, lets out a thunderous roar, and unleashes a beam attack from its eyes. Cut to wide shot: sparks and light consume the challenger, who goes down. Silence. Smoke settles. Emphasize quick cinematic cuts, "special effects style" and "realistic and natural visuals

@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040839986845819162-when-youre-just-trying-to-walk-normally-but-the-ca/cover.jpg
 video: /prompts/2026-04/2040839986845819162-when-youre-just-trying-to-walk-normally-but-the-ca/video.mp4
 date: '2026-04-05 17:12:24+00:00'
-title: When You Just Trying Walk Normally
+title: "Stylish Fashion Walk"
 description: |-
   {
   "type": "cinematic_hyper_realistic_video",
@@ -49,14 +50,15 @@ models:
 - seedance2
 tags:
 - cinematic
-- action
-- realistic
-- dance
+- fashion
+- urban
 - slow-motion
+- street
 author: Shami
 source_url: https://x.com/ShamiWeb3/status/2040839986845819162
 draft: false
 ---
+
 
 {
 "type": "cinematic_hyper_realistic_video",

@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040819968284278802-this-is-so-yummy-kling-30-on-yapper_so-prompt-a-fu/cover.jpg
 video: /prompts/2026-04/2040819968284278802-this-is-so-yummy-kling-30-on-yapper_so-prompt-a-fu/video.mp4
 date: '2026-04-05 15:52:51+00:00'
-title: This Yummy Prompt
+title: "Yummy Cartoon Dog Chef"
 description: |-
   A funny cartoon dog character cooking in a kitchen, Pixar 3D animation style, highly detailed CGI render.
 
@@ -20,15 +21,16 @@ description: |-
 models:
 - kling3
 tags:
-- cinematic
-- action
+- cooking
+- fun
 - 3d
-- realistic
-- war
+- cartoon
+- cinematic
 author: Sharon Riley
 source_url: https://x.com/Just_sharon7/status/2040819968284278802
 draft: false
 ---
+
 
 A funny cartoon dog character cooking in a kitchen, Pixar 3D animation style, highly detailed CGI render.
 

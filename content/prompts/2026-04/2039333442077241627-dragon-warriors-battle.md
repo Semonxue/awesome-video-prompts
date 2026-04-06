@@ -1,14 +1,15 @@
 ---
-title: Epic Dragon Warriors Battle Scene
+
+title: "Dragon Warriors Epic Battle"
 date: '2026-04-01'
 models:
 - seedance2
 tags:
 - action
 - fantasy
-- battle
 - epic
-- dragon
+- battle
+- cinematic
 author: Artedeingenio
 source_url: https://x.com/Artedeingenio/status/2039333442077241627
 description: |-
@@ -88,6 +89,7 @@ image: /prompts/2026-04/2039333442077241627-dragon-warriors-battle/cover.jpg
 video: /prompts/2026-04/2039333442077241627-dragon-warriors-battle/video.mp4
 draft: false
 ---
+
 
 15-second continuous single-shot action sequence.
 No cuts. No scene transitions.

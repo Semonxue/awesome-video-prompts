@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040834865835250071-today-im-working-with-seedance-20-on-youartstudio-/cover.jpg
 video: /prompts/2026-04/2040834865835250071-today-im-working-with-seedance-20-on-youartstudio-/video.mp4
 date: '2026-04-05 16:52:03+00:00'
-title: Today Working With Creating
+title: "Tech Ninja Phone Portal"
 description: |-
   Overarching Concept: Continuous character journey, moving from gritty Y2K streetwear on a dark rooftop to a stylized, high-tech "tech-ninja" aesthetic inside a pristine white iOS interface dimension. Fast-paced, fluid, and highly interactive with the camera.
 
@@ -34,14 +35,15 @@ models:
 - seedance2
 tags:
 - action
-- 3d
-- war
-- dance
-- night
+- cyberpunk
+- technology
+- urban
+- cinematic
 author: Kiber Alla
 source_url: https://x.com/Kiber_Alla/status/2040834865835250071
 draft: false
 ---
+
 
 Overarching Concept: Continuous character journey, moving from gritty Y2K streetwear on a dark rooftop to a stylized, high-tech "tech-ninja" aesthetic inside a pristine white iOS interface dimension. Fast-paced, fluid, and highly interactive with the camera.
 

@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040077434138292634-epic-aerial-dragon-chase/cover.jpg
 video: /prompts/2026-04/2040077434138292634-epic-aerial-dragon-chase/video.mp4
 date: '2026-04-03'
-title: Epic Aerial Dragon Chase - Pixar 3D
+title: "Epic Dragon Chase"
 description: "Pixar 3D animated. Epic aerial chase, blue sky, \nmassive clouds, ocean\
   \ and forest below.\n\nCHARACTERS:\n- Blue baby dragon: chubby, cheerful, fast and\
   \ agile, \n  chubby tiger with aviator goggles riding, \n  determined face\n- Red\
@@ -33,14 +34,11 @@ description: "Pixar 3D animated. Epic aerial chase, blue sky, \nmassive clouds, 
 models:
 - kling3
 tags:
-- pixar
-- 3d-animation
-- aerial
-- chase
-- dragon
-- tiger
-- action
 - fantasy
+- action
+- aerial
+- adventure
+- chase
 author: Al-Shamus
 source_url: https://x.com/im_shahid7/status/2040077434138292634
 full_text: |
@@ -85,6 +83,7 @@ full_text: |
   SOUND: Dragon wingbeats, fire blast roar, ocean spray rush, wave crash, tree snap sequence rapid-fire, wolf furious scream, ravine slam crunch, triumphant blue dragon roar.
 draft: false
 ---
+
 
 Pixar 3D animated. Epic aerial chase, blue sky, 
 massive clouds, ocean and forest below.

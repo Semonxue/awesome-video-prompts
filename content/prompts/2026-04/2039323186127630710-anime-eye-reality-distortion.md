@@ -1,5 +1,6 @@
 ---
-title: Anime Eye Reality Distortion
+
+title: "Anime Eye Distortion"
 date: '2026-04-01'
 models:
 - seedance2
@@ -31,6 +32,7 @@ image: /prompts/2026-04/2039323186127630710-anime-eye-reality-distortion/cover.j
 video: /prompts/2026-04/2039323186127630710-anime-eye-reality-distortion/video.mp4
 draft: false
 ---
+
 
 cinematic anime close-up shot of a character's eye, extreme macro, eyelashes and skin texture visible, soft breathing motion, eye slowly closing, calm and silent atmosphere, subtle ambient light reflection on eyelid
 

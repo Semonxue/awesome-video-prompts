@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2039941029265355123-tokyo-rollercoaster-night/cover.jpg
 video: /prompts/2026-04/2039941029265355123-tokyo-rollercoaster-night/video.mp4
 date: '2026-04-03'
-title: Tokyo Rollercoaster Night POV
+title: "Tokyo Night Rollercoaster POV"
 description: |-
   {
     "location": "Tokyo Cityscape (Night)",
@@ -17,16 +18,16 @@ description: |-
 models:
 - seedance2
 tags:
-- cinematic
-- POV
+- pov
 - tokyo
-- neon
 - night
+- neon
 - action
 author: TechTalkNAVI
 source_url: https://x.com/TechTalkNAVI/status/2039941029265355123
 draft: false
 ---
+
 
 {
   "location": "Tokyo Cityscape (Night)",

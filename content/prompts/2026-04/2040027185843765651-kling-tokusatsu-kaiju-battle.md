@@ -1,5 +1,6 @@
 ---
-title: Kling Tokusatsu Kaiju Battle
+
+title: "Kaiju City Battle"
 description: |-
   {
     "scene": "Industrial park on the outskirts of a Japanese prefecture town, with factories, tanks, warehouses, utility poles, and narrow roads.",
@@ -16,14 +17,15 @@ models:
 - kling3
 tags:
 - kaiju
-- cinematic
-- action
 - tokusatsu
+- action
+- cinematic
 - destruction
 author: WasifAI
 source_url: https://x.com/doctorwasif/status/2040027185843765651
 draft: false
 ---
+
 
 {
   "scene": "Industrial park on the outskirts of a Japanese prefecture town, with factories, tanks, warehouses, utility poles, and narrow roads.",

@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040595365096034700-japanese-warrior-duel-dark-fantasy/cover.jpg
 video: /prompts/2026-04/2040595365096034700-japanese-warrior-duel-dark-fantasy/video.mp4
 date: '2026-04-05 01:00:22+00:00'
-title: Japanese Warrior Duel Dark Fantasy
+title: "Japanese Samurai Shrine Duel"
 description: |-
   Original Japanese-Style Dark Fantasy Action Short Film:
 
@@ -14,15 +15,16 @@ description: |-
 models:
 - seedance2
 tags:
+- samurai
 - cinematic
 - action
 - fantasy
-- realistic
-- war
+- warrior
 author: MiraMusic
 source_url: https://twitter.com/MiraMusic_AI/status/2040595365096034700
 draft: false
 ---
+
 
 Original Japanese-Style Dark Fantasy Action Short Film:
 

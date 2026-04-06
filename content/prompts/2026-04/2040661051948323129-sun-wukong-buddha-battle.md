@@ -1,5 +1,6 @@
 ---
-title: Sun Wukong Buddha Battle
+
+title: "Sun Wukong Divine Battle"
 image: /prompts/2026-04/2040661051948323129-sun-wukong-buddha-battle/cover.jpg
 video: /prompts/2026-04/2040661051948323129-sun-wukong-buddha-battle/video.mp4
 date: '2026-04-05 05:21:23+00:00'
@@ -7,10 +8,10 @@ models:
 - seedance2
 tags:
 - cinematic
-- mythological
-- multi-shot
-- battle
 - fantasy
+- battle
+- epic
+- multi-shot
 author: The Anxious Mind
 source_url: https://x.com/drjoetw/status/2040661051948323129
 description: |-
@@ -35,6 +36,7 @@ description: |-
   Final frame: Freeze in epic tension—Wukong gripping his staff, head slightly bowed, while behind him the Buddha and celestial army radiate infinite power, dominating the horizon.
 draft: false
 ---
+
 
 Cinematic hyper-dynamic fast-paced multi-shot sequence, epic mythological battlefield, IMAX film simulation, 35mm Panavision lens, f/4, heavy cinematic color grading, dramatic contrast between dark necrotic tones and radiant golden divine light.
 

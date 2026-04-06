@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040819445288120820-capcut-seedance20-first-anime-bench/cover.jpg
 video: /prompts/2026-04/2040819445288120820-capcut-seedance20-first-anime-bench/video.mp4
 date: '2026-04-05 15:50:47+00:00'
-title: Reluctant Hero Anime Transformation
+title: "Anime Hero Transformation"
 description: |-
   {
   "model": "seedance-2.0",
@@ -53,11 +54,12 @@ tags:
 - action
 - sci-fi
 - transformation
-- cinematic
+- japan
 author: eijo
 source_url: https://x.com/eijo_AIart/status/2040819445288120820
 draft: false
 ---
+
 
 {
 "model": "seedance-2.0",

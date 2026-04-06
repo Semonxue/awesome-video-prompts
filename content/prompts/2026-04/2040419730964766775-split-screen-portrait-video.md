@@ -1,5 +1,6 @@
 ---
-title: Synchronized Split Portrait
+
+title: "Synchronized Split Portrait"
 image: /prompts/2026-04/2040419730964766775-split-screen-portrait-video/cover.jpg
 video: /prompts/2026-04/2040419730964766775-split-screen-portrait-video/video.mp4
 date: '2026-04-04 21:22:27+08:00'
@@ -12,10 +13,11 @@ description: Maintain the 5-panel split-screen layout, the red background, and a
 models:
 - kling3
 tags:
-- portrait
 - split-screen
+- portrait
 - tutorial
 - cinematic
+- style
 author: doctorwasif
 source_url: https://twitter.com/doctorwasif/status/2040419730964766775
 full_text: "Kling 3.0 on @yapper_so \n\nFirst Frame Image Prompt:\n\nA vertical split-screen\
@@ -36,5 +38,6 @@ full_text: "Kling 3.0 on @yapper_so \n\nFirst Frame Image Prompt:\n\nA vertical 
   \ red-tinted glasses as his head turns.\n"
 draft: false
 ---
+
 
 Maintain the 5-panel split-screen layout, the red background, and all text overlays exactly as they are. In all 5 panels simultaneously, the man slowly and smoothly turns his head from looking to the right to facing directly forward at the camera. The movement must be perfectly synchronized across all panels. The camera framing in each panel remains completely static. Subtle light reflections shift on the red-tinted glasses as his head turns.

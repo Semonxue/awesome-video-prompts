@@ -1,5 +1,6 @@
 ---
-title: Lavender Field Portrait
+
+title: "Lavender Field Portrait"
 date: '2026-04-04'
 image: /prompts/2026-04/2040302668162433186-lavender-field-portrait/cover.jpg
 video: /prompts/2026-04/2040302668162433186-lavender-field-portrait/video.mp4
@@ -23,14 +24,15 @@ models:
 - kling3
 tags:
 - portrait
-- lavender
+- nature
 - fashion
+- romantic
 - gothic
-- editorial
 author: ZaraIrahh
 source_url: https://x.com/ZaraIrahh/status/2040302668162433186
 draft: false
 ---
+
 
 Ultra-realistic cinematic fine art portrait of a woman lying in a wild lavender field, captured from a top-down symmetrical perspective. The composition is centered, with her body framed by dense purple flowers and textured grass.
 

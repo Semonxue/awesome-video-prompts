@@ -1,5 +1,6 @@
 ---
-title: Spectacular Seedance 2.0 Video
+
+title: "Fantasy Creature Cliff Jump"
 description: |-
   15-second continuous single-shot action sequence.
   No cuts. No scene transitions.
@@ -79,10 +80,14 @@ models:
 tags:
 - cinematic
 - fantasy
+- adventure
+- action
+- pov
 author: OscarAI
 source_url: https://x.com/Artedeingenio/status/2039997975280169104
 draft: false
 ---
+
 
 15-second continuous single-shot action sequence.
 No cuts. No scene transitions.

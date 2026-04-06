@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040740135860617499-dimensional-slash-effect/cover.jpg
 video: /prompts/2026-04/2040740135860617499-dimensional-slash-effect/video.mp4
 date: '2026-04-05 10:35:38+00:00'
-title: Dimensional Slash Effect
+title: "Dimensional Slash VFX"
 description: |-
   {
   "effect_analysis": {
@@ -85,6 +86,7 @@ full_text: |
   #seedance2 #DreaminaCPP #Dreamina @dreamina_ai
 draft: false
 ---
+
 
 {
 "effect_analysis": {

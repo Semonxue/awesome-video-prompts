@@ -1,8 +1,9 @@
 ---
+
 image: /prompts/2026-04/2040626041048469952-once-a-legend-always-a-legend-seedance-20-prompt-b/cover.jpg
 video: /prompts/2026-04/2040626041048469952-once-a-legend-always-a-legend-seedance-20-prompt-b/video.mp4
 date: '2026-04-05 03:02:15+00:00'
-title: Once Legend Always Legend Prompt
+title: "Legendary Street Moonwalk"
 description: |-
   aesthetic: phone in the middle of a street dance circle, tight crowd surrounding
     audio: hip-hop beat building, crowd hyping, clapping getting louder
@@ -15,10 +16,15 @@ models:
 - seedance2
 tags:
 - dance
+- street
+- fun
+- story
+- urban
 author: Alex Patrascu
 source_url: https://twitter.com/maxescu/status/2040626041048469952
 draft: false
 ---
+
 
 aesthetic: phone in the middle of a street dance circle, tight crowd surrounding
   audio: hip-hop beat building, crowd hyping, clapping getting louder
