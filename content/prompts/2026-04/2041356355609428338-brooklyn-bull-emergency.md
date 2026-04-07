@@ -7,7 +7,7 @@ models:
 - seedance2
 tags:
 - action
-- drama
+- urban
 - animal
 - documentary
 author: Emily

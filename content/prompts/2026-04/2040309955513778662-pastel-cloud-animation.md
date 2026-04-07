@@ -19,11 +19,11 @@ description: |-
 models:
 - seedance2
 tags:
+- animation
 - art
-- fun
-- loop
-- summer
-- cozy
+- colorful
+- dreamlike
+- nature
 author: Just_sharon7
 source_url: https://x.com/Just_sharon7/status/2040309955513778662
 draft: false

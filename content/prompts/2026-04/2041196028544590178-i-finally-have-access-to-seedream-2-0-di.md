@@ -1,6 +1,5 @@
 ---
-title: I finally have access to Seedream 2.0 directly on  floraai  and is amazing!!!
-  th
+title: "Shoe Assembly Commercial"
 date: '2026-04-07'
 image: /prompts/2026-04/2041196028544590178-i-finally-have-access-to-seedream-2-0-di/cover.jpg
 video: /prompts/2026-04/2041196028544590178-i-finally-have-access-to-seedream-2-0-di/video.mp4
@@ -8,6 +7,8 @@ models:
 - seedance2
 tags:
 - commercial
+- product
+- transformation
 author: Guillermo Castellanos
 source_url: https://twitter.com/GCastellanos_Mx/status/2041196028544590178
 description: |-

@@ -1,15 +1,15 @@
 ---
-title: Made with kling 3.0 on  yapper_so
+title: "Horror Hallway Chase"
 date: '2026-04-07'
 image: /prompts/2026-04/2041365273484165169-made-with-kling-3-0-on-yapper-so/cover.jpg
 video: /prompts/2026-04/2041365273484165169-made-with-kling-3-0-on-yapper-so/video.mp4
 models:
 - kling3
 tags:
-- cinematic
 - horror
+- suspense
+- cinematic
 - dramatic
-- realistic
 author: 𝐍𝐚𝐯𝐞𝐞 𝐀𝐢
 source_url: https://twitter.com/naveeAI/status/2041365273484165169
 description: A dark abandoned house at night, flickering lights, dusty air particles

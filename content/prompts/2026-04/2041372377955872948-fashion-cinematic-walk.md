@@ -1,5 +1,5 @@
 ---
-title: Fashion Film Camera Tracking
+title: "Fashion Cloak Tracking Shot"
 date: '2026-04-07'
 image: /prompts/2026-04/2041372377955872948-fashion-cinematic-walk/cover.jpg
 video: /prompts/2026-04/2041372377955872948-fashion-cinematic-walk/video.mp4
@@ -7,9 +7,9 @@ models:
 - kling3
 tags:
 - fashion
-- cinematic
 - portrait
 - slow-motion
+- cinematic
 author: Johnn
 source_url: https://twitter.com/john_my07/status/2041372377955872948
 description: |-

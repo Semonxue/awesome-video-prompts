@@ -6,10 +6,11 @@ video: /prompts/2026-04/2041401982280425788-grok-imagine-ai-tech-prompt/video.mp
 models:
 - grok
 tags:
-- cinematic
 - portrait
-- dramatic
-- realistic
+- fashion
+- cyberpunk
+- transformation
+- cinematic
 author: Thoughts Creator
 source_url: https://twitter.com/ThoughCreator/status/2041401982280425788
 description: |-
