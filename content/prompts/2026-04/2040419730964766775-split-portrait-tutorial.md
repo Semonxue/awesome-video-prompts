@@ -1,6 +1,6 @@
 ---
 
-title: "Synchronized Split Portrait"
+title: "Split Portrait Tutorial"
 image: /prompts/2026-04/2040419730964766775-split-screen-portrait-video/cover.jpg
 video: /prompts/2026-04/2040419730964766775-split-screen-portrait-video/video.mp4
 date: '2026-04-04 21:22:27+08:00'
@@ -13,11 +13,11 @@ description: Maintain the 5-panel split-screen layout, the red background, and a
 models:
 - kling3
 tags:
-- split-screen
 - portrait
 - tutorial
 - cinematic
-- style
+- multi-shot
+- image-to-video
 author: doctorwasif
 source_url: https://twitter.com/doctorwasif/status/2040419730964766775
 full_text: "Kling 3.0 on @yapper_so \n\nFirst Frame Image Prompt:\n\nA vertical split-screen\

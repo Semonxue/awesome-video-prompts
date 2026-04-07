@@ -1,5 +1,5 @@
 ---
-title: FPV Flying Through Ancient Babylonian Empire
+title: "FPV Babylon Empire Flight"
 date: '2026-04-04'
 image: /prompts/2026-04/2040444424497582506-veo-babylonian-empire/cover.jpg
 video: /prompts/2026-04/2040444424497582506-veo-babylonian-empire/video.mp4
@@ -7,10 +7,10 @@ models:
 - veo3
 tags:
 - fpv
-- babylonian
-- ancient
-- empire
 - historical
+- ancient
+- urban
+- cinematic
 author: Shushant Lakhyani
 source_url: https://twitter.com/shushant_l/status/2040444424497582506
 description: extremely fast-paced cinematic FPV flying through the ancient Babylonian

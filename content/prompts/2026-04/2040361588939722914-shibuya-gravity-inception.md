@@ -1,6 +1,6 @@
 ---
 
-title: "Shibuya Gravity Cube"
+title: "Shibuya Gravity Inception"
 date: '2026-04-04'
 image: /prompts/2026-04/2040361588939722914-shibuya-inception/cover.jpg
 video: /prompts/2026-04/2040361588939722914-shibuya-inception/video.mp4
@@ -14,11 +14,11 @@ description: |-
 models:
 - seedance2
 tags:
-- urban
 - sci-fi
 - surreal
 - gravity
 - epic
+- urban
 author: TechTalkNAVI
 source_url: https://x.com/TechTalkNAVI/status/2040361588939722914
 draft: false

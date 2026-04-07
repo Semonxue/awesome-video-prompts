@@ -1,5 +1,5 @@
 ---
-title: Princess vs Kracken on Pirate Ship
+title: "Princess Kraken Epic Battle"
 date: '2026-04-04'
 image: /prompts/2026-04/2040450526819807277-princess-vs-kracken/cover.jpg
 video: /prompts/2026-04/2040450526819807277-princess-vs-kracken/video.mp4
@@ -8,9 +8,9 @@ models:
 tags:
 - anime
 - action
-- pirate-ship
+- ocean
 - storm
-- slow-motion
+- cinematic
 author: appletea
 source_url: https://twitter.com/applete77191758/status/2040450526819807277
 description: "A cinematic, high-intensity anime sequence set on a pirate ship in a\

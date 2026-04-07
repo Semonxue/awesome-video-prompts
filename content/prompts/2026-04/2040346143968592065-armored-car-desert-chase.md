@@ -1,6 +1,6 @@
 ---
 
-title: "Desert Combat Chase"
+title: "Armored Car Desert Chase"
 date: '2026-04-04'
 image: /prompts/2026-04/2040346143968592065-armored-muscle-car-desert/cover.jpg
 video: /prompts/2026-04/2040346143968592065-armored-muscle-car-desert/video.mp4

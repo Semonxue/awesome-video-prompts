@@ -3,7 +3,7 @@
 image: /prompts/2026-04/2040327899606306840-memory-shards-reconstruction/cover.jpg
 video: /prompts/2026-04/2040327899606306840-memory-shards-reconstruction/video.mp4
 date: '2026-04-04 07:17:33+00:00'
-title: "Memory Shards Reconstruction"
+title: "Crystal Shards Reconstruction"
 description: |-
   {
     "effect_id": "ethereal_02",
@@ -20,11 +20,11 @@ description: |-
 models:
 - seedance2
 tags:
-- cinematic
 - art
 - particles
 - slow-motion
-- visual
+- cosmic
+- abstract
 author: テックトークナビゲーター@AIコンテンツクリエイター
 source_url: https://twitter.com/TechTalkNAVI/status/2040327899606306840
 draft: false

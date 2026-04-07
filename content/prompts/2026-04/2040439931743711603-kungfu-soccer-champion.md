@@ -1,6 +1,6 @@
 ---
 
-title: "Kung Fu Soccer Master"
+title: "Kungfu Soccer Champion"
 date: '2026-04-04 14:38:45+00:00'
 image: /prompts/2026-04/2040439931743711603-kungfu-soccer/cover.jpg
 video: /prompts/2026-04/2040439931743711603-kungfu-soccer/video.mp4
@@ -36,10 +36,10 @@ models:
 - kling3
 tags:
 - martial-arts
-- soccer
 - sports
 - action
 - cinematic
+- futuristic
 author: Thoughts Creator
 source_url: https://twitter.com/ThoughCreator/status/2040439931743711603
 full_text: |
