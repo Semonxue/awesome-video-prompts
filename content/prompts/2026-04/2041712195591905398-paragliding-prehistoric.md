@@ -1,20 +1,45 @@
 ---
 image: /prompts/2026-04/2041712195591905398-paragliding-prehistoric/cover.jpg
 video: /prompts/2026-04/2041712195591905398-paragliding-prehistoric/video.mp4
-date: "2026-04-08"
-title: "POV Paragliding Prehistoric"
-description: "POV: paragliding in the wrong era. No prompt provided in post. Check video content for details."
-models: ["seedance2"]
-tags: ["pov", "adventure", "flying"]
-author: "Kōda"
-source_url: "https://twitter.com/aimikoda/status/2041712195591905398"
-draft: true
+date: '2026-04-08'
+title: POV Paragliding Prehistoric
+description: |-
+  VISUAL STYLE: Use live-action feature film realism with crisp action-camera sharpness and ancient atmospheric haze.
+  CHARACTERS: Define a pair of gloved human hands gripping worn paraglider toggles, dark flying boots, and multiple massive prehistoric predators crossing the flight path.
+  STAGE: Set a vast prehistoric canyon that drops from open sky into fern-choked treetops, a fast river corridor, and a muddy predator clearing under harsh daylight haze.
+  EMOTIONAL TARGET: Build from reckless speed into unstoppable hunted panic.
+  COLOR LOGIC: Naturalistic Film Print Emulation
+
+  TIMELINE:
+  00:00.0: Open on a strict POV suspended over the canyon lip. Use an ultra-wide 14mm action lens with locked forward flight. Drop hard toward the jungle canopy as both gloved hands pull the toggles down and the boots kick into empty air. SFX: Violent wind rush, harness straps snapping tight.
+  00:03.4: Keep the same locked POV and lens package. Dive between treetop crowns, skim past the swaying neck of a towering long-neck herbivore, and force the right hand to yank the toggle to miss its jawline by inches. SFX: Deep animal bellow, leaves tearing, rising wind scream.
+  00:06.8: Maintain the uninterrupted plunge. Thread into a narrow river corridor as a flock of pterosaurs erupts off the cliff wall and crosses directly through the flight path. Let the left hand snap the canopy into a hard bank while the boots clear wet rock by inches. SFX: Shrill wingbeats, river thunder, fabric strain.
+  00:10.2: Hold the same POV and keep driving forward. Blast out of the river bend into a muddy clearing, lose altitude fast, and drag the boot soles across churned earth as the canopy collapses behind the camera path. SFX: Skidding mud scrape, collapsing fabric whip, panicked breath.
+  00:12.8: Maintain the same first-person line at ground level. Stumble forward two desperate steps, look up, and let a charging Spinosaurus burst out of the river mist with its long jaws thrown wide straight at the lens until the teeth fill the frame. SFX: Ground-shaking footfalls, guttural bellow, snapping jaws.
+
+  EXCLUDE: Avoid third-person camera breaks, disjointed hands, impossible flight resets, teleporting terrain, frozen creatures, modern gear drift, impossible neck rotation, cut language.
+models:
+- seedance2
+tags:
+- pov
+- adventure
+- flying
+author: Kōda
+source_url: https://twitter.com/aimikoda/status/2041712195591905398
+draft: false
 ---
 
-**Full Post Text:**
+VISUAL STYLE: Use live-action feature film realism with crisp action-camera sharpness and ancient atmospheric haze.
+CHARACTERS: Define a pair of gloved human hands gripping worn paraglider toggles, dark flying boots, and multiple massive prehistoric predators crossing the flight path.
+STAGE: Set a vast prehistoric canyon that drops from open sky into fern-choked treetops, a fast river corridor, and a muddy predator clearing under harsh daylight haze.
+EMOTIONAL TARGET: Build from reckless speed into unstoppable hunted panic.
+COLOR LOGIC: Naturalistic Film Print Emulation
 
-POV: paragliding in the wrong era
+TIMELINE:
+00:00.0: Open on a strict POV suspended over the canyon lip. Use an ultra-wide 14mm action lens with locked forward flight. Drop hard toward the jungle canopy as both gloved hands pull the toggles down and the boots kick into empty air. SFX: Violent wind rush, harness straps snapping tight.
+00:03.4: Keep the same locked POV and lens package. Dive between treetop crowns, skim past the swaying neck of a towering long-neck herbivore, and force the right hand to yank the toggle to miss its jawline by inches. SFX: Deep animal bellow, leaves tearing, rising wind scream.
+00:06.8: Maintain the uninterrupted plunge. Thread into a narrow river corridor as a flock of pterosaurs erupts off the cliff wall and crosses directly through the flight path. Let the left hand snap the canopy into a hard bank while the boots clear wet rock by inches. SFX: Shrill wingbeats, river thunder, fabric strain.
+00:10.2: Hold the same POV and keep driving forward. Blast out of the river bend into a muddy clearing, lose altitude fast, and drag the boot soles across churned earth as the canopy collapses behind the camera path. SFX: Skidding mud scrape, collapsing fabric whip, panicked breath.
+00:12.8: Maintain the same first-person line at ground level. Stumble forward two desperate steps, look up, and let a charging Spinosaurus burst out of the river mist with its long jaws thrown wide straight at the lens until the teeth fill the frame. SFX: Ground-shaking footfalls, guttural bellow, snapping jaws.
 
-Seedance 2.0 https://t.co/RB19Y7ry1e
-
-*Note: No prompt text provided in the original post. Video may contain overlay text or audio description.*
+EXCLUDE: Avoid third-person camera breaks, disjointed hands, impossible flight resets, teleporting terrain, frozen creatures, modern gear drift, impossible neck rotation, cut language.
