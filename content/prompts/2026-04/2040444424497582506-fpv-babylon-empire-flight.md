@@ -2,7 +2,7 @@
 title: "FPV Babylon Empire Flight"
 date: '2026-04-04'
 image: "/prompts/2026-04/2040444424497582506-veo-babylonian-empire/cover.jpg"
-video_path: "/prompts/2026-04/2040444424497582506-veo-babylonian-empire/video.mp4"
+video: "/prompts/2026-04/2040444424497582506-veo-babylonian-empire/video.mp4"
 models:
 - veo3
 tags:

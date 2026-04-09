@@ -2,7 +2,7 @@
 title: "Rooftop Chase Escape"
 date: '2026-04-06 00:00:00+00:00'
 image: "/prompts/2026-04/2040985658244923592-nowhere-run-nowhere-hide-flew-created-with/cover.jpg"
-video_path: "/prompts/2026-04/2040985658244923592-nowhere-run-nowhere-hide-flew-created-with/video.mp4"
+video: "/prompts/2026-04/2040985658244923592-nowhere-run-nowhere-hide-flew-created-with/video.mp4"
 description: |-
   EXT. RAIN-SOAKED CITY ROOFTOP — NIGHT
   Heavy rain pounds the city. Neon lights bleed across wet concrete thirty stories below. Thunder cracks.

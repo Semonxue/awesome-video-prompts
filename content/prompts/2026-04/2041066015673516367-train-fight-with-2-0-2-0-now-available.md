@@ -2,7 +2,7 @@
 title: "Train Top Combat"
 date: '2026-04-06 00:00:00+00:00'
 image: "/prompts/2026-04/2041066015673516367-train-fight-with-2-0-2-0-now-available/cover.jpg"
-video_path: "/prompts/2026-04/2041066015673516367-train-fight-with-2-0-2-0-now-available/video.mp4"
+video: "/prompts/2026-04/2041066015673516367-train-fight-with-2-0-2-0-now-available/video.mp4"
 description: Dramatic low-angle tracking shot speeding along rain-slicked train tracks
   through a narrow mountain gorge. Dark rocky cliff walls rise on both sides, with
   overhead bridges and power lines crossing above. Moody overcast sky. The camera

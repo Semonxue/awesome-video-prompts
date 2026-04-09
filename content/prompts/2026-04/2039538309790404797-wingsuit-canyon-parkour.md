@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2039538309790404797-wingsuit-canyon-parkour/cover.jpg"
-video_path: "/prompts/2026-04/2039538309790404797-wingsuit-canyon-parkour/video.mp4"
+video: "/prompts/2026-04/2039538309790404797-wingsuit-canyon-parkour/video.mp4"
 date: 2026-04-02
 title: "Wingsuit Canyon Parkour POV"
 description: |

@@ -2,7 +2,7 @@
 title: The Legend at the Sports Bar
 date: '2026-04-06'
 image: "/prompts/2026-04/2041245371419263456-legend-sports-bar-old-man/cover.jpg"
-video_path: "/prompts/2026-04/2041245371419263456-legend-sports-bar-old-man/video.mp4"
+video: "/prompts/2026-04/2041245371419263456-legend-sports-bar-old-man/video.mp4"
 description: |-
   aesthetic: phone held up in a packed sports bar, wall of TVs glowing behind
     audio: crowd chant building, stomping getting louder, bass underneath

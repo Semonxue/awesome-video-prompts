@@ -4,7 +4,7 @@ date: 2026-04-09T06:11:17Z
 models: ["seedance2"]
 tags: ["ocean", "storm", "cinematic", "action", "horror"]
 image: "/prompts/2026-04/2042123163325374788-ocean-storm-sea-monster/cover.jpg"
-video_path: "/prompts/2026-04/2042123163325374788-ocean-storm-sea-monster/video.mp4"
+video: "/prompts/2026-04/2042123163325374788-ocean-storm-sea-monster/video.mp4"
 author: "Heisenberg"
 source_url: "https://twitter.com/rovvmut_/status/2042123163325374788"
 draft: true

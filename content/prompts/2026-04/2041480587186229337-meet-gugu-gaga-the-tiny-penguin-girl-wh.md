@@ -2,7 +2,7 @@
 title: Meet GuGu Gaga
 date: '2026-04-07'
 image: "/prompts/2026-04/2041480587186229337-meet-gugu-gaga-the-tiny-penguin-girl-wh/cover.jpg"
-video_path: "/prompts/2026-04/2041480587186229337-meet-gugu-gaga-the-tiny-penguin-girl-wh/video.mp4"
+video: "/prompts/2026-04/2041480587186229337-meet-gugu-gaga-the-tiny-penguin-girl-wh/video.mp4"
 description: |-
   A tiny chibi anime girl with a short black bob haircut, straight bangs, and a small metallic hair clip, wearing a soft plush penguin hoodie with a yellow beak on top, wing-style sleeves, white belly patch, and tiny yellow penguin feet, standing on a stool in a cozy modern kitchen. Warm morning sunlight streams through a window, soft global illumination, cinematic lighting, depth of field, ultra cute Pixar-style 3D render, glossy textures, vibrant pastel colors.
 

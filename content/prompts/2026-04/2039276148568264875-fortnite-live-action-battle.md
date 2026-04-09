@@ -3,7 +3,7 @@
 title: "Fortnite Live Action Battle"
 date: '2026-04-01'
 image: "/prompts/2026-04/2039276148568264875-fortnite-live-action-battle/cover.jpg"
-video_path: "/prompts/2026-04/2039276148568264875-fortnite-live-action-battle/video.mp4"
+video: "/prompts/2026-04/2039276148568264875-fortnite-live-action-battle/video.mp4"
 models:
 - seedance2
 tags:

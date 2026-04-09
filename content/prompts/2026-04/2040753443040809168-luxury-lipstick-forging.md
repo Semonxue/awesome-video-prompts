@@ -3,7 +3,7 @@
 title: "Luxury Lipstick Forging"
 date: '2026-04-05 11:28:30+00:00'
 image: "/prompts/2026-04/2040753443040809168-luxury-lipstick-forging/cover.jpg"
-video_path: "/prompts/2026-04/2040753443040809168-luxury-lipstick-forging/video.mp4"
+video: "/prompts/2026-04/2040753443040809168-luxury-lipstick-forging/video.mp4"
 description: |-
   {
     "description": "8-second photorealistic cinematic video of a Dior lipstick being forged from molten gold, where branding elements are physically formed, engraved, and embossed as part of the manufacturing process.",

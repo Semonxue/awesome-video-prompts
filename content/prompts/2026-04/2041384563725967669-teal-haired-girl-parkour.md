@@ -19,7 +19,7 @@ tags:
 - city
 - martial arts
 image: "/prompts/2026-04/2041384563725967669-teal-haired-girl-parkour/cover.jpg"
-video_path: "/prompts/2026-04/2041384563725967669-teal-haired-girl-parkour/video.mp4"
+video: "/prompts/2026-04/2041384563725967669-teal-haired-girl-parkour/video.mp4"
 author: akira
 source_url: https://x.com/akira_LEVEL3141/status/2041384563725967669
 full_text: |-

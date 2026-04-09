@@ -3,7 +3,7 @@
 title: "Glacier Collapse Megaflood"
 date: '2026-04-04'
 image: "/prompts/2026-04/2040100791822721300-glacier-collapse-flood/cover.jpg"
-video_path: "/prompts/2026-04/2040100791822721300-glacier-collapse-flood/video.mp4"
+video: "/prompts/2026-04/2040100791822721300-glacier-collapse-flood/video.mp4"
 description: |-
   A giant glacier wall collapses into a fjord beside a coastal city.
 

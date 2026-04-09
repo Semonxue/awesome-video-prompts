@@ -3,7 +3,7 @@
 title: "Shibuya Gravity Inception"
 date: '2026-04-04'
 image: "/prompts/2026-04/2040361588939722914-shibuya-inception/cover.jpg"
-video_path: "/prompts/2026-04/2040361588939722914-shibuya-inception/video.mp4"
+video: "/prompts/2026-04/2040361588939722914-shibuya-inception/video.mp4"
 description: |-
   {
     "effect_id": "shibuya_inception_01",

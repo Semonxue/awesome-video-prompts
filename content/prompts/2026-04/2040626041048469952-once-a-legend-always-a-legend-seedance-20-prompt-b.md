@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2040626041048469952-once-a-legend-always-a-legend-seedance-20-prompt-b/cover.jpg"
-video_path: "/prompts/2026-04/2040626041048469952-once-a-legend-always-a-legend-seedance-20-prompt-b/video.mp4"
+video: "/prompts/2026-04/2040626041048469952-once-a-legend-always-a-legend-seedance-20-prompt-b/video.mp4"
 date: '2026-04-05 03:02:15+00:00'
 title: "Legendary Street Moonwalk"
 description: |-

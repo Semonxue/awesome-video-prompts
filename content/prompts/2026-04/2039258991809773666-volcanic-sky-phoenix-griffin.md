@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2039258991809773666-volcanic-sky-phoenix-griffin/cover.jpg"
-video_path: "/prompts/2026-04/2039258991809773666-volcanic-sky-phoenix-griffin/video.mp4"
+video: "/prompts/2026-04/2039258991809773666-volcanic-sky-phoenix-griffin/video.mp4"
 date: '2026-04-03'
 title: "Phoenix Griffin Volcanic Battle"
 description: |-

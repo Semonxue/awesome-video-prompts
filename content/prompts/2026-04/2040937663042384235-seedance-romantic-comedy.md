@@ -36,7 +36,7 @@ tags:
 - humor
 date: '2026-04-06 13:40:32+00:00'
 image: "/prompts/2026-04/2040937663042384235-seedance-romantic-comedy/cover.jpg"
-video_path: "/prompts/2026-04/2040937663042384235-seedance-romantic-comedy/video.mp4"
+video: "/prompts/2026-04/2040937663042384235-seedance-romantic-comedy/video.mp4"
 draft: false
 ---
 

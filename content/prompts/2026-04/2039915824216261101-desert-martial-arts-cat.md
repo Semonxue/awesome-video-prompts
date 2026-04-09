@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2039915824216261101-desert-martial-arts-cat/cover.jpg"
-video_path: "/prompts/2026-04/2039915824216261101-desert-martial-arts-cat/video.mp4"
+video: "/prompts/2026-04/2039915824216261101-desert-martial-arts-cat/video.mp4"
 date: '2026-04-03'
 title: "Desert Cat Warrior"
 description: '15-second Original Desert Martial Arts Short Film: A black cat warrior

@@ -1,6 +1,6 @@
 ---
 image: "/prompts/2026-04/2041897121377661106-hollywood-action-car-chase/cover.jpg"
-video_path: "/prompts/2026-04/2041897121377661106-hollywood-action-car-chase/video.mp4"
+video: "/prompts/2026-04/2041897121377661106-hollywood-action-car-chase/video.mp4"
 date: 2026-04-08
 title: Hollywood Action Car Chase
 models:

@@ -4,7 +4,7 @@ date: 2026-04-09T05:41:28Z
 models: ["seedance2"]
 tags: ["horror", "ice", "adventure", "cinematic", "mystery"]
 image: "/prompts/2026-04/2042115659572900073-ice-cave-horror-explorer/cover.jpg"
-video_path: "/prompts/2026-04/2042115659572900073-ice-cave-horror-explorer/video.mp4"
+video: "/prompts/2026-04/2042115659572900073-ice-cave-horror-explorer/video.mp4"
 author: "Umesh"
 source_url: "https://twitter.com/umesh_ai/status/2042115659572900073"
 draft: true

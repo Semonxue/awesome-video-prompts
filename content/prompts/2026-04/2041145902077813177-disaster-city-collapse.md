@@ -4,7 +4,7 @@ date: '2026-04-06 21:28:00+08:00'
 author: Alexandra Aisling
 source_url: https://twitter.com/AllaAisling/status/2041145902077813177
 image: "/prompts/2026-04/2041145902077813177-disaster-city-collapse/cover.jpg"
-video_path: "/prompts/2026-04/2041145902077813177-disaster-city-collapse/video.mp4"
+video: "/prompts/2026-04/2041145902077813177-disaster-city-collapse/video.mp4"
 models:
 - seedance2
 tags:

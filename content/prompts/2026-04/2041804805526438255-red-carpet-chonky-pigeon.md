@@ -1,6 +1,6 @@
 ---
 image: "/prompts/2026-04/2041804805526438255-red-carpet-chonky-pigeon/cover.jpg"
-video_path: "/prompts/2026-04/2041804805526438255-red-carpet-chonky-pigeon/video.mp4"
+video: "/prompts/2026-04/2041804805526438255-red-carpet-chonky-pigeon/video.mp4"
 date: '2026-04-08'
 title: Red Carpet Chonky Pigeon
 description: |-

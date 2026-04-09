@@ -1,7 +1,7 @@
 ---
 title: French Chic Fashion Walk in Autumn
 image: "/prompts/2026-04/2040716080432243051-french-chic-fashion-walk/cover.jpg"
-video_path: "/prompts/2026-04/2040716080432243051-french-chic-fashion-walk/video.mp4"
+video: "/prompts/2026-04/2040716080432243051-french-chic-fashion-walk/video.mp4"
 date: '2026-04-05'
 description: 秋の美しい石畳の並木道や洋館を舞台に、フレンチシックな装いの黒髪の女性をシネマティックに描く映像プロンプト。大きなリボンの白いブラウス、黒のプリーツスカート、柄タイツ、ローファーを身にまとい、小さな黒いハンドバッグを手にした彼女が、落ち葉を踏みながら軽快に歩く。足元からのティルトアップ、風に髪が揺れる並走ショット、上空からの旋回、そして親密なクローズアップなど、多彩なカメラワークで彼女の無邪気でイタズラっぽい表情や照れた笑顔を捉える。最後は夕暮れの柔らかな光の中、広場で美しくターンしてスカートを揺らし、微笑みながら遠ざかっていく。
 models:

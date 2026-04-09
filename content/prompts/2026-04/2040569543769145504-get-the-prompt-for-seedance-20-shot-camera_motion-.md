@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2040569543769145504-get-the-prompt-for-seedance-20-shot-camera_motion-/cover.jpg"
-video_path: "/prompts/2026-04/2040569543769145504-get-the-prompt-for-seedance-20-shot-camera_motion-/video.mp4"
+video: "/prompts/2026-04/2040569543769145504-get-the-prompt-for-seedance-20-shot-camera_motion-/video.mp4"
 date: '2026-04-04 23:17:45+00:00'
 title: "Katana Warrior Flash Combat"
 description: |-

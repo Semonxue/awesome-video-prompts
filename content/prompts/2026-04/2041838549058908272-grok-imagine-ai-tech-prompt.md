@@ -2,7 +2,7 @@
 title: "Grok Imagine AI Tech Prompt"
 date: "2026-04-08T11:20:20+00:00"
 image: "/prompts/2026-04/2041838549058908272-grok-imagine-ai-tech-prompt/cover.jpg"
-video_path: "/prompts/2026-04/2041838549058908272-grok-imagine-ai-tech-prompt/video.mp4"
+video: "/prompts/2026-04/2041838549058908272-grok-imagine-ai-tech-prompt/video.mp4"
 description: "Grok Imagine AI Tech Prompt 
 
 12-second cinematic video, epic fantasy action scene: A beautiful, athletic female Spartan warrior with toned abs and mu..."

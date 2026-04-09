@@ -4,7 +4,7 @@ date: 2026-04-09T06:06:58Z
 models: ["seedance2"]
 tags: ["fantasy", "cinematic", "eastern", "adventure", "story"]
 image: "/prompts/2026-04/2042122076161765407-fantasy-fusion-storytelling/cover.jpg"
-video_path: "/prompts/2026-04/2042122076161765407-fantasy-fusion-storytelling/video.mp4"
+video: "/prompts/2026-04/2042122076161765407-fantasy-fusion-storytelling/video.mp4"
 author: "ShadeLurk"
 source_url: "https://twitter.com/ShadeLurk/status/2042122076161765407"
 draft: true

@@ -2,7 +2,7 @@
 title: The results are amazing
 date: '2026-04-08'
 image: "/prompts/2026-04/2041430629800460357-the-results-are-amazing/cover.jpg"
-video_path: "/prompts/2026-04/2041430629800460357-the-results-are-amazing/video.mp4"
+video: "/prompts/2026-04/2041430629800460357-the-results-are-amazing/video.mp4"
 description: |-
   Cinematic realistic animation, static locked wide camera. Cozy kitchen, morning light through window. Orange tabby cat in striped apron stands upright at wooden counter, flour dust on fur, all ingredients visible: milk bottle, flour bowl, fresh eggs carton, vanilla extract, sugar, whisk, mixing bowl, chocolate chips, blueberries, butter, stack of finished pancakes already visible on right side of counter. Pancake cooking on stovetop pan in background.
 

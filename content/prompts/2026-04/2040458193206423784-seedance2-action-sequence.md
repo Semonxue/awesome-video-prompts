@@ -1,7 +1,7 @@
 ---
 title: Seedance 2.0 Action Sequence Prompt Share
 image: "/prompts/2026-04/2040458193206423784-seedance2-action-sequence/cover.jpg"
-video_path: "/prompts/2026-04/2040458193206423784-seedance2-action-sequence/video.mp4"
+video: "/prompts/2026-04/2040458193206423784-seedance2-action-sequence/video.mp4"
 date: '2026-04-04'
 description: |-
   0–2s

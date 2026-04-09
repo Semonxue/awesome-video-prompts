@@ -2,7 +2,7 @@
 
 title: "Salmon Underwater Dream"
 image: "/prompts/2026-04/2040794230864703983-salmon-underwater-journey/cover.jpg"
-video_path: "/prompts/2026-04/2040794230864703983-salmon-underwater-journey/video.mp4"
+video: "/prompts/2026-04/2040794230864703983-salmon-underwater-journey/video.mp4"
 date: '2026-04-05 14:10:35+00:00'
 models:
 - seedance2

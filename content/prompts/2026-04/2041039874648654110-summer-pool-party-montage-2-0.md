@@ -3,7 +3,7 @@
 title: "Summer Pool Party Vibes"
 date: '2026-04-06 00:00:00+00:00'
 image: "/prompts/2026-04/2041039874648654110-summer-pool-party-montage-2-0/cover.jpg"
-video_path: "/prompts/2026-04/2041039874648654110-summer-pool-party-montage-2-0/video.mp4"
+video: "/prompts/2026-04/2041039874648654110-summer-pool-party-montage-2-0/video.mp4"
 description: 【风格】夏日泳池派对（Summer Pool Party Montage），快切剪辑（Rapid Cuts），4K高清，高饱和明亮色调 【时长】15秒
   【场景】阳光露天泳池派对，两层公寓楼背景，泳池边站满人群，黄色浮床漂浮水面 【角色】金发女子、红发女子、黑发女子，均穿彩色花纹比基尼 [00:00-00:01]
   镜头1：冰块开场（Macro Close-up） 近景：不规则透明冰块置于玻璃杯中，表面湿润，内部裂纹清晰，红褐色焦外光斑（Bokeh）满布背景。 [00:01-00:02]

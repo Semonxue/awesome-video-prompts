@@ -1,6 +1,6 @@
 ---
 image: "/prompts/2026-04/2041929120322568623-seedance-costume-shift/cover.jpg"
-video_path: "/prompts/2026-04/2041929120322568623-seedance-costume-shift/video.mp4"
+video: "/prompts/2026-04/2041929120322568623-seedance-costume-shift/video.mp4"
 date: 2026-04-09
 title: Instant Costume Shift via Occlusion
 description: |-

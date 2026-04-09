@@ -3,7 +3,7 @@
 title: "Wall Street Rally Speech"
 date: '2026-04-01'
 image: "/prompts/2026-04/2039277115690877430-wall-street-rally-speech/cover.jpg"
-video_path: "/prompts/2026-04/2039277115690877430-wall-street-rally-speech/video.mp4"
+video: "/prompts/2026-04/2039277115690877430-wall-street-rally-speech/video.mp4"
 models:
 - seedance2
 tags:

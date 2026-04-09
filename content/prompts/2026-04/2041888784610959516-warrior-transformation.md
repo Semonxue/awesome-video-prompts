@@ -3,7 +3,7 @@ title: "Cinematic Warrior Transformation"
 date: 2026-04-08T14:39:57Z
 draft: true
 image: "/prompts/2026-04/2041888784610959516-warrior-transformation/cover.jpg"
-video_path: "/prompts/2026-04/2041888784610959516-warrior-transformation/video.mp4"
+video: "/prompts/2026-04/2041888784610959516-warrior-transformation/video.mp4"
 description: |-
 
   From broken warrior in tattered robes to absolute powerhouse in seconds.

@@ -2,7 +2,7 @@
 title: Wooden Mashrabiya Craftsman
 date: '2026-04-06 14:10:25+00:00'
 image: "/prompts/2026-04/2041156578397610478-wooden-mashrabiya-craftsman/cover.jpg"
-video_path: "/prompts/2026-04/2041156578397610478-wooden-mashrabiya-craftsman/video.mp4"
+video: "/prompts/2026-04/2041156578397610478-wooden-mashrabiya-craftsman/video.mp4"
 description: |-
   Close-up cinematic shot of a craftsman carving intricate geometric patterns into wood (mashrabiya style).
     Camera slowly pushes in, revealing fine details.

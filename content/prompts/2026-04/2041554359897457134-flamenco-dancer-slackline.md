@@ -1,7 +1,7 @@
 ---
 title: Flamenco Dancer Slackline Between Cliffs
 image: "/prompts/2026-04/2041554359897457134-flamenco-dancer-slackline/cover.jpg"
-video_path: "/prompts/2026-04/2041554359897457134-flamenco-dancer-slackline/video.mp4"
+video: "/prompts/2026-04/2041554359897457134-flamenco-dancer-slackline/video.mp4"
 date: '2026-04-08 00:31:04+08:00'
 models:
 - seedance2

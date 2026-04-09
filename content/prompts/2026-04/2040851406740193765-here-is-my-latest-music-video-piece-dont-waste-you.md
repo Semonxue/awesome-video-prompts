@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2040851406740193765-here-is-my-latest-music-video-piece-dont-waste-you/cover.jpg"
-video_path: "/prompts/2026-04/2040851406740193765-here-is-my-latest-music-video-piece-dont-waste-you/video.mp4"
+video: "/prompts/2026-04/2040851406740193765-here-is-my-latest-music-video-piece-dont-waste-you/video.mp4"
 date: '2026-04-05 17:57:47+00:00'
 title: "Futuristic City Intro"
 description: 'Very wide establishing shot of the futuristic city skyline in full  daylight,

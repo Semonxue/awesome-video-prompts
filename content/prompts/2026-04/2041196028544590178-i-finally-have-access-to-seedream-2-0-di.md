@@ -2,7 +2,7 @@
 title: "Shoe Assembly Commercial"
 date: '2026-04-07'
 image: "/prompts/2026-04/2041196028544590178-i-finally-have-access-to-seedream-2-0-di/cover.jpg"
-video_path: "/prompts/2026-04/2041196028544590178-i-finally-have-access-to-seedream-2-0-di/video.mp4"
+video: "/prompts/2026-04/2041196028544590178-i-finally-have-access-to-seedream-2-0-di/video.mp4"
 models:
 - seedance2
 tags:

@@ -4,7 +4,7 @@ date: 2026-04-08T12:24:11Z
 models: ["seedance1.5pro"]
 tags: ["cinematic", "combat", "desert", "tension", "action"]
 image: "/prompts/2026-04/2041854619819896917-cloaked-warrior-tension/cover.jpg"
-video_path: "/prompts/2026-04/2041854619819896917-cloaked-warrior-tension/video.mp4"
+video: "/prompts/2026-04/2041854619819896917-cloaked-warrior-tension/video.mp4"
 author: "Aleena Amir"
 source_url: "https://twitter.com/aleenaamiir/status/2041854619819896917"
 draft: true

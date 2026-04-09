@@ -1,7 +1,7 @@
 ---
 title: Catastrophic Ocean Event Disaster
 image: "/prompts/2026-04/2041602661448085746-disaster-ocean-tsunami/cover.jpg"
-video_path: "/prompts/2026-04/2041602661448085746-disaster-ocean-tsunami/video.mp4"
+video: "/prompts/2026-04/2041602661448085746-disaster-ocean-tsunami/video.mp4"
 date: '2026-04-08 03:43:00+08:00'
 models:
 - seedance2

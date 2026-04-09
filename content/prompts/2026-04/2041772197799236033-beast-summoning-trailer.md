@@ -1,6 +1,6 @@
 ---
 image: "/prompts/2026-04/2041772197799236033-beast-summoning-trailer/cover.jpg"
-video_path: "/prompts/2026-04/2041772197799236033-beast-summoning-trailer/video.mp4"
+video: "/prompts/2026-04/2041772197799236033-beast-summoning-trailer/video.mp4"
 date: '2026-04-08'
 title: Dragon vs Python Battle
 description: 'Ultra-realistic cinematic disaster epic, single continuous shot, no

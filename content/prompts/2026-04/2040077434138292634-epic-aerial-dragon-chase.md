@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2040077434138292634-epic-aerial-dragon-chase/cover.jpg"
-video_path: "/prompts/2026-04/2040077434138292634-epic-aerial-dragon-chase/video.mp4"
+video: "/prompts/2026-04/2040077434138292634-epic-aerial-dragon-chase/video.mp4"
 date: '2026-04-03'
 title: "Epic Dragon Chase"
 description: "Pixar 3D animated. Epic aerial chase, blue sky, \nmassive clouds, ocean\

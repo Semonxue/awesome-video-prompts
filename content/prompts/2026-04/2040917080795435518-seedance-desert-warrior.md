@@ -16,7 +16,7 @@ tags:
 - fast-motion
 date: '2026-04-06 12:18:45+00:00'
 image: "/prompts/2026-04/2040917080795435518-seedance-desert-warrior/cover.jpg"
-video_path: "/prompts/2026-04/2040917080795435518-seedance-desert-warrior/video.mp4"
+video: "/prompts/2026-04/2040917080795435518-seedance-desert-warrior/video.mp4"
 draft: false
 ---
 

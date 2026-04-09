@@ -2,7 +2,7 @@
 title: Hummingbird and Mosquito Selfie
 date: '2026-04-06 17:19:30+00:00'
 image: "/prompts/2026-04/2041204159915995203-hummingbird-mosquito-selfie/cover.jpg"
-video_path: "/prompts/2026-04/2041204159915995203-hummingbird-mosquito-selfie/video.mp4"
+video: "/prompts/2026-04/2041204159915995203-hummingbird-mosquito-selfie/video.mp4"
 models:
 - seedance2
 tags:

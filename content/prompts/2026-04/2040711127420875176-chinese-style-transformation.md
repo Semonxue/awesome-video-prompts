@@ -2,7 +2,7 @@
 
 title: "Chinese Windbell Makeover"
 image: "/prompts/2026-04/2040711127420875176-chinese-style-transformation/cover.jpg"
-video_path: "/prompts/2026-04/2040711127420875176-chinese-style-transformation/video.mp4"
+video: "/prompts/2026-04/2040711127420875176-chinese-style-transformation/video.mp4"
 date: '2026-04-05 08:40:22+00:00'
 models:
 - kling3

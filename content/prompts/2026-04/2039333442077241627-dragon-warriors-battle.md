@@ -86,7 +86,7 @@ description: |-
 
   Freeze
 image: "/prompts/2026-04/2039333442077241627-dragon-warriors-battle/cover.jpg"
-video_path: "/prompts/2026-04/2039333442077241627-dragon-warriors-battle/video.mp4"
+video: "/prompts/2026-04/2039333442077241627-dragon-warriors-battle/video.mp4"
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2040834865835250071-today-im-working-with-seedance-20-on-youartstudio-/cover.jpg"
-video_path: "/prompts/2026-04/2040834865835250071-today-im-working-with-seedance-20-on-youartstudio-/video.mp4"
+video: "/prompts/2026-04/2040834865835250071-today-im-working-with-seedance-20-on-youartstudio-/video.mp4"
 date: '2026-04-05 16:52:03+00:00'
 title: "Tech Ninja Phone Portal"
 description: |-

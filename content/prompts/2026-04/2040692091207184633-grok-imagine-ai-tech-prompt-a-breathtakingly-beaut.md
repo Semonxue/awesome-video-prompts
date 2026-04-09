@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2040692091207184633-grok-imagine-ai-tech-prompt-a-breathtakingly-beaut/cover.jpg"
-video_path: "/prompts/2026-04/2040692091207184633-grok-imagine-ai-tech-prompt-a-breathtakingly-beaut/video.mp4"
+video: "/prompts/2026-04/2040692091207184633-grok-imagine-ai-tech-prompt-a-breathtakingly-beaut/video.mp4"
 date: '2026-04-05 07:24:43+00:00'
 title: "Cyberpunk Mech Warrior"
 description: |-

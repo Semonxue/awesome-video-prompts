@@ -3,7 +3,7 @@ title: "Sunset Parkour on São Paulo Rooftops"
 date: "2026-04-08"
 draft: true
 image: "/prompts/2026-04/2042008560364556599-saopaulo-parkour-sunset/cover.jpg"
-video_path: "/prompts/2026-04/2042008560364556599-saopaulo-parkour-sunset/video.mp4"
+video: "/prompts/2026-04/2042008560364556599-saopaulo-parkour-sunset/video.mp4"
 description: |-
   VERTICAL CITY — São Paulo Parkour at Sunset A teenage girl, 17, athletic, black curly hair flying free, wearing faded yellow shorts and a white tank top with scuffed trainers, runs full speed across the rooftops of São Paulo's dense favela skyline as the sun sets blood orange behind the city.
   [0s–1.5s] Wide panoramic shot of São Paulo at sunset. Endless concrete towers stacked like blocks. Camera finds one figure running across a rooftop, tiny against the city.

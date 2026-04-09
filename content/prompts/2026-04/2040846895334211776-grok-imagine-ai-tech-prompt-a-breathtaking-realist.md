@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2040846895334211776-grok-imagine-ai-tech-prompt-a-breathtaking-realist/cover.jpg"
-video_path: "/prompts/2026-04/2040846895334211776-grok-imagine-ai-tech-prompt-a-breathtaking-realist/video.mp4"
+video: "/prompts/2026-04/2040846895334211776-grok-imagine-ai-tech-prompt-a-breathtaking-realist/video.mp4"
 date: '2026-04-05 17:39:51+00:00'
 title: "Ice Dragon Snow Romance"
 description: A breathtaking realistic 15-second cinematic video in 8K. In a vast,

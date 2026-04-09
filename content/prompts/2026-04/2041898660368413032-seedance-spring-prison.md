@@ -1,6 +1,6 @@
 ---
 image: "/prompts/2026-04/2041898660368413032-seedance-spring-prison/cover.jpg"
-video_path: "/prompts/2026-04/2041898660368413032-seedance-spring-prison/video.mp4"
+video: "/prompts/2026-04/2041898660368413032-seedance-spring-prison/video.mp4"
 date: 2026-04-08
 title: Spring Day Prison — Romantic Chinese-Style Scene
 description: |-

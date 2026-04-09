@@ -2,7 +2,7 @@
 title: PIXVERSE V6 IS BATTLE READY
 date: '2026-04-06'
 image: "/prompts/2026-04/2041403947404214282-pixverse-v6-is-battle-ready/cover.jpg"
-video_path: "/prompts/2026-04/2041403947404214282-pixverse-v6-is-battle-ready/video.mp4"
+video: "/prompts/2026-04/2041403947404214282-pixverse-v6-is-battle-ready/video.mp4"
 description: '[{"lang":"en","prompt":"Style & Mood: hard gritty real 35mm documentary
   realism. Cool blue-gray shadow in the corridor, warm amber fire glow from far end.
   Her face: latina, age 30, strong bone structure, dark eyes, sweat and grit, shallow

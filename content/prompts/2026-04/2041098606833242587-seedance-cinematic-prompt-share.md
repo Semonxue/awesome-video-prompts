@@ -1,6 +1,6 @@
 ---
 image: "/prompts/2026-04/2041098606833242587-seedance-cinematic-prompt-share/cover.jpg"
-video_path: "/prompts/2026-04/2041098606833242587-seedance-cinematic-prompt-share/video.mp4"
+video: "/prompts/2026-04/2041098606833242587-seedance-cinematic-prompt-share/video.mp4"
 date: '2026-04-06T10:20:04Z'
 title: Seedance Cinematic Prompt Share
 models:

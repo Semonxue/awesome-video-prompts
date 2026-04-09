@@ -3,7 +3,7 @@
 title: "Cats Hot Chocolate"
 date: '2026-04-05 18:02:57+00:00'
 image: "/prompts/2026-04/2040852708383429073-need-prompt-inspiration-grab-this/cover.jpg"
-video_path: "/prompts/2026-04/2040852708383429073-need-prompt-inspiration-grab-this/video.mp4"
+video: "/prompts/2026-04/2040852708383429073-need-prompt-inspiration-grab-this/video.mp4"
 description: "The camera zooms in to a coffee cart at a busy baseball game. At the\
   \ cart are three cats - one black, one ginger, and another calico. \nThe three\
   \ work together in unison to make a hot chocolate. One pours chocolate powder into\

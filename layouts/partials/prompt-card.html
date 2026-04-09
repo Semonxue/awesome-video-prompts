@@ -14,7 +14,7 @@
     <img src="{{ $imgURL | safeURL }}" alt="{{ $.Title }}" class="prompt-image" loading="lazy">
     
     {{/* Video Auto-play on hover */}}
-    {{ with $.Params.video_path }}
+    {{ with $.Params.video }}
       {{ $video := . }}
       {{ $videoURL := cond (or (hasPrefix $video "http://") (hasPrefix $video "https://")) $video ((strings.TrimPrefix "/" $video) | relURL) }}
       <div class="video-loader" style="display: none; position: absolute; inset: 0; align-items: center; justify-content: center; z-index: 4; background: rgba(0,0,0,0.1);">

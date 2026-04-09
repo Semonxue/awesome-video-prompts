@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2040619876113629249-black-suit-girl-parkour-pov/cover.jpg"
-video_path: "/prompts/2026-04/2040619876113629249-black-suit-girl-parkour-pov/video.mp4"
+video: "/prompts/2026-04/2040619876113629249-black-suit-girl-parkour-pov/video.mp4"
 date: '2026-04-05 02:37:46+00:00'
 title: "Black Suit Parkour POV"
 description: 生成一个黑衣女子在山间快速跑酷的第一人称视角视频。真人电影写实风格。超现实超高速pov视角（不出现主体实体和面部，模拟摄像机在人物头部的真实奔跑感觉，只能偶尔看到人物的手臂），主角是一个黑衣女子。镜头有极度的摇晃感。跑酷的环境请深度参考高山的环境和高度，营造一个既震撼又刺激的氛围，让观众感受到在此地域跑酷的刺激感和震撼感。全程画面流畅，一镜到底，仅生成环境的音效，不要配背景音乐

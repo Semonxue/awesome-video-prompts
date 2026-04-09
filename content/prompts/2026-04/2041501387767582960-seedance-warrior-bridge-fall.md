@@ -2,7 +2,7 @@
 title: Seedance Warrior Bridge Fall
 date: '2026-04-07 13:00:34+00:00'
 image: "/prompts/2026-04/2041501387767582960-seedance-warrior-bridge-fall/cover.jpg"
-video_path: "/prompts/2026-04/2041501387767582960-seedance-warrior-bridge-fall/video.mp4"
+video: "/prompts/2026-04/2041501387767582960-seedance-warrior-bridge-fall/video.mp4"
 description: |-
   (Cinematic 35mm lens， handheld shake， 8k realistic texture， low-saturation cool tones)
   A female warrior with blowing hair in intense high-speed motion， wearing worn tactical armor.

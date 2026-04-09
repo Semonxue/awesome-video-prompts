@@ -4,7 +4,7 @@ date: '2026-04-06 22:14:56+08:00'
 author: OscarAI
 source_url: https://twitter.com/Artedeingenio/status/2041157711916621841
 image: "/prompts/2026-04/2041157711916621841-desert-megastructure-ruins/cover.jpg"
-video_path: "/prompts/2026-04/2041157711916621841-desert-megastructure-ruins/video.mp4"
+video: "/prompts/2026-04/2041157711916621841-desert-megastructure-ruins/video.mp4"
 models:
 - kling3
 tags:

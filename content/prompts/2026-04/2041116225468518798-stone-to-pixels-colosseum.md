@@ -2,7 +2,7 @@
 title: 'Stone to Pixels: Reimagining the Colosseum'
 date: '2026-04-06 11:30:04+00:00'
 image: "/prompts/2026-04/2041116225468518798-stone-to-pixels-colosseum/cover.jpg"
-video_path: "/prompts/2026-04/2041116225468518798-stone-to-pixels-colosseum/video.mp4"
+video: "/prompts/2026-04/2041116225468518798-stone-to-pixels-colosseum/video.mp4"
 description: 'A slow, cinematic drone tracking shot sweeping forward through the Roman
   Colosseum construction site. The camera glides past massive wooden scaffolding,
   ropes, and workers hauling white travertine stone. Dust particles catch the golden

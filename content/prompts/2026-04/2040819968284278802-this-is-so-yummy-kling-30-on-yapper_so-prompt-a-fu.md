@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2040819968284278802-this-is-so-yummy-kling-30-on-yapper_so-prompt-a-fu/cover.jpg"
-video_path: "/prompts/2026-04/2040819968284278802-this-is-so-yummy-kling-30-on-yapper_so-prompt-a-fu/video.mp4"
+video: "/prompts/2026-04/2040819968284278802-this-is-so-yummy-kling-30-on-yapper_so-prompt-a-fu/video.mp4"
 date: '2026-04-05 15:52:51+00:00'
 title: "Cartoon Dog Chef Waffles"
 description: |-

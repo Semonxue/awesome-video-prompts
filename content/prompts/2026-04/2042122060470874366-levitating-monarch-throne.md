@@ -4,7 +4,7 @@ date: 2026-04-09T06:06:54Z
 models: ["kling3"]
 tags: ["dark", "fantasy", "cinematic", "epic", "dystopian"]
 image: "/prompts/2026-04/2042122060470874366-levitating-monarch-throne/cover.jpg"
-video_path: "/prompts/2026-04/2042122060470874366-levitating-monarch-throne/video.mp4"
+video: "/prompts/2026-04/2042122060470874366-levitating-monarch-throne/video.mp4"
 author: "Gem Alpha"
 source_url: "https://twitter.com/Gemalpha_88/status/2042122060470874366"
 draft: true

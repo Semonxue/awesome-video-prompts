@@ -1,6 +1,6 @@
 ---
 image: "/prompts/2026-04/2040448164076130595-nano-banana-2-and-kling-30-on-yapper_so-prompt-a-m/cover.jpg"
-video_path: "/prompts/2026-04/2040448164076130595-nano-banana-2-and-kling-30-on-yapper_so-prompt-a-m/video.mp4"
+video: "/prompts/2026-04/2040448164076130595-nano-banana-2-and-kling-30-on-yapper_so-prompt-a-m/video.mp4"
 date: '2026-04-04 15:15:26+00:00'
 title: "Floating Magical Cottage"
 description: |-

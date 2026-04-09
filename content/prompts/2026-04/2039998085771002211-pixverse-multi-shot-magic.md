@@ -3,7 +3,7 @@
 title: "Pixar Grandma Skateboard"
 date: '2026-04-03 09:26:59+00:00'
 image: "/prompts/2026-04/2039998085771002211-pixverse-multi-shot-magic/cover.jpg"
-video_path: "/prompts/2026-04/2039998085771002211-pixverse-multi-shot-magic/video.mp4"
+video: "/prompts/2026-04/2039998085771002211-pixverse-multi-shot-magic/video.mp4"
 description: |-
   GRANNY SHREDS - Grandma Skateboard
   Championship Pixar 3D style, A tiny 85 year old grandmother, white hair in a perfect bun, wearing a floral dress, pearl necklace, and neon green high top sneakers, stands at the top of a massive halfpipe at a packed

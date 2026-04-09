@@ -2,7 +2,7 @@
 title: Grok Female Warrior Harbor Combat
 date: '2026-04-06 19:01:48+00:00'
 image: "/prompts/2026-04/2041229905040457977-grok-female-warrior-harbor/cover.jpg"
-video_path: "/prompts/2026-04/2041229905040457977-grok-female-warrior-harbor/video.mp4"
+video: "/prompts/2026-04/2041229905040457977-grok-female-warrior-harbor/video.mp4"
 models:
 - grok
 tags:

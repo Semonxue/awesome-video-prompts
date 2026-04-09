@@ -1,6 +1,6 @@
 ---
 image: "/prompts/2026-04/2041845826901962833-pov-stitching-historical-map/cover.jpg"
-video_path: "/prompts/2026-04/2041845826901962833-pov-stitching-historical-map/video.mp4"
+video: "/prompts/2026-04/2041845826901962833-pov-stitching-historical-map/video.mp4"
 date: 2026-04-08
 title: POV Historical Map Stitching
 models:

@@ -3,7 +3,7 @@
 title: "Watercolor Animal Balloon Story"
 date: '2026-04-03 13:11:58+00:00'
 image: "/prompts/2026-04/2040054702528704993-watercolor-childrens-story-animals/cover.jpg"
-video_path: "/prompts/2026-04/2040054702528704993-watercolor-childrens-story-animals/video.mp4"
+video: "/prompts/2026-04/2040054702528704993-watercolor-childrens-story-animals/video.mp4"
 description: |-
   15-second continuous single-shot cartoon sequence.
 

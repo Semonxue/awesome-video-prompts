@@ -3,7 +3,7 @@
 title: "Lavender Field Portrait"
 date: '2026-04-04'
 image: "/prompts/2026-04/2040302668162433186-lavender-field-portrait/cover.jpg"
-video_path: "/prompts/2026-04/2040302668162433186-lavender-field-portrait/video.mp4"
+video: "/prompts/2026-04/2040302668162433186-lavender-field-portrait/video.mp4"
 description: |-
   Ultra-realistic cinematic fine art portrait of a woman lying in a wild lavender field, captured from a top-down symmetrical perspective. The composition is centered, with her body framed by dense purple flowers and textured grass.
 

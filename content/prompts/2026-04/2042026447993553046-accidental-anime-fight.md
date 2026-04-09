@@ -1,6 +1,6 @@
 ---
 image: "/prompts/2026-04/2042026447993553046-accidental-anime-fight/cover.jpg"
-video_path: "/prompts/2026-04/2042026447993553046-accidental-anime-fight/video.mp4"
+video: "/prompts/2026-04/2042026447993553046-accidental-anime-fight/video.mp4"
 date: 2026-04-08
 title: Accidental Anime Wing Chun Fight
 description: |-

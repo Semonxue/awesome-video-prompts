@@ -1,6 +1,6 @@
 ---
 image: "/prompts/2026-04/2041092994246328703-morning-routine-transition/cover.jpg"
-video_path: "/prompts/2026-04/2041092994246328703-morning-routine-transition/video.mp4"
+video: "/prompts/2026-04/2041092994246328703-morning-routine-transition/video.mp4"
 date: '2026-04-06'
 title: Morning Routine Transition
 description: "Core Concept: A dramatic contrast between a chaotic wake-up and a polished,\

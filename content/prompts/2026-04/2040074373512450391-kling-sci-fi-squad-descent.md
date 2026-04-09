@@ -3,7 +3,7 @@
 title: "Sci-Fi Squad Descent"
 date: '2026-04-03 14:30:08+00:00'
 image: "/prompts/2026-04/2040074373512450391-kling-sci-fi-squad-descent/cover.jpg"
-video_path: "/prompts/2026-04/2040074373512450391-kling-sci-fi-squad-descent/video.mp4"
+video: "/prompts/2026-04/2040074373512450391-kling-sci-fi-squad-descent/video.mp4"
 description: A squad of futuristic soldiers in heavy armor descending rapidly with
   jet thrusters, flames trailing behind them, bodies tense against the force. They
   dodge incoming anti-air fire while adjusting trajectory mid-air before impact. Massive

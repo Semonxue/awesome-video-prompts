@@ -19,7 +19,7 @@ description: |-
   0:12-0:15: HARD CUT. Monumental WS. Both land already moving, skid one step, rebound, and rush back to center without resetting, disappearing into black strike smears and red flecks over the last impacts. Tiny push-in, ending mid-exchange. 50mm standard feel. SFX: (skid scrape, hard swishes, dry impacts, low ring).
 date: '2026-04-03'
 image: "/prompts/2026-04/2040009409586135356-stickman-fight-seedance/cover.jpg"
-video_path: "/prompts/2026-04/2040009409586135356-stickman-fight-seedance/video.mp4"
+video: "/prompts/2026-04/2040009409586135356-stickman-fight-seedance/video.mp4"
 models:
 - seedance2
 tags:

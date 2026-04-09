@@ -2,7 +2,7 @@
 title: Motorbike Mountain Cliff Run
 date: '2026-04-07'
 image: "/prompts/2026-04/2041154142841028979-motorbike-mountain-cliff-run/cover.jpg"
-video_path: "/prompts/2026-04/2041154142841028979-motorbike-mountain-cliff-run/video.mp4"
+video: "/prompts/2026-04/2041154142841028979-motorbike-mountain-cliff-run/video.mp4"
 models:
 - kling3
 tags:

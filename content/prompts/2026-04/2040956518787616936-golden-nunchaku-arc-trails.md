@@ -3,7 +3,7 @@
 title: "Golden Nunchaku Combat"
 date: '2026-04-06 00:55:27+00:00'
 image: "/prompts/2026-04/2040956518787616936-golden-nunchaku-arc-trails/cover.jpg"
-video_path: "/prompts/2026-04/2040956518787616936-golden-nunchaku-arc-trails/video.mp4"
+video: "/prompts/2026-04/2040956518787616936-golden-nunchaku-arc-trails/video.mp4"
 models:
 - seedance2
 tags: ["martial-arts","action","vfx","slow-motion","cinematic"]

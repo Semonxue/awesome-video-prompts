@@ -1,7 +1,7 @@
 ---
 title: Anime Transformations
 image: "/prompts/2026-04/2040463652357054616-anime-transformations/cover.jpg"
-video_path: "/prompts/2026-04/2040463652357054616-anime-transformations/video.mp4"
+video: "/prompts/2026-04/2040463652357054616-anime-transformations/video.mp4"
 date: '2026-04-04'
 description: Anime transformations created with Seedance 2.0. The creator spent a
   lot of time perfecting these anime transformation sequences.

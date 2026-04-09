@@ -3,7 +3,7 @@
 title: "Nomadic Woman Steppe Walk"
 date: '2026-04-06 01:01:55+00:00'
 image: "/prompts/2026-04/2040958144185311570-nano-banana-pro-and-prompt/cover.jpg"
-video_path: "/prompts/2026-04/2040958144185311570-nano-banana-pro-and-prompt/video.mp4"
+video: "/prompts/2026-04/2040958144185311570-nano-banana-pro-and-prompt/video.mp4"
 description: A cinematic medium shot of a young Central Asian woman walking slowly
   toward the camera across a misty green steppe at sunrise. She gently carries a small
   fluffy lamb in her arms. She wears a large textured sky-blue fur coat, her dark

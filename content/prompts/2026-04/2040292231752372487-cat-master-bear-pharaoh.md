@@ -3,7 +3,7 @@
 title: "Cat Pharaoh Adventure"
 date: '2026-04-04'
 image: "/prompts/2026-04/2040292231752372487-cat-master-bear-pharaoh/cover.jpg"
-video_path: "/prompts/2026-04/2040292231752372487-cat-master-bear-pharaoh/video.mp4"
+video: "/prompts/2026-04/2040292231752372487-cat-master-bear-pharaoh/video.mp4"
 description: |-
   Cinematic dark comedy adventure shot on Arri Alexa 35 with handheld jitter, exaggerated reaction shots, and punchy fast-cut editing, featuring moody torch lighting, dusty particle VFX, and a claustrophobic ancient pyramid atmosphere.
 

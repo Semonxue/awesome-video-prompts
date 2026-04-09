@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2039666642104234288-seedance2-dance-vertical/cover.jpg"
-video_path: "/prompts/2026-04/2039666642104234288-seedance2-dance-vertical/video.mp4"
+video: "/prompts/2026-04/2039666642104234288-seedance2-dance-vertical/video.mp4"
 date: 2026-04-02
 title: "Dance Vertical Music Video"
 description: |

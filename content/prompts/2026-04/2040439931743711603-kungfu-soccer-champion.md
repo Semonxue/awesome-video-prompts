@@ -3,7 +3,7 @@
 title: "Kungfu Soccer Champion"
 date: '2026-04-04 14:38:45+00:00'
 image: "/prompts/2026-04/2040439931743711603-kungfu-soccer/cover.jpg"
-video_path: "/prompts/2026-04/2040439931743711603-kungfu-soccer/video.mp4"
+video: "/prompts/2026-04/2040439931743711603-kungfu-soccer/video.mp4"
 description: 'Stylized 3D animation with exaggerated proportions, sharp kung-fu-soccer
   choreography, and controlled rhythmic energy. CHARACTERS - Football master: an impeccably
   focused martial-arts soccer prodigy in a fitted training top, wrapped wrists, tapered

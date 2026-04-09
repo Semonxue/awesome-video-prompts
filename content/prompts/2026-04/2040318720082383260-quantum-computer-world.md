@@ -3,7 +3,7 @@
 title: "Digital Multiverse Realm"
 date: '2026-04-04'
 image: "/prompts/2026-04/2040318720082383260-quantum-computer-world/cover.jpg"
-video_path: "/prompts/2026-04/2040318720082383260-quantum-computer-world/video.mp4"
+video: "/prompts/2026-04/2040318720082383260-quantum-computer-world/video.mp4"
 description: Planet-sized quantum computer world where continents are made of living
   code, data storms raging, teleportation portals opening between realities, seamless
   transition between parallel versions of the same city, swirling camera through portals,

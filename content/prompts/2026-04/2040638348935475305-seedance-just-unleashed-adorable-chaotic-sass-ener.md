@@ -1,7 +1,7 @@
 ---
 
 image: "/prompts/2026-04/2040638348935475305-seedance-just-unleashed-adorable-chaotic-sass-ener/cover.jpg"
-video_path: "/prompts/2026-04/2040638348935475305-seedance-just-unleashed-adorable-chaotic-sass-ener/video.mp4"
+video: "/prompts/2026-04/2040638348935475305-seedance-just-unleashed-adorable-chaotic-sass-ener/video.mp4"
 date: '2026-04-05 03:51:10+00:00'
 title: "Adorable Chaotic Cute Creature"
 description: |-

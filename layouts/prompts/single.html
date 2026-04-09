@@ -6,7 +6,7 @@
   "name": "{{ .Title }}",
   "description": "{{ .Params.description | default .Title | plainify | truncate 200 }}",
   "thumbnailUrl": "{{ .Params.image | absURL }}",
-  "uploadDate": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"{{ with .Params.video_path }},
+  "uploadDate": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"{{ with .Params.video }},
   "contentUrl": "{{ . | absURL }}"{{ end }},
   "author": { "@type": "Person", "name": "{{ .Params.author | default .Site.Params.author }}" }
 }
@@ -15,7 +15,7 @@
 <div class="pd-wrap">
 
   {{/* ── Video ── */}}
-  {{ with .Params.video_path }}
+  {{ with .Params.video }}
   <div class="pd-video-wrap">
     {{ $video := . }}
     {{ $videoURL := cond (or (hasPrefix $video "http://") (hasPrefix $video "https://")) $video ((strings.TrimPrefix "/" $video) | relURL) }}

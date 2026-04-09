@@ -2,7 +2,7 @@
 title: "Horror Hallway Chase"
 date: '2026-04-07'
 image: "/prompts/2026-04/2041365273484165169-made-with-kling-3-0-on-yapper-so/cover.jpg"
-video_path: "/prompts/2026-04/2041365273484165169-made-with-kling-3-0-on-yapper-so/video.mp4"
+video: "/prompts/2026-04/2041365273484165169-made-with-kling-3-0-on-yapper-so/video.mp4"
 models:
 - kling3
 tags:

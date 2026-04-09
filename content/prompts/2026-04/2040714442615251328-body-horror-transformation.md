@@ -2,7 +2,7 @@
 
 title: "Body Horror Hospital Infection"
 image: "/prompts/2026-04/2040714442615251328-body-horror-transformation/cover.jpg"
-video_path: "/prompts/2026-04/2040714442615251328-body-horror-transformation/video.mp4"
+video: "/prompts/2026-04/2040714442615251328-body-horror-transformation/video.mp4"
 date: '2026-04-05 08:53:32+00:00'
 models:
 - seedance2

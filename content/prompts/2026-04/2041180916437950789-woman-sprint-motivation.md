@@ -2,7 +2,7 @@
 title: Woman Sprint Motivation
 date: '2026-04-06 15:47:08+00:00'
 image: "/prompts/2026-04/2041180916437950789-woman-sprint-motivation/cover.jpg"
-video_path: "/prompts/2026-04/2041180916437950789-woman-sprint-motivation/video.mp4"
+video: "/prompts/2026-04/2041180916437950789-woman-sprint-motivation/video.mp4"
 description: |-
   0:00-0:03 - Cut 1:
       Close-up of a tired Western woman's bloodshot blue/green eyes blinking slowly. Sweat drips down her forehead. Dim, cinematic shadows highlight exhaustion. Quick flash of an alarm clock ticking.
