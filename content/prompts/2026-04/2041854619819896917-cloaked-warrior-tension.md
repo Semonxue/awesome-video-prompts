@@ -1,37 +1,61 @@
 ---
-title: "Cloaked Warriors Desert Tension"
-date: 2026-04-08T12:24:11Z
-models: ["seedance1.5pro"]
-tags: ["cinematic", "combat", "desert", "tension", "action"]
-image: "/prompts/2026-04/2041854619819896917-cloaked-warrior-tension/cover.jpg"
-video: "/prompts/2026-04/2041854619819896917-cloaked-warrior-tension/video.mp4"
-author: "Aleena Amir"
-source_url: "https://twitter.com/aleenaamiir/status/2041854619819896917"
-draft: true
+title: Cloaked Warriors Desert Tension
+date: '2026-04-08 12:24:11+00:00'
+models:
+- seedance2
+tags:
+- cinematic
+- combat
+- desert
+- tension
+- action
+image: /prompts/2026-04/2041854619819896917-cloaked-warrior-tension/cover.jpg
+video: /prompts/2026-04/2041854619819896917-cloaked-warrior-tension/video.mp4
+author: Aleena Amir
+source_url: https://twitter.com/aleenaamiir/status/2041854619819896917
+description: |-
+  FORMAT: 15s / Cinematic / 24fps / Shallow depth of field / Desert tones
+
+  STYLE: slow, precise, tension-heavy combat
+
+  0–3s:
+  Two cloaked fighters stand still on a dune, wind blowing, distance between them
+
+  3–6s:
+  They circle slowly, feet dragging softly in sand, hands near concealed blades
+
+  6–9s:
+  Sudden close-range clash — slow-motion knife strike, narrowly blocked
+
+  9–12s:
+  Rapid but controlled exchange — short, efficient movements, no wasted motion
+
+  12–15s:
+  Blade held at throat — both freeze, breathing heavy, cut to black
+
+  Sound Design:
+  Fabric movement, blade clangs, deep breathing, wind
+draft: false
 ---
-
-## Full Post Text
-
-AI understands tension now.
-
-Prompt ⤵ https://t.co/o3xlSBCplD
-
-## Prompt (from reply)
 
 FORMAT: 15s / Cinematic / 24fps / Shallow depth of field / Desert tones
 
 STYLE: slow, precise, tension-heavy combat
 
-0–3s: Two cloaked figures face off in a sun-scorched desert canyon. One draws a blade. The tension is palpable as the wind howls through the rocky outcrops.
+0–3s:
+Two cloaked fighters stand still on a dune, wind blowing, distance between them
 
-3–6s: A sudden, explosive exchange of strikes—fast cuts, dust clouds, the glint of steel catching the harsh midday sun.
+3–6s:
+They circle slowly, feet dragging softly in sand, hands near concealed blades
 
-6–10s: A chase through the narrow passages of the canyon walls, sand swirling, breath ragged.
+6–9s:
+Sudden close-range clash — slow-motion knife strike, narrowly blocked
 
-10–15s: The final confrontation in the open sand. Slow-motion final blow as the defeated falls.
+9–12s:
+Rapid but controlled exchange — short, efficient movements, no wasted motion
 
-PROMPT: Cinematic desert combat scene, two cloaked warriors in a sun-scorched canyon, shallow depth of field, desert tones, 24fps, tension-heavy combat sequence, blade fighting, sand swirling, dramatic lighting, cinematic action choreography
+12–15s:
+Blade held at throat — both freeze, breathing heavy, cut to black
 
-## Reply Post ID
-
-2041854765085421619
+Sound Design:
+Fabric movement, blade clangs, deep breathing, wind
