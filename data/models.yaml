@@ -123,7 +123,14 @@ wan26:
   slug: wan26
   url: https://manganow.ai/
   description: >-
-    Wan 2.6 text-to-video model by MangaNow, supporting anime-style video generation with detailed prompts and cinematic effects. Approximate launch: 2026.
+    Wan 2.6 text-to-video model by Alibaba, supporting anime-style video generation with detailed prompts and cinematic effects. Approximate launch: 2026.
+wan27:
+  name: Wan 2.7
+  company: MangaNow
+  slug: wan27
+  url: https://manganow.ai/
+  description: >-
+    Wan 2.7 text-to-video model by Alibaba. Upgraded version with improved motion quality, better character consistency, and enhanced cinematic effects. Approximate launch: 2026.
 pixverse:
   name: PixVerse
   company: PixVerse
