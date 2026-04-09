@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2041657448550035831-underground-city-vfx-tour/cover.jpg
-video: /prompts/2026-04/2041657448550035831-underground-city-vfx-tour/video.mp4
+image: "/prompts/2026-04/2041657448550035831-underground-city-vfx-tour/cover.jpg"
+video_path: "/prompts/2026-04/2041657448550035831-underground-city-vfx-tour/video.mp4"
 date: '2026-04-08'
 title: Underground City VFX Tour
 description: |-

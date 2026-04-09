@@ -131,10 +131,3 @@ pixverse:
   url: https://pixverse.ai/
   description: >-
     PixVerse AI video generation model, supporting cinematic shots, action sequences, and creative content generation. Approximate launch: 2024.
-nanobanana2:
-  name: Nano Banana 2
-  company: Nano Banana
-  slug: nanobanana2
-  url: https://nanobanana.ai/
-  description: >-
-    Nano Banana 2 is an advanced AI image and video generation model known for its comedic, pet, and creative content outputs. Often used for humor, transformation, and whimsical visual storytelling.

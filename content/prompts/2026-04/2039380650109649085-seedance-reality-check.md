@@ -2,8 +2,8 @@
 
 title: "VR Bear Fight Reality"
 date: 2026-04-01T16:33:31Z
-image: /prompts/2026-04/2039380650109649085-seedance-reality-check/cover.jpg
-video: /prompts/2026-04/2039380650109649085-seedance-reality-check/video.mp4
+image: "/prompts/2026-04/2039380650109649085-seedance-reality-check/cover.jpg"
+video_path: "/prompts/2026-04/2039380650109649085-seedance-reality-check/video.mp4"
 description: |
   FORMAT: 15s / free rhythm / 1 MATCH CUT / CONTINUOUS MOVE UNTIL MATCH CUT + IMMEDIATE ACTION FROM FIRST FRAME
   SUBJECTS: A lone sword-bearing woman in weathered fur and leather fights a massive polar bear with desperate, two-handed survival movement. The same woman is later revealed at home in loose indoor clothes, where a VR headset appears only after the match cut and is pulled off in one clear motion.

@@ -2,8 +2,8 @@
 
 title: "Kitchen Renovation Timelapse"
 date: '2026-04-04'
-image: /prompts/2026-04/2040354700386812370-kitchen-renovation-timelapse/cover.jpg
-video: /prompts/2026-04/2040354700386812370-kitchen-renovation-timelapse/video.mp4
+image: "/prompts/2026-04/2040354700386812370-kitchen-renovation-timelapse/cover.jpg"
+video_path: "/prompts/2026-04/2040354700386812370-kitchen-renovation-timelapse/video.mp4"
 description: "Ultra-realistic cinematic timelapse, natural daylight progression from\
   \ cool morning light to warm golden evening, adaptive static camera fixed in one\
   \ elevated corner of the kitchen showing the full space with subtle focal adjustments\

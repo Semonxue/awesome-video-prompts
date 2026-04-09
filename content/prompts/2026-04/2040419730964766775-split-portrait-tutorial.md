@@ -1,8 +1,8 @@
 ---
 
 title: "Split Portrait Tutorial"
-image: /prompts/2026-04/2040419730964766775-split-screen-portrait-video/cover.jpg
-video: /prompts/2026-04/2040419730964766775-split-screen-portrait-video/video.mp4
+image: "/prompts/2026-04/2040419730964766775-split-screen-portrait-video/cover.jpg"
+video_path: "/prompts/2026-04/2040419730964766775-split-screen-portrait-video/video.mp4"
 date: '2026-04-04 21:22:27+08:00'
 description: Maintain the 5-panel split-screen layout, the red background, and all
   text overlays exactly as they are. In all 5 panels simultaneously, the man slowly

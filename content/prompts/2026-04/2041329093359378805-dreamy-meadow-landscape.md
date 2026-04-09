@@ -1,8 +1,8 @@
 ---
 title: Dreamy Meadow Tree Landscape
 date: '2026-04-07'
-image: /prompts/2026-04/2041329093359378805-dreamy-meadow-landscape/cover.jpg
-video: /prompts/2026-04/2041329093359378805-dreamy-meadow-landscape/video.mp4
+image: "/prompts/2026-04/2041329093359378805-dreamy-meadow-landscape/cover.jpg"
+video_path: "/prompts/2026-04/2041329093359378805-dreamy-meadow-landscape/video.mp4"
 models:
 - kling3
 tags:

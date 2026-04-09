@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040797935718318289-japanese-street-cinematic/cover.jpg
-video: /prompts/2026-04/2040797935718318289-japanese-street-cinematic/video.mp4
+image: "/prompts/2026-04/2040797935718318289-japanese-street-cinematic/cover.jpg"
+video_path: "/prompts/2026-04/2040797935718318289-japanese-street-cinematic/video.mp4"
 date: '2026-04-05 14:25:18+00:00'
 title: "Tokyo Street Cinematic"
 description: |-

@@ -1,8 +1,8 @@
 ---
 title: Seedance Titans Coastal Battlefield
 date: '2026-04-06 18:11:37+00:00'
-image: /prompts/2026-04/2041218152617369735-seedance-titans-battle/cover.jpg
-video: /prompts/2026-04/2041218152617369735-seedance-titans-battle/video.mp4
+image: "/prompts/2026-04/2041218152617369735-seedance-titans-battle/cover.jpg"
+video_path: "/prompts/2026-04/2041218152617369735-seedance-titans-battle/video.mp4"
 models:
 - seedance2
 tags:

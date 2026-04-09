@@ -23,8 +23,8 @@ description: |-
   }
   }
 date: '2026-04-03'
-image: /prompts/2026-04/2039954754361864684-crystal-symmetry-chaos/cover.jpg
-video: /prompts/2026-04/2039954754361864684-crystal-symmetry-chaos/video.mp4
+image: "/prompts/2026-04/2039954754361864684-crystal-symmetry-chaos/cover.jpg"
+video_path: "/prompts/2026-04/2039954754361864684-crystal-symmetry-chaos/video.mp4"
 models:
 - kling3
 tags:

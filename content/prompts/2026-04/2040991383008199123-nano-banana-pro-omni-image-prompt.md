@@ -2,8 +2,8 @@
 
 title: "Urban Train Portrait"
 date: '2026-04-06 03:14:00+00:00'
-image: /prompts/2026-04/2040991383008199123-nano-banana-pro-omni-image-prompt/cover.jpg
-video: /prompts/2026-04/2040991383008199123-nano-banana-pro-omni-image-prompt/video.mp4
+image: "/prompts/2026-04/2040991383008199123-nano-banana-pro-omni-image-prompt/cover.jpg"
+video_path: "/prompts/2026-04/2040991383008199123-nano-banana-pro-omni-image-prompt/video.mp4"
 description: |-
   A young woman with a neutral expression walks slowly through a crowded train station. People move quickly around her, creating motion blur, while she remains in sharp focus. She wears a black hoodie, minimal makeup, natural lighting. The environment feels busy and slightly desaturated.
   Camera shots:

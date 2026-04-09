@@ -1,8 +1,8 @@
 ---
 
 title: "Sun Wukong Divine Battle"
-image: /prompts/2026-04/2040661051948323129-sun-wukong-buddha-battle/cover.jpg
-video: /prompts/2026-04/2040661051948323129-sun-wukong-buddha-battle/video.mp4
+image: "/prompts/2026-04/2040661051948323129-sun-wukong-buddha-battle/cover.jpg"
+video_path: "/prompts/2026-04/2040661051948323129-sun-wukong-buddha-battle/video.mp4"
 date: '2026-04-05 05:21:23+00:00'
 models:
 - seedance2

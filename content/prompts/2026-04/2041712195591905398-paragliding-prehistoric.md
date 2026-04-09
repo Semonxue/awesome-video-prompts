@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2041712195591905398-paragliding-prehistoric/cover.jpg
-video: /prompts/2026-04/2041712195591905398-paragliding-prehistoric/video.mp4
+image: "/prompts/2026-04/2041712195591905398-paragliding-prehistoric/cover.jpg"
+video_path: "/prompts/2026-04/2041712195591905398-paragliding-prehistoric/video.mp4"
 date: '2026-04-08'
 title: POV Paragliding Prehistoric
 description: |-

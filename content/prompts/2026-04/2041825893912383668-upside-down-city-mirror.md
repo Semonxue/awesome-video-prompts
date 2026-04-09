@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2041825893912383668-upside-down-city-mirror/cover.jpg
-video: /prompts/2026-04/2041825893912383668-upside-down-city-mirror/video.mp4
+image: "/prompts/2026-04/2041825893912383668-upside-down-city-mirror/cover.jpg"
+video_path: "/prompts/2026-04/2041825893912383668-upside-down-city-mirror/video.mp4"
 date: '2026-04-08'
 title: Upside Down City Mirror
 description: A second city hangs upside down above a real one. As the sun rises between

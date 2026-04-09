@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2041604273734054320-nasa-apollo-spacesuit-a7l/cover.jpg
-video: /prompts/2026-04/2041604273734054320-nasa-apollo-spacesuit-a7l/video.mp4
+image: "/prompts/2026-04/2041604273734054320-nasa-apollo-spacesuit-a7l/cover.jpg"
+video_path: "/prompts/2026-04/2041604273734054320-nasa-apollo-spacesuit-a7l/video.mp4"
 date: '2026-04-07'
 title: NASA Apollo Spacesuit A7L Spec Ad
 description: |-

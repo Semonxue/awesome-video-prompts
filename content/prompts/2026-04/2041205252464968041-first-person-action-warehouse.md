@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2041205252464968041-first-person-action-warehouse/cover.jpg
-video: /prompts/2026-04/2041205252464968041-first-person-action-warehouse/video.mp4
+image: "/prompts/2026-04/2041205252464968041-first-person-action-warehouse/cover.jpg"
+video_path: "/prompts/2026-04/2041205252464968041-first-person-action-warehouse/video.mp4"
 date: '2026-04-07'
 title: First-Person Action Movie Short Film
 description: '15-second First-Person Action Movie Short Film: 8 shots with extremely

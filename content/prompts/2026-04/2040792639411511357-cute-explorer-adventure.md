@@ -1,8 +1,8 @@
 ---
 
 title: "Forest Treasure Quest"
-image: /prompts/2026-04/2040792639411511357-cute-explorer-adventure/cover.jpg
-video: /prompts/2026-04/2040792639411511357-cute-explorer-adventure/video.mp4
+image: "/prompts/2026-04/2040792639411511357-cute-explorer-adventure/cover.jpg"
+video_path: "/prompts/2026-04/2040792639411511357-cute-explorer-adventure/video.mp4"
 date: '2026-04-05 14:04:15+00:00'
 models:
 - seedance2

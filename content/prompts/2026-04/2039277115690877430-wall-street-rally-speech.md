@@ -2,8 +2,8 @@
 
 title: "Wall Street Rally Speech"
 date: '2026-04-01'
-image: /prompts/2026-04/2039277115690877430-wall-street-rally-speech/cover.jpg
-video: /prompts/2026-04/2039277115690877430-wall-street-rally-speech/video.mp4
+image: "/prompts/2026-04/2039277115690877430-wall-street-rally-speech/cover.jpg"
+video_path: "/prompts/2026-04/2039277115690877430-wall-street-rally-speech/video.mp4"
 models:
 - seedance2
 tags:
@@ -21,7 +21,6 @@ description: |-
   00:04-00:09 快速剪辑切换：男主角胸部以上特写，汗水微湿，眼神燃烧，嘴唇大力喊出："They want to take it all away from you — ARE YOU GONNA LET THEM?!" 台词落点切换员工特写——一张张年轻的脸扭曲在极度亢奋之中，有人流泪，有人撕开领带，有人跳上桌子嚎叫着回应："NO!!!"
   00:09-00:15 男主角单手猛拍胸口，另一只手高举拳头，低声而用力地说出最后一句话："This is who we are." 镜头从特写骤然拉开为全景——数百人的大厅在同一瞬间爆发出最高潮的呐喊，彩带倾泻而下，镜头微微仰拍男主角的剪影逆光矗立在人群顶端，定格在那种英雄与癫狂并存的高燃瞬间。
 image_path: /prompts/2026-04/2039277115690877430-wall-street-rally-speech/cover.jpg
-video_path: /prompts/2026-04/2039277115690877430-wall-street-rally-speech/video.mp4
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040480342939754752-15-second-continuous-single-shot-action-sequence-n/cover.jpg
-video: /prompts/2026-04/2040480342939754752-15-second-continuous-single-shot-action-sequence-n/video.mp4
+image: "/prompts/2026-04/2040480342939754752-15-second-continuous-single-shot-action-sequence-n/cover.jpg"
+video_path: "/prompts/2026-04/2040480342939754752-15-second-continuous-single-shot-action-sequence-n/video.mp4"
 date: '2026-04-04 17:23:18+00:00'
 title: "Zero Gravity Katana Combat"
 description: |-

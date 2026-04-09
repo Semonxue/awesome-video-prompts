@@ -1,8 +1,8 @@
 ---
 title: "Floating Clocks Dream"
 date: '2026-04-07'
-image: /prompts/2026-04/2041248348011688141-grok-imagine-text-to-video/cover.jpg
-video: /prompts/2026-04/2041248348011688141-grok-imagine-text-to-video/video.mp4
+image: "/prompts/2026-04/2041248348011688141-grok-imagine-text-to-video/cover.jpg"
+video_path: "/prompts/2026-04/2041248348011688141-grok-imagine-text-to-video/video.mp4"
 models:
 - grok
 tags:

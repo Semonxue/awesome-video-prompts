@@ -17,7 +17,7 @@
     "name": "{{ .Title }}",
     "description": "{{ .Params.description | default .Title }}",
     "thumbnailUrl": "{{ .Params.image | absURL }}",
-    "uploadDate": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"{{ with .Params.video }},
+    "uploadDate": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"{{ with .Params.video_path }},
     "contentUrl": "{{ . | absURL }}"{{ end }}
   }
 }
@@ -65,7 +65,7 @@
     </div>
     {{ end }}
 
-    {{ with .Params.video }}
+    {{ with .Params.video_path }}
     <div class="prompt-video-wrapper">
       <video controls preload="metadata" style="max-width: 100%; height: auto;">
         {{ $video := . }}

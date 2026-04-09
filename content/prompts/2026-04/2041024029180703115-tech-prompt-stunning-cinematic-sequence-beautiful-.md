@@ -2,8 +2,8 @@
 
 title: "Female Cyborg Cyberpunk Battle"
 date: '2026-04-06 00:00:00+00:00'
-image: /prompts/2026-04/2041024029180703115-tech-prompt-stunning-cinematic-sequence-beautiful-/cover.jpg
-video: /prompts/2026-04/2041024029180703115-tech-prompt-stunning-cinematic-sequence-beautiful-/video.mp4
+image: "/prompts/2026-04/2041024029180703115-tech-prompt-stunning-cinematic-sequence-beautiful-/cover.jpg"
+video_path: "/prompts/2026-04/2041024029180703115-tech-prompt-stunning-cinematic-sequence-beautiful-/video.mp4"
 description: |-
   A stunning cinematic sequence of a beautiful female cyborg with a human-like face, long dark ponytail, dramatic makeup with purple lipstick and glowing blue eyes, wearing a highly detailed, glossy black and silver futuristic robotic armor with blue glowing accents and a circular blue core on her chest.
   The video tells a story in dramatic cinematic style:

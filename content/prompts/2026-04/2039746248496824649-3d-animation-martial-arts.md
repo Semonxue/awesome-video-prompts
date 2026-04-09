@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039746248496824649-3d-animation-martial-arts/cover.jpg
-video: /prompts/2026-04/2039746248496824649-3d-animation-martial-arts/video.mp4
+image: "/prompts/2026-04/2039746248496824649-3d-animation-martial-arts/cover.jpg"
+video_path: "/prompts/2026-04/2039746248496824649-3d-animation-martial-arts/video.mp4"
 date: '2026-04-02'
 title: "Mixologist Martial Arts Showdown"
 description: 'Stylized 3D animation with exaggerated proportions, sharp martial-arts-inspired

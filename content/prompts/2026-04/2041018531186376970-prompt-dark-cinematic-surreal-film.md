@@ -2,8 +2,8 @@
 
 title: "Dark Surreal Dystopia"
 date: '2026-04-06 05:01:52+00:00'
-image: /prompts/2026-04/2041018531186376970-prompt-dark-cinematic-surreal-film/cover.jpg
-video: /prompts/2026-04/2041018531186376970-prompt-dark-cinematic-surreal-film/video.mp4
+image: "/prompts/2026-04/2041018531186376970-prompt-dark-cinematic-surreal-film/cover.jpg"
+video_path: "/prompts/2026-04/2041018531186376970-prompt-dark-cinematic-surreal-film/video.mp4"
 description: |-
   A dark, cinematic surreal film set in a post-war dystopian city, muted tones, cold color grading, shallow depth of field, soft film grain, dramatic lighting.
   A cracked empty street near a foggy shoreline. A woman in a long grey coat walks slowly toward the camera. Beside her floats a giant fragmented human face made of broken buildings and concrete, subtly shifting as if alive. Dust particles drift in the air.

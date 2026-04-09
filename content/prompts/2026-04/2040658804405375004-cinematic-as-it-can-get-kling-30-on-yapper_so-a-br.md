@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040658804405375004-cinematic-as-it-can-get-kling-30-on-yapper_so-a-br/cover.jpg
-video: /prompts/2026-04/2040658804405375004-cinematic-as-it-can-get-kling-30-on-yapper_so-a-br/video.mp4
+image: "/prompts/2026-04/2040658804405375004-cinematic-as-it-can-get-kling-30-on-yapper_so-a-br/cover.jpg"
+video_path: "/prompts/2026-04/2040658804405375004-cinematic-as-it-can-get-kling-30-on-yapper_so-a-br/video.mp4"
 date: '2026-04-05 05:12:27+00:00'
 title: "Cinematic Ski Snow Explosion"
 description: |-

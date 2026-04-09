@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039755331295961452-next-gen-game-cinematic/cover.jpg
-video: /prompts/2026-04/2039755331295961452-next-gen-game-cinematic/video.mp4
+image: "/prompts/2026-04/2039755331295961452-next-gen-game-cinematic/cover.jpg"
+video_path: "/prompts/2026-04/2039755331295961452-next-gen-game-cinematic/video.mp4"
 date: '2026-04-03'
 title: "Neon City Game Cinematic"
 description: 'Original Game Concept Trailer: Characters and vehicles in the futuristic

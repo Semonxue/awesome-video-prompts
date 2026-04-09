@@ -1,7 +1,7 @@
 ---
 title: Nature Reclaiming Urban Collapse
-image: /prompts/2026-04/2041580545637835095-nature-reclaiming-city/cover.jpg
-video: /prompts/2026-04/2041580545637835095-nature-reclaiming-city/video.mp4
+image: "/prompts/2026-04/2041580545637835095-nature-reclaiming-city/cover.jpg"
+video_path: "/prompts/2026-04/2041580545637835095-nature-reclaiming-city/video.mp4"
 date: '2026-04-08 02:15:07+08:00'
 models:
 - seedance2

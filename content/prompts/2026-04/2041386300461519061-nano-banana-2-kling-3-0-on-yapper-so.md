@@ -1,8 +1,8 @@
 ---
 title: "Miniature Coffee Jar Diorama"
 date: '2026-04-07'
-image: /prompts/2026-04/2041386300461519061-nano-banana-2-kling-3-0-on-yapper-so/cover.jpg
-video: /prompts/2026-04/2041386300461519061-nano-banana-2-kling-3-0-on-yapper-so/video.mp4
+image: "/prompts/2026-04/2041386300461519061-nano-banana-2-kling-3-0-on-yapper-so/cover.jpg"
+video_path: "/prompts/2026-04/2041386300461519061-nano-banana-2-kling-3-0-on-yapper-so/video.mp4"
 models:
 - kling3
 tags:

@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040460544495526397-openart-just-launched-seedance-20-for-teams-and-en/cover.jpg
-video: /prompts/2026-04/2040460544495526397-openart-just-launched-seedance-20-for-teams-and-en/video.mp4
+image: "/prompts/2026-04/2040460544495526397-openart-just-launched-seedance-20-for-teams-and-en/cover.jpg"
+video_path: "/prompts/2026-04/2040460544495526397-openart-just-launched-seedance-20-for-teams-and-en/video.mp4"
 date: '2026-04-04 16:04:38+00:00'
 title: "Betrayal Emotional Drama"
 description: |-

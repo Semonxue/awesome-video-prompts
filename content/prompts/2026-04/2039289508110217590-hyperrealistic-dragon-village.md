@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039289508110217590-hyperrealistic-dragon-village/cover.jpg
-video: /prompts/2026-04/2039289508110217590-hyperrealistic-dragon-village/video.mp4
+image: "/prompts/2026-04/2039289508110217590-hyperrealistic-dragon-village/cover.jpg"
+video_path: "/prompts/2026-04/2039289508110217590-hyperrealistic-dragon-village/video.mp4"
 date: '2026-04-01'
 title: "Hyperrealistic Dragon Village"
 models:

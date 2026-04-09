@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039650893163847832-quantum-reality-fracture/cover.jpg
-video: /prompts/2026-04/2039650893163847832-quantum-reality-fracture/video.mp4
+image: "/prompts/2026-04/2039650893163847832-quantum-reality-fracture/cover.jpg"
+video_path: "/prompts/2026-04/2039650893163847832-quantum-reality-fracture/video.mp4"
 date: 2026-04-02
 title: "Quantum Reality Fracture"
 description: |

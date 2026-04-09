@@ -32,8 +32,8 @@ description: |-
   0:12-0:15:
   Quick cut to the final explosive burst. The character sprints up the last set of platforms and narrow edges to the highest point, taking a brief press step before leaping. On landing, the knees and ankles cushion the impact, with the camera compressing and snapping back. The character steadies themselves, and the camera tilts up to reveal a vast neon city skyline. Rooftop gardens, glass domes, neon towers, and aerial structures interlace, with super-tall buildings extending into the fog, creating an immense, bottomless urban canyon between them. The character briefly raises their hands to adjust their breath and balance before stopping at the highest edge to gaze over the city.
 date: '2026-04-03'
-image: /prompts/2026-04/2040041166822060477-intense-seedance-scene/cover.jpg
-video: /prompts/2026-04/2040041166822060477-intense-seedance-scene/video.mp4
+image: "/prompts/2026-04/2040041166822060477-intense-seedance-scene/cover.jpg"
+video_path: "/prompts/2026-04/2040041166822060477-intense-seedance-scene/video.mp4"
 models:
 - seedance2
 tags:

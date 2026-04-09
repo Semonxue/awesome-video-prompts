@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2041699878670365054-violin-performance-cinematic/cover.jpg
-video: /prompts/2026-04/2041699878670365054-violin-performance-cinematic/video.mp4
+image: "/prompts/2026-04/2041699878670365054-violin-performance-cinematic/cover.jpg"
+video_path: "/prompts/2026-04/2041699878670365054-violin-performance-cinematic/video.mp4"
 date: '2026-04-08'
 title: Violin Performance Cinematic
 description: バイオリンを演奏する可愛らしい少女のシネマティックな映像。松脂を塗りチューニングをする手元のクローズアップから始まり、真剣な横顔へと滑らかにパンする。深呼吸をして感情豊かに演奏を始めると、カメラは旋回しながら彼女の無邪気な微笑みと躍動感を捉える。演奏後は弓を下ろし、少し息を弾ませながらカメラに満足げに微笑む。弦の摩擦音や微かな息遣いなど、ASMR的な音のディテールが全編を通して臨場感を引き立てる。

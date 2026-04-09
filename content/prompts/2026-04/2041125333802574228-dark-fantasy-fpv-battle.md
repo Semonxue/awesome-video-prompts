@@ -3,8 +3,8 @@ title: Dark Fantasy FPV Battle
 date: '2026-04-06 20:06:16+08:00'
 author: MayorkingAI
 source_url: https://twitter.com/MayorKingAI/status/2041125333802574228
-image: /prompts/2026-04/2041125333802574228-dark-fantasy-fpv-battle/cover.jpg
-video: /prompts/2026-04/2041125333802574228-dark-fantasy-fpv-battle/video.mp4
+image: "/prompts/2026-04/2041125333802574228-dark-fantasy-fpv-battle/cover.jpg"
+video_path: "/prompts/2026-04/2041125333802574228-dark-fantasy-fpv-battle/video.mp4"
 models:
 - seedance2
 tags:

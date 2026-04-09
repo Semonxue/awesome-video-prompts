@@ -2,8 +2,8 @@
 
 title: "Salmon Underwater Journey"
 date: '2026-04-06 01:07:18+00:00'
-image: /prompts/2026-04/2040959499847221480-salmon-bite-underwater/cover.jpg
-video: /prompts/2026-04/2040959499847221480-salmon-bite-underwater/video.mp4
+image: "/prompts/2026-04/2040959499847221480-salmon-bite-underwater/cover.jpg"
+video_path: "/prompts/2026-04/2040959499847221480-salmon-bite-underwater/video.mp4"
 models:
 - seedance2
 tags: ["underwater","food","cinematic","fish","slow-motion"]

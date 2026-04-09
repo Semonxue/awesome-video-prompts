@@ -2,8 +2,8 @@
 
 title: "LaFerrari Car Commercial"
 date: '2026-04-03'
-image: /prompts/2026-04/2039932977287979053-seedance2-car-commercial/cover.jpg
-video: /prompts/2026-04/2039932977287979053-seedance2-car-commercial/video.mp4
+image: "/prompts/2026-04/2039932977287979053-seedance2-car-commercial/cover.jpg"
+video_path: "/prompts/2026-04/2039932977287979053-seedance2-car-commercial/video.mp4"
 description: |-
   跑车商业摄影分镜
 

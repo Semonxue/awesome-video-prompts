@@ -10,8 +10,8 @@ description: FPV drone camera chasing a pack of 2 racing cars speeding together 
   and rays of light cutting through dusty air. Minimalistic color palette, cinematic
   lighting, hyper-detailed environment, ultra-realistic, high-speed motion blur, intense
   chaotic racing energy.
-image: /prompts/2026-04/2041874582630445151-fpv-apocalyptic-racing/cover.jpg
-video: /prompts/2026-04/2041874582630445151-fpv-apocalyptic-racing/video.mp4
+image: "/prompts/2026-04/2041874582630445151-fpv-apocalyptic-racing/cover.jpg"
+video_path: "/prompts/2026-04/2041874582630445151-fpv-apocalyptic-racing/video.mp4"
 tags:
 - fpv
 - racing

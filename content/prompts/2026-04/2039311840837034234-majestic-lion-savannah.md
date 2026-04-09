@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039311840837034234-majestic-lion-savannah/cover.jpg
-video: /prompts/2026-04/2039311840837034234-majestic-lion-savannah/video.mp4
+image: "/prompts/2026-04/2039311840837034234-majestic-lion-savannah/cover.jpg"
+video_path: "/prompts/2026-04/2039311840837034234-majestic-lion-savannah/video.mp4"
 date: '2026-04-01'
 title: "Majestic Lion Aerial"
 description: Aerial perspective, slow cinematic drone shot descending, majestic lion

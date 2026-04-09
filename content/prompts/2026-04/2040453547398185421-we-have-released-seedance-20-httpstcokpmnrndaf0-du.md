@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040453547398185421-we-have-released-seedance-20-httpstcokpmnrndaf0-du/cover.jpg
-video: /prompts/2026-04/2040453547398185421-we-have-released-seedance-20-httpstcokpmnrndaf0-du/video.mp4
+image: "/prompts/2026-04/2040453547398185421-we-have-released-seedance-20-httpstcokpmnrndaf0-du/cover.jpg"
+video_path: "/prompts/2026-04/2040453547398185421-we-have-released-seedance-20-httpstcokpmnrndaf0-du/video.mp4"
 date: '2026-04-04 15:36:50+00:00'
 title: "Porsche Transformer Robot"
 description: |-

@@ -1,8 +1,8 @@
 ---
 title: Grok Imagine AI Tech Prompt
 date: '2026-04-07'
-image: /prompts/2026-04/2041401982280425788-grok-imagine-ai-tech-prompt/cover.jpg
-video: /prompts/2026-04/2041401982280425788-grok-imagine-ai-tech-prompt/video.mp4
+image: "/prompts/2026-04/2041401982280425788-grok-imagine-ai-tech-prompt/cover.jpg"
+video_path: "/prompts/2026-04/2041401982280425788-grok-imagine-ai-tech-prompt/video.mp4"
 models:
 - grok
 tags:

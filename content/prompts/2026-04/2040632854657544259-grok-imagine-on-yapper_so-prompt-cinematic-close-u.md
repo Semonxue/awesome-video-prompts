@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040632854657544259-grok-imagine-on-yapper_so-prompt-cinematic-close-u/cover.jpg
-video: /prompts/2026-04/2040632854657544259-grok-imagine-on-yapper_so-prompt-cinematic-close-u/video.mp4
+image: "/prompts/2026-04/2040632854657544259-grok-imagine-on-yapper_so-prompt-cinematic-close-u/cover.jpg"
+video_path: "/prompts/2026-04/2040632854657544259-grok-imagine-on-yapper_so-prompt-cinematic-close-u/video.mp4"
 date: '2026-04-05 03:29:20+00:00'
 title: "Moonlit Dragon Nuzzle"
 description: Cinematic close-up, slow-motion video. A massive, muscular golden dragon

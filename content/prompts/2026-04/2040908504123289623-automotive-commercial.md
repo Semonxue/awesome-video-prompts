@@ -2,8 +2,8 @@
 
 title: "Luxury Car Commercial"
 date: '2026-04-05 21:44:40+00:00'
-image: /prompts/2026-04/2040908504123289623-automotive-commercial/cover.jpg
-video: /prompts/2026-04/2040908504123289623-automotive-commercial/video.mp4
+image: "/prompts/2026-04/2040908504123289623-automotive-commercial/cover.jpg"
+video_path: "/prompts/2026-04/2040908504123289623-automotive-commercial/video.mp4"
 models:
 - grok
 tags: ["car","cinematic","urban","action","neon"]

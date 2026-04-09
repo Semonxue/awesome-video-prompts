@@ -1,8 +1,8 @@
 ---
 title: Seedance Mechanical Phoenix Rising
 date: '2026-04-05 18:24:31+00:00'
-image: /prompts/2026-04/2040445075520639022-seedance-mechanical-phoenix/cover.jpg
-video: /prompts/2026-04/2040445075520639022-seedance-mechanical-phoenix/video.mp4
+image: "/prompts/2026-04/2040445075520639022-seedance-mechanical-phoenix/cover.jpg"
+video_path: "/prompts/2026-04/2040445075520639022-seedance-mechanical-phoenix/video.mp4"
 models:
 - seedance2
 tags:

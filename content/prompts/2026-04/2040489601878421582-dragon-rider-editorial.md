@@ -3,8 +3,8 @@ title: Dragon Rider Editorial
 date: '2026-04-05 10:00:06+08:00'
 author: Aimi Kōda
 source_url: https://twitter.com/aimikoda/status/2040489601878421582
-image: /prompts/2026-04/2040489601878421582-dragon-rider-editorial/cover.jpg
-video: /prompts/2026-04/2040489601878421582-dragon-rider-editorial/video.mp4
+image: "/prompts/2026-04/2040489601878421582-dragon-rider-editorial/cover.jpg"
+video_path: "/prompts/2026-04/2040489601878421582-dragon-rider-editorial/video.mp4"
 models:
 - seedance2
 tags:

@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039708160621965465-outfit-transformation/cover.jpg
-video: /prompts/2026-04/2039708160621965465-outfit-transformation/video.mp4
+image: "/prompts/2026-04/2039708160621965465-outfit-transformation/cover.jpg"
+video_path: "/prompts/2026-04/2039708160621965465-outfit-transformation/video.mp4"
 date: '2026-04-02'
 title: "Fashion Transformation Film"
 description: '12-second vertical 9:16 dark avant-garde fashion film, fixed full-body

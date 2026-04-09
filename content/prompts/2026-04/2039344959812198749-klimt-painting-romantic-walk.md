@@ -17,8 +17,8 @@ description: 'First-person POV impasto oil painting, Klimt-inspired: walking han
   drift around us, koi pond nearby. She wears a flowing gold, green, and pink medieval
   gown with ornate Klimt patterns. Warm sunlight, lanterns, fireflies, and petals.
   Romantic and dreamy, thick impasto brushstrokes.'
-image: /prompts/2026-04/2039344959812198749-klimt-painting-romantic-walk/cover.jpg
-video: /prompts/2026-04/2039344959812198749-klimt-painting-romantic-walk/video.mp4
+image: "/prompts/2026-04/2039344959812198749-klimt-painting-romantic-walk/cover.jpg"
+video_path: "/prompts/2026-04/2039344959812198749-klimt-painting-romantic-walk/video.mp4"
 draft: false
 ---
 

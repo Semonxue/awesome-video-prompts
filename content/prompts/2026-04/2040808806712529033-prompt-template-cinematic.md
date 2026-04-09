@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040808806712529033-prompt-template-cinematic/cover.jpg
-video: /prompts/2026-04/2040808806712529033-prompt-template-cinematic/video.mp4
+image: "/prompts/2026-04/2040808806712529033-prompt-template-cinematic/cover.jpg"
+video_path: "/prompts/2026-04/2040808806712529033-prompt-template-cinematic/video.mp4"
 date: '2026-04-05 15:08:28+00:00'
 title: "Cinematic Close-Up Template"
 description: |-

@@ -2,8 +2,8 @@
 
 title: "Stylized Barbershop Transformation"
 date: 2026-04-01T15:59:38Z
-image: /prompts/2026-04/2039372124079669655-barbershop-transformation/cover.jpg
-video: /prompts/2026-04/2039372124079669655-barbershop-transformation/video.mp4
+image: "/prompts/2026-04/2039372124079669655-barbershop-transformation/cover.jpg"
+video_path: "/prompts/2026-04/2039372124079669655-barbershop-transformation/video.mp4"
 description: |
   {
   movement_style": "step → pause → spin, precise, calm, orchestral control over chaos

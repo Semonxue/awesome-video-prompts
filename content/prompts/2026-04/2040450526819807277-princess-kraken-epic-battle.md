@@ -1,8 +1,8 @@
 ---
 title: "Princess Kraken Epic Battle"
 date: '2026-04-04'
-image: /prompts/2026-04/2040450526819807277-princess-vs-kracken/cover.jpg
-video: /prompts/2026-04/2040450526819807277-princess-vs-kracken/video.mp4
+image: "/prompts/2026-04/2040450526819807277-princess-vs-kracken/cover.jpg"
+video_path: "/prompts/2026-04/2040450526819807277-princess-vs-kracken/video.mp4"
 models:
 - seedance2
 tags:

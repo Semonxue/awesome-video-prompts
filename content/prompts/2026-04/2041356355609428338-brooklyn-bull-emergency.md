@@ -1,8 +1,8 @@
 ---
 title: Brooklyn Bull Emergency
 date: '2026-04-07'
-image: /prompts/2026-04/2041356355609428338-brooklyn-bull-emergency/cover.jpg
-video: /prompts/2026-04/2041356355609428338-brooklyn-bull-emergency/video.mp4
+image: "/prompts/2026-04/2041356355609428338-brooklyn-bull-emergency/cover.jpg"
+video_path: "/prompts/2026-04/2041356355609428338-brooklyn-bull-emergency/video.mp4"
 models:
 - seedance2
 tags:

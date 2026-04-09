@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040082079820759518-fpv-ancient-assyrian-empire/cover.jpg
-video: /prompts/2026-04/2040082079820759518-fpv-ancient-assyrian-empire/video.mp4
+image: "/prompts/2026-04/2040082079820759518-fpv-ancient-assyrian-empire/cover.jpg"
+video_path: "/prompts/2026-04/2040082079820759518-fpv-ancient-assyrian-empire/video.mp4"
 date: '2026-04-03'
 title: "Ancient Assyrian Empire FPV"
 description: extremely fast-paced cinematic FPV flying through the ancient Assyrian

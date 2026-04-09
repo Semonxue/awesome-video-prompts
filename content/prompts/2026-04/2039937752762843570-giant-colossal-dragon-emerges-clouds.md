@@ -2,8 +2,8 @@
 
 title: "Colossal Dragon Cloud Emergence"
 date: '2026-04-03 05:27:15+00:00'
-image: /prompts/2026-04/2039937752762843570-giant-colossal-dragon-emerges-clouds/cover.jpg
-video: /prompts/2026-04/2039937752762843570-giant-colossal-dragon-emerges-clouds/video.mp4
+image: "/prompts/2026-04/2039937752762843570-giant-colossal-dragon-emerges-clouds/cover.jpg"
+video_path: "/prompts/2026-04/2039937752762843570-giant-colossal-dragon-emerges-clouds/video.mp4"
 description: Cinematic low-angle tracking shot of colossal dark scaly dragon emerging
   powerfully from vast sea of white clouds. Massive spiked head turns slowly with
   menacing grace, jaws gaping wide in thunderous roar with realistic muscle tension

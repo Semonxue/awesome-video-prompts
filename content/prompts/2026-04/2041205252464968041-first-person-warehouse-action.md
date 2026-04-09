@@ -1,8 +1,8 @@
 ---
 title: First Person Warehouse Action
 date: '2026-04-06 17:23:50+00:00'
-image: /prompts/2026-04/2041205252464968041-first-person-warehouse-action/cover.jpg
-video: /prompts/2026-04/2041205252464968041-first-person-warehouse-action/video.mp4
+image: "/prompts/2026-04/2041205252464968041-first-person-warehouse-action/cover.jpg"
+video_path: "/prompts/2026-04/2041205252464968041-first-person-warehouse-action/video.mp4"
 models:
 - seedance2
 tags:

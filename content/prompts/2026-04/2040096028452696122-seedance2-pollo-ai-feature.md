@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040096028452696122-seedance2-pollo-ai-feature/cover.jpg
-video: /prompts/2026-04/2040096028452696122-seedance2-pollo-ai-feature/video.mp4
+image: "/prompts/2026-04/2040096028452696122-seedance2-pollo-ai-feature/cover.jpg"
+video_path: "/prompts/2026-04/2040096028452696122-seedance2-pollo-ai-feature/video.mp4"
 date: '2026-04-03'
 title: "Faberge Easter Eggs"
 description: 'Highly detailed cinematic 4K animated video, precious enchanted Fabergé-style

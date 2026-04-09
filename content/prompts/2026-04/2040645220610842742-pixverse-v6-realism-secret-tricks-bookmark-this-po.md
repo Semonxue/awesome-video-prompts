@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040645220610842742-pixverse-v6-realism-secret-tricks-bookmark-this-po/cover.jpg
-video: /prompts/2026-04/2040645220610842742-pixverse-v6-realism-secret-tricks-bookmark-this-po/video.mp4
+image: "/prompts/2026-04/2040645220610842742-pixverse-v6-realism-secret-tricks-bookmark-this-po/cover.jpg"
+video_path: "/prompts/2026-04/2040645220610842742-pixverse-v6-realism-secret-tricks-bookmark-this-po/video.mp4"
 date: '2026-04-05 04:18:28+00:00'
 title: "Fighter Jet Aerial Combat"
 description: '[{"lang":"en","prompt":"Style & Mood: Gritty, Rough, Raw documentary

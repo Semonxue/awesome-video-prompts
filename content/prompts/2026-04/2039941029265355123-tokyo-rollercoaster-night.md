@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039941029265355123-tokyo-rollercoaster-night/cover.jpg
-video: /prompts/2026-04/2039941029265355123-tokyo-rollercoaster-night/video.mp4
+image: "/prompts/2026-04/2039941029265355123-tokyo-rollercoaster-night/cover.jpg"
+video_path: "/prompts/2026-04/2039941029265355123-tokyo-rollercoaster-night/video.mp4"
 date: '2026-04-03'
 title: "Tokyo Night Rollercoaster POV"
 description: |-

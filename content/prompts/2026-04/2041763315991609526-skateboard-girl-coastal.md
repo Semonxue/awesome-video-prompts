@@ -1,8 +1,8 @@
 ---
 title: Skateboard Girl Coastal Downhill
 date: '2026-04-08 06:21:23+00:00'
-image: /prompts/2026-04/2041763315991609526-skateboard-girl-coastal/cover.jpg
-video: /prompts/2026-04/2041763315991609526-skateboard-girl-coastal/video.mp4
+image: "/prompts/2026-04/2041763315991609526-skateboard-girl-coastal/cover.jpg"
+video_path: "/prompts/2026-04/2041763315991609526-skateboard-girl-coastal/video.mp4"
 description: A girl riding a skateboard downhill through a steep coastal town, overlooking
   a vast blue ocean, bright summer sky with massive cinematic clouds, wind blowing
   through her hair and clothes, fast descent, smooth carving turns, passing houses,

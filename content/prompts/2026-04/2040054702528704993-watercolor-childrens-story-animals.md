@@ -2,8 +2,8 @@
 
 title: "Watercolor Animal Balloon Story"
 date: '2026-04-03 13:11:58+00:00'
-image: /prompts/2026-04/2040054702528704993-watercolor-childrens-story-animals/cover.jpg
-video: /prompts/2026-04/2040054702528704993-watercolor-childrens-story-animals/video.mp4
+image: "/prompts/2026-04/2040054702528704993-watercolor-childrens-story-animals/cover.jpg"
+video_path: "/prompts/2026-04/2040054702528704993-watercolor-childrens-story-animals/video.mp4"
 description: |-
   15-second continuous single-shot cartoon sequence.
 
@@ -52,7 +52,8 @@ tags:
 - cozy
 author: OscarAI
 source_url: https://twitter.com/Artedeingenio/status/2040054702528704993
-full_text: "With Seedance 2.0, you can also create children's stories for little ones\
+full_text: |-
+  With Seedance 2.0, you can also create children's stories for little ones\
   \ to enjoy.\n\nThis watercolor illustration style is perfect for telling small,\
   \ gentle stories with animals.\n\nThis animation was created using @dreamina_ai\
   \ \n\nI'm sharing the prompt in the post below \U0001F447 https://t.co/KdaCdnACWu"

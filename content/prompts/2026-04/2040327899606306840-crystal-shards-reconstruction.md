@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040327899606306840-memory-shards-reconstruction/cover.jpg
-video: /prompts/2026-04/2040327899606306840-memory-shards-reconstruction/video.mp4
+image: "/prompts/2026-04/2040327899606306840-memory-shards-reconstruction/cover.jpg"
+video_path: "/prompts/2026-04/2040327899606306840-memory-shards-reconstruction/video.mp4"
 date: '2026-04-04 07:17:33+00:00'
 title: "Crystal Shards Reconstruction"
 description: |-

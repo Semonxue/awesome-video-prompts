@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039928267323658399-tokyo-building-accordion/cover.jpg
-video: /prompts/2026-04/2039928267323658399-tokyo-building-accordion/video.mp4
+image: "/prompts/2026-04/2039928267323658399-tokyo-building-accordion/cover.jpg"
+video_path: "/prompts/2026-04/2039928267323658399-tokyo-building-accordion/video.mp4"
 date: '2026-04-03'
 title: "Tokyo Building Accordion"
 description: |-

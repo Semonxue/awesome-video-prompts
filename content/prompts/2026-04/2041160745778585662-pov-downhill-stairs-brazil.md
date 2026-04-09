@@ -1,8 +1,8 @@
 ---
 title: POV Downhill Stairs Brazil Cyclist
 date: '2026-04-06 14:26:59+00:00'
-image: /prompts/2026-04/2041160745778585662-pov-downhill-stairs-brazil/cover.jpg
-video: /prompts/2026-04/2041160745778585662-pov-downhill-stairs-brazil/video.mp4
+image: "/prompts/2026-04/2041160745778585662-pov-downhill-stairs-brazil/cover.jpg"
+video_path: "/prompts/2026-04/2041160745778585662-pov-downhill-stairs-brazil/video.mp4"
 description: 'FORMAT: 15s / 180 BPM / ONE CONTINUOUS SHOT / 360 POV downhill stair
   run, viral energy, max chaos SUBJECTS: First-person cyclist, handlebars and front
   wheel flashing low in frame during drops and hard turns. Vendors, laundry, scooters,

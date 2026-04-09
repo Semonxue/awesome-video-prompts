@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039476695523352769-sinkhole-disaster-pixverse/cover.jpg
-video: /prompts/2026-04/2039476695523352769-sinkhole-disaster-pixverse/video.mp4
+image: "/prompts/2026-04/2039476695523352769-sinkhole-disaster-pixverse/cover.jpg"
+video_path: "/prompts/2026-04/2039476695523352769-sinkhole-disaster-pixverse/video.mp4"
 date: 2026-04-02
 title: "Urban Sinkhole Catastrophe"
 description: |

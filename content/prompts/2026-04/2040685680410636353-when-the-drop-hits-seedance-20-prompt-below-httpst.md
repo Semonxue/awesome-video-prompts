@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040685680410636353-when-the-drop-hits-seedance-20-prompt-below-httpst/cover.jpg
-video: /prompts/2026-04/2040685680410636353-when-the-drop-hits-seedance-20-prompt-below-httpst/video.mp4
+image: "/prompts/2026-04/2040685680410636353-when-the-drop-hits-seedance-20-prompt-below-httpst/cover.jpg"
+video_path: "/prompts/2026-04/2040685680410636353-when-the-drop-hits-seedance-20-prompt-below-httpst/video.mp4"
 date: '2026-04-05 06:59:14+00:00'
 title: "Construction Site Rave"
 description: |-

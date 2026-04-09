@@ -2,8 +2,8 @@
 
 title: "Cute Cloud Dreams"
 date: '2026-04-04'
-image: /prompts/2026-04/2040309955513778662-pastel-cloud-animation/cover.jpg
-video: /prompts/2026-04/2040309955513778662-pastel-cloud-animation/video.mp4
+image: "/prompts/2026-04/2040309955513778662-pastel-cloud-animation/cover.jpg"
+video_path: "/prompts/2026-04/2040309955513778662-pastel-cloud-animation/video.mp4"
 description: |-
   Ultra-cute pastel cloud animation, soft rounded chibi style, bright sky tones, smooth bouncy physics, cinematic motion.
 

@@ -28,8 +28,8 @@ description: |-
   camera continues slow push-in, reflections in the eye show impossible space (like another dimension or abstract void)
 
   ultra detailed anime style, cinematic lighting, high contrast, no cartoon exaggeration, elegant and mysterious, no text
-image: /prompts/2026-04/2039323186127630710-anime-eye-reality-distortion/cover.jpg
-video: /prompts/2026-04/2039323186127630710-anime-eye-reality-distortion/video.mp4
+image: "/prompts/2026-04/2039323186127630710-anime-eye-reality-distortion/cover.jpg"
+video_path: "/prompts/2026-04/2039323186127630710-anime-eye-reality-distortion/video.mp4"
 draft: false
 ---
 

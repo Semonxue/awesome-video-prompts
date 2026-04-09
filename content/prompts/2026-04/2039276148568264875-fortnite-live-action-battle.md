@@ -2,8 +2,8 @@
 
 title: "Fortnite Live Action Battle"
 date: '2026-04-01'
-image: /prompts/2026-04/2039276148568264875-fortnite-live-action-battle/cover.jpg
-video: /prompts/2026-04/2039276148568264875-fortnite-live-action-battle/video.mp4
+image: "/prompts/2026-04/2039276148568264875-fortnite-live-action-battle/cover.jpg"
+video_path: "/prompts/2026-04/2039276148568264875-fortnite-live-action-battle/video.mp4"
 models:
 - seedance2
 tags:
@@ -38,7 +38,6 @@ description: |-
 
   0:13-0:15: Hard cut. Tight over-the-shoulder shot behind the black-helmeted raider as she lands on a platform above a driveway, pulls one last wall into cover, and aims at the rival crossing the bridge. Fast forward creep, 35mm anamorphic. SFX: (boots thud on panels, creaking build joints, final metallic ping, breath held then released). Dusk deepens.
 image_path: /prompts/2026-04/2039276148568264875-fortnite-live-action-battle/cover.jpg
-video_path: /prompts/2026-04/2039276148568264875-fortnite-live-action-battle/video.mp4
 draft: false
 ---
 

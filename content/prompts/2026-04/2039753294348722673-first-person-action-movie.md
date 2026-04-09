@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039753294348722673-first-person-action-movie/cover.jpg
-video: /prompts/2026-04/2039753294348722673-first-person-action-movie/video.mp4
+image: "/prompts/2026-04/2039753294348722673-first-person-action-movie/cover.jpg"
+video_path: "/prompts/2026-04/2039753294348722673-first-person-action-movie/video.mp4"
 date: '2026-04-02'
 title: "First Person Action Shootout"
 description: '15-second First-Person Action Movie Short Film: 8 shots with extremely

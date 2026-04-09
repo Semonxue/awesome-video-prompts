@@ -1,8 +1,8 @@
 ---
 title: INFINITE FALL — Beer Catch
 date: '2026-04-07'
-image: /prompts/2026-04/2041498230199120050-infinite-fall-beer-catch/cover.jpg
-video: /prompts/2026-04/2041498230199120050-infinite-fall-beer-catch/video.mp4
+image: "/prompts/2026-04/2041498230199120050-infinite-fall-beer-catch/cover.jpg"
+video_path: "/prompts/2026-04/2041498230199120050-infinite-fall-beer-catch/video.mp4"
 description: IMAX 65mm aggressive handheld — camera itself in freefall with him, shaking
   slightly with air resistance, never still. A brown glass beer bottle tumbling slowly
   in freefall beside him, liquid sloshing inside, just out of reach.

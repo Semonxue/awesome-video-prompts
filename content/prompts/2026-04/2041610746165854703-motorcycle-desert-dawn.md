@@ -1,7 +1,7 @@
 ---
 title: Motorcycle Desert Dawn Tracking Shot
-image: /prompts/2026-04/2041610746165854703-motorcycle-desert-dawn/cover.jpg
-video: /prompts/2026-04/2041610746165854703-motorcycle-desert-dawn/video.mp4
+image: "/prompts/2026-04/2041610746165854703-motorcycle-desert-dawn/cover.jpg"
+video_path: "/prompts/2026-04/2041610746165854703-motorcycle-desert-dawn/video.mp4"
 date: '2026-04-08 04:15:07+08:00'
 models:
 - kling3

@@ -73,8 +73,8 @@ description: |-
 
   Camera tracks alongside at high speed.
 date: '2026-04-03'
-image: /prompts/2026-04/2039997975280169104-spectacular-seedance-video/cover.jpg
-video: /prompts/2026-04/2039997975280169104-spectacular-seedance-video/video.mp4
+image: "/prompts/2026-04/2039997975280169104-spectacular-seedance-video/cover.jpg"
+video_path: "/prompts/2026-04/2039997975280169104-spectacular-seedance-video/video.mp4"
 models:
 - seedance2
 tags:

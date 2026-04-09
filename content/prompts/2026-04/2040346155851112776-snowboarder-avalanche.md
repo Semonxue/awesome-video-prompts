@@ -2,8 +2,8 @@
 
 title: "Avalanche Snowboard Escape"
 date: '2026-04-04'
-image: /prompts/2026-04/2040346155851112776-snowboarder-avalanche/cover.jpg
-video: /prompts/2026-04/2040346155851112776-snowboarder-avalanche/video.mp4
+image: "/prompts/2026-04/2040346155851112776-snowboarder-avalanche/cover.jpg"
+video_path: "/prompts/2026-04/2040346155851112776-snowboarder-avalanche/video.mp4"
 description: A snowboarder in a neon blue suit races down a steep alpine ridge as
   a massive avalanche begins collapsing behind him. At the 2-second mark he hits a
   natural snow ramp and launches across a deep crevasse. Camera follows close behind

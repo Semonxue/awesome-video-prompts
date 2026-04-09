@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040826350270026216-action-you-cant-ignore-seedance-20-on-nsketchai-pr/cover.jpg
-video: /prompts/2026-04/2040826350270026216-action-you-cant-ignore-seedance-20-on-nsketchai-pr/video.mp4
+image: "/prompts/2026-04/2040826350270026216-action-you-cant-ignore-seedance-20-on-nsketchai-pr/cover.jpg"
+video_path: "/prompts/2026-04/2040826350270026216-action-you-cant-ignore-seedance-20-on-nsketchai-pr/video.mp4"
 date: '2026-04-05 16:18:13+00:00'
 title: "Demon Warrior Transformation"
 description: |-

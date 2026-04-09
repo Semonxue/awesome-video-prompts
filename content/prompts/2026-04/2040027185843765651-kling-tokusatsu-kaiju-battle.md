@@ -11,8 +11,8 @@ description: |-
     "sound": "No dialogue. Heavy impacts, metal bending, debris crashing, distant alarms, deep footsteps, wind, smoke, and dust."
   }
 date: '2026-04-03'
-image: /prompts/2026-04/2040027185843765651-kling-tokusatsu-kaiju-battle/cover.jpg
-video: /prompts/2026-04/2040027185843765651-kling-tokusatsu-kaiju-battle/video.mp4
+image: "/prompts/2026-04/2040027185843765651-kling-tokusatsu-kaiju-battle/cover.jpg"
+video_path: "/prompts/2026-04/2040027185843765651-kling-tokusatsu-kaiju-battle/video.mp4"
 models:
 - kling3
 tags:

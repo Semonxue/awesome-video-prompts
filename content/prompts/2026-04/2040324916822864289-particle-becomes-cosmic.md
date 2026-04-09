@@ -2,8 +2,8 @@
 
 title: "Cosmic Romance Flow"
 date: '2026-04-04'
-image: /prompts/2026-04/2040324916822864289-particle-becomes-cosmic/cover.jpg
-video: /prompts/2026-04/2040324916822864289-particle-becomes-cosmic/video.mp4
+image: "/prompts/2026-04/2040324916822864289-particle-becomes-cosmic/cover.jpg"
+video_path: "/prompts/2026-04/2040324916822864289-particle-becomes-cosmic/video.mp4"
 description: |-
   Fixed camera, cinematic framing. A character stands center frame in a surreal dark space. Their left hand slowly clenches into a fist. As the fist tightens, multiple glowing floating spheres around them begin to vibrate and suddenly burst into particles.
 

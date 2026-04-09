@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040299288002265521-cinematic-scene-created-using-kling-30-on-yapper_s/cover.jpg
-video: /prompts/2026-04/2040299288002265521-cinematic-scene-created-using-kling-30-on-yapper_s/video.mp4
+image: "/prompts/2026-04/2040299288002265521-cinematic-scene-created-using-kling-30-on-yapper_s/cover.jpg"
+video_path: "/prompts/2026-04/2040299288002265521-cinematic-scene-created-using-kling-30-on-yapper_s/video.mp4"
 date: '2026-04-04 05:23:51+00:00'
 title: "Cherry Blossom Portrait"
 description: |-

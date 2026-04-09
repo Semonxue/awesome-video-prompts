@@ -3,8 +3,8 @@ title: Disaster City Collapse Sequence
 date: '2026-04-06 21:28:00+08:00'
 author: Alexandra Aisling
 source_url: https://twitter.com/AllaAisling/status/2041145902077813177
-image: /prompts/2026-04/2041145902077813177-disaster-city-collapse/cover.jpg
-video: /prompts/2026-04/2041145902077813177-disaster-city-collapse/video.mp4
+image: "/prompts/2026-04/2041145902077813177-disaster-city-collapse/cover.jpg"
+video_path: "/prompts/2026-04/2041145902077813177-disaster-city-collapse/video.mp4"
 models:
 - seedance2
 tags:
@@ -26,7 +26,8 @@ description: |-
   Cut to Shot 7: IMPOSSIBLE MOMENT camera runs through a narrowing gap as two skyscrapers slam together behind
   Cut to Shot 8: Ground lifts upward violently, flipping cars, camera stumbles but keeps moving
   Cut to Shot 9: Final, everything collapses inward toward a single disaster, camera pulled into it mid-run.
-full_text: "Prompt Studio: Disaster with Seedance 2.0 fast in @dreamina_ai \n\nUltra-realistic\
+full_text: |-
+  Prompt Studio: Disaster with Seedance 2.0 fast in @dreamina_ai \n\nUltra-realistic\
   \ cinematic destruction sequence, dense modern city, extreme physical danger, aggressive\
   \ forward motion, handheld chase camera, collapsing architecture, debris interaction,\
   \ volumetric dust, shockwaves, no stability, no safe zones, high intensity pacing,\

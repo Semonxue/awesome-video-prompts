@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039308016558784836-seedance-reality-check/cover.jpg
-video: /prompts/2026-04/2039308016558784836-seedance-reality-check/video.mp4
+image: "/prompts/2026-04/2039308016558784836-seedance-reality-check/cover.jpg"
+video_path: "/prompts/2026-04/2039308016558784836-seedance-reality-check/video.mp4"
 date: '2026-04-01'
 title: "Rocket Surf Stunt"
 description: "ROCKET SURF. \nSTYLE: Gritty Cine Verité,  35mm handheld, natural shake.\

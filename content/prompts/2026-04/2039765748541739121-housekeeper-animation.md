@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2039765748541739121-housekeeper-animation/cover.jpg
-video: /prompts/2026-04/2039765748541739121-housekeeper-animation/video.mp4
+image: "/prompts/2026-04/2039765748541739121-housekeeper-animation/cover.jpg"
+video_path: "/prompts/2026-04/2039765748541739121-housekeeper-animation/video.mp4"
 date: '2026-04-03'
 title: "Housekeeper Martial Arts"
 description: 'Stylized 3D animation with exaggerated proportions, sharp martial-arts-inspired

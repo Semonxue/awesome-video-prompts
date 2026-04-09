@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040838362869932476-im-using-action-for-this-contest-renoiseai-prompt-/cover.jpg
-video: /prompts/2026-04/2040838362869932476-im-using-action-for-this-contest-renoiseai-prompt-/video.mp4
+image: "/prompts/2026-04/2040838362869932476-im-using-action-for-this-contest-renoiseai-prompt-/cover.jpg"
+video_path: "/prompts/2026-04/2040838362869932476-im-using-action-for-this-contest-renoiseai-prompt-/video.mp4"
 date: '2026-04-05 17:05:57+00:00'
 title: "Armor Hero Battle"
 description: |-

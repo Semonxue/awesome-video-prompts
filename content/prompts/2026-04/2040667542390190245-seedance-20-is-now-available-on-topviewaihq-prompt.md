@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040667542390190245-seedance-20-is-now-available-on-topviewaihq-prompt/cover.jpg
-video: /prompts/2026-04/2040667542390190245-seedance-20-is-now-available-on-topviewaihq-prompt/video.mp4
+image: "/prompts/2026-04/2040667542390190245-seedance-20-is-now-available-on-topviewaihq-prompt/cover.jpg"
+video_path: "/prompts/2026-04/2040667542390190245-seedance-20-is-now-available-on-topviewaihq-prompt/video.mp4"
 date: '2026-04-05 05:47:10+00:00'
 title: "Dark Fantasy Church Battle"
 description: 'Original Dark Fantasy Action Short Film: Inside a dilapidated church,

@@ -1,8 +1,8 @@
 ---
 title: Phoebe shines, perfect score lighting up her gentle smile
 date: '2026-04-07'
-image: /prompts/2026-04/2041490161561936001-phoebe-shines-perfect-score-lighting-up/cover.jpg
-video: /prompts/2026-04/2041490161561936001-phoebe-shines-perfect-score-lighting-up/video.mp4
+image: "/prompts/2026-04/2041490161561936001-phoebe-shines-perfect-score-lighting-up/cover.jpg"
+video_path: "/prompts/2026-04/2041490161561936001-phoebe-shines-perfect-score-lighting-up/video.mp4"
 description: 'A highly detailed cinematic 15-second anime-style 3D animation from
   Wuthering Waves game aesthetic, featuring the adorable 5-star Spectro Resonator
   Phoebe — a young devoted acolyte with long flowing white-silver hair in elegant

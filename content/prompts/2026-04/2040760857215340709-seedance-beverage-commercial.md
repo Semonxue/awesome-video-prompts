@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040760857215340709-seedance-beverage-commercial/cover.jpg
-video: /prompts/2026-04/2040760857215340709-seedance-beverage-commercial/video.mp4
+image: "/prompts/2026-04/2040760857215340709-seedance-beverage-commercial/cover.jpg"
+video_path: "/prompts/2026-04/2040760857215340709-seedance-beverage-commercial/video.mp4"
 date: '2026-04-05 11:57:58+00:00'
 title: "Japanese Barley Tea Commercial"
 description: |-

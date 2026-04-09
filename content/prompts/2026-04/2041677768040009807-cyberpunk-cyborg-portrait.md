@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2041677768040009807-cyberpunk-cyborg-portrait/cover.jpg
-video: /prompts/2026-04/2041677768040009807-cyberpunk-cyborg-portrait/video.mp4
+image: "/prompts/2026-04/2041677768040009807-cyberpunk-cyborg-portrait/cover.jpg"
+video_path: "/prompts/2026-04/2041677768040009807-cyberpunk-cyborg-portrait/video.mp4"
 date: '2026-04-08'
 title: Cyberpunk Cyborg Portrait
 description: |-

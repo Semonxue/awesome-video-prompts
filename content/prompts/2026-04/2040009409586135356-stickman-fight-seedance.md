@@ -18,8 +18,8 @@ description: |-
   0:10-0:12: CUT ON ACTION. Worm's eye wide shot. The broader fighter surges again, the lean fighter absorbs two hits, slips the third, steps off the planted thigh, vaults up, hammers down, and both collide midair in a tight X silhouette that cracks apart instantly. Arc shot around the clash. 24mm wide feel. SFX: (rising whoosh, hit flurry, double crack, burst hiss, bass slam).
   0:12-0:15: HARD CUT. Monumental WS. Both land already moving, skid one step, rebound, and rush back to center without resetting, disappearing into black strike smears and red flecks over the last impacts. Tiny push-in, ending mid-exchange. 50mm standard feel. SFX: (skid scrape, hard swishes, dry impacts, low ring).
 date: '2026-04-03'
-image: /prompts/2026-04/2040009409586135356-stickman-fight-seedance/cover.jpg
-video: /prompts/2026-04/2040009409586135356-stickman-fight-seedance/video.mp4
+image: "/prompts/2026-04/2040009409586135356-stickman-fight-seedance/cover.jpg"
+video_path: "/prompts/2026-04/2040009409586135356-stickman-fight-seedance/video.mp4"
 models:
 - seedance2
 tags:

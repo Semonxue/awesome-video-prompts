@@ -2,8 +2,8 @@
 
 title: "Samurai DJ Night"
 date: '2026-04-04'
-image: /prompts/2026-04/2040324048803262469-new-underground-sensation/cover.jpg
-video: /prompts/2026-04/2040324048803262469-new-underground-sensation/video.mp4
+image: "/prompts/2026-04/2040324048803262469-new-underground-sensation/cover.jpg"
+video_path: "/prompts/2026-04/2040324048803262469-new-underground-sensation/video.mp4"
 description: |-
   aesthetic: authentic phone footage, held up in a packed nightclub, strobes and lasers cutting through smoke
     audio: Japanese drum and bass building, filthy bass, crowd bracing for the drop

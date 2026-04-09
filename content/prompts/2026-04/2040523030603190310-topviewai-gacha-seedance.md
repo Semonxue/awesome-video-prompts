@@ -1,7 +1,7 @@
 ---
 
-image: /prompts/2026-04/2040523030603190310-topviewai-gacha-seedance/cover.jpg
-video: /prompts/2026-04/2040523030603190310-topviewai-gacha-seedance/video.mp4
+image: "/prompts/2026-04/2040523030603190310-topviewai-gacha-seedance/cover.jpg"
+video_path: "/prompts/2026-04/2040523030603190310-topviewai-gacha-seedance/video.mp4"
 date: '2026-04-04 20:12:56+00:00'
 title: "Gacha Character Reveal Cinematic"
 description: |-

@@ -2,8 +2,8 @@
 
 title: "Hero Supernatural Transformation"
 date: '2026-04-01'
-image: /prompts/2026-04/2039221897116725724-supernatural-powers-hero/cover.jpg
-video: /prompts/2026-04/2039221897116725724-supernatural-powers-hero/video.mp4
+image: "/prompts/2026-04/2039221897116725724-supernatural-powers-hero/cover.jpg"
+video_path: "/prompts/2026-04/2039221897116725724-supernatural-powers-hero/video.mp4"
 description: |-
   Ultra-realistic live-action, shot like handheld iPhone footage. Natural overcast lighting, cold documentary tone, slight camera shake, occasional soft focus, lens dust/smudges.
   Scene: Empty concrete basketball court under grey clouds. Cracked ground, rusty hoop, dust in air. Background: ~12 young players and bystanders, ambient dribbling and chatter.

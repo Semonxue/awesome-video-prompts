@@ -2,8 +2,8 @@
 
 title: "Dragon Fantasy Adventure"
 date: '2026-04-05 21:43:37+00:00'
-image: /prompts/2026-04/2040908242809655703-prompt-comments-compatible-with-cinema-studio/cover.jpg
-video: /prompts/2026-04/2040908242809655703-prompt-comments-compatible-with-cinema-studio/video.mp4
+image: "/prompts/2026-04/2040908242809655703-prompt-comments-compatible-with-cinema-studio/cover.jpg"
+video_path: "/prompts/2026-04/2040908242809655703-prompt-comments-compatible-with-cinema-studio/video.mp4"
 description: A girl (element) scrolling with both hands on a giant mobile phone in
   her bed, watching reels. The girl leans her head closer to the phone and her head
   passes through the screen. The girl is absorbed by the phone and, screaming, falls

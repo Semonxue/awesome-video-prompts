@@ -1,6 +1,6 @@
 ---
-image: /prompts/2026-04/2041743559532147093-post-apocalyptic-bowman/cover.jpg
-video: /prompts/2026-04/2041743559532147093-post-apocalyptic-bowman/video.mp4
+image: "/prompts/2026-04/2041743559532147093-post-apocalyptic-bowman/cover.jpg"
+video_path: "/prompts/2026-04/2041743559532147093-post-apocalyptic-bowman/video.mp4"
 date: '2026-04-08'
 title: Post-Apocalyptic Bowman
 description: "[CINEMATIC SETUP]\n    Genre & Mood: \n        Gritty Post-Apocalyptic\
