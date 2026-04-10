@@ -138,3 +138,11 @@ pixverse:
   url: https://pixverse.ai/
   description: >-
     PixVerse AI video generation model, supporting cinematic shots, action sequences, and creative content generation. Approximate launch: 2024.
+
+happyhorse:
+  name: HAPPYHORSE
+  company: Unknown
+  slug: happyhorse
+  url: ""
+  description: >-
+    HAPPYHORSE video generation model. Supports image-to-video generation with action and tracking shot capabilities.
