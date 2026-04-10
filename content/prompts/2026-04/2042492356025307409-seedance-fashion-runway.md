@@ -1,5 +1,5 @@
 ---
-title: High-Energy Fashion Runway
+title: "Fashion Runway Outfit Changes"
 image: /prompts/2026-04/2042492356025307409-seedance-fashion-runway/cover.jpg
 video: /prompts/2026-04/2042492356025307409-seedance-fashion-runway/video.mp4
 date: '2026-04-10 14:38:20+00:00'
@@ -8,7 +8,6 @@ models:
 tags:
 - fashion
 - cinematic
-- multishot
 author: johnAGI168
 source_url: https://twitter.com/johnAGI168/status/2042492356025307409
 description: |-

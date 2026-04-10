@@ -1,5 +1,5 @@
 ---
-title: Cinematic Warrior Transformation
+title: Warrior Transformation VFX
 date: '2026-04-08 14:39:57+00:00'
 image: /prompts/2026-04/2041888784610959516-warrior-transformation/cover.jpg
 video: /prompts/2026-04/2041888784610959516-warrior-transformation/video.mp4
@@ -19,12 +19,12 @@ description: "15-second dramatic cinematic transformation VFX, ancient temple ar
 models:
 - seedance2
 tags:
-- cinematic
-- transformation
-- warrior
-- vfx
-- action
-- fantasy
+  - cinematic
+  - transformation
+  - warrior
+  - vfx
+  - action
+  - fantasy
 author: Pan
 source_url: https://twitter.com/sebatheepan/status/2041888784610959516
 full_text: 'From broken warrior in tattered robes to absolute powerhouse in seconds.\nInsane

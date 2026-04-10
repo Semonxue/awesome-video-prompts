@@ -2,7 +2,7 @@
 image: /prompts/2026-04/2042279719320813581-biker-narrow-alleys-tracking/cover.jpg
 video: /prompts/2026-04/2042279719320813581-biker-narrow-alleys-tracking/video.mp4
 date: '2026-04-09'
-title: Biker Racing Through Narrow Alleys
+title: Biker Racing Narrow Alleys
 description: |-
   A biker racing through narrow alleys, leaning hard into turns, eyes locked forward.
   Dodges obstacles and pedestrians while accelerating without hesitation. Tight urban alleys with graffiti, neon lights, and cluttered pathways.
@@ -14,7 +14,7 @@ tags:
 - action
 - urban
 - alley
-- cinematic
+- chase
 author: Pierrick Chevallier | IA
 source_url: https://x.com/CharaspowerAI/status/2042279719320813581
 full_text: |-

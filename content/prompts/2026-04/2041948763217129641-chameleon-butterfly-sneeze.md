@@ -1,5 +1,5 @@
 ---
-title: Chameleon Sneeze Rocket Launch
+title: "Chameleon Sneeze Rocket"
 date: '2026-04-08T18:38:17Z'
 image: /prompts/2026-04/2041948763217129641-chameleon-butterfly-sneeze/cover.jpg
 video: /prompts/2026-04/2041948763217129641-chameleon-butterfly-sneeze/video.mp4

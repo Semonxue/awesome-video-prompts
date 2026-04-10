@@ -1,14 +1,14 @@
 ---
-title: Fantasy Fusion City Storytelling
+title: Fantasy Fusion City Life
 date: '2026-04-09 06:06:58+00:00'
 models:
 - seedance2
 tags:
-- fantasy
-- cinematic
-- eastern
-- adventure
-- story
+  - fantasy
+  - cinematic
+  - eastern
+  - adventure
+  - story
 image: /prompts/2026-04/2042122076161765407-fantasy-fusion-storytelling/cover.jpg
 video: /prompts/2026-04/2042122076161765407-fantasy-fusion-storytelling/video.mp4
 author: ShadeLurk

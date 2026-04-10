@@ -2,7 +2,7 @@
 image: /prompts/2026-04/2042279567654830405-wolves-sprinting-formation-forest/cover.jpg
 video: /prompts/2026-04/2042279567654830405-wolves-sprinting-formation-forest/video.mp4
 date: '2026-04-09'
-title: Wolves Sprinting in Formation
+title: Wolf Pack Sprinting Forest
 description: |-
   A pack of wolves sprinting in formation, muscles tense, eyes glowing faintly in the dark.
   Chase prey through dense terrain without slowing down.
@@ -15,7 +15,7 @@ tags:
 - action
 - tracking
 - forest
-- cinematic
+- night
 author: Pierrick Chevallier | IA
 source_url: https://x.com/CharaspowerAI/status/2042279567654830405
 full_text: |-

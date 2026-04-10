@@ -2,7 +2,7 @@
 image: /prompts/2026-04/2042448383441338603-seedance-lovart-cinematic-video/cover.jpg
 video: /prompts/2026-04/2042448383441338603-seedance-lovart-cinematic-video/video.mp4
 date: '2026-04-10'
-title: Cinematic AI Video Creation with Seedance 2.0 on Lovart AI
+title: "Tropical Resort Escape Dive"
 description: |-
   Core Concept: Ultimate Tropical Escape
   1. Scene & Action
@@ -49,9 +49,8 @@ models:
 tags:
 - cinematic
 - action
-- multi-shot
-- animation
-- tutorial
+- travel
+- water
 author: Min Choi
 source_url: https://x.com/minchoi/status/2042448383441338603
 full_text: |-

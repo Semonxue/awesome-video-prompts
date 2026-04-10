@@ -6,9 +6,9 @@ models:
 tags:
 - ocean
 - storm
-- cinematic
-- action
 - horror
+- action
+- cinematic
 image: /prompts/2026-04/2042123163325374788-ocean-storm-sea-monster/cover.jpg
 video: /prompts/2026-04/2042123163325374788-ocean-storm-sea-monster/video.mp4
 author: Heisenberg

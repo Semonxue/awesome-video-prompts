@@ -2,7 +2,7 @@
 image: /prompts/2026-04/2042246456346894553-moody-pigeon-street-scene/cover.jpg
 video: /prompts/2026-04/2042246456346894553-moody-pigeon-street-scene/video.mp4
 date: '2026-04-09 14:21:12+08:00'
-title: Moody Cinematic Pigeon Street Scene
+title: Moody Urban Pigeon Portrait
 description: |-
   Scene Description
   A moody, cinematic street scene in an old European city with cobblestone pavement and historic stone buildings. A young man with medium-length dark hair tied in a loose bun and a short beard stands in the foreground, wearing a dark wool overcoat. His expression is calm, serious, and introspective.
@@ -30,8 +30,8 @@ tags:
 - cinematic
 - urban
 - portrait
-- moody
 - slow-motion
+- dark
 author: Zarâââ
 source_url: https://x.com/Xaroon_x/status/2042246456346894553
 full_text: "Made with Grok Imagine by @yapper_so\n\nPrompt : \nScene Description\n\

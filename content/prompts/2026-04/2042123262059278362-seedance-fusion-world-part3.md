@@ -2,15 +2,15 @@
 image: /prompts/2026-04/2042123262059278362-seedance-fusion-world-part3/cover.jpg
 video: /prompts/2026-04/2042123262059278362-seedance-fusion-world-part3/video.mp4
 date: '2026-04-09'
-title: Fusion World Part 3 - The Dividing Wall
+title: Fusion World Dividing Wall
 models:
 - seedance2
 tags:
-- cinematic
-- dystopian
-- war
-- fantasy
-- eastern
+  - cinematic
+  - dystopian
+  - war
+  - fantasy
+  - eastern
 author: 陰に隠れし者
 source_url: https://x.com/LurkShade/status/2042123262059278362
 description: |-

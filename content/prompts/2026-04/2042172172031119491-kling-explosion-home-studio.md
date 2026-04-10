@@ -2,15 +2,15 @@
 image: /prompts/2026-04/2042172172031119491-kling-explosion-home-studio/cover.jpg
 video: /prompts/2026-04/2042172172031119491-kling-explosion-home-studio/video.mp4
 date: '2026-04-09'
-title: Explosion in Home Studio Bedroom
+title: Explosion Bedroom Scene
 models:
 - kling3
 tags:
-- cinematic
-- dark
-- explosion
-- action
-- indoor
+  - cinematic
+  - dark
+  - explosion
+  - action
+  - indoor
 author: Harboris
 source_url: https://x.com/harboriis/status/2042172172031119491
 description: A continuous, wide-angle shot of a dimly lit bedroom and home studio

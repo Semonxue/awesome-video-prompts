@@ -72,7 +72,7 @@ tags:
 - epic
 - cinematic
 - warrior
-- battle
+- action
 author: Shami
 source_url: https://x.com/ShamiWeb3/status/2042253688526545210
 full_text: |-

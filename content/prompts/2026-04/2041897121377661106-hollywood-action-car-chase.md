@@ -2,14 +2,14 @@
 image: /prompts/2026-04/2041897121377661106-hollywood-action-car-chase/cover.jpg
 video: /prompts/2026-04/2041897121377661106-hollywood-action-car-chase/video.mp4
 date: '2026-04-08'
-title: Hollywood Action Car Chase
+title: Hollywood Car Chase Explosion
 models:
 - kling3
 tags:
-- action
 - car
+- action
+- chase
 - explosion
-- military
 - cinematic
 author: Iqra Saifi
 author_username: IqraSaifiii

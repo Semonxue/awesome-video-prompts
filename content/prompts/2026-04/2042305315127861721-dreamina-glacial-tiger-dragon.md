@@ -25,10 +25,10 @@ models:
 - seedance2
 tags:
 - fantasy
-- cinematic
 - action
-- nature
 - animal
+- glacier
+- epic
 author: LudovicCreator
 source_url: https://x.com/LudovicCreator/status/2042305315127861721
 full_text: |-

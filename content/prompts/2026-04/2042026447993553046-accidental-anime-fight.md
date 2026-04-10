@@ -2,7 +2,7 @@
 image: /prompts/2026-04/2042026447993553046-accidental-anime-fight/cover.jpg
 video: /prompts/2026-04/2042026447993553046-accidental-anime-fight/video.mp4
 date: '2026-04-08'
-title: Accidental Anime Wing Chun Fight
+title: Anime Wing Chun Battle
 description: |-
   Act as a professional fight choreographer of the anime industry with extensive knowledge of Wing Chun and Chinese wushu fighting style.
 
@@ -16,11 +16,11 @@ description: |-
 models:
 - seedance2
 tags:
-- anime
-- martial arts
-- combat
-- action
-- cinematic
+  - anime
+  - martial-arts
+  - combat
+  - action
+  - cinematic
 author: Jason W - AI
 source_url: https://x.com/PocketScreenAI/status/2042026447993553046
 draft: false

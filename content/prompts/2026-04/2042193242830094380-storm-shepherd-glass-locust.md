@@ -2,15 +2,15 @@
 image: /prompts/2026-04/2042193242830094380-storm-shepherd-glass-locust/cover.jpg
 video: /prompts/2026-04/2042193242830094380-storm-shepherd-glass-locust/video.mp4
 date: '2026-04-09'
-title: Storm Shepherd vs the Glass Locust King
+title: Storm Shepherd Locust King
 models:
 - seedance2
 tags:
-- cinematic
-- epic
-- battle
-- fantasy
-- storm
+  - cinematic
+  - epic
+  - battle
+  - fantasy
+  - storm
 author: Dheepan Ratnam
 source_url: https://x.com/Dheepanratnam/status/2042193242830094380
 description: |-

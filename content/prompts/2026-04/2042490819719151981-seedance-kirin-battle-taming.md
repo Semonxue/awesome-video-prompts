@@ -2,7 +2,7 @@
 image: /prompts/2026-04/2042490819719151981-seedance-kirin-battle-taming/cover.jpg
 video: /prompts/2026-04/2042490819719151981-seedance-kirin-battle-taming/video.mp4
 date: '2026-04-10'
-title: Warrior Taming a Raging Kirin with Cinematic Camera Control
+title: Warrior Taming Raging Kirin
 description: |-
   A fast-paced cinematic battle-taming sequence across multiple environments. A raging Kirin tears through sky, mountains, and cloud layers while the warrior pursues with dynamic camera motion. She moves across shifting terrain — temple ruins, floating debris, cliff edges, open sky — using blue lightning footsteps midair. The camera constantly tracks, orbits, and whip-pans between foreground motion, medium character framing, and large-scale background action. The sequence ends as she reaches Kirin's head and calms it mid-flight. Heavy VFX, realistic physics, fast action, no music.
 
@@ -34,10 +34,10 @@ description: |-
 models:
 - seedance2
 tags:
-- battle
-- warrior
 - action
+- warrior
 - multi-shot
+- fantasy
 - VFX
 author: DStudioproject
 source_url: https://x.com/D_studioproject/status/2042490819719151981

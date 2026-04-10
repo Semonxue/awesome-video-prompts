@@ -1,5 +1,5 @@
 ---
-title: Car Transformation Effect with Seedance
+title: Car Robot Transformation
 image: /prompts/2026-04/2042276863029223516-car-transform-seedance/cover.jpg
 video: /prompts/2026-04/2042276863029223516-car-transform-seedance/video.mp4
 date: '2026-04-09T16:22:02+00:00'
@@ -9,8 +9,8 @@ tags:
 - transformation
 - car
 - sci-fi
-- cinematic
 - action
+- mech
 author: 𝐌
 source_url: https://x.com/Strength04_X/status/2042276863029223516
 description: |-

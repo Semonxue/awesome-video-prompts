@@ -1,14 +1,14 @@
 ---
-title: Levitating Monarch Dark Fantasy
+title: Levitating Monarch Throne
 date: '2026-04-09 06:06:54+00:00'
 models:
 - kling3
 tags:
 - dark
 - fantasy
-- cinematic
 - epic
 - dystopian
+- cinematic
 image: /prompts/2026-04/2042122060470874366-levitating-monarch-throne/cover.jpg
 video: /prompts/2026-04/2042122060470874366-levitating-monarch-throne/video.mp4
 author: Gem Alpha

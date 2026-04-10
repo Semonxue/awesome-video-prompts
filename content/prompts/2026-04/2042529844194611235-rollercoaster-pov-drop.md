@@ -9,6 +9,7 @@ tags:
 - pov
 - action
 - adventure
+- fpv
 author: Shami
 source_url: https://x.com/ShamiWeb3/status/2042529844194611235
 description: First-person POV at the top of a massive rollercoaster in a modern amusement

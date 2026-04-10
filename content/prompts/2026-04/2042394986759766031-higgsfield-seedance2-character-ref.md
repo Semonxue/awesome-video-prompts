@@ -1,16 +1,14 @@
 ---
-title: Higgsfield Seedance 2.0 Character Reference Test
+title: "Train Fight Scene"
 date: '2026-04-10 00:11:25+00:00'
 image: /prompts/2026-04/2042394986759766031-higgsfield-seedance2-character-ref/cover.jpg
 video: /prompts/2026-04/2042394986759766031-higgsfield-seedance2-character-ref/video.mp4
 models:
-- seedance2
+  - seedance2
 tags:
-- character
-- reference
-- portrait
-- realistic
-- test
+  - action
+  - martial-arts
+  - cinematic
 author: eijo
 source_url: https://twitter.com/eijo_AIart/status/2042394986759766031
 description: |-

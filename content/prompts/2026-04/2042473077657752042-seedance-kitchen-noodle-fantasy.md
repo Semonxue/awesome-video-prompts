@@ -2,15 +2,13 @@
 image: /prompts/2026-04/2042473077657752042-seedance-kitchen-noodle-fantasy/cover.jpg
 video: /prompts/2026-04/2042473077657752042-seedance-kitchen-noodle-fantasy/video.mp4
 date: '2026-04-10'
-title: Kitchen Noodle Warrior Fantasy
+title: "Kitchen Noodle Warrior Epic"
 models:
 - seedance2
 tags:
 - action
 - fantasy
 - cinematic
-- cooking
-- transformation
 author: John
 source_url: https://x.com/johnAGI168/status/2042473077657752042
 description: |-

@@ -2,7 +2,7 @@
 image: /prompts/2026-04/2042298145540096225-cinematic-first-person-fly-chase/cover.jpg
 video: /prompts/2026-04/2042298145540096225-cinematic-first-person-fly-chase/video.mp4
 date: '2026-04-09'
-title: Cinematic First-Person Fly POV Chase
+title: Fly POV Sunset Chase
 description: |-
   {
   "title": "Cinematic First-Person Fly POV Chase",
@@ -110,10 +110,10 @@ models:
 - seedance2
 tags:
 - pov
-- cinematic
 - action
 - chase
 - explosion
+- sunset
 author: '@EHuanglu'
 source_url: https://x.com/EHuanglu/status/2042298145540096225
 full_text: |-

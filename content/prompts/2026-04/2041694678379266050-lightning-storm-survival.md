@@ -1,5 +1,5 @@
 ---
-title: Lightning Storm Survival Chase
+title: "Lightning Storm Survival Run"
 date: '2026-04-10 03:46:00+00:00'
 image: /prompts/2026-04/2041694678379266050-lightning-storm-survival/cover.jpg
 video: /prompts/2026-04/2041694678379266050-lightning-storm-survival/video.mp4
@@ -8,9 +8,6 @@ models:
 tags:
 - action
 - lightning
-- storm
-- chase
-- survival
 author: Alexandra Aisling
 source_url: https://twitter.com/AllaAisling/status/2041694678379266050
 description: |-

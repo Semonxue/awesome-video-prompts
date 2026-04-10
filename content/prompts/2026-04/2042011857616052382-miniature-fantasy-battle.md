@@ -1,5 +1,5 @@
 ---
-title: Miniature Fantasy Battle on Desktop
+title: Miniature Desktop Battle
 date: '2026-04-08'
 image: /prompts/2026-04/2042011857616052382-miniature-fantasy-battle/cover.jpg
 video: /prompts/2026-04/2042011857616052382-miniature-fantasy-battle/video.mp4
@@ -15,11 +15,11 @@ description: 'Original Miniature Fantasy Action Short Film: In a study late at n
 models:
 - seedance2
 tags:
-- action
-- fantasy
-- cinematic
-- animation
-- macro
+  - action
+  - fantasy
+  - cinematic
+  - animation
+  - macro
 author: TopviewAI
 source_url: https://twitter.com/TopviewAIhq/status/2042011857616052382
 draft: false

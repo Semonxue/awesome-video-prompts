@@ -2,7 +2,7 @@
 image: /prompts/2026-04/2042476717382541763-armored-warrior-battle/cover.jpg
 video: /prompts/2026-04/2042476717382541763-armored-warrior-battle/video.mp4
 date: '2026-04-10'
-title: Armored Warrior Battle
+title: "Armored Warrior vs Monsters"
 description: |-
   A dramatic cinematic action sequence featuring a futuristic heavily armored male warrior in a sleek dark metallic exosuit with glowing red and purple energy accents. The suit has intricate mechanical details, segmented plating, glowing red visor eyes, and weapon attachments on the shoulders and arms.
 

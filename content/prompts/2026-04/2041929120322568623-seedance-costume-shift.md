@@ -2,7 +2,7 @@
 image: /prompts/2026-04/2041929120322568623-seedance-costume-shift/cover.jpg
 video: /prompts/2026-04/2041929120322568623-seedance-costume-shift/video.mp4
 date: '2026-04-09'
-title: Instant Costume Shift via Occlusion
+title: Fan Blade Costume Shift
 description: 图片1作为起始画面。 只有半片棕色木质扇叶在极近前景，从左下到右上斜切画面，略微虚化。 扇叶全程缓缓连续旋转。 时间线： 0-2秒：女性仰躺放松微笑，轻微呼吸，手轻放胸前，穿着参考图里的衣服。
   2-4秒：扇叶完全扫过彻底遮挡她，然后瞬间露出新衣服——宽松卫衣和运动裤。 4-6秒：扇叶再次完全扫过彻底遮挡她，然后瞬间露出新衣服——经典白色衬衫和休闲长裤。
   6-8秒：扇叶再次完全扫过彻底遮挡她，然后瞬间露出新衣服——舒适长袖棉质睡衣套装。 8-10秒：扇叶继续缓慢旋转，女性穿着最终衣服仰躺放松微笑，轻微自然动作。
@@ -10,10 +10,10 @@ description: 图片1作为起始画面。 只有半片棕色木质扇叶在极�
 models:
 - seedance2
 tags:
-- fashion
-- transformation
-- realistic
-- cinematic
+  - fashion
+  - transformation
+  - realistic
+  - cinematic
 author: 神奇小喷菇AIGC
 source_url: https://x.com/xpg0970/status/2041929120322568623
 draft: false

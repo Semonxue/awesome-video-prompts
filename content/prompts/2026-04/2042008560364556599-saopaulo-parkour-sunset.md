@@ -1,5 +1,5 @@
 ---
-title: Sunset Parkour on São Paulo Rooftops
+title: São Paulo Rooftop Parkour
 date: '2026-04-08'
 image: /prompts/2026-04/2042008560364556599-saopaulo-parkour-sunset/cover.jpg
 video: /prompts/2026-04/2042008560364556599-saopaulo-parkour-sunset/video.mp4
@@ -18,9 +18,9 @@ models:
 - seedance2
 tags:
 - action
-- urban
 - sports
 - sunset
+- urban
 - cinematic
 author: Pan
 source_url: https://twitter.com/sebatheepan/status/2042008560364556599

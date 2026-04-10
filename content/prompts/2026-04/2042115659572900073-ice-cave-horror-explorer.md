@@ -1,5 +1,5 @@
 ---
-title: Ice Cave Explorer Horror
+title: Ice Cave Horror Explorer
 date: '2026-04-09 05:41:28+00:00'
 models:
 - seedance2
@@ -7,8 +7,8 @@ tags:
 - horror
 - ice
 - adventure
-- cinematic
 - mystery
+- cinematic
 image: /prompts/2026-04/2042115659572900073-ice-cave-horror-explorer/cover.jpg
 video: /prompts/2026-04/2042115659572900073-ice-cave-horror-explorer/video.mp4
 author: Umesh

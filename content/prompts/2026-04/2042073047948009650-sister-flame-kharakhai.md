@@ -1,16 +1,16 @@
 ---
-title: Sister of the Flame vs KHARAKHAI
+title: Flame Sister vs Demon
 date: '2026-04-09 10:52:09+08:00'
 image: /prompts/2026-04/2042073047948009650-sister-flame-kharakhai/cover.jpg
 video: /prompts/2026-04/2042073047948009650-sister-flame-kharakhai/video.mp4
 models:
 - seedance2
 tags:
-- fantasy
-- warrior
-- combat
-- action
-- epic
+  - fantasy
+  - warrior
+  - combat
+  - action
+  - epic
 author: Stevie Mac
 source_url: https://twitter.com/StevieMac03/status/2042073047948009650
 description: |-

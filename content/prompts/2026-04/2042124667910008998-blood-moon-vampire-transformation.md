@@ -6,9 +6,9 @@ models:
 tags:
 - horror
 - fantasy
-- cinematic
-- action
 - transformation
+- action
+- dramatic
 image: /prompts/2026-04/2042124667910008998-blood-moon-vampire-transformation/cover.jpg
 video: /prompts/2026-04/2042124667910008998-blood-moon-vampire-transformation/video.mp4
 author: John

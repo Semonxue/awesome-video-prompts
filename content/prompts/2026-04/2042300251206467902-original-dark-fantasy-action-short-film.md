@@ -2,7 +2,7 @@
 image: /prompts/2026-04/2042300251206467902-original-dark-fantasy-action-short-film/cover.jpg
 video: /prompts/2026-04/2042300251206467902-original-dark-fantasy-action-short-film/video.mp4
 date: '2026-04-09'
-title: Original Dark Fantasy Action Short Film
+title: Dark Fantasy Church Battle
 description: 'Original Dark Fantasy Action Short Film: Inside a dilapidated church,
   a white-clad warrior and a black-armored opponent launch their final battle amid
   an atmosphere like a chorus. Stained glass shatters, moonlight penetrates the smoke
@@ -20,8 +20,8 @@ tags:
 - fantasy
 - action
 - cinematic
-- war
 - warrior
+- war
 author: '@TopviewAIhq'
 source_url: https://x.com/TopviewAIhq/status/2042300251206467902
 full_text: |-
