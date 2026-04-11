@@ -1,8 +1,8 @@
 ---
 image: /prompts/2026-04/2042838160040956307-seedance-socialsight-dystopian-city/cover.jpg
 video: /prompts/2026-04/2042838160040956307-seedance-socialsight-dystopian-city/video.mp4
-date: 2026-04-11
-title: "Dystopian City Cinematic Story"
+date: '2026-04-11'
+title: Dystopian City Cinematic Story
 description: |-
   A dark, cinematic surreal film set in a post-war dystopian city, muted tones, cold color grading, shallow depth of field, soft film grain, dramatic lighting.
 
@@ -37,15 +37,76 @@ description: |-
 
   cinematic, dystopian, surreal realism, slow motion, dramatic lighting, volumetric fog, depth of field, 35mm film look, desaturated tones, symbolic storytelling, melancholic mood, smooth camera movement
 models:
-  - seedance2
+- seedance2
 tags:
-  - dystopian
-  - cinematic
-  - surreal
-  - dark
-  - melancholic
+- dystopian
+- cinematic
+- surreal
+- dark
+- melancholic
 author: Synthia
 source_url: https://x.com/AIwithSynthia/status/2042838160040956307
-full_text: "Seedance 2.0 on @SocialSight \n\nPrompt 👇 \n\nA dark, cinematic surreal film set in a post-war dystopian city, muted tones, cold color grading, shallow depth of field, soft film grain, dramatic lighting.\n\nScene 1:\nA cracked empty street near a foggy shoreline. A woman in a long grey coat walks slowly toward the camera. Beside her floats a giant fragmented human face made of broken buildings and concrete, subtly shifting as if alive. Dust particles drift in the air.\n\nScene 2:\nCut to a tired child leaning against a broken wall indoors, eyes half-closed, exhausted. In the blurred background, another child sits silently. The atmosphere feels heavy, abandoned, and hopeless.\n\nScene 3:\nA stern middle-aged man in a grey overcoat stands in a ruined European-style street beside an old rusty car. The camera slowly pushes in as he looks ahead with a hardened expression.\n\nScene 4:\nClose-up of a woman's face partially merged with mechanical and architectural fragments. Orange butterflies flutter around her head in slow motion, symbolizing fragile hope.\n\nScene 5:\nA crowded street under a massive curved wall embedded with small structures and windows. People walk aimlessly, heads down, creating a sense of routine and oppression.\n\nScene 6:\nA street musician with messy hair plays a guitar into a vintage microphone. Behind him stands a silent crowd. A rusted tram looms in the background. Light rain begins to fall.\n\nScene 7:\nA line of children in worn vintage clothing stands still, staring directly into the camera. Their expressions are blank, almost haunting. Slow dolly movement forward.\n\nScene 8:\nA surreal couple walks together. The woman carries a house-like structure on her head, with her face visible through a small window. The man beside her is partially covered in dark soot. They walk through rubble in silence ..\n\nScene 9 (Final):\nA woman sits in a cluttered room filled with old radios and clocks. A sign reading \"MORE\" hangs behind her. She slowly turns a knob on a vintage radio as static fills the air. Fade to black.\n🎥 Style & Motion Keywords\n\ncinematic, dystopian, surreal realism, slow motion, dramatic lighting, volumetric fog, depth of field, 35mm film look, desaturated tones, symbolic storytelling, melancholic mood, smooth camera movement"
-draft: true
+full_text: "Seedance 2.0 on @SocialSight \n\nPrompt \U0001F447 \n\nA dark, cinematic\
+  \ surreal film set in a post-war dystopian city, muted tones, cold color grading,\
+  \ shallow depth of field, soft film grain, dramatic lighting.\n\nScene 1:\nA cracked\
+  \ empty street near a foggy shoreline. A woman in a long grey coat walks slowly\
+  \ toward the camera. Beside her floats a giant fragmented human face made of broken\
+  \ buildings and concrete, subtly shifting as if alive. Dust particles drift in the\
+  \ air.\n\nScene 2:\nCut to a tired child leaning against a broken wall indoors,\
+  \ eyes half-closed, exhausted. In the blurred background, another child sits silently.\
+  \ The atmosphere feels heavy, abandoned, and hopeless.\n\nScene 3:\nA stern middle-aged\
+  \ man in a grey overcoat stands in a ruined European-style street beside an old\
+  \ rusty car. The camera slowly pushes in as he looks ahead with a hardened expression.\n\
+  \nScene 4:\nClose-up of a woman's face partially merged with mechanical and architectural\
+  \ fragments. Orange butterflies flutter around her head in slow motion, symbolizing\
+  \ fragile hope.\n\nScene 5:\nA crowded street under a massive curved wall embedded\
+  \ with small structures and windows. People walk aimlessly, heads down, creating\
+  \ a sense of routine and oppression.\n\nScene 6:\nA street musician with messy hair\
+  \ plays a guitar into a vintage microphone. Behind him stands a silent crowd. A\
+  \ rusted tram looms in the background. Light rain begins to fall.\n\nScene 7:\n\
+  A line of children in worn vintage clothing stands still, staring directly into\
+  \ the camera. Their expressions are blank, almost haunting. Slow dolly movement\
+  \ forward.\n\nScene 8:\nA surreal couple walks together. The woman carries a house-like\
+  \ structure on her head, with her face visible through a small window. The man beside\
+  \ her is partially covered in dark soot. They walk through rubble in silence ..\n\
+  \nScene 9 (Final):\nA woman sits in a cluttered room filled with old radios and\
+  \ clocks. A sign reading \"MORE\" hangs behind her. She slowly turns a knob on a\
+  \ vintage radio as static fills the air. Fade to black.\n\U0001F3A5 Style & Motion\
+  \ Keywords\n\ncinematic, dystopian, surreal realism, slow motion, dramatic lighting,\
+  \ volumetric fog, depth of field, 35mm film look, desaturated tones, symbolic storytelling,\
+  \ melancholic mood, smooth camera movement"
+draft: false
 ---
+
+A dark, cinematic surreal film set in a post-war dystopian city, muted tones, cold color grading, shallow depth of field, soft film grain, dramatic lighting.
+
+Scene 1:
+A cracked empty street near a foggy shoreline. A woman in a long grey coat walks slowly toward the camera. Beside her floats a giant fragmented human face made of broken buildings and concrete, subtly shifting as if alive. Dust particles drift in the air.
+
+Scene 2:
+Cut to a tired child leaning against a broken wall indoors, eyes half-closed, exhausted. In the blurred background, another child sits silently. The atmosphere feels heavy, abandoned, and hopeless.
+
+Scene 3:
+A stern middle-aged man in a grey overcoat stands in a ruined European-style street beside an old rusty car. The camera slowly pushes in as he looks ahead with a hardened expression.
+
+Scene 4:
+Close-up of a woman's face partially merged with mechanical and architectural fragments. Orange butterflies flutter around her head in slow motion, symbolizing fragile hope.
+
+Scene 5:
+A crowded street under a massive curved wall embedded with small structures and windows. People walk aimlessly, heads down, creating a sense of routine and oppression.
+
+Scene 6:
+A street musician with messy hair plays a guitar into a vintage microphone. Behind him stands a silent crowd. A rusted tram looms in the background. Light rain begins to fall.
+
+Scene 7:
+A line of children in worn vintage clothing stands still, staring directly into the camera. Their expressions are blank, almost haunting. Slow dolly movement forward.
+
+Scene 8:
+A surreal couple walks together. The woman carries a house-like structure on her head, with her face visible through a small window. The man beside her is partially covered in dark soot. They walk through rubble in silence ..
+
+Scene 9 (Final):
+A woman sits in a cluttered room filled with old radios and clocks. A sign reading "MORE" hangs behind her. She slowly turns a knob on a vintage radio as static fills the air. Fade to black.
+
+Style & Motion Keywords
+
+cinematic, dystopian, surreal realism, slow motion, dramatic lighting, volumetric fog, depth of field, 35mm film look, desaturated tones, symbolic storytelling, melancholic mood, smooth camera movement

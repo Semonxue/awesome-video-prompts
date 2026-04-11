@@ -1,7 +1,7 @@
 ---
 image: /prompts/2026-04/2042825140501672065-cybernetic-female-warrior-wings/cover.jpg
 video: /prompts/2026-04/2042825140501672065-cybernetic-female-warrior-wings/video.mp4
-date: 2026-04-11
+date: '2026-04-11'
 title: Cybernetic Female Warrior with Fire Wings
 description: |-
   A powerful cybernetic female warrior in sleek black and gold futuristic armor with glowing red-orange dragon and phoenix motifs, wearing a menacing helmet with sharp horns and a respirator mask. She has massive mechanical wings made of dark metal and fiery energy feathers that blaze with intense orange and red flames.
@@ -14,19 +14,17 @@ description: |-
   Duration: 5 seconds
   Aspect Ratio: 9:16 (vertical) or 16:9 (horizontal) depending on your platform
 models:
-  - grok
+- grok
 tags:
-  - cinematic
-  - futuristic
-  - warrior
-  - action
-  - sci-fi
+- cinematic
+- futuristic
+- warrior
+- action
+- sci-fi
 author: Thoughts Creator
 source_url: https://x.com/ThoughCreator/status/2042825140501672065
-draft: true
+draft: false
 ---
-
-Grok Imagine Prompt Share
 
 A powerful cybernetic female warrior in sleek black and gold futuristic armor with glowing red-orange dragon and phoenix motifs, wearing a menacing helmet with sharp horns and a respirator mask. She has massive mechanical wings made of dark metal and fiery energy feathers that blaze with intense orange and red flames.
 The warrior stands in a dramatic, destroyed ancient city battlefield filled with smoke, rubble, and burning ruins under a dark cloudy sky. Cinematic action sequence:
