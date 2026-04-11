@@ -12,7 +12,7 @@ tags:
 - action
 author: Dheepan Ratnam
 source_url: https://x.com/Dheepanratnam/status/2042721656188137863
-draft: true
+draft: false
 description: |-
   15-second ultra-realistic comedy short, photorealistic live-action style, natural indoor lighting, highly detailed fur, realistic physics, smooth motion, expressive animal faces, comedic timing.
 

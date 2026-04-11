@@ -13,6 +13,5 @@ tags:
   - trailer
 author: fofr
 source_url: https://twitter.com/fofrAI/status/2042898388321030462
-draft: true
 full_text: " > A trailer for an unhinged arthouse movie about the lightness of being, many short clips giving us a glimpse of a compelling story https://t.co/9ZJY4zM3Of"
 ---
