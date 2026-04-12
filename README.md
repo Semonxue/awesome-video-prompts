@@ -3,10 +3,10 @@
 <div align="center">
 
 ![Prompt Count](https://img.shields.io/badge/dynamic/json?label=Prompts&query=$.prompt_count&url=https%3A%2F%2Fawesomevideoprompts.com%2Fapi%2Fstats.json)
-![Models](https://img.shields.io/badge/19-Models-blue)
-![Tags](https://img.shields.io/badge/690-Tags-green)
+![Models](https://img.shields.io/badge/17-Models-blue)
+![Tags](https://img.shields.io/badge/504-Tags-green)
 
-**🎬 1279 条精选提示词** | **19 个模型标签** | **690 个活跃标签**
+**🎬 1841 条精选提示词** | **17 个模型标签** | **504 个活跃标签**
 
 </div>
 
@@ -26,20 +26,19 @@
 
 | 模型 | 提示词数量 |
 |------|-----------|
-| Seedance 2.0 | 655 |
-| Kling 3.0 | 276 |
-| Grok | 77 |
-| Veo 3 | 61 |
-| Kling 2.6 | 57 |
-| Hailuo | 44 |
-| Gen 4.5 | 19 |
-| Vidu Q3 | 11 |
+| Seedance 2.0 | 364 |
+| Kling 3.0 | 184 |
+| Grok | 46 |
+| Kling 2.6 | 56 |
+| Veo 3 | 51 |
+| Hailuo | 38 |
+| Gen 4.5 | 11 |
 | Sora | 10 |
-| Ray 3.14 (Luma) | 8 |
+| Vidu Q3 | 10 |
 
 ### 热门标签 (Top 20)
 
-`cinematic` (713) · `action` (460) · `fantasy` (195) · `realistic` (152) · `urban` (148) · `portrait` (115) · `multi-shot` (108) · `nature` (106) · `dark` (75) · `fpv` (69) · `sci-fi` (65) · `comedy` (61) · `drama` (61) · `aerial` (59) · `bright` (54) · `animation` (52) · `pov` (50) · `racing` (50) · `futuristic` (48) · `car` (47)
+`cinematic` (459) · `action` (311) · `fantasy` (145) · `urban` (125) · `realistic` (108) · `portrait` (93) · `nature` (83) · `multi-shot` (66) · `dark` (56) · `bright` (46) · `sci-fi` (45) · `fpv` (45) · `drama` (42) · `comedy` (42) · `animal` (37) · `futuristic` (35) · `pov` (34) · `car` (34) · `anime` (34) · `aerial` (34)
 
 ## 🎬 使用方式
 
