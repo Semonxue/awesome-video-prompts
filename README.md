@@ -24,21 +24,11 @@
 
 ### 支持的 AI 视频模型
 
-| 模型 | 提示词数量 |
-|------|-----------|
-| Seedance 2.0 | 364 |
-| Kling 3.0 | 184 |
-| Grok | 46 |
-| Kling 2.6 | 56 |
-| Veo 3 | 51 |
-| Hailuo | 38 |
-| Gen 4.5 | 11 |
-| Sora | 10 |
-| Vidu Q3 | 10 |
+Seedance 2.0 · Kling 3.0 · Kling 2.6 · Veo 3 · Grok · Hailuo · Gen 4.5 · Sora · Vidu Q3 · 以及更多
 
 ### 热门标签 (Top 20)
 
-`cinematic` (459) · `action` (311) · `fantasy` (145) · `urban` (125) · `realistic` (108) · `portrait` (93) · `nature` (83) · `multi-shot` (66) · `dark` (56) · `bright` (46) · `sci-fi` (45) · `fpv` (45) · `drama` (42) · `comedy` (42) · `animal` (37) · `futuristic` (35) · `pov` (34) · `car` (34) · `anime` (34) · `aerial` (34)
+`cinematic` · `action` · `fantasy` · `urban` · `realistic` · `portrait` · `nature` · `multi-shot` · `dark` · `bright` · `sci-fi` · `fpv` · `drama` · `comedy` · `animal` · `futuristic` · `pov` · `car` · `anime` · `aerial`
 
 ## 🎬 使用方式
 
