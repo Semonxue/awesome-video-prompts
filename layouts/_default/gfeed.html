@@ -1,0 +1,425 @@
+{{ define "main" }}
+  <!-- 瀑布流容器 - 无 padding/margin -->
+  <div class="gfeed-container">
+    <div class="gfeed-grid" id="gfeed-grid">
+      <!-- 卡片将通过 JavaScript 动态渲染 -->
+    </div>
+    
+    <!-- 加载更多指示器 -->
+    <div class="gfeed-loading" id="gfeed-loading">
+      <div class="gfeed-spinner"></div>
+    </div>
+  </div>
+
+  <!-- 所有卡片数据的模板存储 -->
+  <script type="application/json" id="gfeed-data">
+    [{{ $pages := sort (where .Site.RegularPages "Params.tags" "!=" nil) ".File.BaseFileName" "desc" }}{{ range $index, $page := $pages }}{{ if $index }},{{ end }}{
+      "title": {{ $page.Title | jsonify | safeJS }},
+      "image": {{ with $page.Params.image }}{{ $img := . }}{{ if or (hasPrefix $img "http://") (hasPrefix $img "https://") }}{{ $img | jsonify | safeJS }}{{ else }}{{ (strings.TrimPrefix "/" $img) | relURL | jsonify | safeJS }}{{ end }}{{ else }}""{{ end }},
+      "video": {{ with $page.Params.video }}{{ $video := . }}{{ if or (hasPrefix $video "http://") (hasPrefix $video "https://") }}{{ $video | jsonify | safeJS }}{{ else }}{{ (strings.TrimPrefix "/" $video) | relURL | jsonify | safeJS }}{{ end }}{{ else }}""{{ end }},
+      "model": {{ or $page.Params.models $page.Params.model | default "" | jsonify | safeJS }},
+      "permalink": {{ $page.RelPermalink | jsonify | safeJS }},
+      "filename": {{ $page.File.ContentBaseName | jsonify | safeJS }}
+    }{{ end }}]
+  </script>
+{{ end }}
+
+{{ define "scripts" }}
+<style>
+  /* ===== gfeed 页面特殊样式 ===== */
+  
+  /* Header 不跟随，不显示搜索/筛选 */
+  .site-header {
+    position: static !important;
+    box-shadow: none !important;
+  }
+  
+  /* 隐藏搜索区域 */
+  .search-section,
+  .search-area,
+  .search-row,
+  .search-model-container,
+  .model-tags,
+  .content-tag-area,
+  .mobile-filters,
+  .intro-text {
+    display: none !important;
+  }
+  
+  /* 隐藏 grid header */
+  .grid-header {
+    display: none !important;
+  }
+  
+  /* 隐藏 compact header */
+  .header-compact {
+    display: none !important;
+  }
+  
+  /* 主内容区域无上边距 */
+  .main-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* 隐藏 header 分隔线 */
+  .header-default {
+    border-bottom: none !important;
+  }
+  
+  /* ===== gfeed 瀑布流样式 ===== */
+  .gfeed-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .gfeed-grid {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* 卡片样式 - 简化版 */
+  .gfeed-card {
+    position: absolute;
+    overflow: hidden;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .gfeed-card:hover {
+    z-index: 10;
+  }
+  
+  .gfeed-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* 模型标记 */
+  .gfeed-card .model-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #1A1918;
+    z-index: 5;
+  }
+  
+  /* 视频悬停层 */
+  .gfeed-card .video-loader {
+    display: none;
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .gfeed-card .gfeed-video {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 5;
+    transition: opacity 0.3s;
+  }
+  
+  .gfeed-card:hover .gfeed-video {
+    opacity: 1;
+  }
+  
+  /* 加载指示器 */
+  .gfeed-loading {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+  }
+  
+  .gfeed-spinner {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #e0e0e0;
+    border-top-color: #1A1918;
+    border-radius: 50%;
+    animation: gfeed-spin 0.8s linear infinite;
+  }
+  
+  @keyframes gfeed-spin {
+    to { transform: rotate(360deg); }
+  }
+</style>
+
+<script>
+  // ===== gfeed 瀑布流逻辑 =====
+  (function() {
+    let allPrompts = [];
+    let renderedCount = 0;
+    let loadObserver = null;
+    const LOAD_BATCH_SIZE = 24;
+    const GAP = 2; // 卡片间距 5px
+    const COLUMNS = 6; // 固定5列
+
+    // Model name mapping
+    const modelsData = {
+      {{ range $key, $value := .Site.Data.models }}"{{ $key }}": "{{ $value.name }}",
+      {{ end }}
+    };
+
+    // 解析提示词数据
+    function loadPromptsData() {
+      const dataScript = document.getElementById('gfeed-data');
+      if (dataScript) {
+        try {
+          allPrompts = JSON.parse(dataScript.textContent);
+          console.log('Loaded prompts:', allPrompts.length);
+        } catch (e) {
+          console.error('Failed to parse prompts data:', e);
+          allPrompts = [];
+        }
+      }
+    }
+
+    function resolveAssetUrl(url) {
+      if (!url) return '';
+      if (/^https?:\/\//i.test(url)) return url;
+      return url;
+    }
+
+    // 创建卡片 HTML - 极简版
+    function createCardHTML(prompt) {
+      let modelKeys = [];
+      if (Array.isArray(prompt.model)) {
+        modelKeys = prompt.model;
+      } else if (prompt.model) {
+        modelKeys = [prompt.model];
+      }
+
+      const modelBadgesHTML = modelKeys.map(key => {
+        const name = modelsData[key] || modelsData[key.toLowerCase()] || key;
+        return `<span class="model-badge">${name}</span>`;
+      }).join('');
+
+      const imageUrl = resolveAssetUrl(prompt.image);
+      const videoUrl = resolveAssetUrl(prompt.video);
+
+      return `
+        <div class="gfeed-card" data-prompt-name="${prompt.filename || ''}">
+          ${imageUrl ? `
+            <img src="${imageUrl}" alt="" loading="lazy">
+            ${modelBadgesHTML}
+            ${videoUrl ? `
+              <div class="video-loader"></div>
+              <video class="gfeed-video" data-src="${videoUrl}" loop playsinline muted></video>
+            ` : ''}
+          ` : ''}
+        </div>
+      `;
+    }
+
+    // 计算瀑布流布局
+    function getColumnWidth() {
+      const grid = document.getElementById('gfeed-grid');
+      if (!grid) return 0;
+      const containerWidth = grid.clientWidth;
+      return Math.floor((containerWidth - GAP * (COLUMNS - 1)) / COLUMNS);
+    }
+
+    function layoutMasonry() {
+      const grid = document.getElementById('gfeed-grid');
+      if (!grid) return;
+
+      const cards = Array.from(grid.querySelectorAll('.gfeed-card'));
+      if (!cards.length) {
+        grid.style.height = '0px';
+        return;
+      }
+
+      const columnWidth = getColumnWidth();
+      const heights = Array(COLUMNS).fill(0);
+
+      cards.forEach(card => {
+        card.style.width = `${columnWidth}px`;
+        const minHeight = Math.min(...heights);
+        const columnIndex = heights.indexOf(minHeight);
+        const left = (columnWidth + GAP) * columnIndex;
+        const top = heights[columnIndex];
+        card.style.transform = `translate(${left}px, ${top}px)`;
+        heights[columnIndex] = top + card.offsetHeight + GAP;
+      });
+
+      grid.style.height = `${Math.max(...heights)}px`;
+    }
+
+    function scheduleMasonryLayout() {
+      requestAnimationFrame(() => {
+        layoutMasonry();
+      });
+    }
+
+    function watchMasonryImages(cards) {
+      cards.forEach(card => {
+        card.querySelectorAll('img').forEach(img => {
+          if (img.complete) return;
+          img.addEventListener('load', scheduleMasonryLayout, { once: true });
+          img.addEventListener('error', scheduleMasonryLayout, { once: true });
+        });
+      });
+    }
+
+    // 渲染卡片批次
+    function renderBatch(startIndex, count) {
+      if (startIndex >= allPrompts.length) return;
+
+      const grid = document.getElementById('gfeed-grid');
+      if (!grid) return;
+
+      const endIndex = Math.min(startIndex + count, allPrompts.length);
+      const batch = allPrompts.slice(startIndex, endIndex);
+
+      const fragment = document.createElement('div');
+      fragment.innerHTML = batch.map(createCardHTML).join('');
+      const newCards = Array.from(fragment.children);
+      grid.append(...newCards);
+      renderedCount = endIndex;
+
+      // 绑定视频悬停事件
+      attachVideoHoverEvents();
+      watchMasonryImages(newCards);
+      scheduleMasonryLayout();
+
+      // 绑定点击跳转
+      newCards.forEach((card, i) => {
+        card.addEventListener('click', () => {
+          const prompt = batch[i];
+          if (prompt && prompt.permalink) {
+            window.location.href = prompt.permalink;
+          }
+        });
+      });
+
+      // 更新 observer
+      refreshObserver();
+    }
+
+    // 加载更多
+    function loadMore() {
+      if (renderedCount >= allPrompts.length) return;
+      renderBatch(renderedCount, LOAD_BATCH_SIZE);
+    }
+
+    // 视频悬停事件
+    function attachVideoHoverEvents() {
+      const cards = document.querySelectorAll('.gfeed-card');
+      cards.forEach(card => {
+        const video = card.querySelector('.gfeed-video');
+        const loader = card.querySelector('.video-loader');
+        if (!video) return;
+        if (video.dataset.eventAttached) return;
+
+        video.dataset.eventAttached = 'true';
+
+        card.addEventListener('mouseenter', () => {
+          if (!video.src && video.dataset.src) {
+            video.src = video.dataset.src;
+          }
+
+          if (video.readyState < 2) {
+            if (loader) loader.style.display = 'flex';
+            video.load();
+            video.addEventListener('canplay', () => {
+              if (loader) loader.style.display = 'none';
+              video.style.display = 'block';
+              video.style.opacity = '1';
+              video.play().catch(() => {});
+            }, { once: true });
+          } else {
+            video.style.display = 'block';
+            video.style.opacity = '1';
+            video.play().catch(() => {});
+          }
+        });
+
+        card.addEventListener('mouseleave', () => {
+          video.pause();
+          video.currentTime = 0;
+          video.style.opacity = '0';
+          setTimeout(() => {
+            if (video.style.opacity === '0') {
+              video.style.display = 'none';
+            }
+          }, 300);
+        });
+      });
+    }
+
+    // 设置滚动加载
+    function setupLazyLoadObserver() {
+      const loadingEl = document.getElementById('gfeed-loading');
+      if (!loadingEl || !('IntersectionObserver' in window)) {
+        loadMore();
+        return;
+      }
+
+      if (loadObserver) {
+        loadObserver.disconnect();
+      }
+
+      loadObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && renderedCount < allPrompts.length) {
+            loadMore();
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '300px 0px',
+        threshold: 0
+      });
+
+      refreshObserver();
+    }
+
+    function refreshObserver() {
+      const loadingEl = document.getElementById('gfeed-loading');
+      if (!loadObserver || !loadingEl) return;
+
+      loadObserver.unobserve(loadingEl);
+      if (renderedCount < allPrompts.length) {
+        loadingEl.style.display = 'flex';
+        loadObserver.observe(loadingEl);
+      } else {
+        loadingEl.style.display = 'none';
+      }
+    }
+
+    // 响应式处理 - 窗口大小变化时重新布局
+    let resizeTimeout = null;
+    function handleResize() {
+      if (resizeTimeout) clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(scheduleMasonryLayout, 100);
+    }
+
+    // 初始化
+    function init() {
+      loadPromptsData();
+      renderBatch(0, LOAD_BATCH_SIZE);
+      setupLazyLoadObserver();
+      window.addEventListener('resize', handleResize);
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  })();
+</script>
+{{ end }}
