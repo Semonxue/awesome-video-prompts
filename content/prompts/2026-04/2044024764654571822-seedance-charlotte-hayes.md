@@ -1,26 +1,33 @@
 ---
 image: /prompts/2026-04/2044024764654571822-seedance-charlotte-hayes/cover.jpg
 video: /prompts/2026-04/2044024764654571822-seedance-charlotte-hayes/video.mp4
-date: 2026-04-14
+date: '2026-04-14'
 title: The Moment Changed for Her
-description: |-
-  Actually, She didn't change outfits, the moment changed for her.
-  Made with Seedance 2.0 on @yapper_so
-  Prompt: A 26–27-year-old British woman named Charlotte Hayes, with natural blonde hair styled in soft loose waves that fall just past her shoulders, fair skin with a subtle rosy undertone, and refined facial features with light blue eyes. She has an effortlessly elegant UK-based look, blending modern city style with a touch of classic charm. She is wearing a chic yet casual outfit — tailored high-waisted trousers, white sneakers, and a light beige trench coat over a simple fitted top. Her posture is relaxed and confident, with a calm, observant expression. Realistic style, cinematic lighting, highly detailed, photorealistic, 8K.
+description: A 26–27-year-old British woman named Charlotte Hayes, with natural blonde
+  hair styled in soft loose waves that fall just past her shoulders, fair skin with
+  a subtle rosy undertone, and refined facial features with light blue eyes. She has
+  an effortlessly elegant UK-based look, blending modern city style with a touch of
+  classic charm. She is wearing a chic yet casual outfit — tailored high-waisted trousers,
+  white sneakers, and a light beige trench coat over a simple fitted top. Her posture
+  is relaxed and confident, with a calm, observant expression. Realistic style, cinematic
+  lighting, highly detailed, photorealistic, 8K.
 models:
-  - seedance2
+- seedance2
 tags:
-  - portrait
-  - fashion
-  - woman
-  - cinematic
-  - transformation
+- portrait
+- fashion
+- woman
+- cinematic
+- transformation
 author: Shami
 source_url: https://x.com/ShamiWeb3/status/2044024764654571822
-draft: true
-full_text: "Actually, She didn't change outfits, the moment changed for her.\nMade with Seedance 2.0 on @yapper_so\nPrompt:\nA 26–27-year-old British woman named Charlotte Hayes, with natural blonde hair styled in soft loose waves that fall just past her shoulders,\nfair skin with a subtle rosy undertone, and refined facial features with light blue eyes. She has an effortlessly elegant UK-based look, blending modern city style with a touch of classic charm. She is wearing a chic yet casual outfit — tailored high-waisted trousers, white sneakers, and a light beige trench coat over a simple fitted top. Her posture is relaxed and confident, with a calm, observant expression. Realistic style, cinematic lighting, highly detailed, photorealistic, 8K."
+full_text: |-
+  Actually, She didn't change outfits, the moment changed for her.
+  Made with Seedance 2.0 on @yapper_so
+  Prompt:
+  A 26–27-year-old British woman named Charlotte Hayes, with natural blonde hair styled in soft loose waves that fall just past her shoulders,
+  fair skin with a subtle rosy undertone, and refined facial features with light blue eyes. She has an effortlessly elegant UK-based look, blending modern city style with a touch of classic charm. She is wearing a chic yet casual outfit — tailored high-waisted trousers, white sneakers, and a light beige trench coat over a simple fitted top. Her posture is relaxed and confident, with a calm, observant expression. Realistic style, cinematic lighting, highly detailed, photorealistic, 8K.
+draft: false
 ---
-
-## Full Prompt (from quoted tweet)
 
 A 26–27-year-old British woman named Charlotte Hayes, with natural blonde hair styled in soft loose waves that fall just past her shoulders, fair skin with a subtle rosy undertone, and refined facial features with light blue eyes. She has an effortlessly elegant UK-based look, blending modern city style with a touch of classic charm. She is wearing a chic yet casual outfit — tailored high-waisted trousers, white sneakers, and a light beige trench coat over a simple fitted top. Her posture is relaxed and confident, with a calm, observant expression. Realistic style, cinematic lighting, highly detailed, photorealistic, 8K.
