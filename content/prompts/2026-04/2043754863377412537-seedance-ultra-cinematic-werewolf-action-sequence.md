@@ -46,3 +46,4 @@ Ultra-cinematic 15-second multi-angle action sequence in a dark city street at n
 Environment: wet reflective asphalt, streetlights casting long reflections, light fog, scattered trash and objects reacting to motion.
 
 Style: ultra-cinematic realism, high-impact action editing, dramatic cuts, slow-motion accents, heavy motion blur, volumetric atmosphere, no text, no overlays, stable proportions.
+---

@@ -41,3 +41,4 @@ Style: cinematic, photorealistic, high fashion, sci-fi, cybernetic beauty
 Camera: static close-up portrait, very shallow depth of field
 Motion: slow, graceful, smooth transformation over 5 seconds
 Aspect ratio: 9:16 or 2:3 (vertical portrait)
+---

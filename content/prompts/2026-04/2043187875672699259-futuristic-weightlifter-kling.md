@@ -21,3 +21,4 @@ draft: false
 ---
 
 futuristic weightlifter performing clean and jerk, full body, body made of transparent mesh and glowing wireframe, holographic data interface surrounding the athlete and barbell, performance metrics UI (force output, muscle activation, stability) floating around, energy burst effect, neon blue color palette, dark background, cinematic lighting, ultra detailed, sci-fi aesthetic, volumetric glow, digital particles, 3D render, octane render, sharp focus.
+---

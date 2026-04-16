@@ -59,3 +59,4 @@ Blade held at throat — both freeze, breathing heavy, cut to black
 
 Sound Design:
 Fabric movement, blade clangs, deep breathing, wind
+---

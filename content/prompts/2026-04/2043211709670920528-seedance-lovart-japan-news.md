@@ -41,3 +41,4 @@ draft: false
 日本の朝の情報番組、難しい言葉は使わず、子供にもわかりやすく伝える。
 https://t.co/J3V8REJrtI
 ※web検索 on
+---

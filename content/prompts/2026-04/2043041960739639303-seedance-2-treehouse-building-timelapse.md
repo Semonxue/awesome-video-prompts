@@ -33,3 +33,4 @@ draft: false
 ---
 
 A timelapse video of a man stepping into a wild forest clearing, hauling wooden planks, nails, and rope. The underbrush vanishes as he clears space beneath tall trees. A base frame takes shape between sturdy trunks, planks snap into place, beams rise, and supports lock in. Walls climb upward, followed by a slanted roof. Windows and railings appear, then shingles cover the top. As shadows shift and light changes, the structure transforms from raw wood to a cozy, elevated treehouse. A rope ladder dangles, a lantern clicks on, and the man steps back, sweaty, grinning, admiring the fully built hideaway now nestled among the trees.
+---

@@ -61,3 +61,4 @@ clean Japanese anime linework, polished final-frame rendering, crisp cel shading
 no photorealism  
 no 3D CGI  
 no rough sketch look
+---

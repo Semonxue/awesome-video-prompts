@@ -28,3 +28,4 @@ draft: false
 ---
 
 A driving downpour in a narrow, neon-lit megacity trench. A heavily armored hover-taxi violently banks around rusted fire escapes, displacing water. The camera dives through a web of high-voltage cables, approaching the rattling gull-wing door. Passing seamlessly through the vibrating glass, the camera enters a soundproof interior. A cyborg in a tailored suit delicately threads a needle with copper wire, utterly detached from the turbulent flight. The camera glides past the needle eye, exits the opposite window, and soars straight up past the smog layer into a completely still, cloudless stratosphere.- created with seedance 2.0 camera work is awesome
+---

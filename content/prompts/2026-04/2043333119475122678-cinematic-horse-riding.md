@@ -51,3 +51,4 @@ Color Grade: Warm earthy tones, slightly desaturated for realism.
 Camera Movement: Smooth tracking, slow push-ins, drone aerial.
 Frame Rate: 24fps (cinematic), with selective slow-motion.
 Resolution: 4K.
+---

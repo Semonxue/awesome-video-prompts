@@ -33,3 +33,4 @@ aesthetic: phone in the middle of a street dance circle, tight crowd surrounding
     - "4-8s: The beat drops. She hits a smooth moonwalk across the circle in orthopedic shoes. Flawless. The breakdancer puts his hands on his head. The crowd screams."
     - "8-15s: She's still moving. Calm, effortless. The circle is tightening as people push in to see. The breakdancer is clapping for her. She finishes and adjusts her reading glasses like nothing happened."
   quality: single shot from inside the circle, daylight, the moonwalk in orthopedic shoes is the moment, the breakdancer's face
+---

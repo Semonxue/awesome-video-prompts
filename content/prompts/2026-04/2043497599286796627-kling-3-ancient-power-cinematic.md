@@ -43,3 +43,4 @@ CUT 4 (0:13-0:17) Fast combat - Anariel fights with dual blades and magic, strik
 CUT 5 (0:17-0:20) She is overwhelmed, dark sorcerer appears, binds her with magic mid-air
 
 LAST FRAME (0:22) Wide shot - Anariel dragged into darkness, the glowing sphere fading as the castle falls into shadow.
+---

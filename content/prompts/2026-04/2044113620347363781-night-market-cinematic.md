@@ -108,3 +108,4 @@ Camera Behavior: One continuous unbroken Steadicam glide, no cuts. Begins medium
 [QUALITY]
 
 Photorealistic 8K, natural 35mm grain. Realistic steam, smoke, and flame physics — no particle over-application. Wet pavement reflections track light sources accurately. Stable character features on lead cook. No duplicate vendors. No cuts. HDR for simultaneous flame highlights and shadow detail.
+---

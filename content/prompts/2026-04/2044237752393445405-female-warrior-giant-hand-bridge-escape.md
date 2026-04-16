@@ -68,3 +68,4 @@ SHOT 3: MS, follow. The cable tension redirects her from vertical fall into a hi
 SHOT 4: MS, push-in. At the end of the swing, she releases the cable. Her landing point is a falling concrete fragment. As she steps on it, the fragment accelerates downward from the applied force, while the reaction force propels her upward, altering her trajectory. SFX: cracking, air compression.
 SHOT 5: WS, low angle. The giant's hand slams down vertically at greater speed. She adjusts her body mid-air, narrowly passing beneath the hand. The hand impacts the bridge, generating a powerful shockwave, causing large-scale structural rupture and blasting debris and water mist outward. SFX: massive impact, structural rupture, low-frequency shock.
 SHOT 6: CU, slow motion. She is carried by the shockwave and her own inertia toward the edge of the hand. Upon contact with the hand's surface, visible friction causes sliding. She quickly uses the grappling hook to strike.
+---

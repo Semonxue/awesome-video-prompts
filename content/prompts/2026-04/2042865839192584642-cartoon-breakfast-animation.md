@@ -47,3 +47,4 @@ Golden toast slices on a wooden cutting board; hand spreads butter then spreads 
 Shredded hash browns in a silver pan; spatula lifts and turns the golden crispy pile.
 Final wide appetizing shot: fully plated breakfast on a wooden table—two sunny-side-up eggs with herbs, bacon, sausages, hash browns, buttered/jammed toast with extra butter pat, glass of orange juice, steaming white mug labeled 'MORNING BREW', salt/pepper shakers, cutlery on napkin. Cozy kitchen background with window light, potted plants, tiles.
 Warm appetizing color palette, soft natural lighting, detailed food textures, clean bold outlines, cel-shaded cartoon aesthetic, high detail, smooth fluid motion, 15-second duration, cinematic food photography vibe but illustrated.
+---

@@ -33,3 +33,4 @@ aesthetic: authentic phone footage, held up in a packed nightclub, strobes and l
     - "4-8s: The drop hits. He erupts. Arms up, jumping, the armor clanking with every movement, dancing harder than anyone in the room. A group of young guys next to him freeze and stare with their mouths open."
     - "8-15s: He's leading the energy now. Everyone around him is matching his intensity. Phone flashlights from every direction pointed at him. The steel armor catching every strobe flash."
   quality: single shot, dark club with strobes, armor glinting in the light, the young crowd's disbelief is everything
+---

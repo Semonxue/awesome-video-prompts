@@ -40,3 +40,4 @@ A powerful aquatic warrior riding a massive orca, long hair flowing in water, we
 
 Camera fluid tracking, aggressive orbit, slow motion compression, impact push forward Scene deep ocean, strong volumetric light, heavy particles, pressure waves, large-scale underwater environment
 Style ultra realistic, cinematic underwater VFX, massive energy build-up and release, hollywood epic scale, powerful visual clarity, no distortion, no stretching
+---

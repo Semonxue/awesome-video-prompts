@@ -30,3 +30,4 @@ draft: false
 ---
 
 futuristic basketball player doing slam dunk, low angle shot, full body, body made of transparent mesh and glowing wireframe, holographic data interface surrounding the athlete, performance metrics UI (jump height, hang time, shot accuracy) floating around, dynamic motion trails, neon blue color palette, dark background, cinematic lighting, ultra detailed, sci-fi aesthetic, volumetric glow, digital particles, 3D render, octane render, sharp focus.
+---

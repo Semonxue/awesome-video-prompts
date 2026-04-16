@@ -35,3 +35,4 @@ Open wide: the Sheepypus rests on a hillside, draping four tentacles over separa
 Narration, hushed: "In the Highlands, the Sheepypus has made containment impossible. Generations of Scottish shepherds have simply accepted that a Sheepypus cannot be fenced, only negotiated with. Shearing day, once a week of hard labor, is now a psychological ordeal for all involved."
 
 Diegetic audio: wet bleating, beak snips, tentacle slaps on stone, wind over heather.
+---

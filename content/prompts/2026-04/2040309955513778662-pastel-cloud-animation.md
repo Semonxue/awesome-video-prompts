@@ -41,3 +41,4 @@ Ultra-cute pastel cloud animation, soft rounded chibi style, bright sky tones, s
 12–15s: Hero center frame, happy bounce, sparkle.
 
 Soft daylight, smooth camera, wholesome vibe, no flicker, high quality.
+---

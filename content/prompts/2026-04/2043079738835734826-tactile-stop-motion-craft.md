@@ -43,3 +43,4 @@ A fast-paced, high-energy stop-motion animation with a hand-crafted, tactile fee
 12-15s (Agate Overload): A bright internal lightbulb flickers intensely on. The agate stone side-stripe glows fiercely, sending a physical wave of illuminated dust motes crashing into the camera lens.
 
 15s (End Graphic): Quick cut to black. Sleek white text appears: "designed by el.cine".
+---

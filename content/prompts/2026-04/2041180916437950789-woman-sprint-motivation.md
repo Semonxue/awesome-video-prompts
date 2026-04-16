@@ -50,3 +50,4 @@ draft: false
     Close-up: fist hitting a punching bag or gripping a gym rope. Quick flashes of intensity. Cut to face showing grit, exhaustion, determination.
     0:12-0:15 - Cut 5 (Final):
     Wide shot: woman sprinting toward a distant finish line. Camera dolly-zooms in. Muscles tense, hair slightly flying. Warm cinematic lighting emphasizes her determination. Epic motivational music swells to climax.
+---

@@ -20,3 +20,4 @@ draft: false
 ---
 
 Extreme wide angle shot of an angel with massive angel wings turning into a demon, her skin sheds and she looks like her skin is turning to cinder and ash, agony, Directed by Villeneuve, Arri Alexa, anamorphic 2.39:1 (no lens flare), shallow depth of field. Palette: soft ambient Dirty framing.
+---

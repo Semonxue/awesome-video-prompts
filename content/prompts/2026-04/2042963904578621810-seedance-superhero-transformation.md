@@ -40,3 +40,4 @@ draft: false
 ---
 
 A young boy in a blue hoodie touches a glowing blue crystal in a dark cave. Intense blue light explodes from the crystal, engulfing the boy. In a seamless transition, the light fades to reveal the boy has transformed into a tall superhero in a red and blue armored suit with a flowing cape. Cinematic lighting, 4K, high detail.
+---

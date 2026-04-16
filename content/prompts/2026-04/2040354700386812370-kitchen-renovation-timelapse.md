@@ -88,3 +88,4 @@ Mood and aesthetics:
 Hyper-realistic renovation timelapse, smooth accelerated transformation from dated and cluttered kitchen into a bright, modern, high-end minimalist retreat. Emphasis on material textures (wood grain, stone veining, metallic finishes), natural lighting changes, clean progress, and a sense of satisfying achievement. Highly detailed surfaces, realistic physics of installation, and organic worker movements.
 
 Total duration: 8 seconds (about 7 seconds of active transformation, 1 second final cozy reveal). Cinematic color grading, ultra-realistic quality, natural light interaction with reflective surfaces.
+---

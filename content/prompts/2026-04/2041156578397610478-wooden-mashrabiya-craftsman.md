@@ -28,3 +28,4 @@ draft: false
 Close-up cinematic shot of a craftsman carving intricate geometric patterns into wood (mashrabiya style).
   Camera slowly pushes in, revealing fine details.
   Ultra realistic, soft shadows, calm atmosphere.
+---

@@ -39,3 +39,4 @@ Action (13s single take):
 11–12s: He raises his hand, clenches fist—purple shockwave blasts the monster through the hoop.
 12–13s: He turns away casually, walks back past stunned people, whistles. Looks at camera, finger-gun gesture, silently mouths: “{ Text to speech }”
 End: Freeze frame, purple particles drifting, audio fades to wind.
+---

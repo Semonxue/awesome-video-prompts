@@ -26,3 +26,4 @@ draft: false
 ---
 
 A stunningly beautiful young woman with long flowing silver-white hair and piercing bright blue eyes, perfect symmetrical face with subtle freckles, full lips, wearing a sleek form-fitting futuristic white and silver cyberpunk armor suit with black accents, glossy reflective metallic surfaces, glowing blue neon lines and holographic details on the armor, high-tech shoulder pads, chest plate with subtle engravings, in a dark futuristic sci-fi corridor with blue neon lighting and metallic walls, cinematic lighting, dramatic atmosphere, highly detailed, sharp focus, 8k, photorealistic, intricate details, dynamic pose walking towards camera, confident and elegant expression --ar 9:16 --stylize 250 --v 6
+---

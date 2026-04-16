@@ -31,3 +31,4 @@ Cinematic aerial time-lapse video, 8K photorealistic, hyper-detailed, National G
 - Green spaces expand into nicely landscaped areas with more trees and sidewalks
 - Streetlights, cyclists and pedestrians appear naturally
 Keep perfect spatial consistency and architectural continuity at all times. No sudden jumps, no flickering, no morphing artifacts. Ultra-realistic details, cinematic color grading, shallow depth of field.
+---

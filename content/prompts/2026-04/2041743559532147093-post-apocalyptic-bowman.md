@@ -84,3 +84,4 @@ draft: false
     Photorealistic 8K, ultra-detailed textures (skin pores, rusted metal, animal fur), 
     cinematic lighting, perfect motion blur, high dynamic range, no artifacts, 
     coherent multi-subject motion.
+---

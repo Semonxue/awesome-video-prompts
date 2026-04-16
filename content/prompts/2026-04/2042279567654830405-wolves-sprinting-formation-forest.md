@@ -31,3 +31,4 @@ A pack of wolves sprinting in formation, muscles tense, eyes glowing faintly in 
 Chase prey through dense terrain without slowing down.
 Dark forest at night with fog drifting between trees, moonlight piercing through branches.
 Ground-level tracking shot running within the pack, weaving between bodies, breath visible in cold air, immersive predator movement.
+---

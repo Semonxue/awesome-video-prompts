@@ -26,3 +26,4 @@ draft: false
 ---
 
 A 15-second cinematic action sequence that starts instantly with an epic ultra-wide shot of a gigantic stone colossus striding through a storm-covered desert while tiny riders race across the dunes below at full speed. The camera is already moving fast from the first frame, sweeping low and aggressive past shattered pillars and exploding sand. At 7 seconds enter dramatic slow motion as one rider launches off a dune and rides vertically across the colossus arm while pieces of ancient armor crack open and golden fire spills out from inside. Then snap back to full speed as the camera dives toward the monster's face, where its eyes open to reveal an entire glowing city hidden within its skull.
+---

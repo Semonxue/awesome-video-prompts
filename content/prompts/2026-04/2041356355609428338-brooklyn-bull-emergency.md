@@ -70,3 +70,4 @@ vertical bystander-phone footage, handheld, reactive reframing, slight panic zoo
 
 Visual rules:
 realistic anatomy, realistic bull movement, realistic neighborhood crowd behavior, authentic Brooklyn street mood, no comedy, no fantasy, no gore, no blood spray, no severe visible injury, no subtitles, no text overlay, no watermark, no duplicated people.
+---

@@ -33,3 +33,4 @@ draft: false
 
 
 extremely fast-paced cinematic FPV flying through the ancient Assyrian Empire at its peak, hyper-realistic, 4K, golden hour lighting, starting above massive ziggurats and fortified cities of Nineveh, diving through grand palace corridors with intricate bas-reliefs, sweeping over vast desert landscapes and bustling marketplaces, soldiers in Assyrian armor marching in formation, chariots racing, towering lamassu statues at palace gates, dramatic shadows, volumetric lighting, depth of field, epic scale, historically accurate architecture and clothing, high detail, immersive, intense pacing, cinematic color grading, realistic textures
+---

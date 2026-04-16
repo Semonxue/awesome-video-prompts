@@ -110,3 +110,4 @@ A woman sits in a cluttered room filled with old radios and clocks. A sign readi
 Style & Motion Keywords
 
 cinematic, dystopian, surreal realism, slow motion, dramatic lighting, volumetric fog, depth of field, 35mm film look, desaturated tones, symbolic storytelling, melancholic mood, smooth camera movement
+---

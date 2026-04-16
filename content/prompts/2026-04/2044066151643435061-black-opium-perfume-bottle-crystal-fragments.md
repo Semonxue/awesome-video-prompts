@@ -25,3 +25,4 @@ draft: false
 ---
 
 Prompt: A [Name] Black Opium perfume bottle suspended in air, surrounded by glittering rose-gold crystal fragments, dramatic lighting contrasts on a soft blush-pink background, moody glow, shimmering texture, cinematic beauty commercial aesthetic --ar 2:3
+---

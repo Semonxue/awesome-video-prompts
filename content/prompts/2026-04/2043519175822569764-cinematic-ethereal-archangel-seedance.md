@@ -34,3 +34,4 @@ The Wings: Massive, majestic white swan wings with hyper-detailed, layered feath
 Environment & Lighting: Set against a dark, moody, atmospheric void with a reflective black water floor. Dramatic cinematic lighting, volumetric fog, and soft "god rays" illuminating the silhouette. High contrast, chiaroscuro effect, silver and deep navy color palette.
 
 Technical Modifiers: 8K resolution, photorealistic, Unreal Engine 5.4 render style, Octane Render, Ray-tracing, masterpiece quality, macro photography, 100mm lens, extremely high-resolution textures, soft bokeh background, ethereal glow, --ar 9:16 --v 6.0
+---

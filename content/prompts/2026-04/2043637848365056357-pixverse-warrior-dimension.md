@@ -34,3 +34,4 @@ A warrior holding a glowing blade, stance low, eyes locked on target.
 Swings the blade and literally slices open space, revealing another dimension behind.
 Dark environment with minimal light, energy illuminating surroundings.
 Dynamic tracking shot following blade arc, dimensional tear opening with light distortion and particle emission, cinematic energy burst.
+---

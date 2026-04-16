@@ -26,3 +26,4 @@ draft: false
 ---
 
 "You shouldn't have come..." 🌘 Step into the shadows of a grand, dimly lit mansion where secrets and regrets collide. This striking black-and-white scene captures a tense confrontation between two souls bound by a mistake they can't undo. As they face the ruin that lies ahead, her resolve remains unshaken: "Then we face it together." (with sound)
+---

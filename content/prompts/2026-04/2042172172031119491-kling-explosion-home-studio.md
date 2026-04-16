@@ -32,3 +32,4 @@ draft: false
 ---
 
 A continuous, wide-angle shot of a dimly lit bedroom and home studio where a young woman is sitting on a bed, bathed in shafts of light from the windows. Suddenly, a massive explosion occurs outside, causing the room to shake violently as birds scatter and debris flies past the windows. The camera pans and shakes as the windows shatter inward, sending shards of glass and dust across the music equipment, including a keyboard and studio monitors. Sparks fly from the electronics and small fires ignite on the desk as a towering fireball and thick black smoke consume the view outside the broken window frames. The shot ends with the ceiling beginning to collapse and the room being engulfed in a thick cloud of gray dust and chaotic debris.
+---

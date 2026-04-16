@@ -53,3 +53,4 @@ Fast aerial tracking through lava-lit clouds, briefly passing behind a floating 
 **Style & Constraints:**
 
 Photorealistic fire simulation, volumetric storm clouds, ray-traced lava glow, cinematic lightning illumination, stable geometry, 8K.
+---

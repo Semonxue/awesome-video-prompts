@@ -23,3 +23,4 @@ draft: false
 ---
 
 Collapsed megastructure in a desert wasteland, massive broken rings half-buried in sand as a small convoy moves through the ruins
+---

@@ -26,3 +26,5 @@ Grok Imagine is really badass
 
 PROMPT
 Dolly zoom, a lone warrior stands on a sacred cliff at sunrise as a colossal celestial dragon made of light emerges from the clouds. The camera pulls back while zooming in, stretching the sky into a glowing abyss as the dragon coils around the mountains, illuminating the entire landscape.
+
+---

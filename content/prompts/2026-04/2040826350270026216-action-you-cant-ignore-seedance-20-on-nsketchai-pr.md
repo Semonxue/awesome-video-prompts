@@ -40,3 +40,4 @@ Wide hero shot — she fully transforms into a towering, powerful demon-like bei
 She raises both arms — energy surges through the sky, debris starts levitating, buildings trembling
 Final shot — she unleashes a massive green energy beam into the sky, creating a shockwave across the ruined city, camera pulls back to wide cinematic scale
 Style: ultra-realistic, cinematic lighting, volumetric fog, Unreal Engine style, high contrast, dramatic shadows, slow motion, epic scale, 4K, film grain, teal-orange + neon green color grading
+---

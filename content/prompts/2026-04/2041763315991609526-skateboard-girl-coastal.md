@@ -29,3 +29,4 @@ draft: false
 ---
 
 A girl riding a skateboard downhill through a steep coastal town, overlooking a vast blue ocean, bright summer sky with massive cinematic clouds, wind blowing through her hair and clothes, fast descent, smooth carving turns, passing houses, poles, and narrow streets, dynamic tracking shots from behind and side, motion blur, anime-style, vibrant colors, highly detailed environment, energetic yet peaceful vibe
+---

@@ -35,3 +35,4 @@ A colossal giant cybernetic titan floating in orbit above Earth, dramatic cinema
 Dynamic poses: standing powerfully on the clouds and atmosphere, one giant foot stepping down creating shockwaves and clouds parting, or dramatic low-angle close-ups of the head and upper torso. Epic scale, the robot is planet-sized, towering over Earth with visible continents and oceans below.
 
 Atmosphere: deep space blackness, thin blue atmospheric glow, golden sunlight rim lighting, volumetric god rays, cinematic color grading, high contrast, intense dramatic lighting, photorealistic, hyper-detailed, 8k, IMAX quality, sci-fi concept art style --ar 9:16 --stylize 250 --v 6
+---

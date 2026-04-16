@@ -61,3 +61,4 @@ High-speed strike across multiple enemies.
 13–15s — final frame
 Bodies drifting slowly.
 She stabilizes, floating. Freeze.
+---

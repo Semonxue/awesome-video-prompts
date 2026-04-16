@@ -24,3 +24,4 @@ draft: false
 ---
 
 A dark abandoned house at night, flickering lights, dusty air particles floating. A young man slowly walks through a narrow hallway holding a dim flashlight. The camera follows behind him (over-the-shoulder shot). Suddenly, the flashlight flickers and a shadow figure appears at the end of the hallway. The man freezes. The shadow moves unnaturally fast toward him. Loud whispering voices echo. The screen glitches, then cuts to black with a sudden scream. Ultra realistic, cinematic lighting, horror atmosphere, 4K, film grain, dramatic shadows, handheld camera, suspenseful tension.
+---

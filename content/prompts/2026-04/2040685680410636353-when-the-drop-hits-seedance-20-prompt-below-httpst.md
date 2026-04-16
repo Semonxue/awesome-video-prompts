@@ -33,3 +33,4 @@ aesthetic: phone held up in the middle of a packed crowd on a construction site 
     - "5-8s: The drop. Everyone jumps on raw concrete. Dust kicks up from the unfinished floor. The work lights bounce from the impact, sending shadows swinging wildly."
     - "8-15s: The crowd bouncing on exposed concrete, open to the sky. Dust haze in the work light beams. City skyline visible through gaps where walls should be. The unfinished building shaking slightly with every collective jump."
   quality: single shot from the middle of the crowd, industrial work lights as the only source, exposed concrete and rebar, open night sky, city lights through the skeleton of the building
+---

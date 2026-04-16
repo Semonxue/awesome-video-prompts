@@ -45,3 +45,4 @@ Cinematic, apocalypse, post-apocalyptic, photorealistic 15 seconds  16:9
 [00:10-00:15] Close-up shot. The man's face, covered in dust. He slowly looks up towards the sky. His eyes reflect loss and determination.
 
 Final wide shot of the burning city with the lone figure in the foreground. Atmospheric haze and dust particles.
+---

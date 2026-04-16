@@ -67,3 +67,4 @@ Aspect Ratio: 9:16 (vertical) or 16:9 (horizontal)
 Duration: 12 seconds
 
 Camera: Dynamic handheld + smooth cinematic moves, mix of close-ups and epic wide shots
+---

@@ -53,3 +53,4 @@ The four characters [ @ image 1, @ image 2....] are in a defiant and ominous pos
 [STYLE & QUALITY BOOSTERS]
 
 Photorealistic 8K, ultra-detailed textures, cinematic lighting, perfect motion blur, high dynamic range, no artifacts, coherent multi-character interaction.
+---

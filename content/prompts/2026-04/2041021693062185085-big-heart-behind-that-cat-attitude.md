@@ -50,3 +50,4 @@ Crowd response: The raccoon villagers break into delighted applause, earlier sus
 Final shot: The orange cat adjusts his bamboo hat slightly, standing composed as ripples move through the rice paddies, a subtle confident aura as he looks forward.
 Motion & Effects:
 Highly detailed physical choreography, grounded multi-step parkour, precise timing, cloth simulation on robe, environmental interaction (walls, cart, ground), soft motion blur, cinematic camera flow (tracking, tilt, orbit), light comedic tone blended with elegant martial arts action.
+---

@@ -65,3 +65,4 @@ The tank violently unfolds into a giant mechanical war robot. Tracks split into 
 
 0:12–0:15 — Robot Reveal
 The towering robot rises from the battlefield. Its eyes glow. It raises the arm cannon and fires a massive energy blast that destroys an incoming tank. Smoke and sunlight beams surround the robot in an epic cinematic final shot.
+---

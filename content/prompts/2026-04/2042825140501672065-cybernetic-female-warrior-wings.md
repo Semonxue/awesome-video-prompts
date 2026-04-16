@@ -35,3 +35,4 @@ Style: Cinematic, dark fantasy sci-fi, hyper-realistic, dramatic, high-octane ac
 Camera: Dynamic cinematic shots, smooth motion, slight slow-motion on key impacts
 Duration: 5 seconds
 Aspect Ratio: 9:16 (vertical) or 16:9 (horizontal) depending on your platform
+---

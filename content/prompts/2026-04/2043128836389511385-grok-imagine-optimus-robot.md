@@ -31,3 +31,4 @@ draft: false
 ---
 
 Highly detailed full-body shot of a premium life-size Iron Man Mark XLII-inspired robot statue made of polished mirror chrome and silver metal with intricate mechanical details, exposed pistons, rivets, panel lines, and articulated armor segments. The suit has a glowing bright blue circular arc reactor in the chest with energy rings, matching glowing blue eyes in the helmet, and open knee compartments revealing complex glowing blue circuitry and batteries inside. Dramatic studio lighting with strong reflections on the shiny metallic surfaces, subtle wear and battle damage on the armor. Dynamic three-quarter pose turning slowly on a display stand, cinematic volumetric lighting, hyper-realistic textures, 8k photorealistic, sharp focus, masterpiece, best quality.
+---

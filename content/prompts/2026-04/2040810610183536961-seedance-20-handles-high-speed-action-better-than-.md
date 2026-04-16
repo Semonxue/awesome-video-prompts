@@ -26,3 +26,4 @@ Environment: Abandoned ancient high-rises, exposed brick, cracked walls, rusted 
  5–8s: Burst speed. Cyan sword-finger slash launches the front mutant. Spiral spin kick clears flanks. Tornado orbit cam, 120fps slow-mo impact.
  8–10s: Heavy strike on Alpha tracker, shockwave shatters wall behind. Final freeze frame: messy hair, feral crimson eyes.
 [Constraints & Negatives] Low saturation cold grey + amber accent, physics-based fluid motion. Negative: Low quality, stutter, face/body collapse, over-bright, excessive gore, stiff motion, watermark, T-pose, bright palette, flashy VFX, rigid camera, lack of speed/blur, weak kills.
+---

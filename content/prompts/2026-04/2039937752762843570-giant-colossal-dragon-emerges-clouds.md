@@ -32,3 +32,4 @@ draft: false
 
 
 Cinematic low-angle tracking shot of colossal dark scaly dragon emerging powerfully from vast sea of white clouds. Massive spiked head turns slowly with menacing grace, jaws gaping wide in thunderous roar with realistic muscle tension and scale flexing. Thick white mist and breath blast outward, swirling clouds dynamically part around its long serpentine neck and body. Epic scale, hyper-realistic creature motion and fluid cloud physics.
+---

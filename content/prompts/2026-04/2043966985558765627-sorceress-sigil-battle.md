@@ -171,3 +171,4 @@ Shot 12 (00: 13–00:15) – CU, Fade Out
 Eyes closed, she meditates as all light fades, leaving faint residual glow in silence.
 VFX: Light dissipates into darkness.
 SFX: Gentle wind, fading echo.
+---

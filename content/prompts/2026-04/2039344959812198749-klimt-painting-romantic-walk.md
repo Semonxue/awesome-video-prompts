@@ -24,3 +24,4 @@ draft: false
 
 
 First-person POV impasto oil painting, Klimt-inspired: walking hand-in-hand with a beautiful woman through a blooming Asian tea garden in spring. Cherry blossoms drift around us, koi pond nearby. She wears a flowing gold, green, and pink medieval gown with ornate Klimt patterns. Warm sunlight, lanterns, fireflies, and petals. Romantic and dreamy, thick impasto brushstrokes.
+---

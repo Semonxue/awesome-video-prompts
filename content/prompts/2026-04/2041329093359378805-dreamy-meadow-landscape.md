@@ -26,3 +26,4 @@ A dreamy cinematic landscape, a lone tree standing in the middle of a vast meado
 The camera slowly pushes forward through the flower field toward the tree, creating a peaceful cinematic feeling. Gentle wind moves the flowers and grass naturally. Soft sunlight illuminates the clouds, giving them a glowing, volumetric look.
 
 Ultra realistic nature cinematography, HDR lighting, soft color grading, dreamy atmosphere, cinematic depth of field, 4K, vertical composition, slow motion nature shot, highly detailed clouds, calm and peaceful mood.
+---

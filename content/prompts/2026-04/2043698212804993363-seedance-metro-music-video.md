@@ -35,3 +35,4 @@ draft: false
 9-12s: Camera spins around her head, hair flowing, lights pulsing with beats.
 
 12-15s: Transition to neon background → Feel Every Beat.
+---

@@ -52,3 +52,4 @@ Without a moment's rest, the other man attacks, and the train car becomes a chao
 Despite the relentless attacks, she continued to fight without flinching, steadily accumulating visible damage such as slashes and bruises on the men. The giants, breathing heavily and groaning, gradually lost their balance. After a fierce battle, she herself became breathless, but her neatly tied ponytail and her cold, unwavering composure remained intact until the very end.
 
 Finally, she stood triumphantly, trampling the groaning giants on the floor, displaying a resolute stance of victory.
+---

@@ -64,3 +64,5 @@ TIMELINE:
 0:11-0:13: Smash cut. Bird's eye view. The sand-jacketed raider flips a bridge panel out and chains a floor beneath it, sprinting across as a second lane appears mid-run. Locked overhead then sudden pedestal drop, 28mm wide. SFX: (panel slam, latch click, boot hits, debris scatter, cloth snap). Electric highlights pulse through the seams.
 
 0:13-0:15: Hard cut. Tight over-the-shoulder shot behind the black-helmeted raider as she lands on a platform above a driveway, pulls one last wall into cover, and aims at the rival crossing the bridge. Fast forward creep, 35mm anamorphic. SFX: (boots thud on panels, creaking build joints, final metallic ping, breath held then released). Dusk deepens.
+
+---

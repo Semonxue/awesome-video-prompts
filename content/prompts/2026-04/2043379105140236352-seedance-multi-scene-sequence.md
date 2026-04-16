@@ -25,3 +25,4 @@ draft: false
 ---
 
 This 21-second sequence in Seedance 2.0 started as one idea, but the first generation basically asked for a different story direction. I ended up with a video stitched from three separate generations. The first one was pure text-to-video (no references at all); then I extended the scene twice by 8 seconds each time, using the previous output as a video reference. Even after those two extensions, the consistency stayed rock-solid — same characters, location, colors, and overall audio mood across the whole sequence.
+---

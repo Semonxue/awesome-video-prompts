@@ -145,3 +145,4 @@ Camera Settings:
 ________________________________________
 Quality & Rendering:
 Hyper-realistic, 4K cinematic quality, high contrast, rich details, blockbuster-level VFX, cool blue tone.
+---

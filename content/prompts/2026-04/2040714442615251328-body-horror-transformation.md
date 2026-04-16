@@ -59,3 +59,4 @@ Organic-Tech ParasiteDim abandoned hospital corridor at night, flickering emerge
 [12-15s] Shot 8: Slow 360° orbit pull-back as the complete parasite-human hybrid stands, multiple limbs twitching, bioluminescent veins illuminating the dark corridor. 
 
 Global style: Photorealistic medical body horror, ultra-detailed VFX with organic-tech merging, fleshy cable physics, bioluminescent glow, debris and fluid interactions, eerie green-purple lighting, shallow depth of field.
+---

@@ -77,3 +77,4 @@ Low gliding tracking shot across the floating ice surface before tilting upward 
 **Style & Constraints:**
 
 Photorealistic fur simulation, ray-traced ice refraction, volumetric aurora lighting, cinematic cold atmosphere, 35mm film grain, 8K resolution.
+---

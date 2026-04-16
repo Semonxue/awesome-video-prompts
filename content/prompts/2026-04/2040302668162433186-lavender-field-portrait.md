@@ -49,3 +49,4 @@ Depth of field is shallow, with foreground and background blur enhancing subject
 Style: dark editorial, romantic gothic aesthetic, high-fashion fine art photography.
 
 8K, ultra-realistic textures, soft film grain, cinematic color grading.
+---

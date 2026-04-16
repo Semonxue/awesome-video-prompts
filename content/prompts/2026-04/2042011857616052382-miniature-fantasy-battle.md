@@ -26,3 +26,4 @@ draft: false
 ---
 
 Original Miniature Fantasy Action Short Film: In a study late at night, two original combat models in the collection cabinet suddenly wake up under the moonlight. They launch an epic battle between the narrow desktop and ornaments. The camera adopts macro movie photography to highlight the huge scale contrast. Light slants in from outside the window, with dust particles clearly visible. The collision of small weapons sparks fire, making the picture both absurd and spectacular, with a compact rhythm and full of surprises.    Negative Restrictions: No any existing toy brands, no well-known robot IPs, no building block brand elements, no military copyrighted shapes, no actor faces.
+---

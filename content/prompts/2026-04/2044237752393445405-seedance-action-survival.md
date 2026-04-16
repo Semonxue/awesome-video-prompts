@@ -160,3 +160,4 @@ SHOT 6
 
 CU, slow motion
 She is carried by the shockwave and her own inertia toward the edge of the hand. Upon contact with the hand's surface, visible friction causes sliding. She quickly uses the grappling hook to strike
+---

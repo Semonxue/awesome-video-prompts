@@ -37,3 +37,4 @@ Camera sweeps over the collapsing glacier before racing toward the city as the w
 Icebergs smash through streets as the city floods.
 
 Glacier collapse megaflood, iceberg destruction chaos, cinematic polar disaster scale, 4K.
+---

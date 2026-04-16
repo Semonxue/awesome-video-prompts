@@ -160,3 +160,4 @@ Cut to Shot 8: Rapid reaction shots. The red-robed cat and jade-robed cat are co
 Cut to Shot 9: Final awesome shot. The third female cat leads the prince away through the moonlit courtyard with total confidence, while the other two noble cats remain frozen in disbelief under glowing lanterns.
 
 Style: stylized cinematic 3D Chinese palace drama, funny, cultural, theatrical, expressive cat faces, premium hanfu detail, elegant sleeve choreography, dynamic reaction shots, awesome twist ending, normal proportions without stretch.
+---

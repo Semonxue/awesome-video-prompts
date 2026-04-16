@@ -31,3 +31,4 @@ The three work together in unison to make a hot chocolate. One pours chocolate p
 Once the hot water is added to the hot chocolate, the cat toasting the marshmallows takes two off the stick and adds them to the hot chocolate. Then, the cat cooking the chocolate piece in the frying pan drizzles the melted chocolate from the pan on to the marshmallows. 
 
 Finally, the first cat adds a small cinnamon stick in the side, and holds it towards the viewer with a smile.
+---

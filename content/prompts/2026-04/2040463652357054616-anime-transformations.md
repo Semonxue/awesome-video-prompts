@@ -17,3 +17,4 @@ draft: false
 ---
 
 Anime transformations created with Seedance 2.0. The creator spent a lot of time perfecting these anime transformation sequences.
+---

@@ -115,3 +115,4 @@ Use female close-up with fierce forward step and head turn, panda medium shot wi
 End on a dynamic moving frame with unresolved momentum.
 Negative:
 No identity changes, no outfit changes, no goofy panda, no backup dancers, no clutter, no face blur, no messy choreography, no morphing, no anatomy errors.
+---

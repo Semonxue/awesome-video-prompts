@@ -59,3 +59,4 @@ SHOT 5: Hard cut. Over-the-shoulder from dragon's head, 40mm / Rider looks back 
 SHOT 6: Hard cut. Low angle, 24mm / Rider standing on dragon's foreleg, full body, arms relaxed at sides, dragon wing spread behind her as a dark canopy, golden rim light on hair edges / SFX: membrane stretch
 SHOT 7: Hard cut. Extreme close-up, 135mm / Rider's eye and cheekbone, golden-hour catchlight in iris, single strand of blue-white hair across face, dragon scale texture reflected in pupil / SFX: heartbeat
 SHOT 8: Hard cut. Ultra-wide, 14mm / Rider walks away from camera along dragon's spine toward the head, dragon lifts chin to sky, both silhouetted against amber sunset / SFX: low brass swell
+---

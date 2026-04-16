@@ -18,3 +18,4 @@ draft: false
 ---
 
 Start with an epic, ultra-wide aerial view of a mountain town at the base of a volcano. The volcano violently erupts, sending ash, fire, and lava flows racing downhill toward the town, all shown in one sweeping, high-angle establishing shot.
+---

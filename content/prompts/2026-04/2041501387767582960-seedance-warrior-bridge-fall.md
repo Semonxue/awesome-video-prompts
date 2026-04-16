@@ -81,3 +81,4 @@ TIMELINE & ACTION LOGIC:
 14-15s: [Loop] A secondary inertia tremor blasts her off the surface， throwing her back toward a new bridge section. She enters the initial sliding state again， creating a perfect seamless loop.
 
 (SFX: high-frequency wind， metal screeching， low-frequency shockwave， heavy impact)
+---

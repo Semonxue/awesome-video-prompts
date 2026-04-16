@@ -20,3 +20,4 @@ draft: false
 ---
 
 Low-angle tracking shot of a sleek black motorcycle speeding along a desert highway at dawn, dust trails rising behind, the rising sun casts long shadows, heat shimmer blurs the horizon, camera pans smoothly beside the rider
+---

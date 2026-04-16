@@ -72,3 +72,4 @@ Setting: Bangkok flooded streets during monsoon, night
 [11s–13s] Camera cuts to a collapsed overpass. He bursts out of the wave and flies off the broken edge into open air above a temple courtyard.
 
 [13s–15s] Final shot from the courtyard looking up. Silhouette of the boat against green-tinged storm clouds, falling toward floodwater. Cut to black.
+---

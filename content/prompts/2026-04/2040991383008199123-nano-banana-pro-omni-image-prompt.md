@@ -30,3 +30,4 @@ Overhead drone-like shot showing her surrounded by moving people
 Close-up on her face with shallow depth of field
 Rear follow shot as she walks into the crowd
 Cinematic lighting, soft natural daylight, realistic color grading, 4K, shallow depth of field, motion blur, emotional tone, urban realism
+---

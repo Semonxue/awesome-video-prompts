@@ -58,3 +58,4 @@ Cut to Shot 6: The space ahead compresses distance visually shrinking, buildings
 Cut to Shot 7: IMPOSSIBLE MOMENT camera runs through a narrowing gap as two skyscrapers slam together behind
 Cut to Shot 8: Ground lifts upward violently, flipping cars, camera stumbles but keeps moving
 Cut to Shot 9: Final, everything collapses inward toward a single disaster, camera pulled into it mid-run.
+---

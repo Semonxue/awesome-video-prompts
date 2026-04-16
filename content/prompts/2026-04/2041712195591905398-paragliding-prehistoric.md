@@ -43,3 +43,4 @@ TIMELINE:
 00:12.8: Maintain the same first-person line at ground level. Stumble forward two desperate steps, look up, and let a charging Spinosaurus burst out of the river mist with its long jaws thrown wide straight at the lens until the teeth fill the frame. SFX: Ground-shaking footfalls, guttural bellow, snapping jaws.
 
 EXCLUDE: Avoid third-person camera breaks, disjointed hands, impossible flight resets, teleporting terrain, frozen creatures, modern gear drift, impossible neck rotation, cut language.
+---

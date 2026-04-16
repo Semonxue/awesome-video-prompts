@@ -111,3 +111,4 @@ SHOT 13: Insert to MCU, 50mm snap zoom / Smash cut to the office entrance as her
 SHOT 14: OTS, 35mm handheld / Rhythmic cut into fingers racing across keys, chat windows blinking, coffee by the trackpad, and notifications stacking faster than she clears them. / SFX: keyboard burst, notification ticks, mouse click.
 
 SHOT 15: WS, 50mm pull-out / L-cut with a match from laptop close to apartment re-entry as the jacket drops, work clothes peel away, and she changes back into sleepwear before collapsing into bed in the opening frame shape. / SFX: door shut, bag drop, fabric rustle, blanket rustle, room tone.
+---

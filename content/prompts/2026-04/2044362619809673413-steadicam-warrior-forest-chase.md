@@ -28,3 +28,4 @@ draft: false
 ---
 
 A young warrior sprinting through a dense enchanted forest, cloak trailing, breathing fast. Dodges branches, leaps over roots, pursued by unseen force behind. Forest glowing faintly with magical particles, fog drifting between ancient trees. Fast Steadicam tracking weaving through trees, branches passing close to lens, depth and parallax creating immersive movement, natural light mixed with mystical glow.
+---

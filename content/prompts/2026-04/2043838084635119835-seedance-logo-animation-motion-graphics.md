@@ -66,3 +66,4 @@ White-on-black minimal aesthetic. No cuts — one single continuous unbroken vis
 14–15s [LOGO]: The point holds for one silent beat. Then it expands into a clean minimal brand logo — white sans-serif letterforms on black. A single pulse of warm amber light blooms from center behind the logo, fades to black. White text remains.
 
 Style: luxury tech brand motion identity, Bauhaus-minimalist, mathematical precision. Mood: calm, inevitable, intelligent, premium.
+---

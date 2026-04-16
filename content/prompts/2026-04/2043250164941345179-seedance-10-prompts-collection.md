@@ -90,3 +90,4 @@ Cut to the rival car next to him. The younger driver grips the wheel tightly, br
 
 [10–15s] Shot 3: The Green Light (Wide Action)
 The starting lights turn green. Both cars accelerate in perfect sync on the wet asphalt. Water sprays into the camera lens. Motion blur stretches the stadium lights into long streaks of color.
+---

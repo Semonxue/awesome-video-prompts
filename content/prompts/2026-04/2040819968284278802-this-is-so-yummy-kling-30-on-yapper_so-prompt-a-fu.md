@@ -40,3 +40,4 @@ Cozy warm kitchen environment, tall impressive stack of golden crispy waffles pi
 
 STYLE:
 Pixar CGI quality, subsurface scattering on fur, soft warm volumetric kitchen lighting, photorealistic food textures on waffles, golden crispy waffle texture with butter melting, ray-traced reflections on metal waffle iron, cinematic depth of field, vibrant warm color palette, 8K render quality.
+---

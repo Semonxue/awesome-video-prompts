@@ -29,3 +29,4 @@ draft: false
 ---
 
 A man sprinting through a coastal city, panic in his eyes, water reflecting in the distance. Turns as a colossal tsunami wave rises behind buildings, swallowing everything in its path. Modern seaside city with streets flooding, cars abandoned, people running in chaos . Tracking shot moving backward in front of him, camera shaking as water crashes through streets, debris rushing toward lens, overwhelming scale and unstoppable force.
+---

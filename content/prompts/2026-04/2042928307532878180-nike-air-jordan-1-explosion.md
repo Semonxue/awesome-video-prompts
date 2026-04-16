@@ -68,3 +68,4 @@ Speed ramps to 200%. Every component reverses inward with mechanical precision. 
 Speed drops to 20%. Camera settles into a classic three-quarter angle. Amber light catches the Swoosh in one clean specular line. The shoe glows against the void. Pure black.
 00:06.5–00:07 · End Card
 Smooth fade to black. Nike Swoosh fades in centred, full white. Below it: "Air Jordan 1 — Built to defy gravity." Film grain. Hold.
+---

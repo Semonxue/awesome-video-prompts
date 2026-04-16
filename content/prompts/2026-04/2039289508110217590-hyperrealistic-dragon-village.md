@@ -26,3 +26,4 @@ draft: false
 
 
 Hyper-realistic and ultra-detailed photograph of a real dragon flying above a medieval village. The dragon appears perfectly alive, with extremely realistic skin, scales, eyes, claws, and textures. Natural lighting with coherent shadows and reflections matching the environment. Original and dynamic camera angle conveying a sense of movement and powerful presence. Purely authentic photographic look, with no 3D or illustrative style. Natural depth of field, believable atmosphere, and a medieval environment seamlessly integrated with the dragon.
+---

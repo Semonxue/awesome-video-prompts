@@ -19,3 +19,4 @@ draft: false
 ---
 
 Ultra-fast low-angle tracking shot across desert dunes under a blazing sun. The camera moves backward rapidly as an ancient Egyptian warrior sprints forward, sand exploding with each step
+---

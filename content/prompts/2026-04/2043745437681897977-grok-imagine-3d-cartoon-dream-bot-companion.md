@@ -21,3 +21,4 @@ draft: false
 ---
 
 3D cartoon-style render of a dream-bot companion, with a soft matte translucent body in blush pink and glowing holographic silver accents. Features include oversized head, exaggerated facial features, and fun accessories. Subtle internal glow and ambient lighting, centered on a dark gradient background. Stylized in a playful and imaginative atmosphere.
+---

@@ -37,3 +37,4 @@ draft: false
 
 
 Highly detailed cinematic 4K animated video, precious enchanted Fabergé-style Easter eggs floating in a dreamy ethereal space, ornate golden filigree and glowing runes on creamy porcelain and jewel-toned shells, semi-transparent eggs revealing intricate animated miniature fantasy worlds inside: tiny medieval castles with sparkling towers, blooming flower meadows, gentle waterfalls, flying fairies, lush miniature forests and magical creatures moving gracefully, soft pastel color palette of blush pink, lavender, gold, mint and baby blue with warm magical sparkles and volumetric god rays, delicate floating petals and light particles, ultra smooth animation, slow elegant camera orbit and gentle zoom into the miniature worlds, whimsical high-fantasy digital art style, joyful magical atmosphere, Happy Easter vibe, ultra realistic textures mixed with dreamy illustration, soft cinematic lighting, magical realism --ar 9:16 --stylize 650 --v 6
+---

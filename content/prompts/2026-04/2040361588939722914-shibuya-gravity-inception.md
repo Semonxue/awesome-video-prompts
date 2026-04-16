@@ -31,3 +31,4 @@ draft: false
   "location": "Shibuya Scramble Crossing",
   "video_prompt": "Cinematic wide shot from the center of Shibuya Scramble Crossing. Suddenly, the four main roads surrounding the intersection begin to bend upward, defying gravity. The entire city blocks, including the 109 building and surrounding skyscrapers, fold in a seamless 90-degree curve to form the inside of a massive cube. Pedestrians and cars are seen walking and driving on the now-vertical and overhead surfaces. The camera executes a dizzying 360-degree orbital rotation, revealing the surreal, enclosed urban landscape. Photorealistic 8k, dynamic lighting shifts, epic scale."
 }
+---

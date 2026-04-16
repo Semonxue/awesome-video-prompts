@@ -53,3 +53,4 @@ Speed 3% — absolute slow motion. A boot descends onto lunar regolith — the d
 Speed 2%. The Speedmaster floating in the void of space — Earth below, stars above. Every surface element reads: the black dial, the three sub-registers, the hesalite crystal's warm distortion at the edges, the steel case catching starlight. The chronograph still running. Mission: ongoing.
 00:14.5–00:15 · END CARD
 Hard cut to black. Omega Seahorse. "The first watch worn on the moon." No grain — this moment is crystal clear. Then: one frame of grain. Cut.
+---

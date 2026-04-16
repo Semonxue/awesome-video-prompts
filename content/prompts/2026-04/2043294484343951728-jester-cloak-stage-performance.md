@@ -40,3 +40,4 @@ A dramatic talent show stage performance, a young Black man wearing a green slee
 The creature was previously a huge four-legged beast standing beside him (like a giant floppy-eared dog or mythical monster). Spotlights from above creating strong dramatic beams of light and lens flares, vibrant red and blue neon star-shaped background on a large LED screen, professional stage lighting.
 
 In some versions he is petting the giant creature, waving at the audience, or fully transformed into wearing the creature as a majestic flowing cloak. Cinematic, highly detailed, photorealistic, epic composition, dynamic pose, reflections on floor, viral talent show moment --ar 9:16 --stylize 750 --v 6
+---

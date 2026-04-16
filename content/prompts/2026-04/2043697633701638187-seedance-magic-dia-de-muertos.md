@@ -79,3 +79,4 @@ SHOT 6 (0:12–0:15) — OPEN ARMS + REANIMATE
 - Inverse shockwave. 1,000 flames reignite from her position outward — a chain of light racing both directions simultaneously.
 - Marigold petals resume their fall — golden rain on her shoulders. Drums. Horns. Whistles. Life returns.
 - She is already walking, already part of the parade. Cut to black.
+---

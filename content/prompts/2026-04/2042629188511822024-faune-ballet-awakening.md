@@ -21,3 +21,4 @@ draft: false
 ---
 
 Immerse yourself in the poetic beauty of this ballet performance. Watch the fluid movements of the dancer as he brings the spirit of the faun to life against a backdrop of ethereal, giant white blossoms. A perfect blend of classical art and modern visual storytelling... (with sound)
+---

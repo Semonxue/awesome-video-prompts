@@ -50,3 +50,4 @@ VERTICAL CITY — São Paulo Parkour at Sunset A teenage girl, 17, athletic, bla
 [11s–13s] She climbs hand over hand up the exterior of a high rise, using window frames and AC units. Below her, the city transitions from sunset orange to electric nightlife purple.
 [13s–15s] She reaches the top. Stands on the edge. Arms out. The entire city sprawls below her in every direction, lights flickering on like stars being born. Wind ripples her shirt. Cut to black.
 São Paulo favela rooftops, sunset parkour, silhouette jumps, vertical city, golden hour to nightfall transition, cinematic tracking, 4K.
+---

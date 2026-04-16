@@ -59,3 +59,4 @@ draft: false
   "effects": "glowing particles, energy streams, light refraction through crystal facets"
 }
 }
+---

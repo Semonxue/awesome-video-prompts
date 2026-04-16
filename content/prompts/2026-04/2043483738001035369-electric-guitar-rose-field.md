@@ -31,3 +31,4 @@ draft: false
 ---
 
 An orbiting shot shows someone wearing a sleek black business suit, they are standing in a beautiful field of small white roses. The atmosphere is slightly foggy ensuring the person is clearly visible. The scenes starts with the person standing in the center of the frame, their eyes are closed and they quickly exhale. The scene starts with their hands empty and then an electric guitar appears in the persons hands as it transforms from electricity and unfolds in mechanical layers. The person plays the most epic tune and the white roses start swirling around them quickly and the video ends with the person playing the last note. As soon as they play the last note the flower petals get stuck to their suit and turn the suit white, they are still holding the guitar. No Dialogue.
+---

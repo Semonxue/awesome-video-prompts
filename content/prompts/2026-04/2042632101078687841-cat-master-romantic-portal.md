@@ -93,3 +93,4 @@ The parrot emerges, shaking her feathers as droplets sparkle in golden light, he
 [00:13–00:15] Shot 5: Climax Ending (proposal)
 The cat kneels and presents a diamond ring. Surrounding grey cats cheer and embrace, ending in a warm, joyful atmosphere.
 【Music】Romantic strings + soft laughter
+---

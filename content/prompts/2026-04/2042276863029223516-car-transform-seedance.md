@@ -37,3 +37,4 @@ draft: false
 [Context]: A winding, rain-soaked road passing through a dense pine forest covered in fog. Tall trees rise on both sides, partially hidden by thick fog. The rain is pouring down like a bucket, and glare appears on the smooth asphalt, reflecting the transformation.
 
 [Style and Atmosphere]: An intense sci-fi action movie inspired by action movies. Realistic, rough CGI textures with dark metallic finish and barely noticeable rust. The stage is illuminated by the cold blue tones of stormy twilight, which contrast sharply with the fiery orange glow of the fur's breath and piercing red eyes, adding to the dramatic tension.
+---

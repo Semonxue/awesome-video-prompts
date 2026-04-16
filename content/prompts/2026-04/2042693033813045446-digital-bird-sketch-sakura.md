@@ -23,3 +23,4 @@ draft: false
 ---
 
 A sped up screen recording showing a digital sketch of a beautiful bird in sakura, starting from white, building up the layers, to produce a masterpiece, no ui
+---

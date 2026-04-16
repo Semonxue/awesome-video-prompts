@@ -23,3 +23,4 @@ draft: false
 ---
 
 Create a boxing training montage  young boxer working with an old coach, hitting pads, jumping rope, heavy bag. Gritty gym lighting, sweat flying in slow motion. Give me that Rocky energy.
+---

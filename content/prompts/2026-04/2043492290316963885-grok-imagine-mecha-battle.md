@@ -39,3 +39,4 @@ They are intensely battling with powerful punches, uppercuts, and body blows. Ma
 Dramatic high-angle aerial camera orbiting and circling the fight, revealing turquoise ocean, sandy beach, coastal highway, and distant mountains in the background. Bright sunlight, lens flares, volumetric god rays. Hyper-detailed mechanical textures, realistic physics, destruction, and scale.
 
 Ultra-realistic 8K cinematic quality, dramatic lighting, intense action, blockbuster movie style like Pacific Rim and Transformers combined.
+---

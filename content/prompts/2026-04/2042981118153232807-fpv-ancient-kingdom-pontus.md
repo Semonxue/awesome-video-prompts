@@ -29,3 +29,4 @@ draft: false
 ---
 
 extremely fast-paced FPV flying through the ancient Kingdom of Pontus at its peak, cinematic and hyper-realistic, sweeping over rugged Black Sea cliffs, dense green forests, and grand Hellenistic cities with marble temples and fortified walls, soldiers training in courtyards, markets bustling with traders, golden sunlight casting dramatic shadows, epic scale, rich textures, volumetric lighting, 4K, HDR, anamorphic lens, dramatic cinematic color grading
+---

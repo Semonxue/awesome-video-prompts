@@ -79,3 +79,4 @@ Special Effects: Real, blinding blue-white electric currents (Real Plasma Arcs) 
 【Slow Motion/Big Explosion】The two collide at high speed in the center of the frame.
 Action: The physical water sword and the lightning blade strike each other fiercely.
 Special Effects: No manga lines, only a real physical particle explosion. Massive amounts of water vapor, mud, shattered branches, and dazzling electrical sparks scatter in the air. The shockwave creates realistic ripples in the standing water beneath their feet. The image possesses immense weight and destructive power.
+---

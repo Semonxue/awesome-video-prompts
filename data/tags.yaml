@@ -1092,3 +1092,9 @@ nano-banana-pro:
   description_en: "Nano Banana Pro image generation model"
   description_zh-cn: "Nano Banana Pro图像生成模型"
 
+
+prompt-generator:
+  en: prompt-generator
+  zh-cn: 提示词生成器
+  description_en: "Tools and resources for generating AI video prompts"
+  description_zh-cn: "用于生成AI视频提示词的工具和资源"

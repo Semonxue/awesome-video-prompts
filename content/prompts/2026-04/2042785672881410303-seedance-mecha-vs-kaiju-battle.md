@@ -46,3 +46,4 @@ Scene 3: The Mecha Transformation
 Extreme close-up of a high-tech robotic helmet with a gold visor. Glowing energy tendrils wrap around the helmet as it snaps into place. Fast-paced transformation sequence, white and gold mechanical armor, intricate detailing, lens flare.
 Scene 4: The Aerial Battle
 A white and gold winged mecha suit flying through a grey, cloudy sky. The mecha fires a powerful golden energy beam from its chest at a massive kaiju monster standing next to a school bus. Epic scale, cinematic explosion, high-octane battle.
+---

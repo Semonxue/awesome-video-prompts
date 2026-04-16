@@ -51,3 +51,4 @@ Cinematic first-person action, 14 seconds, epic stormy frozen wasteland, blue-cy
 12-14s: Extreme close-up on serpent's maw blasting blinding white-blue energy beam with lightning toward camera. Final wide shot of explosive destruction across the canyon, ice-covered hands in foreground.
 
 Style: Hyper-detailed ice textures, heavy motion blur, dramatic lighting, handheld shake, cinematic like The Revenant + Godzilla.
+---

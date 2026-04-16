@@ -35,3 +35,4 @@ draft: false
 
 
 A squad of futuristic soldiers in heavy armor descending rapidly with jet thrusters, flames trailing behind them, bodies tense against the force. They dodge incoming anti-air fire while adjusting trajectory mid-air before impact. Massive alien planet surface below, covered in war zones, explosions, and glowing impact craters. High-speed aerial tracking shot following them from above, transitioning into side tracking during descent, motion blur and heat distortion, explosive lighting cutting through smoke-filled atmosphere.
+---

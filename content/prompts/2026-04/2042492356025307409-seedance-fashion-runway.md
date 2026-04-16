@@ -56,3 +56,4 @@ Shot 5 (00:03-00:04): Wide fixed shot. Model in brown sleeveless top and leopard
 Shot 6 (00:04-00:05): Wide fixed shot. Model in white blue-flower crop top and light blue wide-leg jeans, white frame sunglasses, pink folder and blue crossbody bag, shaking long hair. Match cut transition. Light blue and white, bright pink accents, youthful energetic mood.
 Shot 7 (00:05-00:07): Wide fixed shot. Model in sky blue sports skirt set, white sun hat, large white bag, walking and adjusting watch and cuffs, walking closer to camera. Hard cut transition. Bright sporty blue and white, healthy vibrant mood.
 Consistent model appearance, smooth transitions, high fashion photography style, summer street fashion video.
+---

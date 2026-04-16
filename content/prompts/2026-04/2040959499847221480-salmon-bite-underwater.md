@@ -26,3 +26,4 @@ Fast push into his eye—reflection blooms into light, scene dissolves (7–8s).
 Underwater world: wide shot, sun rays through turquoise water, corals, seaweed, schools of salmon swimming. Man floats weightlessly, watching fish in calm wonder. Slow orbit, light beams shifting (8–13s).
 Match cut back to restaurant—same angle, he swallows, smiles, continues eating (13–15s).
 SFX: knife slice, soft chew, restaurant ambiance fading into underwater sounds and back. No text overlays.
+---

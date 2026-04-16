@@ -78,3 +78,4 @@ Cut to front: tentacles suddenly retract sharply, releasing her mid-motion. She 
 13–15s
 
 Handheld close-up pushes toward her face as the final transformation completes her facial structure shifts into an alien form with organic interconnected textures, surfaces stretching and reforming fluidly. She lifts her head slowly, then lets out a sharp hiss, revealing rows of sharp, unnatural teeth. Her eyes darken, expression turning predatory as the camera shakes subtly in front of her.
+---

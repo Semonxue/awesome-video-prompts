@@ -39,3 +39,4 @@ AUDIO:  Rocket engine roar, wind, fiberglass creak.
 TIMELINE: 0-3s:  Guy in jeans and a black t-shirt is barely holding on the side of an active SpaceX rocket at 12,000 feet. The rocket is climbing. 3-7s:  Hard zoom in cut on his face. His hair is plastered straight back. The ground is falling away below. 7-12s: The rocket hits max Q. The whole booster shakes violently.  He grips tightly, his knees absorb it perfectly. 12-15s: He pulls a  beer can out of his hoodie pocket, cracks it open. Takes one sip, cheers and yells: "Worth it!". Hard cut. 
 
 QUALITY: 8K photorealistic, correct physics, fabric motion blur, no artifacts.
+---

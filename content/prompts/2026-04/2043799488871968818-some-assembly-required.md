@@ -75,3 +75,4 @@ On screen:
 Audio Direction
  SFX: wood clicks, sliding panels, soft mechanical assembly sounds
  Music: light playful build → slightly epic → soft comedic finish
+---

@@ -35,3 +35,4 @@ Shot 2 (2s): The ice wall peels forward and hits the fjord. A massive wave launc
 Shot 3 (3s): Fast tracking alongside the vessel running at full speed up the fjord, a wall of water three times its height closing fast behind it, the fjord walls squeezing the wave taller as it runs.
 Shot 4 (2s): The fjord opens to open ocean. The wave spreads and drops. The vessel punches through into calm water. The fjord behind it still boiling white.
 Shot 5 (3s): Extreme wide aerial pulling upward. The entire fjord white with churning water. The broken ice already rolling. The vessel a tiny shape in open ocean heading away from it all.
+---

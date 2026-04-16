@@ -31,3 +31,4 @@ draft: false
 ---
 
 A 26–27-year-old British woman named Charlotte Hayes, with natural blonde hair styled in soft loose waves that fall just past her shoulders, fair skin with a subtle rosy undertone, and refined facial features with light blue eyes. She has an effortlessly elegant UK-based look, blending modern city style with a touch of classic charm. She is wearing a chic yet casual outfit — tailored high-waisted trousers, white sneakers, and a light beige trench coat over a simple fitted top. Her posture is relaxed and confident, with a calm, observant expression. Realistic style, cinematic lighting, highly detailed, photorealistic, 8K.
+---

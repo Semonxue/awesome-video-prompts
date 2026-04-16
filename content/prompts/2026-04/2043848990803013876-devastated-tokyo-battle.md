@@ -57,3 +57,4 @@ Visual Style:
 Ultra-cinematic realism, raw 35mm film texture, anamorphic lens compression, subtle film grain, high dynamic range shadows, dramatic chiaroscuro lighting, volumetric dust and atmosphere, realistic debris physics, high-speed shutter detail during energy moments.
 Negative style constraints:
 No neon lighting, no oversaturated colors, no glossy plastic surfaces, no artificial CGI glow, grounded cinematic realism.
+---

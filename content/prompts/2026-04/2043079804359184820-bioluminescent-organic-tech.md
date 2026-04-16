@@ -43,3 +43,4 @@ A fast-paced, ethereal fantasy-tech animation with fluid dynamics.
 12-15s (Bioluminescent Exhale): The sneaker's side stripe takes a deep "breath" and exhales a massive, blinding cloud of glowing orange bioluminescent spores right into the camera lens.
 
 15s (End Graphic): Quick cut to black. Sleek white text appears: "designed by el.cine".
+---

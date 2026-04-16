@@ -27,3 +27,4 @@ draft: false
 ---
 
 Prepare for a showdown of titanic proportions! A squad of elite soldiers faces off against a gargantuan, bioluminescent creature looming over a futuristic city. The scale is terrifying, the atmosphere is electric, and the tension is at its breaking point as the beast begins to stir... (with sound)
+---

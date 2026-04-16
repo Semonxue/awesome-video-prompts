@@ -143,3 +143,4 @@ Time snaps back instantly.
 
 13.0–15.0s — END
 <FINAL_STATE>.
+---

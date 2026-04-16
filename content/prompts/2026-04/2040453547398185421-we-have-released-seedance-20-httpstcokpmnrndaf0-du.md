@@ -89,3 +89,4 @@ The video ends with a close-up of the face, capturing the reflection of neon lig
 Continuous Motion: No cuts or fades; the camera must transition from the car-tracking shot to the face-zoom seamlessly.
 Material Consistency: The robot must maintain the exact metallic silver paint, texture, and reflections of the Porsche.
 Energy: The transformation should feel high-energy and "force-driven," while the final gesture is soft and charismatic.
+---

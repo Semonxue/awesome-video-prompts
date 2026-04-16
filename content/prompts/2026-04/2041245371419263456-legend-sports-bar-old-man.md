@@ -30,3 +30,4 @@ aesthetic: phone held up in a packed sports bar, wall of TVs glowing behind
     - "4-8s: The drop hits. He slams both beers, crushes the cups, and starts stomping on the bar. Glasses and bottles jump. The bartender ducks. The crowd goes berserk."
     - "8-15s: He's dancing on the bar, loafers sliding on the wet surface. People reaching up to high-five him. He points at someone in the crowd and flexes. The cardigan is coming apart. He does not care."
   quality: single shot from below the bar looking up, TV glow, the old man towering over the crowd, beer foam everywhere
+---

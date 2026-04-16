@@ -33,3 +33,4 @@ She wears an ultra-detailed, glossy black-and-white futuristic armored bodysuit:
 Behind her towers a massive, weathered white battle mech/robot, heavily detailed with battle damage, rust, exposed mechanical parts, giant hydraulic limbs and cockpit head, cinematic low-angle shot.
 
 Photorealistic, hyper-detailed 8K, cinematic lighting, sharp focus, dramatic rim lighting, subtle dust in air, epic sci-fi atmosphere, perfect anatomy, intricate mechanical textures, glossy reflections on armor --ar 9:16 --stylize 250 --v 6
+---

@@ -36,3 +36,4 @@ The cat uses a hairdryer on the lion's head — warm airflow sounds + lion's con
 A furry human-like arm styles the lion's new pompadour haircut  gentle brushing sounds cut
 The lion turns to face the camera, strikes a confident pose with one paw raised, wearing sunglasses, and gives a thumbs-up with a furry hand  cheerful lion roar + satisfied purring
 End Shot: The lion strikes a confident superhero pose with one paw raised, wearing sunglasses, looking at the camera with a smug expression. The cat barber stands beside him with a satisfied nod. The lion's stylish pompadour haircut is prominently displayed
+---

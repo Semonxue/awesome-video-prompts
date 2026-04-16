@@ -163,3 +163,4 @@ Camera shakes, then stabilizes facing the creature
 Dragon raises head
 
 Freeze
+---

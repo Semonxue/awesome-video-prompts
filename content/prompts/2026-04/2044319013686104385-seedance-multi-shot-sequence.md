@@ -68,3 +68,4 @@ SHOT 12: MS to CU, 35mm glide into 85mm push-in / Sound bridge into the blinding
 SHOT 13: Insert to MCU, 50mm snap zoom / Smash cut to the data-spike violently stabbing into the server port, blue electricity arcing across the chrome knuckles. / SFX: heavy crunch, electrical zap.
 SHOT 14: OTS, 35mm handheld / Rhythmic cut into holographic code streaming violently around the synthetic's face, red alarms flashing in the reflections, fingers flying over a tactile glass keyboard. / SFX: glass tap, klaxon blare, high-speed data whine.
 SHOT 15: WS, 50mm pull-out / L-cut with a match from the blinding white server close to the dark pod re-entry as the stealth suit collapses, weapons hit the floor, and the synthetic sinks backward in the cooling mesh into the fluid pod in the opening frame shape. / SFX: gear clatter, water splash, power down whine, fluid bubble.
+---

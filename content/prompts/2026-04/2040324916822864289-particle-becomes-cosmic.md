@@ -37,3 +37,4 @@ As the pink stars begin to fade and drift away, they reveal a dreamy deep pink c
 In the center, an astronaut and a woman gently float toward each other. Their movement is slow and weightless.
 
 Highly cinematic, soft glow lighting, dreamy atmosphere, volumetric lighting, depth of field, epic romantic tone, ultra detailed, 4K, smooth motion.
+---

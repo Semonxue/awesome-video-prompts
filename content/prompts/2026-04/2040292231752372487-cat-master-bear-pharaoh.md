@@ -81,3 +81,4 @@ S13: Slow push-in as the flame reveals the massive mummy gray bear standing inch
 S14: Extreme close-up split-second beat—wide eyes from both the orange cat and the bear.
 
 S15: Sudden explosive reaction—both scream at the exact same time and violently jump backward in perfect sync, knocking over ancient artifacts in a chaotic comedic crash.
+---

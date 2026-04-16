@@ -68,3 +68,4 @@ path:
     framing: low angle, slow final push-in, camera rests
 foreground_wipes: diagonal blades, petals, feathers, ribbons passing close to lens between reveals
 negative: hard cuts, static camera, fades, text, photorealism
+---

@@ -61,3 +61,4 @@ Scene 3: Frontal Armament: Chest Cannon Bay (8-12s)
 Action: Extreme close-up on the chest armor plates. The heavy plating slides open in a complex clockwork sequence, revealing a colossal kinetic energy cannon nestled in the torso. Blue plasma arcs dance around the rifled barrel. The surrounding air begins to shimmer from intense thermal energy. The camera captures the intricate clicking of locking mechanisms.
 Scene 4: Ultimate Judgment: Devastating Strike (12-15s)
 Action: The cannon fires a devastating, blinding cyan energy beam directly from the chest. The massive recoil forces the titan to dig its metal claws into the bridge. The beam pierces through abandoned vehicles, causing them to melt and explode instantly. A shockwave ripples through the air, shattering remaining glass. Epic cinematic wide shot, masterwork, apocalyptic aesthetic.
+---

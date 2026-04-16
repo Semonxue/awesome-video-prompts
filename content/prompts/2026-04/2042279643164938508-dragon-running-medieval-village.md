@@ -28,3 +28,4 @@ draft: false
 A massive dragon running on all fours, wings partially extended, claws crushing the ground. Charges forward at high speed, destroying everything in its path.
 Ruined medieval village with burning buildings and debris.
 Low tracking shot running just ahead of the creature, ground cracking under impact, debris flying past the lens, overwhelming scale and power.
+---

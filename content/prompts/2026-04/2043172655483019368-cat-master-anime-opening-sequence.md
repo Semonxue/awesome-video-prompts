@@ -175,3 +175,4 @@ struggle between light and darkness, and rising beyond fear.
 
 negative:
 hard cuts, static camera, photorealism, slow pacing, text overlays, subtitles, logo, watermark
+---

@@ -20,3 +20,4 @@ draft: false
 Playful high-stakes slapstick cinematic scene in an abandoned wooden warehouse with warm amber sunlight and cool industrial shadows. A mischievous ginger tabby cat wearing a tiny tactical harness performs a secret “spy mission” while suspended from a rope, holding a lit firecracker. Below him, a plump white chicken wearing a blue nightcap sleeps on grain sacks, snoring loudly.
 The cat theatrically drops the firecracker into the chicken’s nightcap. It explodes in a burst of purple smoke and flying feathers. The chicken is launched upward in exaggerated cartoon physics, then lands dazed, slowly turning toward camera with glowing red eyes in a dramatic cliffhanger.
 Style: cinematic comedy, Mission Impossible parody, ultra-detailed, volumetric lighting, dust particles, feather physics, squash-and-stretch animation, dynamic motion, 120 BPM orchestral slapstick score, high detail, 4K, film-quality rendering.
+---

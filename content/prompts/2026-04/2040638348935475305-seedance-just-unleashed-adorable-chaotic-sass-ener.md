@@ -33,3 +33,4 @@ Focus on smooth body plasticity, head turn, shoulder turn, eye movement, hand ge
 No text on screen. No captions. No overlays.
 Visual style: ultra-cute polished 3D character animation, soft pastel lighting, clean background, meme-ready, adorable but sassy.
 No realism, no horror, no ugly face, no distorted eyes, no extra fingers, no extra limbs, no blurry motion, no low-detail fur, no dark background, no aggressive tone, no human body proportions.
+---

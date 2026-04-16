@@ -122,3 +122,4 @@ A cinematic, stylized 16:9 animated sequence set in a grand opera house, blendin
 [Shot 16] 12.0s-13.0s: Emotional close-up. She embraces the orange cat. The orange cat blushes shyly while still holding the guitar.
 
 [Shot 17] 13.0s-15.0s: Wide finale. The stage fills with cheering animal performers applauding enthusiastically. Warm golden lighting, celebratory theatrical atmosphere, curtain glowing softly in the background.
+---

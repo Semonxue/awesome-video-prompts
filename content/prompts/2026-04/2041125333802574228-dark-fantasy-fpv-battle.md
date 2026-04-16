@@ -94,3 +94,4 @@ A larger creature lunges directly at the camera. It freezes mid-charge in the ai
 12.5–15s
 Both hands extend and unleash a massive radial psychic shockwave, blasting monsters, rubble, ash, and sparks outward across the battlefield.
 No CGI, no cartoon, no anime, no game look, no plastic textures, no floaty motion, no low detail, no chaotic action
+---

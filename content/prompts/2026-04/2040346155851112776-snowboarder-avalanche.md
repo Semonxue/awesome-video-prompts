@@ -25,3 +25,4 @@ draft: false
 
 
 A snowboarder in a neon blue suit races down a steep alpine ridge as a massive avalanche begins collapsing behind him. At the 2-second mark he hits a natural snow ramp and launches across a deep crevasse. Camera follows close behind as the avalanche wave explodes through the mountain slope. He lands on a narrow ice ridge and continues descending through flying snow debris. Avalanche stunt escape, crevasse jump, high-speed snow chaos, cinematic mountain scale, 4K.
+---

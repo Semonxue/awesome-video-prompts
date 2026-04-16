@@ -37,3 +37,4 @@ SUBJECT EXAMPLES:
 → A burning classic white two-story farmhouse with porch and parked truck surrounded by vast cornfield
 → A woman with windswept reddish-brown hair trying to move forward through a long cornfield
 → Or write your own subject and be creative!
+---

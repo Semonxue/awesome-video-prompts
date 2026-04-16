@@ -21,3 +21,4 @@ draft: false
 ---
 
 a beautiful woman in tanktop and hotpants transforms in to a werewolf. make it gritty, like a grindhouse b-movie from the 80s. practical effects. very detailed transformation. horrific. grain, dusty film, vhs look, grindhouse look, high contrast at moon light. side alley at night. multishot. lots of cuts
+---

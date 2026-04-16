@@ -61,3 +61,4 @@ A high-speed, kinetic street-style commercial with a breakdancer.
 12-15s (Energy Shockwave): A violent shockwave of orange energy pulses up from the sole. It shatters the frozen raindrops and blinds the camera lens with bright orange light.
 
 15s (End Graphic): Quick cut to black. Sleek white text appears: "designed by el.cine".
+---

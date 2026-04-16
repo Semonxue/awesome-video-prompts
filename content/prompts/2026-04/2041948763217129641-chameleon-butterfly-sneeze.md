@@ -33,3 +33,4 @@ TIMELINE:  0:00–0:03: Close-up. The chameleon is perfectly green, camouflaged 
 0:07–0:10: The internal pressure builds. The chameleon's body inflates like a round rubber balloon, its cheeks puffing out massively. The butterfly stays perfectly still on its nose.
 
 0:10–0:12: The sneeze! A powerful, sudden burst of air. The force of the sneeze launches the completely round chameleon backward off the branch like a rocket, leaving the butterfly spinning in mid-air in a cloud of glowing yellow pollen.
+---

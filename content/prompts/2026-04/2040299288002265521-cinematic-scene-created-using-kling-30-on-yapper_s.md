@@ -31,3 +31,4 @@ Style: dreamy, fantasy portrait, anime-realistic, soft cinematic lighting.
 Camera: slow forward dolly / subtle push-in
 Motion: cherry blossom petals falling, hair lightly moving in the breeze
 Quality: ultra detailed, 4K, shallow depth of field, filmic color grading
+---

@@ -66,3 +66,4 @@ Character Continuity: The same red-haired woman stands center, smiling confident
 Wardrobe (Character 3 — "Tech-Ninja"): Full matte-black tactical jumpsuit in technical fabric; asymmetrical layered vest with utility straps; multi-strap chest harness with glowing magnetic buckles; full gloves with integrated digital displays; chunky combat platform boots.
 Interface Elements: Gigantic simplified floating 3D app icons — Instagram camera, TikTok "d", Snapchat ghost — swirling around her.
 The Finale: She looks directly at the camera, playfully catches a glowing "Like" (Heart) icon from the air, gives a sharp wink, and throws the icon straight into the camera lens. The icon covers the lens, turning the screen instantly to black — creating a definitive ending or a seamless loop back to the start.
+---

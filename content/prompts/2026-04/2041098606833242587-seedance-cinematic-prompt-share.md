@@ -76,3 +76,4 @@ The Behemoth: A colossal, morbidly obese giant in a stretched leopard-print sing
 
 [STYLE & QUALITY BOOSTERS]
 Photorealistic 8K, ultra-detailed skin textures and sweat, cinematic stadium lighting, perfect motion blur, high dynamic range, no artifacts, coherent multi-subject physics.
+---

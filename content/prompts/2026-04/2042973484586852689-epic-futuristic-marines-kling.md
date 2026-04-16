@@ -23,3 +23,4 @@ draft: false
 ---
 
 A squad of futuristic marines running in formation, shouting commands, weapons firing. Behind them, a massive alien creature bursts through structures and charges forward violently. Industrial colony environment, metallic structures collapsing, sparks and fire everywhere. Tracking shot running alongside the squad, whip pan to reveal creature, debris flying toward camera, aggressive motion and raw chaos.
+---

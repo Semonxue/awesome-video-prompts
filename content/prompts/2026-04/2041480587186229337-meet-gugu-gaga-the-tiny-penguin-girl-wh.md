@@ -45,3 +45,4 @@ Sound design: cute penguin chirping sound effect, soft "boing" when pancake land
 
 Voice Line (cute, high-pitched):
 "GuGuGaGa!"
+---

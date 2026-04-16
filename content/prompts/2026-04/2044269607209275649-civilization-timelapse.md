@@ -83,3 +83,4 @@ Camera: Constant slow forward dolly at chest height. No lateral movement, no til
 [QUALITY]
 
 Photorealistic 8K. Each era architecturally distinct — mud, stone, brick, steel, glass. Transformations bridge through shared shapes: walls become walls, roads become roads. No duplicates. Consistent forward momentum. Gradual lighting transitions.
+---

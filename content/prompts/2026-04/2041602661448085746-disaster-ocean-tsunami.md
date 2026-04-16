@@ -37,3 +37,4 @@ Cut to Shot 6: IMPOSSIBLE MOMENT camera runs under a partial overhang of water c
 Cut to Shot 7: Impact begins behind water slamming ground, explosive force chasing camera
 Cut to Shot 8: Camera jumps over debris as water engulfs everything around
 Cut to Shot 9: Final full impact, frame consumed by violent water and debris
+---

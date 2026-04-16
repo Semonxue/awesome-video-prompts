@@ -57,3 +57,4 @@ Shot 7: Ultra-fast sequence of disintegration shots. The skeletal army is instan
 Shot 8: Wide epic drone pull-back. Wukong stands silhouetted in front of the colossal golden Buddha and the vast heavenly army. The battlefield, once dark and corrupted, is now purified, glowing with divine light. Golden particles drift through the air like sacred snow.
 
 Final frame: Freeze in epic tension—Wukong gripping his staff, head slightly bowed, while behind him the Buddha and celestial army radiate infinite power, dominating the horizon.
+---

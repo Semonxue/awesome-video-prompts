@@ -101,3 +101,4 @@ Shot 11 (11.6–13.0s) — Medium moving shot; she runs along spine; foreground 
 Shot 12 (13.0–14.6s) — Medium close-up; she reaches head; grabs horn; blue current flows; Kirin thrashing slows.
 
 Shot 13 (14.6–16.0s) — Moving medium hold; Kirin stabilizes midair; she stands on head; storm fades; she says softly, "Easy…" wind softens, cinematic style.
+---

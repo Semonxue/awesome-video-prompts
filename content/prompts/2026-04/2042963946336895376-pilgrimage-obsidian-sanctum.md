@@ -26,3 +26,4 @@ draft: false
 ---
 
 A hauntingly beautiful procession into the unknown. Watch as these robed figures vanish into the depths of a colossal, soot-covered temple guarded by ancient stone titans. The monochrome palette and the sheer scale of this brutalist architecture evoke a sense of timeless awe... (with sound)
+---

@@ -85,3 +85,4 @@ He adjusts his posture casually, starts walking again like nothing happened
 People around stand frozen in shock, watching him silently
 
 Cinematic ending, soft ambient sound, hero walks away into neon-lit street
+---

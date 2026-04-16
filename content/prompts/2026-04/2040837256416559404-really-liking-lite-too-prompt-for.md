@@ -17,3 +17,4 @@ draft: false
 
 
 create a multi clip Veo 3.1 LITE video of a big chubby rabbit with large ears getting a haircut with a visible hairdresser in all scenes. shampooing, cutting, everything. final scene with a pink punk hairdo.
+---

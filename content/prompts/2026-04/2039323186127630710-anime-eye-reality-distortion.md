@@ -49,3 +49,4 @@ thin energy veins extend across the sclera (white of the eye), faint luminescent
 camera continues slow push-in, reflections in the eye show impossible space (like another dimension or abstract void)
 
 ultra detailed anime style, cinematic lighting, high contrast, no cartoon exaggeration, elegant and mysterious, no text
+---

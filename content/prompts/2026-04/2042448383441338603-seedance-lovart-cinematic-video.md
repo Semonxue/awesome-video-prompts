@@ -104,3 +104,4 @@ Texture & Materiality:
 Water: Extraordinarily transparent — sand ripples visible on the seabed. On impact, the splash is rendered droplet by droplet, each one sharp and crystalline.
 Architecture: The villa's exterior is modern, built from white vertical louvers. The wooden decking carries the dry, sun-baked texture of tropical timber.
 Wardrobe & Hair: Light brown hair flows naturally in the strong tropical wind. The white crop camisole and hotpants reinforce an open, healthy, unmistakably summer feel.
+---

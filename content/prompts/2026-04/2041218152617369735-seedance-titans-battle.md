@@ -53,3 +53,4 @@ Color logic: deep ocean blue, molten orange-red, storm gray and electric white.
 Escalation builds as all three forces collide at the same point, destabilizing the entire coastline.
 Final beat: hard POV shift — camera becomes the wave-fire-storm collision itself, rushing forward as all elements merge into a single catastrophic blast.
 Massive environmental destruction, multi-element physics interaction, cinematic scale, 4K ultra-detail.
+---

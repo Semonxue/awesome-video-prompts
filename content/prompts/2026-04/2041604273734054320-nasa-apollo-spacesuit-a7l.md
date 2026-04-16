@@ -53,3 +53,4 @@ NASA APOLLO SPACESUIT A7L
   Speed 1% — absolute stillness. The A7L floating in the void — the Earth behind it at distance. The gold visor reflects the Earth. The Earth reflected in the suit designed to walk on the Moon. Everything is contained in this one reflection.
   00:14.5–00:15 · END CARD
   Silence — total. Then a single radio crackle. NASA worm logo. "Worn once. Changed everything." No grain — this moment is too clear, too real. Hold. Fade.
+---

@@ -25,3 +25,4 @@ draft: false
 ---
 
 A stylized 3D animated scene with a hyperreal pop look and stretchy cartoon physics. The mood is playful and a little chaotic, but it turns into a smart and satisfying ending. Find the rest of the prompt on
+---

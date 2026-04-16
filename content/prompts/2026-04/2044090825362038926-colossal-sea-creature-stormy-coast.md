@@ -28,3 +28,4 @@ draft: false
 ---
 
 A colossal sea creature breaking through shallow water, body massive, waves crashing around it + Moves forward at high speed toward the shore, creating massive splashes + Ocean coastline under stormy sky, waves crashing violently + Tracking shot moving just above water level alongside the creature, water hitting the lens, camera shaking with each movement, epic scale and force.
+---

@@ -106,3 +106,4 @@ Enforce: per-frame outfit reset, disable temporal smoothing for clothing.
 Subject remains perfectly stable; only clothes and background change.
 
 END: tight close-up, she leans slightly forward smiling, wearing a black oversized hoodie and a dark baseball cap (like reference), suburban USA street, natural daylight, stable last 1–2 seconds."
+---

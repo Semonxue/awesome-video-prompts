@@ -61,3 +61,4 @@ A chaotic, high-speed cyberpunk music video style animation.
 12-15s (Neon Overload): The sneaker's neon core overloads. A blinding orange digital flare glitches the camera entirely, leaving trailing artifacts and chromatic aberration.
 
 15s (End Graphic): Quick cut to black. Sleek white text appears: "designed by el.cine".
+---

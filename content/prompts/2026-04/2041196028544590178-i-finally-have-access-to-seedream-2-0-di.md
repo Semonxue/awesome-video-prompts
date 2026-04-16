@@ -41,3 +41,4 @@ Speed 110%. Black Continental outsole spreads from heel outward — traction pat
 Speed 8%. Camera rises from ground level to classic three-quarter hero. The shoe rotates. The Boost midsole catches the under-light — it GLOWS from within, warm and alive. Every material element reads. A final anamorphic flare off the Adidas badge.
 00:06.5–00:07 · END CARD
 Black. "Energy Returns." Three Stripes. Grain. Hold.
+---

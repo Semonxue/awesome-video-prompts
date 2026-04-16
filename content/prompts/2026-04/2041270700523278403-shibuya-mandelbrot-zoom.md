@@ -21,3 +21,4 @@ draft: false
 ---
 
 Extreme fractal zoom (Mandelbrot effect) centered on the eye of a person standing in Shibuya. The camera zooms infinitely into his pupil, revealing another Shibuya crossing inside, over and over at high speed. The buildings and people stretch and twist into kaleidoscopic geometric patterns. Mind-bending recursive VFX, psychedelic motion, infinite perspective.
+---

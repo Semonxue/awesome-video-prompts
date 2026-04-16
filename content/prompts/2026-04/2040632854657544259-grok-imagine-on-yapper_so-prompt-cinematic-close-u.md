@@ -23,3 +23,4 @@ draft: false
 
 
 Cinematic close-up, slow-motion video. A massive, muscular golden dragon and a more slender, elegant midnight purple dragon with starry bioluminescent scales are resting in a moonlit enchanted forest. The two dragons slowly and tenderly move their heads toward each other. The golden dragon gently
+---

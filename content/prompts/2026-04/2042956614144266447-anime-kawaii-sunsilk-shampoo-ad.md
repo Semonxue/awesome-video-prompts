@@ -67,3 +67,4 @@ Final shot: she hugs the Sunsilk bottle, winks at the camera, text appears in cu
 "Long, Thick, Silky Hair"
 
 Soft glow, dreamy lighting, super cute kawaii energy, product clearly visible throughout.
+---

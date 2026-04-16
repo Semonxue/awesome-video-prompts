@@ -39,3 +39,4 @@ draft: false
 - 「Somebody's calling — I can't hear a thing」: テキストが回転の中で水平維持(回転補正)
 
 - 「Then dinner smells hit and I click my tongue」: テキストがオレンジに変化+湯気パーティクル
+---

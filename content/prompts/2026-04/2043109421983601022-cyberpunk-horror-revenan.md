@@ -47,3 +47,4 @@ TIMELINE:
 00:11.3: Smash cut to 35mm short of the elevator. Courier lunges for the opening; the revenant hooks torso and shoulder, yanks him back. SFX: crack, slam.
 00:13.2: Push to medium close 50mm before the elevator. Opened halves frame the spider-head as the revenant clamps the throat, drags him in, shakes him, lunges closer. SFX: breath, armor rattle.
 EXCLUDE: Avoid unreadable aisle geography, extra legs beyond eight, early full-face reveal, heroic fight beats, text glitches, daylight contamination, slow safe coverage.
+---

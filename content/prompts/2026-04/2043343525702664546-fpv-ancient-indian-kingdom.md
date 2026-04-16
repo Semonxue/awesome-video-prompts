@@ -24,3 +24,4 @@ draft: false
 ---
 
 Prompt used: extremely fast-paced cinematic FPV flying through the ancient Indian Anga kingdom, hyper-realistic, 4K, golden-hour lighting, richly detailed ancient architecture with sandstone palaces, bustling marketplaces, warriors in traditional armor, elephants marching, priests performing rituals near rivers, flowing silk garments, fire torches, temples, and royal courts, epic scale, dramatic shadows, volumetric lighting, historical accuracy, vibrant earthy color palette, high contrast, film-grade color grading, smooth continuous movement, authentic ancient India atmosphere
+---

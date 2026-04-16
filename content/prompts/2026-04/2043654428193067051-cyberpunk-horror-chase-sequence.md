@@ -58,3 +58,4 @@ TIMELINE:
 00:13.2: Push to medium close 50mm before the elevator. Opened halves frame the spider-head as the revenant clamps the throat, drags him in, shakes him, lunges closer. SFX: breath, armor rattle.
 
 EXCLUDE: Avoid unreadable aisle geography, extra legs beyond eight, early full-face reveal, heroic fight beats, text glitches, daylight contamination, slow safe coverage.
+---

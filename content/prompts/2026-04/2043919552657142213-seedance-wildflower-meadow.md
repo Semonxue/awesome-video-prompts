@@ -149,3 +149,4 @@ creating strong cinematic parallax and depth during the dolly movement.
 
 Lens is a 35mm cinematic lens with shallow depth of field and realistic motion blur.
 Ultra-detailed textures, natural physics, high realism, cinematic emotional storytelling.
+---

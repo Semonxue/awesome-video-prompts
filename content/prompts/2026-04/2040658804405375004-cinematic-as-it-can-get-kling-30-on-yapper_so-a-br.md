@@ -41,3 +41,4 @@ The screen becomes almost fully covered in snow mist, soft blur, cinematic fade.
 Reveal:
 As the snow settles, she reappears through the haze—partially covered in snow, small particles still falling. She remains composed, slightly tilting her head, calm expression.
 Final shot: snowflakes drifting in the air, sunlight hitting particles, cinematic depth of field, clean blue sky returning.
+---

@@ -46,3 +46,4 @@ Scene ruined city, cracked ground, dust, collapsed buildings nature violently re
 10-12s aerial pull-up massive transformation spreading behind him like a green shockwave overtaking the city
 12-14s slow motion beat he steps again huge tree bursts from ground behind him, roots cracking concrete
 14-15s final hero shot camera front tracking lush vibrant world behind him, fully transformed he walks forward, unstoppable, calm
+---

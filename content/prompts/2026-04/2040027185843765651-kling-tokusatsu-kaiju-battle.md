@@ -35,3 +35,4 @@ draft: false
   "ending": "Smoke drifts as @ image2 lies fallen in wreckage and @ image1 stands breathing heavily.",
   "sound": "No dialogue. Heavy impacts, metal bending, debris crashing, distant alarms, deep footsteps, wind, smoke, and dust."
 }
+---

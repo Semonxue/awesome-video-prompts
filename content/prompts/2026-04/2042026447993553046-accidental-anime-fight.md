@@ -35,3 +35,4 @@ Camera movements include rapid 360 orbit, Jet cuts to ECU of key moments in stri
 Impack shockwave effects, wind burst effects, gust effect from Knibbz's heavier attacks only.
 
 Hopeless fight vibe. Jinx is outmatched by Knibbz. Must not add additional dialogue. Must not add additional characters. Use the audio reference for what Knibbz sound like only. All of Jinx attacks must be directed toward Knibbz.
+---

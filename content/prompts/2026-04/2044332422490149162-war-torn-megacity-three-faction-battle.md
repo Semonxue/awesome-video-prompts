@@ -53,3 +53,4 @@ Color logic: deep violet gravitational core, vibrant green organic expansion, ha
 Escalation builds as all three begin destabilizing the city's structure — entire blocks sink, twist, and collapse simultaneously.
 Final beat: hard POV shift — camera becomes the collapsing ground itself, dropping into a gravity well while roots and metal structures crash inward from all directions.
 Ultra-detailed mixed destruction physics, organic + mechanical + spatial interaction, cinematic debris chaos, 4K.
+---

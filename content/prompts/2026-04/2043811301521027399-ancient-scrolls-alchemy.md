@@ -22,3 +22,4 @@ draft: false
 ---
 
 Step into the cluttered, magical workshop of a master alchemist and his eager apprentice! 🧙♂️✨ Watch as they experiment with volatile glowing mixtures, testing the wisdom of the founders. Is it just a stabilizer, or a gateway to a long-forgotten world? 🌌 When the right frequency is hit, magic truly happens. A stunning display of fantasy storytelling and intricate world-building... (with sound)
+---

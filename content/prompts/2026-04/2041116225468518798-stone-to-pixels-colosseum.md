@@ -32,3 +32,4 @@ draft: false
 ---
 
 A slow, cinematic drone tracking shot sweeping forward through the Roman Colosseum construction site. The camera glides past massive wooden scaffolding, ropes, and workers hauling white travertine stone. Dust particles catch the golden morning sunlight as the structure visually rises from the ground up to the outer arches. [Ambient Sound: A bustling outdoor construction site with wind blowing]. [Sound Effect: Heavy wooden cranes creaking under tension] and [Sound Effect: Metal hammering on stone].
+---

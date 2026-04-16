@@ -19,3 +19,4 @@ draft: false
 ---
 
 A flat black silhouette of an electric violinist playing a solo against a bright white backdrop, high contrast, exceptional modern music
+---

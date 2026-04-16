@@ -21,3 +21,4 @@ draft: false
 ---
 
 A wide shot of a busy gym floor where everyone is doing a different exercise. In the foreground, someone struggles with a heavy bench press, while in the background, a person runs on a treadmill, another does yoga on a mat, and a fourth person drinks from a water bottle while checking their phone.
+---

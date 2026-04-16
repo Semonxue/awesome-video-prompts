@@ -43,3 +43,4 @@ draft: false
     "lighting": "dynamic HDR environment mapping inside each shard, strong internal light source upon merge."
   }
 }
+---

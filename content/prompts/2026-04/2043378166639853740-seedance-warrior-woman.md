@@ -31,3 +31,4 @@ The camera rockets up from beneath a burning battlefield trench, tearing past sh
   The spiral tightens, speed increasing, wind roaring harder, battlefield sound swelling—metal clashes, distant screams, thunder rolling across a blood-red sky.
 
   Then the camera rises slightly into a final close, frontal reveal of her face—wind-whipped, streaked with ash and sweat, completely calm, eyes locked forward, burning with cold determination as firelight flickers across her expression.
+---

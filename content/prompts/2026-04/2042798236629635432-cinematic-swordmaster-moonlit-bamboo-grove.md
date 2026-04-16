@@ -30,3 +30,4 @@ draft: false
 
 A wide-angle, cinematic shot of a legendary swordmaster standing in a dense bamboo grove at midnight. Ethereal blue moonlight filters through the tall, swaying stalks, creating sharp, dramatic shadows. The warrior is in a low, disciplined stance, hand resting on the hilt of a gleaming katana. Swirling mist and fallen leaves caught in a light breeze circle their feet.
 Technical Details: 8k resolution, shot on 35mm lens, high contrast, moody atmosphere, hyper-realistic textures of silk and steel, volumetric lighting, deep blacks and vivid silver highlights.
+---

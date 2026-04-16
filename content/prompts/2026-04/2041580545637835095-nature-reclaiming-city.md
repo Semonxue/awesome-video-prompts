@@ -55,3 +55,4 @@ Final beat: hard POV shift — camera becomes the root network surging undergrou
 Particle detail on soil displacement, bark texture, and debris fragmentation; diegetic green glow illuminates dust clouds.
 
 Epic nature-reclaiming urban collapse, cinematic organic physics, 4K ultra-detail.
+---

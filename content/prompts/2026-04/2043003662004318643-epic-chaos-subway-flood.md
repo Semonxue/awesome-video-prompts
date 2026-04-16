@@ -30,3 +30,4 @@ draft: false
 ---
 
 Crane shot begins deep inside a subway tunnel. Darkness, flickering lights. A distant rumble grows. The camera slowly tracks backward along the rails as water begins to seep in, then suddenly bursts forward in a violent flood. The camera accelerates, racing just ahead of the wave, tracking a subway train being pushed violently by the water. Sparks fly as it derails. The camera stays locked, then explodes out of the tunnel exit into a fully flooded city street, transitioning seamlessly into daylight chaos.
+---

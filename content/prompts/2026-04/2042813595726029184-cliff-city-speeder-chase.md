@@ -51,3 +51,4 @@ The rider guns it.
 The camera races ahead, flips 180° mid-air as the speeder launches the gap. For a breathless second, only void below — a bottomless abyss glowing faintly with magma veins.
 Mid-jump, one pursuer clips the edge and spirals down, vanishing into the darkness. The second clears it.
 Landing hard, the rider blasts toward a vertical shaft of daylight spearing down from above. The tunnel narrows — ancient gears and colossal stone mechanisms begin turning, triggered by the intrusion. Rotating rings. Crushing slabs.
+---

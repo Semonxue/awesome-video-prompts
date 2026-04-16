@@ -71,3 +71,4 @@ After spitting, @ Image1 sticks out her tongue in disgust, immediately grabs the
 
 Ending:
 She finishes the throw angrily, still facing the lake, clearly annoyed and feeling betrayed, while I remain in first-person POV laughing. Keep the action continuous and clean. No extra characters enter frame.
+---

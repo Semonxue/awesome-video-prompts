@@ -47,3 +47,4 @@ Scene 2: cracking soft egg directly into the mixture, yolk dramatically bursting
 Scene 3: adding fresh red chilies and holy basil leaves, high-heat stir-fry, leaves wilting instantly, glossy caramelized pork, intense motion and sizzle
 Scene 4: final plating over steaming white rice, perfect composition, shallow depth of field, mouth-watering close-up, freeze frame at the end, photorealistic textures, no text, no watermark, ultra realistic, shot on iPhone 16 Pro food reel style
 --ar 9:16 --stylize 250 --v 6 --q 2
+---

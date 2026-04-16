@@ -35,3 +35,4 @@ draft: false
 ---
 
 A village festival in Java. Thousands gathered to celebrate. GSI (Garuda-Siam Initiative) received a threat, a masked cult targeting the village head. Sari and Ploy were sent to stop them. What they found was more than just assassins. It was a warning.
+---

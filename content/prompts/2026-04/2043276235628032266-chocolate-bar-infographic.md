@@ -39,3 +39,4 @@ LABELS:
 "Sugar"
 
 MOTION PROMPT: The chocolate bar starts to slowly spin while the ingredients separate gently and precisely, maintaining alignment and scale. The motion is smooth, rich, and controlled with no extra effects.
+---

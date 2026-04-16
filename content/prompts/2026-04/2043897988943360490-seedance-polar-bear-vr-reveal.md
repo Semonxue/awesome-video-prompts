@@ -85,3 +85,4 @@ She looks toward the unseen voice, rolls her eyes slightly upward, and says:
 Lens: 35mm, natural spherical look.
 SFX: headset strap stretching, plastic shifting, quiet room ambience, soft footstep on the floor, faint game audio fading out, her breathing settling, her dry voice asking "What is it."
 Indoor daylight replaces the stark winter contrast.
+---

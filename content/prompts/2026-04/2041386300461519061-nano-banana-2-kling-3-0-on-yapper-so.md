@@ -38,3 +38,4 @@ Steam gently rises from tiny coffee cups, small hanging lamps glow warmly, and d
 camera movement: slow cinematic push-in with slight parallax  
 lighting: warm cozy café lighting with soft bokeh background  
 style: hyper-realistic miniature diorama, macro photography, shallow depth of field, 4K cinematic
+---

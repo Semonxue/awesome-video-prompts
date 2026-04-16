@@ -30,3 +30,4 @@ The setting is a modern architectural location with bold geometric structures in
 Camera slowly tracks backward while maintaining a medium-low angle, emphasizing their presence and the dramatic flowing fabric. The movement is smooth and slow, like a luxury fashion runway film.
 
 Ultra cinematic look, shallow depth of field, soft film grain, natural skin tones, high-end fashion editorial style, dramatic yet minimal atmosphere, 4K cinematic quality.
+---

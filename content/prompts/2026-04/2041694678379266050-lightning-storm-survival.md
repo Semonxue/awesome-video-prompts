@@ -45,3 +45,4 @@ Cut to Shot 6: IMPOSSIBLE MOMENT lightning freezes mid-air for a split second as
 Cut to Shot 7: Ground becomes electrified, sparks erupting with each step
 Cut to Shot 8: A massive strike hits directly behind, shockwave pushing camera forward
 Cut to Shot 9: Final blinding strike engulfs frame completely
+---

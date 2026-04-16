@@ -77,3 +77,4 @@ Avoid:
 - fake or random buildings
 - fantasy architecture
 - inconsistent scale
+---

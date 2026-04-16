@@ -39,3 +39,4 @@ High-fashion editorial style, slow controlled poses, calm expressions, elegant b
 The woman stands beside the creature, sits on its back, gently places her hand on its surface, and walks along its back.
 
 Cinematic framing, shallow depth of field, soft focus background, natural colors, no dramatic action, no violence.
+---

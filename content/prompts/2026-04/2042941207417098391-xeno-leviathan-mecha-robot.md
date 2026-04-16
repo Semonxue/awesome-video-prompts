@@ -45,3 +45,4 @@ In the foreground below: Godzilla with glowing blue atomic spines roaring aggres
 The robot is smashing into the ocean, creating enormous tsunamis, white water splashes, huge clouds of dust and smoke, flying debris, cracked earth. Epic scale, god-like perspective, planet curvature visible in the background, dramatic sky with stars and atmosphere.
 
 Ultra-detailed, cinematic lighting, volumetric fog, dynamic motion, epic destruction scene, best quality, 8k, photorealistic yet stylized, in the style of high-end sci-fi concept art --ar 9:16 --stylize 250 --v 6
+---

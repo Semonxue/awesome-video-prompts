@@ -26,3 +26,4 @@ draft: false
 
 
 Low-angle shot across a battlefield lit by fire and rain. The camera tracks backward as a samurai walks forward slowly, katana dragging sparks across soaked ground.
+---

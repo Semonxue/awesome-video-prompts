@@ -63,3 +63,4 @@ Shot-by-shot:
 [12-15s] Final wide shot: hamster standing triumphantly on the stopped wheel while the cat lies face-down on the floor. Cat groans: "I hate cardio…" Hamster looks at camera with a smug expression.
 
 Global style: Extremely realistic fur and whisker details, natural room lighting with soft shadows, realistic motion blur on the spinning wheel, highly expressive faces, perfect physics for rolling and tumbling, 4K photoreal quality, no deformities, funny exaggerated expressions.
+---

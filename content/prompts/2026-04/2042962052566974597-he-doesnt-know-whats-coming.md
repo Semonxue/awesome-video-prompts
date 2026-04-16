@@ -96,3 +96,4 @@ SFX: wooden chest opening, low-frequency resonance, subtle metallic tone
 0:12-0:15
 The camera slowly pulls back with slight lateral movement, keeping both character and chest in the main composition, the character is fully immersed in the joy brought by the sword, gaze unmoving; in the darkness, a structure that was fully blended with the rock wall slowly and naturally unfolds, a massive vertical pupil eye opens within the wall and stares motionlessly at the character; the character remains completely unaware, maintaining a state of joy and immersion
 SFX: extremely subtle stone shifting sound, low ambient pressure rumble
+---

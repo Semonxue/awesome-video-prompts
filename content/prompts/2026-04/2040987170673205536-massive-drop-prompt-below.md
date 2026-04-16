@@ -28,3 +28,4 @@ aesthetic: phone held up in the middle of a packed crowd inside a museum gallery
     - "5-8s: The drop. The marble floor amplifies every jump into thunder. The chandelier sways. Phone flashlights sweep across the paintings."
     - "8-15s: The crowd bouncing. Fractured chandelier light across raised hands. Renaissance paintings falling down from the bass vibrations."
   quality: single shot from the middle of the crowd, warm gallery lighting, gold frames and marble doing all the visual work
+---

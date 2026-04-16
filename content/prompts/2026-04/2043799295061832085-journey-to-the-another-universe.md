@@ -101,3 +101,4 @@ AI Prompt: Close up of a traveler's face, eyes reflecting a swirling blue portal
 [1:25-1:30] Shot 9: Wide shot as the traveler vanishes into the light. The forest goes quiet, and the camera pans up to a crescent moon.
 
 AI Prompt: Wide shot of a traveler stepping into a light portal, disappearing, camera panning up to a crescent moon in a nebula sky, fade to black.
+---

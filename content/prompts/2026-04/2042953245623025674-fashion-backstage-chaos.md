@@ -31,3 +31,5 @@ Scene 4 | 10-13 seconds: Dark area in front of the runway. Heavy black curtain. 
 Scene 5 | 13-15 seconds: The girl rips the curtain in half and steps into the blinding white light of the runway. The black fabric of the curtain falls directly onto the lens.
 
 Final Shot: Packshot - Black screen. The signature sound is the lonely, echoing single click of a high heel.
+
+---

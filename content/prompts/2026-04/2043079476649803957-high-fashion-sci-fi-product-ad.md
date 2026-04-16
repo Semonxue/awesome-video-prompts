@@ -61,3 +61,4 @@ A sleek, striking haute-couture sci-fi product film.
 12-15s (Supernova Ignition): She points directly at the shoe. The side stripe instantly ignites with a blinding orange supernova flare, washing the scene in pure, high-contrast light.
 
 15s (End Graphic): Quick cut to black. Sleek white text appears: "designed by el.cine".
+---

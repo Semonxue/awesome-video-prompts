@@ -23,3 +23,4 @@ draft: false
 ---
 
 extremely fast-paced cinematic FPV flying through the ancient Babylonian Empire at its peak, weaving dynamically through towering ziggurats, bustling marketplaces, and the grand Ishtar Gate, hyper-realistic details, golden hour lighting, flowing robes, merchants and chariots in motion, dramatic scale, seamless high-speed transitions, depth of field, motion blur, epic cinematic composition, 8K, photorealistic, immersive, aesthetic
+---

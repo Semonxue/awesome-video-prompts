@@ -54,3 +54,4 @@ A cinematic weather war. A nomadic shepherd in layered sky-blue robes stands on 
 12–15 seconds: overhead slow fall into the salt crater as storm winds spiral inward. The shepherd lands first while the locust king breaks apart into rain, glass fragments, and dead static that spiderwebs through the salt. Final frame: one intact locust wing ringing in the wind.
 
 Style: epic storm fantasy, desert electricity, glass insect textures, sand and lightning choreography, high-contrast sky warfare.
+---

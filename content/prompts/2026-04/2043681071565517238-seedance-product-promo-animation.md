@@ -133,3 +133,4 @@ Ultra-sleek minimal motion design sequence. [插入背景描述, e.g., Deep tita
 Sound Design: [Insert 1-2 sentences describing the audio atmosphere matching the chosen style, e.g., Deep sub-bass transitioning to smooth glass slides, ending in silence with a soft cinematic synth chord].
 
 Style: [Insert chosen style references]. Mood: [Insert 3-4 mood keywords].
+---

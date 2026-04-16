@@ -41,3 +41,4 @@ draft: false
 
 
 Maintain the 5-panel split-screen layout, the red background, and all text overlays exactly as they are. In all 5 panels simultaneously, the man slowly and smoothly turns his head from looking to the right to facing directly forward at the camera. The movement must be perfectly synchronized across all panels. The camera framing in each panel remains completely static. Subtle light reflections shift on the red-tinted glasses as his head turns.
+---

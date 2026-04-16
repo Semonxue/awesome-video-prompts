@@ -19,3 +19,4 @@ draft: false
 
 
 These are the opening and closing frames of a tavern martial arts fight scene. Based on these two scenes, please generate a smooth sequence of a woman in white fighting several assassins. Use storyboarding techniques and switch between different perspectives to give the entire footage a more rhythmic and cinematic feel.
+---

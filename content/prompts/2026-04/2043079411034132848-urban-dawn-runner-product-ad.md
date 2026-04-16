@@ -55,3 +55,4 @@ A fast-paced, highly cinematic live-action commercial shot in a modern metropoli
 9-12s (Drone Helix Spin): As she leaps over a puddle, an FPV drone camera executes a rapid, 360-degree helix spin around her in mid-air. The scene slows into brief bullet-time, perfectly highlighting her focused expression and the shoes.
 
 12-15s (End Graphic): She lands smoothly and continues running out of frame. The camera stops abruptly, and crisp white text seamlessly appears in the center of the screen: "designed by el.cine".
+---

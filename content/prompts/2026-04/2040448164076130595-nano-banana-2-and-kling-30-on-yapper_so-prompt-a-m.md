@@ -29,3 +29,4 @@ Camera Motion: slow cinematic orbit + slight push-in
 Lighting: warm golden window light, blue twilight sky
 Mood: dreamy, magical, peaceful fantasy world
 Style: ultra-realistic fantasy, Studio Ghibli inspired environment, cinematic
+---

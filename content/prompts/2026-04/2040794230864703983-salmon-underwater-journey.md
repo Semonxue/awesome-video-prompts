@@ -84,3 +84,4 @@ Match cut back to restaurant, static shot.
 The scene cuts back to the restaurant. The man maintains the same head angle and continues chewing. After a brief pause, he swallows, slowly opens his eyes, and his smile becomes more pronounced. He lets out a soft expression of enjoyment. He cuts another small piece of salmon with his utensils. The movement is more natural and continuous, without hesitation. Plate reflections and environment remain consistent.
 
 SFX: Soft cutting sound, chewing sound. Ambient sound fades out during transition. Restaurant sound resumes after returning. Underwater environment features gentle water flow sounds.
+---

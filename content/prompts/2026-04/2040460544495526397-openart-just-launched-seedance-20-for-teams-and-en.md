@@ -33,3 +33,4 @@ Shot 3 (5-7s): Insert shot of her shaking hand, shallow breathing, emotional con
 Shot 4 (7-10s): Over-the-shoulder shot toward the husband, she looks at him in pain, searching his face for an answer.
 Shot 5 (10-13s): Tight close-up, tears form, she asks softly but brokenly, “Why did you do this to me?”
 Shot 6 (13-15s): Silent reaction shot, husband unable to answer, wife looks devastated, emotional collapse held in silence.
+---

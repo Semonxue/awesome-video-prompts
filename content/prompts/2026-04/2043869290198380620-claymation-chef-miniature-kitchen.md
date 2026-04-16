@@ -22,3 +22,4 @@ draft: false
 ---
 
 A small clay chef preparing food in a cozy miniature kitchen, claymation style, handcrafted figure with visible fingerprint textures and soft rounded features, tiny pots and fresh vegetables on a little counter, warm overhead lighting, stop-motion animation look, charming handmade imperfections, playful and cozy mood, shallow depth of field focused on the chef, ultra detailed, 4K, no text
+---

@@ -93,3 +93,4 @@ Transition: Immediate continuous spin away.
 
 Scene 7: The Catch & Finale (.0 - .0 | Duration: 1.0 sec)  
 Action: The same Character. She completes the final spin facing the camera. She is now wearing stylish glasses. Looking slightly off-camera, she confidently catches a professional tote bag or briefcase that is thrown to her from behind the camera. She looks straight into the lens, completely ready for the day. The video ends here.
+---

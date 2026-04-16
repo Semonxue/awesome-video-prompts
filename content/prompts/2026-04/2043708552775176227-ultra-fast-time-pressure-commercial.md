@@ -44,3 +44,4 @@ An ultra-fast, high-intensity commercial driven by time pressure.
 8-12s: Freeze mid-air jump → time slows → only watch UI still moving.
 
 12-15s: Smash cut to product close-up → text: "Own Every Second."
+---

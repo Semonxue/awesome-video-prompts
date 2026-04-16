@@ -53,3 +53,4 @@ Cut to Shot 6: IMPOSSIBLE MOMENT camera jumps across a gap where reality no long
 Cut to Shot 7: Buildings ahead partially disappear, creating unstable geometry
 Cut to Shot 8: Camera runs along a thin strip of remaining ground
 Cut to Shot 9: Final void overtakes everything, frame cuts to black
+---

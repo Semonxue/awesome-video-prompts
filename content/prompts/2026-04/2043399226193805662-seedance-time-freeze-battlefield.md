@@ -31,3 +31,4 @@ Camera continues tracking as he walks through the frozen world, calm and smug. H
 He stops at a fierce female soldier in ornate bronze armor, her hair frozen mid-air beneath her helmet, sword raised in mid-strike. He admires her, nods, whispers: “Cool isn’t it ?.”
 He reaches into his jacket, takes out a cigarette, places it in his mouth, lights it. Only flame and smoke move. He exhales, smirks, snaps again.
 A reverse shockwave restores everything: warriors from both armies surge forward, arrows fly, dust and debris swirl. Battle sounds return. Camera keeps tracking as he walks away, then slowly rises to a wide overhead. Fade out.
+---

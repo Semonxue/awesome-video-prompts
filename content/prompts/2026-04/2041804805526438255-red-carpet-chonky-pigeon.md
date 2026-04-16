@@ -27,3 +27,4 @@ draft: false
 3-6s: human celebrities step aside as the pigeon owns the runway, head bob perfectly in rhythm.
 6-10s: it pauses for a dramatic wing-flare pose and the crowd goes louder.
 10-15s: final close shot as the pigeon snatches a canapé from a silver tray without breaking stride, then keeps walking like nothing happened.
+---

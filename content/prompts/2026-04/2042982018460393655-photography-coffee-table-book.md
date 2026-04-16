@@ -23,3 +23,4 @@ draft: false
 ---
 
 A close up, top down view of an open photography coffee table book. Beautiful full page portrait photos, one photo per page. A hand turns the pages gradually, we see many pages each with a full spread and a compelling award winning photo.
+---

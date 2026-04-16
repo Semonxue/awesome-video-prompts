@@ -29,3 +29,4 @@ draft: false
 ---
 
 extremely fast-paced cinematic FPV flying through the ancient Gandhara kingdom at its peak, hyper-realistic, 4K detail, golden-hour lighting, soaring over grand Buddhist stupas, Greco-Indian architecture, bustling ancient marketplaces, monks in saffron robes, intricate stone carvings, silk road traders, dramatic mountain backdrops, epic scale, immersive depth, volumetric lighting, atmospheric haze, film-grade color grading, ultra smooth stabilization, intense pacing, cinematic sound design
+---

@@ -50,3 +50,4 @@ Silence.
 Rain continues falling.
 Slow push-in — one girl stands steady, adjusting her sleeve, breathing controlled. The other remains down, unmoving.
 Low-angle shot. Eyes sharp, unwavering.
+---

@@ -31,3 +31,4 @@ Camera moves slowly through empty street then suddenly reveals crowded market. P
 "camera": "slow drone descent → steady tracking → sudden snap zoom to faces",
 "lighting": "warm lantern light, golden dusk, soft shadows",
 "mood": "mysterious, tense, poetic"
+---

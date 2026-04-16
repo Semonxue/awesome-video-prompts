@@ -163,3 +163,4 @@ He immediately resumes tossing: three crisp cycles—fast → faster → sudden 
 Cut to a steady POV. Total stillness. The chef tilts the wok and slides the finished dish into the porcelain bowl—revealing glossy noodles, plump shrimp, and vibrant greens.
 
 He lifts the bowl toward the camera until it fills the frame. One finger taps the rim, creating a faint vibration. Steam rises quickly and expands until it completely fogs the lens, ending in a soft fade.
+---

@@ -55,3 +55,4 @@ An adrenaline-filled, fast-moving live-action commercial with energetic parkour 
 9-12s (The Vault): She performs a powerful vault toward the camera. Time slows down dramatically mid-vault. The camera orbits 180 degrees, keeping the intricate design of the bottom sole and the side logo in center focus against the bright blue sky.
 
 12-15s (End Graphic): Real-time resumes as she lands cleanly. A quick whip-pan transitions the scene into a solid background where the bold text appears: "designed by el.cine".
+---

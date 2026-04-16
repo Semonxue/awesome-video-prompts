@@ -153,3 +153,4 @@ High-quality modern Japanese anime
 Semi-realistic physics
 Cinematic lighting and contrast
 Emphasis on weight, speed, and impact
+---

@@ -85,3 +85,4 @@ As her feet touch the ground, the white combat armor dissolves into glowing part
 She straightens her jacket slightly, regains her relaxed posture, and resumes walking down the neon-lit street as if nothing happened.
 Around her, stunned pedestrians stand frozen in disbelief, silently watching her disappear into the glowing night city.
 Cinematic ending, soft ambient city sound, the mysterious hero walking calmly into the distance.
+---

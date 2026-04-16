@@ -27,3 +27,4 @@ draft: false
 [Cut: 0;04-0:06] Slow-motion reveal: The electric aura slowly dissipates in glowing red particles, revealing Takeru's bare fist still buried in Kenji's stomach. Takeru powerfully pulls his fist back as red energy fades.
 [Cut: 0:06-0:08] ECU of Kenji's face in stunned horror as he coughs blood from his mouth.
 [Cut: 0:08-0:015] Medium back shot of Kenji as he quietly sinks to his knees. Cut to low angle shot of Takeru looking down stoichly into the camera with a pensive look. Camera tilts down abruptly before cutting to a close up on Kenji. Kenji collapses heavily onto the pavement. Cut to high angle over the shoulder shot from behind Takeru looking down at Kenji. Kenji's eyes are barely open. Takeru turns his back to Kenji stoichly and walks out of frame.
+---
