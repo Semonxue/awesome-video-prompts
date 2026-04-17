@@ -1,0 +1,38 @@
+---
+title: The Scariest Warnings Come From Within
+date: '2026-04-17 02:37:42+00:00'
+image: /prompts/2026-04/2044968517439828156-scare-warning-from-within/cover.jpg
+video: /prompts/2026-04/2044968517439828156-scare-warning-from-within/video.mp4
+description: 'Young woman, long dark hair, wearing casual clothes, sitting alone in
+  a dark room at night, using her phone, cinematic lighting, soft blue tones, suddenly
+  phone notification appears showing "Video from: Me", she looks confused, opens the
+  video, on screen she sees herself but slightly different, more serious expression,
+  subtle glitch effect, future version of her speaking silently, text appears "Don''t
+  open that door", tension rising, her face becomes shocked, background dark and quiet,
+  suddenly loud knock on the door, she freezes, slow dramatic zoom on her face, cinematic
+  lighting, ultra realistic, 4K, film grain, suspense atmosphere, consistent cinematic
+  tone'
+models:
+- seedance2
+tags:
+- horror
+- cinematic
+- realistic
+- dark
+- tension
+author: 𝗦𝗮𝗻𝗶𝗮
+source_url: https://x.com/saniaspeaks_/status/2044968517439828156
+full_text: "The scariest warnings come from within.\n\nSeedence 2.0 on @yapper_so\
+  \ \n\nPrompt:\nYoung woman, long dark hair, wearing casual clothes, sitting alone\
+  \ in a dark room at night, using her phone, cinematic lighting, soft blue tones,\
+  \ suddenly phone notification appears showing \"Video from: Me\", she looks confused,\
+  \ opens the video, on screen she sees herself but slightly different, more serious\
+  \ expression, subtle glitch effect, future version of her speaking silently, text\
+  \ appears \"Don't open that door\", tension rising, her face becomes shocked, background\
+  \ dark and quiet, suddenly loud knock on the door, she freezes, slow dramatic zoom\
+  \ on her face, cinematic lighting, ultra realistic, 4K, film grain, suspense atmosphere,\
+  \ consistent cinematic tone"
+draft: false
+---
+
+Young woman, long dark hair, wearing casual clothes, sitting alone in a dark room at night, using her phone, cinematic lighting, soft blue tones, suddenly phone notification appears showing "Video from: Me", she looks confused, opens the video, on screen she sees herself but slightly different, more serious expression, subtle glitch effect, future version of her speaking silently, text appears "Don't open that door", tension rising, her face becomes shocked, background dark and quiet, suddenly loud knock on the door, she freezes, slow dramatic zoom on her face, cinematic lighting, ultra realistic, 4K, film grain, suspense atmosphere, consistent cinematic tone

@@ -60,4 +60,4 @@ Camera orbit — subject only moving element
 Subtle smile / calm shift
 Clock ticks again
 Everything snaps back into motion
-SUBJECT standing still as world rushes past
+SUBJECT standing still as world rushes past---

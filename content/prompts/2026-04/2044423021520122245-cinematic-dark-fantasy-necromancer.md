@@ -58,4 +58,4 @@ Epic cinematic system, slow dolly-in + wide aerial pulls + orbit moves, transiti
 - Full domination moment, army fully formed behind her, she stands still in foreground, creatures moving in unison, overwhelming presence covering entire landscape
 
 Vast open battlefield or ruined landscape, dry ground breaking apart, atmospheric depth, large-scale environment to emphasize army size, daylight enhancing clarity
-Ultra realistic, hollywood epic fantasy, massive scale visual effects, detailed ground interaction, volumetric dust and smoke, cinematic lighting, strong contrast
+Ultra realistic, hollywood epic fantasy, massive scale visual effects, detailed ground interaction, volumetric dust and smoke, cinematic lighting, strong contrast---

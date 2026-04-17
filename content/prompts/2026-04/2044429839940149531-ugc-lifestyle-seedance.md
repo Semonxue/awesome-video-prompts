@@ -24,4 +24,4 @@ full_text: "UGC / Lifestyle with Seedance 2.0 in @yapper_so \n\nA man in his lat
 draft: false
 ---
 
-A man in his late 20s, casual white t-shirt and jeans, holds up a green smoothie and takes a sip, then smiles at the camera. Bright kitchen, morning sunlight from behind. Handheld, slight natural shake. Warm tones, authentic, documentary style.
+A man in his late 20s, casual white t-shirt and jeans, holds up a green smoothie and takes a sip, then smiles at the camera. Bright kitchen, morning sunlight from behind. Handheld, slight natural shake. Warm tones, authentic, documentary style.---

@@ -52,4 +52,4 @@ He fights back using:
 – coral spike projectiles
 The leviathan constantly escalates—its body reshaping, tentacles splitting into mechanical arms, crushing ruins, and generating whirlpool currents that drag everything inward.
 Visual style: dreamlike aquatic fantasy—neon blues, glowing coral pinks, drifting particles, slow-motion water physics, cinematic light rays.
-Final moment: inside a sacred sunken pearl shrine, he launches a final charged strike—The leviathan fractures. Inside… a tiny lost sea creature is revealed, tangled in coral circuitry, glowing softly, frightened.
+Final moment: inside a sacred sunken pearl shrine, he launches a final charged strike—The leviathan fractures. Inside… a tiny lost sea creature is revealed, tangled in coral circuitry, glowing softly, frightened.---

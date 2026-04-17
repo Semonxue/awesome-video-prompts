@@ -64,4 +64,4 @@ Sequence:
 Style:
 Ultra-realistic, sharp lighting contrast, intense action, realistic physics.
 Final:
-Consistent face and smooth motion, no glitches.
+Consistent face and smooth motion, no glitches.---
