@@ -1,3 +1,4 @@
+---
 image: "/prompts/2026-04/2045128900829688023-seedance-car-comparison/cover.jpg"
 video: "/prompts/2026-04/2045128900829688023-seedance-car-comparison/video.mp4"
 date: 2026-04-17
@@ -11,6 +12,7 @@ tags:
 - car
 - action
 author: "Minuit"
+draft: false
 source_url: "https://x.com/minuitIA/status/2045128900829688023"
 ---
 
