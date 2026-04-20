@@ -1,7 +1,7 @@
 ---
 image: /prompts/2026-04/2045531398401118641-paris-cole-fashion-show/cover.jpg
 video: /prompts/2026-04/2045531398401118641-paris-cole-fashion-show/video.mp4
-date: "2026-04-18T15:54:24Z"
+date: '2026-04-18T15:54:24Z'
 title: Paris Fashion Show Costume Transformation
 description: |-
   パリコレのBGM、実際のパリコレシーンをベースに作成
@@ -10,24 +10,29 @@ description: |-
   [00:08-00:15]
   美女モデルはランウェイの先端でポーズを決めてから、華麗にターンして戻っていく。
 models:
-  - seedance2
+- seedance2
 tags:
-  - fashion
-  - catwalk
-  - transformation
-  - cinematic
-  - luxury
+- fashion
+- catwalk
+- transformation
+- cinematic
+- luxury
 author: いにしえ@AI Director & Creator｜Will Oldgram
 source_url: https://x.com/old_pgmrs_will/status/2045531398401118641
-draft: true
-full_text: "Seedance 2.0 でパリコレ風映像\n途中で衣装を変えてみたかったテストだが、謎演出になってこれはこれで良き\n露出度が若干高いのはパリコレゆえか\n\nPrompt:\nパリコレのBGM、実際のパリコレシーンをベースに作成\n[00:00-00:8]\nパリコレのランウェイを歩く超絶美女モデル、最初はミニスカートだったものが、スムーズにロングスカートへと変化する。同時に上着もロングドレスにスムーズに変化する。\n[00:08-00:15]\n美女モデルはランウェイの先端でポーズ決めてから、華麗にターンして戻っていく。"
+full_text: |-
+  Seedance 2.0 でパリコレ風映像
+  途中で衣装を変えてみたかったテストだが、謎演出になってこれはこれで良き
+  露出度が若干高いのはパリコレゆえか
+
+  Prompt:
+  パリコレのBGM、実際のパリコレシーンをベースに作成
+  [00:00-00:8]
+  パリコレのランウェイを歩く超絶美女モデル、最初はミニスカートだったものが、スムーズにロングスカートへと変化する。同時に上着もロングドレスにスムーズに変化する。
+  [00:08-00:15]
+  美女モデルはランウェイの先端でポーズ決めてから、華麗にターンして戻っていく。
+draft: false
 ---
 
-Seedance 2.0 でパリコレ風映像
-途中で衣装を変えてみたかったテストだが、謎演出になってこれはこれで良き
-露出度が若干高いのはパリコレゆえか
-
-Prompt:
 パリコレのBGM、実際のパリコレシーンをベースに作成
 [00:00-00:8]
 パリコレのランウェイを歩く超絶美女モデル、最初はミニスカートだったものが、スムーズにロングスカートへと変化する。同時に上着もロングドレスにスムーズに変化する。
