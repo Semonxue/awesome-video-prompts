@@ -1,19 +1,18 @@
 ---
-id: "2044072540927307821"
 title: "Simulation Battle - Seedance 2.0"
 date: "2026-04-14T15:17:25+00:00"
+image: /prompts/2026-04/2044072540927307821-simulation-battle-seedance/cover.jpg
+video: /prompts/2026-04/2044072540927307821-simulation-battle-seedance/video.mp4
+source_url: "https://x.com/TechTalkNAVI/status/2044072540927307821"
 author: "TechTalkNAVI"
-author_url: "https://twitter.com/TechTalkNAVI"
-source: "twitter"
-model: "seedance2"
+models:
+  - seedance2
 tags:
   - vfx
   - action
   - sci-fi
   - 3d
   - anime
-video: "/prompts/2026-04/2044072540927307821-simulation-battle-seedance/video.mp4"
-cover: "/prompts/2026-04/2044072540927307821-simulation-battle-seedance/cover.jpg"
 description: |-
   「シミュレーションバトル風」
 
@@ -27,4 +26,5 @@ description: |-
   - 9-11.5s: Ultimate attack with spatial distortion and impact frame
   - 11.5-13.5s: Enemy destruction explosion with claw-pattern particle smoke
   - 13.5-15s: Departure into starfield with heat haze fade
+draft: false
 ---
