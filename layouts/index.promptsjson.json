@@ -1,0 +1,16 @@
+{{- $pages := sort (where .Site.RegularPages "Params.tags" "!=" nil) ".File.BaseFileName" "desc" -}}
+[{{ range $index, $page := $pages }}{{ if $index }},{{ end }}
+  {
+    "title": {{ $page.Title | jsonify }},
+    "description": {{ $page.Params.description | default "" | jsonify }},
+    "image": {{ with $page.Params.image }}{{ $img := . }}{{ if or (hasPrefix $img "http://") (hasPrefix $img "https://") }}{{ $img | jsonify }}{{ else }}{{ (strings.TrimPrefix "/" $img) | relURL | jsonify }}{{ end }}{{ else }}""{{ end }},
+    "video": {{ with $page.Params.video }}{{ $video := . }}{{ if or (hasPrefix $video "http://") (hasPrefix $video "https://") }}{{ $video | jsonify }}{{ else }}{{ (strings.TrimPrefix "/" $video) | relURL | jsonify }}{{ end }}{{ else }}""{{ end }},
+    "model": {{ or $page.Params.models $page.Params.model | default "" | jsonify }},
+    "tags": {{ $page.Params.tags | default (slice) | jsonify }},
+    "author": {{ $page.Params.author | default "" | jsonify }},
+    "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
+    "sourceUrl": {{ $page.Params.source_url | default "" | jsonify }},
+    "permalink": {{ $page.RelPermalink | jsonify }},
+    "filename": {{ $page.File.ContentBaseName | jsonify }}
+  }{{ end }}
+]

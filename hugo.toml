@@ -30,6 +30,18 @@ defaultContentLanguageInSubdir = true
   category = "categories"
   model = "models"
 
+[outputFormats.PromptsJSON]
+  mediaType = "application/json"
+  baseName = "prompts-index"
+  isPlainText = true
+  notAlternative = true
+
+[outputs]
+  home = ["HTML", "PromptsJSON"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
 [languages]
   [languages.en]
     title = 'Awesome Video Prompts - Seedance2.0, Kling3, Grok & More AI Video Prompts'

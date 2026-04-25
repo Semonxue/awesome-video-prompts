@@ -47,22 +47,7 @@
     <span class="loading-text">Loading more prompts...</span>
   </div>
 
-  <!-- 所有卡片数据的模板存储 -->
-  <script type="application/json" id="prompts-data">
-    [{{ $pages := sort (where .Site.RegularPages "Params.tags" "!=" nil) ".File.BaseFileName" "desc" }}{{ range $index, $page := $pages }}{{ if $index }},{{ end }}{
-      "title": {{ $page.Title | jsonify | safeJS }},
-      "description": {{ $page.Params.description | default "" | jsonify | safeJS }},
-      "image": {{ with $page.Params.image }}{{ $img := . }}{{ if or (hasPrefix $img "http://") (hasPrefix $img "https://") }}{{ $img | jsonify | safeJS }}{{ else }}{{ (strings.TrimPrefix "/" $img) | relURL | jsonify | safeJS }}{{ end }}{{ else }}""{{ end }},
-      "video": {{ with $page.Params.video }}{{ $video := . }}{{ if or (hasPrefix $video "http://") (hasPrefix $video "https://") }}{{ $video | jsonify | safeJS }}{{ else }}{{ (strings.TrimPrefix "/" $video) | relURL | jsonify | safeJS }}{{ end }}{{ else }}""{{ end }},
-      "model": {{ or $page.Params.models $page.Params.model | default "" | jsonify | safeJS }},
-      "tags": {{ $page.Params.tags | default (slice) | jsonify | safeJS }},
-      "author": {{ $page.Params.author | default "" | jsonify | safeJS }},
-      "date": {{ $page.Date.Format "2006-01-02" | jsonify | safeJS }},
-      "sourceUrl": {{ $page.Params.source_url | default "" | jsonify | safeJS }},
-      "permalink": {{ $page.RelPermalink | jsonify | safeJS }},
-      "filename": {{ $page.File.ContentBaseName | jsonify | safeJS }}
-    }{{ end }}]
-  </script>
+
 {{ end }}
 
 {{ define "scripts" }}
@@ -119,15 +104,15 @@
   };
 
   // 初始化
-  function init() {
-    loadPromptsData();
+  async function init() {
+    await loadPromptsData();
     bindEvents();
     updateHeaderState();
     bindMasonryResize();
     
-    // 初始渲染第一批
     applyFiltersAndRender(true);
     setupLazyLoadObserver();
+    mobileFilters.init();
   }
 
   function extractSortId(prompt) {
@@ -157,19 +142,16 @@
   }
 
   // 加载提示词数据
-  function loadPromptsData() {
-    const dataScript = document.getElementById('prompts-data');
-    if (dataScript) {
-      try {
-        const rawPrompts = JSON.parse(dataScript.textContent);
-        allPrompts = normalizePrompts(rawPrompts);
-        filteredPrompts = [...allPrompts];
-        console.log('Loaded prompts:', allPrompts.length);
-      } catch (e) {
-        console.error('Failed to parse prompts data:', e);
-        allPrompts = [];
-        filteredPrompts = [];
-      }
+  async function loadPromptsData() {
+    try {
+      const res = await fetch('{{ "prompts-index.json" | relURL }}', { cache: 'force-cache' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const rawPrompts = await res.json();
+      allPrompts = normalizePrompts(rawPrompts);
+      filteredPrompts = [...allPrompts];
+    } catch (e) {
+      allPrompts = [];
+      filteredPrompts = [];
     }
   }
 
@@ -902,10 +884,5 @@
       });
     }
   };
-
-  // 初始化移动端筛选器
-  document.addEventListener('DOMContentLoaded', () => {
-    mobileFilters.init();
-  });
 </script>
 {{ end }}
