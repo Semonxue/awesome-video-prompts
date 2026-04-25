@@ -1,0 +1,69 @@
+---
+title: Dragon Fantasy Sequence
+date: '2026-04-21T18:15:04+00:00'
+image: /prompts/2026-04/2046653964515504136-dragon-fantasy-sequence/cover.jpg
+video: /prompts/2026-04/2046653964515504136-dragon-fantasy-sequence/video.mp4
+models:
+- seedance2
+tags:
+- fantasy
+- cinematic
+- fire
+- vfx
+- epic
+author: '@LudovicCreator'
+description: |-
+  Ultra-cinematic fantasy sequence featuring a massive dragon emerging in a mountainous landscape at dusk.
+
+  0–2s: Wide establishing shot — a lone figure stands in a vast rocky valley, distant mountains under a darkening sky, wind blowing dust and mist.
+
+  2–4s: Subtle movement — shadows shift across the cliffs, a deep rumble echoes, tension builds.
+
+  4–6s: Reveal — a gigantic dragon rises from behind the mountains, wings unfolding slowly, silhouette massive against the sky.
+
+  6–8s: Close-up — the dragon’s head lowers, glowing eyes locking forward, smoke drifting from its nostrils.
+
+  8–10s: Power moment — wings beat heavily, creating strong wind gusts, debris and dust swirling violently across the ground.
+
+  10–12s: Fire build — the dragon inhales deeply, chest glowing from within, heat distortion visible in the air.
+
+  12–14s: Fire release — a massive stream of fire erupts forward, lighting the environment in intense orange glow, flames spreading outward.
+
+  14–15s: Final shot — dragon stands tall, wings partially open, smoke and embers drifting, dominant and unstoppable presence.
+
+  Camera: cinematic wide shots, slow push-ins, dramatic scale emphasis, slight handheld vibration during impacts.
+
+  Environment: rocky valley, mountains, dust, wind, atmospheric haze.
+
+  Lighting: dusk tones shifting to intense fire glow, high contrast, volumetric light through smoke.
+
+  Style: ultra-cinematic realism, epic fantasy tone, massive scale, fire and particle VFX, no text, no overlays, stable proportions without stretch.
+source_url: https://twitter.com/LudovicCreator/status/2046653964515504136
+draft: false
+---
+
+Ultra-cinematic fantasy sequence featuring a massive dragon emerging in a mountainous landscape at dusk.
+
+0–2s: Wide establishing shot — a lone figure stands in a vast rocky valley, distant mountains under a darkening sky, wind blowing dust and mist.
+
+2–4s: Subtle movement — shadows shift across the cliffs, a deep rumble echoes, tension builds.
+
+4–6s: Reveal — a gigantic dragon rises from behind the mountains, wings unfolding slowly, silhouette massive against the sky.
+
+6–8s: Close-up — the dragon’s head lowers, glowing eyes locking forward, smoke drifting from its nostrils.
+
+8–10s: Power moment — wings beat heavily, creating strong wind gusts, debris and dust swirling violently across the ground.
+
+10–12s: Fire build — the dragon inhales deeply, chest glowing from within, heat distortion visible in the air.
+
+12–14s: Fire release — a massive stream of fire erupts forward, lighting the environment in intense orange glow, flames spreading outward.
+
+14–15s: Final shot — dragon stands tall, wings partially open, smoke and embers drifting, dominant and unstoppable presence.
+
+Camera: cinematic wide shots, slow push-ins, dramatic scale emphasis, slight handheld vibration during impacts.
+
+Environment: rocky valley, mountains, dust, wind, atmospheric haze.
+
+Lighting: dusk tones shifting to intense fire glow, high contrast, volumetric light through smoke.
+
+Style: ultra-cinematic realism, epic fantasy tone, massive scale, fire and particle VFX, no text, no overlays, stable proportions without stretch.
