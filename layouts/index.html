@@ -51,13 +51,14 @@
 {{ end }}
 
 {{ define "scripts" }}
+{{ partial "grid-engine.html" (dict "hasModelFilter" true "i18n" (dict "loading" (T "loading") "hoverToPlay" (T "hover_to_play") "clickToCopy" (T "click_to_copy"))) }}
+
 <script>
-  // 全局数据和状态管理
-  let allPrompts = []; // 所有提示词数据
-  let filteredPrompts = []; // 过滤后的提示词
-  let renderedCount = 0; // 已渲染数量
+  let allPrompts = [];
+  let filteredPrompts = [];
+  let renderedCount = 0;
   let loadObserver = null;
-  const LOAD_BATCH_SIZE = 10; // 每次加载数量
+  const LOAD_BATCH_SIZE = 10;
 
   const state = {
     search: '',
@@ -66,7 +67,6 @@
     isLoading: false
   };
 
-  // Model name mapping for explore link
   const modelsData = {
     {{ range $key, $value := .Site.Data.models }}"{{ $key }}": "{{ $value.name }}",
     {{ end }}
@@ -82,8 +82,6 @@
     {{ end }}
   };
 
-
-  // DOM 元素引用
   const dom = {
     get searchInputs() { return document.querySelectorAll('.search-input'); },
     get modelBtns() { return document.querySelectorAll('.model-tag[data-model]'); },
@@ -103,45 +101,16 @@
     resizeTimeout: null
   };
 
-  // 初始化
   async function init() {
     await loadPromptsData();
     bindEvents();
     updateHeaderState();
     bindMasonryResize();
-    
-    applyFiltersAndRender(true);
+    applyFiltersAndRender();
     setupLazyLoadObserver();
     mobileFilters.init();
   }
 
-  function extractSortId(prompt) {
-    const sourceMatch = (prompt.sourceUrl || '').match(/status\/(\d+)/);
-    if (sourceMatch) return sourceMatch[1];
-    const permalinkMatch = (prompt.permalink || '').match(/\/(\d+)-/);
-    if (permalinkMatch) return permalinkMatch[1];
-    return '';
-  }
-
-  function normalizePrompts(prompts) {
-    const seen = new Set();
-    const normalized = [];
-    prompts.forEach(prompt => {
-      const sortId = extractSortId(prompt);
-      const key = prompt.permalink || `${prompt.title || ''}-${sortId}`;
-      if (seen.has(key)) return;
-      seen.add(key);
-      normalized.push({ ...prompt, sortId });
-    });
-
-    normalized.sort((a, b) =>
-      (b.sortId || '').localeCompare(a.sortId || '', 'en', { numeric: true })
-    );
-
-    return normalized;
-  }
-
-  // 加载提示词数据
   async function loadPromptsData() {
     try {
       const res = await fetch('{{ "prompts-index.json" | relURL }}', { cache: 'force-cache' });
@@ -155,308 +124,10 @@
     }
   }
 
-  function resolveAssetUrl(url) {
-    if (!url) return '';
-    if (/^https?:\/\//i.test(url)) return url;
-    return url;
-  }
-
-  // 创建卡片 HTML
-  function createCardHTML(prompt, isPriority) {
-    let modelKeys = [];
-    if (Array.isArray(prompt.model)) {
-        modelKeys = prompt.model;
-    } else if (prompt.model) {
-        modelKeys = [prompt.model];
-    }
-
-    const modelBadgesHTML = modelKeys.map(key => {
-        const name = modelsData[key] || modelsData[key.toLowerCase()] || key;
-        return `<span class="model-badge">${name}</span>`;
-    }).join('');
-
-    const imageUrl = resolveAssetUrl(prompt.image);
-    const videoUrl = resolveAssetUrl(prompt.video);
-    const tagsHTML = (prompt.tags || []).map(tag => 
-      `<span class="prompt-tag">${tag}</span>`
-    ).join('');
-    
-    // 截断标题为 60 字符
-    const truncatedTitle = prompt.title.length > 60 ? prompt.title.substring(0, 60) + '...' : prompt.title;
-    
-    const imageHTML = imageUrl ? `
-      <div class="prompt-image-wrapper">
-        <img src="${imageUrl}" alt="${truncatedTitle}" class="prompt-image"${isPriority ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"'}>
-        ${videoUrl ? `
-          <div class="video-loader" style="display: none; position: absolute; inset: 0; align-items: center; justify-content: center; z-index: 4; background: rgba(0,0,0,0.1);">
-            <span style="color: white; font-weight: 500; background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 4px; font-size: 12px;">{{ T "loading" | default "Loading..." }}</span>
-          </div>
-          <video class="prompt-hover-video" data-src="${videoUrl}" loop playsinline muted style="display: none; opacity: 0; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 5; transition: opacity 0.3s;"></video>
-        ` : ''}
-        ${modelBadgesHTML}
-        <div class="prompt-overlay">
-          <span class="hover-text">{{ T "hover_to_play" }}</span>
-        </div>
-      </div>
-    ` : '';
-
-    const descriptionHTML = prompt.description ? 
-      `<p class="prompt-description" data-hint="{{ T "click_to_copy" | default "Click to copy" }}"><span class="prompt-description-text">${prompt.description}</span></p>` : '';
-    
-    // 作者和日期信息
-    const authorHTML = prompt.author ? 
-      `<span class="prompt-meta-text" style="color: #6B6A67;">By</span>
-       <span class="prompt-meta-text" style="color: #1A1918; font-weight: 500;">${prompt.sourceUrl ? `<a href="${prompt.sourceUrl}" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">${prompt.author}</a>` : prompt.author}</span>` : '';
-    
-    const dateHTML = prompt.date ? 
-      `<span class="prompt-meta-text" style="color: #6B6A67;">${prompt.date}</span>` : '';
-    
-    const metaHTML = (authorHTML || dateHTML) ? `
-      <div class="prompt-meta" style="display: flex; align-items: center; justify-content: space-between; gap: 4px; font-size: 10px; margin-top: 4px;">
-        <div style="display: flex; align-items: center; gap: 4px;">${authorHTML}</div>
-        <div>${dateHTML}</div>
-      </div>
-    ` : '';
-
-    return `
-      <article class="prompt-card" 
-               data-tags="${(prompt.tags || []).join(',')}"
-               data-model="${modelKeys.join(',')}"
-               data-prompt-name="${prompt.filename || ''}">
-        ${imageHTML}
-        <div class="prompt-content">
-          <h3 class="prompt-title"><a href="${prompt.permalink}" style="color: inherit; text-decoration: none;">${truncatedTitle}</a></h3>
-          ${descriptionHTML}
-          ${tagsHTML ? `<div class="prompt-tags">${tagsHTML}</div>` : ''}
-          ${metaHTML}
-        </div>
-      </article>
-    `;
-  }
-
-  function getMasonryColumns() {
-    const width = window.innerWidth;
-    if (width <= 640) return 1;
-    if (width <= 900) return 2;
-    if (width <= 1200) return 4;
-    return 5;
-  }
-
-  function scheduleMasonryLayout() {
-    if (masonry.layoutScheduled) return;
-    masonry.layoutScheduled = true;
-    requestAnimationFrame(() => {
-      masonry.layoutScheduled = false;
-      layoutMasonry();
-    });
-  }
-
-  function watchMasonryImages(cards) {
-    cards.forEach(card => {
-      card.querySelectorAll('img').forEach(img => {
-        if (img.complete) return;
-        img.addEventListener('load', scheduleMasonryLayout, { once: true });
-        img.addEventListener('error', scheduleMasonryLayout, { once: true });
-      });
-    });
-  }
-
-  function layoutMasonry() {
-    if (!dom.grid) return;
-    const cards = Array.from(dom.grid.querySelectorAll('.prompt-card'));
-    if (!cards.length) {
-      dom.grid.style.height = '0px';
-      return;
-    }
-
-    const columns = getMasonryColumns();
-    const gap = masonry.gap;
-    const gridWidth = dom.grid.clientWidth;
-    const cardWidth = Math.floor((gridWidth - gap * (columns - 1)) / columns);
-    const heights = Array(columns).fill(0);
-
-    cards.forEach(card => {
-      card.style.width = `${cardWidth}px`;
-      const minHeight = Math.min(...heights);
-      const columnIndex = heights.indexOf(minHeight);
-      const left = (cardWidth + gap) * columnIndex;
-      const top = heights[columnIndex];
-      card.style.transform = `translate(${left}px, ${top}px)`;
-      heights[columnIndex] = top + card.offsetHeight + gap;
-    });
-
-    dom.grid.style.height = `${Math.max(...heights)}px`;
-  }
-
-  function bindMasonryResize() {
-    window.addEventListener('resize', () => {
-      if (masonry.resizeTimeout) clearTimeout(masonry.resizeTimeout);
-      masonry.resizeTimeout = setTimeout(scheduleMasonryLayout, 150);
-    });
-  }
-
-  // 渲染卡片批次
-  function renderBatch(startIndex, count) {
-    console.log('renderBatch: startIndex =', startIndex, 'count =', count, 'total =', filteredPrompts.length);
-    
-    if (startIndex >= filteredPrompts.length) {
-      return;
-    }
-
-    const endIndex = Math.min(startIndex + count, filteredPrompts.length);
-    const batch = filteredPrompts.slice(startIndex, endIndex);
-    
-    const fragment = document.createElement('div');
-    fragment.innerHTML = batch.map(p => createCardHTML(p, startIndex === 0)).join('');
-    const newCards = Array.from(fragment.children);
-    dom.grid.append(...newCards);
-    renderedCount = endIndex;
-
-    // 为新渲染的卡片绑定视频悬停事件
-    attachVideoHoverEvents();
-    watchMasonryImages(newCards);
-    scheduleMasonryLayout();
-
-    console.log('renderBatch done: renderedCount =', renderedCount);
-    
-    // 更新 observer 状态
-    refreshObserver();
-  }
-
-  // 应用筛选并渲染
-  function applyFiltersAndRender(isInitial = false) {
-    // 应用筛选逻辑
-    filteredPrompts = allPrompts.filter(prompt => {
-      const title = (prompt.title || '').toLowerCase();
-      const description = (prompt.description || '').toLowerCase();
-      const modelKeys = Array.isArray(prompt.model) ? prompt.model : (prompt.model ? [prompt.model] : []);
-      const models = modelKeys.map(key => String(key).toLowerCase());
-      const tags = (prompt.tags || []).map(t => t.toLowerCase());
-
-      // 搜索匹配
-      const matchesSearch = !state.search || 
-                           title.includes(state.search) || 
-                           description.includes(state.search) || 
-                           tags.some(t => t.includes(state.search));
-
-      // 模型匹配
-      const matchesModel = state.model === 'all' || models.includes(state.model);
-
-      // 标签匹配
-      const matchesTag = state.tag === 'all' || tags.includes(state.tag);
-
-      return matchesSearch && matchesModel && matchesTag;
-    });
-
-    // 清空现有内容
-    dom.grid.innerHTML = '';
-    renderedCount = 0;
-
-    // 更新计数
-    updateCount(filteredPrompts.length);
-    
-    console.log('applyFiltersAndRender: total =', filteredPrompts.length, 'batchSize =', LOAD_BATCH_SIZE);
-
-    // 渲染第一批
-    renderBatch(0, LOAD_BATCH_SIZE);
-  }
-
-  // 加载更多
-  function loadMore() {
-    if (state.isLoading || renderedCount >= filteredPrompts.length) {
-      console.log('loadMore skipped: isLoading =', state.isLoading, 'renderedCount =', renderedCount);
-      return;
-    }
-
-    console.log('loadMore: loading from', renderedCount);
-    state.isLoading = true;
-
-    // 模拟轻微延迟，让用户感知到加载过程
-    setTimeout(() => {
-      renderBatch(renderedCount, LOAD_BATCH_SIZE);
-      state.isLoading = false;
-    }, 150);
-  }
-
-  // 更新计数显示
-  function updateCount(count) {
-    if (dom.countDisplay) {
-      const format = dom.countDisplay.dataset.format;
-      if (format) {
-        dom.countDisplay.textContent = format.replace('COUNT_PLACEHOLDER', count);
-      } else {
-        dom.countDisplay.textContent = `${count} prompts found`;
-      }
-    }
-  }
-
-  // 显示加载指示器
-  function showLoadingIndicator() {
-    if (dom.loadingMore) {
-      dom.loadingMore.style.display = 'flex';
-    }
-  }
-
-  // 隐藏加载指示器
-  function hideLoadingIndicator() {
-    if (dom.loadingMore) {
-      dom.loadingMore.style.display = 'none';
-    }
-  }
-
-  // 为卡片附加视频悬停事件
-  function attachVideoHoverEvents() {
-    const cards = dom.grid.querySelectorAll('.prompt-card');
-    cards.forEach(card => {
-      const video = card.querySelector('.prompt-hover-video');
-      const loader = card.querySelector('.video-loader');
-      
-      if (!video) return;
-      if (video.dataset.eventAttached) return; // 避免重复绑定
-      
-      video.dataset.eventAttached = 'true';
-      
-      card.addEventListener('mouseenter', () => {
-        if (!video.src && video.dataset.src) {
-          video.src = video.dataset.src;
-        }
-
-        if (video.readyState < 2) {
-          if (loader) loader.style.display = 'flex';
-          video.load();
-          video.addEventListener('canplay', () => {
-            if (loader) loader.style.display = 'none';
-            video.style.display = 'block';
-            video.style.opacity = '1';
-            video.play().catch(err => console.log('Autoplay prevented:', err));
-          }, { once: true });
-        } else {
-          video.style.display = 'block';
-          video.style.opacity = '1';
-          video.play().catch(err => console.log('Autoplay prevented:', err));
-        }
-      });
-      
-      card.addEventListener('mouseleave', () => {
-        video.pause();
-        video.currentTime = 0;
-        video.style.opacity = '0';
-        setTimeout(() => {
-          if (video.style.opacity === '0') {
-            video.style.display = 'none';
-          }
-        }, 300);
-      });
-    });
-  }
-
-  // 绑定事件
   function bindEvents() {
-    // 搜索输入
     dom.searchInputs.forEach(input => {
       input.addEventListener('input', (e) => {
         state.search = e.target.value.toLowerCase().trim();
-        // 同步所有搜索框
         dom.searchInputs.forEach(fi => {
             if (fi !== e.target) fi.value = e.target.value;
         });
@@ -464,14 +135,9 @@
       });
     });
 
-    // 模型筛选
     dom.modelBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
-        // Prevent navigation if it's a link to maintain SPA feel
-        if (btn.tagName === 'A') {
-          e.preventDefault();
-        }
-        
+        if (btn.tagName === 'A') e.preventDefault();
         const model = btn.dataset.model;
         updateActiveState(dom.modelBtns, model, 'data-model');
         state.model = model.toLowerCase();
@@ -480,7 +146,6 @@
       });
     });
 
-    // 模型展开/收起
     dom.modelMoreToggles.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -492,14 +157,9 @@
       });
     });
 
-    // 标签筛选
     dom.tagBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
-        // Prevent navigation if it's a link to maintain SPA feel
-        if (btn.tagName === 'A') {
-          e.preventDefault();
-        }
-
+        if (btn.tagName === 'A') e.preventDefault();
         const tag = btn.dataset.tag;
         updateActiveState(dom.tagBtns, tag, 'data-tag');
         state.tag = tag.toLowerCase();
@@ -508,23 +168,18 @@
       });
     });
 
-    // 滚动监听 - 仅处理 header
     window.addEventListener('scroll', updateHeaderState);
 
-    // Expand/Collapse Tags Logic
     const expandBtns = document.querySelectorAll('.tags-expand-btn');
     expandBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
         const container = btn.parentElement;
         if (!container) return;
-        
         const hiddenArea = container.querySelector('.hidden-tags-container');
         if (!hiddenArea) return;
-        
         const btnText = btn.querySelector('.btn-text');
         const isHidden = hiddenArea.style.display === 'none';
-        
         if (isHidden) {
           hiddenArea.style.display = 'contents';
           btnText.textContent = '{{ T "show_less" }}';
@@ -536,64 +191,10 @@
     });
   }
 
-  // 使用 IntersectionObserver 触发加载更多
-  function setupLazyLoadObserver() {
-    if (!dom.loadingMore || !('IntersectionObserver' in window)) {
-      console.log('Observer setup failed: loadingMore=', !!dom.loadingMore);
-      return;
-    }
-
-    if (loadObserver) {
-      loadObserver.disconnect();
-    }
-
-    loadObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        console.log('Observer triggered:', entry.isIntersecting, 'renderedCount:', renderedCount, 'total:', filteredPrompts.length);
-        if (entry.isIntersecting && !state.isLoading) {
-          loadMore();
-        }
-      });
-    }, {
-      root: null,
-      rootMargin: '200px 0px', // 距离底部200px时触发
-      threshold: 0
-    });
-
-    console.log('Observer created');
-    refreshObserver();
-  }
-
-  function refreshObserver() {
-    if (!loadObserver || !dom.loadingMore) return;
-    loadObserver.unobserve(dom.loadingMore);
-    if (renderedCount < filteredPrompts.length) {
-      console.log('Observer observing, renderedCount:', renderedCount, 'total:', filteredPrompts.length);
-      dom.loadingMore.style.display = 'flex'; // 确保可见才能被观察
-      loadObserver.observe(dom.loadingMore);
-    } else {
-      console.log('All loaded, hiding indicator');
-      dom.loadingMore.style.display = 'none';
-    }
-  }
-
-  // 更新按钮激活状态
-  function updateActiveState(elements, value, dataAttr) {
-    elements.forEach(el => {
-      if (el.getAttribute(dataAttr) === value) {
-        el.classList.add('active');
-      } else {
-        el.classList.remove('active');
-      }
-    });
-  }
-
-  // 更新 Explore 链接显示
   function updateExploreModelLink(modelKey) {
     const link = document.getElementById('explore-model-link');
     const text = document.getElementById('explore-model-text');
     if (!link || !text) return;
-    
     if (modelKey && modelKey !== 'all') {
       const modelName = modelsData[modelKey] || modelKey;
       text.textContent = '{{ T "explore" | default "Explore" }} ' + modelName;
@@ -608,7 +209,6 @@
     const link = document.getElementById('explore-tag-link');
     const text = document.getElementById('explore-tag-text');
     if (!link || !text) return;
-
     if (tagKey && tagKey !== 'all') {
       const tagName = tagsData[tagKey] || tagKey;
       text.textContent = '{{ T "explore" | default "Explore" }} ' + tagName;
@@ -619,14 +219,11 @@
     }
   }
 
-  // Header 滚动切换逻辑
   let isCompact = false;
   function updateHeaderState() {
     if (!dom.mainContent) return;
-
     const rect = dom.mainContent.getBoundingClientRect();
     const shouldBeCompact = rect.top < 50;
-
     if (shouldBeCompact && !isCompact) {
       isCompact = true;
       toggleHeaders(dom.headerDefault, dom.headerCompact);
@@ -638,13 +235,10 @@
 
   function toggleHeaders(hideEl, showEl) {
     if (!hideEl || !showEl) return;
-    
     hideEl.style.display = 'none';
     hideEl.style.opacity = '0';
-    
     showEl.style.display = 'block';
     showEl.style.opacity = '0';
-    
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         showEl.style.opacity = '1';
@@ -652,10 +246,6 @@
     });
   }
 
-  // 启动
-  document.addEventListener('DOMContentLoaded', init);
-
-  // ===== 移动端筛选选择器逻辑 =====
   const mobileFilters = {
     modelsData: null,
     tagsData: null,
@@ -663,23 +253,15 @@
     tagCounts: null,
     
     init() {
-      // 获取模型和标签数据
       this.modelsData = modelsData;
       this.tagsData = tagsData;
-      
-      // 计算每个模型和标签的提示词数量
       this.calculateCounts();
-      
-      // 填充选项 - 同时初始化默认和compact版本
       this.populateOptions('model');
       this.populateOptions('tag');
-      
-      // 绑定事件 - 同时绑定默认和compact版本
       this.bindEvents();
     },
     
     calculateCounts() {
-      // 计算模型数量
       this.modelCounts = {};
       allPrompts.forEach(prompt => {
         const modelKeys = Array.isArray(prompt.model) ? prompt.model : (prompt.model ? [prompt.model] : []);
@@ -688,8 +270,6 @@
           this.modelCounts[normalizedKey] = (this.modelCounts[normalizedKey] || 0) + 1;
         });
       });
-      
-      // 计算标签数量
       this.tagCounts = {};
       allPrompts.forEach(prompt => {
         const tags = prompt.tags || [];
@@ -701,128 +281,87 @@
     },
     
     populateOptions(type) {
-      // 同时填充默认版本和compact版本
       const containers = [
         document.getElementById(`mobile-${type}-options`),
         document.getElementById(`mobile-${type}-options-compact`)
       ];
-      
       let options = [];
-      
       if (type === 'model') {
-        // 从全局 modelsData 获取数据，并添加数量
         for (const [key, name] of Object.entries(this.modelsData || {})) {
           const count = this.modelCounts[key.toLowerCase()] || 0;
           options.push({ key, name, count });
         }
-        // 按数量降序排序
         options.sort((a, b) => b.count - a.count);
       } else if (type === 'tag') {
-        // 从全局 tagsData 获取数据，并添加数量
         for (const [key, name] of Object.entries(this.tagsData || {})) {
           const count = this.tagCounts[key.toLowerCase()] || 0;
           options.push({ key, name, count });
         }
-        // 按数量降序排序
         options.sort((a, b) => b.count - a.count);
       }
-      
-      // 获取 "All" 标签文本
       const allLabel = type === 'model' 
         ? '{{ T "all_models" | default "All Models" }}'
         : '{{ T "all_tags" | default "All Tags" }}';
-      
       let html = `<div class="mobile-filter-option active" data-value="all">${allLabel}</div>`;
-      
       options.forEach(opt => {
         html += `<div class="mobile-filter-option" data-value="${opt.key}">${opt.name}</div>`;
       });
-      
-      // 填充所有容器
       containers.forEach(container => {
-        if (container) {
-          container.innerHTML = html;
-          console.log(`Populated ${options.length} ${type} options for container:`, container.id);
-        }
+        if (container) container.innerHTML = html;
       });
     },
     
     bindEvents() {
-      // 下拉按钮点击 - 同时绑定默认和compact版本
       document.querySelectorAll('.mobile-filter-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
           e.stopPropagation();
           const dropdown = btn.nextElementSibling;
           const isOpen = dropdown && dropdown.classList.contains('open');
-          
-          // 关闭所有下拉
           document.querySelectorAll('.mobile-filter-dropdown.open').forEach(d => {
             d.classList.remove('open');
             if (d.previousElementSibling) d.previousElementSibling.classList.remove('open');
           });
-          
-          // 切换当前下拉
           if (!isOpen && dropdown) {
             dropdown.classList.add('open');
             btn.classList.add('open');
-            // 聚焦搜索框
             const searchInput = dropdown.querySelector('input');
             if (searchInput) searchInput.focus();
           }
         });
       });
-      
-      // 搜索过滤
       document.querySelectorAll('.mobile-filter-search input').forEach(input => {
         input.addEventListener('input', (e) => {
           const query = e.target.value.toLowerCase();
           const options = input.closest('.mobile-filter-dropdown').querySelectorAll('.mobile-filter-option');
-          
           options.forEach(opt => {
             const text = opt.textContent.toLowerCase();
             opt.style.display = text.includes(query) ? '' : 'none';
           });
         });
       });
-      
-      // 选项点击
       document.querySelectorAll('.mobile-filter-options').forEach(container => {
         container.addEventListener('click', (e) => {
           const option = e.target.closest('.mobile-filter-option');
           if (!option) return;
-          
           const value = option.dataset.value;
           const type = container.id.includes('model') ? 'model' : 'tag';
-          
-          // 更新选中状态 - 更新所有同类型容器
           document.querySelectorAll(`[id^="mobile-${type}-options"]`).forEach(c => {
-            c.querySelectorAll('.mobile-filter-option').forEach(opt => {
-              opt.classList.remove('active');
-            });
+            c.querySelectorAll('.mobile-filter-option').forEach(opt => opt.classList.remove('active'));
             const targetOpt = c.querySelector(`[data-value="${value}"]`);
             if (targetOpt) targetOpt.classList.add('active');
           });
-          
-          // 更新按钮标签 - 更新所有同类型按钮
           document.querySelectorAll(`[id^="mobile-${type}-btn"]`).forEach(btn => {
             const label = btn.querySelector('.mobile-filter-label');
             if (label) label.textContent = option.textContent;
-            if (value !== 'all') {
-              btn.classList.add('active');
-            } else {
-              btn.classList.remove('active');
-            }
+            if (value !== 'all') btn.classList.add('active');
+            else btn.classList.remove('active');
           });
-          
-          // 关闭下拉
           const dropdown = container.closest('.mobile-filter-dropdown');
           if (dropdown) {
             dropdown.classList.remove('open');
             const btn = dropdown.previousElementSibling;
             if (btn) btn.classList.remove('open');
           }
-          
-          // 触发筛选
           if (type === 'model') {
             state.model = value.toLowerCase();
             updateActiveState(dom.modelBtns, value, 'data-model');
@@ -836,8 +375,6 @@
           }
         });
       });
-      
-      // 点击外部关闭下拉
       document.addEventListener('click', () => {
         document.querySelectorAll('.mobile-filter-dropdown.open').forEach(d => {
           d.classList.remove('open');
@@ -846,43 +383,33 @@
       });
     },
     
-    // 从桌面端同步状态到移动端
     syncFromDesktop(type, value) {
       const containers = [
         document.getElementById(`mobile-${type}-options`),
         document.getElementById(`mobile-${type}-options-compact`)
       ];
-      
       const btns = [
         document.getElementById(`mobile-${type}-btn`),
         document.getElementById(`mobile-${type}-btn-compact`)
       ];
-      
       containers.forEach(container => {
         if (!container) return;
         container.querySelectorAll('.mobile-filter-option').forEach(opt => {
-          if (opt.dataset.value === value) {
-            opt.classList.add('active');
-          } else {
-            opt.classList.remove('active');
-          }
+          if (opt.dataset.value === value) opt.classList.add('active');
+          else opt.classList.remove('active');
         });
       });
-      
       btns.forEach(btn => {
         if (!btn) return;
         const label = btn.querySelector('.mobile-filter-label');
         const activeOption = containers[0]?.querySelector(`[data-value="${value}"]`);
-        if (label && activeOption) {
-          label.textContent = activeOption.textContent;
-        }
-        if (value !== 'all') {
-          btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
-        }
+        if (label && activeOption) label.textContent = activeOption.textContent;
+        if (value !== 'all') btn.classList.add('active');
+        else btn.classList.remove('active');
       });
     }
   };
+
+  document.addEventListener('DOMContentLoaded', init);
 </script>
 {{ end }}

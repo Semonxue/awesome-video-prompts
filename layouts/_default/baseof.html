@@ -49,8 +49,12 @@
   <!-- Google Fonts - Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" as="style">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=optional" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=optional" rel="stylesheet">
+
+  <!-- Preconnect media domains -->
+  <link rel="dns-prefetch" href="https://pbs.twimg.com">
+  <link rel="dns-prefetch" href="https://video.twimg.com">
   
   <!-- 自定义样式 - 基于Pencil设计系统 -->
   {{ $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
