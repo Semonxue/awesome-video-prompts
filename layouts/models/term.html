@@ -455,7 +455,7 @@
     return url;
   }
 
-  function createCardHTML(prompt) {
+  function createCardHTML(prompt, isPriority) {
     let modelKeys = [];
     if (Array.isArray(prompt.model)) {
         modelKeys = prompt.model;
@@ -479,7 +479,7 @@
     
     const imageHTML = imageUrl ? `
       <div class="prompt-image-wrapper">
-        <img src="${imageUrl}" alt="${truncatedTitle}" class="prompt-image" loading="lazy">
+        <img src="${imageUrl}" alt="${truncatedTitle}" class="prompt-image"${isPriority ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"'}>
         ${videoUrl ? `
           <div class="video-loader" style="display: none; position: absolute; inset: 0; align-items: center; justify-content: center; z-index: 4; background: rgba(0,0,0,0.1);">
             <span style="color: white; font-weight: 500; background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 4px; font-size: 12px;">{{ T "loading" | default "Loading..." }}</span>
@@ -592,7 +592,7 @@
     const endIndex = Math.min(startIndex + count, filteredPrompts.length);
     const batch = filteredPrompts.slice(startIndex, endIndex);
     const fragment = document.createElement('div');
-    fragment.innerHTML = batch.map(createCardHTML).join('');
+    fragment.innerHTML = batch.map(p => createCardHTML(p, startIndex === 0)).join('');
     const newCards = Array.from(fragment.children);
     dom.grid.append(...newCards);
     renderedCount = endIndex;

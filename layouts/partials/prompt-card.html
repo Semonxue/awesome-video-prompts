@@ -11,7 +11,7 @@
   <div class="prompt-image-wrapper">
     {{ $img := . }}
     {{ $imgURL := cond (or (hasPrefix $img "http://") (hasPrefix $img "https://")) $img ((strings.TrimPrefix "/" $img) | relURL) }}
-    <img src="{{ $imgURL | safeURL }}" alt="{{ $.Title }}" class="prompt-image" loading="lazy">
+    <img src="{{ $imgURL | safeURL }}" alt="{{ $.Title }}" class="prompt-image" loading="lazy" decoding="async">
     
     {{/* Video Auto-play on hover */}}
     {{ with $.Params.video }}
