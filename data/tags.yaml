@@ -1098,3 +1098,15 @@ prompt-generator:
   zh-cn: 提示词生成器
   description_en: "Tools and resources for generating AI video prompts"
   description_zh-cn: "用于生成AI视频提示词的工具和资源"
+
+ip-design:
+  en: ip-design
+  zh-cn: IP设计
+  description_en: "Intellectual property and character design development"
+  description_zh-cn: "知识产权和角色设计开发"
+
+character:
+  en: character
+  zh-cn: 角色
+  description_en: "Character-focused content with emphasis on character design and development"
+  description_zh-cn: "以角色为主的内容，注重角色设计和开发"

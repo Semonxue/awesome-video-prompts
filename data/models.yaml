@@ -155,10 +155,10 @@ firefly:
   description: >-
     Adobe Firefly is a family of generative AI models integrated into Adobe's creative tools. Firefly Custom Models allow users to train AI on their own artwork and characters for consistent visual identity across generations. Supports text-to-image and image generation with style consistency.
 
-comfyui:
-  name: ComfyUI
-  company: ComfyUI
-  slug: comfyui
-  url: https://comfyui.com/
+ling26flash:
+  name: Ling 2.6 Flash
+  company: Ant Group
+  slug: ling26flash
+  url: https://antgroup.com/
   description: >-
-    ComfyUI is an open-source node-based UI for generative AI, enabling complex workflows for image and video generation, including 3D asset creation with HY 3D nodes, animation, and VFX pipelines.
+    Ant Group's Ling 2.6 Flash is an instruct model with 104B total parameters and 7.4B active parameters. Designed for high token efficiency, it is competitive on real agent tasks while helping developers reduce cost, improve throughput, and deploy more efficiently at scale.
