@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown 编辑器</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; height: 100vh; overflow: hidden; }
+        :root {
+            --bg-primary: #ffffff; --bg-secondary: #f5f5f5; --bg-tertiary: #e8e8e8;
+            --text-primary: #333333; --text-secondary: #666666; --text-muted: #999999;
+            --border-color: #ddd; --accent-color: #0066cc; --success-color: #28a745; --edited-color: #f59e0b; --error-color: #dc3545;
+        }
+        body { background: var(--bg-primary); color: var(--text-primary); }
+        .app-container { display: flex; height: 100vh; }
+
+        .file-list-panel { width: 280px; min-width: 200px; max-width: 50%; border-right: 1px solid var(--border-color); display: flex; flex-direction: column; background: var(--bg-secondary); }
+        .resize-handle { width: 4px; cursor: col-resize; background: transparent; transition: background 0.2s; flex-shrink: 0; }
+        .resize-handle:hover { background: var(--accent-color); }
+        .file-list-header { padding: 10px 12px; border-bottom: 1px solid var(--border-color); background: var(--bg-primary); font-weight: 600; font-size: 12px; display: flex; justify-content: space-between; align-items: center; }
+        .refresh-btn { background: none; border: 1px solid var(--border-color); padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 11px; }
+        .file-items { flex: 1; overflow-y: auto; }
+        .file-item { padding: 8px 12px; border-bottom: 1px solid var(--border-color); cursor: pointer; transition: background 0.15s; }
+        .file-item:hover { background: var(--bg-tertiary); }
+        .file-item.active { background: var(--accent-color); color: white; }
+        .file-item.edited { background: #fef3c7; border-left: 3px solid var(--edited-color); }
+        .file-item.edited.active { background: var(--accent-color); }
+        .file-name { font-size: 12px; font-weight: 500; white-space: nowrap; overflow: hidden; }
+        .file-date { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+
+        .editor-panel { flex: 1; display: flex; flex-direction: column; min-width: 400px; }
+        .editor-header { padding: 8px 12px; border-bottom: 1px solid var(--border-color); background: var(--bg-primary); display: flex; justify-content: space-between; align-items: center; }
+        .file-title { font-size: 12px; font-weight: 600; color: var(--text-secondary); font-family: monospace; }
+        .editor-actions { display: flex; gap: 8px; }
+        .btn { padding: 6px 12px; border: none; border-radius: 4px; cursor: pointer; font-size: 12px; }
+        .btn-primary { background: var(--accent-color); color: white; }
+        .btn-toggle { background: var(--bg-tertiary); border: 1px solid var(--border-color); }
+        .btn-toggle.active { background: var(--accent-color); color: white; border-color: var(--accent-color); }\n        .publish-label { font-size: 12px; display: flex; align-items: center; gap: 4px; cursor: pointer; user-select: none; margin-right: 8px; }
+        .editor-content { flex: 1; overflow-y: auto; padding: 12px; }
+
+        .form-row { margin-bottom: 10px; }
+        .form-label { font-size: 11px; font-weight: 600; color: var(--text-secondary); margin-bottom: 4px; display: block; }
+        .form-input { width: 100%; padding: 6px 8px; border: 1px solid var(--border-color); border-radius: 4px; font-size: 12px; background: var(--bg-primary); color: var(--text-primary); }
+        .form-input:focus { outline: none; border-color: var(--accent-color); }
+        .selector-options { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+        .selector-chip { padding: 3px 8px; background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 12px; font-size: 11px; cursor: pointer; }
+        .selector-chip:hover { border-color: var(--accent-color); }
+        .selector-chip.selected { background: var(--accent-color); color: white; border-color: var(--accent-color); }
+
+        .source-row { display: flex; gap: 8px; align-items: center; }
+        .source-row input[type="text"] { width: 100px; }
+        .source-row input[type="url"] { flex: 1; }
+        .source-btn { padding: 6px 10px; background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 4px; cursor: pointer; font-size: 11px; text-decoration: none; }
+        .source-btn:hover { background: var(--border-color); }
+        .source-btn.active { background: var(--accent-color); color: white; border-color: var(--accent-color); }
+
+        .media-preview { display: flex; gap: 8px; margin-top: 8px; }
+        .media-item { flex: 1; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; }
+        .media-label { font-size: 10px; color: var(--text-muted); padding: 4px 8px; background: var(--bg-tertiary); }
+        .media-content { height: 120px; display: flex; align-items: center; justify-content: center; background: var(--bg-primary); }
+        .media-content img, .media-content video { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .lazy-media { cursor: pointer; color: var(--accent-color); font-size: 12px; padding: 20px; text-align: center; transition: background 0.2s; }
+        .lazy-media:hover { background: var(--bg-tertiary); }
+
+        .source-editor { display: none; flex-direction: column; height: 100%; }
+        .source-editor.active { display: flex; }
+        .source-editor textarea { flex: 1; width: 100%; padding: 12px; border: none; font-family: 'Monaco', 'Menlo', monospace; font-size: 12px; line-height: 1.5; resize: none; background: var(--bg-primary); color: var(--text-primary); }
+
+        .iframe-panel { width: 25%; min-width: 200px; border-left: 1px solid var(--border-color); display: none; flex-direction: column; }
+        .iframe-panel.visible { display: flex; }
+        .iframe-header { padding: 8px 12px; border-bottom: 1px solid var(--border-color); background: var(--bg-secondary); font-size: 11px; color: var(--text-secondary); display: flex; justify-content: space-between; align-items: center; }
+        .iframe-content iframe { width: 100%; height: 100%; border: none; }
+
+        .toast { position: fixed; bottom: 20px; right: 20px; background: var(--success-color); color: white; padding: 10px 16px; border-radius: 4px; font-size: 12px; opacity: 0; transform: translateY(10px); transition: all 0.2s; z-index: 1000; }
+        .toast.show { opacity: 1; transform: translateY(0); }
+        .toast.error { background: var(--error-color); }
+        .empty-state { display: flex; align-items: center; justify-content: center; height: 100%; color: var(--text-muted); }
+        .desc-textarea { width: 100%; min-height: 250px; padding: 8px; border: 1px solid var(--border-color); border-radius: 4px; font-family: 'Monaco', 'Menlo', monospace; font-size: 12px; line-height: 1.5; resize: vertical; background: var(--bg-primary); color: var(--text-primary); }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="file-list-panel">
+            <div class="file-list-header">
+                <span>📁 待编辑 (<span id="fileCount">0</span>)</span>
+                <button class="refresh-btn" onclick="loadFileList()">🔄</button>
+            </div>
+            <div class="file-items" id="fileItems"><div class="empty-state">加载中...</div></div>
+        </div>
+        <div class="resize-handle" id="resizeHandle"></div>
+
+        <div class="editor-panel">
+            <div class="empty-state" id="emptyState">👈 选择文件</div>
+
+            <div id="formEditor" style="display:none; flex-direction: column; height: 100%;">
+                <div class="editor-header">
+                    <div class="file-title" id="currentFileTitle">-</div>
+                    <div class="editor-actions">
+                        <label class="publish-label">
+                            <input type="checkbox" id="inputPublish1" checked> 开启发布
+                        </label>
+                        <button class="btn btn-toggle active" id="formToggle" onclick="switchMode('form')">📝</button>
+                        <button class="btn btn-toggle" id="sourceToggle" onclick="switchMode('source')">📄</button>
+                        <button class="btn btn-primary" onclick="saveForm()">💾</button>
+                    </div>
+                </div>
+                <div class="editor-content">
+                    <div class="form-row">
+                        <label class="form-label">标题</label>
+                        <input type="text" class="form-input" id="inputTitle">
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">模型</label>
+                        <div class="selector-options" id="modelSelector"></div>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-label">标签（逗号分隔）</label>
+                        <input type="text" class="form-input" id="inputTags">
+                    </div>
+                    <div class="form-row source-row">
+                        <input type="text" class="form-input" id="inputAuthor" placeholder="作者">
+                        <input type="url" class="form-input" id="inputSourceUrl" placeholder="来源链接">
+                        <button class="source-btn" id="openNewTab" onclick="openInNewTab()" title="新窗口（可拖到分栏）">↗️</button>
+                        <button class="source-btn" id="iframeToggle" onclick="toggleIframe()">🔗</button>
+                    </div>
+                    <div class="media-preview">
+                        <div class="media-item"><div class="media-label">封面图</div><div class="media-content" id="imagePreview">-</div></div>
+                        <div class="media-item"><div class="media-label">视频</div><div class="media-content" id="videoPreview">-</div></div>
+                    </div>
+                    <div class="form-row" style="margin-top: 12px;">
+                        <label class="form-label">描述内容（无缩进）</label>
+                        <textarea class="desc-textarea" id="inputDescription" placeholder="输入描述..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="source-editor" id="sourceEditor">
+                <div class="editor-header">
+                    <div class="file-title" id="sourceFileTitle">-</div>
+                    <div class="editor-actions">
+                        <label class="publish-label">
+                            <input type="checkbox" id="inputPublish2" checked> 开启发布
+                        </label>
+                        <button class="btn btn-toggle" id="formToggle2" onclick="switchMode('form')">📝</button>
+                        <button class="btn btn-toggle active" id="sourceToggle2" onclick="switchMode('source')">📄</button>
+                        <button class="btn btn-primary" onclick="saveSource()">💾</button>
+                    </div>
+                </div>
+                <textarea id="sourceTextarea" placeholder="原始内容..."></textarea>
+            </div>
+        </div>
+
+        <div class="iframe-panel" id="iframePanel">
+            <div class="iframe-header">
+                <span>来源</span>
+                <button class="source-btn" onclick="toggleIframe()">×</button>
+            </div>
+            <div class="iframe-content"><iframe id="sourceIframe" src="about:blank"></iframe></div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script>
+        let currentFile = null;
+        let models = {};
+        let selectedModel = '';
+        let iframeVisible = false;
+        let editedFiles = new Set();
+        let currentRaw = '';
+        let formData = {};
+
+        const API = '/api';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadFileList();
+            loadMetadata();
+            initResize();
+        });
+
+        function initResize() {
+            const handle = document.getElementById('resizeHandle');
+            const panel = document.querySelector('.file-list-panel');
+            let isResizing = false;
+
+            handle.addEventListener('mousedown', (e) => {
+                isResizing = true;
+                document.body.style.cursor = 'col-resize';
+                document.body.style.userSelect = 'none';
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isResizing) return;
+                const containerRect = document.querySelector('.app-container').getBoundingClientRect();
+                const newWidth = e.clientX - containerRect.left;
+                const minWidth = 200;
+                const maxWidth = containerRect.width * 0.5;
+                if (newWidth >= minWidth && newWidth <= maxWidth) {
+                    panel.style.width = newWidth + 'px';
+                }
+            });
+
+            document.addEventListener('mouseup', () => {
+                if (isResizing) {
+                    isResizing = false;
+                    document.body.style.cursor = '';
+                    document.body.style.userSelect = '';
+                }
+            });
+        }
+
+        async function loadFileList() {
+            try {
+                const res = await fetch(`${API}/files`);
+                const files = await res.json();
+                document.getElementById('fileCount').textContent = files.length;
+                
+                if (!files.length) {
+                    document.getElementById('fileItems').innerHTML = '<div class="empty-state">无文件</div>';
+                    return;
+                }
+
+                document.getElementById('fileItems').innerHTML = files.map(f => {
+                    const edited = editedFiles.has(f.path);
+                    const active = currentFile === f.path;
+                    // 显示完整文件名（去掉.md后缀）
+                    const displayName = f.name.replace(/\.md$/, '');
+                    return `<div class="file-item${active ? ' active' : ''}${edited ? ' edited' : ''}" onclick="openFile('${f.path.replace(/'/g, "\\'")}')">
+                        <div class="file-name" title="${f.name}">${displayName}</div>
+                        <div class="file-date">${f.date}${edited ? ' ✏️' : ''}</div>
+                    </div>`;
+                }).join('');
+            } catch (e) {
+                showToast('加载失败', true);
+            }
+        }
+
+        async function loadMetadata() {
+            try {
+                const res = await fetch(`${API}/metadata?type=models`);
+                models = await res.json();
+                renderModels();
+            } catch (e) {
+                console.error('加载模型失败', e);
+            }
+        }
+
+        function renderModels() {
+            const el = document.getElementById('modelSelector');
+            if (!el) return;
+            el.innerHTML = Object.entries(models).map(([slug, m]) => 
+                `<span class="selector-chip${selectedModel === slug ? ' selected' : ''}" onclick="selectModel('${slug}')">${m.name}</span>`
+            ).join('');
+        }
+
+        function selectModel(slug) {
+            selectedModel = slug;
+            renderModels();
+        }
+
+        function switchMode(mode) {
+            const formOn = mode === 'form';
+            document.getElementById('formEditor').style.display = formOn ? 'flex' : 'none';
+            document.getElementById('sourceEditor').classList.toggle('active', !formOn);
+            
+            document.getElementById('formToggle').classList.toggle('active', formOn);
+            document.getElementById('sourceToggle').classList.toggle('active', !formOn);
+            document.getElementById('formToggle2').classList.toggle('active', formOn);
+            document.getElementById('sourceToggle2').classList.toggle('active', !formOn);
+            
+            if (!formOn) {
+                document.getElementById('sourceTextarea').value = currentRaw;
+            }
+        }
+
+        // Sync checkboxes
+        document.addEventListener('DOMContentLoaded', () => {
+            const cb1 = document.getElementById('inputPublish1');
+            const cb2 = document.getElementById('inputPublish2');
+            cb1.addEventListener('change', () => cb2.checked = cb1.checked);
+            cb2.addEventListener('change', () => cb1.checked = cb2.checked);
+        });
+
+        async function openFile(filePath, forceReload = false) {
+            if (currentFile === filePath && !forceReload) return; // 防重复
+            
+            // 如果是重新加载，保持正在编辑所在的模式（表单还是文本）
+            const modeForm = document.getElementById('formEditor').style.display === 'flex';
+            currentFile = filePath;
+            document.getElementById('emptyState').style.display = 'none';
+            document.getElementById('formEditor').style.display = 'flex';
+
+            try {
+                const res = await fetch(`${API}/file?path=${encodeURIComponent(filePath)}`);
+                const data = await res.json();
+                const fm = data.frontmatter || {};
+                currentRaw = data.raw || '';
+                window.currentBody = data.body || '';
+
+                // 保存原始数据
+                formData = { ...fm };
+
+                // 填充表单 - 确保所有字段有值
+                document.getElementById('inputPublish1').checked = true;
+                document.getElementById('inputPublish2').checked = true;
+                document.getElementById('currentFileTitle').textContent = filePath;
+                document.getElementById('sourceFileTitle').textContent = filePath;
+                document.getElementById('inputTitle').value = fm.title || '';
+                document.getElementById('inputAuthor').value = fm.author || '';
+                document.getElementById('inputSourceUrl').value = fm.source_url || '';
+
+                // 标签 - 确保是字符串
+                let tags = fm.tags;
+                if (Array.isArray(tags)) {
+                    tags = tags.join(', ');
+                } else if (typeof tags !== 'string') {
+                    tags = '';
+                }
+                document.getElementById('inputTags').value = tags;
+
+                // 模型 - 单选
+                if (Array.isArray(fm.models) && fm.models.length > 0) {
+                    selectedModel = String(fm.models[0]);
+                } else if (fm.models) {
+                    selectedModel = String(fm.models);
+                } else {
+                    selectedModel = '';
+                }
+                renderModels();
+
+                // 来源链接按钮
+                const url = fm.source_url || '';
+                document.getElementById('openNewTab').style.display = url ? 'inline-block' : 'none';
+
+                // 媒体预览
+                updateMedia(fm);
+
+                // 描述 - 去除缩进
+                let desc = fm.description || '';
+                if (typeof desc === 'string') {
+                    // 去除行首的缩进空格
+                    desc = desc.split('\n').map(line => line.replace(/^\s{2}/, '')).join('\n').trim();
+                }
+                document.getElementById('inputDescription').value = desc;
+
+                // 源码编辑器
+                document.getElementById('sourceTextarea').value = currentRaw;
+
+                // 根据先前的状态或传入的参数，决定显示什么
+                if (forceReload) {
+                    if (modeForm) {
+                        switchMode('form');
+                    } else {
+                        switchMode('source');
+                        // 因为 switchMode('source') 时会覆盖 sourceTextarea，这里必须显式重新赋值
+                        document.getElementById('sourceTextarea').value = currentRaw;
+                    }
+                } else {
+                    switchMode('form');
+                }
+                
+                document.getElementById('emptyState').style.display = 'none';
+                document.getElementById('formEditor').style.display = 'flex';
+                document.getElementById('formEditor').style.flexDirection = 'column';
+
+            } catch (e) {
+                showToast('加载失败', true);
+                console.error(e);
+            }
+        }
+
+        function updateMedia(fm) {
+            const imgEl = document.getElementById('imagePreview');
+            const vidEl = document.getElementById('videoPreview');
+
+            let imgPath = fm.image || '';
+            let vidPath = fm.video || '';
+
+            // 图片：直接加载
+            if (imgPath) {
+                if (!imgPath.startsWith('/')) imgPath = '/' + imgPath;
+                imgPath = '/media' + imgPath;
+                imgEl.innerHTML = '';
+                const img = document.createElement('img');
+                img.src = imgPath;
+                img.style.maxWidth = '100%';
+                img.style.maxHeight = '100%';
+                img.onerror = () => imgEl.innerHTML = '加载失败';
+                imgEl.appendChild(img);
+            } else {
+                imgEl.innerHTML = '-';
+            }
+
+            // 视频：保持点击加载，减小服务器压力
+            if (vidPath) {
+                if (!vidPath.startsWith('/')) vidPath = '/' + vidPath;
+                vidPath = '/media' + vidPath;
+                vidEl.innerHTML = `<div class="lazy-media" onclick="loadMedia(this, '${vidPath}', 'video')">🎬 点击播放视频</div>`;
+            } else {
+                vidEl.innerHTML = '-';
+            }
+        }
+
+        function loadMedia(el, src, type) {
+            el.innerHTML = '';
+            if (type === 'img') {
+                const img = document.createElement('img');
+                img.src = src;
+                img.style.maxWidth = '100%';
+                img.style.maxHeight = '100%';
+                img.onerror = () => el.innerHTML = '加载失败';
+                el.appendChild(img);
+            } else {
+                const vid = document.createElement('video');
+                vid.src = src;
+                vid.controls = true;
+                vid.style.maxHeight = '110px';
+                vid.autoplay = true;
+                vid.onerror = () => el.innerHTML = '加载失败';
+                el.appendChild(vid);
+            }
+        }
+
+        function toggleIframe() {
+            iframeVisible = !iframeVisible;
+            const panel = document.getElementById('iframePanel');
+            const btn = document.getElementById('iframeToggle');
+            
+            panel.classList.toggle('visible', iframeVisible);
+            btn.classList.toggle('active', iframeVisible);
+
+            if (iframeVisible) {
+                const url = document.getElementById('inputSourceUrl').value;
+                if (url) document.getElementById('sourceIframe').src = url;
+            }
+        }
+
+        async function saveForm() {
+            if (!currentFile) return;
+
+            const title = document.getElementById('inputTitle').value.trim();
+            const author = document.getElementById('inputAuthor').value.trim();
+            const sourceUrl = document.getElementById('inputSourceUrl').value.trim();
+            const tagsStr = document.getElementById('inputTags').value;
+            const desc = document.getElementById('inputDescription').value.trim();
+
+            // 解析标签
+            const tags = tagsStr.split(',').map(t => t.trim()).filter(Boolean);
+
+            // 从路径提取年月和slug
+            const parts = currentFile.split('/');
+            const yearMonth = parts[2];
+            const slug = parts[3].replace('.md', '');
+
+            // 合并并更新所有字段
+            const newFm = { ...formData };
+            newFm.image = `/prompts/${yearMonth}/${slug}/cover.jpg`;
+            newFm.video = `/prompts/${yearMonth}/${slug}/video.mp4`;
+            newFm.date = newFm.date || new Date().toISOString().split('T')[0];
+            newFm.title = title;
+            newFm.description = desc;
+            newFm.models = [selectedModel];
+            newFm.tags = tags;
+            newFm.author = author;
+            newFm.source_url = sourceUrl;
+            
+            if (document.getElementById('inputPublish1').checked) {
+                delete newFm.draft; // 变成 publish
+                newFm.draft = false; // 稳妥起见
+            } else {
+                newFm.draft = true;
+            }
+            
+            await doSave(desc, newFm);
+        }
+
+        async function saveSource() {
+            if (!currentFile) return;
+            let content = document.getElementById('sourceTextarea').value;
+            if (document.getElementById('inputPublish2').checked) {
+                content = content.replace(/^draft\s*[:=]\s*true/im, 'draft: false');
+            } else {
+                content = content.replace(/^draft\s*[:=]\s*false/im, 'draft: true');
+            }
+            await doSave(content, null, content);
+        }
+
+        async function doSave(body_content, frontmatter_data = null, raw_content = null) {
+            try {
+                const payload = { path: currentFile };
+                if (frontmatter_data) {
+                    payload.frontmatter = frontmatter_data;
+                    payload.body = body_content;
+                } else {
+                    payload.content = body_content;
+                }
+
+                const res = await fetch(`${API}/file`, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (res.ok) {
+                    showToast('✅ 已保存');
+                    editedFiles.add(currentFile);
+                    await openFile(currentFile, true); // 自动重载最新文件，包含由于yaml format和新字段的变化
+
+                    
+                    // 手动添加界面的已编辑状态以提升性能，避免重新拉取全量文件导致卡死
+                    const items = document.querySelectorAll('.file-item');
+                    items.forEach(el => {
+                        const onclickAttr = el.getAttribute('onclick');
+                        if (onclickAttr && onclickAttr.includes(currentFile)) {
+                            el.classList.add('edited');
+                            if (!el.querySelector('.file-date').innerHTML.includes('✏️')) {
+                                el.querySelector('.file-date').innerHTML += ' ✏️';
+                            }
+                        }
+                    });
+                } else {
+                    showToast('保存失败', true);
+                }
+            } catch (e) {
+                showToast('保存出错', true);
+            }
+        }
+
+        function showToast(msg, isError = false) {
+            const t = document.getElementById('toast');
+            t.textContent = msg;
+            t.className = 'toast' + (isError ? ' error' : '') + ' show';
+            setTimeout(() => t.classList.remove('show'), 2000);
+        }
+
+        function openInNewTab() {
+            const url = document.getElementById('inputSourceUrl').value;
+            if (url) {
+                // 使用固定窗口名称，后续打开会复用同一窗口
+                // 用户可将此窗口手动拖动到分栏位置
+                window.open(url, 'source_viewer');
+            }
+        }
+    </script>
+</body>
+</html>
