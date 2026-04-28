@@ -1,18 +1,8 @@
 ---
-title: Household Chores Movement Sheet Animation
-date: '2026-04-27 16:37:27+00:00'
 image: /prompts/2026-04/2048803726312571335-household-chores-movement/cover.jpg
 video: /prompts/2026-04/2048803726312571335-household-chores-movement/video.mp4
-models:
-- seedance2
-tags:
-- animation
-- indoor
-- tutorial
-- realistic
-- vlog
-author: Johnn
-source_url: https://twitter.com/john_my07/status/2048803726312571335
+date: '2026-04-27'
+title: Household Chores Movement Sheet Animation
 description: |-
   A single continuous cinematic video of a young woman performing a sequence of household chores in a clean, minimal indoor environment, following a structured 16-step progression.
   The character’s face and identity must match the provided reference image exactly, maintaining consistent facial features, skin tone, and proportions throughout the entire video. Natural makeup, soft expression, realistic appearance.
@@ -62,6 +52,20 @@ description: |-
   Duration: ~25–40 seconds
   Smooth, polished, lifestyle-commercial quality
   Feels like a choreographed productivity routine / aesthetic home vlog
+models:
+- seedance2
+tags:
+- instructional
+- motion
+- character
+- lifestyle
+- cinematic
+author: Johnn
+source_url: https://x.com/john_my07/status/2048803726312571335
+full_text: "Household chores created using a movement sheet as reference to animate\
+  \ the entire scene using ChatGPT Image 2.0 and Seedance 2.0 on @yapper_so \n\nGPT\
+  \ Image 2 Prompt;\n[VISUAL STYLE]\nMonochrome grayscale composition featuring a\
+  \ highly detailed 3D-rendered female character..."
 draft: false
 ---
 

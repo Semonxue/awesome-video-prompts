@@ -1110,3 +1110,39 @@ character:
   zh-cn: 角色
   description_en: "Character-focused content with emphasis on character design and development"
   description_zh-cn: "以角色为主的内容，注重角色设计和开发"
+
+combo:
+  en: combo
+  zh-cn: 连击
+  description_en: "Combo sequences and hit chains in fighting games"
+  description_zh-cn: "格斗游戏中的连击序列和命中链"
+
+gaming:
+  en: gaming
+  zh-cn: 游戏
+  description_en: "Video game inspired content and gameplay"
+  description_zh-cn: "电子游戏启发的内容和玩法"
+
+instructional:
+  en: instructional
+  zh-cn: 教学
+  description_en: "Educational or instructional step-by-step content"
+  description_zh-cn: "教育或指导性的分步内容"
+
+automotive:
+  en: automotive
+  zh-cn: 汽车
+  description_en: "Automotive and vehicle related content"
+  description_zh-cn: "汽车和车辆相关内容"
+
+luxury:
+  en: luxury
+  zh-cn: 奢侈
+  description_en: "High-end luxury aesthetic and premium quality"
+  description_zh-cn: "高端奢华美学和优质品质"
+
+lifestyle:
+  en: lifestyle
+  zh-cn: 生活方式
+  description_en: "Lifestyle and daily activity content"
+  description_zh-cn: "生活方式和日常活动内容"
