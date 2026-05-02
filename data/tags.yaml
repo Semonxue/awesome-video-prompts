@@ -1135,12 +1135,6 @@ automotive:
   description_en: "Automotive and vehicle related content"
   description_zh-cn: "汽车和车辆相关内容"
 
-luxury:
-  en: luxury
-  zh-cn: 奢侈
-  description_en: "High-end luxury aesthetic and premium quality"
-  description_zh-cn: "高端奢华美学和优质品质"
-
 lifestyle:
   en: lifestyle
   zh-cn: 生活方式

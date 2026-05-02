@@ -162,3 +162,10 @@ ling26flash:
   url: https://antgroup.com/
   description: >-
     Ant Group's Ling 2.6 Flash is an instruct model with 104B total parameters and 7.4B active parameters. Designed for high token efficiency, it is competitive on real agent tasks while helping developers reduce cost, improve throughput, and deploy more efficiently at scale.
+pika:
+  name: Pika
+  company: Pika Labs
+  slug: pika
+  url: https://pika.art
+  description: >-
+    Pika Labs' text-to-video generation model. Creates high-quality videos from text prompts with strong motion and visual consistency.
