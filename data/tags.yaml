@@ -1140,3 +1140,57 @@ lifestyle:
   zh-cn: 生活方式
   description_en: "Lifestyle and daily activity content"
   description_zh-cn: "生活方式和日常活动内容"
+
+challenge:
+  en: challenge
+  zh-cn: 挑战
+  description_en: "AI video generation challenge entries and prompts"
+  description_zh-cn: "AI视频生成挑战赛作品和提示词"
+
+beauty:
+  en: beauty
+  zh-cn: 美妆
+  description_en: "Beauty, skincare and makeup content"
+  description_zh-cn: "美妆、护肤和化妆内容"
+
+demo:
+  en: demo
+  zh-cn: 演示
+  description_en: "Product demo or showcase video"
+  description_zh-cn: "产品演示或展示视频"
+
+claude:
+  en: claude
+  zh-cn: Claude
+  description_en: "Anthropic Claude AI assistant"
+  description_zh-cn: "Anthropic Claude AI助手"
+
+creative-tool:
+  en: creative-tool
+  zh-cn: 创意工具
+  description_en: "AI creative tools and platforms"
+  description_zh-cn: "AI创意工具和平台"
+
+multimodal:
+  en: multimodal
+  zh-cn: 多模态
+  description_en: "Multi-modal AI content generation"
+  description_zh-cn: "多模态AI内容生成"
+
+ai-video:
+  en: ai-video
+  zh-cn: AI视频
+  description_en: "AI-generated video content"
+  description_zh-cn: "AI生成的视频内容"
+
+runway:
+  en: runway
+  zh-cn: Runway
+  description_en: "Runway ML video generation platform"
+  description_zh-cn: "Runway ML视频生成平台"
+
+storyboard:
+  en: storyboard
+  zh-cn: 分镜
+  description_en: "Storyboard-style video sequence"
+  description_zh-cn: "分镜头式视频序列"

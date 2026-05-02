@@ -169,3 +169,11 @@ pika:
   url: https://pika.art
   description: >-
     Pika Labs' text-to-video generation model. Creates high-quality videos from text prompts with strong motion and visual consistency.
+
+runway:
+  name: Runway
+  company: Runway ML
+  slug: runway
+  url: https://runwayml.com/
+  description: >-
+    Runway ML's video generation platform. Known for Gen series models (Gen-1, Gen-2, Gen-3 Alpha, Gen-4), providing professional video editing and AI generation tools widely used in film and creative industries.
