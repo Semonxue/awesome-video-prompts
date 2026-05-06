@@ -6,7 +6,7 @@
 - temp/<TWEET_ID>/ 目录包含：info.json, video.mp4 (原画), preview_480p.mp4 (预览), video.jpg。
 - 检查在prompts中是否已经存在了<TWEET_ID>对应的资源，已经存在的话则提示用户
 - 如果下载出错，重试2次
-- 如果帖子中提到提示词在回复中，则拉取回复内容，提取完整提示词（不要改写、不要提炼，如果是json格式则保持）
+- 如果帖子中提到提示词在回复中，则拉取回复内容，提取完整提示词（不要改写、不要提炼，如果是json格式则保持），所有收集到的信息存入 full_text字段
 
 ### 解析元数据 (Analyze Metadata)
 
@@ -45,7 +45,6 @@
   - source_url: 原始帖子链接 (注意：不要使用 url 字段，因为它是 Hugo 保留字段)。
   - 如果新增标签或模型，在data中models和tags加更新
   - 默认加入draft: true 字段
-  - 在合适位置记录完整帖子内容 full_text
 
 ### 清理与验证 (Cleanup)
 - 删除临时目录：rm -rf temp/<TWEET_ID>。
