@@ -139,6 +139,14 @@ pixverse:
   description: >-
     PixVerse AI video generation model, supporting cinematic shots, action sequences, and creative content generation. Approximate launch: 2024.
 
+omma:
+  name: Omma
+  company: Omma
+  slug: omma
+  url: https://omma.ai/
+  description: >-
+    Omma AI 3D model generation platform. Capable of generating realistic 3D models from text prompts, supports PBR textures and Three.js scene integration. Approximate launch: 2026.
+
 happyhorse:
   name: HAPPYHORSE
   company: Unknown
