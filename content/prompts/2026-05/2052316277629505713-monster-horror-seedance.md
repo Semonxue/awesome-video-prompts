@@ -1,0 +1,51 @@
+---
+title: Alien Water Tank Horror
+image: /prompts/2026-05/2052316277629505713-monster-horror-seedance/cover.jpg
+video: /prompts/2026-05/2052316277629505713-monster-horror-seedance/video.mp4
+date: '2026-05-07'
+author: B.M. Cifer
+source_url: https://x.com/CiferFusion/status/2052316277629505713
+description: |-
+  Residents scream as black water pours from apartment taps. A man rushes to the rooftop water tank at night with a flashlight while people yell below. He climbs the slippery ladder as loud banging echoes from inside the tank. He opens the lid slightly — stillness. His flashlight hits dozens of pale human faces floating underwater. Their eyes snap open together. The water EXPLODES upward as a massive alien creature erupts out, flooding the rooftop in black liquid.
+
+  Shot 1 (0s–2s)
+  Inside apartment kitchen. Black water violently blasts from a tap onto someone's hands. People scream in disgust. CUT immediately to rooftop door slamming open as a man sprints out carrying a flashlight.
+
+  Shot 2 (2s–5s)
+  Handheld camera energy. The man runs across the rooftop toward the giant water tank. Loud metallic THUDS echo from inside. Tank vibrates slightly. Water leaks down the sides like thick oil.
+
+  Shot 3 (5s–8s)
+  He climbs the ladder fast. The tank suddenly dents inward beside his face with a massive impact. He almost falls. Breathing hard, he reaches the top and slowly pushes the lid open. Silence.
+
+  Shot 4 (8s–11s)
+  Flashlight beam scans black water. Nothing. Then pale submerged human faces drift into view beneath the surface. Dozens. Still. Then ALL their eyes snap open at once directly toward him.
+
+  Shot 5 (11s–15s) — PAYOFF
+  The water ERUPTS upward violently. A massive alien creature launches out of the tank in a tidal wave of black liquid. The rooftop floods instantly. The man slips backward. Final frame: the creature lands spider-like on the rooftop wall behind him while the floating human faces continue rising from the overflowing tank.
+models:
+- seedance2
+tags:
+- horror
+- alien
+- thriller
+- tension
+- cinematic
+draft: false
+---
+
+Residents scream as black water pours from apartment taps. A man rushes to the rooftop water tank at night with a flashlight while people yell below. He climbs the slippery ladder as loud banging echoes from inside the tank. He opens the lid slightly — stillness. His flashlight hits dozens of pale human faces floating underwater. Their eyes snap open together. The water EXPLODES upward as a massive alien creature erupts out, flooding the rooftop in black liquid.
+
+Shot 1 (0s–2s)
+Inside apartment kitchen. Black water violently blasts from a tap onto someone's hands. People scream in disgust. CUT immediately to rooftop door slamming open as a man sprints out carrying a flashlight.
+
+Shot 2 (2s–5s)
+Handheld camera energy. The man runs across the rooftop toward the giant water tank. Loud metallic THUDS echo from inside. Tank vibrates slightly. Water leaks down the sides like thick oil.
+
+Shot 3 (5s–8s)
+He climbs the ladder fast. The tank suddenly dents inward beside his face with a massive impact. He almost falls. Breathing hard, he reaches the top and slowly pushes the lid open. Silence.
+
+Shot 4 (8s–11s)
+Flashlight beam scans black water. Nothing. Then pale submerged human faces drift into view beneath the surface. Dozens. Still. Then ALL their eyes snap open at once directly toward him.
+
+Shot 5 (11s–15s) — PAYOFF
+The water ERUPTS upward violently. A massive alien creature launches out of the tank in a tidal wave of black liquid. The rooftop floods instantly. The man slips backward. Final frame: the creature lands spider-like on the rooftop wall behind him while the floating human faces continue rising from the overflowing tank.

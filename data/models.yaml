@@ -185,3 +185,10 @@ runway:
   url: https://runwayml.com/
   description: >-
     Runway ML's video generation platform. Known for Gen series models (Gen-1, Gen-2, Gen-3 Alpha, Gen-4), providing professional video editing and AI generation tools widely used in film and creative industries.
+codex:
+  name: Codex
+  company: OpenAI
+  slug: codex
+  url: https://codex.com/
+  description: >-
+    OpenAI Codex video generation plugin with frame-level control, keyframes, subtitles, transitions, camera movement, and particle effects.
