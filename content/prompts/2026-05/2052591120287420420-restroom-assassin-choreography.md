@@ -1,0 +1,56 @@
+---
+title: Restroom Assassin Sequence
+date: '2026-05-07'
+image: /prompts/2026-05/2052591120287420420-restroom-assassin-choreography/cover.jpg
+video: /prompts/2026-05/2052591120287420420-restroom-assassin-choreography/video.mp4
+description: |-
+  A single continuous 15-second cinematic long shot inside a sterile, dimly lit public restroom. White subway tiles, large wall mirror, white ceramic sink, flickering fluorescent overhead lights, wet reflective floor.
+
+  [0:00–0:02] Medium shot. A sophisticated woman with sharp green eyes, bold dark brows, and deep red lips — dressed in a tailored matte black suit and navy silk blouse — washes her hands at the sink, calm and composed, eyes locked on her reflection in the mirror.
+
+  [0:02–0:04] In the mirror's reflection, a broad-shouldered assassin in a dark charcoal tactical suit bursts from a stall and locks a chokehold around her from behind. Camera subtly pushes in. Both figures slam into the tiled wall. Strained expressions, desperate struggle.
+
+  [0:04–0:06] She drives her elbow back hard, breaks free, spins and seizes the assassin — camera pans fluidly — executing a powerful Judo shoulder throw that launches the attacker into a metal stall door with crushing impact. Debris and shadows scatter under flickering lights.
+
+  [0:06–0:09] Camera drops low, tracks laterally through the brawl — rapid punches, parries, blocks — she slips a strike and counters with a devastating blow. Realistic motion blur, gritty handheld energy, sharp focus on her determined green eyes and gritted red lips.
+
+  [0:09–0:11] Camera swings wide then CRASHES close — she seizes the assassin's head and drives it into the mirror with full force. Ultra slow-motion: thousands of glass shards explode toward the lens, a massive spiderweb crack blooms across the mirror surface. High contrast, visceral impact, dramatic light burst.
+
+  [0:11–0:13] Slow camera pull-back. She stands tall over the unconscious assassin on the wet restroom floor. She coolly adjusts her silk blouse, straightens her blazer. Her fractured reflection multiplied across broken mirror shards. Cool-toned cinematic grade.
+
+  [0:13–0:15] Extreme close-up profile. She produces a white handkerchief, wipes a single drop of blood from the corner of her red lips, takes one final look at her distorted cracked reflection — then walks out of frame. Camera lingers on the shattered mirror. Fade to black.
+
+  Style: Photorealistic, 4K cinematic, John Wick-inspired gritty elegance, cool blue-grey color grade, shallow depth of field, motivated practical lighting from flickering fluorescents, continuous fluid camera movement throughout.
+models:
+- seedance2
+tags:
+- cinematic
+- action
+- slow-motion
+- combat
+- restroom
+- thriller
+- film
+- multi-shot
+author: Zara
+source_url: https://twitter.com/ZaraIrahh/status/2052591120287420420
+draft: false
+---
+
+A single continuous 15-second cinematic long shot inside a sterile, dimly lit public restroom. White subway tiles, large wall mirror, white ceramic sink, flickering fluorescent overhead lights, wet reflective floor.
+
+[0:00–0:02] Medium shot. A sophisticated woman with sharp green eyes, bold dark brows, and deep red lips — dressed in a tailored matte black suit and navy silk blouse — washes her hands at the sink, calm and composed, eyes locked on her reflection in the mirror.
+
+[0:02–0:04] In the mirror's reflection, a broad-shouldered assassin in a dark charcoal tactical suit bursts from a stall and locks a chokehold around her from behind. Camera subtly pushes in. Both figures slam into the tiled wall. Strained expressions, desperate struggle.
+
+[0:04–0:06] She drives her elbow back hard, breaks free, spins and seizes the assassin — camera pans fluidly — executing a powerful Judo shoulder throw that launches the attacker into a metal stall door with crushing impact. Debris and shadows scatter under flickering lights.
+
+[0:06–0:09] Camera drops low, tracks laterally through the brawl — rapid punches, parries, blocks — she slips a strike and counters with a devastating blow. Realistic motion blur, gritty handheld energy, sharp focus on her determined green eyes and gritted red lips.
+
+[0:09–0:11] Camera swings wide then CRASHES close — she seizes the assassin's head and drives it into the mirror with full force. Ultra slow-motion: thousands of glass shards explode toward the lens, a massive spiderweb crack blooms across the mirror surface. High contrast, visceral impact, dramatic light burst.
+
+[0:11–0:13] Slow camera pull-back. She stands tall over the unconscious assassin on the wet restroom floor. She coolly adjusts her silk blouse, straightens her blazer. Her fractured reflection multiplied across broken mirror shards. Cool-toned cinematic grade.
+
+[0:13–0:15] Extreme close-up profile. She produces a white handkerchief, wipes a single drop of blood from the corner of her red lips, takes one final look at her distorted cracked reflection — then walks out of frame. Camera lingers on the shattered mirror. Fade to black.
+
+Style: Photorealistic, 4K cinematic, John Wick-inspired gritty elegance, cool blue-grey color grade, shallow depth of field, motivated practical lighting from flickering fluorescents, continuous fluid camera movement throughout.

@@ -47,6 +47,13 @@ sora2:
   url: https://openai.com/sora
   description: >-
     OpenAI's Sora 2 video generation model. Features significant improvements in video quality, physics simulation, and prompt adherence compared to the original Sora. Supports longer duration, higher resolution, and more complex scene generation. Approximate launch: 2025.
+ltx23:
+  name: LTX 2.3
+  company: Lightricks
+  slug: ltx23
+  url: https://www.lightricks.com/ltxv
+  description: >-
+    Lightricks' latest video generation model. Features significant improvements in motion quality, character consistency, and visual fidelity. Supports image-to-video and video-to-video workflows through LTX Studio, with precise camera control and professional-grade output. Approximate launch: May 2026.
 ltxpro:
   name: LTX Pro
   company: Lightricks
@@ -155,13 +162,6 @@ happyhorse:
   description: >-
     HAPPYHORSE video generation model. Supports image-to-video generation with action and tracking shot capabilities.
 
-firefly:
-  name: Adobe Firefly
-  company: Adobe
-  slug: firefly
-  url: https://adobe.com/firefly
-  description: >-
-    Adobe Firefly is a family of generative AI models integrated into Adobe's creative tools. Firefly Custom Models allow users to train AI on their own artwork and characters for consistent visual identity across generations. Supports text-to-image and image generation with style consistency.
 
 ling26flash:
   name: Ling 2.6 Flash
@@ -185,10 +185,3 @@ runway:
   url: https://runwayml.com/
   description: >-
     Runway ML's video generation platform. Known for Gen series models (Gen-1, Gen-2, Gen-3 Alpha, Gen-4), providing professional video editing and AI generation tools widely used in film and creative industries.
-codex:
-  name: Codex
-  company: OpenAI
-  slug: codex
-  url: https://codex.com/
-  description: >-
-    OpenAI Codex video generation plugin with frame-level control, keyframes, subtitles, transitions, camera movement, and particle effects.

@@ -1194,3 +1194,20 @@ storyboard:
   zh-cn: 分镜
   description_en: "Storyboard-style video sequence"
   description_zh-cn: "分镜头式视频序列"
+tutorial:
+  en: tutorial
+  zh-cn: 教程
+  description_en: "Educational tutorial or technique guide"
+  description_zh-cn: "教育教程或技术指南"
+
+closeup:
+  en: closeup
+  zh-cn: 特写
+  description_en: "Close-up shot with emphasis on details"
+  description_zh-cn: "特写镜头，强调细节"
+
+expression-control:
+  en: expression-control
+  zh-cn: 表情控制
+  description_en: "Facial expression control technique using FACS codes"
+  description_zh-cn: "使用FACS代码控制面部表情的技术"
