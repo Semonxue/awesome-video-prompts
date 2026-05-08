@@ -1211,3 +1211,57 @@ expression-control:
   zh-cn: 表情控制
   description_en: "Facial expression control technique using FACS codes"
   description_zh-cn: "使用FACS代码控制面部表情的技术"
+
+disaster:
+  en: disaster
+  zh-cn: 灾难
+  description_en: "Disaster and catastrophic event scenes"
+  description_zh-cn: "灾难和灾难性事件场景"
+
+couples:
+  en: couples
+  zh-cn: 情侣
+  description_en: "Romantic couple-focused scenes and relationships"
+  description_zh-cn: "以浪漫情侣为主角的关系场景"
+
+luxury:
+  en: luxury
+  zh-cn: 奢侈
+  description_en: "High-end luxury lifestyle and premium aesthetics"
+  description_zh-cn: "高端奢华生活方式和优质美学"
+
+fashion:
+  en: fashion
+  zh-cn: 时尚
+  description_en: "Fashion, clothing and style-focused content"
+  description_zh-cn: "时尚、服装和风格相关内容"
+
+vfx:
+  en: vfx
+  zh-cn: 视觉特效
+  description_en: "Visual effects and post-production enhancement"
+  description_zh-cn: "视觉特效和后期制作增强"
+
+visual-effects:
+  en: visual-effects
+  zh-cn: 视觉效果
+  description_en: "Computer-generated visual effects"
+  description_zh-cn: "计算机生成的视觉效果"
+
+cyberpunk:
+  en: cyberpunk
+  zh-cn: 赛博朋克
+  description_en: "Cyberpunk futuristic aesthetic"
+  description_zh-cn: "赛博朋克未来主义美学"
+
+mechs:
+  en: mechs
+  zh-cn: 机甲
+  description_en: "Mechanical robots and mech units"
+  description_zh-cn: "机械机器人和机甲单位"
+
+sharks:
+  en: sharks
+  zh-cn: 鲨鱼
+  description_en: "Shark and marine predator content"
+  description_zh-cn: "鲨鱼和海洋捕食者内容"
