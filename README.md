@@ -82,19 +82,31 @@ source_url: "原始来源链接"
 
 ## 🔥 冷热分离存储
 
-通过 Cloudflare R2 实现媒体文件的智能分层存储，优化部署效率：
+Cloudflare Pages 有 20,000 文件部署限制。随着提示词积累，视频文件很快超过配额。通过 Cloudflare R2 实现媒体文件的冷热分层存储：
 
-- **节省 Pages 配额**：历史视频迁移到 R2，大幅减少 Pages 存储占用
-- **自动化流程**：构建时自动识别、自动迁移，无需手动管理
-- **无感切换**：URL 自动更新，用户访问体验不变
+- **突破配额限制**：历史视频迁移到 R2，Pages 仅保留当月新文件
+- **零成本实现**：R2 + Pages 同属 Cloudflare 生态，无额外费用
+- **自动化运维**：构建时自动识别月份、自动迁移，URL 无感切换
 
 ### 业务流程
 
-每月新发布的提示词 → 视频在 Pages（热访问）  
-历史月份提示词 → 视频自动迁移到 R2（冷存储）  
-访问时自动解析对应地址，用户无感知差异
+```
+Git Push → 构建触发
+    ↓
+[prebuild] 遍历 content/prompts/*.md
+    ↓
+识别 date 字段 → 提取年月
+    ↓
+├── 当月文件 → 保留本地路径 → Hugo → Pages 部署
+│
+└── 历史文件 → 上传到 R2 → MD URL 替换为 R2 地址
+                ↓
+            Hugo → 生成 HTML 使用 R2 URL
+                ↓
+            Pages 部署（文件数大幅减少）
+```
 
-具体实现：[migrate-cold-hot.js](scripts/migrate-cold-hot.js)
+实现脚本：[migrate-cold-hot.js](scripts/migrate-cold-hot.js)
 
 ---
 
