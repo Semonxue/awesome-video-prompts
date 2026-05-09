@@ -1,10 +1,6 @@
 #!/usr/bin/env node
 /**
  * Cold-Hot Media Migration Script
- * 
- * 冷热分离逻辑：
- * - 热文件（当月）：保留在 Pages
- * - 冷文件（上个月及以前）：迁移到 R2
  */
 
 import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
@@ -49,7 +45,8 @@ async function uploadToR2(localPath, r2Key) {
 }
 
 function getMDDate(content) {
-  const dateMatch = content.match(/^date:\s*(\d{4}-\d{2})/m);
+  // 支持 date: 2026-04-12 或 date: '2026-04-12' 或 date: "2026-04-12"
+  const dateMatch = content.match(/^date:\s*['"]?(\d{4}-\d{2})/m);
   return dateMatch ? dateMatch[1] : null;
 }
 
@@ -58,7 +55,7 @@ function processMDFile(mdPath) {
   const mdDate = getMDDate(content);
   
   if (!mdDate) {
-    console.log(`⚠️ 跳过（无日期）: ${mdPath}`);
+    console.log(`⚠️ 跳过（无日期）: ${path.basename(mdPath)}`);
     return;
   }
   
@@ -70,14 +67,11 @@ function processMDFile(mdPath) {
     return;
   }
 
-  // 处理 video 字段 - 支持 /prompts/ 或 prompts/ 格式
+  // 处理 video 字段
   const videoMatch = content.match(/^video:\s*["']?(\/?prompts\/[^"'\s]+)["']?/m);
   if (videoMatch) {
-    let localPath = videoMatch[1];
-    // 去掉前导斜杠
-    localPath = localPath.replace(/^\//, '');
+    let localPath = videoMatch[1].replace(/^\//, '');
     
-    // 如果已经是完整 URL（http开头），跳过
     if (localPath.startsWith('http')) {
       console.log(`   📹 已是 R2 URL`);
       return;
@@ -88,11 +82,7 @@ function processMDFile(mdPath) {
     if (fs.existsSync(fullLocalPath)) {
       uploadToR2(fullLocalPath, localPath).then(() => {
         const newVideoUrl = `${PUBLIC_URL}/${localPath}`;
-        // 替换为完整 URL
-        content = content.replace(
-          /^video:\s*["']?\/?.+?["']?\s*$/m,
-          `video: "${newVideoUrl}"`
-        );
+        content = content.replace(/^video:\s*["']?\/?.+?["']?\s*$/m, `video: "${newVideoUrl}"`);
         fs.writeFileSync(mdPath, content);
         fs.unlinkSync(fullLocalPath);
         console.log(`   📹 已迁移: ${localPath}`);
@@ -105,8 +95,7 @@ function processMDFile(mdPath) {
   // 处理 image/cover 字段
   const imageMatch = content.match(/^(?:image|cover):\s*["']?(\/?prompts\/[^"'\s]+)["']?/m);
   if (imageMatch) {
-    let localPath = imageMatch[1];
-    localPath = localPath.replace(/^\//, '');
+    let localPath = imageMatch[1].replace(/^\//, '');
     
     if (localPath.startsWith('http')) {
       console.log(`   🖼️ 已是 R2 URL`);
@@ -118,10 +107,7 @@ function processMDFile(mdPath) {
     if (fs.existsSync(fullLocalPath)) {
       uploadToR2(fullLocalPath, localPath).then(() => {
         const newImageUrl = `${PUBLIC_URL}/${localPath}`;
-        content = content.replace(
-          /^(?:image|cover):\s*["']?\/?.+?["']?\s*$/m,
-          `image: "${newImageUrl}"`
-        );
+        content = content.replace(/^(?:image|cover):\s*["']?\/?.+?["']?\s*$/m, `image: "${newImageUrl}"`);
         fs.writeFileSync(mdPath, content);
         fs.unlinkSync(fullLocalPath);
         console.log(`   🖼️ 已迁移: ${localPath}`);
@@ -146,9 +132,7 @@ function cleanupEmptyDirs() {
           fs.rmdirSync(monthDir, { recursive: true });
           console.log(`🗑️ 删除空目录: ${month}`);
         }
-      } catch (e) {
-        // 目录可能不存在或无法读取
-      }
+      } catch (e) {}
     }
   }
 }
@@ -178,9 +162,7 @@ async function main() {
         if (entry.isDirectory()) walkDir(fullPath);
         else if (entry.name.endsWith('.md')) mdFiles.push(fullPath);
       }
-    } catch (e) {
-      // 忽略无法读取的目录
-    }
+    } catch (e) {}
   }
   
   walkDir(contentDir);
