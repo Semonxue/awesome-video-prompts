@@ -1,8 +1,8 @@
 ---
 title: Female Warrior Energy Bow Desert Battle
 date: '2026-05-06'
-image: /prompts/2026-05/warrior-energy-bow-desert-battle/cover.jpg
-video: /prompts/2026-05/warrior-energy-bow-desert-battle/video.mp4
+image: /prompts/2026-05/2051882247813488859-warrior-energy-bow-desert/cover.jpg
+video: /prompts/2026-05/2051882247813488859-warrior-energy-bow-desert/video.mp4
 models:
 - seedance2
 tags:

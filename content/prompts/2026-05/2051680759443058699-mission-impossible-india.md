@@ -1,8 +1,8 @@
 ---
 title: Mission Impossible India Bridge Chase
 date: '2026-05-05'
-image: /prompts/2026-05/mission-impossible-india-chase/cover.jpg
-video: /prompts/2026-05/mission-impossible-india-chase/video.mp4
+image: /prompts/2026-05/2051680759443058699-mission-impossible-india/cover.jpg
+video: /prompts/2026-05/2051680759443058699-mission-impossible-india/video.mp4
 models:
 - seedance2
 tags:

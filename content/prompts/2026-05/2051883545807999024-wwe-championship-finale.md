@@ -1,8 +1,8 @@
 ---
 title: WWE Championship Finale Cinematic
 date: '2026-05-06'
-image: /prompts/2026-05/wwe-championship-finale-seedance/cover.jpg
-video: /prompts/2026-05/wwe-championship-finale-seedance/video.mp4
+image: /prompts/2026-05/2051883545807999024-wwe-championship-finale/cover.jpg
+video: /prompts/2026-05/2051883545807999024-wwe-championship-finale/video.mp4
 models:
 - seedance2
 tags:
