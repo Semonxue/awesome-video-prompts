@@ -1,7 +1,7 @@
 ---
 image: /prompts/2026-05/2052464360799564178-facs-expression-control-seedance/cover.jpg
 video: /prompts/2026-05/2052464360799564178-facs-expression-control-seedance/video.mp4
-date: 20260507
+date: 2026-05-07T12:00:00+08:00
 title: FACS Expression Control for AI Video Acting
 description: |-
   Use the provided character as the fixed identity reference.
