@@ -57,42 +57,85 @@ function processMDFile(mdPath) {
   let content = fs.readFileSync(mdPath, 'utf8');
   const mdDate = getMDDate(content);
   
-  if (!mdDate) return;
+  if (!mdDate) {
+    console.log(`⚠️ 跳过（无日期）: ${mdPath}`);
+    return;
+  }
   
   const isHot = mdDate === CURRENT_MONTH;
   console.log(`${isHot ? '🔥' : '❄️'} ${path.basename(mdPath)} (${mdDate})`);
   
-  if (isHot) return;
+  if (isHot) {
+    console.log(`   保留在 Pages（当月文件）`);
+    return;
+  }
 
-  const videoMatch = content.match(/^video:\s*["']?(prompts\/[^"'\s]+)["']?/m);
-  if (videoMatch) {
-    const localPath = videoMatch[1];
-    const fullLocalPath = path.join(projectRoot, 'static', localPath);
-    
-    if (fs.existsSync(fullLocalPath)) {
-      uploadToR2(fullLocalPath, localPath).then(() => {
-        const newVideoUrl = `${PUBLIC_URL}/${localPath}`;
-        content = content.replace(/^video:\s*["']?prompts\/[^"'\s]+["']?/m, `video: "${newVideoUrl}"`);
-        fs.writeFileSync(mdPath, content);
-        fs.unlinkSync(fullLocalPath);
-        console.log(`   📹 已迁移: ${localPath}`);
-      }).catch(err => console.error(`   ❌ 失败: ${localPath}`, err.message));
+  // 处理 video 字段 - 支持多种格式
+  const videoPatterns = [
+    /^video:\s*["']?(prompts\/[^"'\s]+)["']?/m,
+    /^video:\s*(https?:\/\/[^"\s]+)/m,
+  ];
+  
+  for (const pattern of videoPatterns) {
+    const videoMatch = content.match(pattern);
+    if (videoMatch) {
+      const localPath = videoMatch[1];
+      
+      // 如果已经是完整 URL（http开头），跳过
+      if (localPath.startsWith('http')) {
+        console.log(`   📹 已是 R2 URL: ${localPath.substring(0, 50)}...`);
+        continue;
+      }
+      
+      const fullLocalPath = path.join(projectRoot, 'static', localPath);
+      
+      if (fs.existsSync(fullLocalPath)) {
+        uploadToR2(fullLocalPath, localPath).then(() => {
+          const newVideoUrl = `${PUBLIC_URL}/${localPath}`;
+          content = content.replace(
+            /^video:\s*["']?prompts\/[^"'\s]+["']?/m,
+            `video: "${newVideoUrl}"`
+          );
+          fs.writeFileSync(mdPath, content);
+          fs.unlinkSync(fullLocalPath);
+          console.log(`   📹 已迁移: ${localPath}`);
+        }).catch(err => console.error(`   ❌ 失败: ${localPath}`, err.message));
+      }
+      break;
     }
   }
 
-  const imageMatch = content.match(/^(?:image|cover):\s*["']?(prompts\/[^"'\s]+)["']?/m);
-  if (imageMatch) {
-    const localPath = imageMatch[1];
-    const fullLocalPath = path.join(projectRoot, 'static', localPath);
-    
-    if (fs.existsSync(fullLocalPath)) {
-      uploadToR2(fullLocalPath, localPath).then(() => {
-        const newImageUrl = `${PUBLIC_URL}/${localPath}`;
-        content = content.replace(/^(?:image|cover):\s*["']?prompts\/[^"'\s]+["']?/m, `image: "${newImageUrl}"`);
-        fs.writeFileSync(mdPath, content);
-        fs.unlinkSync(fullLocalPath);
-        console.log(`   🖼️ 已迁移: ${localPath}`);
-      }).catch(err => console.error(`   ❌ 失败: ${localPath}`, err.message));
+  // 处理 image/cover 字段
+  const mediaPatterns = [
+    /^(?:image|cover):\s*["']?(prompts\/[^"'\s]+)["']?/m,
+    /^(?:image|cover):\s*(https?:\/\/[^"\s]+)/m,
+  ];
+  
+  for (const pattern of mediaPatterns) {
+    const imageMatch = content.match(pattern);
+    if (imageMatch) {
+      const localPath = imageMatch[1];
+      
+      if (localPath.startsWith('http')) {
+        console.log(`   🖼️ 已是 R2 URL: ${localPath.substring(0, 50)}...`);
+        continue;
+      }
+      
+      const fullLocalPath = path.join(projectRoot, 'static', localPath);
+      
+      if (fs.existsSync(fullLocalPath)) {
+        uploadToR2(fullLocalPath, localPath).then(() => {
+          const newImageUrl = `${PUBLIC_URL}/${localPath}`;
+          content = content.replace(
+            /^(?:image|cover):\s*["']?prompts\/[^"'\s]+["']?/m,
+            `image: "${newImageUrl}"`
+          );
+          fs.writeFileSync(mdPath, content);
+          fs.unlinkSync(fullLocalPath);
+          console.log(`   🖼️ 已迁移: ${localPath}`);
+        }).catch(err => console.error(`   ❌ 失败: ${localPath}`, err.message));
+      }
+      break;
     }
   }
 }
