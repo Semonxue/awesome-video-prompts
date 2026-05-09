@@ -1,0 +1,12 @@
+{
+  "name": "awesome-video-prompts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prebuild": "node scripts/migrate-cold-hot.js",
+    "build": "rm -Rf public && hugo --minify --gc"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.540.0"
+  }
+}
