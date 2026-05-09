@@ -84,9 +84,12 @@ function processMDFile(mdPath) {
         const newVideoUrl = `${PUBLIC_URL}/${localPath}`;
         content = content.replace(/^video:\s*["']?\/?.+?["']?\s*$/m, `video: "${newVideoUrl}"`);
         fs.writeFileSync(mdPath, content);
-        fs.unlinkSync(fullLocalPath);
+        // 只删除存在的文件
+        if (fs.existsSync(fullLocalPath)) {
+          fs.unlinkSync(fullLocalPath);
+        }
         console.log(`   📹 已迁移: ${localPath}`);
-      }).catch(err => console.error(`   ❌ 失败: ${localPath}`, err.message));
+      }).catch(err => console.error(`   ❌ 上传失败: ${localPath}`, err.message));
     } else {
       console.log(`   📹 本地文件不存在: ${localPath}`);
     }
@@ -109,9 +112,12 @@ function processMDFile(mdPath) {
         const newImageUrl = `${PUBLIC_URL}/${localPath}`;
         content = content.replace(/^(?:image|cover):\s*["']?\/?.+?["']?\s*$/m, `image: "${newImageUrl}"`);
         fs.writeFileSync(mdPath, content);
-        fs.unlinkSync(fullLocalPath);
+        // 只删除存在的文件
+        if (fs.existsSync(fullLocalPath)) {
+          fs.unlinkSync(fullLocalPath);
+        }
         console.log(`   🖼️ 已迁移: ${localPath}`);
-      }).catch(err => console.error(`   ❌ 失败: ${localPath}`, err.message));
+      }).catch(err => console.error(`   ❌ 上传失败: ${localPath}`, err.message));
     } else {
       console.log(`   🖼️ 本地文件不存在: ${localPath}`);
     }
