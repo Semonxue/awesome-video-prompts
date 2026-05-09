@@ -70,72 +70,64 @@ function processMDFile(mdPath) {
     return;
   }
 
-  // 处理 video 字段 - 支持多种格式
-  const videoPatterns = [
-    /^video:\s*["']?(prompts\/[^"'\s]+)["']?/m,
-    /^video:\s*(https?:\/\/[^"\s]+)/m,
-  ];
-  
-  for (const pattern of videoPatterns) {
-    const videoMatch = content.match(pattern);
-    if (videoMatch) {
-      const localPath = videoMatch[1];
-      
-      // 如果已经是完整 URL（http开头），跳过
-      if (localPath.startsWith('http')) {
-        console.log(`   📹 已是 R2 URL: ${localPath.substring(0, 50)}...`);
-        continue;
-      }
-      
-      const fullLocalPath = path.join(projectRoot, 'static', localPath);
-      
-      if (fs.existsSync(fullLocalPath)) {
-        uploadToR2(fullLocalPath, localPath).then(() => {
-          const newVideoUrl = `${PUBLIC_URL}/${localPath}`;
-          content = content.replace(
-            /^video:\s*["']?prompts\/[^"'\s]+["']?/m,
-            `video: "${newVideoUrl}"`
-          );
-          fs.writeFileSync(mdPath, content);
-          fs.unlinkSync(fullLocalPath);
-          console.log(`   📹 已迁移: ${localPath}`);
-        }).catch(err => console.error(`   ❌ 失败: ${localPath}`, err.message));
-      }
-      break;
+  // 处理 video 字段 - 支持 /prompts/ 或 prompts/ 格式
+  const videoMatch = content.match(/^video:\s*["']?(\/?prompts\/[^"'\s]+)["']?/m);
+  if (videoMatch) {
+    let localPath = videoMatch[1];
+    // 去掉前导斜杠
+    localPath = localPath.replace(/^\//, '');
+    
+    // 如果已经是完整 URL（http开头），跳过
+    if (localPath.startsWith('http')) {
+      console.log(`   📹 已是 R2 URL`);
+      return;
+    }
+    
+    const fullLocalPath = path.join(projectRoot, 'static', localPath);
+    
+    if (fs.existsSync(fullLocalPath)) {
+      uploadToR2(fullLocalPath, localPath).then(() => {
+        const newVideoUrl = `${PUBLIC_URL}/${localPath}`;
+        // 替换为完整 URL
+        content = content.replace(
+          /^video:\s*["']?\/?.+?["']?\s*$/m,
+          `video: "${newVideoUrl}"`
+        );
+        fs.writeFileSync(mdPath, content);
+        fs.unlinkSync(fullLocalPath);
+        console.log(`   📹 已迁移: ${localPath}`);
+      }).catch(err => console.error(`   ❌ 失败: ${localPath}`, err.message));
+    } else {
+      console.log(`   📹 本地文件不存在: ${localPath}`);
     }
   }
 
   // 处理 image/cover 字段
-  const mediaPatterns = [
-    /^(?:image|cover):\s*["']?(prompts\/[^"'\s]+)["']?/m,
-    /^(?:image|cover):\s*(https?:\/\/[^"\s]+)/m,
-  ];
-  
-  for (const pattern of mediaPatterns) {
-    const imageMatch = content.match(pattern);
-    if (imageMatch) {
-      const localPath = imageMatch[1];
-      
-      if (localPath.startsWith('http')) {
-        console.log(`   🖼️ 已是 R2 URL: ${localPath.substring(0, 50)}...`);
-        continue;
-      }
-      
-      const fullLocalPath = path.join(projectRoot, 'static', localPath);
-      
-      if (fs.existsSync(fullLocalPath)) {
-        uploadToR2(fullLocalPath, localPath).then(() => {
-          const newImageUrl = `${PUBLIC_URL}/${localPath}`;
-          content = content.replace(
-            /^(?:image|cover):\s*["']?prompts\/[^"'\s]+["']?/m,
-            `image: "${newImageUrl}"`
-          );
-          fs.writeFileSync(mdPath, content);
-          fs.unlinkSync(fullLocalPath);
-          console.log(`   🖼️ 已迁移: ${localPath}`);
-        }).catch(err => console.error(`   ❌ 失败: ${localPath}`, err.message));
-      }
-      break;
+  const imageMatch = content.match(/^(?:image|cover):\s*["']?(\/?prompts\/[^"'\s]+)["']?/m);
+  if (imageMatch) {
+    let localPath = imageMatch[1];
+    localPath = localPath.replace(/^\//, '');
+    
+    if (localPath.startsWith('http')) {
+      console.log(`   🖼️ 已是 R2 URL`);
+      return;
+    }
+    
+    const fullLocalPath = path.join(projectRoot, 'static', localPath);
+    
+    if (fs.existsSync(fullLocalPath)) {
+      uploadToR2(fullLocalPath, localPath).then(() => {
+        const newImageUrl = `${PUBLIC_URL}/${localPath}`;
+        content = content.replace(
+          /^(?:image|cover):\s*["']?\/?.+?["']?\s*$/m,
+          `image: "${newImageUrl}"`
+        );
+        fs.writeFileSync(mdPath, content);
+        fs.unlinkSync(fullLocalPath);
+        console.log(`   🖼️ 已迁移: ${localPath}`);
+      }).catch(err => console.error(`   ❌ 失败: ${localPath}`, err.message));
+    } else {
+      console.log(`   🖼️ 本地文件不存在: ${localPath}`);
     }
   }
 }
@@ -147,11 +139,15 @@ function cleanupEmptyDirs() {
   for (const month of coldMonths) {
     const monthDir = path.join(promptsDir, month);
     if (fs.existsSync(monthDir)) {
-      const entries = fs.readdirSync(monthDir, { withFileTypes: true });
-      const hasFiles = entries.some(e => e.isFile());
-      if (!hasFiles) {
-        fs.rmdirSync(monthDir, { recursive: true });
-        console.log(`🗑️ 删除空目录: ${month}`);
+      try {
+        const entries = fs.readdirSync(monthDir, { withFileTypes: true });
+        const hasFiles = entries.some(e => e.isFile());
+        if (!hasFiles) {
+          fs.rmdirSync(monthDir, { recursive: true });
+          console.log(`🗑️ 删除空目录: ${month}`);
+        }
+      } catch (e) {
+        // 目录可能不存在或无法读取
       }
     }
   }
@@ -175,11 +171,15 @@ async function main() {
   const mdFiles = [];
   
   function walkDir(dir) {
-    const entries = fs.readdirSync(dir, { withFileTypes: true });
-    for (const entry of entries) {
-      const fullPath = path.join(dir, entry.name);
-      if (entry.isDirectory()) walkDir(fullPath);
-      else if (entry.name.endsWith('.md')) mdFiles.push(fullPath);
+    try {
+      const entries = fs.readdirSync(dir, { withFileTypes: true });
+      for (const entry of entries) {
+        const fullPath = path.join(dir, entry.name);
+        if (entry.isDirectory()) walkDir(fullPath);
+        else if (entry.name.endsWith('.md')) mdFiles.push(fullPath);
+      }
+    } catch (e) {
+      // 忽略无法读取的目录
     }
   }
   
