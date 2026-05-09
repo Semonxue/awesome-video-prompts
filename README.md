@@ -3,10 +3,10 @@
 <div align="center">
 
 ![Prompt Count](https://img.shields.io/badge/dynamic/json?label=Prompts&query=$.prompt_count&url=https%3A%2F%2Fawesomevideoprompts.com%2Fapi%2Fstats.json)
-![Models](https://img.shields.io/badge/17-Models-blue)
-![Tags](https://img.shields.io/badge/504-Tags-green)
+![Models](https://img.shields.io/badge/26-Models-blue)
+![Tags](https://img.shields.io/badge/210-Tags-green)
 
-**🎬 1841 条精选提示词** | **17 个模型标签** | **504 个活跃标签**
+**🎬 3097 条精选提示词** | **26 个模型标签** | **210 个活跃标签**
 
 </div>
 
