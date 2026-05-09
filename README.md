@@ -80,6 +80,32 @@ source_url: "原始来源链接"
 ---
 ```
 
+## 🔥 冷热分离存储
+
+通过 Cloudflare R2 实现媒体文件的智能分层存储，优化部署效率：
+
+- **热文件（当月）**：视频和封面保留在 Cloudflare Pages，提供快速访问
+- **冷文件（历史月份）**：自动迁移到 Cloudflare R2，节省 Pages 配额
+- **构建时自动执行**：通过 [migrate-cold-hot.js](scripts/migrate-cold-hot.js) 脚本在 Hugo 构建前自动处理
+
+### 工作原理
+
+1. 构建开始前检测 `content/prompts/` 中每个 Markdown 的 `date` 字段
+2. 当月文件保持本地路径 → 部署到 Pages
+3. 历史月份文件上传到 R2，MD 中的路径更新为 R2 URL
+4. Hugo 构建时直接使用新路径，无需额外配置
+
+### 本地开发
+
+```bash
+# 设置环境变量后运行迁移脚本
+R2_ACCOUNT_ID=xxx R2_ACCESS_KEY_ID=xxx R2_SECRET_ACCESS_KEY=xxx \
+R2_BUCKET_NAME=bucket R2_PUBLIC_URL=https://static.example.com \
+node scripts/migrate-cold-hot.js
+```
+
+---
+
 ## 🤝 贡献提示词
 
 欢迎提交你发现或创作的优秀提示词！只需：
