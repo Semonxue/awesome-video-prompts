@@ -43,4 +43,3 @@ Timing Scene
 6 10–12s Crowd reactions tears, hands over mouths, soft smiles all bathed in warm trembling candlelight
 7 12–14s Wide overhead drone shot full breathtaking aisle of light and floating blooms bride a single luminous figure
 8 14–15s Final frame bride reaches the end of the aisle candles flare softly petals cascade all around her---
----

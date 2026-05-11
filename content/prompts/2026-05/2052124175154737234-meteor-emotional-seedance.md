@@ -87,4 +87,3 @@ Only distant storm ambience and fading music reverb remain.
 
 Style:
 Cinematic, ultra-realistic, emotional disaster film aesthetic, handheld camera, shallow depth of field, natural skin tones, strong wind simulation, storm atmosphere, realistic tsunami physics, volumetric fog, dynamic lighting, film grain, epic emotional tension, photorealistic water and destruction, 4K HDR, dramatic cinematic color grading.---
----

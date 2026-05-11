@@ -47,4 +47,3 @@ Cut 5: Cut to eye-level medium wide at the moment of impact. Kael's solar blade 
 Cut 6: Cut to black. Near total darkness. Embers drift downward slowly. The word SOLBREAKER burns into frame letter by letter from center — glowing amber, fractured serif. Below: "THE SUN WAS NEVER OURS TO KEEP." Camera: static. . Duration: 2 seconds.
 
 no music baked in. no subtitles. no narration track.---
----

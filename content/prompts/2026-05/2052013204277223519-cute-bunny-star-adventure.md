@@ -59,4 +59,3 @@ Cut to Shot 8: The bunny reaches the top of the hill and lifts the tiny star bac
 Cut to Shot 9: Final heroic cute shot of the bunny standing proudly on the hill under a sky full of sparkling stars, smiling as the little star twinkles happily above, magical forest glowing below.
 
 Style: premium stylized 3D animation, expressive faces, soft cinematic depth of field, vibrant color contrast, whimsical fantasy atmosphere, clean action readability, adorable performance, storybook adventure feeling, normal proportions without stretch.---
----

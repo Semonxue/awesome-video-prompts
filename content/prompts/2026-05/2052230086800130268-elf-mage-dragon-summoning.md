@@ -44,4 +44,3 @@ The beautiful female elf mage stands powerfully in the center of a large ancient
 12-15 seconds: Epic final wide shot with dramatic upward tilt. The elf mage and the newly summoned dragon both unleash radiant beams of sparkling magical energy exploding upward into the heavens together, creating massive volumetric light rays, floating runes, explosive magical particles, and a breathtaking magical climax.
 
 Highly dynamic motion, cinematic quality, masterpiece, ultra-detailed fantasy lighting, dramatic shadows and highlights, 8K resolution, smooth animation, magical glows and particle effects.---
----

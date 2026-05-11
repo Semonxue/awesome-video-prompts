@@ -36,4 +36,3 @@ source: https://x.com/martinleblanc/status/2052137128575013365
 ---
 
 A cinematic trailer made with Happy Horse from Alibaba. Key findings: reference images work well, audio is clean, 720p upscaled with Magnific looks better than native 1080p, and Happy Horse is ~75% the price of Seedance 2.
----
