@@ -1,0 +1,35 @@
+---
+title: Haunted Interdimensional Train Anime Sequence
+date: '2026-05-12 05:05:41+00:00'
+image: /prompts/2026-05/2054065454193275135-haunted-dimensional-train/cover.jpg
+video: /prompts/2026-05/2054065454193275135-haunted-dimensional-train/video.mp4
+description: |-
+  Use the uploaded image as the main visual reference. Maintain the exact same anime character design, facial features, black gothic outfit, silver sword, glowing blue lantern, cinematic color palette, haunted train aesthetic, and dark fantasy atmosphere throughout the entire sequence with strong character consistency.
+  A 15-second cinematic anime movie sequence about a haunted interdimensional train traveling endlessly through impossible worlds at night.
+  Opening moments: the mysterious heroine slowly walks through luxurious abandoned train corridors carrying a glowing blue lantern. The train interior is dark, elegant, and eerie with chandelier lights, velvet seats, cracked mirrors, drifting fog, and ghost passengers sitting motionless with hidden faces. Slow cinematic camera tracking shots, emotional close-ups, atmospheric tension, realistic reflections, subtle train movement, dramatic shadows.
+  Outside the train windows appear surreal dimensions constantly changing while the train moves at high speed: underwater kingdoms with giant glowing whales, burning skies filled with floating ruins, frozen moonscapes under giant planets, endless cosmic voids, black holes swallowing light, glowing fantasy cities, dimensional storms, floating mountains, and massive portals opening in space.
+  Include multiple cinematic exterior shots of the haunted train itself traveling through these impossible worlds. Show wide aerial views of the entire train crossing cosmic landscapes, flying through dimensional storms, passing giant glowing portals, racing across floating rails in space, and leaving glowing energy trails behind it. Massive cinematic scale, breathtaking environment transitions, detailed fantasy worlds, emotional sci-fi horror atmosphere. Alternate naturally between interior corridor scenes and exterior cinematic shots of the train moving through dimensions.
+  Middle moments: the train suddenly begins shaking violently as reality distorts around the heroine. Lights flicker aggressively, papers fly through the corridor, windows crack, dimensional energy leaks into the train, ghost passengers slowly turn their heads toward her. Terrifying shadow creatures with glowing red eyes emerge from the walls and ceiling while distorted whispers echo through the train. Dramatic camera rotation, suspenseful pacing, cinematic tension, supernatural horror atmosphere.
+  Final moments: the heroine slowly draws her glowing silver sword and launches into explosive cinematic anime combat inside the moving train. Fast fluid sword choreography, sparks flying, supernatural energy effects, shattered glass, slow motion attacks, intense close-ups, dynamic camera movement, dimensional storms visible outside the windows, emotional intensity, masterpiece anime movie quality, ultra detailed animation, realistic anime motion, volumetric fog, cinematic depth of field, MAPPA and Violet Evergarden inspired visuals, high-budget fantasy horror film aesthetic, 4K cinematic composition.
+  Negative prompt: blurry, low quality, distorted anatomy, bad hands, extra limbs, duplicate characters, stiff movement, low fps, cartoonish, messy action, broken physics, ugly face, inconsistent character design, oversaturated colors, poor lighting
+models:
+- seedance2
+tags:
+- anime
+- fantasy
+- horror
+- cinematic
+- dark
+author: yusra.
+source_url: https://x.com/chatgptpaglu/status/2054065454193275135
+draft: false
+---
+
+Use the uploaded image as the main visual reference. Maintain the exact same anime character design, facial features, black gothic outfit, silver sword, glowing blue lantern, cinematic color palette, haunted train aesthetic, and dark fantasy atmosphere throughout the entire sequence with strong character consistency.
+A 15-second cinematic anime movie sequence about a haunted interdimensional train traveling endlessly through impossible worlds at night.
+Opening moments: the mysterious heroine slowly walks through luxurious abandoned train corridors carrying a glowing blue lantern. The train interior is dark, elegant, and eerie with chandelier lights, velvet seats, cracked mirrors, drifting fog, and ghost passengers sitting motionless with hidden faces. Slow cinematic camera tracking shots, emotional close-ups, atmospheric tension, realistic reflections, subtle train movement, dramatic shadows.
+Outside the train windows appear surreal dimensions constantly changing while the train moves at high speed: underwater kingdoms with giant glowing whales, burning skies filled with floating ruins, frozen moonscapes under giant planets, endless cosmic voids, black holes swallowing light, glowing fantasy cities, dimensional storms, floating mountains, and massive portals opening in space.
+Include multiple cinematic exterior shots of the haunted train itself traveling through these impossible worlds. Show wide aerial views of the entire train crossing cosmic landscapes, flying through dimensional storms, passing giant glowing portals, racing across floating rails in space, and leaving glowing energy trails behind it. Massive cinematic scale, breathtaking environment transitions, detailed fantasy worlds, emotional sci-fi horror atmosphere. Alternate naturally between interior corridor scenes and exterior cinematic shots of the train moving through dimensions.
+Middle moments: the train suddenly begins shaking violently as reality distorts around the heroine. Lights flicker aggressively, papers fly through the corridor, windows crack, dimensional energy leaks into the train, ghost passengers slowly turn their heads toward her. Terrifying shadow creatures with glowing red eyes emerge from the walls and ceiling while distorted whispers echo through the train. Dramatic camera rotation, suspenseful pacing, cinematic tension, supernatural horror atmosphere.
+Final moments: the heroine slowly draws her glowing silver sword and launches into explosive cinematic anime combat inside the moving train. Fast fluid sword choreography, sparks flying, supernatural energy effects, shattered glass, slow motion attacks, intense close-ups, dynamic camera movement, dimensional storms visible outside the windows, emotional intensity, masterpiece anime movie quality, ultra detailed animation, realistic anime motion, volumetric fog, cinematic depth of field, MAPPA and Violet Evergarden inspired visuals, high-budget fantasy horror film aesthetic, 4K cinematic composition.
+Negative prompt: blurry, low quality, distorted anatomy, bad hands, extra limbs, duplicate characters, stiff movement, low fps, cartoonish, messy action, broken physics, ugly face, inconsistent character design, oversaturated colors, poor lighting
