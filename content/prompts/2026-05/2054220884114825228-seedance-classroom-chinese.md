@@ -1,24 +1,17 @@
 ---
 title: "Seedance Classroom Chinese"
 date: "2026-05-12"
-author:
-  name: "John"
-  username: "john87445528"
+image: /prompts/2026-05/2054220884114825228-seedance-classroom-chinese/cover.jpg
+video: /prompts/2026-05/2054220884114825228-seedance-classroom-chinese/video.mp4
 models:
-  - "seedance2"
+  - seedance2
 tags:
-  - "pov"
-  - "cinematic"
-  - "drama"
-  - "documentary"
-video:
-  url: "/static/prompts/2026-05/2054220884114825228-seedance-classroom-chinese/video.mp4"
-  thumbnail: "/static/prompts/2026-05/2054220884114825228-seedance-classroom-chinese/cover.jpg"
-sources:
-  - type: twitter
-    id: "2054220884114825228"
-    author: "john87445528"
-    url: "https://x.com/john87445528/status/2054220884114825228"
+  - pov
+  - cinematic
+  - drama
+  - documentary
+author: john87445528
+source_url: https://x.com/john87445528/status/2054220884114825228
 description: |-
   SEEDANCE prompt:
   
