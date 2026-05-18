@@ -1,6 +1,6 @@
 ---
 image: "/prompts/2026-02/2018759705527746560-slow-motion-footballer-neon-energy-trails/cover.jpg"
-video: "/prompts/2026-02/2018759705527746560-slow-motion-footballer-neon-energy-trails/video_00001.mp4"
+video: "/prompts/2026-02/2018759705527746560-slow-motion-footballer-neon-energy-trails/video.mp4"
 date: "2026-02-03"
 title: "Slow-Motion Footballer Neon Energy Trails"
 description: |

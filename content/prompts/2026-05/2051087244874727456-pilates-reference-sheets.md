@@ -19,4 +19,10 @@ description: |-
   Technique: building motion/character/location reference sheets before prompting video generation, demonstrated with a pilates workflow. Full prompts shared in replies.
 models:
   - seedance2
+tags:
+  - fitness
+  - lifestyle
+  - animation
+  - art
+  - story
 ---

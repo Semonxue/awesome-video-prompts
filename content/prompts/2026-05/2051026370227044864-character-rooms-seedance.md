@@ -15,4 +15,10 @@ description: |-
   Workflow demonstrated: generate character room illustrations with NBP → animate with Seedance 2 in 4-second loops → enhance with Claude for hover animations. Full prompt details in linked app (solocontent.studio).
 models:
   - seedance2
+tags:
+  - animation
+  - art
+  - hover
+  - fantasy
+  - urban
 ---

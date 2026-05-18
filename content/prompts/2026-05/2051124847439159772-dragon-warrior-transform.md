@@ -15,4 +15,10 @@ description: |-
   Epic cinematic style, dramatic slow-motion, dynamic camera angles, swirling dust and wind, intense lighting with golden rim light, ultra-realistic, photorealistic details, 8k, dark moody fantasy sci-fi atmosphere.
 models:
   - seedance2
+tags:
+  - warrior
+  - transformation
+  - action
+  - fantasy
+  - cinematic
 ---

@@ -15,4 +15,10 @@ description: |-
   Original prompt by @yachimat_manga — a 28-shot cinematic sequence created with Seedance 2.0. Full prompt structure shared in tweet replies.
 models:
   - seedance2
+tags:
+  - cinematic
+  - multi-shot
+  - action
+  - art
+  - transitions
 ---

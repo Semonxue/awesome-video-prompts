@@ -171,6 +171,7 @@
         let sessionEditedFiles = new Map();
         let currentRaw = '';
         let formData = {};
+        let mediaRefreshToken = Date.now();
 
         const API = '/api';
 
@@ -355,6 +356,7 @@
                 const fm = data.frontmatter || {};
                 currentRaw = data.raw || '';
                 window.currentBody = data.body || '';
+                mediaRefreshToken = Date.now();
 
                 // 保存原始数据
                 formData = { ...fm };
@@ -440,7 +442,7 @@
             // 图片：直接加载
             if (imgPath) {
                 if (!imgPath.startsWith('/')) imgPath = '/' + imgPath;
-                imgPath = '/media' + imgPath;
+                imgPath = '/media' + imgPath + `?v=${mediaRefreshToken}`;
                 imgEl.innerHTML = '';
                 const img = document.createElement('img');
                 img.src = imgPath;
@@ -455,7 +457,7 @@
             // 视频：保持点击加载，减小服务器压力
             if (vidPath) {
                 if (!vidPath.startsWith('/')) vidPath = '/' + vidPath;
-                vidPath = '/media' + vidPath;
+                vidPath = '/media' + vidPath + `?v=${mediaRefreshToken}`;
                 vidEl.innerHTML = `<div class="lazy-media" onclick="loadMedia(this, '${vidPath}', 'video')">🎬 点击播放视频</div>`;
             } else {
                 vidEl.innerHTML = '-';
