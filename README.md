@@ -46,18 +46,28 @@ Seedance 2.0 · Kling 3.0 · Kling 2.6 · Veo 3 · Grok · Hailuo · Gen 4.5 · 
 如果你想贡献提示词或了解源代码组织方式：
 
 ```
-content/prompts/           # 提示词内容目录
-├── 2025-12/              # 按月份组织
+content/_drafts/prompts/   # 草稿内容目录（默认不进入 Git）
+└── 2026-03/
+    └── [id]-[slug].md
+
+content/prompts/           # 已审核发布内容目录
+├── 2025-12/               # 按月份组织
 ├── 2026-01/
 ├── 2026-02/
 └── 2026-03/
-    └── [id]-[slug].md    # 每个提示词一个Markdown文件
+    └── [id]-[slug].md
 
-static/prompts/           # 素材文件目录
+static/_drafts/prompts/    # 草稿素材目录（默认不进入 Git）
 └── 2026-03/
-    └── [id]-[slug]/      # 每个提示词对应一个文件夹
-        ├── cover.jpg     # 封面图片
-        └── video.mp4     # 视频文件
+    └── [id]-[slug]/
+        ├── cover.jpg
+        └── video.mp4
+
+static/prompts/            # 已审核发布素材目录
+└── 2026-03/
+    └── [id]-[slug]/       # 每个提示词对应一个文件夹
+        ├── cover.jpg      # 封面图片
+        └── video.mp4      # 视频文件
 
 data/
 ├── models.yaml           # AI模型定义
@@ -79,6 +89,21 @@ author: "作者名"
 source_url: "原始来源链接"
 ---
 ```
+
+### 草稿审核与发布流程
+
+当前工作流分成“草稿池”和“正式发布”两层：
+
+1. 新抓取内容先进入 `content/_drafts/prompts/` 与 `static/_drafts/prompts/`
+2. `draft: true` 的文件会出现在 md-editor 列表里供人工审核
+3. 在 md-editor 中保存为 `draft: false` 后，md 和素材会一起移动到正式目录
+4. Hugo 生产逻辑保持不变，只发布正式目录中的非草稿内容
+
+这意味着：
+
+- 草稿默认不进入 Git 管理
+- 已审核内容才进入 `content/prompts/` 与 `static/prompts/`
+- 如果某个正式文件被改回 `draft: true`，md-editor 仍能重新扫描出来，并在再次保存时回到草稿目录
 
 ## 🔥 冷热分离存储
 
@@ -114,10 +139,12 @@ Git Push → 构建触发
 
 欢迎提交你发现或创作的优秀提示词！只需：
 
-1. 在 `content/prompts/当前月份/` 创建新的Markdown文件
-2. 将视频和封面图放入 `static/prompts/对应路径/`
-3. 按照上述格式填写信息
-4. 提交Pull Request
+1. 先在 `content/_drafts/prompts/当前月份/` 创建新的 Markdown 文件
+2. 将视频和封面图放入 `static/_drafts/prompts/对应路径/`
+3. 在 front matter 中保持 `draft: true`
+4. 运行 `./tools/start-md-editor.sh` 进行人工审核
+5. 审核通过后在 md-editor 中切换为发布状态并保存，文件会自动移动到正式目录
+6. 确认内容进入 `content/prompts/` 与 `static/prompts/` 后再提交 Pull Request
 
 ---
 
