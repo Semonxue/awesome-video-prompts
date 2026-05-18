@@ -17,22 +17,23 @@
 
 - 年月目录: 解析 post_date 提取 YYYY-MM (例如 2026-02)。
 - Slug 生成: <TWEET_ID>-kebab-video-description (例如: 2017923383401259008-dynamic-fpv-forest)。
-- 资源目录: static/prompts/<YYYY-MM>/<Slug>/。
-- 内容文件: content/prompts/<YYYY-MM>/<Slug>.md。
+- 草稿资源目录: static/_drafts/prompts/<YYYY-MM>/<Slug>/。
+- 草稿内容文件: content/_drafts/prompts/<YYYY-MM>/<Slug>.md。
+- 正式发布目录保持不变：审核通过并在 md-editor 中保存为 `draft: false` 后，md-editor 会把 md 和素材一起移动到 `static/prompts/<YYYY-MM>/<Slug>/` 与 `content/prompts/<YYYY-MM>/<Slug>.md`。
 
 ### 处理静态资源 (Asset Management)
 
-- 创建目录：mkdir -p static/prompts/<YYYY-MM>/<Slug>
-- 迁移封面图：cp temp/<TWEET_ID>/video.jpg static/prompts/<YYYY-MM>/<Slug>/cover.jpg
+- 创建草稿目录：mkdir -p static/_drafts/prompts/<YYYY-MM>/<Slug>
+- 迁移封面图：cp temp/<TWEET_ID>/video.jpg static/_drafts/prompts/<YYYY-MM>/<Slug>/cover.jpg
 - 迁移视频 (仅预览版)：
-- cp temp/<TWEET_ID>/preview_480p.mp4 static/prompts/<YYYY-MM>/<Slug>/video.mp4
+- cp temp/<TWEET_ID>/preview_480p.mp4 static/_drafts/prompts/<YYYY-MM>/<Slug>/video.mp4
 - 把封面图尺寸宽度压缩到长边不大于600px，保持比例，使用ImageMagick把图片压缩到60%的jpg，大小控制在30k之内
 - 把视频压缩到480p，体积控制在1M之内
 (注：优先使用生成的 480p/preview 版本以节省带宽，若无预览版则使用原版)
 
 ### 生成 Markdown 内容 (Content Generation)
 
-- 创建文件：content/prompts/<YYYY-MM>/<Slug>.md
+- 创建文件：content/_drafts/prompts/<YYYY-MM>/<Slug>.md
 - 关键 Front Matter 字段(务必不要写错)：
   - image: /prompts/<YYYY-MM>/<Slug>/cover.jpg
   - video: /prompts/<YYYY-MM>/<Slug>/video.mp4
@@ -50,4 +51,5 @@
 ### 清理与验证 (Cleanup)
 - 删除临时目录：rm -rf temp/<TWEET_ID>。
 - 验证生成文件的 Front Matter 路径是否正确包含 <YYYY-MM>
-- 运行 ./tools/start-md-editor.sh 并打开浏览器 http://localhost:3000/ 提供审核
+- 验证草稿 md 与素材都位于 `_drafts` 目录中，且 `git status` 不包含这些草稿文件
+- 运行 ./tools/start-md-editor.sh 并打开浏览器 http://localhost:3000/ 提供审核；审核通过后将 `draft` 切为 `false` 并保存，md-editor 会把 md 和素材一起移动到正式发布目录
