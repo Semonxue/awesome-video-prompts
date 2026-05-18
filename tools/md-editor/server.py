@@ -4,6 +4,7 @@
 import os
 import re
 import json
+import shutil
 import subprocess
 import yaml
 from http.server import HTTPServer, SimpleHTTPRequestHandler
@@ -12,7 +13,9 @@ from urllib.parse import urlparse, parse_qs
 
 PROJECT_ROOT = Path(__file__).parent.parent.parent.resolve()
 CONTENT_DIR = PROJECT_ROOT / "content" / "prompts"
+DRAFT_CONTENT_DIR = PROJECT_ROOT / "content" / "_drafts" / "prompts"
 STATIC_DIR = PROJECT_ROOT / "static"
+DRAFT_STATIC_DIR = STATIC_DIR / "_drafts"
 DATA_DIR = PROJECT_ROOT / "data"
 
 
@@ -51,12 +54,12 @@ class EditorHandler(SimpleHTTPRequestHandler):
 
     def handle_media(self, media_path):
         """媒体代理"""
-        full = STATIC_DIR / media_path.lstrip("/")
         mime_map = {'.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png',
                     '.gif': 'image/gif', '.webp': 'image/webp', '.mp4': 'video/mp4', '.webm': 'video/webm'}
-        ext = full.suffix.lower()
-        
-        if full.exists() and full.is_file():
+        full = self.resolve_media_path(media_path)
+
+        if full and full.exists() and full.is_file():
+            ext = full.suffix.lower()
             self.send_response(200)
             self.send_header("Content-type", mime_map.get(ext, 'application/octet-stream'))
             self.send_header("Access-Control-Allow-Origin", "*")
@@ -72,19 +75,23 @@ class EditorHandler(SimpleHTTPRequestHandler):
                 length = int(self.headers.get("Content-Length", 0))
                 body = json.loads(self.rfile.read(length).decode("utf-8"))
                 full = PROJECT_ROOT / body["path"].lstrip("/")
-                with open(full, "w", encoding="utf-8") as f:
-                    if "frontmatter" in body and "body" in body:
-                        fm = body["frontmatter"]
-                        class CustomDumper(yaml.SafeDumper):
-                            def represent_scalar(self, tag, value, style=None):
-                                if isinstance(value, str) and '\n' in value.strip():
-                                    style = '|'
-                                return super().represent_scalar(tag, value, style)
-                        yaml_str = yaml.dump(fm, Dumper=CustomDumper, allow_unicode=True, sort_keys=False, default_flow_style=False)
-                        f.write(f"---\n{yaml_str}---\n\n{body['body']}")
-                    else:
-                        f.write(body["content"])
-                self.send_json({"success": True})
+                if "frontmatter" in body and "body" in body:
+                    fm = body["frontmatter"]
+                    content = self.build_markdown_content(fm, body["body"])
+                    is_draft = self.frontmatter_is_draft(fm)
+                else:
+                    content = body["content"]
+                    is_draft = self.parse_is_draft_content(content)
+
+                target = self.resolve_target_content_path(full, is_draft)
+                self.write_content(target, content)
+                self.move_prompt_assets(full, target)
+
+                if target != full and full.exists():
+                    full.unlink()
+
+                rel_path = str(target.relative_to(PROJECT_ROOT))
+                self.send_json({"success": True, "path": rel_path, "draft": is_draft})
             except Exception as e:
                 self.send_error(500, str(e))
         else:
@@ -100,25 +107,101 @@ class EditorHandler(SimpleHTTPRequestHandler):
         try:
             with open(path, "r", encoding="utf-8") as f:
                 head = f.read(8192)
-                if re.search(r'^draft\s*[:=]\s*true\b', head, re.MULTILINE | re.IGNORECASE):
-                    return True
+                return self.parse_is_draft_content(head)
         except:
             pass
         return False
 
+    def parse_is_draft_content(self, content):
+        return bool(re.search(r'^draft\s*[:=]\s*true\b', content, re.MULTILINE | re.IGNORECASE))
+
+    def frontmatter_is_draft(self, fm):
+        return bool(fm.get("draft", False))
+
+    def build_markdown_content(self, fm, body):
+        class CustomDumper(yaml.SafeDumper):
+            def represent_scalar(self, tag, value, style=None):
+                if isinstance(value, str) and '\n' in value.strip():
+                    style = '|'
+                return super().represent_scalar(tag, value, style)
+
+        yaml_str = yaml.dump(
+            fm,
+            Dumper=CustomDumper,
+            allow_unicode=True,
+            sort_keys=False,
+            default_flow_style=False,
+        )
+        return f"---\n{yaml_str}---\n\n{body}"
+
+    def write_content(self, path, content):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(content)
+
+    def resolve_media_path(self, media_path):
+        relative_media = Path(media_path.lstrip("/"))
+        for root in (STATIC_DIR, DRAFT_STATIC_DIR):
+            candidate = root / relative_media
+            if candidate.exists() and candidate.is_file():
+                return candidate
+        return None
+
+    def resolve_target_content_path(self, current_path, is_draft):
+        root_name, relative_path = self.get_content_root(current_path)
+        if relative_path is None:
+            raise ValueError(f"Unsupported content path: {current_path}")
+
+        target_root = DRAFT_CONTENT_DIR if is_draft else CONTENT_DIR
+        return target_root / relative_path
+
+    def get_content_root(self, path):
+        for name, root in (("draft", DRAFT_CONTENT_DIR), ("published", CONTENT_DIR)):
+            try:
+                return name, path.relative_to(root)
+            except ValueError:
+                continue
+        return None, None
+
+    def get_prompt_asset_dir(self, content_path):
+        root_name, relative_path = self.get_content_root(content_path)
+        if relative_path is None:
+            raise ValueError(f"Unsupported content path: {content_path}")
+
+        asset_root = DRAFT_STATIC_DIR if root_name == "draft" else STATIC_DIR
+        return asset_root / "prompts" / relative_path.with_suffix("")
+
+    def move_prompt_assets(self, source_path, target_path):
+        if source_path == target_path:
+            return
+
+        source_asset_dir = self.get_prompt_asset_dir(source_path)
+        target_asset_dir = self.get_prompt_asset_dir(target_path)
+        if source_asset_dir == target_asset_dir or not source_asset_dir.exists():
+            return
+
+        target_asset_dir.parent.mkdir(parents=True, exist_ok=True)
+        if target_asset_dir.exists():
+            shutil.rmtree(target_asset_dir)
+        shutil.move(str(source_asset_dir), str(target_asset_dir))
+
     def handle_list_files(self):
         files_dict = {}
-        for mf in CONTENT_DIR.rglob("*.md"):
-            if not self.parse_is_draft_fast(mf):
+        for root in (DRAFT_CONTENT_DIR, CONTENT_DIR):
+            if not root.exists():
                 continue
-            rel_path = str(mf.relative_to(PROJECT_ROOT))
-            files_dict[rel_path] = {
-                "path": rel_path, "name": mf.name,
-                "date": self.get_date(mf),
-                "status": "committed"
-            }
+            for mf in root.rglob("*.md"):
+                if not self.parse_is_draft_fast(mf):
+                    continue
+                rel_path = str(mf.relative_to(PROJECT_ROOT))
+                files_dict[rel_path] = {
+                    "path": rel_path,
+                    "name": mf.name,
+                    "date": self.get_date(mf),
+                    "status": "committed",
+                }
         try:
-            result = subprocess.run(["git", "status", "--porcelain", "content/prompts/"],
+            result = subprocess.run(["git", "status", "--porcelain", "content/prompts/", "content/_drafts/", "static/prompts/", "static/_drafts/"],
                 cwd=PROJECT_ROOT, capture_output=True, text=True, timeout=10)
             for line in result.stdout.strip().split("\n"):
                 if line.strip():
@@ -126,12 +209,12 @@ class EditorHandler(SimpleHTTPRequestHandler):
                     fp = line[3:].strip()
                     if "->" in fp:
                         fp = fp.split("->")[-1].strip()
-                        
-                    if fp.startswith("content/prompts/") and fp.endswith(".md"):
+
+                    if fp.startswith(("content/prompts/", "content/_drafts/")) and fp.endswith(".md"):
                         full_path = PROJECT_ROOT / fp
                         if not self.parse_is_draft_fast(full_path):
                             continue
-                            
+
                         if fp in files_dict:
                             files_dict[fp]["status"] = "new" if status_code.strip() == "??" else "modified"
                         else:

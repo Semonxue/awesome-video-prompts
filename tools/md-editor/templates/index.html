@@ -168,10 +168,49 @@
         let selectedModel = '';
         let iframeVisible = false;
         let editedFiles = new Set();
+        let sessionEditedFiles = new Map();
         let currentRaw = '';
         let formData = {};
 
         const API = '/api';
+
+        function formatSessionTimestamp() {
+            return new Date().toISOString().slice(0, 16).replace('T', ' ');
+        }
+
+        function rememberSessionFile(filePath, isDraft) {
+            sessionEditedFiles.set(filePath, {
+                path: filePath,
+                name: filePath.split('/').pop() || filePath,
+                date: formatSessionTimestamp(),
+                sessionPinned: true,
+                draft: isDraft,
+            });
+        }
+
+        function getPromptPathInfo(filePath) {
+            const match = filePath.match(/^content\/(?:_drafts\/)?prompts\/([^/]+)\/([^/]+)\.md$/);
+            if (!match) return null;
+            return { yearMonth: match[1], slug: match[2] };
+        }
+
+        function syncDraftInSource(content, publishEnabled) {
+            const nextDraftLine = `draft: ${publishEnabled ? 'false' : 'true'}`;
+            if (/^draft\s*[:=]\s*(true|false)\b/im.test(content)) {
+                return content.replace(/^draft\s*[:=]\s*(true|false)\b/im, nextDraftLine);
+            }
+
+            if (content.startsWith('---')) {
+                const parts = content.split('---', 3);
+                if (parts.length >= 3) {
+                    const frontmatter = parts[1].trimEnd();
+                    const body = parts[2].replace(/^\n*/, '');
+                    return `---\n${frontmatter}\n${nextDraftLine}\n---\n\n${body}`;
+                }
+            }
+
+            return content;
+        }
 
         document.addEventListener('DOMContentLoaded', () => {
             loadFileList();
@@ -213,7 +252,24 @@
         async function loadFileList() {
             try {
                 const res = await fetch(`${API}/files`);
-                const files = await res.json();
+                const apiFiles = await res.json();
+                const filesMap = new Map(apiFiles.map(f => [f.path, { ...f, sessionPinned: false }]));
+
+                sessionEditedFiles.forEach((entry, path) => {
+                    const existing = filesMap.get(path);
+                    if (existing) {
+                        filesMap.set(path, { ...existing, sessionPinned: true, draft: entry.draft });
+                    } else {
+                        filesMap.set(path, { ...entry });
+                    }
+                });
+
+                const files = Array.from(filesMap.values()).sort((a, b) => {
+                    const aPinnedOnly = a.sessionPinned && !apiFiles.some(file => file.path === a.path);
+                    const bPinnedOnly = b.sessionPinned && !apiFiles.some(file => file.path === b.path);
+                    if (aPinnedOnly !== bPinnedOnly) return aPinnedOnly ? -1 : 1;
+                    return String(b.date).localeCompare(String(a.date));
+                });
                 document.getElementById('fileCount').textContent = files.length;
                 
                 if (!files.length) {
@@ -224,11 +280,13 @@
                 document.getElementById('fileItems').innerHTML = files.map(f => {
                     const edited = editedFiles.has(f.path);
                     const active = currentFile === f.path;
+                    const pinnedOnly = f.sessionPinned && !apiFiles.some(file => file.path === f.path);
+                    const statusText = pinnedOnly ? (f.draft ? ' 本会话草稿' : ' 本会话已发布') : '';
                     // 显示完整文件名（去掉.md后缀）
                     const displayName = f.name.replace(/\.md$/, '');
                     return `<div class="file-item${active ? ' active' : ''}${edited ? ' edited' : ''}" onclick="openFile('${f.path.replace(/'/g, "\\'")}')">
                         <div class="file-name" title="${f.name}">${displayName}</div>
-                        <div class="file-date">${f.date}${edited ? ' ✏️' : ''}</div>
+                        <div class="file-date">${f.date}${edited ? ' ✏️' : ''}${statusText}</div>
                     </div>`;
                 }).join('');
             } catch (e) {
@@ -301,9 +359,11 @@
                 // 保存原始数据
                 formData = { ...fm };
 
+                const publishEnabled = fm.draft === false;
+
                 // 填充表单 - 确保所有字段有值
-                document.getElementById('inputPublish1').checked = true;
-                document.getElementById('inputPublish2').checked = true;
+                document.getElementById('inputPublish1').checked = publishEnabled;
+                document.getElementById('inputPublish2').checked = publishEnabled;
                 document.getElementById('currentFileTitle').textContent = filePath;
                 document.getElementById('sourceFileTitle').textContent = filePath;
                 document.getElementById('inputTitle').value = fm.title || '';
@@ -448,10 +508,13 @@
             // 解析标签
             const tags = tagsStr.split(',').map(t => t.trim()).filter(Boolean);
 
-            // 从路径提取年月和slug
-            const parts = currentFile.split('/');
-            const yearMonth = parts[2];
-            const slug = parts[3].replace('.md', '');
+            // 从路径提取年月和 slug，兼容正式目录与草稿目录
+            const pathInfo = getPromptPathInfo(currentFile);
+            if (!pathInfo) {
+                showToast('路径无法解析', true);
+                return;
+            }
+            const { yearMonth, slug } = pathInfo;
 
             // 合并并更新所有字段
             const newFm = { ...formData };
@@ -478,16 +541,13 @@
         async function saveSource() {
             if (!currentFile) return;
             let content = document.getElementById('sourceTextarea').value;
-            if (document.getElementById('inputPublish2').checked) {
-                content = content.replace(/^draft\s*[:=]\s*true/im, 'draft: false');
-            } else {
-                content = content.replace(/^draft\s*[:=]\s*false/im, 'draft: true');
-            }
+            content = syncDraftInSource(content, document.getElementById('inputPublish2').checked);
             await doSave(content, null, content);
         }
 
         async function doSave(body_content, frontmatter_data = null, raw_content = null) {
             try {
+                const previousFile = currentFile;
                 const payload = { path: currentFile };
                 if (frontmatter_data) {
                     payload.frontmatter = frontmatter_data;
@@ -503,16 +563,25 @@
                 });
 
                 if (res.ok) {
+                    const result = await res.json();
+                    const nextFile = result.path || previousFile;
+                    if (previousFile !== nextFile) {
+                        editedFiles.delete(previousFile);
+                        sessionEditedFiles.delete(previousFile);
+                    }
                     showToast('✅ 已保存');
-                    editedFiles.add(currentFile);
-                    await openFile(currentFile, true); // 自动重载最新文件，包含由于yaml format和新字段的变化
+                    editedFiles.add(nextFile);
+                    rememberSessionFile(nextFile, result.draft !== false);
+                    currentFile = nextFile;
+                    await loadFileList();
+                    await openFile(nextFile, true); // 自动重载最新文件，包含由于yaml format和新字段的变化
 
                     
                     // 手动添加界面的已编辑状态以提升性能，避免重新拉取全量文件导致卡死
                     const items = document.querySelectorAll('.file-item');
                     items.forEach(el => {
                         const onclickAttr = el.getAttribute('onclick');
-                        if (onclickAttr && onclickAttr.includes(currentFile)) {
+                        if (onclickAttr && onclickAttr.includes(nextFile)) {
                             el.classList.add('edited');
                             if (!el.querySelector('.file-date').innerHTML.includes('✏️')) {
                                 el.querySelector('.file-date').innerHTML += ' ✏️';

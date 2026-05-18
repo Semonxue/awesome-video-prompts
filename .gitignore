@@ -1,6 +1,8 @@
 # Hugo generated files
 /public/
 /resources/_gen/
+/content/_drafts/
+/static/_drafts/
 
 # OS files
 .DS_Store
