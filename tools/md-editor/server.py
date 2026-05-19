@@ -185,13 +185,21 @@ class EditorHandler(SimpleHTTPRequestHandler):
             shutil.rmtree(target_asset_dir)
         shutil.move(str(source_asset_dir), str(target_asset_dir))
 
+    def should_list_file(self, path):
+        root_name, _ = self.get_content_root(path)
+        if root_name == "draft":
+            return True
+        if root_name == "published":
+            return self.parse_is_draft_fast(path)
+        return False
+
     def handle_list_files(self):
         files_dict = {}
         for root in (DRAFT_CONTENT_DIR, CONTENT_DIR):
             if not root.exists():
                 continue
             for mf in root.rglob("*.md"):
-                if not self.parse_is_draft_fast(mf):
+                if not self.should_list_file(mf):
                     continue
                 rel_path = str(mf.relative_to(PROJECT_ROOT))
                 files_dict[rel_path] = {
@@ -212,7 +220,7 @@ class EditorHandler(SimpleHTTPRequestHandler):
 
                     if fp.startswith(("content/prompts/", "content/_drafts/")) and fp.endswith(".md"):
                         full_path = PROJECT_ROOT / fp
-                        if not self.parse_is_draft_fast(full_path):
+                        if not self.should_list_file(full_path):
                             continue
 
                         if fp in files_dict:
