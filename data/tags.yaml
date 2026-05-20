@@ -1235,3 +1235,39 @@ sharks:
   zh-cn: 鲨鱼
   description_en: "Shark and marine predator content"
   description_zh-cn: "鲨鱼和海洋捕食者内容"
+
+gaussian-splat:
+  en: gaussian-splat
+  zh-cn: 高斯泼溅
+  description_en: "Gaussian Splat 3D reconstruction and rendering"
+  description_zh-cn: "高斯泼溅3D重建和渲染"
+
+world-model:
+  en: world-model
+  zh-cn: 世界模型
+  description_en: "World model AI capable of understanding physics and causality"
+  description_zh-cn: "理解物理和因果关系的世界模型AI"
+
+motion-graphics:
+  en: motion graphics
+  zh-cn: 动态图形
+  description_en: "Motion graphics and animated visual design"
+  description_zh-cn: "动态图形和动画视觉设计"
+
+e-commerce:
+  en: e-commerce
+  zh-cn: 电商
+  description_en: "E-commerce and online shopping content"
+  description_zh-cn: "电商和在线购物内容"
+
+campaign:
+  en: campaign
+  zh-cn: 广告战役
+  description_en: "Marketing campaign and promotional video"
+  description_zh-cn: "营销广告和推广视频"
+
+panorama:
+  en: panorama
+  zh-cn: 全景
+  description_en: "Panoramic and 360-degree imagery"
+  description_zh-cn: "全景和360度图像"

@@ -185,3 +185,11 @@ runway:
   url: https://runwayml.com/
   description: >-
     Runway ML's video generation platform. Known for Gen series models (Gen-1, Gen-2, Gen-3 Alpha, Gen-4), providing professional video editing and AI generation tools widely used in film and creative industries.
+
+geminiomniflash:
+  name: Gemini Omni Flash
+  company: Google DeepMind
+  slug: geminiomniflash
+  url: https://deepmind.google/models/gemini-omni/
+  description: >-
+    Google DeepMind's video generation model. Combines Gemini's intelligence with generative media models, representing a leap forward in world understanding, multimodality, and editing. Enables high-quality, high-resolution video creation with audio and a more natural way to edit videos through conversation. Native multimodal support for text, vision, video, and audio inputs. Published May 2026.
