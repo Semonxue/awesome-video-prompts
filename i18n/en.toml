@@ -119,10 +119,10 @@ other = "Discover the best video generation prompts for this model. Copy and use
 other = "Explore"
 
 [meta_description]
-other = "Discover curated AI video generation prompts for Kling3, Vidu Q3, Sora, Veo3, and other top AI video models. Get inspired with professional prompts for cinematic, realistic, and creative video content."
+other = "Free Seedance2, HappyHorse, Gemini Omni, Kling3 prompts - curated AI video generation prompts for top models. Professional cinematic, realistic video prompts with downloadable templates."
 
 [meta_keywords]
-other = "AI video prompts, Seedance2.0 prompts, Kling3 prompts, video generation, AI video, text to video, video AI"
+other = "Seedance2 prompts, HappyHorse prompts, Gemini Omni prompts, Kling3 prompts, AI video, video generation, text to video, free prompts"
 
 [model_seo_title]
 other = "{{ .Model }} Prompts: Cases, Top Examples, Prompt Templates, Free Open-Source HowTo | {{ .Company }}"

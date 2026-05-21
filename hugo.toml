@@ -43,20 +43,20 @@ defaultContentLanguageInSubdir = true
   term = ["HTML"]
 
 [languages]
-  [languages.en]
-    title = 'Awesome Video Prompts - Seedance2.0, Kling3, Grok & More AI Video Prompts'
+[languages.en]
+  title = 'Seedance2, HappyHorse, Gemini Omni, Kling3 AI Video Prompts | Awesome Video Prompts'
     weight = 1
     languageName = 'English'
     contentDir = 'content/en'
 
-  [languages.zh-cn]
-    title = '精彩视频提示词 - Seedance2.0、Kling3、Grok等热门AI视频模型的专业提示词'
+[languages.zh-cn]
+  title = 'Seedance2、HappyHorse、Gemini Omni、Kling3 AI视频提示词 | 精彩视频提示词'
     weight = 2
     languageName = '简体中文'
     contentDir = 'content/zh-cn'
 
-  [languages.ja]
-    title = '素晴らしい動画プロンプト - Seedance2.0、Kling3、Grok など AI動画プロンプト'
+[languages.ja]
+  title = 'Seedance2、HappyHorse、Gemini Omni、Kling3 AI動画プロンプト | 素晴らしい動画プロンプト'
     weight = 3
     languageName = '日本語'
     contentDir = 'content/ja'

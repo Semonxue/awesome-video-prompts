@@ -20,11 +20,21 @@
     {{ $models = $models | append (dict "key" $key "count" $count "name" $model.name) }}
   {{ end }}
 
-  {{/* 3. Sort by count descending */}}
-  {{ $sortedModels := sort $models "count" "desc" }}
+  {{/* 3. Sort by priority models first, then by count descending */}}
+  {{ $priorityModels := slice "seedance2" "happyhorse" "geminiomniflash" "kling3" }}
+  {{ $sortedModels := slice }}
+  {{ range $model := $models }}
+    {{ if in $priorityModels $model.key }}
+      {{ $sortedModels = $sortedModels | append (merge $model (dict "priority" 1)) }}
+    {{ else }}
+      {{ $sortedModels = $sortedModels | append (merge $model (dict "priority" 0)) }}
+    {{ end }}
+  {{ end }}
+  {{ $sortedModels = sort $sortedModels "priority" "desc" }}
+  {{ $sortedModels = sort $sortedModels "count" "desc" }}
 
   {{/* 4. Collapse if too many */}}
-  {{ $maxVisible := 5 }}
+  {{ $maxVisible := 10 }}
   {{ $shouldCollapse := gt (len $sortedModels) $maxVisible }}
 
   {{/* 5. Render */}}

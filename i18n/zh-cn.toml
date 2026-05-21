@@ -119,10 +119,10 @@ other = "探索该模型最精彩的视频生成提示词。复制并使用它�
 other = "探索"
 
 [meta_description]
-other = "精选AI视频生成提示词库，收录Seedance2.0、Kling3、Grok等热门AI视频模型的专业提示词。涵盖电影级，写实、创意等多种风格，助你创作精彩视频内容。"
+other = "免费 Seedance2、HappyHorse、Gemini Omni、Kling3 提示词库 - 精选热门AI视频模型专业提示词。涵盖电影级、写实、创意等多种风格，支持免费下载复制使用。"
 
 [meta_keywords]
-other = "AI视频提示词, Kling3提示词, Vidu提示词, Sora提示词, 视频生成, AI视频, 文生视频, 视频AI, 可灵3"
+other = "Seedance2提示词, HappyHorse提示词, Gemini Omni提示词, Kling3提示词, AI视频提示词, 视频生成, 文生视频, 免费提示词"
 
 [model_seo_title]
 other = "{{ .Model }} 提示词大全：案例、顶级示例、提示词模板、免费开源 HowTo | {{ .Company }}"

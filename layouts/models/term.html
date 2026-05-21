@@ -9,7 +9,7 @@
   {{- $modelData := index .Site.Data.models .Data.Term -}}
   {{- $modelName := $modelData.name | default (.Data.Term | title) -}}
   {{- $company := $modelData.company | default (.Data.Term | title) -}}
-  {{ T "model_seo_title" (dict "Model" $modelName "Company" $company) }}
+  {{ printf "%s Prompts - Free Examples & Templates | Awesome Video Prompts" $modelName }}
 {{ end }}
 
 {{/* CSS in head for proper loading */}}
