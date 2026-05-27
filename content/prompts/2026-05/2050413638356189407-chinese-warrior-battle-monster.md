@@ -1,83 +1,36 @@
 ---
-publishDate: 2026-05-02T11:14:40+08:00
-tags:
-  - seedance
-  - chinese-warrior
-  - monster
-  - battle
-  - tekken
-  - cinematic
-  - action
-  - ai-video
-  - yapper
-author: SimplyAnnisa
-author_url: https://twitter.com/SimplyAnnisa
-original_url: https://x.com/SimplyAnnisa/status/2050413638356189407
-cover: /prompts/2026-05/2050413638356189407-chinese-warrior-battle-monster/cover.jpg
+image: /prompts/2026-05/2050413638356189407-chinese-warrior-battle-monster/cover.jpg
 video: /prompts/2026-05/2050413638356189407-chinese-warrior-battle-monster/video.mp4
-platform: twitter
-model: seedance
+title: Chinese Warrior Battle Monster
 description: |-
-  She moves like lightning, ends like thunder
-  Created with seedance 2.0 @yapper_so
-
   cinematic high-intensity battle scene featuring a skilled Chinese female warrior with long black hair tied in a flowing ponytail, wearing a traditional yet stylized red and black combat outfit with silk textures and light armor plating. She wields a glowing ancient sword infused with blue energy.
-
   She is fighting a massive dark fantasy monster — a horned beast with glowing red eyes, cracked obsidian skin, and smoke emanating from its body.
-
   The environment is a destroyed ancient temple in the mountains, with broken pillars, flying debris, and mist covering the ground.
-
   The combat style resembles Tekken-style close combat — fast combos, dodges, flips, slow-motion impact shots, and powerful finishing strikes.
-
   The warrior dashes forward with lightning-fast footwork, leaving energy trails, jumps mid-air, spins, and slices through the monster while the camera dynamically orbits around them with cinematic motion blur.
-
   Include dramatic slow-motion moments during hits, shockwaves on impact, sparks, and energy bursts.
-
   Camera angles: close-up face intensity, mid combat tracking shots, wide-angle destruction shots.
-
   Lighting: moody cinematic lighting with blue vs red contrast, volumetric fog, dynamic shadows.
-
   Ultra-realistic, high detail, 4K, cinematic, dramatic atmosphere, epic action choreography.
+models:
+- seedance2
+tags:
+- monster
+- battle
+- tekken
+- cinematic
+- action
+author: SimplyAnnisa
+source_url: https://x.com/SimplyAnnisa/status/2050413638356189407
+date: '2026-05-27'
 ---
 
-# She moves like lightning, ends like thunder
-
-Created with seedance 2.0 @yapper_so
-
-## 📝 完整提示词
-
-```
 cinematic high-intensity battle scene featuring a skilled Chinese female warrior with long black hair tied in a flowing ponytail, wearing a traditional yet stylized red and black combat outfit with silk textures and light armor plating. She wields a glowing ancient sword infused with blue energy.
-
 She is fighting a massive dark fantasy monster — a horned beast with glowing red eyes, cracked obsidian skin, and smoke emanating from its body.
-
 The environment is a destroyed ancient temple in the mountains, with broken pillars, flying debris, and mist covering the ground.
-
 The combat style resembles Tekken-style close combat — fast combos, dodges, flips, slow-motion impact shots, and powerful finishing strikes.
-
 The warrior dashes forward with lightning-fast footwork, leaving energy trails, jumps mid-air, spins, and slices through the monster while the camera dynamically orbits around them with cinematic motion blur.
-
 Include dramatic slow-motion moments during hits, shockwaves on impact, sparks, and energy bursts.
-
 Camera angles: close-up face intensity, mid combat tracking shots, wide-angle destruction shots.
-
 Lighting: moody cinematic lighting with blue vs red contrast, volumetric fog, dynamic shadows.
-
 Ultra-realistic, high detail, 4K, cinematic, dramatic atmosphere, epic action choreography.
-```
-
-## 🎬 作品信息
-
-- **作者**: Anissa (@SimplyAnnisa)
-- **平台**: Twitter
-- **工具**: Seedance 2.0（@yapper_so）
-- **发布时间**: 2026-05-02 11:14 (北京时间)
-
-## 💡 技术亮点
-
-1. **中国风女战士**：红色+黑色战斗服、丝绸质感、轻甲、蓝色能量剑
-2. **Tekken 风格战斗**：快攻连招、闪避、翻跃、慢镜头打击
-3. **暗魔对决**：双角、红色双眼、裂纹黑曜石皮肤、烟雾效果
-4. **毁坏古寺场景**：断柱、飞石、雾气覆盖
-5. **蓝 vs 红 光影对比**：剑光蓝 vs 魔眼红，情绪化打光
-6. **动态镜头**：环绕运镜、运动模糊、冲击波、粒子特效

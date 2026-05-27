@@ -591,10 +591,11 @@
                         }
                     });
                 } else {
-                    showToast('保存失败', true);
+                    const errorText = await res.text();
+                    showToast(errorText || '保存失败', true);
                 }
             } catch (e) {
-                showToast('保存出错', true);
+                showToast(e?.message || '保存出错', true);
             }
         }
 

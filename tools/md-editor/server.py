@@ -6,6 +6,7 @@ import re
 import json
 import shutil
 import subprocess
+import tempfile
 import yaml
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
@@ -74,21 +75,35 @@ class EditorHandler(SimpleHTTPRequestHandler):
             try:
                 length = int(self.headers.get("Content-Length", 0))
                 body = json.loads(self.rfile.read(length).decode("utf-8"))
-                full = PROJECT_ROOT / body["path"].lstrip("/")
+                full = (PROJECT_ROOT / body["path"].lstrip("/")).resolve()
                 if "frontmatter" in body and "body" in body:
                     fm = body["frontmatter"]
                     content = self.build_markdown_content(fm, body["body"])
                     is_draft = self.frontmatter_is_draft(fm)
                 else:
                     content = body["content"]
+                    fm = self.parse_fm(content)
                     is_draft = self.parse_is_draft_content(content)
 
                 target = self.resolve_target_content_path(full, is_draft)
-                self.write_content(target, content)
-                self.move_prompt_assets(full, target)
+                self.validate_prompt_assets(full, target, fm)
+                temp_target = self.write_content_temp(target, content)
+                asset_move = None
 
-                if target != full and full.exists():
-                    full.unlink()
+                try:
+                    asset_move = self.move_prompt_assets(full, target)
+                    self.commit_temp_content(temp_target, target)
+
+                    if target != full and full.exists():
+                        full.unlink()
+                except Exception:
+                    self.rollback_temp_content(temp_target)
+                    self.rollback_prompt_assets(asset_move)
+                    raise
+                else:
+                    self.commit_prompt_assets(asset_move)
+
+                self.log_save_transition(full, target, is_draft)
 
                 rel_path = str(target.relative_to(PROJECT_ROOT))
                 self.send_json({"success": True, "path": rel_path, "draft": is_draft})
@@ -116,7 +131,18 @@ class EditorHandler(SimpleHTTPRequestHandler):
         return bool(re.search(r'^draft\s*[:=]\s*true\b', content, re.MULTILINE | re.IGNORECASE))
 
     def frontmatter_is_draft(self, fm):
-        return bool(fm.get("draft", False))
+        return self.parse_boolish(fm.get("draft", False))
+
+    def parse_boolish(self, value):
+        if isinstance(value, bool):
+            return value
+        if isinstance(value, str):
+            lowered = value.strip().lower()
+            if lowered in {"true", "yes", "on", "1"}:
+                return True
+            if lowered in {"false", "no", "off", "0", ""}:
+                return False
+        return bool(value)
 
     def build_markdown_content(self, fm, body):
         class CustomDumper(yaml.SafeDumper):
@@ -138,6 +164,19 @@ class EditorHandler(SimpleHTTPRequestHandler):
         path.parent.mkdir(parents=True, exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             f.write(content)
+
+    def write_content_temp(self, path, content):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=path.parent, delete=False, prefix=f".{path.name}.", suffix=".tmp") as f:
+            f.write(content)
+            return Path(f.name)
+
+    def commit_temp_content(self, temp_path, target_path):
+        os.replace(temp_path, target_path)
+
+    def rollback_temp_content(self, temp_path):
+        if temp_path and temp_path.exists():
+            temp_path.unlink()
 
     def resolve_media_path(self, media_path):
         relative_media = Path(media_path.lstrip("/"))
@@ -173,17 +212,82 @@ class EditorHandler(SimpleHTTPRequestHandler):
 
     def move_prompt_assets(self, source_path, target_path):
         if source_path == target_path:
-            return
+            return None
 
         source_asset_dir = self.get_prompt_asset_dir(source_path)
         target_asset_dir = self.get_prompt_asset_dir(target_path)
         if source_asset_dir == target_asset_dir or not source_asset_dir.exists():
-            return
+            return None
 
         target_asset_dir.parent.mkdir(parents=True, exist_ok=True)
+        backup_asset_dir = None
         if target_asset_dir.exists():
-            shutil.rmtree(target_asset_dir)
+            backup_asset_dir = target_asset_dir.with_name(f".{target_asset_dir.name}.md-editor-backup")
+            if backup_asset_dir.exists():
+                shutil.rmtree(backup_asset_dir)
+            shutil.move(str(target_asset_dir), str(backup_asset_dir))
         shutil.move(str(source_asset_dir), str(target_asset_dir))
+        return {
+            "source": source_asset_dir,
+            "target": target_asset_dir,
+            "backup": backup_asset_dir,
+        }
+
+    def validate_prompt_assets(self, source_path, target_path, fm):
+        if source_path == target_path:
+            return
+
+        source_asset_dir = self.get_prompt_asset_dir(source_path)
+        media_fields = [fm.get("image"), fm.get("video")]
+        has_prompt_media = any(
+            isinstance(value, str) and value.startswith("/prompts/")
+            for value in media_fields
+        )
+
+        if has_prompt_media and not source_asset_dir.exists():
+            rel_source = source_path.relative_to(PROJECT_ROOT)
+            rel_assets = source_asset_dir.relative_to(PROJECT_ROOT)
+            raise ValueError(
+                f"Missing prompt assets for {rel_source}: expected {rel_assets}"
+            )
+
+    def rollback_prompt_assets(self, move_state):
+        if not move_state:
+            return
+
+        source_asset_dir = move_state["source"]
+        target_asset_dir = move_state["target"]
+        backup_asset_dir = move_state["backup"]
+
+        if target_asset_dir.exists() and not source_asset_dir.exists():
+            source_asset_dir.parent.mkdir(parents=True, exist_ok=True)
+            shutil.move(str(target_asset_dir), str(source_asset_dir))
+
+        if backup_asset_dir and backup_asset_dir.exists() and not target_asset_dir.exists():
+            target_asset_dir.parent.mkdir(parents=True, exist_ok=True)
+            shutil.move(str(backup_asset_dir), str(target_asset_dir))
+
+    def commit_prompt_assets(self, move_state):
+        if not move_state:
+            return
+
+        backup_asset_dir = move_state["backup"]
+        if backup_asset_dir and backup_asset_dir.exists():
+            shutil.rmtree(backup_asset_dir)
+
+    def log_save_transition(self, source_path, target_path, is_draft):
+        if source_path == target_path:
+            print(f"[md-editor] saved draft={is_draft} path={target_path.relative_to(PROJECT_ROOT)}")
+            return
+
+        source_asset_dir = self.get_prompt_asset_dir(source_path)
+        target_asset_dir = self.get_prompt_asset_dir(target_path)
+        print(
+            "[md-editor] moved "
+            f"draft={is_draft} "
+            f"content={source_path.relative_to(PROJECT_ROOT)} -> {target_path.relative_to(PROJECT_ROOT)} "
+            f"assets={source_asset_dir.relative_to(PROJECT_ROOT)} -> {target_asset_dir.relative_to(PROJECT_ROOT)}"
+        )
 
     def should_list_file(self, path):
         root_name, _ = self.get_content_root(path)

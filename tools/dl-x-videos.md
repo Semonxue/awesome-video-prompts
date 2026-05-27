@@ -53,3 +53,4 @@
 - 验证生成文件的 Front Matter 路径是否正确包含 <YYYY-MM>
 - 验证草稿 md 与素材都位于 `_drafts` 目录中，且 `git status` 不包含这些草稿文件
 - 运行 ./tools/start-md-editor.sh 并打开浏览器 http://localhost:3000/ 提供审核；审核通过后将 `draft` 切为 `false` 并保存，md-editor 会把 md 和素材一起移动到正式发布目录
+- md-editor 仅支持标准路径：`content/_drafts/prompts/<YYYY-MM>/<Slug>.md` 与 `static/_drafts/prompts/<YYYY-MM>/<Slug>/`；若保存失败，应保持源草稿与源素材不被删除，再处理报错原因
