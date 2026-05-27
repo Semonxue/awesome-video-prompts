@@ -16,14 +16,14 @@ source_url: https://twitter.com/applete77191758/status/2040450526819807277
 description: "A cinematic, high-intensity anime sequence set on a pirate ship in a\
   \ violent storm at night. Strong emphasis on physical realism, dramatic lighting,\
   \ and dynamic camera control.\n\nEnvironment & Physics\nHeavy rain, strong wind,\
-  \ turbulent ocean<<<Image4>>>  \n\nVisible whitecaps (crest waves) continuously\
+  \ turbulent ocean&lt;&lt;&lt;Image4>>&gt;&gt;  \n\nVisible whitecaps (crest waves) continuously\
   \ forming and breaking\nShip motion:\nPitching (forward/back tilt)\nRolling (side\
   \ tilt)\nDeck instability affects all character movement (staggering, slipping)\n\
   Water spray, wet reflective surfaces, rope tension reacting to motion\nLighting（雷演出）\n\
   Lightning functions as:\nRim light (輪郭光)\nStrobe effect (瞬間的点灯)\nCreates sharp shadows,\
-  \ silhouettes, dramatic reveals\nPrincess Setup<<<Image2>>>  \n\nPrincess starts\
+  \ silhouettes, dramatic reveals\nPrincess Setup&lt;&lt;&lt;Image2>>&gt;&gt;  \n\nPrincess starts\
   \ near the mast\nVisibly anxious, struggling to balance due to pitching\nSubtle\
-  \ stagger and unstable footing\nKraken Emergence & First Impact\n<<<Image3>>>  \n\
+  \ stagger and unstable footing\nKraken Emergence & First Impact\n&lt;&lt;&lt;Image3>>&gt;&gt;  \n\
   Ocean splits, tentacles erupt through crest waves\nTentacles wrap ship, slam deck\n\
   Reaction:\nPrincess staggers \nCrew panics: shouting, slipping, colliding\nDestruction\n\
   Tentacle breaches hull\nWood splinters, debris bursts\nInterior partially floods\n\
@@ -55,7 +55,7 @@ draft: false
 A cinematic, high-intensity anime sequence set on a pirate ship in a violent storm at night. Strong emphasis on physical realism, dramatic lighting, and dynamic camera control.
 
 Environment & Physics
-Heavy rain, strong wind, turbulent ocean<<<Image4>>>  
+Heavy rain, strong wind, turbulent ocean&lt;&lt;&lt;Image4>>&gt;&gt;  
 
 Visible whitecaps (crest waves) continuously forming and breaking
 Ship motion:
@@ -68,13 +68,13 @@ Lightning functions as:
 Rim light (輪郭光)
 Strobe effect (瞬間的点灯)
 Creates sharp shadows, silhouettes, dramatic reveals
-Princess Setup<<<Image2>>>  
+Princess Setup&lt;&lt;&lt;Image2>>&gt;&gt;  
 
 Princess starts near the mast
 Visibly anxious, struggling to balance due to pitching
 Subtle stagger and unstable footing
 Kraken Emergence & First Impact
-<<<Image3>>>  
+&lt;&lt;&lt;Image3>>&gt;&gt;  
 Ocean splits, tentacles erupt through crest waves
 Tentacles wrap ship, slam deck
 Reaction:

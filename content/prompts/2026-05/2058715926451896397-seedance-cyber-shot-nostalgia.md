@@ -1,7 +1,7 @@
 ---
 image: /prompts/2026-05/2058715926451896397-seedance-cyber-shot-nostalgia/cover.jpg
 video: /prompts/2026-05/2058715926451896397-seedance-cyber-shot-nostalgia/video.mp4
-date: 2026-25
+date: 2026-05-25
 title: Cyber-shot LCD Vlog Nostalgia
 description: |-
   Use uploaded image @[character_ref] as the permanent character identity reference and uploaded image @[storyboard_ref] as the exact visual timeline and sequencing guide. Follow storyboard timing, shot transitions, framing rhythm, emotional flow, and scene continuity precisely.
