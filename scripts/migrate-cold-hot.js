@@ -12,7 +12,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.join(__dirname, '..');
 
-const CURRENT_MONTH = new Date().toISOString().slice(0, 7);
+const HOT_MEDIA_DAYS = Number(process.env.HOT_MEDIA_DAYS || 14);
+const TODAY = new Date();
+const HOT_CUTOFF = new Date(TODAY);
+
+HOT_CUTOFF.setUTCHours(0, 0, 0, 0);
+HOT_CUTOFF.setUTCDate(HOT_CUTOFF.getUTCDate() - HOT_MEDIA_DAYS);
 
 const R2_CONFIG = {
   region: 'auto',
@@ -45,12 +50,62 @@ async function uploadToR2(localPath, r2Key) {
 }
 
 function getMDDate(content) {
-  // 支持 date: 2026-04-12 或 date: '2026-04-12' 或 date: "2026-04-12"
-  const dateMatch = content.match(/^date:\s*['"]?(\d{4}-\d{2})/m);
-  return dateMatch ? dateMatch[1] : null;
+  // 支持 date: 2026-04-12 / '2026-04-12' / "2026-04-12"，兼容 YYYY-MM
+  const dateMatch = content.match(/^date:\s*['"]?(\d{4}-\d{2}(?:-\d{2})?)/m);
+
+  if (!dateMatch) return null;
+
+  const normalizedDate = dateMatch[1].length === 7 ? `${dateMatch[1]}-01` : dateMatch[1];
+  const parsedDate = new Date(`${normalizedDate}T00:00:00Z`);
+
+  return Number.isNaN(parsedDate.getTime()) ? null : parsedDate;
 }
 
-function processMDFile(mdPath) {
+function formatDate(date) {
+  return date.toISOString().slice(0, 10);
+}
+
+async function migrateMediaField(content, mdPath, fieldPattern, label) {
+  const mediaMatch = content.match(fieldPattern);
+
+  if (!mediaMatch) return content;
+
+  const fieldName = mediaMatch[1];
+  const mediaPath = mediaMatch[2];
+
+  if (mediaPath.startsWith('http://') || mediaPath.startsWith('https://')) {
+    console.log(`   ${label} 已是 R2 URL`);
+    return content;
+  }
+
+  const localPath = mediaPath.replace(/^\//, '');
+  const fullLocalPath = path.join(projectRoot, 'static', localPath);
+
+  if (!fs.existsSync(fullLocalPath)) {
+    console.log(`   ${label} 本地文件不存在: ${localPath}`);
+    return content;
+  }
+
+  try {
+    await uploadToR2(fullLocalPath, localPath);
+    const newMediaUrl = `${PUBLIC_URL}/${localPath}`;
+    const replacePattern = new RegExp(`^${fieldName}:\\s*["']?[^\\n]+["']?\\s*$`, 'm');
+
+    content = content.replace(replacePattern, `${fieldName}: "${newMediaUrl}"`);
+
+    if (fs.existsSync(fullLocalPath)) {
+      fs.unlinkSync(fullLocalPath);
+    }
+
+    console.log(`   ${label} 已迁移: ${localPath}`);
+  } catch (err) {
+    console.error(`   ❌ 上传失败: ${localPath}`, err.message);
+  }
+
+  return content;
+}
+
+async function processMDFile(mdPath) {
   let content = fs.readFileSync(mdPath, 'utf8');
   const mdDate = getMDDate(content);
   
@@ -59,87 +114,42 @@ function processMDFile(mdPath) {
     return;
   }
   
-  const isHot = mdDate === CURRENT_MONTH;
-  console.log(`${isHot ? '🔥' : '❄️'} ${path.basename(mdPath)} (${mdDate})`);
+  const isHot = mdDate >= HOT_CUTOFF;
+  console.log(`${isHot ? '🔥' : '❄️'} ${path.basename(mdPath)} (${formatDate(mdDate)})`);
   
   if (isHot) {
-    console.log(`   保留在 Pages（当月文件）`);
+    console.log(`   保留在 Pages（${HOT_MEDIA_DAYS} 天内文件）`);
     return;
   }
 
-  // 处理 video 字段
-  const videoMatch = content.match(/^video:\s*["']?(\/?prompts\/[^"'\s]+)["']?/m);
-  if (videoMatch) {
-    let localPath = videoMatch[1].replace(/^\//, '');
-    
-    if (localPath.startsWith('http')) {
-      console.log(`   📹 已是 R2 URL`);
-      return;
-    }
-    
-    const fullLocalPath = path.join(projectRoot, 'static', localPath);
-    
-    if (fs.existsSync(fullLocalPath)) {
-      uploadToR2(fullLocalPath, localPath).then(() => {
-        const newVideoUrl = `${PUBLIC_URL}/${localPath}`;
-        content = content.replace(/^video:\s*["']?\/?.+?["']?\s*$/m, `video: "${newVideoUrl}"`);
-        fs.writeFileSync(mdPath, content);
-        // 只删除存在的文件
-        if (fs.existsSync(fullLocalPath)) {
-          fs.unlinkSync(fullLocalPath);
-        }
-        console.log(`   📹 已迁移: ${localPath}`);
-      }).catch(err => console.error(`   ❌ 上传失败: ${localPath}`, err.message));
-    } else {
-      console.log(`   📹 本地文件不存在: ${localPath}`);
-    }
-  }
+  content = await migrateMediaField(content, mdPath, /^(video):\s*["']?(\/?prompts\/[^"'\s]+|https?:\/\/[^"'\s]+)["']?/m, '📹');
+  content = await migrateMediaField(content, mdPath, /^(image|cover):\s*["']?(\/?prompts\/[^"'\s]+|https?:\/\/[^"'\s]+)["']?/m, '🖼️');
 
-  // 处理 image/cover 字段
-  const imageMatch = content.match(/^(?:image|cover):\s*["']?(\/?prompts\/[^"'\s]+)["']?/m);
-  if (imageMatch) {
-    let localPath = imageMatch[1].replace(/^\//, '');
-    
-    if (localPath.startsWith('http')) {
-      console.log(`   🖼️ 已是 R2 URL`);
-      return;
-    }
-    
-    const fullLocalPath = path.join(projectRoot, 'static', localPath);
-    
-    if (fs.existsSync(fullLocalPath)) {
-      uploadToR2(fullLocalPath, localPath).then(() => {
-        const newImageUrl = `${PUBLIC_URL}/${localPath}`;
-        content = content.replace(/^(?:image|cover):\s*["']?\/?.+?["']?\s*$/m, `image: "${newImageUrl}"`);
-        fs.writeFileSync(mdPath, content);
-        // 只删除存在的文件
-        if (fs.existsSync(fullLocalPath)) {
-          fs.unlinkSync(fullLocalPath);
-        }
-        console.log(`   🖼️ 已迁移: ${localPath}`);
-      }).catch(err => console.error(`   ❌ 上传失败: ${localPath}`, err.message));
-    } else {
-      console.log(`   🖼️ 本地文件不存在: ${localPath}`);
-    }
-  }
+  fs.writeFileSync(mdPath, content);
 }
 
 function cleanupEmptyDirs() {
   const promptsDir = path.join(projectRoot, 'static', 'prompts');
-  const coldMonths = ['2025-02', '2025-12', '2026-01', '2026-02', '2026-03', '2026-04'];
-  
-  for (const month of coldMonths) {
-    const monthDir = path.join(promptsDir, month);
-    if (fs.existsSync(monthDir)) {
-      try {
-        const entries = fs.readdirSync(monthDir, { withFileTypes: true });
-        const hasFiles = entries.some(e => e.isFile());
-        if (!hasFiles) {
-          fs.rmdirSync(monthDir, { recursive: true });
-          console.log(`🗑️ 删除空目录: ${month}`);
-        }
-      } catch (e) {}
+
+  function removeEmptyDirs(dir) {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+    for (const entry of entries) {
+      if (entry.isDirectory()) {
+        removeEmptyDirs(path.join(dir, entry.name));
+      }
     }
+
+    if (dir === promptsDir) return;
+
+    if (fs.readdirSync(dir).length === 0) {
+      fs.rmdirSync(dir);
+      console.log(`🗑️ 删除空目录: ${path.relative(promptsDir, dir)}`);
+    }
+  }
+
+  if (fs.existsSync(promptsDir)) {
+    removeEmptyDirs(promptsDir);
   }
 }
 
@@ -147,7 +157,8 @@ async function main() {
   console.log('═══════════════════════════════════════════════════');
   console.log('❄️ Cold-Hot Media Migration Script');
   console.log('═══════════════════════════════════════════════════');
-  console.log(`📅 当前月份: ${CURRENT_MONTH}`);
+  console.log(`📅 当前日期: ${formatDate(TODAY)}`);
+  console.log(`🔥 热数据阈值: 最近 ${HOT_MEDIA_DAYS} 天（>= ${formatDate(HOT_CUTOFF)}）`);
   console.log(`📦 R2 Bucket: ${BUCKET_NAME}`);
   console.log(`🌐 R2 URL: ${PUBLIC_URL}`);
   console.log('═══════════════════════════════════════════════════\n');
@@ -175,10 +186,9 @@ async function main() {
   console.log(`📄 发现 ${mdFiles.length} 个 MD 文件\n`);
   
   for (const mdPath of mdFiles) {
-    processMDFile(mdPath);
+    await processMDFile(mdPath);
   }
-  
-  await new Promise(r => setTimeout(r, 2000));
+
   console.log('\n🧹 清理空目录...');
   cleanupEmptyDirs();
   
