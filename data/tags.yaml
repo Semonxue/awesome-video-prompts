@@ -1271,3 +1271,73 @@ panorama:
   zh-cn: 全景
   description_en: "Panoramic and 360-degree imagery"
   description_zh-cn: "全景和360度图像"
+product-video:
+  en: product video
+  zh-cn: 产品视频
+  description_en: "Product showcase and commercial video content"
+  description_zh-cn: "产品展示和商业视频内容"
+
+consistent-character:
+  en: consistent character
+  zh-cn: 一致角色
+  description_en: "Character consistency maintained across video frames"
+  description_zh-cn: "角色在视频帧之间保持一致性"
+
+background-change:
+  en: background change
+  zh-cn: 背景变换
+  description_en: "Dynamic or changing background elements"
+  description_zh-cn: "动态或变化的背景元素"
+
+clay-animation:
+  en: clay animation
+  zh-cn: 黏土动画
+  description_en: "Clay animation style with soft, moldable characters"
+  description_zh-cn: "柔软可塑角色的黏土动画风格"
+
+stick-figure:
+  en: stick figure
+  zh-cn: 火柴人
+  description_en: "Stick figure animation with minimal details"
+  description_zh-cn: "细节简洁的火柴人动画"
+
+writing-animation:
+  en: writing animation
+  zh-cn: 书写动画
+  description_en: "Animation of writing or drawing process"
+  description_zh-cn: "书写或绘画过程的动画"
+
+minecraft-style:
+  en: Minecraft style
+  zh-cn: 我的世界风格
+  description_en: "Minecraft block world aesthetic and visual style"
+  description_zh-cn: "我的世界方块世界美学和视觉风格"
+
+photorealistic-subject:
+  en: photorealistic subject
+  zh-cn: 写实主体
+  description_en: "Photorealistic main subject with stylized environment"
+  description_zh-cn: "写实主体配合风格化环境"
+
+style-conversion:
+  en: style conversion
+  zh-cn: 风格转换
+  description_en: "Converting images or videos to different visual styles"
+  description_zh-cn: "将图像或视频转换为不同的视觉风格"
+
+hand-animation:
+  en: hand animation
+  zh-cn: 手部动画
+  description_en: "Animation focused on hand movements"
+  description_zh-cn: "以手部动作为主的动画"
+
+pen-animation:
+  en: pen animation
+  zh-cn: 笔动画
+  description_en: "Animation of pen or drawing tool on surface"
+  description_zh-cn: "笔或绘画工具在表面上的动画"
+cinematic-video:
+  en: cinematic video
+  zh-cn: 电影感视频
+  description_en: "Cinematic video with movie-like quality"
+  description_zh-cn: "具有电影质感的视频"
