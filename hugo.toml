@@ -4,9 +4,10 @@ canonifyURLs = false
 title = 'Awesome Video Prompts'
 theme = 'ananke'
 
-buildFuture = true
-buildExpired = true
+buildFuture = false
+buildExpired = false
 buildDrafts = false
+timeout = "30m"
 
 enableRobotsTXT = true
 
