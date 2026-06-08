@@ -7,7 +7,7 @@ theme = 'ananke'
 buildFuture = false
 buildExpired = false
 buildDrafts = false
-timeout = "30m"
+timeout = "40m"
 
 enableRobotsTXT = true
 
