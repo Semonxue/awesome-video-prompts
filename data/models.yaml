@@ -146,6 +146,14 @@ pixverse:
   description: >-
     PixVerse AI video generation model, supporting cinematic shots, action sequences, and creative content generation. Approximate launch: 2024.
 
+wery:
+  name: Wery AI
+  company: Wery AI
+  slug: wery
+  url: https://wery.ai/
+  description: >-
+    Wery AI video generation model, known for cinematic storytelling, alien/fantasy themes, and high-quality character animation. Used for creating imaginative sci-fi content with detailed world-building.
+
 happyhorse:
   name: HAPPYHORSE
   company: Unknown
