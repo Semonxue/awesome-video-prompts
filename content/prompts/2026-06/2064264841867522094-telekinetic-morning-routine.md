@@ -1,0 +1,41 @@
+---
+title: Telekinetic Morning Routine
+date: '2026-06-09'
+models:
+- seedance2
+tags:
+- telekinesis
+- urban
+- morning
+- cinematic
+- digital-painting
+video: /prompts/2026-06/2064264841867522094-telekinetic-morning-routine/video.mp4
+image: /prompts/2026-06/2064264841867522094-telekinetic-morning-routine/cover.jpg
+author: Kashberg
+source_url: https://twitter.com/Kashberg_0/status/2064264841867522094
+description: |-
+  SUBJECTS: A young urban man with telekinetic powers @ image1. At the beginning, wearing only dark shorts, no shirt.
+  ENVIRONMENT: Morning apartment. Bedroom connected to the living room. Bathroom on the right side of the bedroom. Wardrobe on the left side of the bedroom, with an accessory tray beside it. A record player sits on a side table in the living room. A coffee machine and ceramic coffee cup are on the kitchen counter. A shoe cabinet is at the far end of the entryway.
+  MUSIC: Starts with morning ambient sounds. The record player automatically plays an upbeat song. Music naturally ends indoors at the end.
+  STYLE: Digital painting look. Large simplified color blocks, hard-edge brushwork, low-detail forms, heavy shadows, visible hand-drawn marks. No realistic 3D look, no commercial CG ad look, no polished photorealism.
+  SHOT 1: Bedside close shot, 24mm, low angle. The man, wearing only dark shorts, sits on the edge of the bed with both hands hanging naturally and feet reaching toward the floor. A pair of slippers slides beneath his feet and slips onto them. The curtains open automatically. He stands and walks toward the living room. SFX: Morning ambience, curtain track sound, soft slipper sounds.
+  SHOT 2: Living room side table close shot, 50mm. The man passes through the living room without looking at or touching the record player. The record player starts playing and upbeat music begins. His arms hang naturally as he walks toward the bathroom on the right. SFX: Music starts.
+  SHOT 3: Medium close shot in front of the bathroom mirror, 35mm. The man stands at the sink. A toothbrush with toothpaste rises from a cup and flies into his outstretched right hand. He places the brush in front of his teeth and performs a short brushing motion. SFX: Toothpaste cap sound, toothbrush landing in hand, brushing sound.
+  SHOT 4: Bathroom-to-bedroom wall cover transition, 28mm. The man is still brushing his teeth. The frame passes behind a white bathroom wall and door frame. When the view appears again, it is at the wardrobe area in the bedroom. His arms hang naturally. The wardrobe doors slide open automatically and a white T-shirt flies out and unfolds. SFX: Brushing sound fades, wardrobe door sliding sound.
+  SHOT 5: Half-body medium shot in front of the wardrobe, 28mm. The T-shirt drops over his head, briefly covering his face and hair. The sleeves align with his arms and slip on. The shirt slides down to his waist. Dark gray trousers fly out of the wardrobe and unfold in front of him, waistband up, pant legs down, front facing forward. SFX: Fabric swish, shirt settling sound.
+  SHOT 6: Full-body medium shot in front of the wardrobe, 28mm. The man gives a slight nod, lifting his left foot first and then his right into the pant legs. The trousers pull themselves up to his waist and fit into place. A necklace fastens around his neck, rings slide onto his fingers, a watch clasps onto his wrist, and sunglasses open and settle onto his face. He never raises his hands, only slightly lowers his head so the sunglasses can settle. SFX: Fabric friction, light metal clicks, watch clasp sound, sunglass arms opening.
+  SHOT 7: Low-angle tracking shot from behind at foot level in the entryway, 28mm. Fully dressed, the man walks to the entryway. A pair of sneakers slides out from beneath the shoe cabinet and turns to face him, openings aligned with his feet. He steps into the left shoe, then the right. The laces tighten automatically. A ceramic coffee cup, freshly filled with coffee from the kitchen counter, flies toward him and the handle lands in his right hand. The door lock releases automatically and the door opens. Holding the coffee, he walks out. The upbeat music ends naturally and the door closes by itself. SFX: Feet entering shoes, lace tightening sound, coffee pouring sound, door lock sound, record needle sound, footsteps fading away.
+draft: false
+---
+
+SUBJECTS: A young urban man with telekinetic powers @ image1. At the beginning, wearing only dark shorts, no shirt.
+ENVIRONMENT: Morning apartment. Bedroom connected to the living room. Bathroom on the right side of the bedroom. Wardrobe on the left side of the bedroom, with an accessory tray beside it. A record player sits on a side table in the living room. A coffee machine and ceramic coffee cup are on the kitchen counter. A shoe cabinet is at the far end of the entryway.
+MUSIC: Starts with morning ambient sounds. The record player automatically plays an upbeat song. Music naturally ends indoors at the end.
+STYLE: Digital painting look. Large simplified color blocks, hard-edge brushwork, low-detail forms, heavy shadows, visible hand-drawn marks. No realistic 3D look, no commercial CG ad look, no polished photorealism.
+SHOT 1: Bedside close shot, 24mm, low angle. The man, wearing only dark shorts, sits on the edge of the bed with both hands hanging naturally and feet reaching toward the floor. A pair of slippers slides beneath his feet and slips onto them. The curtains open automatically. He stands and walks toward the living room. SFX: Morning ambience, curtain track sound, soft slipper sounds.
+SHOT 2: Living room side table close shot, 50mm. The man passes through the living room without looking at or touching the record player. The record player starts playing and upbeat music begins. His arms hang naturally as he walks toward the bathroom on the right. SFX: Music starts.
+SHOT 3: Medium close shot in front of the bathroom mirror, 35mm. The man stands at the sink. A toothbrush with toothpaste rises from a cup and flies into his outstretched right hand. He places the brush in front of his teeth and performs a short brushing motion. SFX: Toothpaste cap sound, toothbrush landing in hand, brushing sound.
+SHOT 4: Bathroom-to-bedroom wall cover transition, 28mm. The man is still brushing his teeth. The frame passes behind a white bathroom wall and door frame. When the view appears again, it is at the wardrobe area in the bedroom. His arms hang naturally. The wardrobe doors slide open automatically and a white T-shirt flies out and unfolds. SFX: Brushing sound fades, wardrobe door sliding sound.
+SHOT 5: Half-body medium shot in front of the wardrobe, 28mm. The T-shirt drops over his head, briefly covering his face and hair. The sleeves align with his arms and slip on. The shirt slides down to his waist. Dark gray trousers fly out of the wardrobe and unfold in front of him, waistband up, pant legs down, front facing forward. SFX: Fabric swish, shirt settling sound.
+SHOT 6: Full-body medium shot in front of the wardrobe, 28mm. The man gives a slight nod, lifting his left foot first and then his right into the pant legs. The trousers pull themselves up to his waist and fit into place. A necklace fastens around his neck, rings slide onto his fingers, a watch clasps onto his wrist, and sunglasses open and settle onto his face. He never raises his hands, only slightly lowers his head so the sunglasses can settle. SFX: Fabric friction, light metal clicks, watch clasp sound, sunglass arms opening.
+SHOT 7: Low-angle tracking shot from behind at foot level in the entryway, 28mm. Fully dressed, the man walks to the entryway. A pair of sneakers slides out from beneath the shoe cabinet and turns to face him, openings aligned with his feet. He steps into the left shoe, then the right. The laces tighten automatically. A ceramic coffee cup, freshly filled with coffee from the kitchen counter, flies toward him and the handle lands in his right hand. The door lock releases automatically and the door opens. Holding the coffee, he walks out. The upbeat music ends naturally and the door closes by itself. SFX: Feet entering shoes, lace tightening sound, coffee pouring sound, door lock sound, record needle sound, footsteps fading away.
