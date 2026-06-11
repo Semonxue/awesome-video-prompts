@@ -217,8 +217,17 @@ async function main() {
   console.log('═══════════════════════════════════════════════════\n');
   
   if (!process.env.R2_ACCOUNT_ID) {
-    console.error('❌ 缺少 R2 环境变量');
-    process.exit(1);
+    console.error('═══════════════════════════════════════════════════');
+    console.error('❌ 缺少 R2 环境变量，跳过迁移');
+    console.error('═══════════════════════════════════════════════════');
+    console.log('📝 提示：CI 环境需要设置以下环境变量：');
+    console.log('   - R2_ACCOUNT_ID');
+    console.log('   - R2_ACCESS_KEY_ID');
+    console.log('   - R2_SECRET_ACCESS_KEY');
+    console.log('   - R2_BUCKET_NAME');
+    console.log('   - R2_PUBLIC_URL');
+    console.log('═══════════════════════════════════════════════════\n');
+    return; // 不退出，继续 Hugo build
   }
   
   const contentDir = path.join(projectRoot, 'content');
