@@ -3,6 +3,7 @@
 /resources/_gen/
 /content/_drafts/
 /static/_drafts/
+node_modules/
 
 # OS files
 .DS_Store
