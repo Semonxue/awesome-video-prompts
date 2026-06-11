@@ -12,13 +12,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.join(__dirname, '..');
 
-const HOT_MEDIA_DAYS = Number(process.env.HOT_MEDIA_DAYS || 14);
+const HOT_MEDIA_DAYS = Number(process.env.HOT_MEDIA_DAYS || 0);
 const CONCURRENCY = Number(process.env.R2_CONCURRENCY || 5);
 const TODAY = new Date();
 const HOT_CUTOFF = new Date(TODAY);
 
-HOT_CUTOFF.setUTCHours(0, 0, 0, 0);
-HOT_CUTOFF.setUTCDate(HOT_CUTOFF.getUTCDate() - HOT_MEDIA_DAYS);
+if (HOT_MEDIA_DAYS > 0) {
+  HOT_CUTOFF.setUTCHours(0, 0, 0, 0);
+  HOT_CUTOFF.setUTCDate(HOT_CUTOFF.getUTCDate() - HOT_MEDIA_DAYS);
+}
 
 const R2_CONFIG = {
   region: 'auto',
@@ -132,11 +134,11 @@ async function processMDFile(mdPath, semaphore) {
     return [];
   }
   
-  const isHot = mdDate >= HOT_CUTOFF;
+  const isHot = HOT_MEDIA_DAYS > 0 && mdDate >= HOT_CUTOFF;
   console.log(`${isHot ? '🔥' : '❄️'} ${path.basename(mdPath)} (${formatDate(mdDate)})`);
   
   if (isHot) {
-    console.log(`   保留在 Pages（${HOT_MEDIA_DAYS} 天内文件）`);
+    console.log(`   保留在 Pages（热数据）`);
     return [];
   }
 
@@ -209,7 +211,7 @@ async function main() {
   console.log('❄️ Cold-Hot Media Migration Script');
   console.log('═══════════════════════════════════════════════════');
  console.log(`📅 当前日期: ${formatDate(TODAY)}`);
-  console.log(`🔥 热数据阈值: 最近 ${HOT_MEDIA_DAYS} 天（>= ${formatDate(HOT_CUTOFF)}，保留在 Pages）`);
+  console.log(`🔥 热数据阈值: 最近 ${HOT_MEDIA_DAYS} 天（保留在 Pages）`);
   console.log(`❄️ 冷数据: 超过 ${HOT_MEDIA_DAYS} 天，迁移到 R2`);
   console.log(`⚡ 并发数: ${CONCURRENCY}`);
   console.log(`📦 R2 Bucket: ${BUCKET_NAME}`);
