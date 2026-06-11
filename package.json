@@ -4,15 +4,9 @@
   "type": "module",
   "scripts": {
     "prebuild": "node scripts/migrate-cold-hot.js",
-    "build": "rm -Rf public && hugo --minify --gc",
-    "build:skip-migrate": "SKIP_MIGRATE=1 node scripts/migrate-cold-hot.js && rm -Rf public && hugo --minify --gc",
-    "migrate": "node scripts/migrate-cold-hot.js",
-    "migrate:dry": "DRY_RUN=1 node scripts/migrate-cold-hot.js",
-    "migrate:force": "MIGRATE_FORCE=1 node scripts/migrate-cold-hot.js",
-    "migrate:baseline": "KEEP_FROM_MONTH=2025-01 MIGRATE_FORCE=1 node scripts/migrate-cold-hot.js"
+    "build": "rm -Rf public && hugo --minify --gc"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.540.0",
-    "p-limit": "^6.1.0"
+    "@aws-sdk/client-s3": "^3.540.0"
   }
 }

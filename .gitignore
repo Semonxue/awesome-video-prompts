@@ -23,17 +23,3 @@ tools/temp
 *.tmp
 temp
 tools/_*
-
-# Node
-node_modules/
-.migrate-state.json
-
-# ===== v2: 冷热分离 — 媒体不进 git、不进 Pages =====
-# 这些媒体文件由 scripts/migrate-cold-hot.js 推到 R2，
-# 本地副本只供重跑迁移使用；Pages 只部署 MD 文本 + 主题/静态资源。
-# 不放进 git 是关键，否则 Cloudflare Pages 部署时仍会拷贝
-# 9221 个 mp4/jpg 到 public/，触发 20000 文件数上限。
-/static/prompts/**/*.mp4
-/static/prompts/**/*.jpg
-/static/prompts/**/*.jpeg
-/static/prompts/**/*.png
