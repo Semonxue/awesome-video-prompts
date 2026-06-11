@@ -246,8 +246,10 @@ async function main() {
   console.log("═══════════════════════════════════════════════════\n");
 
   if (!process.env.R2_ACCOUNT_ID) {
-    console.error("❌ 缺少 R2 环境变量");
-    process.exit(1);
+    console.warn("⚠️  未配置 R2 凭证（缺少 R2_ACCOUNT_ID）");
+    console.warn("   → 跳过 R2 迁移，保留所有媒体在本地 static/，hugo 将直接从本地渲染");
+    console.warn("   → 之后本地跑 MIGRATE_FORCE=1 可补齐 R2 基线");
+    return;
   }
 
   const contentDir = path.join(projectRoot, "content");
