@@ -40,16 +40,10 @@ const HOT_CUTOFF = new Date(TODAY);
 HOT_CUTOFF.setUTCHours(0, 0, 0, 0);
 HOT_CUTOFF.setUTCDate(HOT_CUTOFF.getUTCDate() - HOT_MEDIA_DAYS);
 
-// 保留窗口起点：当月往前推 (RECENT_MONTHS - 1) 月
-// 例：当前 2026-06, RECENT_MONTHS=2 → 保留窗口起点 = 2026-05
-//     → 2026-05、2026-06 视为"近"，保留在 Pages
-//     → ≤ 2026-04 视为"老"，上传 R2
-const KEEP_FROM = new Date(Date.UTC(
-  TODAY.getUTCFullYear(),
-  TODAY.getUTCMonth() - (RECENT_MONTHS - 1),
-  1
-));
-const KEEP_FROM_STR = `${KEEP_FROM.getUTCFullYear()}-${String(KEEP_FROM.getUTCMonth() + 1).padStart(2, "0")}`;
+// 硬编码保留窗口（减少迁移量：只处理 ≤ 2026-03，其他保留在 Pages）
+// 近端月份（2026-04、2026-05、2026-06）→ 保留在 Pages
+// 老月份（≤ 2026-03）→ 上传 R2
+const KEEP_FROM_STR = "2026-04";
 
 const R2_CONFIG = {
   region: "auto",
