@@ -1,26 +1,51 @@
 #!/usr/bin/env node
 /**
  * Cold-Hot Media Migration Script
+ *
+ * 优化点（v2）：
+ * 1. 月份切片（粗筛）：默认只处理"本月 + 上月"的 MD，之前的月份认为已建基线，跳过。
+ *    通过 MIGRATE_FORCE=1 强制全量（首次建基线用）。
+ *    通过 RECENT_MONTHS=N 调整划线（默认 2 = 本月+上月）。
+ * 2. HeadObject 先探后传（细筛）：上传前 HeadObject 检查 R2 上是否已存在。
+ *    已存在 → 跳过 PUT，仅重写 md 路径。
+ * 3. 8 路并发（pLimit）：受 MIGRATE_CONCURRENCY 控制（默认 8）。
+ * 4. DRY_RUN 模式：DRY_RUN=1 时只打印，不传、不删、不写 md。
  */
 
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import { S3Client, PutObjectCommand, HeadObjectCommand } from "@aws-sdk/client-s3";
+import pLimit from "p-limit";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const projectRoot = path.join(__dirname, '..');
+const projectRoot = path.join(__dirname, "..");
 
+// ============== 配置 ==============
 const HOT_MEDIA_DAYS = Number(process.env.HOT_MEDIA_DAYS || 14);
+const RECENT_MONTHS = Number(process.env.RECENT_MONTHS || 2);
+const MIGRATE_CONCURRENCY = Number(process.env.MIGRATE_CONCURRENCY || 8);
+const MIGRATE_FORCE = process.env.MIGRATE_FORCE === "1";
+const DRY_RUN = process.env.DRY_RUN === "1";
+
 const TODAY = new Date();
 const HOT_CUTOFF = new Date(TODAY);
-
 HOT_CUTOFF.setUTCHours(0, 0, 0, 0);
 HOT_CUTOFF.setUTCDate(HOT_CUTOFF.getUTCDate() - HOT_MEDIA_DAYS);
 
+// 月份切片 cutoff：当前月往前推 RECENT_MONTHS 个月
+const MONTH_CUTOFF = new Date(Date.UTC(
+  TODAY.getUTCFullYear(),
+  TODAY.getUTCMonth() - RECENT_MONTHS,
+  1
+));
+const MONTH_CUTOFF_STR = `${MONTH_CUTOFF.getUTCFullYear()}-${String(
+  MONTH_CUTOFF.getUTCMonth() + 1
+).padStart(2, "0")}`;
+
 const R2_CONFIG = {
-  region: 'auto',
+  region: "auto",
   endpoint: `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
   credentials: {
     accessKeyId: process.env.R2_ACCESS_KEY_ID,
@@ -29,57 +54,97 @@ const R2_CONFIG = {
 };
 
 const BUCKET_NAME = process.env.R2_BUCKET_NAME;
-const PUBLIC_URL = process.env.R2_PUBLIC_URL.replace(/\/$/, '');
-
+const PUBLIC_URL = (process.env.R2_PUBLIC_URL || "").replace(/\/$/, "");
 const s3Client = new S3Client(R2_CONFIG);
 
-async function uploadToR2(localPath, r2Key) {
-  const fileContent = fs.readFileSync(localPath);
-  const contentType = r2Key.endsWith('.mp4') ? 'video/mp4' : 
-                     r2Key.endsWith('.jpg') || r2Key.endsWith('.jpeg') ? 'image/jpeg' :
-                     r2Key.endsWith('.png') ? 'image/png' : 'application/octet-stream';
-  
-  await s3Client.send(new PutObjectCommand({
-    Bucket: BUCKET_NAME,
-    Key: r2Key,
-    Body: fileContent,
-    ContentType: contentType,
-  }));
-  
-  console.log(`✅ 上传到 R2: ${r2Key}`);
+// ============== 工具函数 ==============
+function getMDMonth(mdPath) {
+  // 从 content/prompts/YYYY-MM/... 抽月份
+  const m = mdPath.match(/content\/prompts\/(\d{4}-\d{2})\//);
+  return m ? m[1] : null;
 }
 
-function getMDDate(content) {
-  // 支持 date: 2026-04-12 / '2026-04-12' / "2026-04-12"，兼容 YYYY-MM
-  const dateMatch = content.match(/^date:\s*['"]?(\d{4}-\d{2}(?:-\d{2})?)/m);
+function isRecentMonth(mdPath) {
+  if (MIGRATE_FORCE) return true;
+  const month = getMDMonth(mdPath);
+  if (!month) return true; // 路径不规范 → 宁处理不错过
+  return month >= MONTH_CUTOFF_STR;
+}
 
-  if (!dateMatch) return null;
-
-  const normalizedDate = dateMatch[1].length === 7 ? `${dateMatch[1]}-01` : dateMatch[1];
-  const parsedDate = new Date(`${normalizedDate}T00:00:00Z`);
-
-  return Number.isNaN(parsedDate.getTime()) ? null : parsedDate;
+function getContentType(r2Key) {
+  if (r2Key.endsWith(".mp4")) return "video/mp4";
+  if (r2Key.endsWith(".jpg") || r2Key.endsWith(".jpeg")) return "image/jpeg";
+  if (r2Key.endsWith(".png")) return "image/png";
+  return "application/octet-stream";
 }
 
 function formatDate(date) {
   return date.toISOString().slice(0, 10);
 }
 
+function getMDDate(content) {
+  // 支持 date: 2026-04-12 / '2026-04-12' / "2026-04-12"，兼容 YYYY-MM
+  const dateMatch = content.match(/^date:\s*['"]?(\d{4}-\d{2}(?:-\d{2})?)/m);
+  if (!dateMatch) return null;
+  const normalizedDate = dateMatch[1].length === 7 ? `${dateMatch[1]}-01` : dateMatch[1];
+  const parsedDate = new Date(`${normalizedDate}T00:00:00Z`);
+  return Number.isNaN(parsedDate.getTime()) ? null : parsedDate;
+}
+
+// ============== R2 操作 ==============
+async function r2Exists(r2Key) {
+  try {
+    await s3Client.send(new HeadObjectCommand({ Bucket: BUCKET_NAME, Key: r2Key }));
+    return true;
+  } catch (err) {
+    if (err.$metadata && err.$metadata.httpStatusCode === 404) return false;
+    if (err.name === "NotFound") return false;
+    // 其他错误视作"未知"，保守起见当作不存在 → 走上传
+    return false;
+  }
+}
+
+async function uploadToR2(localPath, r2Key) {
+  if (DRY_RUN) {
+    console.log(`   🧪 [DRY_RUN] 假装上传: ${r2Key}`);
+    return;
+  }
+  const fileContent = fs.readFileSync(localPath);
+  await s3Client.send(
+    new PutObjectCommand({
+      Bucket: BUCKET_NAME,
+      Key: r2Key,
+      Body: fileContent,
+      ContentType: getContentType(r2Key),
+    })
+  );
+  console.log(`   ✅ 上传到 R2: ${r2Key}`);
+}
+
+async function ensureUploaded(localPath, r2Key) {
+  // 细筛：先探后传
+  if (!DRY_RUN && (await r2Exists(r2Key))) {
+    console.log(`   ⏭️  R2 已有: ${r2Key}`);
+    return;
+  }
+  await uploadToR2(localPath, r2Key);
+}
+
+// ============== MD 处理 ==============
 async function migrateMediaField(content, mdPath, fieldPattern, label) {
   const mediaMatch = content.match(fieldPattern);
-
   if (!mediaMatch) return content;
 
   const fieldName = mediaMatch[1];
   const mediaPath = mediaMatch[2];
 
-  if (mediaPath.startsWith('http://') || mediaPath.startsWith('https://')) {
+  if (mediaPath.startsWith("http://") || mediaPath.startsWith("https://")) {
     console.log(`   ${label} 已是 R2 URL`);
     return content;
   }
 
-  const localPath = mediaPath.replace(/^\//, '');
-  const fullLocalPath = path.join(projectRoot, 'static', localPath);
+  const localPath = mediaPath.replace(/^\//, "");
+  const fullLocalPath = path.join(projectRoot, "static", localPath);
 
   if (!fs.existsSync(fullLocalPath)) {
     console.log(`   ${label} 本地文件不存在: ${localPath}`);
@@ -87,17 +152,19 @@ async function migrateMediaField(content, mdPath, fieldPattern, label) {
   }
 
   try {
-    await uploadToR2(fullLocalPath, localPath);
+    await ensureUploaded(fullLocalPath, localPath);
     const newMediaUrl = `${PUBLIC_URL}/${localPath}`;
-    const replacePattern = new RegExp(`^${fieldName}:\\s*["']?[^\\n]+["']?\\s*$`, 'm');
+    const replacePattern = new RegExp(`^${fieldName}:\\s*["']?[^\\n]+["']?\\s*$`, "m");
 
-    content = content.replace(replacePattern, `${fieldName}: "${newMediaUrl}"`);
-
-    if (fs.existsSync(fullLocalPath)) {
-      fs.unlinkSync(fullLocalPath);
+    if (DRY_RUN) {
+      console.log(`   🧪 [DRY_RUN] 本应重写: ${fieldName}: "${newMediaUrl}"`);
+    } else {
+      content = content.replace(replacePattern, `${fieldName}: "${newMediaUrl}"`);
+      if (fs.existsSync(fullLocalPath)) {
+        fs.unlinkSync(fullLocalPath);
+      }
+      console.log(`   ${label} 已迁移: ${localPath}`);
     }
-
-    console.log(`   ${label} 已迁移: ${localPath}`);
   } catch (err) {
     console.error(`   ❌ 上传失败: ${localPath}`, err.message);
   }
@@ -106,42 +173,52 @@ async function migrateMediaField(content, mdPath, fieldPattern, label) {
 }
 
 async function processMDFile(mdPath) {
-  let content = fs.readFileSync(mdPath, 'utf8');
+  let content = fs.readFileSync(mdPath, "utf8");
   const mdDate = getMDDate(content);
-  
+
   if (!mdDate) {
     console.log(`⚠️ 跳过（无日期）: ${path.basename(mdPath)}`);
     return;
   }
-  
+
   const isHot = mdDate >= HOT_CUTOFF;
-  console.log(`${isHot ? '🔥' : '❄️'} ${path.basename(mdPath)} (${formatDate(mdDate)})`);
-  
+  console.log(`${isHot ? "🔥" : "❄️"} ${path.basename(mdPath)} (${formatDate(mdDate)})`);
+
   if (isHot) {
     console.log(`   保留在 Pages（${HOT_MEDIA_DAYS} 天内文件）`);
     return;
   }
 
-  content = await migrateMediaField(content, mdPath, /^(video):\s*["']?(\/?prompts\/[^"'\s]+|https?:\/\/[^"'\s]+)["']?/m, '📹');
-  content = await migrateMediaField(content, mdPath, /^(image|cover):\s*["']?(\/?prompts\/[^"'\s]+|https?:\/\/[^"'\s]+)["']?/m, '🖼️');
+  content = await migrateMediaField(
+    content,
+    mdPath,
+    /^(video):\s*["']?(\/?prompts\/[^"'\s]+|https?:\/\/[^"'\s]+)["']?/m,
+    "📹"
+  );
+  content = await migrateMediaField(
+    content,
+    mdPath,
+    /^(image|cover):\s*["']?(\/?prompts\/[^"'\s]+|https?:\/\/[^"'\s]+)["']?/m,
+    "🖼️"
+  );
 
-  fs.writeFileSync(mdPath, content);
+  if (!DRY_RUN) {
+    fs.writeFileSync(mdPath, content);
+  }
 }
 
+// ============== 清理 ==============
 function cleanupEmptyDirs() {
-  const promptsDir = path.join(projectRoot, 'static', 'prompts');
+  const promptsDir = path.join(projectRoot, "static", "prompts");
 
   function removeEmptyDirs(dir) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
-
     for (const entry of entries) {
       if (entry.isDirectory()) {
         removeEmptyDirs(path.join(dir, entry.name));
       }
     }
-
     if (dir === promptsDir) return;
-
     if (fs.readdirSync(dir).length === 0) {
       fs.rmdirSync(dir);
       console.log(`🗑️ 删除空目录: ${path.relative(promptsDir, dir)}`);
@@ -153,46 +230,70 @@ function cleanupEmptyDirs() {
   }
 }
 
+// ============== 主流程 ==============
 async function main() {
-  console.log('═══════════════════════════════════════════════════');
-  console.log('❄️ Cold-Hot Media Migration Script');
-  console.log('═══════════════════════════════════════════════════');
+  console.log("═══════════════════════════════════════════════════");
+  console.log("❄️ Cold-Hot Media Migration Script (v2)");
+  console.log("═══════════════════════════════════════════════════");
   console.log(`📅 当前日期: ${formatDate(TODAY)}`);
   console.log(`🔥 热数据阈值: 最近 ${HOT_MEDIA_DAYS} 天（>= ${formatDate(HOT_CUTOFF)}）`);
+  console.log(`📆 月份切片: >= ${MONTH_CUTOFF_STR}（RECENT_MONTHS=${RECENT_MONTHS}）`);
+  console.log(`⚡ 并发: ${MIGRATE_CONCURRENCY}（MIGRATE_CONCURRENCY）`);
+  console.log(`🔧 强制全量: ${MIGRATE_FORCE ? "是" : "否"}（MIGRATE_FORCE）`);
+  console.log(`🧪 DRY_RUN: ${DRY_RUN ? "是" : "否"}`);
   console.log(`📦 R2 Bucket: ${BUCKET_NAME}`);
   console.log(`🌐 R2 URL: ${PUBLIC_URL}`);
-  console.log('═══════════════════════════════════════════════════\n');
-  
+  console.log("═══════════════════════════════════════════════════\n");
+
   if (!process.env.R2_ACCOUNT_ID) {
-    console.error('❌ 缺少 R2 环境变量');
+    console.error("❌ 缺少 R2 环境变量");
     process.exit(1);
   }
-  
-  const contentDir = path.join(projectRoot, 'content');
+
+  const contentDir = path.join(projectRoot, "content");
   const mdFiles = [];
-  
+
   function walkDir(dir) {
     try {
       const entries = fs.readdirSync(dir, { withFileTypes: true });
       for (const entry of entries) {
         const fullPath = path.join(dir, entry.name);
         if (entry.isDirectory()) walkDir(fullPath);
-        else if (entry.name.endsWith('.md')) mdFiles.push(fullPath);
+        else if (entry.name.endsWith(".md")) mdFiles.push(fullPath);
       }
     } catch (e) {}
   }
-  
+
   walkDir(contentDir);
-  console.log(`📄 发现 ${mdFiles.length} 个 MD 文件\n`);
-  
-  for (const mdPath of mdFiles) {
-    await processMDFile(mdPath);
+  console.log(`📄 发现 ${mdFiles.length} 个 MD 文件`);
+
+  // 月份粗筛
+  const toProcess = mdFiles.filter(isRecentMonth);
+  const skippedOld = mdFiles.length - toProcess.length;
+  console.log(
+    `⏭️  月份切片：处理 ${toProcess.length} 个，跳过 ${skippedOld} 个老月份${
+      MIGRATE_FORCE ? "（MIGRATE_FORCE=1）" : ""
+    }\n`
+  );
+
+  if (toProcess.length === 0) {
+    console.log("🎉 没有需要处理的 MD，跳过上传环节。");
+    return;
   }
 
-  console.log('\n🧹 清理空目录...');
-  cleanupEmptyDirs();
-  
-  console.log('\n🎉 冷热分离完成！');
+  // 并发处理
+  const limit = pLimit(MIGRATE_CONCURRENCY);
+  const tasks = toProcess.map((mdPath) => limit(() => processMDFile(mdPath)));
+  await Promise.all(tasks);
+
+  if (DRY_RUN) {
+    console.log("\n🧪 [DRY_RUN] 跳过清理空目录和写文件操作。");
+  } else {
+    console.log("\n🧹 清理空目录...");
+    cleanupEmptyDirs();
+  }
+
+  console.log("\n🎉 冷热分离完成！");
 }
 
 main().catch(console.error);

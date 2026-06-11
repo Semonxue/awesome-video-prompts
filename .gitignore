@@ -23,3 +23,7 @@ tools/temp
 *.tmp
 temp
 tools/_*
+
+# Node
+node_modules/
+.migrate-state.json
