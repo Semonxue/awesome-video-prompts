@@ -1,15 +1,21 @@
 #!/usr/bin/env node
 /**
- * Cold-Hot Media Migration Script
+ * Cold-Hot Media Migration Script (v3)
  *
- * 优化点（v2）：
- * 1. 月份切片（粗筛）：默认只处理"本月 + 上月"的 MD，之前的月份认为已建基线，跳过。
- *    通过 MIGRATE_FORCE=1 强制全量（首次建基线用）。
- *    通过 RECENT_MONTHS=N 调整划线（默认 2 = 本月+上月）。
- * 2. HeadObject 先探后传（细筛）：上传前 HeadObject 检查 R2 上是否已存在。
- *    已存在 → 跳过 PUT，仅重写 md 路径。
- * 3. 8 路并发（pLimit）：受 MIGRATE_CONCURRENCY 控制（默认 8）。
- * 4. DRY_RUN 模式：DRY_RUN=1 时只打印，不传、不删、不写 md。
+ * 设计目标：
+ * - Pages 部署：仅渲染 HTML + 主题/静态资源（媒体不在 Pages 部署包里）
+ * - 媒体：≤ RECENT_MONTHS 月的（默认 2 = 当月+上月）→ 保留在本地 static/，由 Pages 直接提供
+ *         更老的 → 上传 R2 + 从本地 static/ unlink（让 hugo 不会把它复制到 public/）
+ * - 避免反复覆盖：上传前 HeadObject 探一下，R2 已有就跳过 PUT
+ * - 并发上传：8 路（可调）
+ *
+ * 环境变量：
+ *   HOT_MEDIA_DAYS       热数据天数（默认 14，保留在 Pages）
+ *   RECENT_MONTHS        保留窗口大小（默认 2 = 当月+上月）
+ *   MIGRATE_CONCURRENCY  并发数（默认 8）
+ *   MIGRATE_FORCE         =1 时全量处理（首次建基线）
+ *   DRY_RUN               =1 时只打印不真传
+ *   R2_*                  Cloudflare R2 凭证
  */
 
 import { S3Client, PutObjectCommand, HeadObjectCommand } from "@aws-sdk/client-s3";
@@ -34,15 +40,16 @@ const HOT_CUTOFF = new Date(TODAY);
 HOT_CUTOFF.setUTCHours(0, 0, 0, 0);
 HOT_CUTOFF.setUTCDate(HOT_CUTOFF.getUTCDate() - HOT_MEDIA_DAYS);
 
-// 月份切片 cutoff：当前月往前推 RECENT_MONTHS 个月
-const MONTH_CUTOFF = new Date(Date.UTC(
+// 保留窗口起点：当月往前推 (RECENT_MONTHS - 1) 月
+// 例：当前 2026-06, RECENT_MONTHS=2 → 保留窗口起点 = 2026-05
+//     → 2026-05、2026-06 视为"近"，保留在 Pages
+//     → ≤ 2026-04 视为"老"，上传 R2
+const KEEP_FROM = new Date(Date.UTC(
   TODAY.getUTCFullYear(),
-  TODAY.getUTCMonth() - RECENT_MONTHS,
+  TODAY.getUTCMonth() - (RECENT_MONTHS - 1),
   1
 ));
-const MONTH_CUTOFF_STR = `${MONTH_CUTOFF.getUTCFullYear()}-${String(
-  MONTH_CUTOFF.getUTCMonth() + 1
-).padStart(2, "0")}`;
+const KEEP_FROM_STR = `${KEEP_FROM.getUTCFullYear()}-${String(KEEP_FROM.getUTCMonth() + 1).padStart(2, "0")}`;
 
 const R2_CONFIG = {
   region: "auto",
@@ -64,11 +71,18 @@ function getMDMonth(mdPath) {
   return m ? m[1] : null;
 }
 
-function isRecentMonth(mdPath) {
+/**
+ * 是否"老月份"（需要上传 R2）
+ * - 路径不规范 → 保守当"老"处理（宁传不少传）
+ * - MIGRATE_FORCE → 全量
+ * - month < KEEP_FROM_STR → 老（需处理）
+ * - month >= KEEP_FROM_STR → 近（保留 Pages）
+ */
+function isOldMonth(mdPath) {
   if (MIGRATE_FORCE) return true;
   const month = getMDMonth(mdPath);
-  if (!month) return true; // 路径不规范 → 宁处理不错过
-  return month >= MONTH_CUTOFF_STR;
+  if (!month) return true; // 路径不规范 → 当老处理
+  return month < KEEP_FROM_STR;
 }
 
 function getContentType(r2Key) {
@@ -99,7 +113,6 @@ async function r2Exists(r2Key) {
   } catch (err) {
     if (err.$metadata && err.$metadata.httpStatusCode === 404) return false;
     if (err.name === "NotFound") return false;
-    // 其他错误视作"未知"，保守起见当作不存在 → 走上传
     return false;
   }
 }
@@ -233,11 +246,11 @@ function cleanupEmptyDirs() {
 // ============== 主流程 ==============
 async function main() {
   console.log("═══════════════════════════════════════════════════");
-  console.log("❄️ Cold-Hot Media Migration Script (v2)");
+  console.log("❄️ Cold-Hot Media Migration Script (v3)");
   console.log("═══════════════════════════════════════════════════");
   console.log(`📅 当前日期: ${formatDate(TODAY)}`);
   console.log(`🔥 热数据阈值: 最近 ${HOT_MEDIA_DAYS} 天（>= ${formatDate(HOT_CUTOFF)}）`);
-  console.log(`📆 月份切片: >= ${MONTH_CUTOFF_STR}（RECENT_MONTHS=${RECENT_MONTHS}）`);
+  console.log(`📆 保留窗口: >= ${KEEP_FROM_STR}（当月 + ${RECENT_MONTHS - 1} 月，RECENT_MONTHS=${RECENT_MONTHS}）`);
   console.log(`⚡ 并发: ${MIGRATE_CONCURRENCY}（MIGRATE_CONCURRENCY）`);
   console.log(`🔧 强制全量: ${MIGRATE_FORCE ? "是" : "否"}（MIGRATE_FORCE）`);
   console.log(`🧪 DRY_RUN: ${DRY_RUN ? "是" : "否"}`);
@@ -269,11 +282,11 @@ async function main() {
   walkDir(contentDir);
   console.log(`📄 发现 ${mdFiles.length} 个 MD 文件`);
 
-  // 月份粗筛
-  const toProcess = mdFiles.filter(isRecentMonth);
-  const skippedOld = mdFiles.length - toProcess.length;
+  // 月份粗筛（反向：处理老月份）
+  const toProcess = mdFiles.filter(isOldMonth);
+  const skippedRecent = mdFiles.length - toProcess.length;
   console.log(
-    `⏭️  月份切片：处理 ${toProcess.length} 个，跳过 ${skippedOld} 个老月份${
+    `⏭️  保留窗口：跳过 ${skippedRecent} 个近端月份（>= ${KEEP_FROM_STR}），处理 ${toProcess.length} 个老月份${
       MIGRATE_FORCE ? "（MIGRATE_FORCE=1）" : ""
     }\n`
   );
