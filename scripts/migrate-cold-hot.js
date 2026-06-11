@@ -40,10 +40,21 @@ const HOT_CUTOFF = new Date(TODAY);
 HOT_CUTOFF.setUTCHours(0, 0, 0, 0);
 HOT_CUTOFF.setUTCDate(HOT_CUTOFF.getUTCDate() - HOT_MEDIA_DAYS);
 
-// 硬编码保留窗口（减少迁移量：只处理 ≤ 2026-03，其他保留在 Pages）
-// 近端月份（2026-04、2026-05、2026-06）→ 保留在 Pages
-// 老月份（≤ 2026-03）→ 上传 R2
-const KEEP_FROM_STR = "2026-04";
+// 保留窗口：默认保留当月和上月，KEEP_FROM_STR 为分界线
+// KEEP_FROM_STR：环境变量 KEEP_FROM_MONTH 或默认值
+// 近端月份（≥ KEEP_FROM_STR）→ 保留在 Pages
+// 老月份（< KEEP_FROM_STR）→ 上传 R2
+const KEEP_FROM_STR = process.env.KEEP_FROM_MONTH || (() => {
+  const d = new Date();
+  const y = d.getUTCFullYear();
+  const m = d.getUTCMonth() - 1; // 上月
+  const prevMonth = m === -1 ? 11 : m;
+  const prevYear = m === -1 ? y - 1 : y;
+  return `${prevYear}-${String(prevMonth + 1).padStart(2, "0")}`;
+})();
+
+// 跳过迁移（CI 日常构建用，直接 Hugo）
+const SKIP_MIGRATE = process.env.SKIP_MIGRATE === "1";
 
 const R2_CONFIG = {
   region: "auto",
@@ -250,7 +261,14 @@ async function main() {
   console.log(`🧪 DRY_RUN: ${DRY_RUN ? "是" : "否"}`);
   console.log(`📦 R2 Bucket: ${BUCKET_NAME}`);
   console.log(`🌐 R2 URL: ${PUBLIC_URL}`);
+  console.log(`⏭️  跳过迁移: ${SKIP_MIGRATE ? "是" : "否"}（SKIP_MIGRATE）`);
   console.log("═══════════════════════════════════════════════════\n");
+
+  if (SKIP_MIGRATE) {
+    console.log("⏭️  SKIP_MIGRATE=1，跳过迁移环节");
+    console.log("   → 所有媒体已在 R2，Hugo 将直接从 MD 中的 URL 渲染");
+    return;
+  }
 
   if (!process.env.R2_ACCOUNT_ID) {
     console.warn("⚠️  未配置 R2 凭证（缺少 R2_ACCOUNT_ID）");
