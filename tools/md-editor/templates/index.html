@@ -341,14 +341,28 @@
             cb2.addEventListener('change', () => cb1.checked = cb2.checked);
         });
 
+        function updateFileListHighlight() {
+            // 更新文件列表中的高亮状态
+            const items = document.querySelectorAll('.file-item');
+            items.forEach(el => {
+                const onclickAttr = el.getAttribute('onclick');
+                const isActive = onclickAttr && currentFile && onclickAttr.includes(currentFile.replace(/'/g, "\\'"));
+                el.classList.toggle('active', isActive);
+            });
+        }
+
         async function openFile(filePath, forceReload = false) {
             if (currentFile === filePath && !forceReload) return; // 防重复
             
             // 如果是重新加载，保持正在编辑所在的模式（表单还是文本）
             const modeForm = document.getElementById('formEditor').style.display === 'flex';
+            const previousFile = currentFile;
             currentFile = filePath;
             document.getElementById('emptyState').style.display = 'none';
             document.getElementById('formEditor').style.display = 'flex';
+
+            // 立即更新高亮（不需要重新渲染整个列表）
+            updateFileListHighlight();
 
             try {
                 const res = await fetch(`${API}/file?path=${encodeURIComponent(filePath)}`);
