@@ -27,7 +27,7 @@ description: A lone motorbike rider races across a flooded megacity of tilted sk
   destruction behind and a narrow collapsing path ahead. Fast, intense, continuous,
   and cinematic.
 models:
-- kling3
+- seedance2
 draft: false
 ---
 

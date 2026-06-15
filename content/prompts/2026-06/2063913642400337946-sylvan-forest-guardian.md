@@ -6,8 +6,11 @@ author: Strength04_X
 models:
 - seedance2
 tags:
-- seedance-2.0
-- seedance
+- nature
+- forest
+- fantasy
+- creature
+- animation
 video: /prompts/2026-06/2063913642400337946-sylvan-forest-guardian/video.mp4
 image: /prompts/2026-06/2063913642400337946-sylvan-forest-guardian/cover.jpg
 description: |-

@@ -10,7 +10,7 @@ tags:
 - multi-character
 video: /prompts/2026-06/2064666744455860590-camera-work-mansion-greeting/video.mp4
 image: /prompts/2026-06/2064666744455860590-camera-work-mansion-greeting/cover.jpg
-author: タナベ | 動画・音声生成AI解説
+author: Tanabe
 source_url: https://x.com/tanabe_fragm/status/2064666744455860590
 description: |-
   Shot count: 5 | Duration: 15s | Aspect ratio: 16:9

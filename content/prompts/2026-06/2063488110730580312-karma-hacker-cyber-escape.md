@@ -1,8 +1,17 @@
 ---
+title: Karma Hacker Cyber Escape
+date: '2026-06-07'
+author: Noor
+source_url: https://x.com/noorlewisx/status/2063488110730580312
+models:
+- seedance2
+tags:
+- action
+- sci-fi
+- night
+- cyberpunk
 image: /prompts/2026-06/2063488110730580312-karma-hacker-cyber-escape/cover.jpg
 video: /prompts/2026-06/2063488110730580312-karma-hacker-cyber-escape/video.mp4
-date: '2026-06-07'
-title: Created with
 description: |-
   Use @[storyboard ref] as the exact visual blueprint. Follow panel order, camera placement, framing, action continuity, character staging, and screen direction precisely.
 
@@ -18,16 +27,6 @@ description: |-
   Audio only: keyboard clicks, computer hum, alarm, footsteps, metal stairs, breathing, rain, city ambience, trigger click, explosion, debris, sirens, wind.
 
   Negative: no superheroes, no spy poses, no martial arts, no anime motion, no slow motion, no holograms, no sci-fi weapons, no comedy, no duplicate characters, no extra intruders, no identity drift.
-models:
-- seedance2
-tags:
-- anime
-- action
-- fire
-- war
-- night
-author: Noor
-source_url: https://x.com/noorlewisx/status/2063488110730580312
 draft: false
 ---
 

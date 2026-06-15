@@ -10,7 +10,7 @@ tags:
 - cinematic
 video: /prompts/2026-06/2064585304397492410-muralist-storyboard-animation/video.mp4
 image: /prompts/2026-06/2064585304397492410-muralist-storyboard-animation/cover.jpg
-author: 𝐌
+author: Strength04_X
 source_url: https://x.com/Strength04_X/status/2064585304397492410
 description: |-
   Use the attached THE MURALIST storyboard image as the exact reference.

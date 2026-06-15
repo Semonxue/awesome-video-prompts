@@ -1,5 +1,5 @@
 ---
-title: Marble Gallery Awakening
+title: Marble Gallery Dance
 date: '2026-06-11T00:00:00+08:00'
 source_url: https://x.com/user/status/2065021393071390779
 author: ai_lifehack55

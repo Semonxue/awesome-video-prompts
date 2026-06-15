@@ -1,8 +1,17 @@
 ---
+title: Shadow King Transformation
+date: '2026-06-07'
+author: LudovicCreator
+source_url: https://x.com/LudovicCreator/status/2063561628281364610
+models:
+- seedance2
+tags:
+- fantasy
+- cinematic
+- transformation
+- war
 image: /prompts/2026-06/2063561628281364610-shadow-king-transformation/cover.jpg
 video: /prompts/2026-06/2063561628281364610-shadow-king-transformation/video.mp4
-date: '2026-06-07'
-title: 'Prompt : 15-second ultra-cinematic dark fantasy transformation sequence'
 description: |-
   15-second ultra-cinematic dark fantasy transformation sequence during a total solar eclipse.
 
@@ -31,15 +40,6 @@ description: |-
   Style: ultra cinematic dark fantasy, eclipse mythology, living shadow effects, black smoke simulation, obsidian crystal formations, atmospheric darkness, purple energy glow, epic transformation VFX, majestic villain energy, AAA fantasy film quality, no text, no overlays.
 
   Audio: epic dark fantasy trailer music, deep choir, low brass, shadow energy resonance, eclipse ambience, distant thunder, rising cinematic percussion, supernatural atmosphere.
-models:
-- seedance2
-tags:
-- cinematic
-- fantasy
-- transformation
-- war
-author: LudovicCreator
-source_url: https://x.com/LudovicCreator/status/2063561628281364610
 draft: false
 ---
 

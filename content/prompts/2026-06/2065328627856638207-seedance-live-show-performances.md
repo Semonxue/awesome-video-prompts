@@ -1,23 +1,22 @@
 ---
-title: Seedance 2.0 Live Show Performance Series
+title: Live Show Performance Series
 date: '2026-06-12'
-model: seedance2
-tags:
-- cinematic
-- action
-- fantasy
-- dance
-- martial-arts
-image: /prompts/2026-06/2065328627856638207-seedance-live-show-performances/cover.jpg
-video: /prompts/2026-06/2065328627856638207-seedance-live-show-performances/video.mp4
-cover: /_drafts/prompts/2026-06/2065328627856638207-seedance-live-show-performances/cover.jpg
 author: Dheepan Ratnam
 source_url: https://x.com/i/status/2065328627856638207
+models:
+- seedance2
+tags:
+- performance
+- dance
+- martial-arts
+- fantasy
+image: /prompts/2026-06/2065328627856638207-seedance-live-show-performances/cover.jpg
+video: /prompts/2026-06/2065328627856638207-seedance-live-show-performances/video.mp4
 description: |-
   DUENDE — Flamenco Dancer vs. Smoke Bull
   Location: Plaza de España, Seville, at midnight. Genre: Gothic-romantic dance theatre.
   00:00-00:03 (Slow push through an archway onto the plaza) A flamenco dancer in blood-red stands alone in a spotlight, guitar echoing. Across the plaza, a colossal bull made of living black smoke paws the ground, embers for eyes. Crowds packed along the canal and balconies, fans fluttering.
-  00:00-00:03 Her first heel strike cracks like a gunshot — a ring of golden sparks bursts from the stone. The bull charges; she spins, her dress flaring into a wall of red light that the bull passes through, dispersing into smoke threads. The crowd shouts "¡Olé!"
+  00:03-00:06 Her first heel strike cracks like a gunshot — a ring of golden sparks bursts from the stone. The bull charges; she spins, her dress flaring into a wall of red light that the bull passes through, dispersing into smoke threads. The crowd shouts "¡Olé!"
   00:06-00:09 (Low circular dolly around her) Rapid zapateado footwork — each strike fires sparks upward, forming burning roses in the air. The bull re-forms behind her; she never looks at it, sensing it, dancing with its charges like a torera.
   00:09-00:12 The duel becomes a duet: smoke and dancer spiraling together, her castanets snapping embers into the bull's body until it begins to glow from within. Balcony crowds throw real roses onto the plaza.
   00:12-00:14 Final pose: she stamps once, arms raised — the bull rears, then bows, dissolving into a storm of glowing embers that spiral around her like a halo.
@@ -40,15 +39,13 @@ description: |-
   00:09-00:12 The mantis leaps between mooring poles, attacking from above. The drunkard climbs a tower of stacked crates — wobbling, crates tipping — and fights from the top, the entire tower swaying with his style but never falling. Boat crowds wave lanterns in rhythm with the sway.
   00:12-00:14 Final exchange on a single bamboo pole over the water: mantis hook versus drunken sleeve. The old man "falls", catches the pole with one ankle, and taps the mantis fighter into the harbor with one finger. A geyser of glowing water erupts.
   00:14-00:15 The drunkard toasts the soaked, laughing mantis fighter climbing back aboard. Neon signs across the harbor flicker to "EIGHT IMMORTALS". Every boat horn in Hong Kong sounds at once.
-models:
-- seedance2
 draft: false
 ---
 
 DUENDE — Flamenco Dancer vs. Smoke Bull
 Location: Plaza de España, Seville, at midnight. Genre: Gothic-romantic dance theatre.
 00:00-00:03 (Slow push through an archway onto the plaza) A flamenco dancer in blood-red stands alone in a spotlight, guitar echoing. Across the plaza, a colossal bull made of living black smoke paws the ground, embers for eyes. Crowds packed along the canal and balconies, fans fluttering.
-00:00-00:03 Her first heel strike cracks like a gunshot — a ring of golden sparks bursts from the stone. The bull charges; she spins, her dress flaring into a wall of red light that the bull passes through, dispersing into smoke threads. The crowd shouts "¡Olé!"
+00:03-00:06 Her first heel strike cracks like a gunshot — a ring of golden sparks bursts from the stone. The bull charges; she spins, her dress flaring into a wall of red light that the bull passes through, dispersing into smoke threads. The crowd shouts "¡Olé!"
 00:06-00:09 (Low circular dolly around her) Rapid zapateado footwork — each strike fires sparks upward, forming burning roses in the air. The bull re-forms behind her; she never looks at it, sensing it, dancing with its charges like a torera.
 00:09-00:12 The duel becomes a duet: smoke and dancer spiraling together, her castanets snapping embers into the bull's body until it begins to glow from within. Balcony crowds throw real roses onto the plaza.
 00:12-00:14 Final pose: she stamps once, arms raised — the bull rears, then bows, dissolving into a storm of glowing embers that spiral around her like a halo.

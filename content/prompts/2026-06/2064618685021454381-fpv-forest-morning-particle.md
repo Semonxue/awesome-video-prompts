@@ -10,7 +10,7 @@ tags:
 - forest
 video: /prompts/2026-06/2064618685021454381-fpv-forest-morning-particle/video.mp4
 image: /prompts/2026-06/2064618685021454381-fpv-forest-morning-particle/cover.jpg
-author: Pierrick Chevallier | IA
+author: Pierrick Chevallier
 source_url: https://x.com/i/status/2064618685021454381
 description: 'FPV shot: Diving through a forest awakening at dawn. The camera races
   between towering trees as sunlight pierces the canopy. Floating pollen, mist, and
