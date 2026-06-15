@@ -1,0 +1,37 @@
+---
+title: Pink Slime Action Hero
+date: '2026-06-13'
+models:
+- seedance2
+tags:
+- action
+- combat
+- sci-fi
+- comedy
+- fantasy
+video: /prompts/2026-06/2065650333716746498-seedance-pink-slime-action/video.mp4
+image: /prompts/2026-06/2065650333716746498-seedance-pink-slime-action/cover.jpg
+author: '@AvelyrahnAI'
+source_url: https://twitter.com/AvelyrahnAI/status/2065650333716746498
+description: Low-angle tracking shot following a woman in a black tactical outfit
+  walking down a wet neon-lit city street at night. Suddenly, a giant, translucent
+  pink gelatinous slime monster with an adorable anime face materializes on the wet
+  asphalt, splashing pink liquid.High-speed action shot. The giant pink slime monster
+  swings a massive gelatinous arm at the woman. The woman smoothly executes a low
+  combat slide across the wet pavement, narrowly dodging the attack as cars pass by
+  in the background.Dynamic slow-motion shot. The woman leaps high into the air against
+  the backdrop of neon skyscrapers. In mid-air, she draws a futuristic sci-fi sword
+  that ignites with a glowing neon-blue energy blade.Close-up action shot. The glowing
+  blue energy sword slices deep into the translucent pink slime monster, causing pink
+  liquid and gelatinous bubbles to violently splash and spray toward the camera.Fast-paced
+  combat sequence. The woman lands on top of a car hood, leaps off, and spins in the
+  air, delivering a powerful downward slash with her glowing blue sword right into
+  the center of the giant pink slime monster.A sudden flash of white light transitions
+  into a bright, modern corporate office. The woman is sitting at her office desk
+  in a professional blue button-down shirt, looking stunned. She is holding and stretching
+  a small, harmless piece of pink slime toy with the exact same cute anime face. Her
+  coworkers in the background look at her with confusion.
+draft: false
+---
+
+Low-angle tracking shot following a woman in a black tactical outfit walking down a wet neon-lit city street at night. Suddenly, a giant, translucent pink gelatinous slime monster with an adorable anime face materializes on the wet asphalt, splashing pink liquid.High-speed action shot. The giant pink slime monster swings a massive gelatinous arm at the woman. The woman smoothly executes a low combat slide across the wet pavement, narrowly dodging the attack as cars pass by in the background.Dynamic slow-motion shot. The woman leaps high into the air against the backdrop of neon skyscrapers. In mid-air, she draws a futuristic sci-fi sword that ignites with a glowing neon-blue energy blade.Close-up action shot. The glowing blue energy sword slices deep into the translucent pink slime monster, causing pink liquid and gelatinous bubbles to violently splash and spray toward the camera.Fast-paced combat sequence. The woman lands on top of a car hood, leaps off, and spins in the air, delivering a powerful downward slash with her glowing blue sword right into the center of the giant pink slime monster.A sudden flash of white light transitions into a bright, modern corporate office. The woman is sitting at her office desk in a professional blue button-down shirt, looking stunned. She is holding and stretching a small, harmless piece of pink slime toy with the exact same cute anime face. Her coworkers in the background look at her with confusion.
