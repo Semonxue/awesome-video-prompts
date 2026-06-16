@@ -29,6 +29,9 @@
   <!-- Canonical -->
   <link rel="canonical" href="{{ .Permalink }}">
 
+  <!-- hreflang for multilingual SEO -->
+  {{ partial "hreflang" . }}
+
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="{{ $socialTitle }}">
   <meta property="og:description" content="{{ $desc | plainify | truncate 160 }}">
