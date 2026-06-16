@@ -66,28 +66,25 @@ defaultContentLanguageInSubdir = true
   baseURL = 'https://awesomevideoprompts.com/'
 
 [module]
+  # 英文（默认语言）：内容根目录
   [[module.mounts]]
     source = 'content'
     target = 'content'
     lang = 'en'
 
-  # For zh-cn, mount zh-cn specific pages
+  # prompts 全局共享（不指定 lang，三语言均可访问）
+  [[module.mounts]]
+    source = 'content/prompts'
+    target = 'content/prompts'
+
+  # 中文：自己的页面（about.md）
   [[module.mounts]]
     source = 'content/zh-cn'
     target = 'content'
     lang = 'zh-cn'
-  # Mount shared prompts from root 'content/prompts'
-  [[module.mounts]]
-    source = 'content/prompts'
-    target = 'content/prompts'
-    lang = 'zh-cn'
 
-  # For ja, mount ja specific pages
+  # 日文：自己的页面（about.md）
   [[module.mounts]]
     source = 'content/ja'
     target = 'content'
-    lang = 'ja'
-  [[module.mounts]]
-    source = 'content/prompts'
-    target = 'content/prompts'
     lang = 'ja'
