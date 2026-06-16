@@ -49,21 +49,18 @@ defaultContentLanguageInSubdir = true
   weight = 1
   languageName = 'English'
   contentDir = 'content/en'
-  baseURL = 'https://awesomevideoprompts.com/'
 
 [languages.zh-cn]
   title = 'Seedance2、HappyHorse、Gemini Omni、Kling3 AI视频提示词 | 精彩视频提示词'
   weight = 2
   languageName = '简体中文'
   contentDir = 'content/zh-cn'
-  baseURL = 'https://awesomevideoprompts.com/'
 
 [languages.ja]
   title = 'Seedance2、HappyHorse、Gemini Omni、Kling3 AI動画プロンプト | 素晴らしい動画プロンプト'
   weight = 3
   languageName = '日本語'
   contentDir = 'content/ja'
-  baseURL = 'https://awesomevideoprompts.com/'
 
 [module]
   # 英文（默认语言）：内容根目录
