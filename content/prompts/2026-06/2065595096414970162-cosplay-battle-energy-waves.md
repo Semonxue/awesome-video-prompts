@@ -1,17 +1,18 @@
 ---
 title: Cosplay Battle Energy Waves
-date: '2026-06-13T00:40:22+00:00'
-author: おのふみ| 動画生成AI×個人開発
-source_url: https://x.com/onofumi_AI/status/2065595096414970162
+date: '2026-06-13'
 models:
 - seedance2
 tags:
+- combat
 - action
+- anime
 - martial-arts
-- cosplay
-- cinematic
-image: /prompts/2026-06/2065595096414970162-cosplay-battle-energy-waves/cover.jpg
+- fantasy
 video: /prompts/2026-06/2065595096414970162-cosplay-battle-energy-waves/video.mp4
+image: /prompts/2026-06/2065595096414970162-cosplay-battle-energy-waves/cover.jpg
+author: おのふみ| 動画生成AI×個人開発
+source_url: https://twitter.com/onofumi_AI/status/2065595096414970162
 description: |-
   【マスタープロンプト】
 

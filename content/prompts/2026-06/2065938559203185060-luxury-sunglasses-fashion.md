@@ -1,16 +1,16 @@
 ---
-title: Luxury Sunglasses Fashion Commercial
-date: '2026-06-13T23:25:10+00:00'
+title: Luxury Sunglasses Fashion Ad
+date: '2026-06-14T07:25:10+08:00'
+source_url: https://twitter.com/Kiber_Alla/status/2065938559203185060
 author: Kiber Alla
-source_url: https://x.com/Kiber_Alla/status/2065938559203185060
 models:
 - seedance2
 tags:
 - fashion
-- luxury
-- advertisement
+- commercial
 - cinematic
-- slow-motion
+- luxury
+- seaside
 image: /prompts/2026-06/2065938559203185060-luxury-sunglasses-fashion/cover.jpg
 video: /prompts/2026-06/2065938559203185060-luxury-sunglasses-fashion/video.mp4
 description: |-

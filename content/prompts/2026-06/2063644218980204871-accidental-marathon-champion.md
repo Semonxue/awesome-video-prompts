@@ -1,20 +1,22 @@
 ---
-title: Accidental Marathon Champion
-date: '2026-06-07'
-author: AIwithkhan
+title: The Accidental Marathon Champion
+date: '2026-06-07T00:00:00+08:00'
 source_url: https://x.com/AIwithkhan/status/2063644218980204871
+author: AIwithkhan
 models:
 - seedance2
 tags:
-- animation
-- pixar
-- comedy
+- 3d
 - action
+- pixar
+- cinematic
+- slapstick
+- seedance
+- animation
+- comedy
 image: /prompts/2026-06/2063644218980204871-accidental-marathon-champion/cover.jpg
 video: /prompts/2026-06/2063644218980204871-accidental-marathon-champion/video.mp4
 description: |-
-  THE ACCIDENTAL CHAMPION – Cinematic Video Prompt
-
   Create a Pixar-inspired 3D animated comedy short set in a vibrant modern city on a sunny afternoon. A mischievous thief in a red hoodie snatches a well-dressed woman's purse and sprints through crowded streets. The woman immediately chases him through busy sidewalks, markets, and intersections. Dynamic tracking shots, expressive character animation, playful music, colorful environments, cinematic depth of field.
 
   As the chase continues, the woman becomes exhausted and stops. The thief looks back with a smug smile, convinced he has escaped. Suddenly, he accidentally steps on the tail of a sleeping bulldog. The dog slowly opens its eyes. Dramatic pause. Instant regret on the thief's face.
@@ -34,8 +36,6 @@ description: |-
   Ultra-detailed Pixar-style animation, slapstick comedy, expressive facial acting, smooth scene continuity, cinematic camera work, vibrant colors, high-end lighting, professional animated short film quality, 16: 9.
 draft: false
 ---
-
-THE ACCIDENTAL CHAMPION – Cinematic Video Prompt
 
 Create a Pixar-inspired 3D animated comedy short set in a vibrant modern city on a sunny afternoon. A mischievous thief in a red hoodie snatches a well-dressed woman's purse and sprints through crowded streets. The woman immediately chases him through busy sidewalks, markets, and intersections. Dynamic tracking shots, expressive character animation, playful music, colorful environments, cinematic depth of field.
 
