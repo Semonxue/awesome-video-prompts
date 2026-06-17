@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "Awesome Video Prompts",
+    "description": "An open-source collection of awesome AI video generation prompts"
+  },
+  "nav": {
+    "home": "Home",
+    "tags": "Tags",
+    "models": "Models",
+    "about": "About",
+    "search": "Search prompts..."
+  },
+  "prompt": {
+    "source": "Source",
+    "author": "Author",
+    "models": "Models",
+    "tags": "Tags",
+    "watchVideo": "Watch Video"
+  },
+  "filter": {
+    "allModels": "All Models",
+    "allTags": "All Tags",
+    "sortBy": "Sort by",
+    "newest": "Newest",
+    "sortByDate": "Sort by Date"
+  },
+  "stats": {
+    "prompts": "Prompts",
+    "models": "Models",
+    "tags": "Tags"
+  },
+  "empty": {
+    "noResults": "No prompts found",
+    "tryDifferent": "Try a different filter or search term"
+  }
+}

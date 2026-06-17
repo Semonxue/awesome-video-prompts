@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "素晴らしい動画プロンプト",
+    "description": "オープンソースのAI動画生成プロンプト集"
+  },
+  "nav": {
+    "home": "ホーム",
+    "tags": "タグ",
+    "models": "モデル",
+    "about": "概要",
+    "search": "プロンプトを検索..."
+  },
+  "prompt": {
+    "source": "ソース",
+    "author": "作者",
+    "models": "モデル",
+    "tags": "タグ",
+    "watchVideo": "動画を見る"
+  },
+  "filter": {
+    "allModels": "すべてのモデル",
+    "allTags": "すべてのタグ",
+    "sortBy": "並び替え",
+    "newest": "新着順",
+    "sortByDate": "日付順"
+  },
+  "stats": {
+    "prompts": "プロンプト",
+    "models": "モデル",
+    "tags": "タグ"
+  },
+  "empty": {
+    "noResults": "プロンプトが見つかりません",
+    "tryDifferent": "別のフィルターをお試しください"
+  }
+}

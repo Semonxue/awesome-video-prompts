@@ -1,26 +1,49 @@
-# Hugo generated files
-/public/
-/resources/_gen/
-/content/_drafts/
-/static/_drafts/
+# ============================================================
+# Next.js / OpenNext / Cloudflare
+# ============================================================
+.next/
+.open-next/
+.cache/
+.wrangler/
+
+# ============================================================
+# Dependencies
+# ============================================================
 node_modules/
 
-# OS files
+# ============================================================
+# Credentials — NEVER commit these
+# ============================================================
+.dev.vars
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# Build outputs (generated, not source)
+# ============================================================
+dist/
+build/
+
+# ============================================================
+# OS / Editor
+# ============================================================
 .DS_Store
 Thumbs.db
-
-# Editor files
 *.swp
 *.swo
 *~
 .vscode/
 .idea/
-memory-bank
-tools/_*
-tools/temp
 
-# Temporary files
+# ============================================================
+# Project-specific
+# ============================================================
+memory-bank/
+temp/
+tools/_*
+tools/temp/
 *.log
 *.tmp
-temp
-tools/_*
+content/_drafts/
+static/_drafts/

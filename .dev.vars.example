@@ -1,0 +1,12 @@
+# Cloudflare 凭证（本地开发用，不要提交到 Git）
+CLOUDFLARE_ACCOUNT_ID=your_account_id_here
+CLOUDFLARE_API_TOKEN=your_api_token_here
+
+# D1 数据库 ID（从 wrangler d1 create prompts-db --local 获取）
+CLOUDFLARE_D1_DATABASE_ID=your_d1_database_id_here
+
+# 站点 URL
+NEXT_PUBLIC_SITE_URL=https://awesomevideoprompts.com
+
+# ISR Revalidate Secret
+REVALIDATE_SECRET=change_me_to_a_random_string

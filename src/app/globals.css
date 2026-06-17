@@ -1,0 +1,339 @@
+/* ============================================================
+   Global Styles — 最小化样式，保留 Hugo 主题的类名兼容
+   后续可以迁移到 Tailwind 或 CSS Modules
+   ============================================================ */
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --border: #1e1e2e;
+  --text: #e8e8f0;
+  --text-muted: #8888a0;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+  --tag-bg: #1a1a2e;
+  --tag-text: #a5b4fc;
+  --model-bg: #1a0a1a;
+  --model-text: #f0a5fc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.stats-bar {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.filter-bar input,
+.filter-bar select,
+.filter-bar button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.filter-bar button {
+  background: var(--accent);
+  border-color: var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.filter-bar button:hover {
+  background: var(--accent-hover);
+}
+
+/* Prompt Grid */
+.prompt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+}
+
+.prompt-card {
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.prompt-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.prompt-card__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.prompt-card__cover {
+  position: relative;
+  aspect-ratio: 16/9;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.prompt-card__cover img {
+  object-fit: cover;
+}
+
+.prompt-card__video-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prompt-card__placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a2e 0%, #12121a 100%);
+}
+
+.prompt-card__play-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.prompt-card:hover .prompt-card__play-icon {
+  opacity: 1;
+}
+
+.prompt-card__body {
+  padding: 1rem;
+}
+
+.prompt-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.prompt-card__desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.prompt-card__tags,
+.prompt-card__models {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+/* Tags & Models Badges */
+.tag-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.tag-badge:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.model-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: var(--model-bg);
+  color: var(--model-text);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Detail Page */
+.prompt-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.prompt-detail__media {
+  position: relative;
+  aspect-ratio: 16/9;
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.prompt-detail__media video,
+.prompt-detail__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.prompt-detail__video {
+  width: 100%;
+  height: 100%;
+}
+
+.prompt-detail h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.prompt-detail__meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.prompt-detail__meta a {
+  color: var(--accent);
+}
+
+.prompt-detail__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prompt-detail__content {
+  margin-bottom: 1.5rem;
+}
+
+.prompt-detail__content h2 {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.prompt-text {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+}
+
+.copy-btn {
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.copy-btn:hover {
+  background: var(--accent-hover);
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.pagination a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pagination a:hover {
+  text-decoration: underline;
+}
+
+.pagination span {
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .prompt-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+  }
+
+  header {
+    padding: 1.5rem 1rem;
+  }
+}

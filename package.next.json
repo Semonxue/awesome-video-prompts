@@ -5,10 +5,9 @@
   "description": "Next.js 15 App Router for Awesome Video Prompts",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "build:opennext": "node node_modules/@opennextjs/cloudflare/dist/cli/build/build.js",
-    "preview": "node node_modules/@opennextjs/cloudflare/dist/cli/preview/preview.js",
-    "deploy": "next build && node node_modules/@opennextjs/cloudflare/dist/cli/build/build.js && wrangler pages deploy .open-next/assets",
+    "build": "opennextjs-cloudflare build",
+    "preview": "opennextjs-cloudflare preview",
+    "deploy": "npm run build && wrangler pages deploy .open-next/assets",
     "deploy:workers": "wrangler deploy .open-next/workers-stack",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
@@ -22,27 +21,27 @@
     "import:md:local": "tsx scripts/import-md-to-d1.ts --local --db prompts-db"
   },
   "dependencies": {
-    "drizzle-orm": "^0.45.2",
-    "gray-matter": "^4.0.3",
     "next": "^15.0.0",
-    "next-intl": "^3.26.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "gray-matter": "^4.0.3",
+    "next-intl": "^3.26.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20260617.1",
-    "@opennextjs/cloudflare": "^1.0.0",
-    "@playwright/test": "^1.50.0",
+    "@cloudflare/next-onpages": "^1.0.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@vitest/coverage-v8": "^2.1.0",
-    "@vitest/ui": "^2.1.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^4.0.0",
+    "opennextjs-cloudflare": "^1.0.0",
+    "tsx": "^4.19.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "^15.0.0",
-    "tsx": "^4.19.0",
-    "typescript": "^5.7.0",
     "vitest": "^2.1.0",
-    "wrangler": "^4.0.0"
+    "@vitest/coverage-v8": "^2.1.0",
+    "@playwright/test": "^1.48.0",
+    "@vitest/ui": "^2.1.0",
+    "vitest-environment-miniflare": "^2.15.0"
   }
 }

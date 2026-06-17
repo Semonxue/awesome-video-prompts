@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "精彩视频提示词",
+    "description": "开源的精彩AI视频生成提示词合集"
+  },
+  "nav": {
+    "home": "首页",
+    "tags": "标签",
+    "models": "模型",
+    "about": "关于",
+    "search": "搜索提示词..."
+  },
+  "prompt": {
+    "source": "来源",
+    "author": "作者",
+    "models": "模型",
+    "tags": "标签",
+    "watchVideo": "观看视频"
+  },
+  "filter": {
+    "allModels": "全部模型",
+    "allTags": "全部标签",
+    "sortBy": "排序",
+    "newest": "最新",
+    "sortByDate": "按时间排序"
+  },
+  "stats": {
+    "prompts": "提示词",
+    "models": "模型",
+    "tags": "标签"
+  },
+  "empty": {
+    "noResults": "未找到提示词",
+    "tryDifferent": "试试不同的筛选条件"
+  }
+}
