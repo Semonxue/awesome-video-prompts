@@ -402,6 +402,12 @@ sports:
   description_en: "Sports and athletic activities"
   description_zh-cn: "体育和竞技活动"
 
+surfing:
+  en: surfing
+  zh-cn: 冲浪
+  description_en: "Surfing and ocean water sports"
+  description_zh-cn: "冲浪和海上运动"
+
 drama:
   en: drama
   zh-cn: 戏剧

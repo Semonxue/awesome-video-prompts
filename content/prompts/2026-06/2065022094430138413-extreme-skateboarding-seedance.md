@@ -1,0 +1,65 @@
+---
+title: Extreme Skateboarding Cliff Jump
+date: '2026-06-11T18:43:00+08:00'
+source_url: https://x.com/ai_gezgini/status/2065022094430138413
+author: ai.gezgini
+models:
+- seedance2
+tags:
+- sports
+- action
+- slow-motion
+- extreme
+- cinematic
+image: /prompts/2026-06/2065022094430138413-extreme-skateboarding-seedance/cover.jpg
+video: /prompts/2026-06/2065022094430138413-extreme-skateboarding-seedance/video.mp4
+description: |-
+  Create a hyper-cinematic 15-second continuous single-take extreme downhill skateboard video.
+
+  REFERENCE USAGE:
+  Image 1 = strict identity, outfit, and skateboard reference. Preserve her exact face, pale skin, blue eyes, long straight black hair, body proportions, flowing deep red asymmetrical dress with side cutouts, black wrist guards, black knee pads, black skate shoes with white soles, and black skateboard with red graphics and red wheels. Do NOT change identity, outfit, or skateboard. Do NOT turn it into a longboard. She must feel like a real person doing dangerous but believable downhill skateboard action.
+  SETTING:
+  A steep narrow mountain coastal road in bright daylight, with huge green cliffs, tropical vegetation, sharp bends, white road markings, and the ocean far below. Fast, dangerous, raw, cinematic, physically believable.
+
+  VIDEO STYLE:
+  One continuous 15-second shot, no cuts or transitions. Hyper-realistic action, low 24–35mm lens, handheld chase-camera energy, natural motion blur, asphalt vibration, wind noise, skateboard wheel rumble, fabric flapping, and visible body-weight corrections.
+  OPENING SHOT:
+  She starts standing still on the mountain road, holding the skateboard in one hand. The camera begins in front of her, focused on her upper body and face. Her black hair moves in the wind, the red dress flutters, and her expression is calm, focused, fearless. She lowers the skateboard to the asphalt, steps onto it, then pushes forward with one foot several times to build speed.
+
+  CAMERA MOVEMENT:
+  As she starts moving, the camera stays in front briefly, tracking backward while she accelerates. Then, in one smooth fast move, it swings around her body to the back and drops very low to skateboard level, close to the tail and slightly offset. From then on, it stays near road level, emphasizing speed, wheels, asphalt texture, board movement, and the flying red dress.
+  ACTION FLOW:
+  After gaining speed, she places both feet on the skateboard and begins fast controlled downhill carving. She stays crouched low and athletic. The skateboard cuts across the road with smooth aggressive control. Her dress streams behind her, hair flying, knees flexing, shoulders correcting balance. She carves through a quick left-right sequence, passing close to road markings and the cliff edge. The camera stays glued behind the skateboard, tracking every carve and wheel vibration.
+
+  Midway, she reaches a dangerous sharp hairpin bend where a lower road is visible below. Instead of following the turn, she commits straight toward the cliff edge, crouches deeper, builds speed, and launches off with the skateboard beneath her feet.
+  The instant she leaves the edge, the video shifts into dramatic slow motion. The camera rises slightly with her while staying close. In midair, she clearly grabs the skateboard with one hand and turns her face toward the camera, making direct eye contact with the viewer. Her red dress spreads dramatically, hair floats, and the ocean valley opens beneath her.
+
+  She descends and lands hard onto the lower road, knees absorbing impact, skateboard wheels slapping the asphalt. The camera shakes from the force but stays locked behind her. She instantly regains control and continues downhill at full speed.
+  FINAL MOMENT:
+  She keeps charging forward, low and aggressive, red dress trailing behind her. The camera remains close behind the skateboard as she powers into the next curve and disappears down the mountain road. No text, no logos, no subtitles.
+draft: false
+---
+
+Create a hyper-cinematic 15-second continuous single-take extreme downhill skateboard video.
+
+REFERENCE USAGE:
+Image 1 = strict identity, outfit, and skateboard reference. Preserve her exact face, pale skin, blue eyes, long straight black hair, body proportions, flowing deep red asymmetrical dress with side cutouts, black wrist guards, black knee pads, black skate shoes with white soles, and black skateboard with red graphics and red wheels. Do NOT change identity, outfit, or skateboard. Do NOT turn it into a longboard. She must feel like a real person doing dangerous but believable downhill skateboard action.
+SETTING:
+A steep narrow mountain coastal road in bright daylight, with huge green cliffs, tropical vegetation, sharp bends, white road markings, and the ocean far below. Fast, dangerous, raw, cinematic, physically believable.
+
+VIDEO STYLE:
+One continuous 15-second shot, no cuts or transitions. Hyper-realistic action, low 24–35mm lens, handheld chase-camera energy, natural motion blur, asphalt vibration, wind noise, skateboard wheel rumble, fabric flapping, and visible body-weight corrections.
+OPENING SHOT:
+She starts standing still on the mountain road, holding the skateboard in one hand. The camera begins in front of her, focused on her upper body and face. Her black hair moves in the wind, the red dress flutters, and her expression is calm, focused, fearless. She lowers the skateboard to the asphalt, steps onto it, then pushes forward with one foot several times to build speed.
+
+CAMERA MOVEMENT:
+As she starts moving, the camera stays in front briefly, tracking backward while she accelerates. Then, in one smooth fast move, it swings around her body to the back and drops very low to skateboard level, close to the tail and slightly offset. From then on, it stays near road level, emphasizing speed, wheels, asphalt texture, board movement, and the flying red dress.
+ACTION FLOW:
+After gaining speed, she places both feet on the skateboard and begins fast controlled downhill carving. She stays crouched low and athletic. The skateboard cuts across the road with smooth aggressive control. Her dress streams behind her, hair flying, knees flexing, shoulders correcting balance. She carves through a quick left-right sequence, passing close to road markings and the cliff edge. The camera stays glued behind the skateboard, tracking every carve and wheel vibration.
+
+Midway, she reaches a dangerous sharp hairpin bend where a lower road is visible below. Instead of following the turn, she commits straight toward the cliff edge, crouches deeper, builds speed, and launches off with the skateboard beneath her feet.
+The instant she leaves the edge, the video shifts into dramatic slow motion. The camera rises slightly with her while staying close. In midair, she clearly grabs the skateboard with one hand and turns her face toward the camera, making direct eye contact with the viewer. Her red dress spreads dramatically, hair floats, and the ocean valley opens beneath her.
+
+She descends and lands hard onto the lower road, knees absorbing impact, skateboard wheels slapping the asphalt. The camera shakes from the force but stays locked behind her. She instantly regains control and continues downhill at full speed.
+FINAL MOMENT:
+She keeps charging forward, low and aggressive, red dress trailing behind her. The camera remains close behind the skateboard as she powers into the next curve and disappears down the mountain road. No text, no logos, no subtitles.
